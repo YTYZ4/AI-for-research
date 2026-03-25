@@ -1,0 +1,9 @@
+run_id,image_name,method,target_h,target_w,success,runtime_s,error_type,fix_rounds,notes
+2026-03-25_run_004,bing1.png,resize_linear,128,336,True,0.0132,,0,baseline linear resize
+2026-03-25_run_004,bing1.png,crop,128,336,True,0.0000,,0,center crop baseline
+2026-03-25_run_004,bing1.png,seam_width,151,336,True,17.9682,,0,vertical seam only
+2026-03-25_run_004,bing1.png,seam_height,128,420,True,5.0191,,0,transpose reuse
+2026-03-25_run_004,original.png,resize_linear,237,336,True,0.0230,,0,baseline linear resize
+2026-03-25_run_004,original.png,crop,237,336,True,0.0000,,0,center crop baseline
+2026-03-25_run_004,original.png,seam_width,279,336,True,33.6628,,0,vertical seam only
+2026-03-25_run_004,original.png,seam_height,237,420,True,16.9417,,0,transpose reuse
