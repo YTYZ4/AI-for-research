@@ -1,0 +1,4 @@
+run_id,case_id,mode,prompt_file,task_card_version,artifact_complete,runnable,correct,self_check,error_type,fix_rounds,time_to_first_working_min,notes
+2026-03-26_run_006,A1,direct_answer,prompts/a1/baseline_direct_answer_v0.md,none,pending,pending,pending,pending,pending,0,pending,planned baseline run
+2026-03-26_run_007,A1,plain_guidance,prompts/a1/baseline_plain_guidance_v0.md,v1,pending,pending,pending,pending,pending,0,pending,planned baseline run
+2026-03-27_run_008,A1,coe_guided,prompts/a1/coe_multi_role_v0.md,v1,pending,pending,pending,pending,pending,0,pending,planned coe run
