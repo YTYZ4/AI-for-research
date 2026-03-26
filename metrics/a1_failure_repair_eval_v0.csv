@@ -1,0 +1,1 @@
+run_id,bug_id,mode,diagnosis_correct,patch_runnable,regression_pass,fix_rounds,time_to_fix_min,notes
