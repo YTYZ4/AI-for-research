@@ -1,1 +1,5 @@
 run_id,image_name,method,width_runtime_s,height_runtime_s,total_runtime_s,output_ok,notes
+2026-03-26_run_010,bing1.png,direct_answer,17.8966,5.1289,24.1589,1,pilot replication 1
+2026-03-26_run_010,original.png,direct_answer,33.1987,17.0441,51.4347,1,pilot replication 1
+2026-03-26_run_016,bing1.png,coe_guided,18.2013,5.1697,24.5153,1,pilot replication 1
+2026-03-26_run_016,original.png,coe_guided,33.8726,17.2976,52.3456,1,pilot replication 1

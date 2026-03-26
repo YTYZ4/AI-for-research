@@ -2,3 +2,5 @@ run_id,case_id,mode,prompt_file,task_card_version,artifact_complete,runnable,cor
 2026-03-26_run_006,A1,direct_answer,prompts/a1/baseline_direct_answer_v0.md,none,2,1,2,1,other,1,2.0,first run failed on path config then fixed
 2026-03-26_run_007,A1,plain_guidance,prompts/a1/baseline_plain_guidance_v0.md,v1,2,1,2,2,none,0,3.5,task-card aligned checks with explicit assertions
 2026-03-27_run_008,A1,coe_guided,prompts/a1/coe_multi_role_v0.md,v1,2,1,2,2,none,0,4.2,best structured review coverage but slower runtime
+2026-03-26_run_010,A1,direct_answer,prompts/a1/baseline_direct_answer_v0.md,none,2,1,2,1,none,0,1.1,pilot replication 1
+2026-03-26_run_016,A1,coe_guided,prompts/a1/coe_multi_role_v0.md,v1,2,1,2,2,none,0,1.2,pilot replication 1

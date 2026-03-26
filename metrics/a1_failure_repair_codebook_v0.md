@@ -2,56 +2,43 @@
 
 适用范围：
 - metrics/a1_failure_repair_eval_v0.csv
-- solutions/hw1_op1/failure_cases/ 下 bug-repair 对照实验
 
 目标：
-- 固定三类错误样例与修复评价口径。
-- 比较不同 guidance mode 的诊断准确性与修复效率。
+- 固定 A1 failure case 修复实验的打分口径
 
-## 字段定义与取值
+字段定义：
 
-### run_id
+run_id：
 - 格式：YYYY-MM-DD_run_xxx
-- 示例：2026-03-26_run_016
 
-### bug_id
-- 固定允许值：
-  - bug_01_dp_boundary
-  - bug_02_no_energy_recompute
-  - bug_03_height_transpose
+bug_id：固定允许值
+- bug_01_dp_boundary
+- bug_02_no_energy_recompute
+- bug_03_height_transpose
 
-### mode
-- 允许值：direct_answer / plain_guidance / coe_guided
+mode：只允许
+- direct_answer
+- plain_guidance
+- coe_guided
 
-### diagnosis_correct
-- 0 = 未正确定位根因
-- 1 = 正确定位根因
+diagnosis_correct：0/1
+- 0 = 没定位到主错误
+- 1 = 主错误定位正确
 
-### patch_runnable
-- 0 = 修复代码不可运行
-- 1 = 修复代码可运行
+patch_runnable：0/1
+- 0 = 修补后不能跑
+- 1 = 修补后能跑
 
-### regression_pass
-- 0 = 回归测试未通过
-- 1 = 回归测试通过
+regression_pass：0/1
+- 0 = 修补后回归测试未通过
+- 1 = 修补后回归测试通过
 
-### fix_rounds
-- 非负整数。
-- 从首次失败到回归通过之间的修复轮次。
-- 若未通过，记录已发生轮次并在 notes 说明中止原因。
+fix_rounds：非负整数
 
-### time_to_fix_min
-- 单位：分钟。
-- 从开始修复到首次回归通过的耗时。
-- 若未通过，填 NA。
+time_to_fix_min：分钟；未修好填 NA
 
-### notes
-- 简短记录：
-  - 触发条件
-  - 核心补丁点
-  - 未通过原因（如有）
+notes：写触发条件、关键修补点、残留问题
 
-## 填表规则
-- 每个 run_id + bug_id 保留一行。
-- 三种 mode 建议对同一 bug 使用相同测试输入与回归脚本。
-- 若测试协议变更，必须在 notes 明确标注。
+填表规则：
+- 一次 bug-repair run 只保留一行主记录
+- 必须先写 symptom / diagnosis / patch 事实，再回填 CSV

@@ -2,49 +2,36 @@
 
 适用范围：
 - metrics/a1_codegen_perf_v0.csv
-- A1 replication runs（run_010 及之后）
 
 目标：
-- 将“指导效率”和“生成代码运行性能”分离记录。
-- 固定字段口径，避免 method 含义混用。
+- 分离“guidance 质量”和“生成代码运行性能”。
 
-## 字段定义与取值
+字段定义：
 
-### run_id
+run_id：
 - 格式：YYYY-MM-DD_run_xxx
-- 示例：2026-03-26_run_010
 
-### image_name
-- 允许值：bing1.png / original.png
+image_name：
+- 固定为 bing1.png / original.png
 
-### method
-- 固定含义：guidance mode（不是图像算法方法名）。
-- 允许值：direct_answer / plain_guidance / coe_guided
+method：这里固定解释为 guidance mode，只允许
+- direct_answer
+- plain_guidance
+- coe_guided
 
-### width_runtime_s
-- 单位：秒。
-- 记录 seam_width 的运行时间。
+width_runtime_s：该图上完成 width shrink 全流程耗时（秒）
 
-### height_runtime_s
-- 单位：秒。
-- 记录 seam_height 的运行时间。
+height_runtime_s：该图上完成 height shrink 全流程耗时（秒）
 
-### total_runtime_s
-- 单位：秒。
-- 计算方式：width_runtime_s + height_runtime_s。
-- 建议保留三位小数。
+total_runtime_s：同一图上的总耗时；口径固定为 width + height + compare 输出
 
-### output_ok
-- 0 = 输出不完整或不可用
-- 1 = 输出完整且可用
+output_ok：0/1
+- 0 = 该图协议输出不完整、不可检查，或结果明显异常
+- 1 = 该图 width/height/compare 输出都完整，且结果不是明显坏图
 
-### notes
-- 简短记录异常情况：
-  - 超时
-  - 中断重跑
-  - 参数偏离协议（若有）
+notes：记录异常、协议偏离、特殊说明
 
-## 填表规则
-- 每个 run_id 对每张图各一行（通常每个 run 2 行）。
-- 若偏离 report/a1_eval_protocol_v0.md，必须在 notes 写明偏离原因和影响。
-- 本表仅描述运行性能，不用于评价 runnable/correct/self_check。
+填表规则：
+- 每个 run 每张图一行，因此一个 run 默认写 2 行
+- 不把 seam_width / crop / resize_linear 填到 method
+- 若偏离 report/a1_eval_protocol_v0.md，必须在 notes 写明
