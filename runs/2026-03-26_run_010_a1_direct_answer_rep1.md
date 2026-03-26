@@ -11,43 +11,43 @@
 - env: mm26
 
 ## Fixed protocol checklist
-- [ ] test images = bing1.png, original.png
-- [ ] max_side = 420
-- [ ] shrink only
-- [ ] width shrink done
-- [ ] height shrink done
-- [ ] compare output generated
+- [x] test images = bing1.png, original.png
+- [x] max_side = 420
+- [x] shrink only
+- [x] width shrink done
+- [x] height shrink done
+- [x] compare output generated
 
 ## Prompt and raw output
-- prompt_used.md: solutions/hw1_op1/generated/run_010_direct_answer_rep1/prompt_used.md
-- model_raw_response.md: solutions/hw1_op1/generated/run_010_direct_answer_rep1/model_raw_response.md
-- src path: solutions/hw1_op1/generated/run_010_direct_answer_rep1/src/
-- outputs path: outputs/hw1_op1/run_010_direct_answer_rep1/
+- prompt_used.md: solutions/hw1_op1/generated/run_010_direct_answer/prompt_used.md
+- model_raw_response.md: solutions/hw1_op1/generated/run_010_direct_answer/model_raw_response.md
+- src path: solutions/hw1_op1/generated/run_010_direct_answer/src/
+- outputs path: outputs/hw1_op1/run_010_direct_answer/
 
 ## First-pass assessment
-- artifact_complete:
-- runnable:
-- correct:
-- self_check:
-- first_error_type:
-- first_error_summary:
+- artifact_complete: 2
+- runnable: 1
+- correct: 2
+- self_check: 1
+- first_error_type: none
+- first_error_summary: none
 
 ## Fix log
-- fix_rounds:
-- fix_step_1:
-- fix_step_2:
-- final_working_time_min:
+- fix_rounds: 0
+- fix_step_1: none
+- fix_step_2: none
+- final_working_time_min: 1.1
 
 ## Guidance metrics row to append
 - CSV target: metrics/a1_guidance_eval_v0.csv
-- row:
+- row: 2026-03-26_run_010,A1,direct_answer,prompts/a1/baseline_direct_answer_v0.md,none,2,1,2,1,none,0,1.1,pilot replication 1
 
 ## Codegen performance rows to append
 - CSV target: metrics/a1_codegen_perf_v0.csv
-- row 1:
-- row 2:
+- row 1: 2026-03-26_run_010,bing1.png,direct_answer,17.8966,5.1289,24.1589,1,pilot replication 1
+- row 2: 2026-03-26_run_010,original.png,direct_answer,33.1987,17.0441,51.4347,1,pilot replication 1
 
 ## Notes
-- protocol deviation:
-- notable behavior:
-- comparison to prior runs:
+- protocol deviation: none
+- notable behavior: first pass runnable and complete under fixed protocol.
+- comparison to prior runs: runtime is close to run_006 direct_answer baseline.

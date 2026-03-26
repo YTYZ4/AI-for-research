@@ -18,12 +18,12 @@
 - plain_guidance:
 - coe_guided:
 
-### 3) fix_rounds (mean or median) by mode
+### 3) fix_rounds median by mode
 - direct_answer:
 - plain_guidance:
 - coe_guided:
 
-### 4) time_to_first_working_min (mean or median) by mode
+### 4) time_to_first_working_min median by mode
 - direct_answer:
 - plain_guidance:
 - coe_guided:
