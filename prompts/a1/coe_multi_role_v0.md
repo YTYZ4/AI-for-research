@@ -50,5 +50,5 @@ Reviewer 检查表（直接对照 Task Card，不另起炉灶）：
 
 评估落地：
 1. 严格按 report/a1_eval_protocol_v0.md 运行。
-2. 结果记录到 runs/2026-03-27_run_008_a1_coe_guided.md。
+2. 结果记录到当前 run 对应的 runs 文档。
 3. 指标写入 metrics/a1_guidance_eval_v0.csv。
