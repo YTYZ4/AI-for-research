@@ -5,3 +5,15 @@ run_id,image_name,method,width_runtime_s,height_runtime_s,total_runtime_s,output
 2026-03-26_run_016,original.png,coe_guided,33.8726,17.2976,52.3456,1,pilot replication 1
 2026-03-26_run_013,bing1.png,plain_guidance,49.7853,14.3805,66.9598,1,replication queue item 1
 2026-03-26_run_013,original.png,plain_guidance,96.7485,45.7774,144.9900,1,replication queue item 1
+2026-03-26_run_011,bing1.png,direct_answer,73.7054,19.4438,95.2078,1,replication queue item 2
+2026-03-26_run_011,original.png,direct_answer,140.3213,70.5032,213.7220,1,replication queue item 2
+2026-03-26_run_014,bing1.png,plain_guidance,72.9664,20.5696,95.5802,1,replication queue item 2
+2026-03-26_run_014,original.png,plain_guidance,148.3295,74.2918,225.4836,1,replication queue item 2
+2026-03-26_run_012,bing1.png,direct_answer,18.7837,4.9949,24.4739,1,replication queue item 4
+2026-03-26_run_012,original.png,direct_answer,36.6128,17.5688,55.1409,1,replication queue item 4
+2026-03-26_run_017,bing1.png,coe_guided,18.6107,5.2758,24.5917,1,replication queue item 3
+2026-03-26_run_017,original.png,coe_guided,35.7379,27.4159,64.1357,1,replication queue item 3
+2026-03-26_run_015,bing1.png,plain_guidance,18.8012,5.1230,24.6274,1,replication queue item 6
+2026-03-26_run_015,original.png,plain_guidance,35.0429,17.6436,53.6999,1,replication queue item 6
+2026-03-26_run_018,bing1.png,coe_guided,18.6513,5.2198,24.5880,1,replication queue item 7
+2026-03-26_run_018,original.png,coe_guided,35.8995,17.9301,54.8753,1,replication queue item 7

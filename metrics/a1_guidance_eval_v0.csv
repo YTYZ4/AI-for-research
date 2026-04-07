@@ -5,3 +5,9 @@ run_id,case_id,mode,prompt_file,task_card_version,artifact_complete,runnable,cor
 2026-03-26_run_010,A1,direct_answer,prompts/a1/baseline_direct_answer_v0.md,none,2,1,2,1,none,0,1.1,pilot replication 1
 2026-03-26_run_016,A1,coe_guided,prompts/a1/coe_multi_role_v0.md,v1,2,1,2,2,none,0,1.2,pilot replication 1
 2026-03-26_run_013,A1,plain_guidance,prompts/a1/baseline_plain_guidance_v0.md,v1,2,1,2,2,none,0,3.6,replication queue item 1
+2026-03-26_run_011,A1,direct_answer,prompts/a1/baseline_direct_answer_v0.md,none,2,1,2,1,none,0,5.2,replication queue item 2
+2026-03-26_run_014,A1,plain_guidance,prompts/a1/baseline_plain_guidance_v0.md,v1,2,1,2,2,none,0,5.4,replication queue item 2
+2026-03-26_run_012,A1,direct_answer,prompts/a1/baseline_direct_answer_v0.md,none,2,1,2,1,none,0,1.3,replication queue item 4
+2026-03-26_run_017,A1,coe_guided,prompts/a1/coe_multi_role_v0.md,v1,2,1,2,2,none,0,1.5,replication queue item 3
+2026-03-26_run_015,A1,plain_guidance,prompts/a1/baseline_plain_guidance_v0.md,v1,2,1,2,2,none,0,5.5,replication queue item 6
+2026-03-26_run_018,A1,coe_guided,prompts/a1/coe_multi_role_v0.md,v1,2,1,2,2,none,0,1.4,replication queue item 7

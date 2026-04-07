@@ -13,12 +13,12 @@
 - run_010: completed
 - run_016: completed
 - run_013: completed
-- run_011: pending
-- run_014: pending
-- run_017: pending
-- run_012: pending
-- run_015: pending
-- run_018: pending
+- run_011: completed
+- run_014: completed
+- run_017: completed
+- run_012: completed
+- run_015: completed
+- run_018: completed
 
 执行纪律：
 - 只变会话，不变协议。

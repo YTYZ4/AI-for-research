@@ -11,12 +11,12 @@
 - env: mm26
 
 ## Fixed protocol checklist
-- [ ] test images = bing1.png, original.png
-- [ ] max_side = 420
-- [ ] shrink only
-- [ ] width shrink done
-- [ ] height shrink done
-- [ ] compare output generated
+- [x] test images = bing1.png, original.png
+- [x] max_side = 420
+- [x] shrink only
+- [x] width shrink done
+- [x] height shrink done
+- [x] compare output generated
 
 ## Prompt and raw output
 - prompt_used.md: solutions/hw1_op1/generated/run_018_coe_guided_rep3/prompt_used.md
@@ -25,29 +25,29 @@
 - outputs path: outputs/hw1_op1/run_018_coe_guided_rep3/
 
 ## First-pass assessment
-- artifact_complete:
-- runnable:
-- correct:
-- self_check:
-- first_error_type:
-- first_error_summary:
+- artifact_complete: 2
+- runnable: 1
+- correct: 2
+- self_check: 2
+- first_error_type: none
+- first_error_summary: none
 
 ## Fix log
-- fix_rounds:
-- fix_step_1:
-- fix_step_2:
-- final_working_time_min:
+- fix_rounds: 0
+- fix_step_1: none
+- fix_step_2: none
+- final_working_time_min: 1.4
 
 ## Guidance metrics row to append
 - CSV target: metrics/a1_guidance_eval_v0.csv
-- row:
+- row: 2026-03-26_run_018,A1,coe_guided,prompts/a1/coe_multi_role_v0.md,v1,2,1,2,2,none,0,1.4,replication queue item 7
 
 ## Codegen performance rows to append
 - CSV target: metrics/a1_codegen_perf_v0.csv
-- row 1:
-- row 2:
+- row 1: 2026-03-26_run_018,bing1.png,coe_guided,18.6513,5.2198,24.5880,1,replication queue item 7
+- row 2: 2026-03-26_run_018,original.png,coe_guided,35.8995,17.9301,54.8753,1,replication queue item 7
 
 ## Notes
-- protocol deviation:
-- notable behavior:
-- comparison to prior runs:
+- protocol deviation: none
+- notable behavior: first pass runnable and complete under fixed protocol.
+- comparison to prior runs: runtime is close to run_016 and faster than run_017 on original height pass.
