@@ -3,3 +3,5 @@ run_id,image_name,method,width_runtime_s,height_runtime_s,total_runtime_s,output
 2026-03-26_run_010,original.png,direct_answer,33.1987,17.0441,51.4347,1,pilot replication 1
 2026-03-26_run_016,bing1.png,coe_guided,18.2013,5.1697,24.5153,1,pilot replication 1
 2026-03-26_run_016,original.png,coe_guided,33.8726,17.2976,52.3456,1,pilot replication 1
+2026-03-26_run_013,bing1.png,plain_guidance,49.7853,14.3805,66.9598,1,replication queue item 1
+2026-03-26_run_013,original.png,plain_guidance,96.7485,45.7774,144.9900,1,replication queue item 1
