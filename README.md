@@ -18,6 +18,7 @@
 - 已完成 `1` 次内部 dry run：`2026-04-20` 用 `T2_A1_bug_01 + process_guided_workflow` 完整走通 `participant_form -> session_record -> scoring_sheet -> CSV` 回填链路。
 - dry run 后已把 notes template 补上 `session_id` 和最终代码路径，并给 participant form 补了前测 / 后测填写时机提示。
 - 首轮 `4` 人 pilot 的排班表、任务包清单，以及 process-guided 条件下要发放的 bug-repair checklist / notes template 已补出。
+- 中期汇报 PPT 已整理完成：`report/中期汇报.pptx`。
 - 当前中期重点不是继续追加同类 rerun，而是收束模板库、检查清单、错误分类、题库页和原型入口。
 
 ## 当前冻结的研究结论
@@ -48,6 +49,7 @@
 - [report/a2_expanded_scope_summary_v0.md](report/a2_expanded_scope_summary_v0.md)
 - [report/a2_expanded_scope_selected_entries_v1.md](report/a2_expanded_scope_selected_entries_v1.md)
 - [report/phase2_progress_report_2026-04-12.md](report/phase2_progress_report_2026-04-12.md)
+- [report/中期汇报.pptx](report/中期汇报.pptx)
 - [report/timeline_scope_alignment_2026-04-12.md](report/timeline_scope_alignment_2026-04-12.md)
 - [report/prompt_template_library_v1.md](report/prompt_template_library_v1.md)
 - [report/structured_modeling_checklist_v1.md](report/structured_modeling_checklist_v1.md)
