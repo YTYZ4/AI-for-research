@@ -1,0 +1,12 @@
+{
+  "id": "graph_units_unknown",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "S到A的2英里与A到T的1千米需要统一为千米，但原文未给出英里与千米的换算因子，且明确不允许自行假设换算因子。请提供英里到千米的换算关系或该边以千米为单位的数值。",
+  "total_tokens": 4404,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "graph_units_unknown/20261016_221953_a9a0a24a",
+  "elapsed_seconds": 1.3679570410167798
+}

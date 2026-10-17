@@ -1,0 +1,29 @@
+{
+  "method": "逐项阅读47场景的模型假设/追问，检查显示审计；非盲法独立评分",
+  "automatic_passes": 47,
+  "question_checks_applied": 17,
+  "capacity_domain_question_checks": 5,
+  "common_previous_scope_passes": 35,
+  "new_boundary_passes": 12,
+  "unnecessary_clarifications_on_ready_expected": 0,
+  "integer_restrictions_observed": 0,
+  "warnings": [
+    {
+      "id": "DYN01_error",
+      "type": "clarification_suggestion_conflicts_with_no_change_request",
+      "detail": "原题明确不得取绝对值或改动参数；回答正确拦截k=-0.1，但又建议确认是否把符号视为笔误并改为0.1。没有实际改值或求解，建议仍不符合题面限制。现有非容量追问检查只核状态和主题，未捕获此语义问题。"
+    },
+    {
+      "id": "capacity_above_symbols",
+      "type": "presentation_boundary",
+      "detail": "正确的条件性单位换算系统说明仍混在模型假设中；固定模板并未完全隔离系统说明，不影响本题数值。"
+    }
+  ],
+  "display_suppression": [
+    {
+      "id": "cooling_units",
+      "detail": "移出一条正确的程序换算描述；不是数学修复，不计入格式修复新增通过。"
+    }
+  ],
+  "limitations": "每场景一次；自动47/47不是全部语义无误。原始通过包括正常的本地提取、域提示及求解。"
+}

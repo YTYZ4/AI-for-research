@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "structural_match": true,
+  "variable_alignment": {
+    "W1_S1": "W1_S1",
+    "W1_S2": "W1_S2",
+    "W1_S3": "W1_S3",
+    "W2_S1": "W2_S1",
+    "W2_S2": "W2_S2",
+    "W2_S3": "W2_S3"
+  },
+  "numeric": {
+    "passed": true,
+    "checks": {
+      "nonnegative": true,
+      "W1": true,
+      "W2": true,
+      "S1": true,
+      "S2": true,
+      "S3": true,
+      "optimal_cost": true,
+      "claimed_cost": true
+    },
+    "cost": 170.0,
+    "proven_lower_bound": 170,
+    "scope": "仅适用于 OPT02 原始开发数据；不评价自然语言建模完整性。"
+  },
+  "scope": "严格结构匹配；等价重写可能需人工复核。单位与自然语言假设另行人工审核。"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "graph_units_small_scientific",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "",
+  "total_tokens": 4275,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "graph_units_small_scientific/20261016_215903_1ec168b0",
+  "elapsed_seconds": 2.165893875004258
+}

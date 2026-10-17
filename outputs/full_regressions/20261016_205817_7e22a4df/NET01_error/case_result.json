@@ -1,0 +1,12 @@
+{
+  "id": "NET01_error",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "最短路径仅支持非负权；存在负权边 S→A（-2 千米），且用户明确负权重不可修改。负权最短路径问题超出当前支持范围。",
+  "total_tokens": 3413,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "NET01_error/20261016_205918_f09d0b0a",
+  "elapsed_seconds": 1.6867521249805577
+}

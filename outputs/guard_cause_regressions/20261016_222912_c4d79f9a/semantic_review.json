@@ -1,0 +1,40 @@
+{
+  "reviewer": "assistant_read_only_review",
+  "independent_human_review": false,
+  "automatic_results_unchanged": true,
+  "immutable_lock_cannot_round_1": {
+    "classification_retained": "local_guard",
+    "finding": "原响应已正确unsupported且明确“也不请求修改或替代数值”。旧has_replacement_suggestion未识别“不请求”的否定范围，误判为改值建议。"
+  },
+  "neutral_checks_without_conflict_keyword": [
+    {
+      "case": "remaining_permission_conflict",
+      "repeat": 1,
+      "finding": "已列出不同容量记录并中立询问，没有要求正值；旧规则要求冲突/矛盾/不一致等显式关键词，因此仍计local_guard。"
+    },
+    {
+      "case": "conflict_two_positive",
+      "repeat": 1,
+      "finding": "已列出不同容量记录并中立询问，没有要求正值；旧规则要求冲突/矛盾/不一致等显式关键词，因此仍计local_guard。"
+    },
+    {
+      "case": "conflict_all_negative",
+      "repeat": 3,
+      "finding": "已列出不同容量记录并中立询问，没有要求正值；旧规则要求冲突/矛盾/不一致等显式关键词，因此仍计local_guard。"
+    }
+  ],
+  "graph_units_fractional_flow": {
+    "repeats": 3,
+    "finding": "三次仍原始ready，由程序换算后整数域检查接管。原值/单位提取正确，不能把本地结果当原始成功。"
+  },
+  "flow_integer_conversion_round_3": {
+    "classification_retained": "failed",
+    "finding": "模型承认1000升/小时=1立方米/小时是整数，但编造求解器只支持原题单位的限制而unsupported。不是换算算术错误，是程序能力说明错误。其他两次同题原始通过，反映波动。"
+  },
+  "generation_context_caveat": "原始通过包括本地提取/分流提示；部分规则前移到生成前，不能宣称裸模型能力提升或摆脱本地规则。",
+  "limits": [
+    "本轮未重跑完整101场景。",
+    "19场景为选择出的开发失败及对照，不能用于保留题泛化或总体稳定率结论。",
+    "没有消融实验区分提示清理与新增分流提示各自的因果贡献。"
+  ]
+}

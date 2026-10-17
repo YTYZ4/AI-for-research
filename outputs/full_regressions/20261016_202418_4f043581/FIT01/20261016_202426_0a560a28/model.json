@@ -1,0 +1,14 @@
+{
+  "task_type": "polynomial_fit",
+  "name": "传感器线性标定",
+  "assumptions": [
+    "附件 CSV 已含 x,y,split 三列，且 split 取值为 train/test。",
+    "按 split 列严格划分训练集与留出集。",
+    "模型形式为一元普通最小二乘多项式 y=a*x+b，即带截距的 1 阶多项式拟合。",
+    "留出集评估指标为 RMSE 和 MAE。",
+    "数据由 --data 提供，仅在本地拟合并保存报告。"
+  ],
+  "degree": 1,
+  "x_unit": "伏",
+  "y_unit": "摄氏度"
+}

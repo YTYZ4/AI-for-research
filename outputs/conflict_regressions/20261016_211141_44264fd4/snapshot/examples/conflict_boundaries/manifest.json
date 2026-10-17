@@ -1,0 +1,160 @@
+[
+  {
+    "id": "zero_positive",
+    "family": "dynamics",
+    "problem": "examples/conflict_boundaries/zero_positive.txt",
+    "initial": 1.5,
+    "capacity": 0.5,
+    "expected_envelopes": [
+      "needs_clarification"
+    ],
+    "conflict_values": [
+      0,
+      0.5
+    ],
+    "question_keywords": [
+      "容量",
+      "K"
+    ]
+  },
+  {
+    "id": "two_positive",
+    "family": "dynamics",
+    "problem": "examples/conflict_boundaries/two_positive.txt",
+    "initial": 1.5,
+    "capacity": 0.5,
+    "expected_envelopes": [
+      "needs_clarification"
+    ],
+    "conflict_values": [
+      0.5,
+      1
+    ],
+    "question_keywords": [
+      "容量",
+      "K"
+    ]
+  },
+  {
+    "id": "reverse",
+    "family": "dynamics",
+    "problem": "examples/conflict_boundaries/reverse.txt",
+    "initial": 1.5,
+    "capacity": 0.5,
+    "expected_envelopes": [
+      "needs_clarification"
+    ],
+    "conflict_values": [
+      0.5,
+      0
+    ],
+    "question_keywords": [
+      "容量",
+      "K"
+    ]
+  },
+  {
+    "id": "three_values",
+    "family": "dynamics",
+    "problem": "examples/conflict_boundaries/three_values.txt",
+    "initial": 1.5,
+    "capacity": 0.5,
+    "expected_envelopes": [
+      "needs_clarification"
+    ],
+    "conflict_values": [
+      -1,
+      0,
+      0.5
+    ],
+    "question_keywords": [
+      "容量",
+      "K"
+    ]
+  },
+  {
+    "id": "same_positive",
+    "family": "dynamics",
+    "problem": "examples/conflict_boundaries/same_positive.txt",
+    "initial": 1.5,
+    "capacity": 0.5,
+    "expected_envelopes": [
+      "ready"
+    ],
+    "conflict_values": [],
+    "question_keywords": []
+  },
+  {
+    "id": "same_invalid",
+    "family": "dynamics",
+    "problem": "examples/conflict_boundaries/same_invalid.txt",
+    "initial": 1.5,
+    "capacity": 0,
+    "expected_envelopes": [
+      "unsupported"
+    ],
+    "conflict_values": [],
+    "question_keywords": [
+      "容量",
+      "K"
+    ]
+  },
+  {
+    "id": "corrected",
+    "family": "dynamics",
+    "problem": "examples/conflict_boundaries/corrected.txt",
+    "initial": 1.5,
+    "capacity": 0.5,
+    "expected_envelopes": [
+      "ready"
+    ],
+    "conflict_values": [],
+    "question_keywords": []
+  },
+  {
+    "id": "missing",
+    "family": "dynamics",
+    "problem": "examples/conflict_boundaries/missing.txt",
+    "initial": 1.5,
+    "capacity": 0.5,
+    "expected_envelopes": [
+      "needs_clarification"
+    ],
+    "conflict_values": [],
+    "question_keywords": [
+      "容量",
+      "K"
+    ]
+  },
+  {
+    "id": "valid_above",
+    "family": "dynamics",
+    "problem": "examples/conflict_boundaries/valid_above.txt",
+    "initial": 1.5,
+    "capacity": 0.5,
+    "expected_envelopes": [
+      "ready"
+    ],
+    "conflict_values": [],
+    "question_keywords": []
+  },
+  {
+    "id": "previous_failure",
+    "family": "dynamics",
+    "problem": "examples/conflict_boundaries/previous_failure.txt",
+    "initial": 1.5,
+    "capacity": null,
+    "expected_envelopes": [
+      "needs_clarification"
+    ],
+    "conflict_values": [
+      0,
+      0.5
+    ],
+    "question_keywords": [
+      "冲突",
+      "矛盾",
+      "不一致"
+    ]
+  }
+]

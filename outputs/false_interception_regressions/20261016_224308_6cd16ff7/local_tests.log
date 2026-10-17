@@ -1,0 +1,20 @@
+错误：CSV 第2行含缺失/非有限数字、列数错误或非法 split（仅 train/test）；请修正原数据后重试
+----------------------------------------------------------------------
+Ran 196 tests in 0.368s
+
+OK
+动态求解：simulated，末时刻值=23.485095，解析对照最大误差=1.87e-08
+运行记录与报告：/private/var/folders/gl/r8wtwnh1691cl0q_mt_4_yvc0000gn/T/tmpfc2kqumh/20261016_224307_d0dc78d7
+运行记录与报告：/private/var/folders/gl/r8wtwnh1691cl0q_mt_4_yvc0000gn/T/tmpv27a687n/20261016_224307_98c3bc58
+拟合完成：阶数=2，训练 RMSE=0.0674599，留出 RMSE=0.0913611
+运行记录与报告：/private/var/folders/gl/r8wtwnh1691cl0q_mt_4_yvc0000gn/T/tmpb5izdf5c/20261016_224307_a9881e30
+图网络：optimal，结果=15 立方米/小时
+最小割容量：15
+运行记录与报告：/private/var/folders/gl/r8wtwnh1691cl0q_mt_4_yvc0000gn/T/tmpfbg_lr7b/20261016_224307_7022dd6c
+运行记录与报告：/private/var/folders/gl/r8wtwnh1691cl0q_mt_4_yvc0000gn/T/tmp8my7y0en/20261016_224307_98160045
+输入生产计划、运输分配、拟合、动态系统或图网络问题（可多行，空行结束）：
+需要补充：Logistic 初值须为非负实数、环境容量 K 须为正实数（可为小数，不要求整数）；K=0 时 N/K 无定义。请确认并提供有效的初值和容量，不会擅自替换数值。
+本轮记录：/private/var/folders/gl/r8wtwnh1691cl0q_mt_4_yvc0000gn/T/tmpyez634rb/20261016_224308_660ff394
+直接输入补充条件（一行；回车留空或 /quit 结束。提交后会再次调用模型）：
+动态求解：simulated，末时刻值=978.17805，解析对照最大误差=2.64e-06
+运行记录与报告：/private/var/folders/gl/r8wtwnh1691cl0q_mt_4_yvc0000gn/T/tmpyez634rb/20261016_224308_6b00a84b

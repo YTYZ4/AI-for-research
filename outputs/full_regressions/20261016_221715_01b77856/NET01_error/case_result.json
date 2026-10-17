@@ -1,0 +1,12 @@
+{
+  "id": "NET01_error",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "最短路径仅支持非负权重；原题给定边 S→A 的权重为 -2 千米，不能修改，因此当前问题超出支持范围。",
+  "total_tokens": 4369,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "NET01_error/20261016_221812_2fb2eafc",
+  "elapsed_seconds": 1.2888371670269407
+}

@@ -1,0 +1,35 @@
+{
+  "task_type": "graph",
+  "name": "S到T输水网络最大流",
+  "problem": "max_flow",
+  "nodes": [
+    "S",
+    "A",
+    "T"
+  ],
+  "source": "S",
+  "target": "T",
+  "edges": [
+    {
+      "source": "S",
+      "target": "A",
+      "weight": 10
+    },
+    {
+      "source": "A",
+      "target": "T",
+      "weight": 6
+    },
+    {
+      "source": "S",
+      "target": "T",
+      "weight": 5
+    }
+  ],
+  "unit": "立方米/小时",
+  "assumptions": [
+    "所有管道均为有向边，方向如原文所述。",
+    "边权为原题给出的容量，不自行换算；求解器按顶层单位统一换算后计算最大流。",
+    "节点及边集完整，无其他管道。"
+  ]
+}

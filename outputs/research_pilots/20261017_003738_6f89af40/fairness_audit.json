@@ -1,0 +1,122 @@
+{
+  "pairs": [
+    {
+      "case": "V1",
+      "repeat": 1,
+      "shared_input_equal": true,
+      "initial_model_equal": true,
+      "system_equal": true,
+      "budget_equal": true,
+      "feedback_matches": true
+    },
+    {
+      "case": "V1",
+      "repeat": 2,
+      "shared_input_equal": true,
+      "initial_model_equal": true,
+      "system_equal": true,
+      "budget_equal": true,
+      "feedback_matches": true
+    },
+    {
+      "case": "V1",
+      "repeat": 3,
+      "shared_input_equal": true,
+      "initial_model_equal": true,
+      "system_equal": true,
+      "budget_equal": true,
+      "feedback_matches": true
+    },
+    {
+      "case": "V2",
+      "repeat": 1,
+      "shared_input_equal": true,
+      "initial_model_equal": true,
+      "system_equal": true,
+      "budget_equal": true,
+      "feedback_matches": true
+    },
+    {
+      "case": "V2",
+      "repeat": 2,
+      "shared_input_equal": true,
+      "initial_model_equal": true,
+      "system_equal": true,
+      "budget_equal": true,
+      "feedback_matches": true
+    },
+    {
+      "case": "V2",
+      "repeat": 3,
+      "shared_input_equal": true,
+      "initial_model_equal": true,
+      "system_equal": true,
+      "budget_equal": true,
+      "feedback_matches": true
+    },
+    {
+      "case": "V3",
+      "repeat": 1,
+      "shared_input_equal": true,
+      "initial_model_equal": true,
+      "system_equal": true,
+      "budget_equal": true,
+      "feedback_matches": true
+    },
+    {
+      "case": "V3",
+      "repeat": 2,
+      "shared_input_equal": true,
+      "initial_model_equal": true,
+      "system_equal": true,
+      "budget_equal": true,
+      "feedback_matches": true
+    },
+    {
+      "case": "V3",
+      "repeat": 3,
+      "shared_input_equal": true,
+      "initial_model_equal": true,
+      "system_equal": true,
+      "budget_equal": true,
+      "feedback_matches": true
+    },
+    {
+      "case": "V4",
+      "repeat": 1,
+      "shared_input_equal": true,
+      "initial_model_equal": true,
+      "system_equal": true,
+      "budget_equal": true,
+      "feedback_matches": true
+    },
+    {
+      "case": "V4",
+      "repeat": 2,
+      "shared_input_equal": true,
+      "initial_model_equal": true,
+      "system_equal": true,
+      "budget_equal": true,
+      "feedback_matches": true
+    },
+    {
+      "case": "V4",
+      "repeat": 3,
+      "shared_input_equal": true,
+      "initial_model_equal": true,
+      "system_equal": true,
+      "budget_equal": true,
+      "feedback_matches": true
+    }
+  ],
+  "all_pairs_equal": true,
+  "calls": 48,
+  "requested_models": [
+    "deepseek-flash"
+  ],
+  "response_models": [
+    "deepseek-flash"
+  ],
+  "all_two_rounds": true,
+  "direct_corrections": 0
+}

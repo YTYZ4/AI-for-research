@@ -1,0 +1,11 @@
+{
+  "applied": true,
+  "passed": true,
+  "checks": {
+    "expected_status": true,
+    "nonempty_question": true,
+    "relevant_topic": true
+  },
+  "text": "原题要求“最小费用最大流”，属于带费用的流问题；当前仅支持最短路径和单商品最大流，不支持最小费用流。现有支持边界是：最短路径可处理边权与单位，单商品最大流可处理容量与单位，但不处理费用最小化目标。",
+  "scope": "状态/主题初筛；显式禁止改值时检查修改建议，否则Logistic容量检查正实数限制。不是完整语义证明。"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NET02_error",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "最大流不支持负容量；S到A的容量为-3立方米/小时，无法按最大流模型处理。请确认该边容量是否应为非负整数。",
+  "total_tokens": 2445,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "NET02_error/20261016_165656_1a251097",
+  "elapsed_seconds": 1.0112772500142455
+}

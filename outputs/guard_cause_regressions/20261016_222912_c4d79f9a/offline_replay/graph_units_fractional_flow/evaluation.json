@@ -1,0 +1,42 @@
+{
+  "id": "graph_units_fractional_flow",
+  "api_calls": 0,
+  "passed": true,
+  "source": "outputs/full_regressions/20261016_221715_01b77856/graph_units_fractional_flow/api.json",
+  "source_sha256": "df395d5b74f107c2103b25a980e406c0d55ccfa81bc8c269c73ef91f575769e1",
+  "question_audit": {
+    "applied": true,
+    "passed": true,
+    "checks": {
+      "expected_status": true,
+      "nonempty_question": true,
+      "relevant_topic": true
+    },
+    "text": "换算后容量不是整数，超出当前最大流求解器范围；保留原值，不截断或四舍五入。",
+    "scope": "状态/主题初筛；显式禁止改值时检查修改建议，否则Logistic容量检查正实数限制。不是完整语义证明。"
+  },
+  "flow_audit": {
+    "passed": true,
+    "checks": {
+      "nonready": true,
+      "integer_limitation": true,
+      "no_forbidden_change": true
+    }
+  },
+  "local_validation": {
+    "action": "needs_clarification",
+    "reason": "换算后容量不是整数，超出当前最大流求解器范围；保留原值，不截断或四舍五入。",
+    "original_status": "ready",
+    "model_executed": false
+  },
+  "classification": {
+    "raw_schema_valid": true,
+    "format_action": "not_needed",
+    "local_guard_used": true,
+    "source_quote_repaired": false,
+    "original_pass": false,
+    "after_format_pass": false,
+    "final_pass": true,
+    "pass_path": "local_guard"
+  }
+}

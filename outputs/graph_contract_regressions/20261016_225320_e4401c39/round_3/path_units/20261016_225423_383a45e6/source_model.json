@@ -1,0 +1,77 @@
+{
+  "task_type": "graph_input",
+  "name": "有向道路最短路",
+  "problem": "shortest_path",
+  "nodes": [
+    "S",
+    "A",
+    "B",
+    "C",
+    "T"
+  ],
+  "source": "S",
+  "target": "T",
+  "edges": [
+    {
+      "source": "S",
+      "target": "A",
+      "weight": 4000,
+      "unit": "米",
+      "source_quote": "S到A 4000米",
+      "unit_quote": "米"
+    },
+    {
+      "source": "S",
+      "target": "B",
+      "weight": 2,
+      "unit": "千米",
+      "source_quote": "S到B 2千米",
+      "unit_quote": "千米"
+    },
+    {
+      "source": "B",
+      "target": "A",
+      "weight": 1000,
+      "unit": "米",
+      "source_quote": "B到A 1000米",
+      "unit_quote": "米"
+    },
+    {
+      "source": "A",
+      "target": "C",
+      "weight": 2,
+      "unit": "千米",
+      "source_quote": "A到C 2千米",
+      "unit_quote": "千米"
+    },
+    {
+      "source": "B",
+      "target": "C",
+      "weight": 5000,
+      "unit": "米",
+      "source_quote": "B到C 5000米",
+      "unit_quote": "米"
+    },
+    {
+      "source": "C",
+      "target": "T",
+      "weight": 3,
+      "unit": "千米",
+      "source_quote": "C到T 3千米",
+      "unit_quote": "千米"
+    },
+    {
+      "source": "A",
+      "target": "T",
+      "weight": 7,
+      "unit": "千米",
+      "source_quote": "A到T 7千米",
+      "unit_quote": "千米"
+    }
+  ],
+  "unit": "米",
+  "assumptions": [
+    "所有给定道路均为只能沿箭头方向通行的单向有向边。",
+    "没有列出其他道路，因此图中不包含未给出的边。"
+  ]
+}

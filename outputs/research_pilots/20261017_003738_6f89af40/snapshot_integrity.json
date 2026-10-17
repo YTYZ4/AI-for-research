@@ -1,0 +1,211 @@
+{
+  "count": 41,
+  "passed": true,
+  "files": [
+    {
+      "path": "modeling_assistant/README.md",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "modeling_assistant/__init__.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "modeling_assistant/__main__.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "modeling_assistant/capacity_conflict.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "modeling_assistant/cli.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "modeling_assistant/config.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "modeling_assistant/configure.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "modeling_assistant/dimension_policy.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "modeling_assistant/dynamics.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "modeling_assistant/extraction.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "modeling_assistant/fitting.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "modeling_assistant/format_repair.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "modeling_assistant/generation_policy.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "modeling_assistant/graph_completeness.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "modeling_assistant/graph_quotes.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "modeling_assistant/graph_routing.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "modeling_assistant/graph_units.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "modeling_assistant/graphs.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "modeling_assistant/missing_capacity.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "modeling_assistant/model.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "modeling_assistant/numeric_text.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "modeling_assistant/parameter_policy.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "modeling_assistant/parser.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "modeling_assistant/presentation.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "modeling_assistant/provider.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "modeling_assistant/request_contract.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "modeling_assistant/response_language.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "modeling_assistant/solver.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "modeling_assistant/source_quotes.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "modeling_assistant/units.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "requirements-assistant-lock.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "research/production_pilot/__init__.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "research/production_pilot/assets/drafts.json",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "research/production_pilot/assets/labels.json",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "research/production_pilot/assets/problem.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "research/production_pilot/assets/reference.json",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "research/production_pilot/checker.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "research/production_pilot/experiment.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "research/production_pilot/judge.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "task_cards/production_feedback_pilot_v1.md",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "tests/test_production_feedback_pilot.py",
+      "snapshot": true,
+      "working": true
+    }
+  ]
+}

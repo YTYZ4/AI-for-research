@@ -1,0 +1,69 @@
+{
+  "id": "remaining_permission_conflict",
+  "api_calls": 0,
+  "passed": true,
+  "source": "outputs/full_regressions/20261016_221715_01b77856/remaining_permission_conflict/api.json",
+  "source_sha256": "5a5b1a99bed801b98d6ebc07fb7aa63e0192e27f03e35c15ac5306b199a36e9f",
+  "question_audit": {
+    "applied": true,
+    "passed": true,
+    "checks": {
+      "expected_status": true,
+      "nonempty_question": true,
+      "relevant_topic": true,
+      "all_conflict_values": true,
+      "neutral": true,
+      "states_conflict": true,
+      "requests_resolution": true,
+      "clarification": true,
+      "correct_dimensions": true
+    },
+    "text": "环境容量K的原文记录相互冲突：“环境容量恒定0个”；“K=0.5个”。请核对并确认哪条记录准确，或补充记录分别适用的条件。系统未选择任何值，也未执行求解。",
+    "scope": "状态/主题初筛；显式禁止改值时检查修改建议，否则Logistic容量检查正实数限制。不是完整语义证明。"
+  },
+  "flow_audit": null,
+  "local_validation": {
+    "action": "needs_clarification",
+    "reason": "容量原文记录冲突，先澄清再校验参数域",
+    "original_status": "needs_clarification",
+    "original_envelope": {
+      "status": "needs_clarification",
+      "questions": [
+        "同一常参数 Logistic 题面中容量 K 的记录存在冲突：原文分别有“环境容量恒定0个”和“K=0.5个”。请核对哪一条准确。若确认 K=0，请说明是否允许修改为正实数环境容量 K（可为小数）及其数量单位；若不修改，则当前模型无效。"
+      ],
+      "model": null
+    },
+    "model_executed": false,
+    "evidence": {
+      "relation": "conflicting",
+      "exact_values": [
+        "0",
+        "0.5"
+      ],
+      "raw_values": [
+        "0",
+        "0.5"
+      ],
+      "values": [
+        0.0,
+        0.5
+      ],
+      "unit": "个",
+      "source_quotes": [
+        "环境容量恒定0个",
+        "K=0.5个"
+      ],
+      "scope": "同一常参数Logistic题面中同单位容量记录；不选择真实值"
+    }
+  },
+  "classification": {
+    "raw_schema_valid": true,
+    "format_action": "not_needed",
+    "local_guard_used": true,
+    "source_quote_repaired": false,
+    "original_pass": false,
+    "after_format_pass": false,
+    "final_pass": true,
+    "pass_path": "local_guard"
+  }
+}

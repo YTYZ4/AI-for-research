@@ -1,0 +1,15 @@
+{
+  "checked_files": 230,
+  "snapshot_mismatches": [],
+  "working_mismatches": [],
+  "unchanged_guard_modules": {
+    "parameter_policy": true,
+    "capacity_conflict": true,
+    "dimension_policy": true,
+    "missing_capacity": true,
+    "graph_units": true,
+    "graph_quotes": true,
+    "source_quotes": true,
+    "format_repair": true
+  }
+}

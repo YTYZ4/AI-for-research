@@ -1,0 +1,29 @@
+{
+  "reviewer": "development_assistant",
+  "independent_human_review": false,
+  "automatic_results_unchanged": true,
+  "records": [
+    {
+      "id": "flow_reverse_conversion",
+      "repeat": 1,
+      "kind": "actual_response_failure",
+      "detail": "完整单边网络被多余追问，未执行。"
+    },
+    {
+      "id": "flow_cost_priority",
+      "repeat": 3,
+      "kind": "conservative_scoring_failure",
+      "detail": "unsupported后以若仅求介绍支持边界，未直接要求换题或提交替代模型；规则保守地把条件性边界说明算改题建议。冗余说明仍宜精简。"
+    },
+    {
+      "id": "mixed_logistic",
+      "repeat": 3,
+      "kind": "scorer_false_negative",
+      "detail": "不能联合表示并求解是明确能力限制，但评分未匹配不能联合表示。"
+    },
+    {
+      "kind": "mixed_response_quality",
+      "detail": "混合题均拒绝且未求解子任务；多次仍建议拆分/分别提交，旧额外断言规则未覆盖拆分建议。另一次附加无必要的整数域条件。主统计不调整，不称解释全部干净。"
+    }
+  ]
+}

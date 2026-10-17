@@ -1,0 +1,12 @@
+{
+  "id": "fraction",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "",
+  "total_tokens": 3768,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "fraction/20261016_204449_68864362",
+  "elapsed_seconds": 1.5126610829611309
+}

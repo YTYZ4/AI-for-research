@@ -1,0 +1,11 @@
+{
+  "policy": "fixed_system_descriptions_v2",
+  "suppressed_display_only": [
+    {
+      "location": "envelope",
+      "text": "时间与速率单位由求解器内部统一换算；原始记录为增长率0.2每天、模拟时长720小时。",
+      "reason": "包含系统行为或实现描述，移到原始记录，不作为报告假设展示"
+    }
+  ],
+  "source_modified": false
+}

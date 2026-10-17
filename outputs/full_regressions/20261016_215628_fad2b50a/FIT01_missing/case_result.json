@@ -1,0 +1,12 @@
+{
+  "id": "FIT01_missing",
+  "family": "fitting",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "请提供用于标定的CSV数据（包含 x,y,split 三列，split 取 train/test；x 单位为伏，y 单位为摄氏度）。",
+  "total_tokens": 4093,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "FIT01_missing/20261016_215703_d6ac9977",
+  "elapsed_seconds": 1.3012705000001006
+}

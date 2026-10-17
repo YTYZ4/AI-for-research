@@ -1,0 +1,12 @@
+{
+  "id": "DYN02_error",
+  "family": "dynamics",
+  "outcome": "fail",
+  "failure_category": "generation_error",
+  "detail": "ValueError: Logistic 初值须非负、环境容量须为正",
+  "total_tokens": 2493,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": null,
+  "elapsed_seconds": 1.153668791987002
+}

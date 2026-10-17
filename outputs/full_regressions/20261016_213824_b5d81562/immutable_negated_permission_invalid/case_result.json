@@ -1,0 +1,12 @@
+{
+  "id": "immutable_negated_permission_invalid",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "环境容量K=0会使Logistic方程中的因子(1-N/K)出现除以零，当前常参数连续Logistic模型不支持K=0；由于题目明确不允许修改参数，无法建立有效模型。",
+  "total_tokens": 3988,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "immutable_negated_permission_invalid/20261016_214009_42e06bd5",
+  "elapsed_seconds": 1.1056027499726042
+}

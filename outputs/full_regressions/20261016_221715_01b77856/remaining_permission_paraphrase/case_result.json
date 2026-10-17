@@ -1,0 +1,12 @@
+{
+  "id": "remaining_permission_paraphrase",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "当前环境容量K=0，会使Logistic模型在K=0时除零，无法按现有参数建立有效模型。你已允许调整容量但要求先征求意见，请确认并提供正实数环境容量K（可为小数）及其数量单位。",
+  "total_tokens": 4713,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "remaining_permission_paraphrase/20261016_222004_39094158",
+  "elapsed_seconds": 2.7316787500167266
+}

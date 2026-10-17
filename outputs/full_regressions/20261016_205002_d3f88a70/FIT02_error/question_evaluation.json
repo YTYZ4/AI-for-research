@@ -1,0 +1,11 @@
+{
+  "applied": true,
+  "passed": true,
+  "checks": {
+    "expected_status": true,
+    "nonempty_question": true,
+    "relevant_topic": true
+  },
+  "text": "普通多项式拟合仅支持指定 1–5 阶或自动选择 1–5 阶；指定阶数 -2 不在支持范围内。",
+  "scope": "状态/主题初筛；Logistic容量另查正实数及整数限制。其余题型不是完整语义证明。"
+}

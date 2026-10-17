@@ -1,0 +1,12 @@
+{
+  "id": "mixed_fitting",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "题目同时要求完成两个不同建模任务：一是求 S 到 T 的最大流及最低费用，二是联合拟合容量随温度的二次曲线。当前单模型协议不能表示这种联合任务，因此无法在同一个模型中返回两项结果。",
+  "total_tokens": 4994,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "mixed_fitting/20261017_000504_d0e41ca8",
+  "elapsed_seconds": 1.8017770409933291
+}

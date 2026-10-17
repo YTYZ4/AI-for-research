@@ -1,0 +1,58 @@
+{
+  "task_type": "graph",
+  "name": "有向道路网络最短路径",
+  "problem": "shortest_path",
+  "nodes": [
+    "S",
+    "A",
+    "B",
+    "C",
+    "T"
+  ],
+  "source": "S",
+  "target": "T",
+  "edges": [
+    {
+      "source": "S",
+      "target": "A",
+      "weight": 4
+    },
+    {
+      "source": "S",
+      "target": "B",
+      "weight": 2
+    },
+    {
+      "source": "B",
+      "target": "A",
+      "weight": 1
+    },
+    {
+      "source": "A",
+      "target": "C",
+      "weight": 2
+    },
+    {
+      "source": "B",
+      "target": "C",
+      "weight": 5
+    },
+    {
+      "source": "C",
+      "target": "T",
+      "weight": 3
+    },
+    {
+      "source": "A",
+      "target": "T",
+      "weight": 7
+    }
+  ],
+  "unit": "km",
+  "assumptions": [
+    "所有道路均为有向边，只能沿给定方向行驶。",
+    "问题为有向图上的最短路径问题。",
+    "所有边权均为非负距离，单位为千米。",
+    "节点集合完整列出，边集合为用户明确列出的全部道路，无其他边。"
+  ]
+}

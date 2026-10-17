@@ -1,0 +1,22 @@
+{
+  "id": "DYN02_error",
+  "family": "dynamics",
+  "outcome": "fail",
+  "failure_category": "clarification_semantics",
+  "detail": "{\"applied\": true, \"passed\": false, \"checks\": {\"expected_status\": true, \"nonempty_question\": true, \"relevant_topic\": true, \"no_replacement_suggestion\": false}, \"text\": \"请提供正实数环境容量K（可为小数）。\", \"scope\": \"状态/主题初筛；显式禁止改值时检查修改建议，否则Logistic容量检查正实数限制。不是完整语义证明。\"}",
+  "total_tokens": 3678,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "DYN02_error/20261016_205629_fb21ab23",
+  "elapsed_seconds": 2.4190521250129677,
+  "question_semantics_passed": false,
+  "kind": "error",
+  "base_id": "DYN02",
+  "raw_schema_valid": true,
+  "format_action": "not_needed",
+  "local_guard_used": false,
+  "original_pass": false,
+  "after_format_pass": false,
+  "final_pass": false,
+  "pass_path": "failed"
+}

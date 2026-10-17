@@ -1,0 +1,12 @@
+{
+  "id": "immutable_missing_rate",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "请提供常参数连续 Logistic 模型的内禀增长率 r（正实数）及其单位（例如 1/day）。",
+  "total_tokens": 4362,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "immutable_missing_rate/20261016_221901_c92baafc",
+  "elapsed_seconds": 1.616560708032921
+}

@@ -1,0 +1,19 @@
+{
+  "task_type": "dynamics",
+  "name": "封闭种群连续Logistic模型",
+  "system": "logistic",
+  "initial": 0.5,
+  "rate": 0.2,
+  "equilibrium": 0.5,
+  "duration": 30.0,
+  "rate_unit": "1/day",
+  "state_unit": "个",
+  "assumptions": [
+    "采用常参数连续Logistic模型 dN/dt = rN(1 - N/K)。",
+    "假设种群数量为连续量，允许取非负实数值，不对个体数取整。",
+    "假设系统封闭，环境容量K恒定，无迁入、迁出或其他干预。",
+    "初值N(0)=0.5个，环境容量K=0.5个，内禀增长率r=0.2每天，模拟时长为30天。",
+    "当N(0)=K时种群数量保持恒定，轨迹为常值N(t)=0.5个。"
+  ],
+  "time_unit": "day"
+}

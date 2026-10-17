@@ -1,0 +1,9 @@
+{
+  "envelope": {
+    "status": "unsupported",
+    "questions": [
+      "环境容量K=0.0不满足K>0。原题明确禁止改动参数；保持原值时超出当前连续Logistic模型支持范围，停止求解。"
+    ],
+    "model": null
+  }
+}

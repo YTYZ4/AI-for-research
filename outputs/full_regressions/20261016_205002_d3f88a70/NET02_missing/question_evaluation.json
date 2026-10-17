@@ -1,0 +1,11 @@
+{
+  "applied": true,
+  "passed": true,
+  "checks": {
+    "expected_status": true,
+    "nonempty_question": true,
+    "relevant_topic": true
+  },
+  "text": "请提供管道 A 到 T 的容量（单位：立方米/小时），该值不能为空。",
+  "scope": "状态/主题初筛；Logistic容量另查正实数及整数限制。其余题型不是完整语义证明。"
+}

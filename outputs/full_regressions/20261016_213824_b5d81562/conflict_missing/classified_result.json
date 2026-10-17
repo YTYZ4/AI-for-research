@@ -1,0 +1,31 @@
+{
+  "id": "conflict_missing",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "请提供正实数环境容量K（可为小数）。",
+  "total_tokens": 3662,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "conflict_missing/20261016_214023_c32090f2",
+  "elapsed_seconds": 1.184631291020196,
+  "question_semantics_passed": true,
+  "kind": "conflict",
+  "base_id": "DYN02",
+  "origins": [
+    {
+      "id": "conflict_missing",
+      "problem": "examples/conflict_boundaries/missing.txt",
+      "kind": "conflict"
+    }
+  ],
+  "quote_audit_passed": null,
+  "raw_schema_valid": true,
+  "format_action": "not_needed",
+  "local_guard_used": false,
+  "source_quote_repaired": false,
+  "original_pass": true,
+  "after_format_pass": true,
+  "final_pass": true,
+  "pass_path": "native"
+}

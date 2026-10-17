@@ -1,0 +1,11 @@
+{
+  "applied": true,
+  "passed": true,
+  "checks": {
+    "expected_status": true,
+    "nonempty_question": true,
+    "relevant_topic": true
+  },
+  "text": "原题要求求解最小费用最大流（同时考虑容量与每升2元的费用），这属于未支持的任务类型；当前仅支持最短路径和单商品最大流（最大流不考虑费用），因此无法按原目标返回结果。",
+  "scope": "状态/主题初筛；显式禁止改值时检查修改建议，否则Logistic容量检查正实数限制。不是完整语义证明。"
+}

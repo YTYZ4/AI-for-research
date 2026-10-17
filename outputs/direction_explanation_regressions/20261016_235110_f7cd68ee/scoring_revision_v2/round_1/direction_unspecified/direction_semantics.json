@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "checks": {
+    "clarification": true,
+    "no_model": true,
+    "nonblank": true,
+    "asks_direction": true,
+    "no_assumed_direction": true
+  },
+  "text": "原题只说明管道两点之间有容量，但未记录管道从哪端通向哪端；请明确每条边的方向（或说明是否为双向边）。"
+}

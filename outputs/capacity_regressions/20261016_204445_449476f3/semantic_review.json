@@ -1,0 +1,14 @@
+{
+  "method": "逐项复核非ready追问及超容量/同义表达/等值/邻近边界的模型假设；非盲法人工评审",
+  "complete_cases": 27,
+  "unnecessary_clarifications": 0,
+  "expected_clarifications": 9,
+  "integer_requirements_observed": 0,
+  "raw_passes": 36,
+  "format_added": 0,
+  "guard_added": 0,
+  "notes": [
+    "round_2/above_symbols的假设仍混入时间单位转换的系统行为描述；其速率和时长已使用同一天基准，实际转换因子为1。数值和参数正确，但模型假设与系统说明的分离仍需完善。"
+  ],
+  "limits": "每个开发场景仅3次，未新增保留测试，未重跑全35场景。"
+}

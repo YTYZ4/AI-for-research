@@ -1,0 +1,11 @@
+{
+  "applied": true,
+  "passed": true,
+  "checks": {
+    "expected_status": true,
+    "nonempty_question": true,
+    "relevant_topic": true
+  },
+  "text": "该请求同时要求最大流、最低费用流和二次曲线拟合三个任务，当前单模型协议无法表示这种联合建模请求。最大流求解本身也仅支持非负整数容量；若容量在当前求解单位下换算后非整数或超整数域，也会停止。请分开提交可支持的单一任务。",
+  "scope": "状态/主题初筛；显式禁止改值时检查修改建议，否则Logistic容量检查正实数限制。不是完整语义证明。"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NET01_error",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "最短路径不支持负权重边；边 S→A 的权重为 -2，超出当前支持范围。",
+  "total_tokens": 3279,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "NET01_error/20261016_205056_87a4d61c",
+  "elapsed_seconds": 1.0071948330150917
+}

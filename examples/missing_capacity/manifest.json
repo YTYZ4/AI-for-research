@@ -1,0 +1,72 @@
+[
+  {
+    "id": "missing_capacity_symbol",
+    "problem": "examples/missing_capacity/symbol.txt",
+    "base_id": "DYN02",
+    "family": "dynamics",
+    "kind": "missing_capacity",
+    "expected_envelopes": [
+      "needs_clarification"
+    ],
+    "question_keywords": [
+      "容量",
+      "K",
+      "承载"
+    ],
+    "capacity_domain_required": true,
+    "required_topics": []
+  },
+  {
+    "id": "missing_capacity_reordered",
+    "problem": "examples/missing_capacity/reordered.txt",
+    "base_id": "DYN02",
+    "family": "dynamics",
+    "kind": "missing_capacity",
+    "expected_envelopes": [
+      "needs_clarification"
+    ],
+    "question_keywords": [
+      "容量",
+      "K",
+      "承载"
+    ],
+    "capacity_domain_required": true,
+    "required_topics": []
+  },
+  {
+    "id": "missing_capacity_multiple",
+    "problem": "examples/missing_capacity/multiple.txt",
+    "base_id": "DYN02",
+    "family": "dynamics",
+    "kind": "missing_capacity",
+    "expected_envelopes": [
+      "needs_clarification"
+    ],
+    "question_keywords": [
+      "容量",
+      "K",
+      "承载"
+    ],
+    "capacity_domain_required": true,
+    "required_topics": [
+      "初始|初值|N0|N\\(0\\)"
+    ]
+  },
+  {
+    "id": "missing_capacity_locked",
+    "problem": "examples/missing_capacity/locked.txt",
+    "base_id": "DYN02",
+    "family": "dynamics",
+    "kind": "missing_capacity",
+    "expected_envelopes": [
+      "needs_clarification"
+    ],
+    "question_keywords": [
+      "容量",
+      "K",
+      "承载"
+    ],
+    "capacity_domain_required": true,
+    "required_topics": []
+  }
+]

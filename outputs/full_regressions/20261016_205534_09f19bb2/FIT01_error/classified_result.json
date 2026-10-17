@@ -1,0 +1,22 @@
+{
+  "id": "FIT01_error",
+  "family": "fitting",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "一元普通最小二乘多项式拟合仅支持 1–5 阶；负二阶（degree=-2）不在支持范围内，且不能改为正阶数。请提供 1–5 阶的正整数阶数，或说明需要使用其他拟合方法。",
+  "total_tokens": 3477,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "FIT01_error/20261016_205611_07b3da30",
+  "elapsed_seconds": 1.4025108340429142,
+  "question_semantics_passed": true,
+  "kind": "error",
+  "base_id": "FIT01",
+  "raw_schema_valid": true,
+  "format_action": "not_needed",
+  "local_guard_used": false,
+  "original_pass": true,
+  "after_format_pass": true,
+  "final_pass": true,
+  "pass_path": "native"
+}

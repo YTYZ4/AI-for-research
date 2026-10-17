@@ -1,0 +1,12 @@
+{
+  "id": "missing",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "请提供正实数环境容量K（可为小数）",
+  "total_tokens": 3467,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "missing/20261016_211231_4bfed07f",
+  "elapsed_seconds": 2.345201540971175
+}

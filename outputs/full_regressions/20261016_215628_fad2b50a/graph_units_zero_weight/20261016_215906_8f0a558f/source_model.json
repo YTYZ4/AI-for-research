@@ -1,0 +1,40 @@
+{
+  "task_type": "graph_input",
+  "name": "shortest_path_S_to_T",
+  "problem": "shortest_path",
+  "nodes": [
+    "S",
+    "A",
+    "T"
+  ],
+  "source": "S",
+  "target": "T",
+  "edges": [
+    {
+      "source": "S",
+      "target": "A",
+      "weight": 0,
+      "unit": "米",
+      "source_quote": "S到A 0米",
+      "unit_quote": "米"
+    },
+    {
+      "source": "A",
+      "target": "T",
+      "weight": 1,
+      "unit": "千米",
+      "source_quote": "A到T 1千米",
+      "unit_quote": "千米"
+    },
+    {
+      "source": "S",
+      "target": "T",
+      "weight": 2000,
+      "unit": "米",
+      "source_quote": "S到T 2000米",
+      "unit_quote": "米"
+    }
+  ],
+  "unit": "km",
+  "assumptions": []
+}

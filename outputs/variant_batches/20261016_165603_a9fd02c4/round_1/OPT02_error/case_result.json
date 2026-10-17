@@ -1,0 +1,12 @@
+{
+  "id": "OPT02_error",
+  "family": "optimization",
+  "outcome": "fail",
+  "failure_category": "solver_error",
+  "detail": "AttributeError: 'NoneType' object has no attribute 'get'",
+  "total_tokens": 3211,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "OPT02_error/20261016_165631_23abf8b8",
+  "elapsed_seconds": 2.9102170830010436
+}

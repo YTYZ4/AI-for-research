@@ -1,0 +1,11 @@
+{
+  "passed": false,
+  "checks": {
+    "clarification": true,
+    "no_model": true,
+    "nonblank": true,
+    "asks_direction": false,
+    "no_assumed_direction": true
+  },
+  "text": "缺少边 S—T 的方向：最大流需要每条边的方向。"
+}

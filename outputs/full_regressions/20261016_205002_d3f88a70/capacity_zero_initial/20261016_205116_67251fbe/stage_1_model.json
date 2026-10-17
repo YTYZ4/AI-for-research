@@ -1,0 +1,17 @@
+{
+  "task_type": "dynamics",
+  "name": "continuous_logistic_growth",
+  "system": "logistic",
+  "initial": 0,
+  "rate": 0.2,
+  "equilibrium": 0.5,
+  "duration": 30.0,
+  "rate_unit": "1/day",
+  "state_unit": "个",
+  "assumptions": [
+    "采用连续Logistic增长模型，种群数量按连续实数处理",
+    "环境容量恒定，无迁入迁出",
+    "初值为0时仍按给定连续Logistic模型模拟，轨迹保持为0"
+  ],
+  "time_unit": "day"
+}

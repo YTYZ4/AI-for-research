@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "checks": {
+    "clarification": true,
+    "no_model": true,
+    "nonblank": true,
+    "asks_direction": true,
+    "no_assumed_direction": true
+  },
+  "text": "该网络唯一的边“S与T之间容量为1000升/小时”方向未知；需明确方向是S到T、T到S还是双向，才能建立最大流原图。"
+}

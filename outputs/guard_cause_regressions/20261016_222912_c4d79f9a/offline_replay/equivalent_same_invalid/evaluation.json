@@ -1,0 +1,67 @@
+{
+  "id": "equivalent_same_invalid",
+  "api_calls": 0,
+  "passed": true,
+  "source": "outputs/full_regressions/20261016_221715_01b77856/equivalent_same_invalid/api.json",
+  "source_sha256": "ebc0e8ad0895e1c29e67fcfbf1caac18ab879a7e4bd32cbac426603bce205856",
+  "question_audit": {
+    "applied": true,
+    "passed": true,
+    "checks": {
+      "expected_status": true,
+      "nonempty_question": true,
+      "relevant_topic": true,
+      "no_replacement_suggestion": true,
+      "correct_dimensions": true
+    },
+    "text": "环境容量K=-0.0不满足K>0。原题明确禁止改动参数；保持原值时超出当前连续Logistic模型支持范围，停止求解。",
+    "scope": "状态/主题初筛；显式禁止改值时检查修改建议，否则Logistic容量检查正实数限制。不是完整语义证明。"
+  },
+  "flow_audit": null,
+  "local_validation": {
+    "action": "unsupported",
+    "original_status": "needs_clarification",
+    "original_envelope": {
+      "status": "needs_clarification",
+      "questions": [
+        "当前记录的环境容量K为0个（另一记录K=0.0个，数值等价），会使Logistic方程出现除零，模型无效。请提供正实数环境容量K（可为小数）及其数量单位。"
+      ],
+      "model": null
+    },
+    "model_executed": false,
+    "reason": "原文禁止改值且本地原参数域检查失败",
+    "evidence": {
+      "values": {
+        "initial": 1.5,
+        "equilibrium": -0.0,
+        "rate": 0.2,
+        "duration": 30.0
+      },
+      "source_quotes": {
+        "initial": "初始1.5个",
+        "equilibrium": "环境容量恒定-0个",
+        "rate": "增长率0.2每天",
+        "duration": "模拟0到30天"
+      },
+      "parameter_domain": {
+        "valid": false,
+        "initial_above_capacity": null,
+        "expected_trend": null,
+        "scope": "只验证提取到的常参数域，不证明全文条件完整或无冲突；K是平衡值，不是初值上限"
+      },
+      "rate_unit": "1/day",
+      "duration_unit": "day",
+      "scope": "明确数量和单位的常参数Logistic提取提示；不是可求解性证明"
+    }
+  },
+  "classification": {
+    "raw_schema_valid": true,
+    "format_action": "not_needed",
+    "local_guard_used": true,
+    "source_quote_repaired": false,
+    "original_pass": false,
+    "after_format_pass": false,
+    "final_pass": true,
+    "pass_path": "local_guard"
+  }
+}

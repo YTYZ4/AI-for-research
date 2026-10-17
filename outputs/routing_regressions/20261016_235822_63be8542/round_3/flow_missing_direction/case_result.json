@@ -1,0 +1,12 @@
+{
+  "id": "flow_missing_direction",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "边 S 与 T 之间的方向未给出；请明确该边是 S → T、T → S，还是双向边（若双向需说明两方向容量）。",
+  "total_tokens": 1475,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "flow_missing_direction/20261016_235913_bee87739",
+  "elapsed_seconds": 1.3685361669631675
+}

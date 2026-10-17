@@ -1,0 +1,12 @@
+{
+  "id": "cost_paraphrase",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "原题在最大流目标之外还要求最小化运输总成本（每升运输成本2元），属于最小费用流任务；当前仅支持最短路径和单商品最大流，不支持最小费用流或类似带费用优化的任务。",
+  "total_tokens": 1487,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "cost_paraphrase/20261016_235916_11774a32",
+  "elapsed_seconds": 1.236228084017057
+}

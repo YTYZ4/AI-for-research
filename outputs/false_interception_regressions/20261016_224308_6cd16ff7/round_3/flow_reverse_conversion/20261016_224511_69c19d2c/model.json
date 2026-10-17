@@ -1,0 +1,24 @@
+{
+  "task_type": "graph",
+  "name": "S到T最大流",
+  "problem": "max_flow",
+  "nodes": [
+    "S",
+    "T"
+  ],
+  "source": "S",
+  "target": "T",
+  "edges": [
+    {
+      "source": "S",
+      "target": "T",
+      "weight": 1
+    }
+  ],
+  "unit": "升/小时",
+  "assumptions": [
+    "有向边方向为S到T。",
+    "原题明确只有S到T一条边，无其他边。",
+    "容量和结果均以升/小时统一输出，不允许改变统一输出单位或取整。"
+  ]
+}

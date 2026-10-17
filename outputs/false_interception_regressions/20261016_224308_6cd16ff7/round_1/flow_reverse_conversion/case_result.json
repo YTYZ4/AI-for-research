@@ -1,0 +1,12 @@
+{
+  "id": "flow_reverse_conversion",
+  "family": "graph",
+  "outcome": "fail",
+  "failure_category": "unsupported",
+  "detail": "原题容量为0.001立方米/小时；要求所有容量和结果以升/小时表示，统一单位换算：0.001立方米/小时 = 1升/小时。当前求解器要求最大流容量在统一输出单位下必须为整数升/小时，且明确不允许取整，因此该问题超出当前最大流求解器支持范围。",
+  "total_tokens": 4864,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "flow_reverse_conversion/20261016_224346_467ee070",
+  "elapsed_seconds": 1.8537542089470662
+}

@@ -1,0 +1,12 @@
+{
+  "id": "direction_unspecified",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "管道方向未记录：需要说明边是从 S 到 T，还是从 T 到 S，或为双向。",
+  "total_tokens": 1457,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "direction_unspecified/20261016_235219_314c6b72",
+  "elapsed_seconds": 1.283968832984101
+}

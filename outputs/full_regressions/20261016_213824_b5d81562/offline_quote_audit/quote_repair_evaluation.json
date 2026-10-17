@@ -1,0 +1,10 @@
+{
+  "applied": true,
+  "passed": true,
+  "checks": {
+    "raw_response_preserved": true,
+    "only_quotes_changed": true,
+    "all_quotes_verbatim": true,
+    "changes_match": true
+  }
+}

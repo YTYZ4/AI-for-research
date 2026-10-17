@@ -1,0 +1,185 @@
+{
+  "scope": "实际DeepSeek图请求Schema独立校验，不替代业务评分",
+  "records": [
+    {
+      "id": "graph_units_fractional_flow",
+      "repeat": 1,
+      "passed": true
+    },
+    {
+      "id": "graph_units_flow_mixed",
+      "repeat": 1,
+      "passed": true
+    },
+    {
+      "id": "flow_original_unit",
+      "repeat": 1,
+      "passed": true
+    },
+    {
+      "id": "flow_integer_conversion",
+      "repeat": 1,
+      "passed": true
+    },
+    {
+      "id": "flow_reverse_conversion",
+      "repeat": 1,
+      "passed": true
+    },
+    {
+      "id": "flow_unknown_conversion",
+      "repeat": 1,
+      "passed": true
+    },
+    {
+      "id": "flow_missing_direction",
+      "repeat": 1,
+      "passed": true
+    },
+    {
+      "id": "flow_min_cost",
+      "repeat": 1,
+      "passed": true
+    },
+    {
+      "id": "pure_min_cost",
+      "repeat": 1,
+      "passed": true
+    },
+    {
+      "id": "multi_commodity",
+      "repeat": 1,
+      "passed": true
+    },
+    {
+      "id": "time_varying",
+      "repeat": 1,
+      "passed": true
+    },
+    {
+      "id": "cost_not_requested",
+      "repeat": 1,
+      "passed": true
+    },
+    {
+      "id": "graph_units_fractional_flow",
+      "repeat": 2,
+      "passed": true
+    },
+    {
+      "id": "graph_units_flow_mixed",
+      "repeat": 2,
+      "passed": true
+    },
+    {
+      "id": "flow_original_unit",
+      "repeat": 2,
+      "passed": true
+    },
+    {
+      "id": "flow_integer_conversion",
+      "repeat": 2,
+      "passed": true
+    },
+    {
+      "id": "flow_reverse_conversion",
+      "repeat": 2,
+      "passed": true
+    },
+    {
+      "id": "flow_unknown_conversion",
+      "repeat": 2,
+      "passed": true
+    },
+    {
+      "id": "flow_missing_direction",
+      "repeat": 2,
+      "passed": true
+    },
+    {
+      "id": "flow_min_cost",
+      "repeat": 2,
+      "passed": true
+    },
+    {
+      "id": "pure_min_cost",
+      "repeat": 2,
+      "passed": true
+    },
+    {
+      "id": "multi_commodity",
+      "repeat": 2,
+      "passed": true
+    },
+    {
+      "id": "time_varying",
+      "repeat": 2,
+      "passed": true
+    },
+    {
+      "id": "cost_not_requested",
+      "repeat": 2,
+      "passed": true
+    },
+    {
+      "id": "graph_units_fractional_flow",
+      "repeat": 3,
+      "passed": true
+    },
+    {
+      "id": "graph_units_flow_mixed",
+      "repeat": 3,
+      "passed": true
+    },
+    {
+      "id": "flow_original_unit",
+      "repeat": 3,
+      "passed": true
+    },
+    {
+      "id": "flow_integer_conversion",
+      "repeat": 3,
+      "passed": true
+    },
+    {
+      "id": "flow_reverse_conversion",
+      "repeat": 3,
+      "passed": true
+    },
+    {
+      "id": "flow_unknown_conversion",
+      "repeat": 3,
+      "passed": true
+    },
+    {
+      "id": "flow_missing_direction",
+      "repeat": 3,
+      "passed": true
+    },
+    {
+      "id": "flow_min_cost",
+      "repeat": 3,
+      "passed": true
+    },
+    {
+      "id": "pure_min_cost",
+      "repeat": 3,
+      "passed": true
+    },
+    {
+      "id": "multi_commodity",
+      "repeat": 3,
+      "passed": true
+    },
+    {
+      "id": "time_varying",
+      "repeat": 3,
+      "passed": true
+    },
+    {
+      "id": "cost_not_requested",
+      "repeat": 3,
+      "passed": true
+    }
+  ]
+}

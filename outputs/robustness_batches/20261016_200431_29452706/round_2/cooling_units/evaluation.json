@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": {
+    "parameters": true,
+    "rate": true,
+    "duration": true,
+    "rate_unit": true,
+    "state_unit": true,
+    "trajectory": true,
+    "endpoints": true
+  },
+  "max_error": 1.867674370714667e-08
+}

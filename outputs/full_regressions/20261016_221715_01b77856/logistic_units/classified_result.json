@@ -1,0 +1,31 @@
+{
+  "id": "logistic_units",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "",
+  "total_tokens": 4805,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "logistic_units/20261016_221820_aac34843",
+  "elapsed_seconds": 2.097987750021275,
+  "question_semantics_passed": null,
+  "kind": "units",
+  "base_id": "DYN02",
+  "origins": [
+    {
+      "id": "logistic_units",
+      "problem": "examples/robustness/logistic_units.txt",
+      "kind": "units"
+    }
+  ],
+  "quote_audit_passed": null,
+  "raw_schema_valid": true,
+  "format_action": "not_needed",
+  "local_guard_used": false,
+  "source_quote_repaired": false,
+  "original_pass": true,
+  "after_format_pass": true,
+  "final_pass": true,
+  "pass_path": "native"
+}

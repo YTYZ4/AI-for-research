@@ -1,0 +1,18 @@
+{
+  "task_type": "dynamics",
+  "name": "封闭种群Logistic增长模型",
+  "system": "logistic",
+  "initial": 1.5,
+  "rate": 0.2,
+  "equilibrium": 0.5,
+  "duration": 30.0,
+  "rate_unit": "1/day",
+  "state_unit": "个",
+  "assumptions": [
+    "种群封闭，无迁入迁出。",
+    "环境承载量、内禀增长率等参数恒定。",
+    "Logistic连续种群近似。",
+    "初值高于环境承载量时按原值建模，轨迹自然下降。"
+  ],
+  "time_unit": "day"
+}

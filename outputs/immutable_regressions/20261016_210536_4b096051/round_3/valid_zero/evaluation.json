@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "checks": {
+    "original_parameters": true,
+    "trajectory": true
+  },
+  "max_error": 0.0
+}

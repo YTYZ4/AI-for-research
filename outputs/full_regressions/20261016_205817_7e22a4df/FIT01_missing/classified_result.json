@@ -1,0 +1,22 @@
+{
+  "id": "FIT01_missing",
+  "family": "fitting",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "请提供由 --data 指定的 x,y,split 三列 CSV 数据文件（x 为传感器电压，单位伏；y 为温度，单位摄氏度；split 取值 train/test），以便进行有截距一元线性最小二乘标定。若没有附件，请上传 CSV。附加数据说明存在时无需再提供原始数据或留出集标签。",
+  "total_tokens": 3454,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "FIT01_missing/20261016_205856_f6f95885",
+  "elapsed_seconds": 1.6853662920184433,
+  "question_semantics_passed": true,
+  "kind": "missing",
+  "base_id": "FIT01",
+  "raw_schema_valid": true,
+  "format_action": "not_needed",
+  "local_guard_used": false,
+  "original_pass": true,
+  "after_format_pass": true,
+  "final_pass": true,
+  "pass_path": "native"
+}

@@ -1,0 +1,7 @@
+{
+  "false_interception": false,
+  "passed": true,
+  "no_replacement_suggestion": true,
+  "text": "Logistic 模型要求环境容量 K 为正实数；原题给出 K=0 个（两条记录均为 0），当前常参数连续 Logistic 模型在 K=0 时会出现除零，无法建立有效方程，且用户明确不得改动参数，因此本题超出支持范围。",
+  "scope": "仅检查显式禁止改参数后的常见改值建议；不是完整语义证明"
+}

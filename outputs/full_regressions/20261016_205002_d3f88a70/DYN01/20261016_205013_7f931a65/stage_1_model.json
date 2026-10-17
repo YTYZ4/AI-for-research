@@ -1,0 +1,17 @@
+{
+  "task_type": "dynamics",
+  "name": "牛顿冷却模型",
+  "system": "newton_cooling",
+  "initial": 90,
+  "rate": 0.1,
+  "equilibrium": 20,
+  "duration": 30.0,
+  "rate_unit": "1/min",
+  "state_unit": "°C",
+  "assumptions": [
+    "液体温度分布均匀，可用单一温度描述",
+    "环境温度与冷却系数在模拟期间保持恒定",
+    "牛顿冷却定律 dT/dt = -k(T - T_env)"
+  ],
+  "time_unit": "min"
+}

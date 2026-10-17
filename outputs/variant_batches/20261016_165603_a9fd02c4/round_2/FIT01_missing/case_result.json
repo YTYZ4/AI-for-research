@@ -1,0 +1,12 @@
+{
+  "id": "FIT01_missing",
+  "family": "fitting",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "请提供用于标定的 CSV 数据，需包含 x、y、split 三列（split 为 train/test）；收到数据后才能建立有截距一元线性最小二乘模型。；请确认电压 x 的单位为伏、温度 y 的单位为摄氏度；若有其他单位或建模假设请说明。",
+  "total_tokens": 2470,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "FIT01_missing/20261016_165727_a050677a",
+  "elapsed_seconds": 1.221266959037166
+}

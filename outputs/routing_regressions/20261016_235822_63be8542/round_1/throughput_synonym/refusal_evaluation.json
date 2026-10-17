@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": {
+    "unsupported": true,
+    "no_model": true,
+    "nonblank_explanations": true,
+    "identifies_requested_scope": true,
+    "explains_limit": true,
+    "no_invented_contract_limit": true,
+    "no_silent_downgrade": true
+  },
+  "text": "原题要求同时最大化吞吐量并最小化运输开销，属于最小费用流/多目标优化；当前仅支持最短路径和静态单商品最大流，不支持最小费用流等额外优化目标。"
+}

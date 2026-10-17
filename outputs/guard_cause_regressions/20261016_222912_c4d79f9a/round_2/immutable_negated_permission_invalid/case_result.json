@@ -1,0 +1,12 @@
+{
+  "id": "immutable_negated_permission_invalid",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "环境容量K=0会使连续Logistic模型中的增长率项 rN(1-N/K) 出现除零，当前模型无效；由于你明确不允许修改参数，本系统无法在保留原参数的情况下生成该动态模型。",
+  "total_tokens": 5324,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "immutable_negated_permission_invalid/20261016_222950_a7894c3d",
+  "elapsed_seconds": 1.3932256249827333
+}

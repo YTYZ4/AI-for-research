@@ -1,0 +1,18 @@
+{
+  "task_type": "dynamics",
+  "name": "封闭种群连续Logistic增长轨迹",
+  "system": "logistic",
+  "initial": 1.5,
+  "rate": 0.2,
+  "equilibrium": 0.5,
+  "duration": 30.0,
+  "rate_unit": "1/day",
+  "state_unit": "个",
+  "assumptions": [
+    "种群规模为连续实数量，采用连续Logistic方程dN/dt=rN(1-N/K)。",
+    "环境容量恒定，K=0.5个。",
+    "无迁入迁出，封闭种群。",
+    "初始数量高于环境容量，轨迹向环境容量下降。"
+  ],
+  "time_unit": "day"
+}

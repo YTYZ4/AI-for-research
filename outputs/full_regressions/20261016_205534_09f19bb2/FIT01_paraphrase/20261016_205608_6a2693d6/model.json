@@ -1,0 +1,13 @@
+{
+  "task_type": "polynomial_fit",
+  "name": "传感器电压-温度线性最小二乘校准",
+  "assumptions": [
+    "采用一元普通最小二乘线性拟合，固定一次项与截距，不重新划分数据。",
+    "split=train 的行仅用于参数估计，split=test 的行仅用于计算 RMSE 和 MAE。",
+    "电压与温度的关系按线性模型 y=a*x+b 建模，误差独立同分布。",
+    "使用本地提供且已校验的 CSV，列为 x,y,split。"
+  ],
+  "degree": 1,
+  "x_unit": "伏",
+  "y_unit": "摄氏度"
+}

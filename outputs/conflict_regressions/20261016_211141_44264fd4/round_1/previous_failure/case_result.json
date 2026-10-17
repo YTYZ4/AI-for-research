@@ -1,0 +1,12 @@
+{
+  "id": "previous_failure",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "环境容量K存在两条互相冲突的记录：一条为0个，另一条为0.5个。请核对哪一条准确（原始记录不是修改参数的建议）。",
+  "total_tokens": 3506,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "previous_failure/20261016_211214_7b30d566",
+  "elapsed_seconds": 1.349147750006523
+}

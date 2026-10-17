@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "checks": {
+    "original_graph": true,
+    "original_capacities": true,
+    "conservation": true,
+    "optimal_value": true
+  },
+  "scope": "固定开发原题；独立枚举简单路径/所有源汇割，不用于其他图或成功率结论"
+}

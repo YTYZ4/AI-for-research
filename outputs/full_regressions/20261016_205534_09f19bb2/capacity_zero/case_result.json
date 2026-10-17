@@ -1,0 +1,12 @@
+{
+  "id": "capacity_zero",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "环境容量 K 必须为正实数才能使连续 Logistic 模型有效；当前 K=0 会导致除零。请提供正实数环境容量 K（可为小数）。",
+  "total_tokens": 3720,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "capacity_zero/20261016_205648_8eb1640a",
+  "elapsed_seconds": 1.3183195830206387
+}

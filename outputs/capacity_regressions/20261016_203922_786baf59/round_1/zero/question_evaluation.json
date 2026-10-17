@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "checks": {
+    "clarification": true,
+    "capacity": true,
+    "positive_real": true,
+    "fraction_allowed": true,
+    "no_integer_requirement": true
+  },
+  "text": "环境容量 K=0 会使当前 Logistic 模型无效（出现除零），请提供正实数环境容量 K（可为小数）。"
+}

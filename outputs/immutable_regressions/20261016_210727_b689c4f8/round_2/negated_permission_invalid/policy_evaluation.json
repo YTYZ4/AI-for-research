@@ -1,0 +1,7 @@
+{
+  "false_interception": false,
+  "passed": true,
+  "no_replacement_suggestion": true,
+  "text": "Logistic 模型要求环境容量 K 为正实数；本题 K=0 会使方程 dN/dt=rN(1-N/K) 出现除零，超出当前支持的常参数 Logistic 范围。用户明确不允许修改参数，因此不能改为其他 K 值。",
+  "scope": "仅检查显式禁止改参数后的常见改值建议；不是完整语义证明"
+}

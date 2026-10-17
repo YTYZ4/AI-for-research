@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": {
+    "unsupported": true,
+    "no_model": true,
+    "nonblank_explanations": true,
+    "identifies_requested_scope": true,
+    "explains_limit": true,
+    "no_invented_contract_limit": true,
+    "no_silent_downgrade": true
+  },
+  "text": "原题要求求解最小费用最大流（同时考虑容量与每升2元的费用），这属于未支持的任务类型；当前仅支持最短路径和单商品最大流（最大流不考虑费用），因此无法按原目标返回结果。"
+}

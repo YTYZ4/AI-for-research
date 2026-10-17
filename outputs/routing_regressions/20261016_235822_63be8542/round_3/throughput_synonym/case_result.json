@@ -1,0 +1,12 @@
+{
+  "id": "throughput_synonym",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "原题在单商品最大流目标之外还要求最小化运输开销（每升2元的费用），属于未支持的最小费用流任务。当前仅支持最短路径和静态单商品最大流，无法处理费用最小化要求。",
+  "total_tokens": 1484,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "throughput_synonym/20261016_235920_3dc0f637",
+  "elapsed_seconds": 1.7235427499981597
+}

@@ -1,0 +1,17 @@
+{
+  "task_type": "dynamics",
+  "name": "logistic_growth_1000",
+  "system": "logistic",
+  "initial": 100,
+  "rate": 0.008333333333333333,
+  "equilibrium": 1000,
+  "duration": 30,
+  "time_unit": "day",
+  "rate_unit": "1/day",
+  "state_unit": "个",
+  "assumptions": [
+    "按连续种群近似，个体数可为非整数。",
+    "原模拟时长为720小时，已换算为30天。",
+    "原增长率为0.2每天，已换算为0.008333333333333333每天（按24小时=1天）。"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "flow_missing_direction",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "该网络唯一的边“S与T之间容量为1000升/小时”方向未知；需明确方向是S到T、T到S还是双向，才能建立最大流原图。",
+  "total_tokens": 1468,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "flow_missing_direction/20261016_235851_28e9dcfc",
+  "elapsed_seconds": 1.235174375004135
+}

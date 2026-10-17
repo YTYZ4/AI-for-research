@@ -1,0 +1,11 @@
+{
+  "applied": true,
+  "passed": true,
+  "checks": {
+    "expected_status": true,
+    "nonempty_question": true,
+    "relevant_topic": true
+  },
+  "text": "原题请求的是时变网络最大流的时间轨迹；当前仅支持静态单商品最大流和最短路径，不支持时变网络或随时间变化的容量/流量轨迹。支持边界：可在给定固定节点、边、容量、单位和源汇时求解静态单商品最大流。",
+  "scope": "状态/主题初筛；显式禁止改值时检查修改建议，否则Logistic容量检查正实数限制。不是完整语义证明。"
+}

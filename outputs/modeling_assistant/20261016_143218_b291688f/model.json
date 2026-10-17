@@ -1,0 +1,75 @@
+{
+  "name": "生产计划优化",
+  "assumptions": [
+    "工时和原料消耗按每件产品线性计算",
+    "产量以件为单位，且为非负整数",
+    "利润以元为单位",
+    "本期工时上限为 100 小时，原料上限为 80 千克"
+  ],
+  "variables": [
+    {
+      "name": "x_A",
+      "description": "产品A的产量",
+      "unit": "件",
+      "kind": "integer",
+      "lower": 0,
+      "upper": null
+    },
+    {
+      "name": "x_B",
+      "description": "产品B的产量",
+      "unit": "件",
+      "kind": "integer",
+      "lower": 0,
+      "upper": null
+    }
+  ],
+  "objective": {
+    "sense": "max",
+    "terms": [
+      {
+        "variable": "x_A",
+        "coefficient": 40
+      },
+      {
+        "variable": "x_B",
+        "coefficient": 30
+      }
+    ],
+    "unit": "元"
+  },
+  "constraints": [
+    {
+      "name": "工时限制",
+      "terms": [
+        {
+          "variable": "x_A",
+          "coefficient": 2
+        },
+        {
+          "variable": "x_B",
+          "coefficient": 1
+        }
+      ],
+      "sense": "<=",
+      "rhs": 100,
+      "unit": "小时"
+    },
+    {
+      "name": "原料限制",
+      "terms": [
+        {
+          "variable": "x_A",
+          "coefficient": 1
+        },
+        {
+          "variable": "x_B",
+          "coefficient": 2
+        }
+      ],
+      "sense": "<=",
+      "rhs": 80,
+      "unit": "千克"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": {
+    "unsupported": true,
+    "no_model": true,
+    "nonblank_explanations": true,
+    "identifies_requested_scope": true,
+    "explains_limit": true,
+    "no_invented_contract_limit": true,
+    "no_silent_downgrade": true
+  },
+  "text": "原题在最大流目标之外还要求最小化运输总成本（每升运输成本2元），属于最小费用流任务；当前仅支持最短路径和单商品最大流，不支持最小费用流或类似带费用优化的任务。"
+}

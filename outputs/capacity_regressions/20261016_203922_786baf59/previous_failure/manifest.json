@@ -1,0 +1,23 @@
+{
+  "cases": [
+    {
+      "id": "DYN02_error",
+      "family": "dynamics",
+      "problem": "examples/development_variants/DYN02_error.txt",
+      "expected_envelopes": [
+        "needs_clarification"
+      ],
+      "question_keywords": [
+        "K",
+        "容量"
+      ]
+    }
+  ],
+  "repeats": 3,
+  "max_calls": 3,
+  "retries": 0,
+  "model": "deepseek-flash",
+  "input_sha256": "970cb129e8c1d0b71452e4c260b45c8368ca918b8ccb03ba2ec96b13a2350b1f",
+  "code_snapshot": "../snapshot",
+  "reason": "补查上轮发生正整数措辞错误的完全相同原题，独立于21次边界批次"
+}

@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "checks": {
+    "original_edges": true,
+    "source_target": true,
+    "path": true,
+    "distance": true
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "applied": true,
+  "passed": true,
+  "checks": {
+    "expected_status": true,
+    "nonempty_question": true,
+    "relevant_topic": true,
+    "no_replacement_suggestion": true,
+    "correct_dimensions": true
+  },
+  "text": "牛顿冷却模型要求冷却系数k为正数（dT/dt=-k(T-T_env)，k>0）；当前记录的k=-0.1每分钟为负数。根据“不得取绝对值或改动参数”的限制，原参数超出当前模型支持范围，无法按原值建立有效的牛顿冷却模型。",
+  "scope": "状态/主题初筛；显式禁止改值时检查修改建议，否则Logistic容量检查正实数限制。不是完整语义证明。"
+}

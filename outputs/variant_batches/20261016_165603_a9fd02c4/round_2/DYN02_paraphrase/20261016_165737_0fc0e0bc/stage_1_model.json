@@ -1,0 +1,20 @@
+{
+  "task_type": "dynamics",
+  "name": "Logistic种群增长轨迹",
+  "system": "logistic",
+  "initial": 100,
+  "rate": 0.2,
+  "equilibrium": 1000,
+  "duration": 30,
+  "time_unit": "day",
+  "rate_unit": "1/day",
+  "state_unit": "个",
+  "assumptions": [
+    "以初始时刻为第0天。",
+    "种群数量采用连续数量近似。",
+    "内禀增长率固定为0.2/天。",
+    "环境容量固定为1000个。",
+    "封闭种群，无迁入迁出。",
+    "Logistic方程为 dN/dt = rN(1-N/K)。"
+  ]
+}

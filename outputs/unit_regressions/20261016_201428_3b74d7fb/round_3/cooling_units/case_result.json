@@ -1,0 +1,12 @@
+{
+  "id": "cooling_units",
+  "family": "dynamics",
+  "outcome": "fail",
+  "failure_category": "generation_error",
+  "detail": "ValueError: 建模响应格式错误：Additional properties are not allowed ('model_type' was unexpected)",
+  "total_tokens": 3121,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": null,
+  "elapsed_seconds": 2.486185750050936
+}

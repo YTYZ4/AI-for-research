@@ -1,0 +1,12 @@
+{
+  "id": "conflict_two_positive",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "环境容量K的原文记录相互冲突：“环境承载量固定0.5个”；“K=1个”。请核对并确认哪条记录准确，或补充记录分别适用的条件。系统未选择任何值，也未执行求解。",
+  "total_tokens": 5078,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "conflict_two_positive/20261016_222932_78efcfd3",
+  "elapsed_seconds": 1.103823957964778
+}

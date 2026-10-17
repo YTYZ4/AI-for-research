@@ -1,0 +1,13 @@
+{
+  "applied": true,
+  "passed": true,
+  "checks": {
+    "expected_status": true,
+    "nonempty_question": true,
+    "relevant_topic": true,
+    "no_replacement_suggestion": true,
+    "correct_dimensions": true
+  },
+  "text": "环境容量 K=0 会使 Logistic 方程中的 rN(1-N/K) 出现除零，当前模型无效；题目明确要求不要修改任何参数，因此无法在保留原值的情况下建立可求解的 Logistic 模型。",
+  "scope": "状态/主题初筛；显式禁止改值时检查修改建议，否则Logistic容量检查正实数限制。不是完整语义证明。"
+}

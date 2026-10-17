@@ -1,0 +1,21 @@
+{
+  "id": "logistic_units",
+  "family": "dynamics",
+  "outcome": "fail",
+  "failure_category": "needs_clarification",
+  "detail": "请提供 Logistic 增长速率 0.2 每天对应的反速率单位写法（例如 1/day）吗？；请提供初始状态、环境容量、增长速率和模拟时长的原题逐字片段，例如“初始100个”“容量恒定1000个”“0.2每天”“720小时”。",
+  "total_tokens": 3008,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "logistic_units/20261016_202516_ba384a98",
+  "elapsed_seconds": 2.8840670410427265,
+  "kind": "units",
+  "base_id": "DYN02",
+  "raw_schema_valid": true,
+  "format_action": "not_needed",
+  "local_guard_used": false,
+  "original_pass": false,
+  "after_format_pass": false,
+  "final_pass": false,
+  "pass_path": "failed"
+}

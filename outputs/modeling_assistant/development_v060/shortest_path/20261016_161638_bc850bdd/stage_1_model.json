@@ -1,0 +1,57 @@
+{
+  "task_type": "graph",
+  "name": "Directed road network shortest path",
+  "problem": "shortest_path",
+  "nodes": [
+    "S",
+    "A",
+    "B",
+    "C",
+    "T"
+  ],
+  "source": "S",
+  "target": "T",
+  "edges": [
+    {
+      "source": "S",
+      "target": "A",
+      "weight": 4
+    },
+    {
+      "source": "S",
+      "target": "B",
+      "weight": 2
+    },
+    {
+      "source": "B",
+      "target": "A",
+      "weight": 1
+    },
+    {
+      "source": "A",
+      "target": "C",
+      "weight": 2
+    },
+    {
+      "source": "B",
+      "target": "C",
+      "weight": 5
+    },
+    {
+      "source": "C",
+      "target": "T",
+      "weight": 3
+    },
+    {
+      "source": "A",
+      "target": "T",
+      "weight": 7
+    }
+  ],
+  "unit": "km",
+  "assumptions": [
+    "所有道路均为有向边，只能沿给定方向行驶。",
+    "未给出反向道路，因此不添加反向边。",
+    "所有边权非负，满足最短路径支持条件。"
+  ]
+}

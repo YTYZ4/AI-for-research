@@ -1,0 +1,12 @@
+{
+  "id": "conflicting_capacity",
+  "family": "dynamics",
+  "outcome": "fail",
+  "failure_category": "unsupported",
+  "detail": "环境容量为0个与连续Logistic模型 K>0 的要求冲突；且题面同时给出“环境容量恒定0个”和“另一记录环境容量为0.5个”两个互相冲突的K值。用户明确要求不得改动参数，因此不能替换或修正参数。当前模型无法在 K=0 或 K 冲突下求解。",
+  "total_tokens": 3467,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "conflicting_capacity/20261016_210623_2912caa6",
+  "elapsed_seconds": 2.654791250010021
+}

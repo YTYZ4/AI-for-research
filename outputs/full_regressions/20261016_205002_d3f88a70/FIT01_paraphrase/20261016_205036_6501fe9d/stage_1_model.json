@@ -1,0 +1,14 @@
+{
+  "task_type": "polynomial_fit",
+  "name": "电压-温度线性校准",
+  "assumptions": [
+    "使用一元普通最小二乘多项式拟合",
+    "模型为有截距直线 y = a*x + b",
+    "仅使用 split=train 的记录估计参数",
+    "使用 split=test 的记录单独计算 RMSE 和 MAE，不重新划分数据",
+    "x 为传感器电压，y 为参考温度"
+  ],
+  "degree": 1,
+  "x_unit": "伏",
+  "y_unit": "摄氏度"
+}

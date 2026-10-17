@@ -1,0 +1,12 @@
+{
+  "id": "missing_mixed",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "请提供正实数环境容量K（可为小数），以及其数量单位（与初始1.5个相容）。",
+  "total_tokens": 3595,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "missing_mixed/20261016_211946_e3bf8da1",
+  "elapsed_seconds": 1.5009732079925016
+}

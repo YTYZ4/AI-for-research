@@ -1,0 +1,23 @@
+{
+  "task_type": "graph_input",
+  "name": "有向网络最大流",
+  "problem": "max_flow",
+  "nodes": [
+    "S",
+    "T"
+  ],
+  "source": "S",
+  "target": "T",
+  "edges": [
+    {
+      "source": "S",
+      "target": "T",
+      "weight": 60,
+      "unit": "升/分钟",
+      "source_quote": "S到T容量60升/分钟",
+      "unit_quote": "升/分钟"
+    }
+  ],
+  "unit": "升/秒",
+  "assumptions": []
+}

@@ -1,0 +1,48 @@
+﻿id,base_id,kind,question_semantics_passed,raw_schema_valid,format_action,local_guard_used,original_pass,after_format_pass,final_pass,pass_path,failure_category,detail,total_tokens,elapsed_seconds,run_path
+OPT01,OPT01,original,,True,not_needed,False,True,True,True,native,,,3540,1.4898183749755844,OPT01/20261016_205003_73540d2c
+OPT02,OPT02,original,,True,not_needed,False,True,True,True,native,,,4019,4.149550375004765,OPT02/20261016_205008_71ed9b59
+FIT01,FIT01,original,,True,not_needed,False,True,True,True,native,,,3404,1.5104946669889614,FIT01/20261016_205009_924c1e0c
+FIT02,FIT02,original,,True,not_needed,False,True,True,True,native,,,3447,1.8292011250159703,FIT02/20261016_205011_c0022a9c
+DYN01,DYN01,original,,True,not_needed,False,True,True,True,native,,,3390,1.6425121670472436,DYN01/20261016_205013_7f931a65
+DYN02,DYN02,original,,True,not_needed,False,True,True,True,native,,,3426,1.926812208024785,DYN02/20261016_205015_ef0fe6d3
+NET01,NET01,original,,True,not_needed,False,True,True,True,native,,,3582,3.031558125047013,NET01/20261016_205018_81afa7ea
+NET02,NET02,original,,True,not_needed,False,True,True,True,native,,,3480,1.7464240840054117,NET02/20261016_205019_a3bd473a
+OPT01_paraphrase,OPT01,paraphrase,,True,not_needed,False,True,True,True,native,,,3524,2.168333832989447,OPT01_paraphrase/20261016_205022_df1d5185
+OPT01_missing,OPT01,missing,True,True,not_needed,False,True,True,True,native,,原料供应是否有上限？如有请提供数值；如不限请说明，可按供应不限处理。,3288,1.4297273749834858,OPT01_missing/20261016_205023_f55f08cb
+OPT01_error,OPT01,error,,True,not_needed,False,True,True,True,native,,,3589,3.69862512499094,OPT01_error/20261016_205027_f86be966
+OPT02_paraphrase,OPT02,paraphrase,,True,not_needed,False,True,True,True,native,,,3892,3.121838665974792,OPT02_paraphrase/20261016_205030_d962a071
+OPT02_missing,OPT02,missing,True,True,not_needed,False,True,True,True,native,,请提供S3的精确需求量（吨）。,3303,1.0249987499555573,OPT02_missing/20261016_205031_d3571ed0
+OPT02_error,OPT02,error,,True,not_needed,False,True,True,True,native,,,3982,3.5240262920269743,OPT02_error/20261016_205034_accd5367
+FIT01_paraphrase,FIT01,paraphrase,,True,not_needed,False,True,True,True,native,,,3405,1.4042662080028094,FIT01_paraphrase/20261016_205036_6501fe9d
+FIT01_missing,FIT01,missing,True,True,not_needed,False,True,True,True,native,,"请提供包含 x,y,split 三列的训练/测试 CSV 数据（split 取值 train/test），用于一元线性最小二乘标定与留出 RMSE 计算。支持由 --data 提供该 CSV。",3293,1.3670915000257082,FIT01_missing/20261016_205037_1c97b101
+FIT01_error,FIT01,error,True,True,not_needed,False,True,True,True,native,,负阶数(-2)不属于支持的一元普通最小二乘多项式拟合范围；当前仅支持 1–5 阶普通多项式。请改为 1–5 阶指定阶数或自动选阶（degree=null）。,3344,1.4145805830485187,FIT01_error/20261016_205039_5aea1e8c
+FIT02_paraphrase,FIT02,paraphrase,,True,not_needed,False,True,True,True,native,,,3478,1.9771272080251947,FIT02_paraphrase/20261016_205040_d8852972
+FIT02_missing,FIT02,missing,True,True,not_needed,False,True,True,True,native,,"请提供拟合数据 CSV，其中包含 x,y,split 三列，split 为 train/test。",3281,1.1888257499667816,FIT02_missing/20261016_205042_30ed1b10
+FIT02_error,FIT02,error,True,True,not_needed,False,True,True,True,native,,普通多项式拟合仅支持指定 1–5 阶或自动选择 1–5 阶；指定阶数 -2 不在支持范围内。,3318,1.0411801249720156,FIT02_error/20261016_205043_9a51e65b
+DYN01_paraphrase,DYN01,paraphrase,,True,not_needed,False,True,True,True,native,,,3387,1.5559641249710694,DYN01_paraphrase/20261016_205044_a777a008
+DYN01_missing,DYN01,missing,True,True,not_needed,False,True,True,True,native,,请提供正的冷却系数 k（单位可为 1/s、1/min、1/hour、1/day 或 1/year）。,3267,1.3246700830059126,DYN01_missing/20261016_205046_e182a56c
+DYN01_error,DYN01,error,True,True,not_needed,False,True,True,True,native,,牛顿冷却模型的冷却系数 k 必须为正数，但题目给出 -0.1 每分钟（负数）。请提供正的冷却系数数值，或说明是否应将符号视为笔误并修正为 0.1 每分钟？,3306,1.4597483330289833,DYN01_error/20261016_205047_a4d5326f
+DYN02_paraphrase,DYN02,paraphrase,,True,not_needed,False,True,True,True,native,,,3729,1.9302246250445023,DYN02_paraphrase/20261016_205049_76ba9bc2
+DYN02_missing,DYN02,missing,True,True,not_needed,False,True,True,True,native,,请提供正实数环境容量K（可为小数）。,3268,1.1300245000165887,DYN02_missing/20261016_205050_a11b5791
+DYN02_error,DYN02,error,True,True,not_needed,False,True,True,True,native,,当前 Logistic 模型要求环境容量 K 为正实数；题目给出 K=0 个会使方程无效。请提供正实数环境容量 K（可为小数）。,3571,1.474076457961928,DYN02_error/20261016_205052_e8247435
+NET01_paraphrase,NET01,paraphrase,,True,not_needed,False,True,True,True,native,,,3540,1.6900208330480382,NET01_paraphrase/20261016_205053_78d4ae9e
+NET01_missing,NET01,missing,True,True,not_needed,False,True,True,True,native,,请提供有向边 A 到 T 的距离（单位与已有的千米一致）。,3271,1.1619279169826768,NET01_missing/20261016_205054_2c4d092e
+NET01_error,NET01,error,True,True,not_needed,False,True,True,True,native,,最短路径不支持负权重边；边 S→A 的权重为 -2，超出当前支持范围。,3279,1.0071948330150917,NET01_error/20261016_205056_87a4d61c
+NET02_paraphrase,NET02,paraphrase,,True,not_needed,False,True,True,True,native,,,3443,1.5428791249869391,NET02_paraphrase/20261016_205057_39a585a5
+NET02_missing,NET02,missing,True,True,not_needed,False,True,True,True,native,,请提供管道 A 到 T 的容量（单位：立方米/小时），该值不能为空。,3275,1.0448082920047455,NET02_missing/20261016_205058_580fe77b
+NET02_error,NET02,error,True,True,not_needed,False,True,True,True,native,,最大流仅支持非负整数容量；边 S→A 的容量为 -3，属于非法负容量，不能修改为其他数值。,3281,1.3949814589577727,NET02_error/20261016_205059_54a85417
+cooling_units,DYN01,units,,True,not_needed,False,True,True,True,native,,,3419,1.5922559580067173,cooling_units/20261016_205101_eb3a87f9
+logistic_units,DYN02,units,,True,not_needed,False,True,True,True,native,,,3701,2.2118826669757254,logistic_units/20261016_205103_a55e677c
+path_units,NET01,units,,True,not_needed,False,True,True,True,native,,,3504,2.2675182090024464,path_units/20261016_205106_79872a46
+capacity_zero,DYN02,boundary,True,True,not_needed,False,True,True,True,native,,环境容量K必须为正实数；当前给出K=0会使Logistic方程出现除零，模型无效。请提供正实数环境容量K（可为小数）。,3590,1.2692134169628844,capacity_zero/20261016_205107_73d91919
+capacity_negative,DYN02,boundary,True,True,not_needed,False,True,True,True,native,,环境容量K必须为正实数；当前给出的K=-0.5会使Logistic模型无效，请提供正实数环境容量K（可为小数）。,3593,1.4351237919763662,capacity_negative/20261016_205108_a904cf74
+capacity_missing,DYN02,boundary,True,True,not_needed,False,True,True,True,native,,请提供正实数环境容量K（可为小数）。,3272,1.1770194169948809,capacity_missing/20261016_205109_13cb10da
+capacity_fraction,DYN02,boundary,,True,not_needed,False,True,True,True,native,,,3734,1.9761213330202736,capacity_fraction/20261016_205111_9027840d
+capacity_small,DYN02,boundary,,True,not_needed,False,True,True,True,native,,,3738,1.9561957500409335,capacity_small/20261016_205113_87cf5e93
+capacity_zero_initial,DYN02,boundary,,True,not_needed,False,True,True,True,native,,,3696,2.5189995000255294,capacity_zero_initial/20261016_205116_67251fbe
+capacity_above_capacity,DYN02,boundary,,True,not_needed,False,True,True,True,native,,,3727,1.7779127500252798,capacity_above_capacity/20261016_205118_1e67a139
+capacity_above_paraphrase,DYN02,boundary,,True,not_needed,False,True,True,True,native,,,3749,1.909418084018398,capacity_above_paraphrase/20261016_205120_48fc71ba
+capacity_above_symbols,DYN02,boundary,,True,not_needed,False,True,True,True,native,,,3736,2.302014250017237,capacity_above_symbols/20261016_205122_78bce629
+capacity_above_reordered,DYN02,boundary,,True,not_needed,False,True,True,True,native,,,3744,2.0803421669988893,capacity_above_reordered/20261016_205124_eed66e80
+capacity_equal_capacity,DYN02,boundary,,True,not_needed,False,True,True,True,native,,,3690,1.7153985420009121,capacity_equal_capacity/20261016_205126_b5e422b0
+capacity_near_above,DYN02,boundary,,True,not_needed,False,True,True,True,native,,,3735,1.9720547500182875,capacity_near_above/20261016_205128_40459e03

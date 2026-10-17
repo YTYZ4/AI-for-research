@@ -1,6 +1,0 @@
-Chapter 1 Summary
-=================
-lena: 95% energy @ 48, 99% energy @ 71
-barbara: 95% energy @ 45, 99% energy @ 70
-Patch group: 95% energy @ 8, 99% energy @ 11
-Best truncated SVD rank: 10, PSNR=23.33 dB

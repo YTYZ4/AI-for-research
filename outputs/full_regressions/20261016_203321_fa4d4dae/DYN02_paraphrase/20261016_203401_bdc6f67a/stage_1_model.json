@@ -1,0 +1,18 @@
+{
+  "task_type": "dynamics",
+  "name": "Logistic Growth Simulation",
+  "system": "logistic",
+  "initial": 100.0,
+  "rate": 0.2,
+  "equilibrium": 1000.0,
+  "duration": 30.0,
+  "rate_unit": "1/day",
+  "state_unit": "个",
+  "assumptions": [
+    "封闭种群，没有迁入迁出。",
+    "采用连续数量近似，允许种群数量为连续值。",
+    "内禀增长率与环境容量在模拟期间保持恒定。",
+    "初始时刻为第0天。"
+  ],
+  "time_unit": "day"
+}

@@ -1,0 +1,25 @@
+{
+  "task_type": "dynamics_input",
+  "name": "封闭种群连续Logistic增长",
+  "system": "logistic",
+  "initial": 100.0,
+  "rate": 0.2,
+  "equilibrium": 1000.0,
+  "duration": 720.0,
+  "rate_unit": "1/day",
+  "state_unit": "个",
+  "assumptions": [
+    "封闭种群，无迁入迁出，数量动态由常参数连续Logistic方程dN/dt=rN(1-N/K)描述。",
+    "环境容量K为恒定正实数，表示平衡值，不是初值上限。",
+    "初始种群数量为100个，环境容量为1000个，内禀增长率为每天0.2，模拟时长为720小时。",
+    "种群数量按连续变量处理，允许非整数个体，不对小数个体取整。",
+    "原题要求统一时间与速率单位后求解；模型保留原速率单位1/day与原时长单位hour，由求解器在计算轨迹时进行单位一致化。"
+  ],
+  "duration_unit": "hour",
+  "source_quotes": {
+    "initial": "初始100个",
+    "equilibrium": "容量恒定1000个",
+    "rate": "增长率0.2每天",
+    "duration": "模拟0到720小时"
+  }
+}

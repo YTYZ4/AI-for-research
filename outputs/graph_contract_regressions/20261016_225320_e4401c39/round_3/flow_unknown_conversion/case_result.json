@@ -1,0 +1,12 @@
+{
+  "id": "flow_unknown_conversion",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "图边单位无法确定性换算或量纲不一致，请核对单位及必要的换算依据；不会猜测因子。",
+  "total_tokens": 999,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "flow_unknown_conversion/20261016_225421_f10d1752",
+  "elapsed_seconds": 1.23889183398569
+}

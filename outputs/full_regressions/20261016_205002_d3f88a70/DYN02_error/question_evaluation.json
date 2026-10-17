@@ -1,0 +1,16 @@
+{
+  "applied": true,
+  "passed": true,
+  "checks": {
+    "expected_status": true,
+    "nonempty_question": true,
+    "relevant_topic": true,
+    "clarification": true,
+    "capacity": true,
+    "positive_real": true,
+    "fraction_allowed": true,
+    "no_integer_requirement": true
+  },
+  "text": "当前 Logistic 模型要求环境容量 K 为正实数；题目给出 K=0 个会使方程无效。请提供正实数环境容量 K（可为小数）。",
+  "scope": "状态/主题初筛；Logistic容量另查正实数及整数限制。其余题型不是完整语义证明。"
+}

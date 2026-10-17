@@ -1,0 +1,19 @@
+{
+  "task_type": "dynamics",
+  "name": "连续Logistic种群增长轨迹",
+  "system": "logistic",
+  "initial": 0,
+  "rate": 0.2,
+  "equilibrium": 0.5,
+  "duration": 30.0,
+  "rate_unit": "1/day",
+  "state_unit": "个",
+  "assumptions": [
+    "封闭种群，无迁入迁出",
+    "环境容量K恒定，K是平衡值而非初值上限",
+    "采用常参数连续Logistic模型 dN/dt = rN(1-N/K)",
+    "N和K的数量单位均为个",
+    "增长率与模拟时长均以天为时间基准，程序内部按单位换算"
+  ],
+  "time_unit": "day"
+}

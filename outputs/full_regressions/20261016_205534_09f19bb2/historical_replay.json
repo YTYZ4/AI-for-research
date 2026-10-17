@@ -1,0 +1,21 @@
+{
+  "source": "outputs/full_regressions/20261016_205002_d3f88a70",
+  "api_calls": 0,
+  "forbidden_change": {
+    "passed": false,
+    "no_replacement_suggestion": false,
+    "text": "牛顿冷却模型的冷却系数 k 必须为正数，但题目给出 -0.1 每分钟（负数）。请提供正的冷却系数数值，或说明是否应将符号视为笔误并修正为 0.1 每分钟？",
+    "scope": "仅检查显式禁止改参数后的常见改值建议；不是完整语义证明"
+  },
+  "presentation": {
+    "policy": "fixed_system_descriptions_v2",
+    "suppressed_display_only": [
+      {
+        "location": "envelope",
+        "text": "增长率与时长单位不同时由求解器按给定单位换算。",
+        "reason": "包含系统行为或实现描述，移到原始记录，不作为报告假设展示"
+      }
+    ],
+    "source_modified": false
+  }
+}

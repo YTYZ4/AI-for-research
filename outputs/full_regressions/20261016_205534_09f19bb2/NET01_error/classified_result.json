@@ -1,0 +1,22 @@
+{
+  "id": "NET01_error",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "最短路径仅支持非负权，但给定边 S→A 的权重为 -2 千米，负权不在当前支持范围内；且用户明确要求负权重不可修改，因此无法建立该最短路径模型。",
+  "total_tokens": 3421,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "NET01_error/20261016_205635_8cc97b01",
+  "elapsed_seconds": 2.003158333012834,
+  "question_semantics_passed": true,
+  "kind": "error",
+  "base_id": "NET01",
+  "raw_schema_valid": true,
+  "format_action": "not_needed",
+  "local_guard_used": false,
+  "original_pass": true,
+  "after_format_pass": true,
+  "final_pass": true,
+  "pass_path": "native"
+}

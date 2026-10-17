@@ -1,0 +1,12 @@
+{
+  "id": "throughput_synonym",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "原题要求同时最大化吞吐量并最小化运输开销，属于最小费用流/多目标优化；当前仅支持最短路径和静态单商品最大流，不支持最小费用流等额外优化目标。",
+  "total_tokens": 1490,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "throughput_synonym/20261016_235836_f922329a",
+  "elapsed_seconds": 1.5047633749782108
+}

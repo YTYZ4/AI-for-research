@@ -1,0 +1,18 @@
+{
+  "version": "0.10.11",
+  "raw_pass": 29,
+  "after_format_pass": 29,
+  "final_pass": 30,
+  "source_quote_repair_added": 1,
+  "format_repair_added": 0,
+  "refusal_sanitization_online": 0,
+  "refusals_without_replacement_suggestion": "3/3",
+  "false_conflict_takeovers": 0,
+  "historical_replay": "leading_dot引用修复后原题数值评分通过；same_invalid拒绝后建议移除；0API",
+  "limits": [
+    "非可完整提取的常参数Logistic引用不自动修复",
+    "数值/单位不一致不修复，不自动更改模型",
+    "拒绝措辞检测是限定模式，未证明任意表达有效",
+    "仅10场景各3次，未执行统一47场景或保留题"
+  ]
+}

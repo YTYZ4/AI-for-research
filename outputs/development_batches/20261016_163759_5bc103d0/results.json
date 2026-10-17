@@ -1,0 +1,98 @@
+[
+  {
+    "id": "OPT01",
+    "family": "optimization",
+    "outcome": "pass",
+    "failure_category": "",
+    "detail": "",
+    "total_tokens": 0,
+    "requested_model": null,
+    "response_model": null,
+    "run_path": "OPT01/20261016_163759_02158b86",
+    "elapsed_seconds": 0.011598791985306889
+  },
+  {
+    "id": "OPT02",
+    "family": "optimization",
+    "outcome": "pass",
+    "failure_category": "",
+    "detail": "",
+    "total_tokens": 0,
+    "requested_model": null,
+    "response_model": null,
+    "run_path": "OPT02/20261016_163759_74a42f0c",
+    "elapsed_seconds": 0.001978082989808172
+  },
+  {
+    "id": "FIT01",
+    "family": "fitting",
+    "outcome": "pass",
+    "failure_category": "",
+    "detail": "",
+    "total_tokens": 0,
+    "requested_model": null,
+    "response_model": null,
+    "run_path": "FIT01/20261016_163759_83d2a0a6",
+    "elapsed_seconds": 0.0027257910114713013
+  },
+  {
+    "id": "FIT02",
+    "family": "fitting",
+    "outcome": "pass",
+    "failure_category": "",
+    "detail": "",
+    "total_tokens": 0,
+    "requested_model": null,
+    "response_model": null,
+    "run_path": "FIT02/20261016_163759_d03f6c24",
+    "elapsed_seconds": 0.0032005829853005707
+  },
+  {
+    "id": "DYN01",
+    "family": "dynamics",
+    "outcome": "pass",
+    "failure_category": "",
+    "detail": "",
+    "total_tokens": 0,
+    "requested_model": null,
+    "response_model": null,
+    "run_path": "DYN01/20261016_163759_aa39d6e7",
+    "elapsed_seconds": 0.0028406669734977186
+  },
+  {
+    "id": "DYN02",
+    "family": "dynamics",
+    "outcome": "pass",
+    "failure_category": "",
+    "detail": "",
+    "total_tokens": 0,
+    "requested_model": null,
+    "response_model": null,
+    "run_path": "DYN02/20261016_163759_54127dd9",
+    "elapsed_seconds": 0.002706166007556021
+  },
+  {
+    "id": "NET01",
+    "family": "graph",
+    "outcome": "pass",
+    "failure_category": "",
+    "detail": "",
+    "total_tokens": 0,
+    "requested_model": null,
+    "response_model": null,
+    "run_path": "NET01/20261016_163759_9db68a95",
+    "elapsed_seconds": 0.0008426250424236059
+  },
+  {
+    "id": "NET02",
+    "family": "graph",
+    "outcome": "pass",
+    "failure_category": "",
+    "detail": "",
+    "total_tokens": 0,
+    "requested_model": null,
+    "response_model": null,
+    "run_path": "NET02/20261016_163759_4fe972f8",
+    "elapsed_seconds": 0.0009717090288177133
+  }
+]

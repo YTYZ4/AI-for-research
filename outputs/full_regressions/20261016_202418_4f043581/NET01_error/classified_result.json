@@ -1,0 +1,21 @@
+{
+  "id": "NET01_error",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "最短路径仅支持非负权重；该路网中存在负权重边 S→A（-2 千米），不能转换为可求解的最短路径图规格。",
+  "total_tokens": 2963,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "NET01_error/20261016_202508_1b67b81c",
+  "elapsed_seconds": 1.272071916027926,
+  "kind": "error",
+  "base_id": "NET01",
+  "raw_schema_valid": true,
+  "format_action": "not_needed",
+  "local_guard_used": false,
+  "original_pass": true,
+  "after_format_pass": true,
+  "final_pass": true,
+  "pass_path": "native"
+}

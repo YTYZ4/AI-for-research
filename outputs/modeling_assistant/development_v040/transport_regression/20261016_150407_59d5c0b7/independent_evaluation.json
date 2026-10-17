@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "checks": {
+    "nonnegative": true,
+    "W1": true,
+    "W2": true,
+    "S1": true,
+    "S2": true,
+    "S3": true,
+    "optimal_cost": true,
+    "claimed_cost": true
+  },
+  "cost": 170.0,
+  "proven_lower_bound": 170,
+  "scope": "仅适用于 OPT02 原始开发数据；不评价自然语言建模完整性。"
+}

@@ -1,1 +1,0 @@
-barbara|划痕(8%)|RSLT|RSLT|PSNR=27.15|SSIM=0.9084

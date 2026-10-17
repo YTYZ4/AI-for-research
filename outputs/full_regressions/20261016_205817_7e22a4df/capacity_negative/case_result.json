@@ -1,0 +1,12 @@
+{
+  "id": "capacity_negative",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "环境容量K必须为正实数；当前为-0.5，无法用于连续Logistic模型。请提供正实数环境容量K（可为小数）。",
+  "total_tokens": 3724,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "capacity_negative/20261016_205934_ef75967d",
+  "elapsed_seconds": 1.2382623329758644
+}

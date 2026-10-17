@@ -1,0 +1,12 @@
+{
+  "id": "mixed_logistic",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "该请求同时要求两类不同建模任务：图网络最大流/最低成本运输分配，以及 Logistic 动态模型需求预测；当前单模型协议不能联合表示并求解这两个任务。",
+  "total_tokens": 4954,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "mixed_logistic/20261016_235927_a5016d3c",
+  "elapsed_seconds": 1.7245825409772806
+}

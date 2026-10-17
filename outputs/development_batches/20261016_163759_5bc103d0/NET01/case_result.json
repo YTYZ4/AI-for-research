@@ -1,0 +1,12 @@
+{
+  "id": "NET01",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "",
+  "total_tokens": 0,
+  "requested_model": null,
+  "response_model": null,
+  "run_path": "NET01/20261016_163759_9db68a95",
+  "elapsed_seconds": 0.0008426250424236059
+}

@@ -1,0 +1,25 @@
+{
+  "task_type": "dynamics_input",
+  "name": "牛顿冷却温度轨迹与终值",
+  "system": "newton_cooling",
+  "initial": 90,
+  "rate": 0.1,
+  "equilibrium": 20,
+  "duration": 0.5,
+  "rate_unit": "1/min",
+  "state_unit": "celsius",
+  "assumptions": [
+    "遵循牛顿冷却定律，物体内部温度均匀且冷却系数保持不变。",
+    "环境温度恒定为20摄氏度。",
+    "允许使用负摄氏温度参与模型计算。",
+    "速率单位与时长单位不同，求解时按原题给出的单位数值进行换算。",
+    "用户要求统一时间和速率单位后求解，但本输出仅提取原题数值，不进行单位换算。"
+  ],
+  "duration_unit": "hour",
+  "source_quotes": {
+    "initial": "90摄氏度",
+    "equilibrium": "20摄氏度",
+    "rate": "0.1每分钟",
+    "duration": "0.5小时"
+  }
+}

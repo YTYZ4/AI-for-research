@@ -1,0 +1,75 @@
+{
+  "name": "工厂A、B产品生产计划",
+  "assumptions": [
+    "A、B产品产量按整件生产，变量取非负整数。",
+    "工时和原料消耗按题目给定线性关系计算。",
+    "本期工时和原料供应上限分别为100小时和80千克。",
+    "没有其他约束，且资源未用完不产生额外收益或成本。"
+  ],
+  "variables": [
+    {
+      "name": "xA",
+      "description": "产品A的产量",
+      "unit": "件",
+      "kind": "integer",
+      "lower": 0,
+      "upper": null
+    },
+    {
+      "name": "xB",
+      "description": "产品B的产量",
+      "unit": "件",
+      "kind": "integer",
+      "lower": 0,
+      "upper": null
+    }
+  ],
+  "objective": {
+    "sense": "max",
+    "terms": [
+      {
+        "variable": "xA",
+        "coefficient": 40
+      },
+      {
+        "variable": "xB",
+        "coefficient": 30
+      }
+    ],
+    "unit": "元"
+  },
+  "constraints": [
+    {
+      "name": "工时上限",
+      "terms": [
+        {
+          "variable": "xA",
+          "coefficient": 2
+        },
+        {
+          "variable": "xB",
+          "coefficient": 1
+        }
+      ],
+      "sense": "<=",
+      "rhs": 100,
+      "unit": "小时"
+    },
+    {
+      "name": "原料上限",
+      "terms": [
+        {
+          "variable": "xA",
+          "coefficient": 1
+        },
+        {
+          "variable": "xB",
+          "coefficient": 2
+        }
+      ],
+      "sense": "<=",
+      "rhs": 80,
+      "unit": "千克"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "conflict_reverse",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "题面中环境容量K存在冲突记录：K=0.5个 与 环境容量为0个。请核对哪条记录准确？",
+  "total_tokens": 3849,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "conflict_reverse/20261016_214015_9caf8f53",
+  "elapsed_seconds": 1.2460661249933764
+}

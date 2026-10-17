@@ -1,0 +1,23 @@
+{
+  "task_type": "dynamics_input",
+  "name": "newton_cooling_trajectory",
+  "system": "newton_cooling",
+  "initial": 90,
+  "rate": 0.1,
+  "equilibrium": 20,
+  "duration": 0.5,
+  "rate_unit": "1/min",
+  "state_unit": "°C",
+  "assumptions": [
+    "液体温度均匀且冷却系数恒定",
+    "遵循牛顿冷却定律",
+    "允许负摄氏温度"
+  ],
+  "duration_unit": "hour",
+  "source_quotes": {
+    "initial": "初始90摄氏度",
+    "equilibrium": "恒温环境20摄氏度",
+    "rate": "冷却系数k=0.1每分钟",
+    "duration": "0到0.5小时"
+  }
+}

@@ -1,0 +1,600 @@
+{
+  "protocol": "full_development_single_pass_v1",
+  "version": "0.9.0",
+  "cases": [
+    {
+      "id": "OPT01",
+      "family": "optimization",
+      "problem": "examples/production/problem_freeform.txt",
+      "reference": null,
+      "base_id": "OPT01",
+      "kind": "original",
+      "expected_envelopes": [
+        "ready"
+      ],
+      "expected_status": "normal"
+    },
+    {
+      "id": "OPT02",
+      "family": "optimization",
+      "problem": "examples/transport/problem.txt",
+      "reference": "examples/transport/reference_model.json",
+      "base_id": "OPT02",
+      "kind": "original",
+      "expected_envelopes": [
+        "ready"
+      ],
+      "expected_status": "normal"
+    },
+    {
+      "id": "FIT01",
+      "family": "fitting",
+      "problem": "examples/fitting/calibration.txt",
+      "data": "examples/fitting/calibration.csv",
+      "reference": "examples/fitting/calibration_model.json",
+      "base_id": "FIT01",
+      "kind": "original",
+      "expected_envelopes": [
+        "ready"
+      ],
+      "expected_status": "normal"
+    },
+    {
+      "id": "FIT02",
+      "family": "fitting",
+      "problem": "examples/fitting/curve.txt",
+      "data": "examples/fitting/curve.csv",
+      "reference": "examples/fitting/curve_model.json",
+      "base_id": "FIT02",
+      "kind": "original",
+      "expected_envelopes": [
+        "ready"
+      ],
+      "expected_status": "normal"
+    },
+    {
+      "id": "DYN01",
+      "family": "dynamics",
+      "problem": "examples/dynamics/cooling.txt",
+      "reference": "examples/dynamics/cooling_model.json",
+      "case": "cooling",
+      "base_id": "DYN01",
+      "kind": "original",
+      "expected_envelopes": [
+        "ready"
+      ],
+      "expected_status": "normal"
+    },
+    {
+      "id": "DYN02",
+      "family": "dynamics",
+      "problem": "examples/dynamics/logistic.txt",
+      "reference": "examples/dynamics/logistic_model.json",
+      "case": "logistic",
+      "base_id": "DYN02",
+      "kind": "original",
+      "expected_envelopes": [
+        "ready"
+      ],
+      "expected_status": "normal"
+    },
+    {
+      "id": "NET01",
+      "family": "graph",
+      "problem": "examples/graphs/shortest_path.txt",
+      "reference": "examples/graphs/shortest_path_model.json",
+      "case": "shortest_path",
+      "base_id": "NET01",
+      "kind": "original",
+      "expected_envelopes": [
+        "ready"
+      ],
+      "expected_status": "normal"
+    },
+    {
+      "id": "NET02",
+      "family": "graph",
+      "problem": "examples/graphs/max_flow.txt",
+      "reference": "examples/graphs/max_flow_model.json",
+      "case": "max_flow",
+      "base_id": "NET02",
+      "kind": "original",
+      "expected_envelopes": [
+        "ready"
+      ],
+      "expected_status": "normal"
+    },
+    {
+      "id": "OPT01_paraphrase",
+      "family": "optimization",
+      "problem": "examples/development_variants/OPT01_paraphrase.txt",
+      "reference": null,
+      "base_id": "OPT01",
+      "kind": "paraphrase",
+      "expected_envelopes": [
+        "ready"
+      ],
+      "expected_status": "normal"
+    },
+    {
+      "id": "OPT01_missing",
+      "family": "optimization",
+      "problem": "examples/development_variants/OPT01_missing.txt",
+      "reference": null,
+      "base_id": "OPT01",
+      "kind": "missing",
+      "expected_envelopes": [
+        "needs_clarification"
+      ],
+      "question_keywords": [
+        "原料",
+        "供应"
+      ]
+    },
+    {
+      "id": "OPT01_error",
+      "family": "optimization",
+      "problem": "examples/development_variants/OPT01_error.txt",
+      "reference": null,
+      "base_id": "OPT01",
+      "kind": "error",
+      "expected_envelopes": [
+        "ready"
+      ],
+      "expected_status": "infeasible"
+    },
+    {
+      "id": "OPT02_paraphrase",
+      "family": "optimization",
+      "problem": "examples/development_variants/OPT02_paraphrase.txt",
+      "reference": "examples/transport/reference_model.json",
+      "base_id": "OPT02",
+      "kind": "paraphrase",
+      "expected_envelopes": [
+        "ready"
+      ],
+      "expected_status": "normal"
+    },
+    {
+      "id": "OPT02_missing",
+      "family": "optimization",
+      "problem": "examples/development_variants/OPT02_missing.txt",
+      "reference": "examples/transport/reference_model.json",
+      "base_id": "OPT02",
+      "kind": "missing",
+      "expected_envelopes": [
+        "needs_clarification"
+      ],
+      "question_keywords": [
+        "S3",
+        "需求"
+      ]
+    },
+    {
+      "id": "OPT02_error",
+      "family": "optimization",
+      "problem": "examples/development_variants/OPT02_error.txt",
+      "reference": "examples/transport/reference_model.json",
+      "base_id": "OPT02",
+      "kind": "error",
+      "expected_envelopes": [
+        "ready"
+      ],
+      "expected_status": "infeasible"
+    },
+    {
+      "id": "FIT01_paraphrase",
+      "family": "fitting",
+      "problem": "examples/development_variants/FIT01_paraphrase.txt",
+      "reference": "examples/fitting/calibration_model.json",
+      "base_id": "FIT01",
+      "kind": "paraphrase",
+      "expected_envelopes": [
+        "ready"
+      ],
+      "expected_status": "normal",
+      "data": "examples/fitting/calibration.csv"
+    },
+    {
+      "id": "FIT01_missing",
+      "family": "fitting",
+      "problem": "examples/development_variants/FIT01_missing.txt",
+      "reference": "examples/fitting/calibration_model.json",
+      "base_id": "FIT01",
+      "kind": "missing",
+      "expected_envelopes": [
+        "needs_clarification"
+      ],
+      "question_keywords": [
+        "数据",
+        "CSV",
+        "csv"
+      ]
+    },
+    {
+      "id": "FIT01_error",
+      "family": "fitting",
+      "problem": "examples/development_variants/FIT01_error.txt",
+      "reference": "examples/fitting/calibration_model.json",
+      "base_id": "FIT01",
+      "kind": "error",
+      "expected_envelopes": [
+        "needs_clarification",
+        "unsupported"
+      ],
+      "question_keywords": [
+        "阶",
+        "负",
+        "支持"
+      ],
+      "data": "examples/fitting/calibration.csv"
+    },
+    {
+      "id": "FIT02_paraphrase",
+      "family": "fitting",
+      "problem": "examples/development_variants/FIT02_paraphrase.txt",
+      "reference": "examples/fitting/curve_model.json",
+      "base_id": "FIT02",
+      "kind": "paraphrase",
+      "expected_envelopes": [
+        "ready"
+      ],
+      "expected_status": "normal",
+      "data": "examples/fitting/curve.csv"
+    },
+    {
+      "id": "FIT02_missing",
+      "family": "fitting",
+      "problem": "examples/development_variants/FIT02_missing.txt",
+      "reference": "examples/fitting/curve_model.json",
+      "base_id": "FIT02",
+      "kind": "missing",
+      "expected_envelopes": [
+        "needs_clarification"
+      ],
+      "question_keywords": [
+        "数据",
+        "CSV",
+        "csv"
+      ]
+    },
+    {
+      "id": "FIT02_error",
+      "family": "fitting",
+      "problem": "examples/development_variants/FIT02_error.txt",
+      "reference": "examples/fitting/curve_model.json",
+      "base_id": "FIT02",
+      "kind": "error",
+      "expected_envelopes": [
+        "needs_clarification",
+        "unsupported"
+      ],
+      "question_keywords": [
+        "阶",
+        "负",
+        "支持"
+      ],
+      "data": "examples/fitting/curve.csv"
+    },
+    {
+      "id": "DYN01_paraphrase",
+      "family": "dynamics",
+      "problem": "examples/development_variants/DYN01_paraphrase.txt",
+      "reference": "examples/dynamics/cooling_model.json",
+      "case": "cooling",
+      "base_id": "DYN01",
+      "kind": "paraphrase",
+      "expected_envelopes": [
+        "ready"
+      ],
+      "expected_status": "normal"
+    },
+    {
+      "id": "DYN01_missing",
+      "family": "dynamics",
+      "problem": "examples/development_variants/DYN01_missing.txt",
+      "reference": "examples/dynamics/cooling_model.json",
+      "case": "cooling",
+      "base_id": "DYN01",
+      "kind": "missing",
+      "expected_envelopes": [
+        "needs_clarification"
+      ],
+      "question_keywords": [
+        "系数",
+        "速率",
+        "k"
+      ]
+    },
+    {
+      "id": "DYN01_error",
+      "family": "dynamics",
+      "problem": "examples/development_variants/DYN01_error.txt",
+      "reference": "examples/dynamics/cooling_model.json",
+      "case": "cooling",
+      "base_id": "DYN01",
+      "kind": "error",
+      "expected_envelopes": [
+        "needs_clarification",
+        "unsupported"
+      ],
+      "question_keywords": [
+        "负",
+        "正",
+        "系数",
+        "支持"
+      ]
+    },
+    {
+      "id": "DYN02_paraphrase",
+      "family": "dynamics",
+      "problem": "examples/development_variants/DYN02_paraphrase.txt",
+      "reference": "examples/dynamics/logistic_model.json",
+      "case": "logistic",
+      "base_id": "DYN02",
+      "kind": "paraphrase",
+      "expected_envelopes": [
+        "ready"
+      ],
+      "expected_status": "normal"
+    },
+    {
+      "id": "DYN02_missing",
+      "family": "dynamics",
+      "problem": "examples/development_variants/DYN02_missing.txt",
+      "reference": "examples/dynamics/logistic_model.json",
+      "case": "logistic",
+      "base_id": "DYN02",
+      "kind": "missing",
+      "expected_envelopes": [
+        "needs_clarification"
+      ],
+      "question_keywords": [
+        "容量",
+        "K"
+      ]
+    },
+    {
+      "id": "DYN02_error",
+      "family": "dynamics",
+      "problem": "examples/development_variants/DYN02_error.txt",
+      "reference": "examples/dynamics/logistic_model.json",
+      "case": "logistic",
+      "base_id": "DYN02",
+      "kind": "error",
+      "expected_envelopes": [
+        "needs_clarification",
+        "unsupported"
+      ],
+      "question_keywords": [
+        "容量",
+        "零",
+        "0",
+        "正"
+      ]
+    },
+    {
+      "id": "NET01_paraphrase",
+      "family": "graph",
+      "problem": "examples/development_variants/NET01_paraphrase.txt",
+      "reference": "examples/graphs/shortest_path_model.json",
+      "case": "shortest_path",
+      "base_id": "NET01",
+      "kind": "paraphrase",
+      "expected_envelopes": [
+        "ready"
+      ],
+      "expected_status": "normal"
+    },
+    {
+      "id": "NET01_missing",
+      "family": "graph",
+      "problem": "examples/development_variants/NET01_missing.txt",
+      "reference": "examples/graphs/shortest_path_model.json",
+      "case": "shortest_path",
+      "base_id": "NET01",
+      "kind": "missing",
+      "expected_envelopes": [
+        "needs_clarification"
+      ],
+      "question_keywords": [
+        "距离",
+        "权重",
+        "A"
+      ]
+    },
+    {
+      "id": "NET01_error",
+      "family": "graph",
+      "problem": "examples/development_variants/NET01_error.txt",
+      "reference": "examples/graphs/shortest_path_model.json",
+      "case": "shortest_path",
+      "base_id": "NET01",
+      "kind": "error",
+      "expected_envelopes": [
+        "needs_clarification",
+        "unsupported"
+      ],
+      "question_keywords": [
+        "负",
+        "支持"
+      ]
+    },
+    {
+      "id": "NET02_paraphrase",
+      "family": "graph",
+      "problem": "examples/development_variants/NET02_paraphrase.txt",
+      "reference": "examples/graphs/max_flow_model.json",
+      "case": "max_flow",
+      "base_id": "NET02",
+      "kind": "paraphrase",
+      "expected_envelopes": [
+        "ready"
+      ],
+      "expected_status": "normal"
+    },
+    {
+      "id": "NET02_missing",
+      "family": "graph",
+      "problem": "examples/development_variants/NET02_missing.txt",
+      "reference": "examples/graphs/max_flow_model.json",
+      "case": "max_flow",
+      "base_id": "NET02",
+      "kind": "missing",
+      "expected_envelopes": [
+        "needs_clarification"
+      ],
+      "question_keywords": [
+        "容量",
+        "A"
+      ]
+    },
+    {
+      "id": "NET02_error",
+      "family": "graph",
+      "problem": "examples/development_variants/NET02_error.txt",
+      "reference": "examples/graphs/max_flow_model.json",
+      "case": "max_flow",
+      "base_id": "NET02",
+      "kind": "error",
+      "expected_envelopes": [
+        "needs_clarification",
+        "unsupported"
+      ],
+      "question_keywords": [
+        "负",
+        "容量"
+      ]
+    },
+    {
+      "id": "cooling_units",
+      "family": "dynamics",
+      "problem": "examples/robustness/cooling_units.txt",
+      "reference": "examples/dynamics/cooling_model.json",
+      "case": "cooling",
+      "kind": "units",
+      "base_id": "DYN01"
+    },
+    {
+      "id": "logistic_units",
+      "family": "dynamics",
+      "problem": "examples/robustness/logistic_units.txt",
+      "reference": "examples/dynamics/logistic_model.json",
+      "case": "logistic",
+      "kind": "units",
+      "base_id": "DYN02"
+    },
+    {
+      "id": "path_units",
+      "family": "graph",
+      "problem": "examples/robustness/path_units.txt",
+      "reference": "examples/graphs/shortest_path_model.json",
+      "case": "shortest_path",
+      "kind": "units",
+      "base_id": "NET01"
+    }
+  ],
+  "max_calls": 35,
+  "repeats": 1,
+  "retries": 0,
+  "model": "deepseek-flash",
+  "hashes": {
+    "evaluation/__init__.py": "e341001f744cb6b55ac13abe7a9d38978cd3b1ef9c183f663f055edefa4f5ea2",
+    "evaluation/batch.py": "c7659a163d8a025515dc441592585397ef37e2a122e97f14cb17a2f5f7d81491",
+    "evaluation/development.py": "89270a2258536a19513758437df5c60d7f58030faaa097d7e7ec56e2b611d85c",
+    "evaluation/dynamics.py": "d11fd630a1f2f19013e24ae79430613963ccb57bcce5919d03704a1b1635ead7",
+    "evaluation/fitting.py": "d4262f4040c1cccf7d7028af272c64fd41e362877fea71ab96eb08744ddeb21d",
+    "evaluation/format_regression.py": "6a03b8388f7db607204351c9350ca8da59e72a122c236316c53412af83a4ecb3",
+    "evaluation/full_regression.py": "492a0eb2bd4c4d692890c7f443a0243102f3befc82fdb9819916aab1f0879819",
+    "evaluation/graphs.py": "b68d4fd3088d8542dc9604a2b77ccb4901165f89eab9072949ce40592c4f7d79",
+    "evaluation/review_variants.py": "b7001e90019a90aa15976ca91a2a2709e1de2f5a5fdc90ff1a5845ae361db1ec",
+    "evaluation/robustness.py": "cd5fd3a95455a464ec69b147d5f8cccf282a583813c21c995081c27048c51b8a",
+    "evaluation/transport.py": "b25a52d2837db07788ec883de5028a84ac98fc31ca8087a903bc4cd805e45f5b",
+    "evaluation/unit_regression.py": "5f2f7f2c064b40c9999274ee64e8f71773a8053b89fcfc4c0285b45729e91ac7",
+    "evaluation/variants.py": "30a6cc4a08751c821bbd511c117d8a8340a7fe174588fdaf982a8d7141237c9b",
+    "examples/development_variants/DYN01_error.txt": "e6403616bd1c76b5f1ea96b99f9da3cb74afc1b4e0966ddd018dbded0a4e836e",
+    "examples/development_variants/DYN01_missing.txt": "824dcb88f6fc5b223cd584d7c7ba588b6f843e583941a5a8183b815c837d8a4c",
+    "examples/development_variants/DYN01_paraphrase.txt": "1f0ebea21ade597b801f5ab28dbc73177972f7c155e4c1b3f3b4a4c440e0f42a",
+    "examples/development_variants/DYN02_error.txt": "970cb129e8c1d0b71452e4c260b45c8368ca918b8ccb03ba2ec96b13a2350b1f",
+    "examples/development_variants/DYN02_missing.txt": "fd31924c8d5edd628e117331617b41992757c3d3cea56eba3e3163ec9bf28ddd",
+    "examples/development_variants/DYN02_paraphrase.txt": "d2c586186fc46f9fca58a45b3138222ef535f69e2361beb45ac215eb766e943c",
+    "examples/development_variants/FIT01_error.txt": "e68f686b8fe0b4fbd44e47d27632a18f895144e0f73c7c97f7e102c362b20d14",
+    "examples/development_variants/FIT01_missing.txt": "84a58faa389e38093095ef15cddb334556d6612296df84c1f03d550997930093",
+    "examples/development_variants/FIT01_paraphrase.txt": "d0cc2f4102a2e73021c323aba7f3b8cb4fb02270657a9155171a8af1e7cee585",
+    "examples/development_variants/FIT02_error.txt": "376162509626165f1fdf1be94a5168d975b688564e7597735f32487fbb8f94c6",
+    "examples/development_variants/FIT02_missing.txt": "0ab9b39757a08e7f6902ac915fc6cf0004dd4a7b226818448fe9a7304b80aa77",
+    "examples/development_variants/FIT02_paraphrase.txt": "f2f9abb5862fd9106b874c0bee6a49a99ddd58dc84059c27c390f39ea4456dfb",
+    "examples/development_variants/NET01_error.txt": "66fe42a1d3aea760821151401da6b5859800b7c0d36bc0ccaeb4043881764fa4",
+    "examples/development_variants/NET01_missing.txt": "3214ed7a100e54bc5551bbde538855bb5206f84c92b3f223f4abb04981d9fd17",
+    "examples/development_variants/NET01_paraphrase.txt": "549c3f3b72e1349eb168433bda501ae90cba25afab3abdca906d5287a9ff2ac2",
+    "examples/development_variants/NET02_error.txt": "1c0b35fb35b5551ec2c4dbafc9b47583d8587a283d42f8a9f8a1ce382451c90a",
+    "examples/development_variants/NET02_missing.txt": "5791c3a3ed50fb9c003527f5f1169ea36b706e46b9567d3a6bd16bae52865ed3",
+    "examples/development_variants/NET02_paraphrase.txt": "c902ffdb42cbf3f283313c8a78cdf0480f1d5f96e13cd9160932e213bdce70b0",
+    "examples/development_variants/OPT01_error.txt": "fabb9172c07225a813da9c48846b86931db2e132044781fe07bd05309e6278b3",
+    "examples/development_variants/OPT01_missing.txt": "3f50b0ad203579c87d445b32b80207ab2c447822a4735e8e2d0b43bd1d7eafa2",
+    "examples/development_variants/OPT01_paraphrase.txt": "d212b474f80eb6c46a669cb8a528b92d3401dec46a0f2c834687539c9389d9f6",
+    "examples/development_variants/OPT02_error.txt": "bd3cc6eaccffa9896cfd189591f22fa6a6664dda59161b8092c26dfab6fd0d4f",
+    "examples/development_variants/OPT02_missing.txt": "ed79dc8823801f794147c0ae3b3c23dff925ee53ad7e734671e909f8fcbd73c2",
+    "examples/development_variants/OPT02_paraphrase.txt": "49ea2e7f7bbfafbfb49345f6e5209e8604b1e3e26b66b001291472f6198da96e",
+    "examples/development_variants/manifest.json": "d116d5c1ad5c032bedd36d7ec07e5514604233e5f785a757bf8754d09f6c7d17",
+    "examples/dynamics/cooling.txt": "89560b8c854a2b2cdbd1afea62f5c65dd7d928f20fe96f9eefa623f9bd24af17",
+    "examples/dynamics/cooling_model.json": "0e07c01005b3a0ca801ccb8d4a8b86f393b6ad842b716878f2063c1ac9a8e84f",
+    "examples/dynamics/logistic.txt": "36089bf1f839798c97ac76793bbdbacfa55fdd39ffde2c9e0364f606d5b901b6",
+    "examples/dynamics/logistic_model.json": "422d074402f17a98b27f57dacf73cfc79fff0a50e4561e1b120c21def9c3ea7e",
+    "examples/fitting/calibration.csv": "8f6b4d9e113bce8b837f550b879863cf5d9963f44b6687282f1b9156b52dcfa4",
+    "examples/fitting/calibration.txt": "d9bc65325bc608beae57f73b0172a02a595d5e329e9e2a4507f9845364402848",
+    "examples/fitting/calibration_model.json": "04dc52634cedb2cec951a5934e221e857a81c8186331f2b9a4267164823237bc",
+    "examples/fitting/curve.csv": "2d3965b9c3dc371a1c010cba2c51214baf7e295828b277e561969d3999325cbd",
+    "examples/fitting/curve.txt": "2222f6796561a9054c5f89b49beaa500b8bdfcdfa77fac2b495bdbba42675ba4",
+    "examples/fitting/curve_model.json": "258a69ca6113ef9810c094051683f31284893d4dc4c5b09566532ae4cbd02c11",
+    "examples/graphs/max_flow.txt": "9cf09b9e426ffd6d77de1ccba71a2d6bed882615902679314aa63165a89532e4",
+    "examples/graphs/max_flow_model.json": "5892060b24c071d8e3d52df6057a7a6bdd577a18151f64d52891dfeb7da7510e",
+    "examples/graphs/shortest_path.txt": "46c40a5ee65c9955cbf445e60278e4d158be2e26d4c02186ce174356346d073a",
+    "examples/graphs/shortest_path_model.json": "967e609ced6cda311d66c4dc95bdfefeac187b98e9dfeaf1e4a3e5cd9d9ba730",
+    "examples/production/problem.txt": "fb4fa6c9d6bbf445104d28c013d87059685e19ee3e522cbc1501d884e2e44638",
+    "examples/production/problem_freeform.txt": "a450a996e0da07b11eac1b917dc035439c110d407cc624b6dcc674ac82615427",
+    "examples/robustness/bad_split.csv": "b966e6fbedd2ca84cede2f4a9911c426bfe74c6ba9f830d81c690416a5e2cef4",
+    "examples/robustness/constant_x.csv": "6b3c5e3f0d5e722d1764c7cd4dd6eb0e311fe30129399018f2b2c40768a67caf",
+    "examples/robustness/cooling_units.txt": "482dc3b96d9191cde8833b7b1a3d86673124877f1647d3055e207b3a25c75635",
+    "examples/robustness/logistic_units.txt": "07dcff21fa43fbef2ce429ab476bf98805f87028c05a7ee9dc39312323c769e9",
+    "examples/robustness/missing_y.csv": "a19ad417fa80943c19adb50d3d0b443f392ce6897d52afbb83fbfc672afc7544",
+    "examples/robustness/nan.csv": "724ee4436336f1814012624f5ac1a725ec0d860dad3c174099fac3ccf5d188a5",
+    "examples/robustness/path_units.txt": "453e404040a5b625f0a4c8b8b08703bfaf80f5f9f0f30af4ea0fcf36ffd57c10",
+    "examples/robustness/train_only.csv": "cb5339fd5efbbca858edce4c607c9b1487e7119f721ba2ea18be92c1dcc9936c",
+    "examples/robustness/valid.csv": "5a55606d901cce6528589ed455b3e16f2fc825d6c8dcda5c16a3ce1366ef005e",
+    "examples/robustness/wrong_header.csv": "1e709f9256142c4385cea07ad523f4c618ce8cf766d6f9895527e186400be776",
+    "examples/transport/problem.txt": "e6db8ce3741f78ac9102db70b6e269b3f91ed6e5555cec0091169f1587448215",
+    "examples/transport/reference_model.json": "c2960fbb415389bf3c05566646d0d9b502675935ad174dcf26b65262fcc197fe",
+    "modeling_assistant/__init__.py": "86a710eafcc252a0c4c75c7385fdf9d837eaa78cdc534e5bb3b9ea5258382ac6",
+    "modeling_assistant/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+    "modeling_assistant/cli.py": "c2458a2e5f0991fe408e086f89967fb58b118716a41428eac17077db6c9cd42b",
+    "modeling_assistant/config.py": "3bde19f9ff792b8612f650dbbe59bda9cd6b0bdc09bb4aa83ae2f32c21fc2dab",
+    "modeling_assistant/configure.py": "181e16c35632d06bae844828dc84edd8fef62cbf42fefd6db4208f335c7880bc",
+    "modeling_assistant/dynamics.py": "5f516b2ef84abfcd39e12ea96a01aa160ad8c54be51a6cab81f3b8f4e3f9dc57",
+    "modeling_assistant/fitting.py": "7577f4d107cab457821be089dbfeebc0ee0b0b05627f9f8b0e38565e24fd16fd",
+    "modeling_assistant/format_repair.py": "3f2ab8ea661eb1c5cfc302453c341f344f81923d4aa34b219458117b7259fe54",
+    "modeling_assistant/graphs.py": "cd1063f33e1a0e41fa26048bf7c06bf7ec766e097264eb2135975b1e1b264469",
+    "modeling_assistant/model.py": "856c636afe1f8e6019eb883f9449a20b5ca3c81c6cc3e9e88e59985314188e4b",
+    "modeling_assistant/parser.py": "e36f55ec7a73f34f106ba19c09b6a2e246a802c676c4d029c79d1cf1c2f46231",
+    "modeling_assistant/provider.py": "afef6b933649bbf0b950bd601485a1b089151249044dd010f0dc5a4c20402fbd",
+    "modeling_assistant/solver.py": "aaa42a26a60dd8800632fea12a07422e5d8d777e7f9264535e9f9bff13b2f5b0",
+    "modeling_assistant/units.py": "0918f5c8d4dae0ab934a19549644fe55076e19be410e6d7222d6f674fa84aa4c",
+    "requirements-assistant-lock.txt": "d7888eaea32fe78f1268a6f72dabe82e1f38dd2da7fb2b0bedb0c286fc2f1ea0",
+    "tests/test_api_configuration.py": "b3ba057230e25982f50de28578678c9e3c405e212a4b52f5670fb2a6d914c85a",
+    "tests/test_batch.py": "3441510fc449123ec7cb3d022d6b4c76aeef89a56fe1f3d44c849481a07b15c8",
+    "tests/test_clarification.py": "ae24fc6cd986f42f20e09f7322ccf2760ae5c537d63808f80bcae07f210a46e5",
+    "tests/test_dynamics.py": "0bc68c55cc35d7fd25e2b23c760b2d1c6b0969f10accf19e7fdb3cf932034426",
+    "tests/test_fitting.py": "bb2ea9fcc106ae4240569cb5e23766489e2c9a459606b5a3c5c052a3778e1bd0",
+    "tests/test_format_repair.py": "8001025309adb299a0cfa229c57bb52598ba979e9ba7ac754e89867a7e69b353",
+    "tests/test_full_regression.py": "4a26b900e72146edc5a45ab99c955b6a590edfc1f461c669139a2328d646012e",
+    "tests/test_graphs.py": "d32d4d83f4ba0d1c4d927c0146e29bc12b49e221732cc8fa7fd1acef3479e0e3",
+    "tests/test_infeasibility.py": "635fdfbe7b97d5ab61f3f85772cb33b492c5772d6170a7450a2aeeb9848ba76e",
+    "tests/test_modeling_assistant.py": "b1bcfbb03e929b170e20f3870796b82506fbcc288f493d2c1c8a14cdf96a7995",
+    "tests/test_parameter_feedback.py": "d70ff40a911d31497bdb255c1668e5ff895155c62c2f617cb774b68d6bf498e9",
+    "tests/test_transport.py": "70e001ae2fdc87be163f6942d7222608af8db9b73d330a6c975a10b3dd002041",
+    "tests/test_units.py": "2ae74b20e85f08a69fdf32947c0a8f773ddd04cea02a57cb3d3c3d17b71d625b",
+    "tests/test_variants.py": "3a1216832bed6282efdea5cbda1a6364d96b86993334a39dcab2a5560dad504b"
+  },
+  "python": "3.13.16",
+  "scipy": "1.18.1"
+}

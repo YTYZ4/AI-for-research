@@ -1,0 +1,65 @@
+﻿id,base_id,kind,repeat,outcome,failure_category,detail,elapsed_seconds,total_tokens,response_model,run_path
+OPT01,OPT01,original,1,pass,,,1.7241474580368958,2708,deepseek-flash,../round_1/OPT01/20261016_165605_ca3ebcc8
+OPT02,OPT02,original,1,pass,,,2.9239689169917256,3131,deepseek-flash,../round_1/OPT02/20261016_165608_a611e311
+FIT01,FIT01,original,1,pass,,,1.8443555000121705,2606,deepseek-flash,../round_1/FIT01/20261016_165609_2fcb9296
+FIT02,FIT02,original,1,pass,,,2.076422666956205,2591,deepseek-flash,../round_1/FIT02/20261016_165612_f166b737
+DYN01,DYN01,original,1,pass,,,1.547790915996302,2587,deepseek-flash,../round_1/DYN01/20261016_165613_7e444adc
+DYN02,DYN02,original,1,pass,,,1.6699766250094399,2542,deepseek-flash,../round_1/DYN02/20261016_165615_b26807c2
+NET01,NET01,original,1,pass,,,1.8820120000164025,2615,deepseek-flash,../round_1/NET01/20261016_165617_eb5158e9
+NET02,NET02,original,1,pass,,,1.6450732079683803,2642,deepseek-flash,../round_1/NET02/20261016_165618_ad1e802c
+OPT01_paraphrase,OPT01,paraphrase,1,pass,,,2.387465041014366,2862,deepseek-flash,../round_1/OPT01_paraphrase/20261016_165621_c97b3c2b
+OPT01_missing,OPT01,missing,1,pass,,原料的供应是否有上限？如有请提供上限数值；如不限请说明，可按供应不限处理。,1.1932291249977425,2449,deepseek-flash,round_1/OPT01_missing/20261016_165622_007ef6dc
+OPT01_error,OPT01,error,1,pass,,,2.224807166028768,2777,deepseek-flash,../round_1/OPT01_error/20261016_165624_cd98364c
+OPT02_paraphrase,OPT02,paraphrase,1,pass,,,3.0011109999613836,3079,deepseek-flash,../round_1/OPT02_paraphrase/20261016_165627_9b341d85
+OPT02_missing,OPT02,missing,1,pass,,请提供 S3 的需求量（单位：吨）；若 S3 为可选需求或允许缺货/库存，请明确其需求上下限或是否不要求满足。,1.0479399579926394,2501,deepseek-flash,round_1/OPT02_missing/20261016_165628_15b2fe4a
+OPT02_error,OPT02,error,1,pass,,,2.9102170830010436,3211,deepseek-flash,../round_1/OPT02_error/20261016_165631_23abf8b8
+FIT01_paraphrase,FIT01,paraphrase,1,pass,,,1.9099601659690961,2620,deepseek-flash,../round_1/FIT01_paraphrase/20261016_165633_3ec00181
+FIT01_missing,FIT01,missing,1,pass,,"请提供包含 x,y,split 三列的 CSV 数据（split 取 train/test），用于有截距一元线性最小二乘标定；没有数据无法给出系数及留出 RMSE。",1.1690189999644645,2459,deepseek-flash,round_1/FIT01_missing/20261016_165634_58f3139c
+FIT01_error,FIT01,error,1,pass,,当前仅支持1–5阶的一元普通最小二乘多项式拟合，负阶多项式（degree=-2）不是本任务支持的模型；请确认是否改为1–5阶中的某个正阶数，或提供其他受支持的拟合任务。,0.9589935000403784,2504,deepseek-flash,round_1/FIT01_error/20261016_165635_e5acfb94
+FIT02_paraphrase,FIT02,paraphrase,1,pass,,,1.7448321250267327,2691,deepseek-flash,../round_1/FIT02_paraphrase/20261016_165637_f7efbd7e
+FIT02_missing,FIT02,missing,1,pass,,"请提供包含 x,y,split 三列的 CSV 数据文件（split 为 train/test），以便进行 1–5 阶多项式最小二乘拟合与留出评估。",1.1450604160199873,2445,deepseek-flash,round_1/FIT02_missing/20261016_165638_39f3e717
+FIT02_error,FIT02,error,1,pass,,指定的普通多项式阶数为 -2（负二阶），超出支持范围；仅支持 1–5 阶一元普通最小二乘多项式拟合，因此无法按此题建模。,1.2859290830092505,2482,deepseek-flash,round_1/FIT02_error/20261016_165639_46257814
+DYN01_paraphrase,DYN01,paraphrase,1,pass,,,1.6754463749821298,2546,deepseek-flash,../round_1/DYN01_paraphrase/20261016_165641_0b1f843f
+DYN01_missing,DYN01,missing,1,pass,,请提供牛顿冷却系数 k 的数值及其单位，例如 0.05 1/min；没有该值无法确定温度轨迹和终值。,1.3426139170187525,2430,deepseek-flash,round_1/DYN01_missing/20261016_165642_6ac1478c
+DYN01_error,DYN01,error,1,pass,,牛顿冷却模型要求冷却系数 k 为正数，以保证温度会向环境温度趋近；你给出的是 k=-0.1 每分钟，为负数且会导致温度远离环境温度。当前不支持这种参数或方程形式，请将 k 改为正数后重试。,1.3271941249840893,2472,deepseek-flash,round_1/DYN01_error/20261016_165644_963e13ae
+DYN02_paraphrase,DYN02,paraphrase,1,pass,,,1.6490053340094164,2549,deepseek-flash,../round_1/DYN02_paraphrase/20261016_165645_1360daa2
+DYN02_missing,DYN02,missing,1,pass,,请提供环境容量 K（单位：个），Logistic 增长需要该参数。,0.9261785839917138,2434,deepseek-flash,round_1/DYN02_missing/20261016_165646_7e1cb691
+DYN02_error,DYN02,error,1,fail,generation_error,ValueError: Logistic 初值须非负、环境容量须为正,1.55104399996344,2508,deepseek-flash,
+NET01_paraphrase,NET01,paraphrase,1,pass,,,1.751363791001495,2609,deepseek-flash,../round_1/NET01_paraphrase/20261016_165650_cb3e8d3b
+NET01_missing,NET01,missing,1,pass,,请提供边 A 到 T 的距离（单位：千米）。,1.098087124992162,2426,deepseek-flash,round_1/NET01_missing/20261016_165651_22570f4a
+NET01_error,NET01,error,1,pass,,最短路径仅支持非负权；当前边 S→A 的权重为 -2 千米，存在负权，无法建模为支持的最短路径问题。,1.3919374999823049,2438,deepseek-flash,round_1/NET01_error/20261016_165652_b954246f
+NET02_paraphrase,NET02,paraphrase,1,pass,,,1.7275768750114366,2612,deepseek-flash,../round_1/NET02_paraphrase/20261016_165654_f9d9b66b
+NET02_missing,NET02,missing,1,pass,,管道 A 到 T 的容量未提供，请输入该有向管道的容量（单位：立方米/小时）。,0.9095951250055805,2438,deepseek-flash,round_1/NET02_missing/20261016_165655_0cff8a71
+NET02_error,NET02,error,1,pass,,最大流不支持负容量；S到A的容量为-3立方米/小时，无法按最大流模型处理。请确认该边容量是否应为非负整数。,1.0112772500142455,2445,deepseek-flash,round_1/NET02_error/20261016_165656_1a251097
+OPT01,OPT01,original,2,pass,,,2.3564357919967733,2881,deepseek-flash,../round_2/OPT01/20261016_165658_a5b366bc
+OPT02,OPT02,original,2,pass,,,4.151418832945637,3617,deepseek-flash,../round_2/OPT02/20261016_165702_dc1f1553
+FIT01,FIT01,original,2,pass,,,1.48260054201819,2607,deepseek-flash,../round_2/FIT01/20261016_165704_a0c9d57d
+FIT02,FIT02,original,2,pass,,,1.5897746660048142,2597,deepseek-flash,../round_2/FIT02/20261016_165705_8895253b
+DYN01,DYN01,original,2,pass,,,1.365647041995544,2519,deepseek-flash,../round_2/DYN01/20261016_165707_7293c16d
+DYN02,DYN02,original,2,pass,,,1.317350749974139,2530,deepseek-flash,../round_2/DYN02/20261016_165708_9140f52c
+NET01,NET01,original,2,pass,,,1.6654323750408366,2625,deepseek-flash,../round_2/NET01/20261016_165710_ec3ee56f
+NET02,NET02,original,2,pass,,,1.5792467080173083,2597,deepseek-flash,../round_2/NET02/20261016_165711_13bb776e
+OPT01_paraphrase,OPT01,paraphrase,2,pass,,,2.031883791962173,2685,deepseek-flash,../round_2/OPT01_paraphrase/20261016_165713_1f45358d
+OPT01_missing,OPT01,missing,2,pass,,原料供应是否有上限？如有请提供上限数值；如不限请说明，可按原料供应不限处理。,1.0738512079697102,2449,deepseek-flash,round_2/OPT01_missing/20261016_165714_71c9b84b
+OPT01_error,OPT01,error,2,pass,,,2.1545048750122078,2753,deepseek-flash,../round_2/OPT01_error/20261016_165716_c53d2f2b
+OPT02_paraphrase,OPT02,paraphrase,2,pass,,,3.1510269999853335,3092,deepseek-flash,../round_2/OPT02_paraphrase/20261016_165720_65074ffb
+OPT02_missing,OPT02,missing,2,pass,,S3 的需求量是多少吨？,1.0805293750017881,2471,deepseek-flash,round_2/OPT02_missing/20261016_165721_3dad3674
+OPT02_error,OPT02,error,2,pass,,,3.1582284169853665,3211,deepseek-flash,../round_2/OPT02_error/20261016_165724_b78dab2d
+FIT01_paraphrase,FIT01,paraphrase,2,pass,,,1.7838234580121934,2604,deepseek-flash,../round_2/FIT01_paraphrase/20261016_165726_5d1068cb
+FIT01_missing,FIT01,missing,2,pass,,请提供用于标定的 CSV 数据，需包含 x、y、split 三列（split 为 train/test）；收到数据后才能建立有截距一元线性最小二乘模型。；请确认电压 x 的单位为伏、温度 y 的单位为摄氏度；若有其他单位或建模假设请说明。,1.221266959037166,2470,deepseek-flash,round_2/FIT01_missing/20261016_165727_a050677a
+FIT01_error,FIT01,error,2,pass,,只支持一元普通最小二乘多项式拟合，degree 仅支持 1–5 的正整数阶；负二阶（degree=-2）不属于支持范围。请改为指定 1–5 阶；如需自动选阶可声明为 null（在训练集内五折验证选择 1–5 阶）。,1.487755374982953,2521,deepseek-flash,round_2/FIT01_error/20261016_165728_b512d4f3
+FIT02_paraphrase,FIT02,paraphrase,2,pass,,,1.9325984580209479,2736,deepseek-flash,../round_2/FIT02_paraphrase/20261016_165730_7df586f6
+FIT02_missing,FIT02,missing,2,pass,,"请提供包含 x,y,split 三列的 CSV 数据文件，其中 split 取值需为 train/test。",1.0968002919689752,2430,deepseek-flash,round_2/FIT02_missing/20261016_165731_9b16b557
+FIT02_error,FIT02,error,2,pass,,普通最小二乘多项式拟合仅支持 1–5 阶；指定的 -2 阶（负二阶）不在支持范围内，无法建立该拟合模型。,1.0393264169688337,2479,deepseek-flash,round_2/FIT02_error/20261016_165732_413f97ee
+DYN01_paraphrase,DYN01,paraphrase,2,pass,,,1.3634982079965994,2533,deepseek-flash,../round_2/DYN01_paraphrase/20261016_165734_503aba5b
+DYN01_missing,DYN01,missing,2,pass,,请提供牛顿冷却的冷却系数 k，并说明其单位（例如 1/min）。,0.9085796250146814,2429,deepseek-flash,round_2/DYN01_missing/20261016_165735_58c7c49c
+DYN01_error,DYN01,error,2,pass,,常参数牛顿冷却模型要求冷却系数 k 为正数；当前给定 k=-0.1 1/min，无法按 dT/dt=-k(T-20) 表示冷却过程，且不得取绝对值或改动参数，因此该动态任务暂不支持。,1.2515729169826955,2468,deepseek-flash,round_2/DYN01_error/20261016_165736_514d20b0
+DYN02_paraphrase,DYN02,paraphrase,2,pass,,,1.4877499589929357,2596,deepseek-flash,../round_2/DYN02_paraphrase/20261016_165737_0fc0e0bc
+DYN02_missing,DYN02,missing,2,pass,,请提供环境容量 K（正数，单位：个）。,1.0707597909495234,2418,deepseek-flash,round_2/DYN02_missing/20261016_165739_2752958c
+DYN02_error,DYN02,error,2,fail,generation_error,ValueError: Logistic 初值须非负、环境容量须为正,1.153668791987002,2493,deepseek-flash,
+NET01_paraphrase,NET01,paraphrase,2,pass,,,1.6072294160258025,2613,deepseek-flash,../round_2/NET01_paraphrase/20261016_165741_b41a5184
+NET01_missing,NET01,missing,2,pass,,请提供边 A 到 T 的距离（单位：千米）。,0.8067917079897597,2426,deepseek-flash,round_2/NET01_missing/20261016_165742_2c2d59ec
+NET01_error,NET01,error,2,pass,,最短路径仅支持非负权重；输入中包含负权边 S→A 权重 -2 千米，负权不可修改，因此无法按当前最短路径模型处理。,1.09691683400888,2440,deepseek-flash,round_2/NET01_error/20261016_165743_deda99bb
+NET02_paraphrase,NET02,paraphrase,2,pass,,,1.8848697500070557,2703,deepseek-flash,../round_2/NET02_paraphrase/20261016_165745_64c01c93
+NET02_missing,NET02,missing,2,pass,,请提供 A 到 T 管道的容量（单位立方米/小时）。,1.1490771250100806,2429,deepseek-flash,round_2/NET02_missing/20261016_165746_f5cac10f
+NET02_error,NET02,error,2,pass,,最大流问题不支持负容量边（S→A容量为-3），无法建模；请提供非负整数容量（如改为0或明确删去该边）。,1.0183919160044752,2446,deepseek-flash,round_2/NET02_error/20261016_165747_92bf9390

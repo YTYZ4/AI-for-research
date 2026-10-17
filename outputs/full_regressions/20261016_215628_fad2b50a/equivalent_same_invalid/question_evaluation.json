@@ -1,0 +1,13 @@
+{
+  "applied": true,
+  "passed": true,
+  "checks": {
+    "expected_status": true,
+    "nonempty_question": true,
+    "relevant_topic": true,
+    "no_replacement_suggestion": true,
+    "correct_dimensions": true
+  },
+  "text": "原题环境容量 K 的记录为“环境容量恒定-0个”和“K=0.0个”，即 K=0。当前连续 Logistic 模型 dN/dt=rN(1-N/K) 在 K=0 时出现除以零，模型无效；由于您明确要求不得改动参数，因此本问题超出当前支持范围。",
+  "scope": "状态/主题初筛；显式禁止改值时检查修改建议，否则Logistic容量检查正实数限制。不是完整语义证明。"
+}

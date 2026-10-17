@@ -1,0 +1,16 @@
+{
+  "policy": "fixed_system_descriptions_v2",
+  "suppressed_display_only": [
+    {
+      "location": "envelope",
+      "text": "求最大流同时给出各管道输水量，并可通过求解器最小割结果形成最小割证据。",
+      "reason": "包含系统行为或实现描述，移到原始记录，不作为报告假设展示"
+    },
+    {
+      "location": "stage_1",
+      "text": "求最大流同时给出各管道输水量，并可通过求解器最小割结果形成最小割证据。",
+      "reason": "包含系统行为或实现描述，移到原始记录，不作为报告假设展示"
+    }
+  ],
+  "source_modified": false
+}

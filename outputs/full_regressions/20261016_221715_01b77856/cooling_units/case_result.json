@@ -1,0 +1,12 @@
+{
+  "id": "cooling_units",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "",
+  "total_tokens": 4462,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "cooling_units/20261016_221817_820ca042",
+  "elapsed_seconds": 1.4626490409718826
+}

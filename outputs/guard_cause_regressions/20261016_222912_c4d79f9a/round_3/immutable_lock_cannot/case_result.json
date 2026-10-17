@@ -1,0 +1,12 @@
+{
+  "id": "immutable_lock_cannot",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "环境容量K=0会使当前连续Logistic模型无效（方程中出现除以K），且题目要求保持原值不能调整，因此无法按原参数建立有效模型。",
+  "total_tokens": 5315,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "immutable_lock_cannot/20261016_223023_0ec8f5af",
+  "elapsed_seconds": 1.1410837500006892
+}

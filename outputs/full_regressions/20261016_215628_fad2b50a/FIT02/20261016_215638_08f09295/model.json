@@ -1,0 +1,13 @@
+{
+  "task_type": "polynomial_fit",
+  "name": "一元多项式拟合与留出评估",
+  "assumptions": [
+    "x 和 y 均无量纲。",
+    "使用一元普通最小二乘多项式拟合。",
+    "阶数在 1 到 5 之间仅通过训练集五折交叉验证选择。",
+    "使用 split=test 的留出数据评估 RMSE、MAE 及泛化误差差距，不用于选阶。"
+  ],
+  "degree": null,
+  "x_unit": "无量纲",
+  "y_unit": "无量纲"
+}

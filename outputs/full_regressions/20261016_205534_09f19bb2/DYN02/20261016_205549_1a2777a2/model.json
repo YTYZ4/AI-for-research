@@ -1,0 +1,16 @@
+{
+  "task_type": "dynamics",
+  "name": "连续Logistic增长模型",
+  "system": "logistic",
+  "initial": 100,
+  "rate": 0.2,
+  "equilibrium": 1000,
+  "duration": 30.0,
+  "rate_unit": "1/day",
+  "state_unit": "个",
+  "assumptions": [
+    "封闭环境，常参数连续Logistic增长模型",
+    "无迁入迁出，数量采用连续近似"
+  ],
+  "time_unit": "day"
+}

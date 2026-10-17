@@ -1,0 +1,74 @@
+{
+  "name": "A、B产品整数产量利润最大化",
+  "assumptions": [
+    "A、B产品产量按整件计，采用非负整数变量。",
+    "每件产品的利润、工时消耗和原料消耗均按题目给定值计算。",
+    "本期资源仅受工时不超过100小时、原料不超过80千克限制，无其他限制。"
+  ],
+  "variables": [
+    {
+      "name": "A",
+      "description": "产品A的本期生产数量",
+      "unit": "件",
+      "kind": "integer",
+      "lower": 0,
+      "upper": null
+    },
+    {
+      "name": "B",
+      "description": "产品B的本期生产数量",
+      "unit": "件",
+      "kind": "integer",
+      "lower": 0,
+      "upper": null
+    }
+  ],
+  "objective": {
+    "sense": "max",
+    "terms": [
+      {
+        "variable": "A",
+        "coefficient": 40
+      },
+      {
+        "variable": "B",
+        "coefficient": 30
+      }
+    ],
+    "unit": "元"
+  },
+  "constraints": [
+    {
+      "name": "工时限制",
+      "terms": [
+        {
+          "variable": "A",
+          "coefficient": 2
+        },
+        {
+          "variable": "B",
+          "coefficient": 1
+        }
+      ],
+      "sense": "<=",
+      "rhs": 100,
+      "unit": "小时"
+    },
+    {
+      "name": "原料限制",
+      "terms": [
+        {
+          "variable": "A",
+          "coefficient": 1
+        },
+        {
+          "variable": "B",
+          "coefficient": 2
+        }
+      ],
+      "sense": "<=",
+      "rhs": 80,
+      "unit": "千克"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "applied": true,
+  "passed": true,
+  "checks": {
+    "expected_status": true,
+    "nonempty_question": true,
+    "relevant_topic": true,
+    "correct_dimensions": true
+  },
+  "text": "请提供正实数环境容量K（可为小数），并注明其数量单位（如个、只等）。",
+  "scope": "状态/主题初筛；显式禁止改值时检查修改建议，否则Logistic容量检查正实数限制。不是完整语义证明。"
+}

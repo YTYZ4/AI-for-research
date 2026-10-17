@@ -1,0 +1,7 @@
+{
+  "false_interception": false,
+  "passed": true,
+  "no_replacement_suggestion": true,
+  "text": "环境容量K=0会使连续Logistic方程的微分项 rN(1-N/K) 出现除零而无效；且用户明确要求不得改动参数，因此无法在当前模型中建立有效方程。",
+  "scope": "仅检查显式禁止改参数后的常见改值建议；不是完整语义证明"
+}

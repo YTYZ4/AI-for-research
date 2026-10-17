@@ -1,0 +1,12 @@
+{
+  "id": "flow_missing_direction",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "请确认S与T之间边的方向：是S→T、T→S，还是双向？",
+  "total_tokens": 1449,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "flow_missing_direction/20261016_235209_6689f184",
+  "elapsed_seconds": 1.161652916984167
+}

@@ -1,0 +1,13 @@
+{
+  "task_type": "polynomial_fit",
+  "name": "传感器线性标定",
+  "assumptions": [
+    "采用带截距的一元普通最小二乘多项式拟合 y = a*x + b，即 degree=1。",
+    "按 CSV 的 split 列严格划分训练集与留出集：train 行用于估计参数，test 行用于计算留出 RMSE 和 MAE。",
+    "x 为传感器读数，单位伏；y 为参考温度，单位摄氏度。",
+    "仅在本地使用训练集拟合，不对留出集调参，不输出拟合系数。"
+  ],
+  "degree": 1,
+  "x_unit": "伏",
+  "y_unit": "摄氏度"
+}

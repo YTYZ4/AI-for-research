@@ -1,0 +1,47 @@
+{
+  "task_type": "graph",
+  "name": "输水网络最大流",
+  "problem": "max_flow",
+  "nodes": [
+    "S",
+    "A",
+    "B",
+    "T"
+  ],
+  "source": "S",
+  "target": "T",
+  "edges": [
+    {
+      "source": "S",
+      "target": "A",
+      "weight": 10
+    },
+    {
+      "source": "S",
+      "target": "B",
+      "weight": 5
+    },
+    {
+      "source": "A",
+      "target": "B",
+      "weight": 4
+    },
+    {
+      "source": "A",
+      "target": "T",
+      "weight": 6
+    },
+    {
+      "source": "B",
+      "target": "T",
+      "weight": 9
+    }
+  ],
+  "unit": "立方米/小时",
+  "assumptions": [
+    "所有管道均按给定方向单向输水",
+    "各边容量为每小时最大输水量，单位统一为立方米/小时",
+    "中间节点A、B满足流量守恒",
+    "求解最大总流量以及达到最大流时各管道流量，最小割用于验证最大流"
+  ]
+}

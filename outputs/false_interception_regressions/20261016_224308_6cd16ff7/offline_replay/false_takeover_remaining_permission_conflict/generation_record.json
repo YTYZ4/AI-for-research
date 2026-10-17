@@ -1,0 +1,9 @@
+{
+  "envelope": {
+    "status": "needs_clarification",
+    "questions": [
+      "环境容量存在两条同单位记录：“环境容量恒定0个”与“K=0.5个”。请核对哪一条准确？"
+    ],
+    "model": null
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "id": "equivalent_near_difference",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "同一环境容量K存在两个冲突记录：0.5个 与 0.5001个。请核对哪一条准确（不要求修改数值，只需确认原记录）。",
+  "total_tokens": 3868,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "equivalent_near_difference/20261016_214044_5f6f7045",
+  "elapsed_seconds": 1.0640594169963151
+}

@@ -1,0 +1,36 @@
+﻿id,base_id,kind,raw_schema_valid,format_action,local_guard_used,original_pass,after_format_pass,final_pass,pass_path,failure_category,detail,total_tokens,elapsed_seconds,run_path
+OPT01,OPT01,original,True,not_needed,False,True,True,True,native,,,3444,2.3483502920134924,OPT01/20261016_202421_db2b622c
+OPT02,OPT02,original,True,not_needed,False,True,True,True,native,,,3668,3.0428639170131646,OPT02/20261016_202424_262cd170
+FIT01,FIT01,original,True,not_needed,False,True,True,True,native,,,3122,2.0975929999840446,FIT01/20261016_202426_0a560a28
+FIT02,FIT02,original,True,not_needed,False,True,True,True,native,,,3158,1.6336417919956148,FIT02/20261016_202427_2b800c1c
+DYN01,DYN01,original,True,not_needed,False,True,True,True,native,,,3072,1.6363633750006557,DYN01/20261016_202429_ca776ee2
+DYN02,DYN02,original,True,not_needed,False,True,True,True,native,,,3074,1.5594693750026636,DYN02/20261016_202431_fb8e7f22
+NET01,NET01,original,True,not_needed,False,True,True,True,native,,,3135,1.3317605420015752,NET01/20261016_202432_ac13936d
+NET02,NET02,original,True,not_needed,False,True,True,True,native,,,3134,1.4410208750050515,NET02/20261016_202433_5ee59171
+OPT01_paraphrase,OPT01,paraphrase,True,not_needed,False,True,True,True,native,,,3390,2.642824207956437,OPT01_paraphrase/20261016_202436_6c381ee1
+OPT01_missing,OPT01,missing,True,not_needed,False,True,True,True,native,,原料供应是否有上限？如有请提供数值；如不限请说明，可按供应不限处理。,2985,1.1627674999763258,OPT01_missing/20261016_202437_f7b1e9a4
+OPT01_error,OPT01,error,True,not_needed,False,True,True,True,native,,,3288,1.8785201249993406,OPT01_error/20261016_202439_638ff5db
+OPT02_paraphrase,OPT02,paraphrase,True,not_needed,False,True,True,True,native,,,3656,2.943272291973699,OPT02_paraphrase/20261016_202442_073d7c8d
+OPT02_missing,OPT02,missing,True,not_needed,False,True,True,True,native,,S3的精确需求量是多少？,2996,0.797550291987136,OPT02_missing/20261016_202443_05c42917
+OPT02_error,OPT02,error,True,not_needed,False,True,True,True,native,,,4210,4.086571208026726,OPT02_error/20261016_202447_385f764c
+FIT01_paraphrase,FIT01,paraphrase,True,not_needed,False,True,True,True,native,,,3122,1.894770624989178,FIT01_paraphrase/20261016_202449_9649e294
+FIT01_missing,FIT01,missing,True,not_needed,False,True,True,True,native,,请提供包含 x、y、split 三列的 CSV 数据文件；split 列取值为 train/test，用于有截距一元线性最小二乘标定，并在测试集上计算留出 RMSE。,2988,0.9436374580254778,FIT01_missing/20261016_202450_383e6f43
+FIT01_error,FIT01,error,True,not_needed,False,True,True,True,native,,一元多项式拟合仅支持 1–5 阶（degree 为 1 到 5 的整数，或为 null 自动在 1–5 阶内选择）；负阶或非整数阶不受支持。,3027,1.0666412499849685,FIT01_error/20261016_202451_f9cd535f
+FIT02_paraphrase,FIT02,paraphrase,True,not_needed,False,True,True,True,native,,,3224,2.661641624988988,FIT02_paraphrase/20261016_202453_29249c9d
+FIT02_missing,FIT02,missing,True,not_needed,False,True,True,True,native,,"请提供包含 x,y,split 三列的一元观测数据 CSV 文件；split 取值为 train/test。",2957,1.1218116249656305,FIT02_missing/20261016_202455_8ffadd94
+FIT02_error,FIT02,error,True,not_needed,False,True,True,True,native,,普通最小二乘多项式拟合阶数必须是 1 到 5 之间的整数，不支持负二阶（-2）。,2998,1.3126835000002757,FIT02_error/20261016_202456_9fb8e71e
+DYN01_paraphrase,DYN01,paraphrase,True,not_needed,False,True,True,True,native,,,3091,1.8601864580414258,DYN01_paraphrase/20261016_202458_0777dd56
+DYN01_missing,DYN01,missing,True,not_needed,False,True,True,True,native,,牛顿冷却定律的冷却系数 k 未提供，请给出其数值及单位（例如 0.1 1/min）。,2952,1.2869009579881094,DYN01_missing/20261016_202459_dccef55d
+DYN01_error,DYN01,error,True,not_needed,False,True,True,True,native,,冷却系数 k 必须为正数且通常写作 k=0.1 每分钟；题目给出 k=-0.1 每分钟，会导致 dT/dt=-k(T-T_env)=0.1(T-20)，使温差随时间指数增长，不符合牛顿冷却模型。请确认应使用的正冷却系数值，或说明是否确实按 k=-0.1 建模。,3020,1.1613235839759,DYN01_error/20261016_202500_8bc30742
+DYN02_paraphrase,DYN02,paraphrase,True,not_needed,False,True,True,True,native,,,3136,1.54910966695752,DYN02_paraphrase/20261016_202502_bd51dfb2
+DYN02_missing,DYN02,missing,True,not_needed,False,True,True,True,native,,环境容量 K 尚未提供，请给出正的环境容量数值及其单位（例如 1000 个）。,2954,1.2188854579580948,DYN02_missing/20261016_202503_f6f16351
+DYN02_error,DYN02,error,True,not_needed,False,True,True,True,native,,环境容量 K=0 会导致 Logistic 方程出现除零并使模型无效；请提供 K>0 的容量数值，或说明该问题应视为不支持。,2964,1.0012578750029206,DYN02_error/20261016_202504_1b77f119
+NET01_paraphrase,NET01,paraphrase,True,not_needed,False,True,True,True,native,,,3144,1.5918239160091616,NET01_paraphrase/20261016_202506_f4f8f490
+NET01_missing,NET01,missing,True,not_needed,False,True,True,True,native,,A到T的边的距离（单位：千米）是多少？,2951,0.8002117499709129,NET01_missing/20261016_202506_58301b34
+NET01_error,NET01,error,True,not_needed,False,True,True,True,native,,最短路径仅支持非负权重；该路网中存在负权重边 S→A（-2 千米），不能转换为可求解的最短路径图规格。,2963,1.272071916027926,NET01_error/20261016_202508_1b67b81c
+NET02_paraphrase,NET02,paraphrase,True,not_needed,False,True,True,True,native,,,3160,1.5361575839924626,NET02_paraphrase/20261016_202509_fc34a57c
+NET02_missing,NET02,missing,True,not_needed,False,True,True,True,native,,请提供 A 到 T 管道的容量（单位：立方米/小时）。,2956,1.1257232920033857,NET02_missing/20261016_202510_d69dfe08
+NET02_error,NET02,error,True,not_needed,False,True,True,True,native,,最大流模型的边容量必须为非负整数；边 S→A 的容量为 -3，负容量不适用于最大流模型，请将负容量改为非负整数容量或说明实际含义。,2978,1.484102124988567,NET02_error/20261016_202512_08ad83f0
+cooling_units,DYN01,units,True,not_needed,False,True,True,True,native,,,3056,1.5447041660081595,cooling_units/20261016_202513_b5508740
+logistic_units,DYN02,units,True,not_needed,False,False,False,False,failed,needs_clarification,请提供 Logistic 增长速率 0.2 每天对应的反速率单位写法（例如 1/day）吗？；请提供初始状态、环境容量、增长速率和模拟时长的原题逐字片段，例如“初始100个”“容量恒定1000个”“0.2每天”“720小时”。,3008,2.8840670410427265,logistic_units/20261016_202516_ba384a98
+path_units,NET01,units,True,not_needed,False,True,True,True,native,,,3175,1.9426232500118203,path_units/20261016_202518_91577f4b

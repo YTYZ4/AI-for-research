@@ -1,0 +1,7 @@
+{
+  "false_interception": false,
+  "passed": true,
+  "no_replacement_suggestion": true,
+  "text": "原题给出的环境容量 K=0，会导致 Logistic 方程 dN/dt=rN(1-N/K) 出现除零，当前模型无法按原值建立；由于用户明确要求保持原值不能调整，因此不支持该问题。",
+  "scope": "仅检查显式禁止改参数后的常见改值建议；不是完整语义证明"
+}

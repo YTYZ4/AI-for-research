@@ -1,0 +1,13 @@
+{
+  "task_type": "polynomial_fit",
+  "name": "传感器电压-温度线性标定",
+  "assumptions": [
+    "分别使用 split=train 与 split=test 记录，不重新划分数据。",
+    "采用普通最小二乘线性回归 y=a*x+b，保留截距。",
+    "训练集用于估计参数，测试集仅用于计算 RMSE 和 MAE。",
+    "x 与 y 按给定单位记录，不进行额外单位换算。"
+  ],
+  "degree": 1,
+  "x_unit": "伏",
+  "y_unit": "摄氏度"
+}

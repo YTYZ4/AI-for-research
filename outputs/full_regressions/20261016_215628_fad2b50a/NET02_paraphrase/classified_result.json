@@ -1,0 +1,31 @@
+{
+  "id": "NET02_paraphrase",
+  "family": "graph",
+  "outcome": "fail",
+  "failure_category": "needs_clarification",
+  "detail": "图边原值或单位引用不在原题中，请核对原始记录。",
+  "total_tokens": 4439,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "NET02_paraphrase/20261016_215726_be3974e5",
+  "elapsed_seconds": 2.597422542050481,
+  "question_semantics_passed": false,
+  "kind": "paraphrase",
+  "base_id": "NET02",
+  "origins": [
+    {
+      "id": "NET02_paraphrase",
+      "problem": "examples/development_variants/NET02_paraphrase.txt",
+      "kind": "paraphrase"
+    }
+  ],
+  "quote_audit_passed": null,
+  "raw_schema_valid": true,
+  "format_action": "not_needed",
+  "local_guard_used": true,
+  "source_quote_repaired": false,
+  "original_pass": false,
+  "after_format_pass": false,
+  "final_pass": false,
+  "pass_path": "failed"
+}

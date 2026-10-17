@@ -1,0 +1,12 @@
+{
+  "id": "conflict_missing_rate",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "请提供Logistic模型的增长率r（原题数值及单位，例如每天0.2或0.2/天）。",
+  "total_tokens": 4082,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "conflict_missing_rate/20261016_215844_0f1e6c42",
+  "elapsed_seconds": 1.2239518749993294
+}

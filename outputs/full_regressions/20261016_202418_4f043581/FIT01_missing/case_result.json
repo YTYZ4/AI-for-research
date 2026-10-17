@@ -1,0 +1,12 @@
+{
+  "id": "FIT01_missing",
+  "family": "fitting",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "请提供包含 x、y、split 三列的 CSV 数据文件；split 列取值为 train/test，用于有截距一元线性最小二乘标定，并在测试集上计算留出 RMSE。",
+  "total_tokens": 2988,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "FIT01_missing/20261016_202450_383e6f43",
+  "elapsed_seconds": 0.9436374580254778
+}

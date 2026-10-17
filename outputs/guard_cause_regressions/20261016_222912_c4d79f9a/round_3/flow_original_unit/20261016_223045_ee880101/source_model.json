@@ -1,0 +1,27 @@
+{
+  "task_type": "graph_input",
+  "name": "有向输水网络最大流",
+  "problem": "max_flow",
+  "nodes": [
+    "S",
+    "T"
+  ],
+  "source": "S",
+  "target": "T",
+  "edges": [
+    {
+      "source": "S",
+      "target": "T",
+      "weight": 1,
+      "unit": "升/小时",
+      "source_quote": "S到T容量1升/小时",
+      "unit_quote": "升/小时"
+    }
+  ],
+  "unit": "升/小时",
+  "assumptions": [
+    "有向图，边方向为S到T",
+    "容量为非负整数",
+    "统一输出单位为升/小时"
+  ]
+}

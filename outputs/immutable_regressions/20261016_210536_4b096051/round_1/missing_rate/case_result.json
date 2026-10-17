@@ -1,0 +1,12 @@
+{
+  "id": "missing_rate",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "请提供正实数内禀增长率r（可为小数），并注明其单位（如1/day），且不会改动初始值、环境容量和模拟时长。",
+  "total_tokens": 3409,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "missing_rate/20261016_210553_c969c9d2",
+  "elapsed_seconds": 1.8781683329725638
+}

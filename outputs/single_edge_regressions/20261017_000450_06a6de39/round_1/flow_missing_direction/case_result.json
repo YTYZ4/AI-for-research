@@ -1,0 +1,12 @@
+{
+  "id": "flow_missing_direction",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "原题未明确 S 与 T 之间边的方向，请补充该边的方向（S→T 还是 T→S）。",
+  "total_tokens": 1494,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "flow_missing_direction/20261017_000456_6d93af45",
+  "elapsed_seconds": 1.4982230839668773
+}

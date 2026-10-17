@@ -1,0 +1,31 @@
+{
+  "id": "capacity_negative",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "环境容量K为-0.5个，连续Logistic模型要求K>0且K=0时会出现除零，当前参数无法建立有效方程；请提供正实数环境容量K（可为小数）。",
+  "total_tokens": 4420,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "capacity_negative/20261016_215738_6e87ef61",
+  "elapsed_seconds": 2.2662621670169756,
+  "question_semantics_passed": true,
+  "kind": "boundary",
+  "base_id": "DYN02",
+  "origins": [
+    {
+      "id": "capacity_negative",
+      "problem": "examples/capacity_boundaries/negative.txt",
+      "kind": "boundary"
+    }
+  ],
+  "quote_audit_passed": null,
+  "raw_schema_valid": true,
+  "format_action": "not_needed",
+  "local_guard_used": false,
+  "source_quote_repaired": false,
+  "original_pass": true,
+  "after_format_pass": true,
+  "final_pass": true,
+  "pass_path": "native"
+}

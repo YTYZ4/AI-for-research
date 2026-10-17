@@ -1,0 +1,12 @@
+{
+  "id": "conflict_all_negative",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "题面中关于容量K有两条同单位但数值不同的记录：容量恒定-1个，K=-2个。请核对哪一条是准确的原始记录？",
+  "total_tokens": 5185,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "conflict_all_negative/20261016_224319_383f376b",
+  "elapsed_seconds": 1.2290367500390857
+}

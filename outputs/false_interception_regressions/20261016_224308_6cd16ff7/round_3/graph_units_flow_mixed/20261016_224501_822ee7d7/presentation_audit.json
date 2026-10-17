@@ -1,0 +1,11 @@
+{
+  "policy": "fixed_system_descriptions_v2",
+  "suppressed_display_only": [
+    {
+      "location": "envelope",
+      "text": "统一输出单位为立方米/小时，由程序对原单位容量做单位换算后再求最大流。",
+      "reason": "包含系统行为或实现描述，移到原始记录，不作为报告假设展示"
+    }
+  ],
+  "source_modified": false
+}

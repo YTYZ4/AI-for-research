@@ -1,0 +1,208 @@
+[
+  {
+    "id": "zero_positive",
+    "family": "dynamics",
+    "problem": "examples/conflict/zero_positive.txt",
+    "initial": 1.5,
+    "capacity": 0.5,
+    "expected_envelopes": [
+      "needs_clarification"
+    ],
+    "conflict_values": [
+      0,
+      0.5
+    ],
+    "question_keywords": [
+      "容量",
+      "K"
+    ]
+  },
+  {
+    "id": "two_positive",
+    "family": "dynamics",
+    "problem": "examples/conflict/two_positive.txt",
+    "initial": 1.5,
+    "capacity": 0.5,
+    "expected_envelopes": [
+      "needs_clarification"
+    ],
+    "conflict_values": [
+      0.5,
+      1
+    ],
+    "question_keywords": [
+      "容量",
+      "K"
+    ]
+  },
+  {
+    "id": "reverse",
+    "family": "dynamics",
+    "problem": "examples/conflict/reverse.txt",
+    "initial": 1.5,
+    "capacity": 0.5,
+    "expected_envelopes": [
+      "needs_clarification"
+    ],
+    "conflict_values": [
+      0.5,
+      0
+    ],
+    "question_keywords": [
+      "容量",
+      "K"
+    ]
+  },
+  {
+    "id": "three_values",
+    "family": "dynamics",
+    "problem": "examples/conflict/three_values.txt",
+    "initial": 1.5,
+    "capacity": 0.5,
+    "expected_envelopes": [
+      "needs_clarification"
+    ],
+    "conflict_values": [
+      -1,
+      0,
+      0.5
+    ],
+    "question_keywords": [
+      "容量",
+      "K"
+    ]
+  },
+  {
+    "id": "same_positive",
+    "family": "dynamics",
+    "problem": "examples/conflict/same_positive.txt",
+    "initial": 1.5,
+    "capacity": 0.5,
+    "expected_envelopes": [
+      "ready"
+    ],
+    "conflict_values": [],
+    "question_keywords": []
+  },
+  {
+    "id": "same_invalid",
+    "family": "dynamics",
+    "problem": "examples/conflict/same_invalid.txt",
+    "initial": 1.5,
+    "capacity": 0,
+    "expected_envelopes": [
+      "unsupported"
+    ],
+    "conflict_values": [],
+    "question_keywords": [
+      "容量",
+      "K"
+    ]
+  },
+  {
+    "id": "corrected",
+    "family": "dynamics",
+    "problem": "examples/conflict/corrected.txt",
+    "initial": 1.5,
+    "capacity": 0.5,
+    "expected_envelopes": [
+      "ready"
+    ],
+    "conflict_values": [],
+    "question_keywords": []
+  },
+  {
+    "id": "missing",
+    "family": "dynamics",
+    "problem": "examples/conflict/missing.txt",
+    "initial": 1.5,
+    "capacity": 0.5,
+    "expected_envelopes": [
+      "needs_clarification"
+    ],
+    "conflict_values": [],
+    "question_keywords": [
+      "容量",
+      "K"
+    ]
+  },
+  {
+    "id": "valid_above",
+    "family": "dynamics",
+    "problem": "examples/conflict/valid_above.txt",
+    "initial": 1.5,
+    "capacity": 0.5,
+    "expected_envelopes": [
+      "ready"
+    ],
+    "conflict_values": [],
+    "question_keywords": []
+  },
+  {
+    "id": "previous_failure",
+    "family": "dynamics",
+    "problem": "examples/conflict/previous_failure.txt",
+    "initial": 1.5,
+    "capacity": null,
+    "expected_envelopes": [
+      "needs_clarification"
+    ],
+    "conflict_values": [
+      0,
+      0.5
+    ],
+    "question_keywords": [
+      "冲突",
+      "矛盾",
+      "不一致"
+    ]
+  },
+  {
+    "id": "all_negative",
+    "family": "dynamics",
+    "problem": "examples/conflict/all_negative.txt",
+    "initial": 1.5,
+    "capacity": null,
+    "expected_envelopes": [
+      "needs_clarification"
+    ],
+    "conflict_values": [
+      -1,
+      -2
+    ],
+    "question_keywords": [
+      "容量",
+      "K"
+    ]
+  },
+  {
+    "id": "missing_mixed",
+    "family": "dynamics",
+    "problem": "examples/conflict/missing_mixed.txt",
+    "initial": 1.5,
+    "capacity": null,
+    "expected_envelopes": [
+      "needs_clarification"
+    ],
+    "conflict_values": [],
+    "question_keywords": [
+      "容量",
+      "K"
+    ]
+  },
+  {
+    "id": "missing_rate",
+    "family": "dynamics",
+    "problem": "examples/conflict/missing_rate.txt",
+    "initial": 1.5,
+    "capacity": null,
+    "expected_envelopes": [
+      "needs_clarification"
+    ],
+    "conflict_values": [],
+    "question_keywords": [
+      "增长率",
+      "r"
+    ]
+  }
+]

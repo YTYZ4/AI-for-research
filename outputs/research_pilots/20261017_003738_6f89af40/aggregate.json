@@ -1,0 +1,26 @@
+{
+  "self_check": {
+    "error_repaired": 9,
+    "error_tasks": 9,
+    "first_round_repaired": 9,
+    "correct_controls_preserved": 3,
+    "control_tasks": 3,
+    "calls": 24,
+    "tokens": 34224,
+    "prompt_tokens": 24600,
+    "completion_tokens": 9624,
+    "elapsed_seconds": 45.316478705906775
+  },
+  "program_feedback": {
+    "error_repaired": 9,
+    "error_tasks": 9,
+    "first_round_repaired": 9,
+    "correct_controls_preserved": 3,
+    "control_tasks": 3,
+    "calls": 24,
+    "tokens": 35355,
+    "prompt_tokens": 25731,
+    "completion_tokens": 9624,
+    "elapsed_seconds": 46.23722591588739
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "checks": {
+    "conditions_preserved": true,
+    "domains": true,
+    "objective_sense": true,
+    "infeasible": true
+  },
+  "independent_reason": "总供给60吨小于硬需求70吨"
+}

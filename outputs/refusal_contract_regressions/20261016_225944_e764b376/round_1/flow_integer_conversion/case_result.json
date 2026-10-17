@@ -1,0 +1,12 @@
+{
+  "id": "flow_integer_conversion",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "",
+  "total_tokens": 1401,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "flow_integer_conversion/20261016_225954_409d786b",
+  "elapsed_seconds": 1.575368958991021
+}

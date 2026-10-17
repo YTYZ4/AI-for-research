@@ -1,0 +1,31 @@
+{
+  "id": "graph_units_unknown",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "图边单位无法确定性换算或量纲不一致，请核对单位及必要的换算依据；不会猜测因子。",
+  "total_tokens": 4234,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "graph_units_unknown/20261016_215910_582417cf",
+  "elapsed_seconds": 2.0908530830056407,
+  "question_semantics_passed": true,
+  "kind": "graph_units",
+  "base_id": "NET01",
+  "origins": [
+    {
+      "id": "graph_units_unknown",
+      "problem": "examples/graph_unit_boundaries/unknown.txt",
+      "kind": "graph_units"
+    }
+  ],
+  "quote_audit_passed": null,
+  "raw_schema_valid": true,
+  "format_action": "not_needed",
+  "local_guard_used": true,
+  "source_quote_repaired": false,
+  "original_pass": false,
+  "after_format_pass": false,
+  "final_pass": true,
+  "pass_path": "local_guard"
+}

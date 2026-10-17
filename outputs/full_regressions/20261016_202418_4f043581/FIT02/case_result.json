@@ -1,0 +1,12 @@
+{
+  "id": "FIT02",
+  "family": "fitting",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "",
+  "total_tokens": 3158,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "FIT02/20261016_202427_2b800c1c",
+  "elapsed_seconds": 1.6336417919956148
+}

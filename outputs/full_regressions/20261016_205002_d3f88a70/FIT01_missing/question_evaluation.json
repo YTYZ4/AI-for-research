@@ -1,0 +1,11 @@
+{
+  "applied": true,
+  "passed": true,
+  "checks": {
+    "expected_status": true,
+    "nonempty_question": true,
+    "relevant_topic": true
+  },
+  "text": "请提供包含 x,y,split 三列的训练/测试 CSV 数据（split 取值 train/test），用于一元线性最小二乘标定与留出 RMSE 计算。支持由 --data 提供该 CSV。",
+  "scope": "状态/主题初筛；Logistic容量另查正实数及整数限制。其余题型不是完整语义证明。"
+}

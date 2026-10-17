@@ -1,0 +1,12 @@
+{
+  "id": "flow_min_cost",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "该请求要求“最小费用最大流”，属于未支持的任务类型。当前仅支持最短路径和单商品最大流；不支持包含费用维度或最小费用目标的任务。",
+  "total_tokens": 1340,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "flow_min_cost/20261016_230045_6d7c2c83",
+  "elapsed_seconds": 1.2356035829870962
+}

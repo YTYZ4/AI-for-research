@@ -1,0 +1,142 @@
+[
+  {
+    "id": "OPT01_error",
+    "repeat": 1,
+    "before": {
+      "id": "OPT01_error",
+      "family": "optimization",
+      "outcome": "fail",
+      "failure_category": "solver_error",
+      "detail": "AttributeError: 'NoneType' object has no attribute 'get'",
+      "total_tokens": 2777,
+      "requested_model": "deepseek-flash",
+      "response_model": "deepseek-flash",
+      "run_path": "round_1/OPT01_error/20261016_165624_cd98364c",
+      "elapsed_seconds": 2.224807166028768,
+      "base_id": "OPT01",
+      "kind": "error",
+      "repeat": 1
+    },
+    "after": {
+      "id": "OPT01_error",
+      "family": "optimization",
+      "outcome": "pass",
+      "failure_category": "",
+      "detail": "",
+      "total_tokens": 2777,
+      "requested_model": "deepseek-flash",
+      "response_model": "deepseek-flash",
+      "run_path": "round_1/OPT01_error/20261016_165624_cd98364c",
+      "elapsed_seconds": 2.224807166028768,
+      "base_id": "OPT01",
+      "kind": "error",
+      "repeat": 1
+    },
+    "reason": "离线读取已保存求解结果，修正verification=null引发的评测器空值错误"
+  },
+  {
+    "id": "OPT02_error",
+    "repeat": 1,
+    "before": {
+      "id": "OPT02_error",
+      "family": "optimization",
+      "outcome": "fail",
+      "failure_category": "solver_error",
+      "detail": "AttributeError: 'NoneType' object has no attribute 'get'",
+      "total_tokens": 3211,
+      "requested_model": "deepseek-flash",
+      "response_model": "deepseek-flash",
+      "run_path": "round_1/OPT02_error/20261016_165631_23abf8b8",
+      "elapsed_seconds": 2.9102170830010436,
+      "base_id": "OPT02",
+      "kind": "error",
+      "repeat": 1
+    },
+    "after": {
+      "id": "OPT02_error",
+      "family": "optimization",
+      "outcome": "pass",
+      "failure_category": "",
+      "detail": "",
+      "total_tokens": 3211,
+      "requested_model": "deepseek-flash",
+      "response_model": "deepseek-flash",
+      "run_path": "round_1/OPT02_error/20261016_165631_23abf8b8",
+      "elapsed_seconds": 2.9102170830010436,
+      "base_id": "OPT02",
+      "kind": "error",
+      "repeat": 1
+    },
+    "reason": "离线读取已保存求解结果，修正verification=null引发的评测器空值错误"
+  },
+  {
+    "id": "OPT01_error",
+    "repeat": 2,
+    "before": {
+      "id": "OPT01_error",
+      "family": "optimization",
+      "outcome": "fail",
+      "failure_category": "solver_error",
+      "detail": "AttributeError: 'NoneType' object has no attribute 'get'",
+      "total_tokens": 2753,
+      "requested_model": "deepseek-flash",
+      "response_model": "deepseek-flash",
+      "run_path": "round_2/OPT01_error/20261016_165716_c53d2f2b",
+      "elapsed_seconds": 2.1545048750122078,
+      "base_id": "OPT01",
+      "kind": "error",
+      "repeat": 2
+    },
+    "after": {
+      "id": "OPT01_error",
+      "family": "optimization",
+      "outcome": "pass",
+      "failure_category": "",
+      "detail": "",
+      "total_tokens": 2753,
+      "requested_model": "deepseek-flash",
+      "response_model": "deepseek-flash",
+      "run_path": "round_2/OPT01_error/20261016_165716_c53d2f2b",
+      "elapsed_seconds": 2.1545048750122078,
+      "base_id": "OPT01",
+      "kind": "error",
+      "repeat": 2
+    },
+    "reason": "离线读取已保存求解结果，修正verification=null引发的评测器空值错误"
+  },
+  {
+    "id": "OPT02_error",
+    "repeat": 2,
+    "before": {
+      "id": "OPT02_error",
+      "family": "optimization",
+      "outcome": "fail",
+      "failure_category": "solver_error",
+      "detail": "AttributeError: 'NoneType' object has no attribute 'get'",
+      "total_tokens": 3211,
+      "requested_model": "deepseek-flash",
+      "response_model": "deepseek-flash",
+      "run_path": "round_2/OPT02_error/20261016_165724_b78dab2d",
+      "elapsed_seconds": 3.1582284169853665,
+      "base_id": "OPT02",
+      "kind": "error",
+      "repeat": 2
+    },
+    "after": {
+      "id": "OPT02_error",
+      "family": "optimization",
+      "outcome": "pass",
+      "failure_category": "",
+      "detail": "",
+      "total_tokens": 3211,
+      "requested_model": "deepseek-flash",
+      "response_model": "deepseek-flash",
+      "run_path": "round_2/OPT02_error/20261016_165724_b78dab2d",
+      "elapsed_seconds": 3.1582284169853665,
+      "base_id": "OPT02",
+      "kind": "error",
+      "repeat": 2
+    },
+    "reason": "离线读取已保存求解结果，修正verification=null引发的评测器空值错误"
+  }
+]

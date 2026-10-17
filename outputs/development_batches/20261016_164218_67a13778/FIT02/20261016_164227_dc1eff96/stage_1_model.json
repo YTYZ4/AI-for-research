@@ -1,0 +1,13 @@
+{
+  "task_type": "polynomial_fit",
+  "name": "一元多项式自动选阶拟合与留出集评估",
+  "assumptions": [
+    "x 与 y 均无量纲。",
+    "数据为独立采样的带噪声响应数据。",
+    "仅使用 split=train 数据在 1 到 5 阶之间进行五折交叉验证选阶，不使用 split=test 选阶。",
+    "选定阶数后对 split=test 留出数据报告 RMSE、MAE，并检查训练/交叉验证与留出集泛化误差差距。"
+  ],
+  "degree": null,
+  "x_unit": "无量纲",
+  "y_unit": "无量纲"
+}

@@ -1,0 +1,18 @@
+{
+  "task_type": "dynamics",
+  "name": "封闭种群连续Logistic模型",
+  "system": "logistic",
+  "initial": 1.5,
+  "rate": 0.2,
+  "equilibrium": 1.0,
+  "duration": 30.0,
+  "rate_unit": "1/day",
+  "state_unit": "个",
+  "assumptions": [
+    "封闭种群，连续Logistic增长模型",
+    "环境容量恒定，K为平衡值，不等于初值上限",
+    "常参数r和K，不考虑时变环境或干预",
+    "初值大于环境容量时，按原参数轨迹自然下降趋近K"
+  ],
+  "time_unit": "day"
+}

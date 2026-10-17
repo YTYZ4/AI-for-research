@@ -1,0 +1,179 @@
+{
+  "name": "两仓库到三门店运输成本最小化",
+  "assumptions": [
+    "运输量以吨计，可连续分割，允许小数。",
+    "W1 和 W2 的供应上限分别为 40 吨和 30 吨，允许剩余库存。",
+    "S1、S2、S3 的需求必须恰好满足，分别为 20、30、20 吨。",
+    "六条路线均允许运输，运费按每吨计算。"
+  ],
+  "variables": [
+    {
+      "name": "x_W1_S1",
+      "description": "从仓库 W1 运输到门店 S1 的货物量",
+      "unit": "吨",
+      "kind": "continuous",
+      "lower": 0,
+      "upper": null
+    },
+    {
+      "name": "x_W1_S2",
+      "description": "从仓库 W1 运输到门店 S2 的货物量",
+      "unit": "吨",
+      "kind": "continuous",
+      "lower": 0,
+      "upper": null
+    },
+    {
+      "name": "x_W1_S3",
+      "description": "从仓库 W1 运输到门店 S3 的货物量",
+      "unit": "吨",
+      "kind": "continuous",
+      "lower": 0,
+      "upper": null
+    },
+    {
+      "name": "x_W2_S1",
+      "description": "从仓库 W2 运输到门店 S1 的货物量",
+      "unit": "吨",
+      "kind": "continuous",
+      "lower": 0,
+      "upper": null
+    },
+    {
+      "name": "x_W2_S2",
+      "description": "从仓库 W2 运输到门店 S2 的货物量",
+      "unit": "吨",
+      "kind": "continuous",
+      "lower": 0,
+      "upper": null
+    },
+    {
+      "name": "x_W2_S3",
+      "description": "从仓库 W2 运输到门店 S3 的货物量",
+      "unit": "吨",
+      "kind": "continuous",
+      "lower": 0,
+      "upper": null
+    }
+  ],
+  "objective": {
+    "sense": "min",
+    "terms": [
+      {
+        "variable": "x_W1_S1",
+        "coefficient": 2
+      },
+      {
+        "variable": "x_W1_S2",
+        "coefficient": 4
+      },
+      {
+        "variable": "x_W1_S3",
+        "coefficient": 5
+      },
+      {
+        "variable": "x_W2_S1",
+        "coefficient": 3
+      },
+      {
+        "variable": "x_W2_S2",
+        "coefficient": 1
+      },
+      {
+        "variable": "x_W2_S3",
+        "coefficient": 7
+      }
+    ],
+    "unit": "元"
+  },
+  "constraints": [
+    {
+      "name": "W1供应上限",
+      "terms": [
+        {
+          "variable": "x_W1_S1",
+          "coefficient": 1
+        },
+        {
+          "variable": "x_W1_S2",
+          "coefficient": 1
+        },
+        {
+          "variable": "x_W1_S3",
+          "coefficient": 1
+        }
+      ],
+      "sense": "<=",
+      "rhs": 40,
+      "unit": "吨"
+    },
+    {
+      "name": "W2供应上限",
+      "terms": [
+        {
+          "variable": "x_W2_S1",
+          "coefficient": 1
+        },
+        {
+          "variable": "x_W2_S2",
+          "coefficient": 1
+        },
+        {
+          "variable": "x_W2_S3",
+          "coefficient": 1
+        }
+      ],
+      "sense": "<=",
+      "rhs": 30,
+      "unit": "吨"
+    },
+    {
+      "name": "S1需求恰好满足",
+      "terms": [
+        {
+          "variable": "x_W1_S1",
+          "coefficient": 1
+        },
+        {
+          "variable": "x_W2_S1",
+          "coefficient": 1
+        }
+      ],
+      "sense": "=",
+      "rhs": 20,
+      "unit": "吨"
+    },
+    {
+      "name": "S2需求恰好满足",
+      "terms": [
+        {
+          "variable": "x_W1_S2",
+          "coefficient": 1
+        },
+        {
+          "variable": "x_W2_S2",
+          "coefficient": 1
+        }
+      ],
+      "sense": "=",
+      "rhs": 30,
+      "unit": "吨"
+    },
+    {
+      "name": "S3需求恰好满足",
+      "terms": [
+        {
+          "variable": "x_W1_S3",
+          "coefficient": 1
+        },
+        {
+          "variable": "x_W2_S3",
+          "coefficient": 1
+        }
+      ],
+      "sense": "=",
+      "rhs": 20,
+      "unit": "吨"
+    }
+  ]
+}

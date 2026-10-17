@@ -1,0 +1,7 @@
+{
+  "false_interception": false,
+  "passed": true,
+  "no_replacement_suggestion": true,
+  "text": "环境容量K=0.0不满足K>0。原题明确禁止改动参数；保持原值时超出当前连续Logistic模型支持范围，停止求解。",
+  "scope": "仅检查显式禁止改参数后的常见改值建议；不是完整语义证明"
+}

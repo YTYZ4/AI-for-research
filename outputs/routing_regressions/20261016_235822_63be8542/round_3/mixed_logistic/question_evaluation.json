@@ -1,0 +1,11 @@
+{
+  "applied": true,
+  "passed": true,
+  "checks": {
+    "expected_status": true,
+    "nonempty_question": true,
+    "relevant_topic": true
+  },
+  "text": "该请求同时要求两类不同建模任务：图网络最大流/最低成本运输分配，以及 Logistic 动态模型需求预测；当前单模型协议不能联合表示并求解这两个任务。",
+  "scope": "状态/主题初筛；显式禁止改值时检查修改建议，否则Logistic容量检查正实数限制。不是完整语义证明。"
+}

@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "checks": {
+    "conditions_preserved": true,
+    "domains": true,
+    "objective_sense": true,
+    "infeasible": true
+  },
+  "independent_reason": "A至少60件需至少120小时，超过100小时"
+}

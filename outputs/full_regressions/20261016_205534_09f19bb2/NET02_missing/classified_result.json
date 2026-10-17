@@ -1,0 +1,22 @@
+{
+  "id": "NET02_missing",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "请提供 A 到 T 管道的最大流容量（单位立方米/小时）。",
+  "total_tokens": 3402,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "NET02_missing/20261016_205639_1ec5c7cd",
+  "elapsed_seconds": 2.6120633340324275,
+  "question_semantics_passed": true,
+  "kind": "missing",
+  "base_id": "NET02",
+  "raw_schema_valid": true,
+  "format_action": "not_needed",
+  "local_guard_used": false,
+  "original_pass": true,
+  "after_format_pass": true,
+  "final_pass": true,
+  "pass_path": "native"
+}

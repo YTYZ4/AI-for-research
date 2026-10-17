@@ -1,0 +1,12 @@
+{
+  "id": "OPT02_missing",
+  "family": "optimization",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "请提供 S3 的需求量（单位：吨）；若 S3 为可选需求或允许缺货/库存，请明确其需求上下限或是否不要求满足。",
+  "total_tokens": 2501,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "OPT02_missing/20261016_165628_15b2fe4a",
+  "elapsed_seconds": 1.0479399579926394
+}

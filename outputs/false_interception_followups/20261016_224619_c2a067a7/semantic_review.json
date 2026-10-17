@@ -1,0 +1,63 @@
+{
+  "reviewer": "development_assistant",
+  "independent_human_review": false,
+  "automatic_stats_unchanged": true,
+  "records": [
+    {
+      "id": "flow_integer_conversion",
+      "repeat": 1,
+      "pass_path": "failed",
+      "assessment": "legal conversion incorrectly refused; integer case invents graph_input schema restriction, reverse cases contradict their own exact integer conversion",
+      "raw": "{\"status\":\"unsupported\",\"questions\":[\"原题唯一容量为1000升/小时，要求所有容量和结果均以立方米/小时表示且不允许改变统一输出单位或取整；1000升/小时精确换算为1立方米/小时，属于整数容量，最大流问题本身在程序能力范围内，但当前 JSON Schema 的 graph_input 边字段不支持 source_quote/unit_quote 逐字引用，无法在不丢字段的情况下返回可校验的 ready 模型。\"],\"model\":null}"
+    },
+    {
+      "id": "flow_reverse_conversion",
+      "repeat": 1,
+      "pass_path": "failed",
+      "assessment": "legal conversion incorrectly refused; integer case invents graph_input schema restriction, reverse cases contradict their own exact integer conversion",
+      "raw": "{\"status\":\"unsupported\",\"questions\":[\"原边容量为0.001立方米/小时，要求统一输出为升/小时且不允许取整；该边换算后为1升/小时（整数），但按当前求解器校验规则，不能预先假定原值换算后一定满足整数容量要求。若程序校验发现换算后容量不是非负整数，则超出最大流仅支持非负整数容量的范围。\"],\"model\":null}"
+    },
+    {
+      "id": "flow_unknown_conversion",
+      "repeat": 1,
+      "pass_path": "local_guard",
+      "assessment": "necessary guard for nonintegral or unknown conversion",
+      "raw": "{\"status\":\"ready\",\"questions\":[],\"model\":{\"task_type\":\"graph_input\",\"name\":\"输水网络最大流\",\"problem\":\"max_flow\",\"nodes\":[\"S\",\"T\"],\"source\":\"S\",\"target\":\"T\",\"edges\":[{\"source\":\"S\",\"target\":\"T\",\"weight\":1,\"unit\":\"桶/小时\",\"source_quote\":\"S到T容量1桶/小时\",\"unit_quote\":\"1桶/小时\"}],\"unit\":\"立方米/小时\",\"assumptions\":[\"有向输水网络仅包含给定的一条边，无其他边。\",\"容量按原题所给1桶/小时保留，统一输出单位由程序按精确单位转换处理，不取整。\"]}}"
+    },
+    {
+      "id": "flow_reverse_conversion",
+      "repeat": 2,
+      "pass_path": "failed",
+      "assessment": "legal conversion incorrectly refused; integer case invents graph_input schema restriction, reverse cases contradict their own exact integer conversion",
+      "raw": "{\"status\":\"unsupported\",\"questions\":[\"当前求解器要求最大流容量在统一输出单位下为非负整数；原边容量0.001立方米/小时换算为升/小时等于1升/小时，但原题禁止改变统一输出单位或取整，因此无法按指定单位校验并求解。\"],\"model\":null}"
+    },
+    {
+      "id": "flow_unknown_conversion",
+      "repeat": 2,
+      "pass_path": "local_guard",
+      "assessment": "necessary guard for nonintegral or unknown conversion",
+      "raw": "{\"status\":\"ready\",\"questions\":[],\"model\":{\"task_type\":\"graph_input\",\"name\":\"S到T单边输水网络最大流\",\"problem\":\"max_flow\",\"nodes\":[\"S\",\"T\"],\"source\":\"S\",\"target\":\"T\",\"edges\":[{\"source\":\"S\",\"target\":\"T\",\"weight\":1,\"unit\":\"桶/小时\",\"source_quote\":\"S到T容量1桶/小时\",\"unit_quote\":\"桶/小时\"}],\"unit\":\"立方米/小时\",\"assumptions\":[\"有向边仅为S到T，无其他边。\",\"原题容量单位为桶/小时，要求统一输出单位为立方米/小时；程序将进行精确单位换算并校验换算后的容量是否为非负整数。\"]}}"
+    },
+    {
+      "id": "graph_units_fractional_flow",
+      "repeat": 3,
+      "pass_path": "local_guard",
+      "assessment": "necessary guard for nonintegral or unknown conversion",
+      "raw": "{\"status\":\"ready\",\"questions\":[],\"model\":{\"task_type\":\"graph_input\",\"name\":\"S到T最大流\",\"problem\":\"max_flow\",\"nodes\":[\"S\",\"T\"],\"source\":\"S\",\"target\":\"T\",\"edges\":[{\"source\":\"S\",\"target\":\"T\",\"weight\":1,\"unit\":\"升/小时\",\"source_quote\":\"S到T容量1升/小时\",\"unit_quote\":\"S到T容量1升/小时\"}],\"unit\":\"立方米/小时\",\"assumptions\":[\"有向输水网络。\",\"所有容量和结果统一以立方米/小时表示，不允许改变统一输出单位或取整。\",\"原容量为1升/小时，需精确换算为立方米/小时。\"]}}"
+    },
+    {
+      "id": "flow_reverse_conversion",
+      "repeat": 3,
+      "pass_path": "failed",
+      "assessment": "legal conversion incorrectly refused; integer case invents graph_input schema restriction, reverse cases contradict their own exact integer conversion",
+      "raw": "{\"status\":\"unsupported\",\"questions\":[\"原边容量为0.001立方米/小时，统一输出单位升/小时后为1升/小时（整数），但当前求解器要求输出单位下的容量换算为整数；该题指定输出单位为升/小时且禁止取整。若仅按原单位求解，可支持；但明确要求按升/小时输出时超出当前求解器对统一输出单位下整数容量的限制。\"],\"model\":null}"
+    },
+    {
+      "id": "flow_unknown_conversion",
+      "repeat": 3,
+      "pass_path": "local_guard",
+      "assessment": "necessary guard for nonintegral or unknown conversion",
+      "raw": "{\"status\":\"ready\",\"questions\":[],\"model\":{\"task_type\":\"graph_input\",\"name\":\"输水网络最大流\",\"problem\":\"max_flow\",\"nodes\":[\"S\",\"T\"],\"source\":\"S\",\"target\":\"T\",\"edges\":[{\"source\":\"S\",\"target\":\"T\",\"weight\":1,\"unit\":\"桶/小时\",\"source_quote\":\"S到T容量1桶/小时\",\"unit_quote\":\"S到T容量1桶/小时\"}],\"unit\":\"立方米/小时\",\"assumptions\":[\"有向边按题目给定方向；未提供其他边，按无其他边处理。\",\"所有容量和结果统一以立方米/小时表示，不改变输出单位，不对容量取整。\"]}}"
+    }
+  ]
+}

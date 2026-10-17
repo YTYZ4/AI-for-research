@@ -1,0 +1,23 @@
+{
+  "task_type": "dynamics_input",
+  "name": "牛顿冷却30分钟",
+  "system": "newton_cooling",
+  "initial": 90,
+  "rate": 0.1,
+  "equilibrium": 20,
+  "duration": 30,
+  "rate_unit": "1/min",
+  "state_unit": "celsius",
+  "assumptions": [
+    "液体温度均匀，环境温度恒定，冷却系数为常数",
+    "牛顿冷却方程 dT/dt = -k(T - T_env)",
+    "允许负摄氏温度"
+  ],
+  "duration_unit": "min",
+  "source_quotes": {
+    "initial": "90摄氏度",
+    "equilibrium": "20摄氏度",
+    "rate": "0.1每分钟",
+    "duration": "30分钟"
+  }
+}

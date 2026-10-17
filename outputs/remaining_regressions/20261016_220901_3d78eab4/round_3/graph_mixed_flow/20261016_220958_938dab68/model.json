@@ -1,0 +1,35 @@
+{
+  "task_type": "graph",
+  "name": "S到T最大流",
+  "problem": "max_flow",
+  "nodes": [
+    "S",
+    "A",
+    "T"
+  ],
+  "source": "S",
+  "target": "T",
+  "edges": [
+    {
+      "source": "S",
+      "target": "A",
+      "weight": 10
+    },
+    {
+      "source": "A",
+      "target": "T",
+      "weight": 6
+    },
+    {
+      "source": "S",
+      "target": "T",
+      "weight": 5
+    }
+  ],
+  "unit": "立方米/小时",
+  "assumptions": [
+    "有向输水网络，各边容量为每小时最大允许流量。",
+    "各边容量均非负且已知，节点S为源点，节点T为汇点。",
+    "未给出其他管道，按完整问题处理，不增加额外边。"
+  ]
+}

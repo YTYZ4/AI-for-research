@@ -1,0 +1,107 @@
+{
+  "name": "电子厂手机与电脑生产利润最大化",
+  "assumptions": [
+    "手机和电脑为整件实物产品，生产数量取非负整数。",
+    "芯片、屏幕和组装工时为每天可用资源上限。",
+    "利润为每单位产品的线性收益，未包含其他成本或约束。",
+    "市场策略约束解释为电脑产量不超过手机产量。"
+  ],
+  "variables": [
+    {
+      "name": "x_phone",
+      "description": "每天生产的手机数量",
+      "unit": "部",
+      "kind": "integer",
+      "lower": 0,
+      "upper": null
+    },
+    {
+      "name": "x_computer",
+      "description": "每天生产的电脑数量",
+      "unit": "台",
+      "kind": "integer",
+      "lower": 0,
+      "upper": null
+    }
+  ],
+  "objective": {
+    "sense": "max",
+    "terms": [
+      {
+        "variable": "x_phone",
+        "coefficient": 500
+      },
+      {
+        "variable": "x_computer",
+        "coefficient": 800
+      }
+    ],
+    "unit": "元"
+  },
+  "constraints": [
+    {
+      "name": "芯片供应上限",
+      "terms": [
+        {
+          "variable": "x_phone",
+          "coefficient": 2
+        },
+        {
+          "variable": "x_computer",
+          "coefficient": 1
+        }
+      ],
+      "sense": "<=",
+      "rhs": 100,
+      "unit": "个"
+    },
+    {
+      "name": "屏幕供应上限",
+      "terms": [
+        {
+          "variable": "x_phone",
+          "coefficient": 1
+        },
+        {
+          "variable": "x_computer",
+          "coefficient": 2
+        }
+      ],
+      "sense": "<=",
+      "rhs": 80,
+      "unit": "块"
+    },
+    {
+      "name": "组装工时上限",
+      "terms": [
+        {
+          "variable": "x_phone",
+          "coefficient": 1
+        },
+        {
+          "variable": "x_computer",
+          "coefficient": 3
+        }
+      ],
+      "sense": "<=",
+      "rhs": 120,
+      "unit": "小时"
+    },
+    {
+      "name": "电脑产量不超过手机产量",
+      "terms": [
+        {
+          "variable": "x_computer",
+          "coefficient": 1
+        },
+        {
+          "variable": "x_phone",
+          "coefficient": -1
+        }
+      ],
+      "sense": "<=",
+      "rhs": 0,
+      "unit": "台"
+    }
+  ]
+}

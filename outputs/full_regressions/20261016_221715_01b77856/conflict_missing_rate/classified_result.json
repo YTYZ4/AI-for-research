@@ -1,0 +1,31 @@
+{
+  "id": "conflict_missing_rate",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "请提供正实数内禀增长率 r（可为小数）及其时间单位（如 1/天）。",
+  "total_tokens": 4356,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "conflict_missing_rate/20261016_221929_4eb7bd09",
+  "elapsed_seconds": 2.472372166987043,
+  "question_semantics_passed": true,
+  "kind": "conflict",
+  "base_id": "DYN02",
+  "origins": [
+    {
+      "id": "conflict_missing_rate",
+      "problem": "examples/conflict_boundaries/missing_rate.txt",
+      "kind": "conflict"
+    }
+  ],
+  "quote_audit_passed": null,
+  "raw_schema_valid": true,
+  "format_action": "not_needed",
+  "local_guard_used": false,
+  "source_quote_repaired": false,
+  "original_pass": true,
+  "after_format_pass": true,
+  "final_pass": true,
+  "pass_path": "native"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "flow_min_cost",
+  "family": "graph",
+  "outcome": "fail",
+  "failure_category": "generation_error",
+  "detail": "ValueError: 未就绪响应必须不含模型，且说明待澄清或不支持的原因",
+  "total_tokens": 893,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": null,
+  "elapsed_seconds": 0.9713970000157133
+}

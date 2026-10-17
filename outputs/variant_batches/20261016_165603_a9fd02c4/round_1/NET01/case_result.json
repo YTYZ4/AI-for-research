@@ -1,0 +1,12 @@
+{
+  "id": "NET01",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "",
+  "total_tokens": 2615,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "NET01/20261016_165617_eb5158e9",
+  "elapsed_seconds": 1.8820120000164025
+}

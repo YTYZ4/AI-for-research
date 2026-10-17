@@ -1,0 +1,30 @@
+{
+  "api_calls": 0,
+  "records": [
+    {
+      "source": "outputs/false_interception_regressions/20261016_224308_6cd16ff7/round_1/immutable_lock_dont/generation_record.json",
+      "unchanged": true,
+      "no_guard": true,
+      "evaluation_passed": true
+    },
+    {
+      "source": "outputs/false_interception_regressions/20261016_224308_6cd16ff7/round_2/immutable_lock_dont/generation_record.json",
+      "unchanged": true,
+      "no_guard": true,
+      "evaluation_passed": true
+    },
+    {
+      "source": "outputs/false_interception_regressions/20261016_224308_6cd16ff7/round_3/immutable_lock_dont/generation_record.json",
+      "unchanged": true,
+      "no_guard": true,
+      "evaluation_passed": true
+    },
+    {
+      "source": "outputs/false_interception_regressions/20261016_224308_6cd16ff7/round_2/conflict_all_negative/generation_record.json",
+      "unchanged": true,
+      "no_guard": true,
+      "evaluation_passed": true
+    }
+  ],
+  "passed": true
+}

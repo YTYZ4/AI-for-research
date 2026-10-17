@@ -1,0 +1,13 @@
+{
+  "applied": true,
+  "passed": true,
+  "checks": {
+    "expected_status": true,
+    "nonempty_question": true,
+    "relevant_topic": true,
+    "no_replacement_suggestion": true,
+    "correct_dimensions": true
+  },
+  "text": "环境容量K=0会使连续Logistic模型退化为 dN/dt = rN(1 - N/0)，方程在当前模型下无效；原题又要求不得改动参数，因此无法按现有参数求解。若允许调整，需要提供正实数环境容量K（可为小数）及其数量单位。",
+  "scope": "状态/主题初筛；显式禁止改值时检查修改建议，否则Logistic容量检查正实数限制。不是完整语义证明。"
+}

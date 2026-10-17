@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": {
+    "unsupported": true,
+    "no_model": true,
+    "nonblank_explanations": true,
+    "identifies_requested_scope": true,
+    "explains_limit": true,
+    "no_invented_contract_limit": true,
+    "no_silent_downgrade": true
+  },
+  "text": "原题要求最小费用最大流，并给出每升费用2元；当前仅支持最短路径和单商品最大流，不支持最小费用流，因此无法按原题返回。最小费用流中的费用要求不能在支持的模型中表达。"
+}

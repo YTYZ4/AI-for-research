@@ -1,0 +1,13 @@
+{
+  "applied": true,
+  "passed": true,
+  "checks": {
+    "expected_status": true,
+    "nonempty_question": true,
+    "relevant_topic": true,
+    "no_replacement_suggestion": true,
+    "correct_dimensions": true
+  },
+  "text": "环境容量K=0使Logistic方程中的1-N/K项出现除零，当前常参数Logistic连续模型不支持该参数值；且题目要求不得替换容量数值，因此无法建立有效模型。",
+  "scope": "状态/主题初筛；显式禁止改值时检查修改建议，否则Logistic容量检查正实数限制。不是完整语义证明。"
+}

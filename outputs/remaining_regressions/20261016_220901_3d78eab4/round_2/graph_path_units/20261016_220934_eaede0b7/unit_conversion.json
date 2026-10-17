@@ -1,0 +1,91 @@
+{
+  "method": "graph_edges_exact_fraction_v1",
+  "source_quotes_checked": true,
+  "target_unit": "km",
+  "edges": [
+    {
+      "index": 0,
+      "source": "S",
+      "target": "A",
+      "original_weight": 4000,
+      "original_unit": "米",
+      "factor": "1/1000",
+      "normalized_weight": 4,
+      "normalized_unit": "km",
+      "source_quote": "S到A 4000米",
+      "unit_quote": "米"
+    },
+    {
+      "index": 1,
+      "source": "S",
+      "target": "B",
+      "original_weight": 2,
+      "original_unit": "千米",
+      "factor": "1",
+      "normalized_weight": 2,
+      "normalized_unit": "km",
+      "source_quote": "S到B 2千米",
+      "unit_quote": "千米"
+    },
+    {
+      "index": 2,
+      "source": "B",
+      "target": "A",
+      "original_weight": 1000,
+      "original_unit": "米",
+      "factor": "1/1000",
+      "normalized_weight": 1,
+      "normalized_unit": "km",
+      "source_quote": "B到A 1000米",
+      "unit_quote": "米"
+    },
+    {
+      "index": 3,
+      "source": "A",
+      "target": "C",
+      "original_weight": 2,
+      "original_unit": "千米",
+      "factor": "1",
+      "normalized_weight": 2,
+      "normalized_unit": "km",
+      "source_quote": "A到C 2千米",
+      "unit_quote": "千米"
+    },
+    {
+      "index": 4,
+      "source": "B",
+      "target": "C",
+      "original_weight": 5000,
+      "original_unit": "米",
+      "factor": "1/1000",
+      "normalized_weight": 5,
+      "normalized_unit": "km",
+      "source_quote": "B到C 5000米",
+      "unit_quote": "米"
+    },
+    {
+      "index": 5,
+      "source": "C",
+      "target": "T",
+      "original_weight": 3,
+      "original_unit": "千米",
+      "factor": "1",
+      "normalized_weight": 3,
+      "normalized_unit": "km",
+      "source_quote": "C到T 3千米",
+      "unit_quote": "千米"
+    },
+    {
+      "index": 6,
+      "source": "A",
+      "target": "T",
+      "original_weight": 7,
+      "original_unit": "千米",
+      "factor": "1",
+      "normalized_weight": 7,
+      "normalized_unit": "km",
+      "source_quote": "A到T 7千米",
+      "unit_quote": "千米"
+    }
+  ]
+}

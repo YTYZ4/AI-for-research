@@ -1,0 +1,9 @@
+{
+  "envelope": {
+    "status": "needs_clarification",
+    "questions": [
+      "题面中环境容量K有两条同单位但数值不同的记录：容量恒定-1个、K=-2个。请核对哪一条准确？"
+    ],
+    "model": null
+  }
+}

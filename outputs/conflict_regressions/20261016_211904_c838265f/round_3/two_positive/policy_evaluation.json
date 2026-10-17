@@ -1,0 +1,13 @@
+{
+  "false_interception": false,
+  "passed": true,
+  "checks": {
+    "clarification": true,
+    "all_original_values": true,
+    "conflict_explained": true,
+    "asks_resolution": true,
+    "no_preselected_value": true,
+    "no_execution": true
+  },
+  "text": "环境承载量K存在两条互相冲突的记录：0.5个和1个。请核对哪条记录准确？"
+}

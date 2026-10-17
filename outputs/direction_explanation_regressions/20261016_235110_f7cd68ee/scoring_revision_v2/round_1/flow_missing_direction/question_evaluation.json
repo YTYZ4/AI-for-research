@@ -1,0 +1,11 @@
+{
+  "applied": true,
+  "passed": true,
+  "checks": {
+    "expected_status": true,
+    "nonempty_question": true,
+    "relevant_topic": true
+  },
+  "text": "边 S→T 的方向未知：R源是 S、汇是 T 已明确，但边方向会影响 S 到 T 的最大流，请明确该边是 S 到 T、T 到 S，还是双向。",
+  "scope": "状态/主题初筛；显式禁止改值时检查修改建议，否则Logistic容量检查正实数限制。不是完整语义证明。"
+}

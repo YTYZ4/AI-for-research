@@ -1,0 +1,12 @@
+{
+  "id": "mixed_production",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "当前请求同时联合要求生产计划与网络最大流两个不同建模任务，单模型协议无法表示这种联合任务，因此无法建立统一模型。",
+  "total_tokens": 4969,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "mixed_production/20261017_000554_c2a0519e",
+  "elapsed_seconds": 1.7960322079597972
+}

@@ -1,0 +1,35 @@
+{
+  "task_type": "graph",
+  "name": "有向输水网络最大流",
+  "problem": "max_flow",
+  "nodes": [
+    "S",
+    "A",
+    "T"
+  ],
+  "source": "S",
+  "target": "T",
+  "edges": [
+    {
+      "source": "S",
+      "target": "A",
+      "weight": 10
+    },
+    {
+      "source": "A",
+      "target": "T",
+      "weight": 6
+    },
+    {
+      "source": "S",
+      "target": "T",
+      "weight": 5
+    }
+  ],
+  "unit": "立方米/小时",
+  "assumptions": [
+    "网络为单商品有向最大流问题。",
+    "各管道容量为每小时最大可通过水量。",
+    "源点S的净流出量等于汇点T的净流入量。"
+  ]
+}

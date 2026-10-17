@@ -1,0 +1,36 @@
+{
+  "id": "path_units",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "",
+  "total_tokens": 4950,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "path_units/20261016_221823_51756a9c",
+  "elapsed_seconds": 3.2535740000312217,
+  "question_semantics_passed": null,
+  "kind": "units",
+  "base_id": "NET01",
+  "origins": [
+    {
+      "id": "path_units",
+      "problem": "examples/robustness/path_units.txt",
+      "kind": "units"
+    },
+    {
+      "id": "remaining_graph_path_units",
+      "problem": "examples/robustness/path_units.txt",
+      "kind": "remaining"
+    }
+  ],
+  "quote_audit_passed": null,
+  "raw_schema_valid": true,
+  "format_action": "not_needed",
+  "local_guard_used": false,
+  "source_quote_repaired": false,
+  "original_pass": true,
+  "after_format_pass": true,
+  "final_pass": true,
+  "pass_path": "native"
+}

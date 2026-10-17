@@ -1,0 +1,18 @@
+{
+  "task_type": "dynamics",
+  "name": "封闭种群连续Logistic数量轨迹",
+  "system": "logistic",
+  "initial": 1.5,
+  "rate": 0.2,
+  "equilibrium": 0.5,
+  "duration": 30.0,
+  "rate_unit": "1/day",
+  "state_unit": "个",
+  "assumptions": [
+    "采用连续Logistic方程 dN/dt = rN(1-N/K)，考察封闭种群无迁入迁出。",
+    "参数恒定：内禀增长率r=0.2/天，环境承载量K=0.5个。",
+    "初值N(0)=1.5个，N0大于K时按原方程自然下降至K。",
+    "模拟时长为30天，输出轨迹及末值。"
+  ],
+  "time_unit": "day"
+}

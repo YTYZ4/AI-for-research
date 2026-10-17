@@ -1,0 +1,11 @@
+{
+  "applied": true,
+  "passed": false,
+  "checks": {
+    "expected_status": true,
+    "nonempty_question": true,
+    "relevant_topic": false
+  },
+  "text": "需要明确 S 与 T 之间这条边从哪个节点指向哪个节点，才能建立有向最大流模型。",
+  "scope": "状态/主题初筛；显式禁止改值时检查修改建议，否则Logistic容量检查正实数限制。不是完整语义证明。"
+}

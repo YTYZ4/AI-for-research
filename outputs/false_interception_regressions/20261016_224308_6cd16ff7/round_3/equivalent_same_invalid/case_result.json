@@ -1,0 +1,12 @@
+{
+  "id": "equivalent_same_invalid",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "环境容量K的原值为0个（记录中也写作-0个），当前连续Logistic模型要求平衡参数K为正实数，K=0会使模型无效；且题面明确不得改动参数，因此无法按原参数求解。",
+  "total_tokens": 5619,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "equivalent_same_invalid/20261016_224445_4be24337",
+  "elapsed_seconds": 1.375528333010152
+}

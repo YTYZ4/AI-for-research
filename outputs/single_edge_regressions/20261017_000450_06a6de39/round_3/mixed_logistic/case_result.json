@@ -1,0 +1,12 @@
+{
+  "id": "mixed_logistic",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "当前请求同时包含两类独立建模任务：一是以 Logistic 动态模型预测需求；二是在有向网络 S→T、容量 1000 升/小时、单位成本 2 元/升下，联合计算最大流量且最低成本的运输方案。当前单模型协议不能表示并联合求解这两个任务，因此无法只返回其中一个任务。；在图网络部分，当前支持的最短路径或最大流任务均不包含最小费用流；同时要求“流量最大且成本最低”属于联合的最小费用最大流目标，超出当前支持的图问题范围。",
+  "total_tokens": 5067,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "mixed_logistic/20261017_000556_8aa70661",
+  "elapsed_seconds": 2.081826917012222
+}

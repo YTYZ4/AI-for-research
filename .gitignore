@@ -1,26 +1,25 @@
-# Python cache / local execution artifacts
+# 本地环境、缓存和临时文件
+.venv/
 __pycache__/
 *.py[cod]
 .pytest_cache/
 .ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+.tmp_*/
 
-# Local data / model artifacts
+# 本机密钥与环境配置
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# 可重新下载的模型和数据
 /data/
-hw2-op2/data/*
-!hw2-op2/data/README.md
 models/
 *.dat
 *.pth
 *.pt
 *.h5
 *.safetensors
-
-# Local environments / temporary folders
-.venv/
-.tmp_ustc_mm26/
-Microsoft/
-outputs/hw2_op2/_tmp_*
-
-# OS noise
-Thumbs.db
-.DS_Store

@@ -1,0 +1,12 @@
+{
+  "id": "OPT01_missing",
+  "family": "optimization",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "原料是否有供应上限？如有请提供数值；如不限请说明，可按供应不限处理。",
+  "total_tokens": 3418,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "OPT01_missing/20261016_205555_01c3a030",
+  "elapsed_seconds": 1.1359955000225455
+}

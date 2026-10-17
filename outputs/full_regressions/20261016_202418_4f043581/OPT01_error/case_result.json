@@ -1,0 +1,12 @@
+{
+  "id": "OPT01_error",
+  "family": "optimization",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "",
+  "total_tokens": 3288,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "OPT01_error/20261016_202439_638ff5db",
+  "elapsed_seconds": 1.8785201249993406
+}

@@ -1,0 +1,176 @@
+{
+  "name": "OPT02 运输分配参考模型",
+  "assumptions": [
+    "运输量按连续吨数计；需求恰好满足；六条路线均可用。"
+  ],
+  "variables": [
+    {
+      "name": "W1_S1",
+      "description": "W1_S1运输量",
+      "unit": "吨",
+      "kind": "continuous",
+      "lower": 0,
+      "upper": null
+    },
+    {
+      "name": "W1_S2",
+      "description": "W1_S2运输量",
+      "unit": "吨",
+      "kind": "continuous",
+      "lower": 0,
+      "upper": null
+    },
+    {
+      "name": "W1_S3",
+      "description": "W1_S3运输量",
+      "unit": "吨",
+      "kind": "continuous",
+      "lower": 0,
+      "upper": null
+    },
+    {
+      "name": "W2_S1",
+      "description": "W2_S1运输量",
+      "unit": "吨",
+      "kind": "continuous",
+      "lower": 0,
+      "upper": null
+    },
+    {
+      "name": "W2_S2",
+      "description": "W2_S2运输量",
+      "unit": "吨",
+      "kind": "continuous",
+      "lower": 0,
+      "upper": null
+    },
+    {
+      "name": "W2_S3",
+      "description": "W2_S3运输量",
+      "unit": "吨",
+      "kind": "continuous",
+      "lower": 0,
+      "upper": null
+    }
+  ],
+  "objective": {
+    "sense": "min",
+    "terms": [
+      {
+        "variable": "W1_S1",
+        "coefficient": 2
+      },
+      {
+        "variable": "W1_S2",
+        "coefficient": 4
+      },
+      {
+        "variable": "W1_S3",
+        "coefficient": 5
+      },
+      {
+        "variable": "W2_S1",
+        "coefficient": 3
+      },
+      {
+        "variable": "W2_S2",
+        "coefficient": 1
+      },
+      {
+        "variable": "W2_S3",
+        "coefficient": 7
+      }
+    ],
+    "unit": "元"
+  },
+  "constraints": [
+    {
+      "name": "W1供给",
+      "terms": [
+        {
+          "variable": "W1_S1",
+          "coefficient": 1
+        },
+        {
+          "variable": "W1_S2",
+          "coefficient": 1
+        },
+        {
+          "variable": "W1_S3",
+          "coefficient": 1
+        }
+      ],
+      "sense": "<=",
+      "rhs": 40,
+      "unit": "吨"
+    },
+    {
+      "name": "W2供给",
+      "terms": [
+        {
+          "variable": "W2_S1",
+          "coefficient": 1
+        },
+        {
+          "variable": "W2_S2",
+          "coefficient": 1
+        },
+        {
+          "variable": "W2_S3",
+          "coefficient": 1
+        }
+      ],
+      "sense": "<=",
+      "rhs": 30,
+      "unit": "吨"
+    },
+    {
+      "name": "S1需求",
+      "terms": [
+        {
+          "variable": "W1_S1",
+          "coefficient": 1
+        },
+        {
+          "variable": "W2_S1",
+          "coefficient": 1
+        }
+      ],
+      "sense": "=",
+      "rhs": 20,
+      "unit": "吨"
+    },
+    {
+      "name": "S2需求",
+      "terms": [
+        {
+          "variable": "W1_S2",
+          "coefficient": 1
+        },
+        {
+          "variable": "W2_S2",
+          "coefficient": 1
+        }
+      ],
+      "sense": "=",
+      "rhs": 30,
+      "unit": "吨"
+    },
+    {
+      "name": "S3需求",
+      "terms": [
+        {
+          "variable": "W1_S3",
+          "coefficient": 1
+        },
+        {
+          "variable": "W2_S3",
+          "coefficient": 1
+        }
+      ],
+      "sense": "=",
+      "rhs": 20,
+      "unit": "吨"
+    }
+  ]
+}

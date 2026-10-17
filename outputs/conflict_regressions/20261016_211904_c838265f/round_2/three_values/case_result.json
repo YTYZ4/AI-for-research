@@ -1,0 +1,12 @@
+{
+  "id": "three_values",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "关于环境容量K存在冲突记录：-1个、0个、0.5个。请核对哪一条记录准确？",
+  "total_tokens": 3621,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "three_values/20261016_211934_c26b4fdb",
+  "elapsed_seconds": 1.2458186669973657
+}

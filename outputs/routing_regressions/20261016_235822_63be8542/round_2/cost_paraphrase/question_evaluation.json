@@ -1,0 +1,11 @@
+{
+  "applied": true,
+  "passed": true,
+  "checks": {
+    "expected_status": true,
+    "nonempty_question": true,
+    "relevant_topic": true
+  },
+  "text": "原题要求“先让流量最大，再让运输总成本最小”，这属于带成本优化的最大流问题（最小费用最大流），超出仅支持最短路径和静态单商品最大流的支持边界。",
+  "scope": "状态/主题初筛；显式禁止改值时检查修改建议，否则Logistic容量检查正实数限制。不是完整语义证明。"
+}

@@ -1,0 +1,13 @@
+{
+  "false_interception": false,
+  "passed": true,
+  "checks": {
+    "clarification": true,
+    "all_original_values": true,
+    "conflict_explained": true,
+    "asks_resolution": true,
+    "no_preselected_value": true,
+    "no_execution": true
+  },
+  "text": "关于环境容量K存在两条冲突记录：容量恒定 -1 个；另一记录 K = -2 个。请核对哪条原始记录准确？"
+}

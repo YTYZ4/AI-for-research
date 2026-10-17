@@ -1,0 +1,44 @@
+{
+  "task_type": "graph_input",
+  "name": "输水网络最大流",
+  "problem": "max_flow",
+  "nodes": [
+    "S",
+    "A",
+    "T"
+  ],
+  "source": "S",
+  "target": "T",
+  "edges": [
+    {
+      "source": "S",
+      "target": "A",
+      "weight": 10000,
+      "unit": "升/小时",
+      "source_quote": "S到A容量10000升/小时",
+      "unit_quote": "升/小时"
+    },
+    {
+      "source": "A",
+      "target": "T",
+      "weight": 6,
+      "unit": "立方米/小时",
+      "source_quote": "A到T容量6立方米/小时",
+      "unit_quote": "立方米/小时"
+    },
+    {
+      "source": "S",
+      "target": "T",
+      "weight": 5000,
+      "unit": "升/小时",
+      "source_quote": "S到T容量5000升/小时",
+      "unit_quote": "升/小时"
+    }
+  ],
+  "unit": "立方米/小时",
+  "assumptions": [
+    "网络为有向图，各边容量为非负整数或可精确换算为整数容量。",
+    "目标为从源点S到汇点T的最大流。",
+    "各管道容量按原题数值保留，输出单位统一为立方米/小时。"
+  ]
+}

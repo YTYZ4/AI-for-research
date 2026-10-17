@@ -1,0 +1,11 @@
+{
+  "policy": "fixed_system_descriptions_v2",
+  "suppressed_display_only": [
+    {
+      "location": "envelope",
+      "text": "最大流要求容量在统一输出单位下为整数；本问题保留原值交由本地求解器校验。",
+      "reason": "包含系统行为或实现描述，移到原始记录，不作为报告假设展示"
+    }
+  ],
+  "source_modified": false
+}

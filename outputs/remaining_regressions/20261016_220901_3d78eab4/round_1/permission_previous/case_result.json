@@ -1,0 +1,12 @@
+{
+  "id": "permission_previous",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "当前环境容量K为0，代入 logistique 方程会导致 N/K 除零，模型无效。你允许修改参数，请提供正实数环境容量K（可为小数）。",
+  "total_tokens": 4576,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "permission_previous/20261016_220915_6688883f",
+  "elapsed_seconds": 1.191631417023018
+}

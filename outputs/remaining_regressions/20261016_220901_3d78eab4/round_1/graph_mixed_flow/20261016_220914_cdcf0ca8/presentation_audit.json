@@ -1,0 +1,11 @@
+{
+  "policy": "fixed_system_descriptions_v2",
+  "suppressed_display_only": [
+    {
+      "location": "envelope",
+      "text": "边权为原题给出的容量，不自行换算；求解器按顶层单位统一换算后计算最大流。",
+      "reason": "包含系统行为或实现描述，移到原始记录，不作为报告假设展示"
+    }
+  ],
+  "source_modified": false
+}

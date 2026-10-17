@@ -1,0 +1,43 @@
+﻿id,group,repeat,original_pass,after_format_pass,final_pass,pass_path,generation_route,raw_schema_valid,format_action,source_quote_repaired,local_guard_used,failure_category,detail,total_tokens,run_path
+immutable_lock_dont,historical_guard,1,True,True,True,native,general,True,not_needed,False,False,,环境容量恒定0个会使连续Logistic模型出现K=0导致的除零，当前模型无效；问题明确要求不要修改任何参数，因此不能改写或替换该参数。,5506,round_1/immutable_lock_dont/20261016_225322_8c784302
+conflict_all_negative,historical_guard,1,True,True,True,native,general,True,not_needed,False,False,,题面中同一环境容量K存在两条冲突记录：“容量恒定-1个”与“K=-2个”，请核对哪一条记录准确？,5238,round_1/conflict_all_negative/20261016_225323_5df4db4d
+graph_units_fractional_flow,historical_guard,1,False,False,True,local_guard,graph_source_only,True,not_needed,False,True,,换算后容量不是整数，超出当前最大流求解器范围；保留原值，不截断或四舍五入。,999,round_1/graph_units_fractional_flow/20261016_225326_1ee218f4
+graph_units_flow_mixed,control,1,True,True,True,native,graph_source_only,True,not_needed,False,False,,,1100,round_1/graph_units_flow_mixed/20261016_225328_4fd08e05
+flow_original_unit,control,1,True,True,True,native,graph_source_only,True,not_needed,False,False,,,997,round_1/flow_original_unit/20261016_225330_a35605dc
+flow_integer_conversion,control,1,True,True,True,native,graph_source_only,True,not_needed,False,False,,,1002,round_1/flow_integer_conversion/20261016_225331_0a5eb233
+flow_reverse_conversion,new_boundary,1,True,True,True,native,graph_source_only,True,not_needed,False,False,,,1008,round_1/flow_reverse_conversion/20261016_225332_bf817c18
+flow_same_fractional,new_boundary,1,False,False,True,local_guard,graph_source_only,True,not_needed,False,True,,换算后容量不是整数，超出当前最大流求解器范围；保留原值，不截断或四舍五入。,1005,round_1/flow_same_fractional/20261016_225335_b58514e4
+flow_unknown_conversion,new_boundary,1,False,False,True,local_guard,graph_source_only,True,not_needed,False,True,,图边单位无法确定性换算或量纲不一致，请核对单位及必要的换算依据；不会猜测因子。,999,round_1/flow_unknown_conversion/20261016_225336_02ed9661
+path_units,path_control,1,True,True,True,native,graph_source_only,True,not_needed,False,False,,,1264,round_1/path_units/20261016_225339_e64ba820
+flow_time_conversion,new_boundary,1,True,True,True,native,graph_source_only,True,not_needed,False,False,,,994,round_1/flow_time_conversion/20261016_225340_e2b6876b
+flow_zero_conversion,new_boundary,1,True,True,True,native,graph_source_only,True,not_needed,False,False,,,992,round_1/flow_zero_conversion/20261016_225341_c82ccf99
+flow_missing_direction,new_boundary,1,True,True,True,native,graph_source_only,True,not_needed,False,False,,边 S 与 T 之间的方向未知，请明确该边是从 S 到 T、从 T 到 S，还是双向边；若是双向边，请提供两个方向的容量。,951,round_1/flow_missing_direction/20261016_225343_ef20713e
+flow_min_cost,new_boundary,1,False,False,False,failed,graph_source_only,True,not_needed,False,False,generation_error,ValueError: 未就绪响应必须不含模型，且说明待澄清或不支持的原因,893,
+immutable_lock_dont,historical_guard,2,True,True,True,native,general,True,not_needed,False,False,,环境容量恒定为0个，Logistic模型中的环境容量K必须为正实数，K=0会使方程 dN/dt=rN(1-N/K) 出现除零而无效；且题目明确要求不要修改任何参数，因此无法在当前模型下求解。,5524,round_2/immutable_lock_dont/20261016_225345_dc0b0e8e
+conflict_all_negative,historical_guard,2,True,True,True,native,general,True,not_needed,False,False,,同一环境容量K存在两条互相冲突的记录：容量恒定-1个、K=-2个。请核对哪一条数值和单位是准确的。,5236,round_2/conflict_all_negative/20261016_225349_68c5ba6f
+graph_units_fractional_flow,historical_guard,2,False,False,True,local_guard,graph_source_only,True,not_needed,False,True,,换算后容量不是整数，超出当前最大流求解器范围；保留原值，不截断或四舍五入。,1055,round_2/graph_units_fractional_flow/20261016_225351_b7352dcd
+graph_units_flow_mixed,control,2,True,True,True,native,graph_source_only,True,not_needed,False,False,,,1226,round_2/graph_units_flow_mixed/20261016_225353_16906389
+flow_original_unit,control,2,True,True,True,native,graph_source_only,True,not_needed,False,False,,,997,round_2/flow_original_unit/20261016_225356_e362a57e
+flow_integer_conversion,control,2,True,True,True,native,graph_source_only,True,not_needed,False,False,,,1002,round_2/flow_integer_conversion/20261016_225357_602e4fef
+flow_reverse_conversion,new_boundary,2,True,True,True,native,graph_source_only,True,not_needed,False,False,,,1019,round_2/flow_reverse_conversion/20261016_225359_6b4c2149
+flow_same_fractional,new_boundary,2,False,False,True,local_guard,graph_source_only,True,not_needed,False,True,,换算后容量不是整数，超出当前最大流求解器范围；保留原值，不截断或四舍五入。,1005,round_2/flow_same_fractional/20261016_225400_608a5333
+flow_unknown_conversion,new_boundary,2,False,False,True,local_guard,graph_source_only,True,not_needed,False,True,,图边单位无法确定性换算或量纲不一致，请核对单位及必要的换算依据；不会猜测因子。,1002,round_2/flow_unknown_conversion/20261016_225401_9c273e59
+path_units,path_control,2,True,True,True,native,graph_source_only,True,not_needed,False,False,,,1259,round_2/path_units/20261016_225403_a02a0aa8
+flow_time_conversion,new_boundary,2,True,True,True,native,graph_source_only,True,not_needed,False,False,,,992,round_2/flow_time_conversion/20261016_225404_7d463e1c
+flow_zero_conversion,new_boundary,2,True,True,True,native,graph_source_only,True,not_needed,False,False,,,992,round_2/flow_zero_conversion/20261016_225405_d5afaea3
+flow_missing_direction,new_boundary,2,True,True,True,native,graph_source_only,True,not_needed,False,False,,边 S-T 的方向未知：请明确该边是从 S 指向 T，还是从 T 指向 S，或是双向边？,932,round_2/flow_missing_direction/20261016_225407_655d804a
+flow_min_cost,new_boundary,2,False,False,False,failed,graph_source_only,True,not_needed,False,False,generation_error,ValueError: 未就绪响应必须不含模型，且说明待澄清或不支持的原因,893,
+immutable_lock_dont,historical_guard,3,True,True,True,native,general,True,not_needed,False,False,,环境容量 K=0 会使 Logistic 方程中的 rN(1-N/K) 出现除零，当前模型无效；题目明确要求不要修改任何参数，因此无法在保留原值的情况下建立可求解的 Logistic 模型。,5518,round_3/immutable_lock_dont/20261016_225410_1d51f03e
+conflict_all_negative,historical_guard,3,True,True,True,native,general,True,not_needed,False,False,,同一容量参数存在两条冲突记录：容量恒定为-1个、K=-2个。请核对哪条原始记录准确。,5233,round_3/conflict_all_negative/20261016_225411_4b9b2031
+graph_units_fractional_flow,historical_guard,3,False,False,True,local_guard,graph_source_only,True,not_needed,False,True,,换算后容量不是整数，超出当前最大流求解器范围；保留原值，不截断或四舍五入。,999,round_3/graph_units_fractional_flow/20261016_225413_79594ff5
+graph_units_flow_mixed,control,3,True,True,True,native,graph_source_only,True,not_needed,False,False,,,1100,round_3/graph_units_flow_mixed/20261016_225414_fc13aa68
+flow_original_unit,control,3,True,True,True,native,graph_source_only,True,not_needed,False,False,,,997,round_3/flow_original_unit/20261016_225416_a6bbea7d
+flow_integer_conversion,control,3,True,True,True,native,graph_source_only,True,not_needed,False,False,,,1002,round_3/flow_integer_conversion/20261016_225417_566765b5
+flow_reverse_conversion,new_boundary,3,True,True,True,native,graph_source_only,True,not_needed,False,False,,,1005,round_3/flow_reverse_conversion/20261016_225418_7d7c7719
+flow_same_fractional,new_boundary,3,False,False,True,local_guard,graph_source_only,True,not_needed,False,True,,换算后容量不是整数，超出当前最大流求解器范围；保留原值，不截断或四舍五入。,1005,round_3/flow_same_fractional/20261016_225420_25ba557a
+flow_unknown_conversion,new_boundary,3,False,False,True,local_guard,graph_source_only,True,not_needed,False,True,,图边单位无法确定性换算或量纲不一致，请核对单位及必要的换算依据；不会猜测因子。,999,round_3/flow_unknown_conversion/20261016_225421_f10d1752
+path_units,path_control,3,True,True,True,native,graph_source_only,True,not_needed,False,False,,,1276,round_3/path_units/20261016_225423_383a45e6
+flow_time_conversion,new_boundary,3,True,True,True,native,graph_source_only,True,not_needed,False,False,,,992,round_3/flow_time_conversion/20261016_225425_bff9f460
+flow_zero_conversion,new_boundary,3,True,True,True,native,graph_source_only,True,not_needed,False,False,,,994,round_3/flow_zero_conversion/20261016_225426_cec7f8fc
+flow_missing_direction,new_boundary,3,True,True,True,native,graph_source_only,True,not_needed,False,False,,S 与 T 之间这条边的方向是什么？请明确是 S→T、T→S，还是双向边。,925,round_3/flow_missing_direction/20261016_225427_51d42116
+flow_min_cost,new_boundary,3,False,False,False,failed,graph_source_only,True,not_needed,False,False,generation_error,ValueError: 未就绪响应必须不含模型，且说明待澄清或不支持的原因,893,

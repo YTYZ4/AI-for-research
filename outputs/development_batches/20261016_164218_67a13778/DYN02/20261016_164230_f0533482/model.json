@@ -1,0 +1,17 @@
+{
+  "task_type": "dynamics",
+  "name": "连续Logistic种群增长",
+  "system": "logistic",
+  "initial": 100,
+  "rate": 0.2,
+  "equilibrium": 1000,
+  "duration": 30,
+  "time_unit": "day",
+  "rate_unit": "1/day",
+  "state_unit": "个",
+  "assumptions": [
+    "种群数量使用连续近似，允许非整数。",
+    "环境容量和内禀增长率在模拟期间恒定。",
+    "无迁入迁出。"
+  ]
+}

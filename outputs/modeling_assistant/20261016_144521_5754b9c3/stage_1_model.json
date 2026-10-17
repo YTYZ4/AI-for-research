@@ -1,0 +1,75 @@
+{
+  "name": "家具厂周生产计划",
+  "assumptions": [
+    "桌子和椅子为整件实物，生产数量取非负整数。",
+    "每周木工可用工时固定为120小时。",
+    "每周油漆工可用工时固定为100小时。",
+    "单位利润和资源消耗已知且不随产量变化。"
+  ],
+  "variables": [
+    {
+      "name": "tables",
+      "description": "每周生产的桌子数量",
+      "unit": "张",
+      "kind": "integer",
+      "lower": 0,
+      "upper": null
+    },
+    {
+      "name": "chairs",
+      "description": "每周生产的椅子数量",
+      "unit": "把",
+      "kind": "integer",
+      "lower": 0,
+      "upper": null
+    }
+  ],
+  "objective": {
+    "sense": "max",
+    "terms": [
+      {
+        "variable": "tables",
+        "coefficient": 120
+      },
+      {
+        "variable": "chairs",
+        "coefficient": 80
+      }
+    ],
+    "unit": "元"
+  },
+  "constraints": [
+    {
+      "name": "木工工时约束",
+      "terms": [
+        {
+          "variable": "tables",
+          "coefficient": 4
+        },
+        {
+          "variable": "chairs",
+          "coefficient": 2
+        }
+      ],
+      "sense": "<=",
+      "rhs": 120,
+      "unit": "小时"
+    },
+    {
+      "name": "油漆工时约束",
+      "terms": [
+        {
+          "variable": "tables",
+          "coefficient": 2
+        },
+        {
+          "variable": "chairs",
+          "coefficient": 3
+        }
+      ],
+      "sense": "<=",
+      "rhs": 100,
+      "unit": "小时"
+    }
+  ]
+}

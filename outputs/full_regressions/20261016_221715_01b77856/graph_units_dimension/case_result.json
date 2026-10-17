@@ -1,0 +1,12 @@
+{
+  "id": "graph_units_dimension",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "边A到T的权重“3小时”是时间而非距离：请提供该边的距离（千米），或提供道路速度信息以便将时间转换为距离。",
+  "total_tokens": 4377,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "graph_units_dimension/20261016_221954_0bb866f5",
+  "elapsed_seconds": 1.515660083037801
+}

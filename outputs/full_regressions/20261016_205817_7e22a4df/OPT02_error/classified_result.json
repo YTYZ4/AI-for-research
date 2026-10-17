@@ -1,0 +1,22 @@
+{
+  "id": "OPT02_error",
+  "family": "optimization",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "",
+  "total_tokens": 4130,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "OPT02_error/20261016_205852_1c64d98e",
+  "elapsed_seconds": 3.133748333028052,
+  "question_semantics_passed": null,
+  "kind": "error",
+  "base_id": "OPT02",
+  "raw_schema_valid": true,
+  "format_action": "not_needed",
+  "local_guard_used": false,
+  "original_pass": true,
+  "after_format_pass": true,
+  "final_pass": true,
+  "pass_path": "native"
+}

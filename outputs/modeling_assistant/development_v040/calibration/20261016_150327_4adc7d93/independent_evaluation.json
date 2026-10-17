@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "checks": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "tolerance": 1e-08,
+  "scope": "固定数据和所选阶数的独立数值复算；不证明阶数选择的泛化能力或题意理解正确"
+}

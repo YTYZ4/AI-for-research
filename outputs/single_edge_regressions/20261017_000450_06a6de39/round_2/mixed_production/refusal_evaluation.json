@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": {
+    "unsupported": true,
+    "no_model": true,
+    "nonblank_explanations": true,
+    "identifies_requested_scope": true,
+    "explains_limit": true,
+    "no_invented_contract_limit": true,
+    "no_silent_downgrade": true
+  },
+  "text": "当前仅支持单一建模任务，无法在同一模型中联合完成生产计划与图网络最大流任务；请将实际需要解决的任务限定为其中一种。"
+}

@@ -1,0 +1,25 @@
+{
+  "task_type": "dynamics_input",
+  "name": "封闭种群连续Logistic模型",
+  "system": "logistic",
+  "initial": 0.5,
+  "rate": 0.2,
+  "equilibrium": 0.5,
+  "duration": 30,
+  "rate_unit": "1/day",
+  "state_unit": "个",
+  "assumptions": [
+    "采用连续Logistic增长模型 dN/dt = r N (1 - N/K)。",
+    "种群数量按连续实数处理，允许取0.5个等小数值。",
+    "环境容量K恒定，等于平衡值0.5个。",
+    "增长率r为内禀增长率，单位为每天。",
+    "模拟从t=0到t=30天，求连续轨迹及t=30天末值。"
+  ],
+  "duration_unit": "day",
+  "source_quotes": {
+    "initial": "初始0.5个",
+    "equilibrium": "容量恒定0.5个",
+    "rate": "增长率0.2每天",
+    "duration": "模拟0到30天"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "task_type": "graph",
+  "name": "S到T最短路径",
+  "problem": "shortest_path",
+  "nodes": [
+    "S",
+    "A",
+    "T"
+  ],
+  "source": "S",
+  "target": "T",
+  "edges": [
+    {
+      "source": "S",
+      "target": "A",
+      "weight": 2
+    }
+  ],
+  "unit": "km",
+  "assumptions": [
+    "有向道路网络，道路均为有向边",
+    "用户声明没有其他道路，因此仅保留已给出的边",
+    "节点T在给定边集中孤立，求解器将报告不可达"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": {
+    "unsupported": true,
+    "no_model": true,
+    "nonblank_explanations": true,
+    "identifies_requested_scope": true,
+    "explains_limit": true,
+    "no_invented_contract_limit": true,
+    "no_silent_downgrade": true
+  },
+  "text": "原题要求“先让流量最大，再让运输总成本最小”，属于带费用的最大流/最小费用最大流任务；当前仅支持最短路径和静态单商品最大流，未实现最小费用流或带成本的两阶段优化，因此无法提交图输入。"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "capacity_small",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "",
+  "total_tokens": 4789,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "capacity_small/20261016_221832_dd4c4fcb",
+  "elapsed_seconds": 1.771390457986854,
+  "question_semantics_passed": null,
+  "kind": "boundary",
+  "base_id": "DYN02",
+  "origins": [
+    {
+      "id": "capacity_small",
+      "problem": "examples/capacity_boundaries/small.txt",
+      "kind": "boundary"
+    }
+  ],
+  "quote_audit_passed": null,
+  "raw_schema_valid": true,
+  "format_action": "not_needed",
+  "local_guard_used": false,
+  "source_quote_repaired": false,
+  "original_pass": true,
+  "after_format_pass": true,
+  "final_pass": true,
+  "pass_path": "native"
+}

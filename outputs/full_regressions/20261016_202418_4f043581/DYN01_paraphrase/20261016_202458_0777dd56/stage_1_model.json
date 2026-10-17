@@ -1,0 +1,20 @@
+{
+  "task_type": "dynamics",
+  "name": "Newton cooling of liquid",
+  "system": "newton_cooling",
+  "initial": 90,
+  "rate": 0.1,
+  "equilibrium": 20,
+  "duration": 30.0,
+  "rate_unit": "1/min",
+  "state_unit": "°C",
+  "assumptions": [
+    "液体温度均匀，用单一温度描述。",
+    "环境温度恒为20°C。",
+    "冷却系数k恒为0.1 1/min。",
+    "牛顿冷却方程为dT/dt=-k(T-T_env)。",
+    "允许使用摄氏温度。",
+    "以刚放入房间为t=0时刻。"
+  ],
+  "time_unit": "min"
+}

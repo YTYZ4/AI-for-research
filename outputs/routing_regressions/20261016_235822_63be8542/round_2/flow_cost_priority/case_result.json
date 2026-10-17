@@ -1,0 +1,12 @@
+{
+  "id": "flow_cost_priority",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "原题要求在最大化通流量的同时使运输费用尽可能低，这属于最小费用最大流任务；当前仅支持最短路径和单商品最大流，不支持带费用的优化目标。",
+  "total_tokens": 1471,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "flow_cost_priority/20261016_235901_1b2c9934",
+  "elapsed_seconds": 1.9045999169466086
+}

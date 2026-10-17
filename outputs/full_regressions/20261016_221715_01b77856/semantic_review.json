@@ -1,0 +1,39 @@
+{
+  "reviewer": "assistant_read_only_review",
+  "independent_human_review": false,
+  "automatic_results_unchanged": true,
+  "historical_missing_failure": {
+    "case": "remaining_permission_missing",
+    "result": "native_pass",
+    "response": "请提供正实数环境容量K（可为小数）及其数量单位。"
+  },
+  "new_missing_boundaries": {
+    "native_passes": 4,
+    "multiple_missing_preserves_initial_question": true,
+    "locked_existing_values_still_allow_missing_K": true
+  },
+  "prior_failures": {
+    "NET02_paraphrase": "native_pass",
+    "immutable_permission": "native_pass",
+    "path_units": "native_pass"
+  },
+  "guard_counts": {
+    "immutable_invalid_logistic": 8,
+    "neutral_capacity_conflicts": 2,
+    "fractional_flow_capacity": 1,
+    "new_missing_capacity_policy": 0
+  },
+  "offline_replay": {
+    "api_calls": 0,
+    "original_passed": false,
+    "final_passed": true,
+    "pass_path": "local_guard",
+    "source": "outputs/remaining_regressions/20261016_220901_3d78eab4/round_1/permission_missing/generation_record.json"
+  },
+  "limitations": [
+    "单轮101场景来自八个基础开发题族，不代表独立新题泛化或长期稳定性。",
+    "本轮没有触发新增缺容量策略、格式或引用修复；处理路径依赖本地测试及历史重放验证。",
+    "原有89子集原始80/89低于上轮82/89，不能宣称大模型本身整体改进。",
+    "关键词与结构检查不是完整语义证明，也不是独立人工评分。"
+  ]
+}

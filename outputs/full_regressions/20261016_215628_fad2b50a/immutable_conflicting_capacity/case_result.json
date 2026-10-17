@@ -1,0 +1,12 @@
+{
+  "id": "immutable_conflicting_capacity",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "题面中环境容量存在两条冲突记录：原文“环境容量恒定0个”与“另一记录环境容量为0.5个”。请核对哪条准确？",
+  "total_tokens": 4270,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "immutable_conflicting_capacity/20261016_215819_01161c13",
+  "elapsed_seconds": 1.1066608750261366
+}

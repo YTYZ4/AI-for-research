@@ -1,0 +1,11 @@
+{
+  "applied": true,
+  "passed": true,
+  "checks": {
+    "expected_status": true,
+    "nonempty_question": true,
+    "relevant_topic": true
+  },
+  "text": "请提供拟合数据 CSV 文件，需包含 x,y,split 三列，其中 split 为 train/test；收到后我将建立一元普通最小二乘多项式拟合模型并在训练集内五折选择1至5阶。",
+  "scope": "状态/主题初筛；显式禁止改值时检查修改建议，否则Logistic容量检查正实数限制。不是完整语义证明。"
+}

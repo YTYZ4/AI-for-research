@@ -1,0 +1,12 @@
+{
+  "id": "flow_missing_direction",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "边 S→T 的方向未知：R源是 S、汇是 T 已明确，但边方向会影响 S 到 T 的最大流，请明确该边是 S 到 T、T 到 S，还是双向。",
+  "total_tokens": 1477,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "flow_missing_direction/20261016_235122_4cef7f93",
+  "elapsed_seconds": 1.6672820830135606
+}

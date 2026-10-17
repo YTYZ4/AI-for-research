@@ -1,0 +1,67 @@
+{
+  "method": "graph_edges_exact_fraction_v1",
+  "source_quotes_checked": true,
+  "target_unit": "立方米/小时",
+  "edges": [
+    {
+      "index": 0,
+      "source": "S",
+      "target": "A",
+      "original_weight": 10,
+      "original_unit": "立方米/小时",
+      "factor": "1",
+      "normalized_weight": 10,
+      "normalized_unit": "立方米/小时",
+      "source_quote": "S→A上限10",
+      "unit_quote": "单位均为立方米/小时"
+    },
+    {
+      "index": 1,
+      "source": "A",
+      "target": "T",
+      "original_weight": 6,
+      "original_unit": "立方米/小时",
+      "factor": "1",
+      "normalized_weight": 6,
+      "normalized_unit": "立方米/小时",
+      "source_quote": "A→T上限6",
+      "unit_quote": "单位均为立方米/小时"
+    },
+    {
+      "index": 2,
+      "source": "A",
+      "target": "B",
+      "original_weight": 4,
+      "original_unit": "立方米/小时",
+      "factor": "1",
+      "normalized_weight": 4,
+      "normalized_unit": "立方米/小时",
+      "source_quote": "A→B上限4",
+      "unit_quote": "单位均为立方米/小时"
+    },
+    {
+      "index": 3,
+      "source": "S",
+      "target": "B",
+      "original_weight": 5,
+      "original_unit": "立方米/小时",
+      "factor": "1",
+      "normalized_weight": 5,
+      "normalized_unit": "立方米/小时",
+      "source_quote": "S→B上限5",
+      "unit_quote": "单位均为立方米/小时"
+    },
+    {
+      "index": 4,
+      "source": "B",
+      "target": "T",
+      "original_weight": 9,
+      "original_unit": "立方米/小时",
+      "factor": "1",
+      "normalized_weight": 9,
+      "normalized_unit": "立方米/小时",
+      "source_quote": "B→T上限9",
+      "unit_quote": "单位均为立方米/小时"
+    }
+  ]
+}

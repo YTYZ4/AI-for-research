@@ -1,0 +1,12 @@
+{
+  "id": "FIT02_missing",
+  "family": "fitting",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "请提供拟合数据 CSV 文件，需包含 x,y,split 三列，其中 split 为 train/test；收到后我将建立一元普通最小二乘多项式拟合模型并在训练集内五折选择1至5阶。",
+  "total_tokens": 3438,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "FIT02_missing/20261016_205901_8854ab8b",
+  "elapsed_seconds": 1.4902670420124196
+}

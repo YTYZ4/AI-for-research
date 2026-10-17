@@ -1,0 +1,31 @@
+{
+  "id": "remaining_graph_inline",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "",
+  "total_tokens": 4830,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "remaining_graph_inline/20261016_222001_a9587f17",
+  "elapsed_seconds": 2.662874792004004,
+  "question_semantics_passed": null,
+  "kind": "remaining",
+  "base_id": "NET02",
+  "origins": [
+    {
+      "id": "remaining_graph_inline",
+      "problem": "examples/remaining_failure_boundaries/graph_inline.txt",
+      "kind": "remaining"
+    }
+  ],
+  "quote_audit_passed": null,
+  "raw_schema_valid": true,
+  "format_action": "not_needed",
+  "local_guard_used": false,
+  "source_quote_repaired": false,
+  "original_pass": true,
+  "after_format_pass": true,
+  "final_pass": true,
+  "pass_path": "native"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "signed",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "",
+  "total_tokens": 4273,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "signed/20261016_212631_155f1dec",
+  "elapsed_seconds": 1.8106985000194982
+}

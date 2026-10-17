@@ -1,0 +1,12 @@
+{
+  "id": "equivalent_same_invalid",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "原题环境容量 K 的记录为“环境容量恒定-0个”和“K=0.0个”，即 K=0。当前连续 Logistic 模型 dN/dt=rN(1-N/K) 在 K=0 时出现除以零，模型无效；由于您明确要求不得改动参数，因此本问题超出当前支持范围。",
+  "total_tokens": 4589,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "equivalent_same_invalid/20261016_215854_18f18b04",
+  "elapsed_seconds": 1.2902180830133148
+}

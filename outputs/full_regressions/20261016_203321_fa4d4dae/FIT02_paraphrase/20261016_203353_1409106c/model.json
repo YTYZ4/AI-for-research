@@ -1,0 +1,16 @@
+{
+  "task_type": "polynomial_fit",
+  "name": "一元普通最小二乘多项式自动选阶拟合",
+  "assumptions": [
+    "x 与 y 均为无量纲量。",
+    "观测相互独立。",
+    "使用一元普通最小二乘多项式模型。",
+    "在 train 部分内进行五折交叉验证，从 1 至 5 阶中选择最优阶数。",
+    "选定阶数后使用全部 train 数据重新拟合。",
+    "test 部分仅用于最终 RMSE 和 MAE 检验，不参与选阶。",
+    "泛化误差差距通过 train 与 test 的 RMSE、MAE 对比说明。"
+  ],
+  "degree": null,
+  "x_unit": "无量纲",
+  "y_unit": "无量纲"
+}

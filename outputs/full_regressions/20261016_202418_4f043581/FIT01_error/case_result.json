@@ -1,0 +1,12 @@
+{
+  "id": "FIT01_error",
+  "family": "fitting",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "一元多项式拟合仅支持 1–5 阶（degree 为 1 到 5 的整数，或为 null 自动在 1–5 阶内选择）；负阶或非整数阶不受支持。",
+  "total_tokens": 3027,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "FIT01_error/20261016_202451_f9cd535f",
+  "elapsed_seconds": 1.0666412499849685
+}

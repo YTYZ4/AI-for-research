@@ -1,0 +1,11 @@
+{
+  "applied": true,
+  "passed": true,
+  "checks": {
+    "expected_status": true,
+    "nonempty_question": true,
+    "relevant_topic": true
+  },
+  "text": "题目同时要求完成两个不同建模任务：一是求 S 到 T 的最大流及最低费用，二是联合拟合容量随温度的二次曲线。当前单模型协议不能表示这种联合任务，因此无法在同一个模型中返回两项结果。",
+  "scope": "状态/主题初筛；显式禁止改值时检查修改建议，否则Logistic容量检查正实数限制。不是完整语义证明。"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "flow_missing_direction",
+  "family": "graph",
+  "outcome": "fail",
+  "failure_category": "needs_clarification",
+  "detail": "需要明确 S 与 T 之间这条边从哪个节点指向哪个节点，才能建立有向最大流模型。",
+  "total_tokens": 1323,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "flow_missing_direction/20261016_225957_358a752b",
+  "elapsed_seconds": 0.8714262089924887
+}

@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "checks": {
+    "clarification": true,
+    "no_model": true,
+    "nonblank": true,
+    "asks_direction": true,
+    "no_assumed_direction": true
+  },
+  "text": "尚未提供管道中 S 与 T 之间的方向；请明确该边是 S→T、T→S，还是双向（若双向，将按两条反向边处理）。"
+}

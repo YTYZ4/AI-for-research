@@ -1,0 +1,12 @@
+{
+  "id": "intervention",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "当前仅支持常参数连续 Logistic 模型 dN/dt=rN(1-N/K)，不支持加入“每天捕捞0.01个”的捕获项或干预项；原题参数保持不变。",
+  "total_tokens": 3426,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "intervention/20261016_210557_74eefd67",
+  "elapsed_seconds": 1.2848602090380155
+}

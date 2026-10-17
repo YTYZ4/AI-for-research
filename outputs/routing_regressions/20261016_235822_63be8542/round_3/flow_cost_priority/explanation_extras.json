@@ -1,0 +1,12 @@
+{
+  "passed": false,
+  "checks": {
+    "no_task_change_suggestions": false,
+    "no_false_missing_claims": true
+  },
+  "task_change_clauses": [
+    "支持边界：若仅求单商品最大流",
+    "若仅求最短路径"
+  ],
+  "false_missing_claims": []
+}

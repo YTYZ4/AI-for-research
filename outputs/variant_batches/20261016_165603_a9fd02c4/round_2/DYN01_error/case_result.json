@@ -1,0 +1,12 @@
+{
+  "id": "DYN01_error",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "常参数牛顿冷却模型要求冷却系数 k 为正数；当前给定 k=-0.1 1/min，无法按 dT/dt=-k(T-20) 表示冷却过程，且不得取绝对值或改动参数，因此该动态任务暂不支持。",
+  "total_tokens": 2468,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "DYN01_error/20261016_165736_514d20b0",
+  "elapsed_seconds": 1.2515729169826955
+}

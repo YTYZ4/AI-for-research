@@ -1,0 +1,22 @@
+{
+  "task_type": "graph",
+  "name": "有向输水网络S到T最大流",
+  "problem": "max_flow",
+  "nodes": [
+    "S",
+    "T"
+  ],
+  "source": "S",
+  "target": "T",
+  "edges": [
+    {
+      "source": "S",
+      "target": "T",
+      "weight": 1
+    }
+  ],
+  "unit": "升/小时",
+  "assumptions": [
+    "网络为单商品有向最大流问题。"
+  ]
+}

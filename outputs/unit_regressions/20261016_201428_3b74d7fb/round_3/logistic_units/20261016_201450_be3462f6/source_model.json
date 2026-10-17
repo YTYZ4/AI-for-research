@@ -1,0 +1,23 @@
+{
+  "task_type": "dynamics_input",
+  "name": "Logistic growth of a closed population",
+  "system": "logistic",
+  "initial": 100,
+  "rate": 0.2,
+  "equilibrium": 1000,
+  "duration": 720,
+  "rate_unit": "1/day",
+  "state_unit": "个",
+  "assumptions": [
+    "封闭种群，无迁入迁出，采用连续Logistic增长模型 dN/dt = rN(1 - N/K)。",
+    "初值100个、环境容量1000个均为原题数值；速率0.2每天按原速率单位保留，模拟时长720小时按原时长单位保留，程序内部转换时间单位。",
+    "Logistic模型按连续种群近似处理。"
+  ],
+  "duration_unit": "hour",
+  "source_quotes": {
+    "initial": "初始100个",
+    "equilibrium": "容量恒定1000个",
+    "rate": "增长率0.2每天",
+    "duration": "0到720小时"
+  }
+}

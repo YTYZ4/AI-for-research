@@ -1,0 +1,48 @@
+{
+  "api_calls": 0,
+  "source": "outputs/direction_explanation_regressions/20261016_235110_f7cd68ee/round_1/cost_paraphrase/api.json",
+  "sha256": "646ab8cc52c4f12721dc0bd0651fa1614bb7626c583ede2ad867981ff8afb446",
+  "old_route": "general",
+  "new_contract": {
+    "route": "graph_source_only",
+    "contract": "graph_source_only_v4",
+    "routing_evidence": {
+      "version": "graph_route_evidence_v1",
+      "selected": true,
+      "reason": "graph_structure_and_goal",
+      "named_tasks": [],
+      "structure": [
+        {
+          "quote": "有向网络",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "quote": "节点",
+          "start": 20,
+          "end": 22
+        }
+      ],
+      "objectives": [
+        {
+          "quote": "流量最大",
+          "start": 42,
+          "end": 46
+        },
+        {
+          "quote": "成本最小",
+          "start": 52,
+          "end": 56
+        }
+      ],
+      "other_families": [],
+      "scope": "选择请求契约，不判断支持范围；否定/背景目标交模型结合全文判断，混合题型保留完整Schema"
+    },
+    "state_constraints": true,
+    "scope": "明确图任务，无其他建模题型关键词；只选择提取契约，不判断可解性",
+    "numeric_authority": "normalize_graph + validate_model"
+  },
+  "raw_response_unchanged": true,
+  "original_failed_response_still_needs_clarification": true,
+  "no_local_override": true
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NET01_error",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "最短路径仅支持非负权；当前边 S→A 的权重为 -2 千米，存在负权，无法建模为支持的最短路径问题。",
+  "total_tokens": 2438,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "NET01_error/20261016_165652_b954246f",
+  "elapsed_seconds": 1.3919374999823049
+}

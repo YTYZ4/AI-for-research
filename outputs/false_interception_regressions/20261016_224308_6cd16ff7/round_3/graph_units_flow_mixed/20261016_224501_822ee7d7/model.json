@@ -1,0 +1,35 @@
+{
+  "task_type": "graph",
+  "name": "S到T最大流",
+  "problem": "max_flow",
+  "nodes": [
+    "S",
+    "A",
+    "T"
+  ],
+  "source": "S",
+  "target": "T",
+  "edges": [
+    {
+      "source": "S",
+      "target": "A",
+      "weight": 10
+    },
+    {
+      "source": "A",
+      "target": "T",
+      "weight": 6
+    },
+    {
+      "source": "S",
+      "target": "T",
+      "weight": 5
+    }
+  ],
+  "unit": "立方米/小时",
+  "assumptions": [
+    "有向网络，所有管道只允许沿给定方向输水。",
+    "各边容量为给定值，不自行增减边。",
+    "统一输出单位为立方米/小时，由程序对原单位容量做单位换算后再求最大流。"
+  ]
+}

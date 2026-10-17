@@ -1,0 +1,7 @@
+{
+  "false_interception": false,
+  "passed": false,
+  "no_replacement_suggestion": false,
+  "text": "Logistic 模型要求环境容量 K 为正实数；题目给出的环境容量为 -0 个（另一记录 K=0.0 个，数值等价），K<=0 使方程 dN/dt=rN(1-N/K) 无效（K=0 时除零）。由于用户明确要求不得改动参数，无法按当前模型求解，请提供正数 K 或说明可调整该参数。",
+  "scope": "仅检查显式禁止改参数后的常见改值建议；不是完整语义证明"
+}

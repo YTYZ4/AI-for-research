@@ -1,0 +1,289 @@
+[
+  {
+    "id": "immutable_lock_dont",
+    "family": "dynamics",
+    "initial": 1.5,
+    "capacity": 0,
+    "problem": "examples/immutable_boundaries/lock_dont.txt",
+    "expected_envelopes": [
+      "unsupported"
+    ],
+    "guard_allowed": true,
+    "question_keywords": [],
+    "base_id": "DYN02",
+    "kind": "immutable",
+    "origins": [
+      {
+        "id": "immutable_lock_dont",
+        "problem": "examples/immutable_boundaries/lock_dont.txt",
+        "kind": "immutable"
+      }
+    ],
+    "group": "historical_guard"
+  },
+  {
+    "id": "conflict_all_negative",
+    "family": "dynamics",
+    "problem": "examples/conflict_boundaries/all_negative.txt",
+    "initial": 1.5,
+    "capacity": null,
+    "expected_envelopes": [
+      "needs_clarification"
+    ],
+    "conflict_values": [
+      -1,
+      -2
+    ],
+    "question_keywords": [
+      "容量",
+      "K"
+    ],
+    "base_id": "DYN02",
+    "kind": "conflict",
+    "origins": [
+      {
+        "id": "conflict_all_negative",
+        "problem": "examples/conflict_boundaries/all_negative.txt",
+        "kind": "conflict"
+      }
+    ],
+    "group": "historical_guard"
+  },
+  {
+    "id": "graph_units_fractional_flow",
+    "base_id": "NET02",
+    "kind": "graph_units",
+    "family": "graph",
+    "problem": "examples/graph_unit_boundaries/fractional_flow.txt",
+    "expected_envelopes": [
+      "needs_clarification",
+      "unsupported"
+    ],
+    "question_keywords": [
+      "单位",
+      "换算",
+      "整数",
+      "容量",
+      "速度",
+      "英里",
+      "量纲"
+    ],
+    "origins": [
+      {
+        "id": "graph_units_fractional_flow",
+        "problem": "examples/graph_unit_boundaries/fractional_flow.txt",
+        "kind": "graph_units"
+      }
+    ],
+    "group": "historical_guard"
+  },
+  {
+    "id": "graph_units_flow_mixed",
+    "base_id": "NET02",
+    "kind": "graph_units",
+    "family": "graph",
+    "problem": "examples/graph_unit_boundaries/flow_mixed.txt",
+    "expected_envelopes": [
+      "ready"
+    ],
+    "graph_problem": "max_flow",
+    "unit": "立方米/小时",
+    "source_edges": [
+      [
+        "S",
+        "A",
+        10000,
+        "升/小时"
+      ],
+      [
+        "A",
+        "T",
+        6,
+        "立方米/小时"
+      ],
+      [
+        "S",
+        "T",
+        5000,
+        "升/小时"
+      ]
+    ],
+    "weights": [
+      10,
+      6,
+      5
+    ],
+    "value": 11,
+    "origins": [
+      {
+        "id": "graph_units_flow_mixed",
+        "problem": "examples/graph_unit_boundaries/flow_mixed.txt",
+        "kind": "graph_units"
+      },
+      {
+        "id": "remaining_graph_mixed_flow",
+        "problem": "examples/graph_unit_boundaries/flow_mixed.txt",
+        "kind": "remaining"
+      }
+    ],
+    "check": "mixed_flow",
+    "group": "control"
+  },
+  {
+    "id": "flow_original_unit",
+    "base_id": "NET02",
+    "family": "graph",
+    "kind": "guard_control",
+    "problem": "examples/guard_cause_boundaries/flow_original_unit.txt",
+    "group": "control",
+    "expected_envelopes": [
+      "ready"
+    ],
+    "original_value": 1,
+    "unit": "升/小时",
+    "value": 1
+  },
+  {
+    "id": "flow_integer_conversion",
+    "base_id": "NET02",
+    "family": "graph",
+    "kind": "guard_control",
+    "problem": "examples/guard_cause_boundaries/flow_integer_conversion.txt",
+    "group": "control",
+    "expected_envelopes": [
+      "ready"
+    ],
+    "original_value": 1000,
+    "unit": "立方米/小时",
+    "value": 1
+  },
+  {
+    "id": "flow_reverse_conversion",
+    "base_id": "NET02",
+    "family": "graph",
+    "kind": "guard_control",
+    "problem": "examples/false_interception_boundaries/flow_reverse_conversion.txt",
+    "group": "new_boundary",
+    "expected_envelopes": [
+      "ready"
+    ],
+    "original_value": 0.001,
+    "original_unit": "立方米/小时",
+    "unit": "升/小时",
+    "value": 1
+  },
+  {
+    "id": "flow_same_fractional",
+    "base_id": "NET02",
+    "family": "graph",
+    "kind": "guard_control",
+    "problem": "examples/false_interception_boundaries/flow_same_fractional.txt",
+    "group": "new_boundary",
+    "expected_envelopes": [
+      "needs_clarification",
+      "unsupported"
+    ],
+    "original_value": 0.5,
+    "original_unit": "立方米/小时",
+    "unit": "立方米/小时",
+    "value": 1
+  },
+  {
+    "id": "flow_unknown_conversion",
+    "base_id": "NET02",
+    "family": "graph",
+    "kind": "guard_control",
+    "problem": "examples/false_interception_boundaries/flow_unknown_conversion.txt",
+    "group": "new_boundary",
+    "expected_envelopes": [
+      "needs_clarification",
+      "unsupported"
+    ],
+    "original_value": 1,
+    "original_unit": "桶/小时",
+    "unit": "立方米/小时",
+    "value": 1
+  },
+  {
+    "id": "path_units",
+    "family": "graph",
+    "problem": "examples/robustness/path_units.txt",
+    "reference": "examples/graphs/shortest_path_model.json",
+    "case": "shortest_path",
+    "kind": "units",
+    "base_id": "NET01",
+    "origins": [
+      {
+        "id": "path_units",
+        "problem": "examples/robustness/path_units.txt",
+        "kind": "units"
+      },
+      {
+        "id": "remaining_graph_path_units",
+        "problem": "examples/robustness/path_units.txt",
+        "kind": "remaining"
+      }
+    ],
+    "check": "path",
+    "group": "path_control"
+  },
+  {
+    "id": "flow_time_conversion",
+    "base_id": "NET02",
+    "family": "graph",
+    "kind": "guard_control",
+    "problem": "examples/graph_contract_boundaries/flow_time_conversion.txt",
+    "group": "new_boundary",
+    "expected_envelopes": [
+      "ready"
+    ],
+    "original_value": 60,
+    "original_unit": "升/分钟",
+    "unit": "升/秒",
+    "value": 1
+  },
+  {
+    "id": "flow_zero_conversion",
+    "base_id": "NET02",
+    "family": "graph",
+    "kind": "guard_control",
+    "problem": "examples/graph_contract_boundaries/flow_zero_conversion.txt",
+    "group": "new_boundary",
+    "expected_envelopes": [
+      "ready"
+    ],
+    "original_value": 0,
+    "original_unit": "升/小时",
+    "unit": "立方米/小时",
+    "value": 0
+  },
+  {
+    "id": "flow_missing_direction",
+    "base_id": "NET02",
+    "family": "graph",
+    "kind": "guard_control",
+    "problem": "examples/graph_contract_boundaries/flow_missing_direction.txt",
+    "group": "new_boundary",
+    "expected_envelopes": [
+      "needs_clarification"
+    ],
+    "question_keywords": [
+      "方向"
+    ]
+  },
+  {
+    "id": "flow_min_cost",
+    "base_id": "NET02",
+    "family": "graph",
+    "kind": "guard_control",
+    "problem": "examples/graph_contract_boundaries/flow_min_cost.txt",
+    "group": "new_boundary",
+    "expected_envelopes": [
+      "unsupported"
+    ],
+    "question_keywords": [
+      "费用",
+      "支持"
+    ]
+  }
+]

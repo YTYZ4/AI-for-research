@@ -1,0 +1,73 @@
+{
+  "api_calls": 0,
+  "records": [
+    {
+      "source": "outputs/refusal_contract_regressions/20261016_225944_e764b376/round_1/flow_missing_direction/api.json",
+      "evaluation": {
+        "passed": true,
+        "checks": {
+          "clarification": true,
+          "no_model": true,
+          "nonblank": true,
+          "asks_direction": true,
+          "no_assumed_direction": true
+        },
+        "text": "需要明确 S 与 T 之间这条边从哪个节点指向哪个节点，才能建立有向最大流模型。"
+      },
+      "expected_pass": true
+    },
+    {
+      "source": "outputs/refusal_contract_regressions/20261016_225944_e764b376/round_2/flow_missing_direction/api.json",
+      "evaluation": {
+        "passed": false,
+        "checks": {
+          "clarification": false,
+          "no_model": true,
+          "nonblank": true,
+          "asks_direction": true,
+          "no_assumed_direction": true
+        },
+        "text": "请求为S到T的最大流，但原文仅说明S与T之间有容量1000升/小时且‘方向未知’，未提供可确定的有向边或无向边双向展开信息，因此无法构建满足最大流方向要求的原始图。支持边界：最大流要求所有边方向明确，或明确说明为无向边并可展开为两条反向边；本请求方向未知，故不支持。"
+      },
+      "expected_pass": false
+    },
+    {
+      "source": "outputs/refusal_contract_regressions/20261016_225944_e764b376/round_3/flow_missing_direction/api.json",
+      "evaluation": {
+        "passed": true,
+        "checks": {
+          "clarification": true,
+          "no_model": true,
+          "nonblank": true,
+          "asks_direction": true,
+          "no_assumed_direction": true
+        },
+        "text": "边“S与T之间容量为1000升/小时”的方向未知；请明确该边是有向边（从 S 到 T 或从 T 到 S），还是双向边。"
+      },
+      "expected_pass": true
+    },
+    {
+      "source": "outputs/refusal_contract_regressions/20261016_225944_e764b376/round_3/multi_commodity/api.json",
+      "evaluation": {
+        "passed": false,
+        "checks": {
+          "no_task_change_suggestions": true,
+          "no_false_missing_claims": false
+        },
+        "task_change_clauses": [],
+        "false_missing_claims": [
+          {
+            "field": "节点",
+            "clause": "未提供具体的节点、边、容量和商品需求等图数据"
+          },
+          {
+            "field": "容量",
+            "clause": "未提供具体的节点、边、容量和商品需求等图数据"
+          }
+        ]
+      },
+      "expected_pass": false
+    }
+  ],
+  "labels_match": true
+}

@@ -1,0 +1,9 @@
+﻿id,family,outcome,failure_category,detail,elapsed_seconds,total_tokens,requested_model,response_model,run_path
+OPT01,optimization,pass,,,1.9438632079982199,2714,deepseek-flash,deepseek-flash,OPT01/20261016_164220_b4a4127d
+OPT02,optimization,pass,,,3.1274718749918975,3169,deepseek-flash,deepseek-flash,OPT02/20261016_164223_f7ab0309
+FIT01,fitting,pass,,,1.5811527500045486,2591,deepseek-flash,deepseek-flash,FIT01/20261016_164225_04a11a78
+FIT02,fitting,pass,,,1.7302140410174616,2616,deepseek-flash,deepseek-flash,FIT02/20261016_164227_dc1eff96
+DYN01,dynamics,pass,,,1.6231110420194454,2581,deepseek-flash,deepseek-flash,DYN01/20261016_164228_c131c23d
+DYN02,dynamics,pass,,,1.3923286669887602,2513,deepseek-flash,deepseek-flash,DYN02/20261016_164230_f0533482
+NET01,graph,pass,,,1.9968010829761624,2720,deepseek-flash,deepseek-flash,NET01/20261016_164232_dae59b25
+NET02,graph,pass,,,1.6425124169909395,2617,deepseek-flash,deepseek-flash,NET02/20261016_164233_226313f6

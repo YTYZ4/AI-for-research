@@ -1,0 +1,24 @@
+{
+  "task_type": "dynamics_input",
+  "name": "Logistic Population Growth",
+  "system": "logistic",
+  "initial": 100,
+  "rate": 0.2,
+  "equilibrium": 1000,
+  "duration": 30,
+  "rate_unit": "1/day",
+  "state_unit": "个",
+  "assumptions": [
+    "种群增长遵循连续 Logistic 模型 dN/dt = rN(1 - N/K)。",
+    "参数恒定，无迁入迁出，数量使用连续近似。",
+    "初值 N(0)=100 个，环境容量 K=1000 个，内禀增长率 r=0.2 每天。",
+    "模拟时长为 30 天。"
+  ],
+  "duration_unit": "day",
+  "source_quotes": {
+    "initial": "100个",
+    "equilibrium": "1000个",
+    "rate": "每天0.2",
+    "duration": "30天"
+  }
+}

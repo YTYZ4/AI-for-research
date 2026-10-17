@@ -1,0 +1,12 @@
+{
+  "id": "immutable_intervention",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "当前动态模型仅支持无干预的常参数连续Logistic轨迹与终值计算，不支持每天捕捞等持续干预项；因此该问题超出支持范围。",
+  "total_tokens": 3691,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "immutable_intervention/20261016_214008_f2ce9a31",
+  "elapsed_seconds": 1.4512028750032187
+}

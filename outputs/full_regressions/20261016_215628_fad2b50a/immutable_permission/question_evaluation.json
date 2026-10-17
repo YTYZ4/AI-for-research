@@ -1,0 +1,12 @@
+{
+  "applied": true,
+  "passed": false,
+  "checks": {
+    "expected_status": false,
+    "nonempty_question": true,
+    "relevant_topic": true,
+    "correct_dimensions": true
+  },
+  "text": "Logistic 模型要求环境容量 K 为正实数；原题给出环境容量恒定 0 个，K<=0 会使当前模型无效（K=0 时 dN/dt=rN(1-N/K) 除零）。按题目要求不自行替换数值，因此当前参数下不支持该连续 Logistic 模型。",
+  "scope": "状态/主题初筛；显式禁止改值时检查修改建议，否则Logistic容量检查正实数限制。不是完整语义证明。"
+}

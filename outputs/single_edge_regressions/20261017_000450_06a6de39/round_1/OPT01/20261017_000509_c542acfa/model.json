@@ -1,0 +1,74 @@
+{
+  "name": "A_B_production_plan",
+  "assumptions": [
+    "A、B 为整件产品，产量取非负整数。",
+    "工时和原料消耗与产量成线性关系。",
+    "所有参数均为常参数，不考虑不确定性。"
+  ],
+  "variables": [
+    {
+      "name": "xA",
+      "description": "产品A的产量",
+      "unit": "件",
+      "kind": "integer",
+      "lower": 0,
+      "upper": null
+    },
+    {
+      "name": "xB",
+      "description": "产品B的产量",
+      "unit": "件",
+      "kind": "integer",
+      "lower": 0,
+      "upper": null
+    }
+  ],
+  "objective": {
+    "sense": "max",
+    "terms": [
+      {
+        "variable": "xA",
+        "coefficient": 40
+      },
+      {
+        "variable": "xB",
+        "coefficient": 30
+      }
+    ],
+    "unit": "元"
+  },
+  "constraints": [
+    {
+      "name": "working_hours_limit",
+      "terms": [
+        {
+          "variable": "xA",
+          "coefficient": 2
+        },
+        {
+          "variable": "xB",
+          "coefficient": 1
+        }
+      ],
+      "sense": "<=",
+      "rhs": 100,
+      "unit": "小时"
+    },
+    {
+      "name": "material_limit",
+      "terms": [
+        {
+          "variable": "xA",
+          "coefficient": 1
+        },
+        {
+          "variable": "xB",
+          "coefficient": 2
+        }
+      ],
+      "sense": "<=",
+      "rhs": 80,
+      "unit": "千克"
+    }
+  ]
+}

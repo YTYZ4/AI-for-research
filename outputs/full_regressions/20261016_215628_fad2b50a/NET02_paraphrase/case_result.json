@@ -1,0 +1,12 @@
+{
+  "id": "NET02_paraphrase",
+  "family": "graph",
+  "outcome": "fail",
+  "failure_category": "needs_clarification",
+  "detail": "图边原值或单位引用不在原题中，请核对原始记录。",
+  "total_tokens": 4439,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "NET02_paraphrase/20261016_215726_be3974e5",
+  "elapsed_seconds": 2.597422542050481
+}

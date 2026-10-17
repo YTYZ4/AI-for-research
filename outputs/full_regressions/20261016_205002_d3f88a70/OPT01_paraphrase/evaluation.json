@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "structural_match": true,
+  "variable_alignment": {
+    "A": "A",
+    "B": "B"
+  },
+  "numeric": {
+    "passed": true,
+    "checks": {
+      "integer_nonnegative": true,
+      "resources": true,
+      "optimal": true,
+      "claimed_objective": true
+    },
+    "enumerated_optimum": 2200
+  },
+  "scope": "严格结构匹配；等价重写可能需人工复核。单位与自然语言假设另行人工审核。"
+}

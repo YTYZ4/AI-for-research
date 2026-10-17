@@ -1,0 +1,11 @@
+{
+  "passed": false,
+  "checks": {
+    "clarification": true,
+    "no_model": true,
+    "nonblank": true,
+    "asks_direction": true,
+    "no_assumed_direction": false
+  },
+  "text": "边 S→T 的方向未知：R源是 S、汇是 T 已明确，但边方向会影响 S 到 T 的最大流，请明确该边是 S 到 T、T 到 S，还是双向。"
+}

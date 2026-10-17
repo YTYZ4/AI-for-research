@@ -1,0 +1,13 @@
+{
+  "task_type": "polynomial_fit",
+  "name": "一阶多项式最小二乘标定（电压-温度）",
+  "assumptions": [
+    "使用普通最小二乘拟合，包含截距项 b。",
+    "指定为一阶多项式（直线 y=a*x+b），不进行自动选阶。",
+    "参数 a、b 仅使用 split=train 的记录估计；split=test 的 15 条记录仅用于计算 RMSE 和 MAE，不重新划分数据。",
+    "x 和 y 均按附件给定单位，不做额外单位换算。"
+  ],
+  "degree": 1,
+  "x_unit": "伏",
+  "y_unit": "摄氏度"
+}

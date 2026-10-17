@@ -1,0 +1,12 @@
+{
+  "id": "cost_paraphrase",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "原题要求“先让流量最大，再让运输总成本最小”，这属于带成本优化的最大流问题（最小费用最大流），超出仅支持最短路径和静态单商品最大流的支持边界。",
+  "total_tokens": 1493,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "cost_paraphrase/20261016_235854_86501c1b",
+  "elapsed_seconds": 1.7451342080021277
+}

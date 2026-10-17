@@ -1,0 +1,12 @@
+{
+  "id": "remaining_permission_valid",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "",
+  "total_tokens": 4813,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "remaining_permission_valid/20261016_222006_02269ef7",
+  "elapsed_seconds": 2.0048866249853745
+}

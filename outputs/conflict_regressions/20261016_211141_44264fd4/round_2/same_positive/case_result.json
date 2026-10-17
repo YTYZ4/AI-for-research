@@ -1,0 +1,12 @@
+{
+  "id": "same_positive",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "",
+  "total_tokens": 3929,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "same_positive/20261016_211225_6e9c041c",
+  "elapsed_seconds": 2.7602838749880902
+}

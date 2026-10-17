@@ -1,0 +1,12 @@
+{
+  "id": "flow_integer_conversion",
+  "family": "graph",
+  "outcome": "fail",
+  "failure_category": "unsupported",
+  "detail": "原边容量为1000升/小时，换算为1立方米/小时是整数；但题目要求所有容量和结果均以立方米/小时表示，当前求解器最大流支持原题单位下的非负整数容量，无法强制统一输出单位并在该单位下完成整数校验与求解。",
+  "total_tokens": 4715,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "flow_integer_conversion/20261016_223049_fdb8386b",
+  "elapsed_seconds": 3.277897917025257
+}

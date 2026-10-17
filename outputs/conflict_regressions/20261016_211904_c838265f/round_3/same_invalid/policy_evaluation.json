@@ -1,0 +1,7 @@
+{
+  "false_interception": false,
+  "passed": true,
+  "no_replacement_suggestion": true,
+  "text": "连续Logistic模型要求环境容量K为正实数；原题记录的环境容量为0（以及K=0.0），会使方程中出现1/K除零项，当前模型无法执行，且用户明确不得改动参数，因此无法建立有效模型。",
+  "scope": "仅检查显式禁止改参数后的常见改值建议；不是完整语义证明"
+}

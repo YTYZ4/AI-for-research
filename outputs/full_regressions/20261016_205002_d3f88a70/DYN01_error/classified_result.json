@@ -1,0 +1,22 @@
+{
+  "id": "DYN01_error",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "牛顿冷却模型的冷却系数 k 必须为正数，但题目给出 -0.1 每分钟（负数）。请提供正的冷却系数数值，或说明是否应将符号视为笔误并修正为 0.1 每分钟？",
+  "total_tokens": 3306,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "DYN01_error/20261016_205047_a4d5326f",
+  "elapsed_seconds": 1.4597483330289833,
+  "question_semantics_passed": true,
+  "kind": "error",
+  "base_id": "DYN01",
+  "raw_schema_valid": true,
+  "format_action": "not_needed",
+  "local_guard_used": false,
+  "original_pass": true,
+  "after_format_pass": true,
+  "final_pass": true,
+  "pass_path": "native"
+}

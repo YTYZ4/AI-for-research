@@ -1,0 +1,12 @@
+{
+  "zero_positive": 3,
+  "two_positive": 3,
+  "reverse": 3,
+  "three_values": 3,
+  "same_positive": 3,
+  "same_invalid": 3,
+  "corrected": 3,
+  "missing": 3,
+  "valid_above": 3,
+  "previous_failure": 3
+}

@@ -1,0 +1,23 @@
+{
+  "task_type": "dynamics_input",
+  "name": "液体牛顿冷却",
+  "system": "newton_cooling",
+  "initial": 90,
+  "rate": 0.1,
+  "equilibrium": 20,
+  "duration": 30,
+  "rate_unit": "1/min",
+  "state_unit": "celsius",
+  "assumptions": [
+    "封闭系统，环境温度恒定",
+    "冷却系数为正常数",
+    "传热由牛顿冷却定律描述"
+  ],
+  "duration_unit": "min",
+  "source_quotes": {
+    "initial": "90摄氏度",
+    "equilibrium": "20摄氏度",
+    "rate": "0.1每分钟",
+    "duration": "30分钟"
+  }
+}

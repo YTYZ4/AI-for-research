@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "checks": {
+    "original_parameters": true,
+    "trajectory": true
+  },
+  "max_error": 3.5316389535022807e-09
+}

@@ -1,1 +1,0 @@
-old_scratch2|真实划痕旧照|RPCA|RPCA|PSNR=N/A|SSIM=N/A

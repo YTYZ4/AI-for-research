@@ -1,0 +1,12 @@
+{
+  "id": "reverse",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "环境容量存在冲突记录：K=0.5个 与 K=0个。请核对哪条记录准确？",
+  "total_tokens": 3503,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "reverse/20261016_211221_46b3e1f1",
+  "elapsed_seconds": 2.35667500004638
+}

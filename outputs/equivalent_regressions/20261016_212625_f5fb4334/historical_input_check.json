@@ -1,0 +1,31 @@
+{
+  "source": "outputs/conflict_regressions/20261016_211904_c838265f/round_3/same_positive/generation_record.json",
+  "original_envelope": {
+    "status": "needs_clarification",
+    "questions": [
+      "环境容量K存在冲突记录：环境容量恒定0.5个，另一记录K=0.50个。请核对哪条准确？"
+    ],
+    "model": null
+  },
+  "new_input_check": {
+    "relation": "equivalent",
+    "exact_values": [
+      "0.5"
+    ],
+    "raw_values": [
+      "0.5",
+      "0.50"
+    ],
+    "values": [
+      0.5
+    ],
+    "unit": "个",
+    "source_quotes": [
+      "环境容量恒定0.5个",
+      "K=0.50个"
+    ],
+    "scope": "同一常参数Logistic题面中同单位容量记录；不选择真实值"
+  },
+  "api_calls": 0,
+  "note": "原失败题输入的离线等价识别，不是原响应被修复或重新在线通过"
+}

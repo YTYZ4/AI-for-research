@@ -1,0 +1,26 @@
+{
+  "task_type": "graph_input",
+  "name": "S到T单边最大流",
+  "problem": "max_flow",
+  "nodes": [
+    "S",
+    "T"
+  ],
+  "source": "S",
+  "target": "T",
+  "edges": [
+    {
+      "source": "S",
+      "target": "T",
+      "weight": 1000,
+      "unit": "升/小时",
+      "source_quote": "只有S到T容量1000升/小时",
+      "unit_quote": "升/小时"
+    }
+  ],
+  "unit": "立方米/小时",
+  "assumptions": [
+    "边容量为1000升/小时，单位为升/小时",
+    "输出单位按要求为立方米/小时"
+  ]
+}

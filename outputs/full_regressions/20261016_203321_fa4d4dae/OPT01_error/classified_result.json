@@ -1,0 +1,21 @@
+{
+  "id": "OPT01_error",
+  "family": "optimization",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "",
+  "total_tokens": 3416,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "OPT01_error/20261016_203340_c0f5bd47",
+  "elapsed_seconds": 2.1369090419611894,
+  "kind": "error",
+  "base_id": "OPT01",
+  "raw_schema_valid": true,
+  "format_action": "not_needed",
+  "local_guard_used": false,
+  "original_pass": true,
+  "after_format_pass": true,
+  "final_pass": true,
+  "pass_path": "native"
+}

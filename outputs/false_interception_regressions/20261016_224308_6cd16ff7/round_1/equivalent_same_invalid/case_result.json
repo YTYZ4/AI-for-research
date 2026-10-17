@@ -1,0 +1,12 @@
+{
+  "id": "equivalent_same_invalid",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "环境容量K的原值为-0（另一记录K=0.0，二者数值等价），而Logistic模型要求正实数环境容量K；在题面明确“不得改动参数”的前提下，无法在保留原值的情况下建立有效模型，因此当前问题超出支持范围。",
+  "total_tokens": 5629,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "equivalent_same_invalid/20261016_224320_76e36b7e",
+  "elapsed_seconds": 1.1984545000013895
+}

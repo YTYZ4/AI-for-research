@@ -1,0 +1,12 @@
+{
+  "id": "NET01_paraphrase",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "",
+  "total_tokens": 4705,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "NET01_paraphrase/20261016_221809_87076b73",
+  "elapsed_seconds": 2.2924044580431655
+}

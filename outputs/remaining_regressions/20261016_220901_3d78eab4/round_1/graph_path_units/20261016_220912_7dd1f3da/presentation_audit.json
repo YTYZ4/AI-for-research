@@ -1,0 +1,11 @@
+{
+  "policy": "fixed_system_descriptions_v2",
+  "suppressed_display_only": [
+    {
+      "location": "envelope",
+      "text": "各边权重为原题给出的距离数值，未在输入中做单位换算；求解器将按统一单位换算后计算最短路。",
+      "reason": "包含系统行为或实现描述，移到原始记录，不作为报告假设展示"
+    }
+  ],
+  "source_modified": false
+}

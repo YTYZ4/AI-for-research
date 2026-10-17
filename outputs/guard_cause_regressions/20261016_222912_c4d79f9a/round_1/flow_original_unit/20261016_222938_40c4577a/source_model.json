@@ -1,0 +1,26 @@
+{
+  "task_type": "graph_input",
+  "name": "S到T最大流",
+  "problem": "max_flow",
+  "nodes": [
+    "S",
+    "T"
+  ],
+  "source": "S",
+  "target": "T",
+  "edges": [
+    {
+      "source": "S",
+      "target": "T",
+      "weight": 1,
+      "unit": "升/小时",
+      "source_quote": "S到T容量1升/小时",
+      "unit_quote": "升/小时"
+    }
+  ],
+  "unit": "升/小时",
+  "assumptions": [
+    "原题为有向图，边和容量按原文保留，未作单位换算。",
+    "最大流按已给非负整数容量求解。"
+  ]
+}

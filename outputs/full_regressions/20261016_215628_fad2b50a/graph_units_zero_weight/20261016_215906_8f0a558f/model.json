@@ -1,0 +1,31 @@
+{
+  "task_type": "graph",
+  "name": "shortest_path_S_to_T",
+  "problem": "shortest_path",
+  "nodes": [
+    "S",
+    "A",
+    "T"
+  ],
+  "source": "S",
+  "target": "T",
+  "edges": [
+    {
+      "source": "S",
+      "target": "A",
+      "weight": 0
+    },
+    {
+      "source": "A",
+      "target": "T",
+      "weight": 1
+    },
+    {
+      "source": "S",
+      "target": "T",
+      "weight": 2
+    }
+  ],
+  "unit": "km",
+  "assumptions": []
+}

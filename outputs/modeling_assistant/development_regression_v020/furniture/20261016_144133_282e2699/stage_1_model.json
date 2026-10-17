@@ -1,0 +1,74 @@
+{
+  "name": "家具厂桌子椅子周生产计划",
+  "assumptions": [
+    "桌子、椅子为整件实物产品，生产数量取非负整数。",
+    "每周木工可用工时上限为120小时，油漆工可用工时上限为100小时。",
+    "利润单位为元，工时单位为小时。"
+  ],
+  "variables": [
+    {
+      "name": "x_table",
+      "description": "每周生产的桌子数量",
+      "unit": "张",
+      "kind": "integer",
+      "lower": 0,
+      "upper": null
+    },
+    {
+      "name": "x_chair",
+      "description": "每周生产的椅子数量",
+      "unit": "把",
+      "kind": "integer",
+      "lower": 0,
+      "upper": null
+    }
+  ],
+  "objective": {
+    "sense": "max",
+    "terms": [
+      {
+        "variable": "x_table",
+        "coefficient": 120
+      },
+      {
+        "variable": "x_chair",
+        "coefficient": 80
+      }
+    ],
+    "unit": "元"
+  },
+  "constraints": [
+    {
+      "name": "carpentry_hours",
+      "terms": [
+        {
+          "variable": "x_table",
+          "coefficient": 4
+        },
+        {
+          "variable": "x_chair",
+          "coefficient": 2
+        }
+      ],
+      "sense": "<=",
+      "rhs": 120,
+      "unit": "小时"
+    },
+    {
+      "name": "painting_hours",
+      "terms": [
+        {
+          "variable": "x_table",
+          "coefficient": 2
+        },
+        {
+          "variable": "x_chair",
+          "coefficient": 3
+        }
+      ],
+      "sense": "<=",
+      "rhs": 100,
+      "unit": "小时"
+    }
+  ]
+}

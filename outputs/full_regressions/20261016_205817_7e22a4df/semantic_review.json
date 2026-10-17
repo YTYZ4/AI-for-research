@@ -1,0 +1,17 @@
+{
+  "online_version": "0.10.4",
+  "current_version": "0.10.5",
+  "raw_passes": 46,
+  "after_format_passes": 46,
+  "final_passes": 47,
+  "guarded_case": "DYN02_error",
+  "raw_model_issue_remains": "原模型仍索要替代K；本地依据原文禁止改值和K=0证据停止，原始回答保留。",
+  "cold_coefficient_case": "DYN01_error直接unsupported，无改符号建议",
+  "display": "NET02_paraphrase一条求解器说明从假设移出；封闭系统与训练/留出假设保留；历史求解器换算说明离线重放被正确移出。",
+  "offline_render": "offline_presentation_v0105/review.json；47/47，无额外API",
+  "remaining_limits": [
+    "本地停止策略仅覆盖可完整提取的非法常参数Logistic，未声称通用禁止改值语义完备。",
+    "显示分类为词模式，未保证任意表达都能正确分类。",
+    "全轮单次不证明长期稳定；本轮总计两批94次API，不覆盖首轮失败。"
+  ]
+}

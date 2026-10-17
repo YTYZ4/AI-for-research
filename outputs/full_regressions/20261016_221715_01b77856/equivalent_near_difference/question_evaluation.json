@@ -1,0 +1,17 @@
+{
+  "applied": true,
+  "passed": true,
+  "checks": {
+    "expected_status": true,
+    "nonempty_question": true,
+    "relevant_topic": true,
+    "all_conflict_values": true,
+    "neutral": true,
+    "states_conflict": true,
+    "requests_resolution": true,
+    "clarification": true,
+    "correct_dimensions": true
+  },
+  "text": "同一容量K存在两条冲突记录：环境容量恒定0.5个 与 K=0.5001个。请核对哪条准确？",
+  "scope": "状态/主题初筛；显式禁止改值时检查修改建议，否则Logistic容量检查正实数限制。不是完整语义证明。"
+}

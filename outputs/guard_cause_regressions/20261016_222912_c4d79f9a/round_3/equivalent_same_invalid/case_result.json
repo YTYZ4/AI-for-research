@@ -1,0 +1,12 @@
+{
+  "id": "equivalent_same_invalid",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "当前模型要求环境容量K为正实数；原记录K=-0个（K=0.0个）使Logistic方程出现除零，无法建立或求解连续Logistic轨迹与终值模型。且题面明确不得改动参数，因此无法代为替换为正值或重新建模。",
+  "total_tokens": 5497,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "equivalent_same_invalid/20261016_223027_b676c10e",
+  "elapsed_seconds": 1.4425379169988446
+}

@@ -1,0 +1,12 @@
+{
+  "id": "cost_not_requested",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "",
+  "total_tokens": 1725,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "cost_not_requested/20261017_000549_52f098b4",
+  "elapsed_seconds": 1.577376916015055
+}

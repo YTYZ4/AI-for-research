@@ -1,0 +1,12 @@
+{
+  "id": "immutable_missing_rate",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "请提供生长速率 r 的数值及单位（例如：每天 0.2），不能默认参数。",
+  "total_tokens": 4082,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "immutable_missing_rate/20261016_215816_27dad168",
+  "elapsed_seconds": 2.8175452910363674
+}

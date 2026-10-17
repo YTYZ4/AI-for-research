@@ -1,0 +1,12 @@
+{
+  "id": "zero",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "Logistic模型要求环境容量K为正实数；当前给定的环境容量为0，会使模型无效。请提供正实数环境容量K（可为小数）。",
+  "total_tokens": 3381,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "zero/20261016_203945_9ba915ea",
+  "elapsed_seconds": 1.1140975420130417
+}

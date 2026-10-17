@@ -1,0 +1,12 @@
+{
+  "id": "pure_min_cost",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "原题要求求解最小费用流（含单位成本每升2元），并对输送量500升/小时进行费用优化；当前仅支持最短路径和单商品最大流两类任务，无法处理带费用目标的最小费用流。",
+  "total_tokens": 1488,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "pure_min_cost/20261016_235212_68f21d5b",
+  "elapsed_seconds": 1.1709236250026152
+}

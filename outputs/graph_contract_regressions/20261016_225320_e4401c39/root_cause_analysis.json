@@ -1,0 +1,11 @@
+{
+  "observed": [
+    "旧失败已经计算出1000升/小时=1立方米/小时或0.001立方米/小时=1升/小时，仍拒绝；不是简单算术错误。",
+    "一次拒绝编造graph_input不支持source_quote/unit_quote，但发送的SOURCE_GRAPH_SCHEMA确实含这两个必填字段。",
+    "旧系统请求同时含graph与graph_input、dynamics与dynamics_input等内部/输入格式；通用说明混合Logistic容量和图边容量。",
+    "旧图说明要求禁止模型换算，同时要求模型先判断换算后整数性再决定ready或unsupported。"
+  ],
+  "hypothesis": "职责竞争与Schema选择负担可能促使模型模拟程序限制；观察支持此工程假设，但没有消融实验确立因果。",
+  "change": "明确图任务使用原始输入专用请求契约，移除其他题型/内部模型Schema，数值可解性由既有程序验证；模型拒绝不改写。",
+  "measurement": "保留旧非ready期待，程序护栏接管仍不计原始通过。"
+}

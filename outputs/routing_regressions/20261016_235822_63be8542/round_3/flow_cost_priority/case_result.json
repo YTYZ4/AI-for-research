@@ -1,0 +1,12 @@
+{
+  "id": "flow_cost_priority",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "原题要求在最大流基础上进一步使费用尽可能低，即要求最小费用最大流；当前仅支持最短路径与单商品最大流，不支持最小费用流。支持边界：若仅求单商品最大流，可处理源S、汇T、边S→T容量1000升/小时的有向图；若仅求最短路径，可处理给定边权和单位的有向图。原题同时给出了每升运输成本2元的最小费用优化目标，该目标超出支持范围。",
+  "total_tokens": 1537,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "flow_cost_priority/20261016_235922_c5be9c8a",
+  "elapsed_seconds": 1.7050639590015635
+}

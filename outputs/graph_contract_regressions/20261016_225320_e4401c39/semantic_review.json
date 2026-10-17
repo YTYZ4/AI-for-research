@@ -1,0 +1,337 @@
+{
+  "reviewer": "development_assistant",
+  "independent_human_review": false,
+  "records": [
+    {
+      "id": "graph_units_fractional_flow",
+      "repeat": 1,
+      "pass_path": "local_guard",
+      "raw": {
+        "status": "ready",
+        "questions": [],
+        "model": {
+          "task_type": "graph_input",
+          "name": "有向输水网络最大流",
+          "problem": "max_flow",
+          "nodes": [
+            "S",
+            "T"
+          ],
+          "source": "S",
+          "target": "T",
+          "edges": [
+            {
+              "source": "S",
+              "target": "T",
+              "weight": 1,
+              "unit": "升/小时",
+              "source_quote": "S到T容量1升/小时",
+              "unit_quote": "升/小时"
+            }
+          ],
+          "unit": "立方米/小时",
+          "assumptions": []
+        }
+      },
+      "assessment": "非整数或未知换算，必要程序护栏，不能计原始通过"
+    },
+    {
+      "id": "flow_same_fractional",
+      "repeat": 1,
+      "pass_path": "local_guard",
+      "raw": {
+        "status": "ready",
+        "questions": [],
+        "model": {
+          "task_type": "graph_input",
+          "name": "有向输水网络最大流",
+          "problem": "max_flow",
+          "nodes": [
+            "S",
+            "T"
+          ],
+          "source": "S",
+          "target": "T",
+          "edges": [
+            {
+              "source": "S",
+              "target": "T",
+              "weight": 0.5,
+              "unit": "立方米/小时",
+              "source_quote": "S到T容量0.5立方米/小时",
+              "unit_quote": "立方米/小时"
+            }
+          ],
+          "unit": "立方米/小时",
+          "assumptions": []
+        }
+      },
+      "assessment": "非整数或未知换算，必要程序护栏，不能计原始通过"
+    },
+    {
+      "id": "flow_unknown_conversion",
+      "repeat": 1,
+      "pass_path": "local_guard",
+      "raw": {
+        "status": "ready",
+        "questions": [],
+        "model": {
+          "task_type": "graph_input",
+          "name": "有向输水网络最大流",
+          "problem": "max_flow",
+          "nodes": [
+            "S",
+            "T"
+          ],
+          "source": "S",
+          "target": "T",
+          "edges": [
+            {
+              "source": "S",
+              "target": "T",
+              "weight": 1,
+              "unit": "桶/小时",
+              "source_quote": "S到T容量1桶/小时",
+              "unit_quote": "桶/小时"
+            }
+          ],
+          "unit": "立方米/小时",
+          "assumptions": []
+        }
+      },
+      "assessment": "非整数或未知换算，必要程序护栏，不能计原始通过"
+    },
+    {
+      "id": "flow_min_cost",
+      "repeat": 1,
+      "pass_path": "failed",
+      "raw": {
+        "status": "unsupported",
+        "questions": [],
+        "model": null
+      },
+      "assessment": "unsupported但原因空；严格验证失败，未执行"
+    },
+    {
+      "id": "graph_units_fractional_flow",
+      "repeat": 2,
+      "pass_path": "local_guard",
+      "raw": {
+        "status": "ready",
+        "questions": [],
+        "model": {
+          "task_type": "graph_input",
+          "name": "有向输水网络最大流",
+          "problem": "max_flow",
+          "nodes": [
+            "S",
+            "T"
+          ],
+          "source": "S",
+          "target": "T",
+          "edges": [
+            {
+              "source": "S",
+              "target": "T",
+              "weight": 1,
+              "unit": "升/小时",
+              "source_quote": "S到T容量1升/小时",
+              "unit_quote": "升/小时"
+            }
+          ],
+          "unit": "立方米/小时",
+          "assumptions": []
+        }
+      },
+      "assessment": "非整数或未知换算，必要程序护栏，不能计原始通过"
+    },
+    {
+      "id": "flow_same_fractional",
+      "repeat": 2,
+      "pass_path": "local_guard",
+      "raw": {
+        "status": "ready",
+        "questions": [],
+        "model": {
+          "task_type": "graph_input",
+          "name": "有向输水网络最大流",
+          "problem": "max_flow",
+          "nodes": [
+            "S",
+            "T"
+          ],
+          "source": "S",
+          "target": "T",
+          "edges": [
+            {
+              "source": "S",
+              "target": "T",
+              "weight": 0.5,
+              "unit": "立方米/小时",
+              "source_quote": "S到T容量0.5立方米/小时",
+              "unit_quote": "立方米/小时"
+            }
+          ],
+          "unit": "立方米/小时",
+          "assumptions": []
+        }
+      },
+      "assessment": "非整数或未知换算，必要程序护栏，不能计原始通过"
+    },
+    {
+      "id": "flow_unknown_conversion",
+      "repeat": 2,
+      "pass_path": "local_guard",
+      "raw": {
+        "status": "ready",
+        "questions": [],
+        "model": {
+          "task_type": "graph_input",
+          "name": "有向输水网络S到T最大流",
+          "problem": "max_flow",
+          "nodes": [
+            "S",
+            "T"
+          ],
+          "source": "S",
+          "target": "T",
+          "edges": [
+            {
+              "source": "S",
+              "target": "T",
+              "weight": 1,
+              "unit": "桶/小时",
+              "source_quote": "S到T容量1桶/小时",
+              "unit_quote": "桶/小时"
+            }
+          ],
+          "unit": "立方米/小时",
+          "assumptions": []
+        }
+      },
+      "assessment": "非整数或未知换算，必要程序护栏，不能计原始通过"
+    },
+    {
+      "id": "flow_min_cost",
+      "repeat": 2,
+      "pass_path": "failed",
+      "raw": {
+        "status": "unsupported",
+        "questions": [],
+        "model": null
+      },
+      "assessment": "unsupported但原因空；严格验证失败，未执行"
+    },
+    {
+      "id": "graph_units_fractional_flow",
+      "repeat": 3,
+      "pass_path": "local_guard",
+      "raw": {
+        "status": "ready",
+        "questions": [],
+        "model": {
+          "task_type": "graph_input",
+          "name": "有向输水网络最大流",
+          "problem": "max_flow",
+          "nodes": [
+            "S",
+            "T"
+          ],
+          "source": "S",
+          "target": "T",
+          "edges": [
+            {
+              "source": "S",
+              "target": "T",
+              "weight": 1,
+              "unit": "升/小时",
+              "source_quote": "S到T容量1升/小时",
+              "unit_quote": "升/小时"
+            }
+          ],
+          "unit": "立方米/小时",
+          "assumptions": []
+        }
+      },
+      "assessment": "非整数或未知换算，必要程序护栏，不能计原始通过"
+    },
+    {
+      "id": "flow_same_fractional",
+      "repeat": 3,
+      "pass_path": "local_guard",
+      "raw": {
+        "status": "ready",
+        "questions": [],
+        "model": {
+          "task_type": "graph_input",
+          "name": "有向输水网络最大流",
+          "problem": "max_flow",
+          "nodes": [
+            "S",
+            "T"
+          ],
+          "source": "S",
+          "target": "T",
+          "edges": [
+            {
+              "source": "S",
+              "target": "T",
+              "weight": 0.5,
+              "unit": "立方米/小时",
+              "source_quote": "S到T容量0.5立方米/小时",
+              "unit_quote": "立方米/小时"
+            }
+          ],
+          "unit": "立方米/小时",
+          "assumptions": []
+        }
+      },
+      "assessment": "非整数或未知换算，必要程序护栏，不能计原始通过"
+    },
+    {
+      "id": "flow_unknown_conversion",
+      "repeat": 3,
+      "pass_path": "local_guard",
+      "raw": {
+        "status": "ready",
+        "questions": [],
+        "model": {
+          "task_type": "graph_input",
+          "name": "有向输水网络最大流",
+          "problem": "max_flow",
+          "nodes": [
+            "S",
+            "T"
+          ],
+          "source": "S",
+          "target": "T",
+          "edges": [
+            {
+              "source": "S",
+              "target": "T",
+              "weight": 1,
+              "unit": "桶/小时",
+              "source_quote": "S到T容量1桶/小时",
+              "unit_quote": "桶/小时"
+            }
+          ],
+          "unit": "立方米/小时",
+          "assumptions": []
+        }
+      },
+      "assessment": "非整数或未知换算，必要程序护栏，不能计原始通过"
+    },
+    {
+      "id": "flow_min_cost",
+      "repeat": 3,
+      "pass_path": "failed",
+      "raw": {
+        "status": "unsupported",
+        "questions": [],
+        "model": null
+      },
+      "assessment": "unsupported但原因空；严格验证失败，未执行"
+    }
+  ],
+  "automatic_results_unchanged": true
+}

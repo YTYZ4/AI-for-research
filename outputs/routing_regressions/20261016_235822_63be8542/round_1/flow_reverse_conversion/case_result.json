@@ -1,0 +1,12 @@
+{
+  "id": "flow_reverse_conversion",
+  "family": "graph",
+  "outcome": "fail",
+  "failure_category": "needs_clarification",
+  "detail": "原题只给出源点S、汇点T以及一条从S到T、容量为0.001立方米/小时的边，无法据此建模最大流问题；请补充完整的节点、边及每条边的容量（或确认该网络仅含这一条边？）",
+  "total_tokens": 1501,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "flow_reverse_conversion/20261016_235826_3eceaddd",
+  "elapsed_seconds": 1.4071971669909544
+}

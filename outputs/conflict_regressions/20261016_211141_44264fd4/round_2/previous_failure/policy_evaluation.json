@@ -1,0 +1,13 @@
+{
+  "false_interception": false,
+  "passed": true,
+  "checks": {
+    "clarification": true,
+    "all_original_values": true,
+    "conflict_explained": true,
+    "asks_resolution": true,
+    "no_preselected_value": true,
+    "no_execution": true
+  },
+  "text": "环境容量K存在冲突：记录1为0个，记录2为0.5个；且K必须为正实数。请核对哪条记录准确，并提供有效的正实数环境容量K（可为小数）。"
+}

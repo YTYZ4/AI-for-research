@@ -1,0 +1,12 @@
+{
+  "id": "flow_missing_direction",
+  "family": "graph",
+  "outcome": "fail",
+  "failure_category": "generation_error",
+  "detail": "ValueError: 建模响应格式错误：'model' is a required property",
+  "total_tokens": 1496,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": null,
+  "elapsed_seconds": 1.5401197919854894
+}

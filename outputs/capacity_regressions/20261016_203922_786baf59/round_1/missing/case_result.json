@@ -1,0 +1,12 @@
+{
+  "id": "missing",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "请提供正实数环境容量K（可为小数），用于连续Logistic增长模型。",
+  "total_tokens": 3172,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "missing/20261016_203927_3e9d0c95",
+  "elapsed_seconds": 1.3850720829796046
+}

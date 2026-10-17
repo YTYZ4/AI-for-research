@@ -1,0 +1,12 @@
+{
+  "id": "immutable_negated_permission_invalid",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "环境容量K=0使连续Logistic模型取值为0，当前模型无效；由于题目不允许修改参数，无法在保持原参数的前提下建立该模型。",
+  "total_tokens": 5309,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "immutable_negated_permission_invalid/20261016_222919_a4645184",
+  "elapsed_seconds": 1.3642488329787739
+}

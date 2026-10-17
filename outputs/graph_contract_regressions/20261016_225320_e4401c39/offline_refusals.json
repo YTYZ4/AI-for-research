@@ -1,0 +1,69 @@
+{
+  "api_calls": 0,
+  "records": [
+    {
+      "id": "flow_integer_conversion",
+      "repeat": 1,
+      "source": "outputs/false_interception_followups/20261016_224619_c2a067a7/round_1/flow_integer_conversion/generation_record.json",
+      "sha256": "d869db1b3ab3cec090407f41fd5917532782ec4fd75ba30212b1fdca28a6e61a",
+      "raw": {
+        "status": "unsupported",
+        "questions": [
+          "原题唯一容量为1000升/小时，要求所有容量和结果均以立方米/小时表示且不允许改变统一输出单位或取整；1000升/小时精确换算为1立方米/小时，属于整数容量，最大流问题本身在程序能力范围内，但当前 JSON Schema 的 graph_input 边字段不支持 source_quote/unit_quote 逐字引用，无法在不丢字段的情况下返回可校验的 ready 模型。"
+        ],
+        "model": null
+      },
+      "unchanged": true,
+      "not_promoted": true,
+      "no_guard": true
+    },
+    {
+      "id": "flow_reverse_conversion",
+      "repeat": 1,
+      "source": "outputs/false_interception_followups/20261016_224619_c2a067a7/round_1/flow_reverse_conversion/generation_record.json",
+      "sha256": "ffe562f0ce4c9d7be4becd1dc4b9adb102d182f03c6cd4428c3e68fa90ffd5a4",
+      "raw": {
+        "status": "unsupported",
+        "questions": [
+          "原边容量为0.001立方米/小时，要求统一输出为升/小时且不允许取整；该边换算后为1升/小时（整数），但按当前求解器校验规则，不能预先假定原值换算后一定满足整数容量要求。若程序校验发现换算后容量不是非负整数，则超出最大流仅支持非负整数容量的范围。"
+        ],
+        "model": null
+      },
+      "unchanged": true,
+      "not_promoted": true,
+      "no_guard": true
+    },
+    {
+      "id": "flow_reverse_conversion",
+      "repeat": 2,
+      "source": "outputs/false_interception_followups/20261016_224619_c2a067a7/round_2/flow_reverse_conversion/generation_record.json",
+      "sha256": "c210568c11cee59d0403bf0359be782ff38e51182d1b483736e894ca772b9bb9",
+      "raw": {
+        "status": "unsupported",
+        "questions": [
+          "当前求解器要求最大流容量在统一输出单位下为非负整数；原边容量0.001立方米/小时换算为升/小时等于1升/小时，但原题禁止改变统一输出单位或取整，因此无法按指定单位校验并求解。"
+        ],
+        "model": null
+      },
+      "unchanged": true,
+      "not_promoted": true,
+      "no_guard": true
+    },
+    {
+      "id": "flow_reverse_conversion",
+      "repeat": 3,
+      "source": "outputs/false_interception_followups/20261016_224619_c2a067a7/round_3/flow_reverse_conversion/generation_record.json",
+      "sha256": "351f517875601ea51ff33164a33a71999737eb00d0bd5033aef791df97a461c0",
+      "raw": {
+        "status": "unsupported",
+        "questions": [
+          "原边容量为0.001立方米/小时，统一输出单位升/小时后为1升/小时（整数），但当前求解器要求输出单位下的容量换算为整数；该题指定输出单位为升/小时且禁止取整。若仅按原单位求解，可支持；但明确要求按升/小时输出时超出当前求解器对统一输出单位下整数容量的限制。"
+        ],
+        "model": null
+      },
+      "unchanged": true,
+      "not_promoted": true,
+      "no_guard": true
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "task_type": "dynamics",
+  "name": "牛顿冷却轨迹与终值",
+  "system": "newton_cooling",
+  "initial": 90,
+  "rate": 0.1,
+  "equilibrium": 20,
+  "duration": 30,
+  "time_unit": "min",
+  "rate_unit": "1/min",
+  "state_unit": "摄氏度",
+  "assumptions": [
+    "初始温度 T(0)=90 摄氏度。",
+    "环境温度恒为 20 摄氏度。",
+    "冷却系数 k=0.1 每分钟，冷却过程中保持不变。",
+    "物体温度均匀，符合集中参数假设。",
+    "用户要求模拟 0 到 0.5 小时，统一为分钟：0.5 小时 = 30 分钟。",
+    "温度单位统一为摄氏度，时间单位统一为分钟。",
+    "牛顿冷却方程为 dT/dt = -k (T - T_env)。"
+  ]
+}

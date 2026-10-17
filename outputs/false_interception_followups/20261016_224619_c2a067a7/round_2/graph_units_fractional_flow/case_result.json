@@ -1,0 +1,12 @@
+{
+  "id": "graph_units_fractional_flow",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "已明确边 S→T 的容量为 1 升/小时，且要求统一输出单位为立方米/小时；请确认是否允许按精确单位换算处理（1 升/小时 = 0.001 立方米/小时，转换后容量为非负整数 0 立方米/小时），还是仍要求其他处理方式？",
+  "total_tokens": 4917,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "graph_units_fractional_flow/20261016_224646_3efbceac",
+  "elapsed_seconds": 1.3054582920158282
+}

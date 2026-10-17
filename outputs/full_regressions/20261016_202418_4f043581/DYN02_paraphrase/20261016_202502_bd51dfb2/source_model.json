@@ -1,0 +1,23 @@
+{
+  "task_type": "dynamics_input",
+  "name": "logistic_population_growth",
+  "system": "logistic",
+  "initial": 100,
+  "rate": 0.2,
+  "equilibrium": 1000,
+  "duration": 30,
+  "rate_unit": "1/day",
+  "state_unit": "individuals",
+  "assumptions": [
+    "种群数量按连续数量近似。",
+    "封闭种群，没有迁入迁出。",
+    "内禀增长率和环境容量在模拟期间保持恒定。"
+  ],
+  "duration_unit": "day",
+  "source_quotes": {
+    "initial": "100个个体",
+    "equilibrium": "1000个",
+    "rate": "0.2每天",
+    "duration": "0至30天"
+  }
+}

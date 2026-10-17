@@ -1,0 +1,18 @@
+{
+  "task_type": "dynamics",
+  "name": "封闭种群连续Logistic模型",
+  "system": "logistic",
+  "initial": 1.5,
+  "rate": 0.2,
+  "equilibrium": 0.5,
+  "duration": 30.0,
+  "rate_unit": "1/day",
+  "state_unit": "个",
+  "assumptions": [
+    "种群数量按连续实数处理，允许小数个体。",
+    "环境容量K恒定，为平衡值而非初值上限；初值可高于K。",
+    "增长率为常参数内禀增长率。",
+    "模拟区间为从第0天到第30天。"
+  ],
+  "time_unit": "day"
+}

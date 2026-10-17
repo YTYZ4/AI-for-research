@@ -1,0 +1,29 @@
+{
+  "passed": false,
+  "source_values_match_original": true,
+  "numeric": {
+    "passed": false,
+    "checks": {
+      "parameters": true,
+      "rate": true,
+      "duration": true,
+      "rate_unit": true,
+      "state_unit": false,
+      "trajectory": true,
+      "endpoints": true
+    },
+    "max_error": 1.867674370714667e-08
+  },
+  "conversion": {
+    "method": "duration_to_original_rate_unit_v1",
+    "original_rate": 0.1,
+    "original_rate_unit": "1/min",
+    "original_duration": 0.5,
+    "original_duration_unit": "hour",
+    "factor": "60",
+    "normalized_duration": 30.0,
+    "normalized_time_unit": "min",
+    "rate_unchanged": true,
+    "source_quotes_checked": true
+  }
+}

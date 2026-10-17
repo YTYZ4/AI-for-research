@@ -1,0 +1,12 @@
+{
+  "id": "cost_paraphrase",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "当前图网络求解器仅支持 shortest_path 或 max_flow。本题同时要求先最大流再最小运输成本，属于最小费用最大流，不在支持范围内；请改为单一的最短路径或最大流问题。",
+  "total_tokens": 4888,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "cost_paraphrase/20261016_230048_33e01e86",
+  "elapsed_seconds": 2.0452670420054346
+}

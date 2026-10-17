@@ -1,0 +1,12 @@
+{
+  "id": "cost_synonym",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "原题目标是输送量最大且总运费最低的最小费用最大流问题，属于未支持的额外任务要求；当前仅支持最短路径和单商品最大流，无法静默忽略每升运输成本2元的最小费用要求。",
+  "total_tokens": 1484,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "cost_synonym/20261016_235857_490fd44d",
+  "elapsed_seconds": 1.8106466250028461
+}

@@ -1,0 +1,12 @@
+{
+  "id": "trailing_zero",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "",
+  "total_tokens": 4304,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "trailing_zero/20261016_213307_6da81d2d",
+  "elapsed_seconds": 2.248701374977827
+}

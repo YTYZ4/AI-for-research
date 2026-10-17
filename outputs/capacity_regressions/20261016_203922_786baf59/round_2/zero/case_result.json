@@ -1,0 +1,12 @@
+{
+  "id": "zero",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "环境容量 K 为 0 会使 Logistic 模型除零而无效。请提供正实数环境容量 K（可为小数）。",
+  "total_tokens": 3366,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "zero/20261016_203935_fc48168b",
+  "elapsed_seconds": 1.3953489170526154
+}

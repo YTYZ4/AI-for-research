@@ -1,0 +1,12 @@
+{
+  "id": "cooling_control",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "",
+  "total_tokens": 3065,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "cooling_control/20261016_201444_adac1b45",
+  "elapsed_seconds": 1.5648546669981442
+}

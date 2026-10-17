@@ -1,0 +1,12 @@
+{
+  "id": "conflicting_capacity",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "题目同时给出环境容量K=0个和K=0.5个，二者冲突；且K=0会使Logistic模型出现除零而无效。请确认唯一的环境容量K（须为正实数，可为小数，例如0.5个）。",
+  "total_tokens": 3448,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "conflicting_capacity/20261016_210556_2a95fb9b",
+  "elapsed_seconds": 1.5227922499761917
+}

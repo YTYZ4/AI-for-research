@@ -1,0 +1,51 @@
+[
+  {
+    "id": "missing_y",
+    "passed": true,
+    "accepted": false,
+    "detail": "CSV 第2行含缺失/非有限数字、列数错误或非法 split（仅 train/test）；请修正原数据后重试",
+    "api_calls": 0
+  },
+  {
+    "id": "nan",
+    "passed": true,
+    "accepted": false,
+    "detail": "CSV 第2行含缺失/非有限数字、列数错误或非法 split（仅 train/test）；请修正原数据后重试",
+    "api_calls": 0
+  },
+  {
+    "id": "bad_split",
+    "passed": true,
+    "accepted": false,
+    "detail": "CSV 第2行含缺失/非有限数字、列数错误或非法 split（仅 train/test）；请修正原数据后重试",
+    "api_calls": 0
+  },
+  {
+    "id": "train_only",
+    "passed": true,
+    "accepted": false,
+    "detail": "需要至少10条训练、2条留出数据；最多10000条",
+    "api_calls": 0
+  },
+  {
+    "id": "constant_x",
+    "passed": true,
+    "accepted": false,
+    "detail": "训练数据的 x 全部相同，无法辨识当前支持的带截距多项式；请补充不同 x 的训练观测",
+    "api_calls": 0
+  },
+  {
+    "id": "wrong_header",
+    "passed": true,
+    "accepted": false,
+    "detail": "CSV 表头必须为 x,y,split",
+    "api_calls": 0
+  },
+  {
+    "id": "valid",
+    "passed": true,
+    "accepted": true,
+    "detail": "accepted",
+    "api_calls": 0
+  }
+]

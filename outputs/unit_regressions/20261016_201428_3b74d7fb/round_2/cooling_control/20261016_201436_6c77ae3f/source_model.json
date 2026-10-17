@@ -1,0 +1,22 @@
+{
+  "task_type": "dynamics_input",
+  "name": "newton_cooling_liquid",
+  "system": "newton_cooling",
+  "initial": 90,
+  "rate": 0.1,
+  "equilibrium": 20,
+  "duration": 30,
+  "rate_unit": "1/min",
+  "state_unit": "celsius",
+  "assumptions": [
+    "液体温度均匀",
+    "环境温度与冷却系数恒定"
+  ],
+  "duration_unit": "min",
+  "source_quotes": {
+    "initial": "90摄氏度",
+    "equilibrium": "20摄氏度",
+    "rate": "每分钟0.1",
+    "duration": "30分钟"
+  }
+}

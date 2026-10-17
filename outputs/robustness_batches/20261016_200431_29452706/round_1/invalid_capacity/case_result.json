@@ -1,0 +1,12 @@
+{
+  "id": "invalid_capacity",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "环境容量 K=0 会使 Logistic 模型出现除零，当前模型无效。请提供 K>0 的纠正值，或说明改用其他模型；不能按 K=0 求解。",
+  "total_tokens": 2556,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "invalid_capacity/20261016_200432_ca5ae8e1",
+  "elapsed_seconds": 1.6228420420084149
+}

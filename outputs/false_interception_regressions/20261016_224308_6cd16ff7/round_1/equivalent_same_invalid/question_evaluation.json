@@ -1,0 +1,13 @@
+{
+  "applied": true,
+  "passed": true,
+  "checks": {
+    "expected_status": true,
+    "nonempty_question": true,
+    "relevant_topic": true,
+    "no_replacement_suggestion": true,
+    "correct_dimensions": true
+  },
+  "text": "环境容量K的原值为-0（另一记录K=0.0，二者数值等价），而Logistic模型要求正实数环境容量K；在题面明确“不得改动参数”的前提下，无法在保留原值的情况下建立有效模型，因此当前问题超出支持范围。",
+  "scope": "状态/主题初筛；显式禁止改值时检查修改建议，否则Logistic容量检查正实数限制。不是完整语义证明。"
+}

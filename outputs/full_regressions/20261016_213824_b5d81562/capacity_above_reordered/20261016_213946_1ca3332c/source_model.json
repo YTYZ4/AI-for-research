@@ -1,0 +1,23 @@
+{
+  "task_type": "dynamics_input",
+  "name": "连续Logistic种群轨迹与末值",
+  "system": "logistic",
+  "initial": 1.5,
+  "rate": 0.2,
+  "equilibrium": 0.5,
+  "duration": 30,
+  "rate_unit": "1/day",
+  "state_unit": "个",
+  "assumptions": [
+    "连续Logistic种群近似",
+    "无迁入迁出，参数恒定",
+    "N和K的数量单位相容，r为反时间单位"
+  ],
+  "duration_unit": "day",
+  "source_quotes": {
+    "initial": "起始种群为1.5个",
+    "equilibrium": "环境承载量固定0.5个",
+    "rate": "增长率0.2每天",
+    "duration": "0到30天"
+  }
+}

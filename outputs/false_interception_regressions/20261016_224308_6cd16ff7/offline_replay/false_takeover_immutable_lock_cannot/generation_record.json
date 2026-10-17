@@ -1,0 +1,9 @@
+{
+  "envelope": {
+    "status": "unsupported",
+    "questions": [
+      "环境容量K=0会使Logistic方程中的N/K项无定义，当前常参数连续Logistic模型无效；且题目明确要求保持原值不能调整，因此无法按此原值求解，也不请求修改或替代数值。"
+    ],
+    "model": null
+  }
+}

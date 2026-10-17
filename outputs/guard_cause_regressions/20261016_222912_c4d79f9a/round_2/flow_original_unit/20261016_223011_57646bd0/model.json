@@ -1,0 +1,23 @@
+{
+  "task_type": "graph",
+  "name": "S到T单边最大流",
+  "problem": "max_flow",
+  "nodes": [
+    "S",
+    "T"
+  ],
+  "source": "S",
+  "target": "T",
+  "edges": [
+    {
+      "source": "S",
+      "target": "T",
+      "weight": 1
+    }
+  ],
+  "unit": "升/小时",
+  "assumptions": [
+    "所有容量和结果均以升/小时表示，不允许改变统一输出单位或取整。",
+    "题目明确列出全部边，节点T孤立，若不存在通路则由求解器报告零流。"
+  ]
+}

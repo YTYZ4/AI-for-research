@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": {
+    "unsupported": true,
+    "no_model": true,
+    "nonblank_explanations": true,
+    "identifies_requested_scope": true,
+    "explains_limit": true,
+    "no_invented_contract_limit": true,
+    "no_silent_downgrade": true
+  },
+  "text": "原题要求求解容量随时间变化的时变网络最大流时间轨迹；当前仅支持静态单商品最大流和最短路径，不支持时变网络、时间轨迹或随时间变化的容量。"
+}

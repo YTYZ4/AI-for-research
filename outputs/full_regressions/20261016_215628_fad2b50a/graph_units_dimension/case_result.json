@@ -1,0 +1,12 @@
+{
+  "id": "graph_units_dimension",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "边 A→T 的权重为“3小时”，而所求最短距离统一为千米；请提供该边的距离（千米）或速度信息，以便将时间换算为距离。",
+  "total_tokens": 4116,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "graph_units_dimension/20261016_215912_b386d03f",
+  "elapsed_seconds": 1.4715895419940352
+}

@@ -1,0 +1,12 @@
+{
+  "id": "flow_reverse_conversion",
+  "family": "graph",
+  "outcome": "fail",
+  "failure_category": "unsupported",
+  "detail": "当前求解器要求最大流容量在统一输出单位下为非负整数；原边容量0.001立方米/小时换算为升/小时等于1升/小时，但原题禁止改变统一输出单位或取整，因此无法按指定单位校验并求解。",
+  "total_tokens": 4901,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "flow_reverse_conversion/20261016_224651_c8a8fe3d",
+  "elapsed_seconds": 1.2932833750382997
+}

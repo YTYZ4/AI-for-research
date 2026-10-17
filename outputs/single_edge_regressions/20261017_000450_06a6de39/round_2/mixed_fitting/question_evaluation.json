@@ -1,0 +1,11 @@
+{
+  "applied": true,
+  "passed": true,
+  "checks": {
+    "expected_status": true,
+    "nonempty_question": true,
+    "relevant_topic": true
+  },
+  "text": "原题同时要求两类不同建模任务：一是有向网络最大流与最低费用运输（最小费用流），二是容量随温度的二次多项式拟合。当前单模型协议无法表示这种联合任务，因此不能只返回其中一项或拆分处理。",
+  "scope": "状态/主题初筛；显式禁止改值时检查修改建议，否则Logistic容量检查正实数限制。不是完整语义证明。"
+}

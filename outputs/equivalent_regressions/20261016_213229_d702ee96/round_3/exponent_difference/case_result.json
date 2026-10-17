@@ -1,0 +1,12 @@
+{
+  "id": "exponent_difference",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "题面中环境容量存在互相冲突的记录：原文“环境容量恒定5e-1个”和“K=6e-1个（即0.5个和0.6个）”。请核对哪一条记录准确，并明确最终采用的环境容量K（保留原记录数值与单位，不要修改数值）。",
+  "total_tokens": 3900,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "exponent_difference/20261016_213321_e6aa0456",
+  "elapsed_seconds": 1.4665204579941928
+}

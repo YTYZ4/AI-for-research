@@ -1,0 +1,19 @@
+{
+  "task_type": "dynamics",
+  "name": "封闭种群连续Logistic增长模拟",
+  "system": "logistic",
+  "initial": 100.0,
+  "rate": 0.2,
+  "equilibrium": 1000.5,
+  "duration": 30.0,
+  "rate_unit": "1/day",
+  "state_unit": "个",
+  "assumptions": [
+    "种群按连续Logistic模型增长，无迁入迁出。",
+    "环境容量恒定，取给定值1000.5个。",
+    "增长率恒定为0.2每天。",
+    "初始时刻种群数量为100个。",
+    "种群数量按连续非负实数处理，不强制取整。"
+  ],
+  "time_unit": "day"
+}

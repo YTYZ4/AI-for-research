@@ -1,0 +1,12 @@
+{
+  "id": "same_invalid",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "原题明确环境容量 K=-0个（另一记录 K=0.0个，两记录数值等价），均不满足连续 Logistic 模型要求 K>0；题目同时声明不得改动参数，因此无法在保留原参数的前提下建立有效模型。",
+  "total_tokens": 4157,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "same_invalid/20261016_213240_c5b15647",
+  "elapsed_seconds": 1.552721542015206
+}

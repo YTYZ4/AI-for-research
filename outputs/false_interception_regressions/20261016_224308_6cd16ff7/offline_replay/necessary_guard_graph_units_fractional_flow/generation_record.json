@@ -1,0 +1,9 @@
+{
+  "envelope": {
+    "status": "needs_clarification",
+    "questions": [
+      "换算后容量不是整数，超出当前最大流求解器范围；保留原值，不截断或四舍五入。"
+    ],
+    "model": null
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "protocol": "targeted_robustness_v1",
+  "max_calls": 10,
+  "repeats": 2,
+  "retries": 0,
+  "cases": [
+    {
+      "id": "invalid_capacity",
+      "family": "dynamics",
+      "problem": "examples/development_variants/DYN02_error.txt",
+      "reference": "examples/dynamics/logistic_model.json",
+      "case": "logistic",
+      "expected_envelopes": [
+        "needs_clarification",
+        "unsupported"
+      ],
+      "question_keywords": [
+        "容量",
+        "K",
+        "0"
+      ]
+    },
+    {
+      "id": "valid_logistic",
+      "family": "dynamics",
+      "problem": "examples/dynamics/logistic.txt",
+      "reference": "examples/dynamics/logistic_model.json",
+      "case": "logistic"
+    },
+    {
+      "id": "cooling_units",
+      "family": "dynamics",
+      "problem": "examples/robustness/cooling_units.txt",
+      "reference": "examples/dynamics/cooling_model.json",
+      "case": "cooling"
+    },
+    {
+      "id": "logistic_units",
+      "family": "dynamics",
+      "problem": "examples/robustness/logistic_units.txt",
+      "reference": "examples/dynamics/logistic_model.json",
+      "case": "logistic"
+    },
+    {
+      "id": "path_units",
+      "family": "graph",
+      "problem": "examples/robustness/path_units.txt",
+      "reference": "examples/graphs/shortest_path_model.json",
+      "case": "shortest_path"
+    }
+  ],
+  "hashes": {
+    "modeling_assistant/config.py": "3bde19f9ff792b8612f650dbbe59bda9cd6b0bdc09bb4aa83ae2f32c21fc2dab",
+    "examples/robustness/bad_split.csv": "b966e6fbedd2ca84cede2f4a9911c426bfe74c6ba9f830d81c690416a5e2cef4",
+    "modeling_assistant/fitting.py": "7577f4d107cab457821be089dbfeebc0ee0b0b05627f9f8b0e38565e24fd16fd",
+    "tests/test_variants.py": "3a1216832bed6282efdea5cbda1a6364d96b86993334a39dcab2a5560dad504b",
+    "modeling_assistant/parser.py": "e36f55ec7a73f34f106ba19c09b6a2e246a802c676c4d029c79d1cf1c2f46231",
+    "modeling_assistant/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+    "examples/dynamics/logistic.txt": "36089bf1f839798c97ac76793bbdbacfa55fdd39ffde2c9e0364f606d5b901b6",
+    "evaluation/dynamics.py": "d11fd630a1f2f19013e24ae79430613963ccb57bcce5919d03704a1b1635ead7",
+    "examples/robustness/nan.csv": "724ee4436336f1814012624f5ac1a725ec0d860dad3c174099fac3ccf5d188a5",
+    "modeling_assistant/provider.py": "b02ccb9ee63efa77d622a911472ef9e83b07b321d86dbfb14864e276a9aa277b",
+    "evaluation/__init__.py": "e341001f744cb6b55ac13abe7a9d38978cd3b1ef9c183f663f055edefa4f5ea2",
+    "modeling_assistant/graphs.py": "cd1063f33e1a0e41fa26048bf7c06bf7ec766e097264eb2135975b1e1b264469",
+    "tests/test_api_configuration.py": "b3ba057230e25982f50de28578678c9e3c405e212a4b52f5670fb2a6d914c85a",
+    "modeling_assistant/cli.py": "d1500bdfa79f4908cdc508c01ab1ec45d5e2580cd2aff556e6dc22f1e4879172",
+    "examples/robustness/constant_x.csv": "6b3c5e3f0d5e722d1764c7cd4dd6eb0e311fe30129399018f2b2c40768a67caf",
+    "examples/robustness/missing_y.csv": "a19ad417fa80943c19adb50d3d0b443f392ce6897d52afbb83fbfc672afc7544",
+    "evaluation/batch.py": "c7659a163d8a025515dc441592585397ef37e2a122e97f14cb17a2f5f7d81491",
+    "tests/test_modeling_assistant.py": "b1bcfbb03e929b170e20f3870796b82506fbcc288f493d2c1c8a14cdf96a7995",
+    "examples/robustness/cooling_units.txt": "482dc3b96d9191cde8833b7b1a3d86673124877f1647d3055e207b3a25c75635",
+    "evaluation/variants.py": "30a6cc4a08751c821bbd511c117d8a8340a7fe174588fdaf982a8d7141237c9b",
+    "examples/robustness/path_units.txt": "453e404040a5b625f0a4c8b8b08703bfaf80f5f9f0f30af4ea0fcf36ffd57c10",
+    "modeling_assistant/model.py": "6d4daaaccee420de0c26c517f097dc3a3fb45b570ef082ec2d98171f59ea3a82",
+    "evaluation/fitting.py": "d4262f4040c1cccf7d7028af272c64fd41e362877fea71ab96eb08744ddeb21d",
+    "tests/test_graphs.py": "d32d4d83f4ba0d1c4d927c0146e29bc12b49e221732cc8fa7fd1acef3479e0e3",
+    "tests/test_infeasibility.py": "635fdfbe7b97d5ab61f3f85772cb33b492c5772d6170a7450a2aeeb9848ba76e",
+    "evaluation/graphs.py": "b68d4fd3088d8542dc9604a2b77ccb4901165f89eab9072949ce40592c4f7d79",
+    "examples/development_variants/DYN02_error.txt": "970cb129e8c1d0b71452e4c260b45c8368ca918b8ccb03ba2ec96b13a2350b1f",
+    "tests/test_parameter_feedback.py": "6b206d01075a7f784dc305e5df25e711661457171302426b044969f4bb06dac3",
+    "examples/robustness/wrong_header.csv": "1e709f9256142c4385cea07ad523f4c618ce8cf766d6f9895527e186400be776",
+    "tests/test_batch.py": "3441510fc449123ec7cb3d022d6b4c76aeef89a56fe1f3d44c849481a07b15c8",
+    "modeling_assistant/solver.py": "aaa42a26a60dd8800632fea12a07422e5d8d777e7f9264535e9f9bff13b2f5b0",
+    "tests/test_transport.py": "70e001ae2fdc87be163f6942d7222608af8db9b73d330a6c975a10b3dd002041",
+    "modeling_assistant/configure.py": "181e16c35632d06bae844828dc84edd8fef62cbf42fefd6db4208f335c7880bc",
+    "examples/robustness/logistic_units.txt": "07dcff21fa43fbef2ce429ab476bf98805f87028c05a7ee9dc39312323c769e9",
+    "tests/test_fitting.py": "bb2ea9fcc106ae4240569cb5e23766489e2c9a459606b5a3c5c052a3778e1bd0",
+    "modeling_assistant/__init__.py": "c2de0a239fec67c5ccaf7500c0b03bce902a7f4f7b19bcda9d76f1f9326b3af4",
+    "modeling_assistant/dynamics.py": "cfda965c4e94701c8c4ffced326cfdc302c121603f759404c3a059e5cc1b0df4",
+    "evaluation/transport.py": "b25a52d2837db07788ec883de5028a84ac98fc31ca8087a903bc4cd805e45f5b",
+    "tests/test_dynamics.py": "0bc68c55cc35d7fd25e2b23c760b2d1c6b0969f10accf19e7fdb3cf932034426",
+    "examples/robustness/train_only.csv": "cb5339fd5efbbca858edce4c607c9b1487e7119f721ba2ea18be92c1dcc9936c",
+    "evaluation/development.py": "89270a2258536a19513758437df5c60d7f58030faaa097d7e7ec56e2b611d85c",
+    "tests/test_clarification.py": "ae24fc6cd986f42f20e09f7322ccf2760ae5c537d63808f80bcae07f210a46e5",
+    "evaluation/robustness.py": "b1d457e035f434e9518c007d3ec162baaa3744b8de31c268ce85ce8ba1e12ffa",
+    "evaluation/review_variants.py": "b7001e90019a90aa15976ca91a2a2709e1de2f5a5fdc90ff1a5845ae361db1ec",
+    "examples/robustness/valid.csv": "5a55606d901cce6528589ed455b3e16f2fc825d6c8dcda5c16a3ce1366ef005e"
+  },
+  "requested_model": "deepseek-flash"
+}

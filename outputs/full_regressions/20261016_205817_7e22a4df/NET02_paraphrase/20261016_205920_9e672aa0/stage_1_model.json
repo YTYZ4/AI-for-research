@@ -1,0 +1,47 @@
+{
+  "task_type": "graph",
+  "name": "供水管网最大流",
+  "problem": "max_flow",
+  "nodes": [
+    "S",
+    "A",
+    "B",
+    "T"
+  ],
+  "source": "S",
+  "target": "T",
+  "edges": [
+    {
+      "source": "B",
+      "target": "T",
+      "weight": 9
+    },
+    {
+      "source": "A",
+      "target": "T",
+      "weight": 6
+    },
+    {
+      "source": "A",
+      "target": "B",
+      "weight": 4
+    },
+    {
+      "source": "S",
+      "target": "B",
+      "weight": 5
+    },
+    {
+      "source": "S",
+      "target": "A",
+      "weight": 10
+    }
+  ],
+  "unit": "立方米/小时",
+  "assumptions": [
+    "中间节点A、B不消耗也不积存水，满足流量守恒。",
+    "每条管道为单向边，方向如edges所列。",
+    "容量单位为立方米/小时，最大流目标单位为立方米/小时。",
+    "求最大流同时给出各管道输水量，并可通过求解器最小割结果形成最小割证据。"
+  ]
+}

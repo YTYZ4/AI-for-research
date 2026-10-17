@@ -1,0 +1,12 @@
+{
+  "id": "DYN02_missing",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "请提供环境容量 K（单位：个），Logistic 增长需要该参数。",
+  "total_tokens": 2434,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "DYN02_missing/20261016_165646_7e1cb691",
+  "elapsed_seconds": 0.9261785839917138
+}

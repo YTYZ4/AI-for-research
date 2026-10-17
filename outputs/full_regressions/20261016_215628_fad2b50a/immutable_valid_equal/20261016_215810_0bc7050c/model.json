@@ -1,0 +1,17 @@
+{
+  "task_type": "dynamics",
+  "name": "封闭种群连续Logistic模型",
+  "system": "logistic",
+  "initial": 0.5,
+  "rate": 0.2,
+  "equilibrium": 0.5,
+  "duration": 30.0,
+  "rate_unit": "1/day",
+  "state_unit": "个",
+  "assumptions": [
+    "常参数Logistic连续种群模型",
+    "封闭种群，无迁入迁出",
+    "初值与环境容量相等时理论轨迹保持恒定"
+  ],
+  "time_unit": "day"
+}

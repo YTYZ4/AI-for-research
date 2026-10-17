@@ -1,0 +1,7 @@
+{
+  "false_interception": false,
+  "passed": true,
+  "no_replacement_suggestion": true,
+  "text": "Logistic 模型要求环境容量 K 为正值，但题面给出的 K=-0 个 / K=0.0 个会使方程 dN/dt=rN(1-N/K) 出现除零或无效平衡，当前模型不支持该参数；且用户明确不得改动参数，因此无法建立可求解模型。",
+  "scope": "仅检查显式禁止改参数后的常见改值建议；不是完整语义证明"
+}

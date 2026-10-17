@@ -1,0 +1,180 @@
+{
+  "name": "仓库到门店运费最小配送计划",
+  "assumptions": [
+    "货物单位吨且可分割，运输量按连续变量处理。",
+    "两个仓库可以留有库存剩余，实际发出量不超过各自上限。",
+    "三个门店必须恰好收到指定数量，不得缺货。",
+    "六条路线均允许运输，不考虑路线容量限制。",
+    "运费与运输量成正比，单位为元。"
+  ],
+  "variables": [
+    {
+      "name": "x11",
+      "description": "从W1运输到S1的货物量",
+      "unit": "吨",
+      "kind": "continuous",
+      "lower": 0,
+      "upper": null
+    },
+    {
+      "name": "x12",
+      "description": "从W1运输到S2的货物量",
+      "unit": "吨",
+      "kind": "continuous",
+      "lower": 0,
+      "upper": null
+    },
+    {
+      "name": "x13",
+      "description": "从W1运输到S3的货物量",
+      "unit": "吨",
+      "kind": "continuous",
+      "lower": 0,
+      "upper": null
+    },
+    {
+      "name": "x21",
+      "description": "从W2运输到S1的货物量",
+      "unit": "吨",
+      "kind": "continuous",
+      "lower": 0,
+      "upper": null
+    },
+    {
+      "name": "x22",
+      "description": "从W2运输到S2的货物量",
+      "unit": "吨",
+      "kind": "continuous",
+      "lower": 0,
+      "upper": null
+    },
+    {
+      "name": "x23",
+      "description": "从W2运输到S3的货物量",
+      "unit": "吨",
+      "kind": "continuous",
+      "lower": 0,
+      "upper": null
+    }
+  ],
+  "objective": {
+    "sense": "min",
+    "terms": [
+      {
+        "variable": "x11",
+        "coefficient": 2
+      },
+      {
+        "variable": "x12",
+        "coefficient": 4
+      },
+      {
+        "variable": "x13",
+        "coefficient": 5
+      },
+      {
+        "variable": "x21",
+        "coefficient": 3
+      },
+      {
+        "variable": "x22",
+        "coefficient": 1
+      },
+      {
+        "variable": "x23",
+        "coefficient": 7
+      }
+    ],
+    "unit": "元"
+  },
+  "constraints": [
+    {
+      "name": "W1发出量上限",
+      "terms": [
+        {
+          "variable": "x11",
+          "coefficient": 1
+        },
+        {
+          "variable": "x12",
+          "coefficient": 1
+        },
+        {
+          "variable": "x13",
+          "coefficient": 1
+        }
+      ],
+      "sense": "<=",
+      "rhs": 40,
+      "unit": "吨"
+    },
+    {
+      "name": "W2发出量上限",
+      "terms": [
+        {
+          "variable": "x21",
+          "coefficient": 1
+        },
+        {
+          "variable": "x22",
+          "coefficient": 1
+        },
+        {
+          "variable": "x23",
+          "coefficient": 1
+        }
+      ],
+      "sense": "<=",
+      "rhs": 30,
+      "unit": "吨"
+    },
+    {
+      "name": "S1恰好收到量",
+      "terms": [
+        {
+          "variable": "x11",
+          "coefficient": 1
+        },
+        {
+          "variable": "x21",
+          "coefficient": 1
+        }
+      ],
+      "sense": "=",
+      "rhs": 20,
+      "unit": "吨"
+    },
+    {
+      "name": "S2恰好收到量",
+      "terms": [
+        {
+          "variable": "x12",
+          "coefficient": 1
+        },
+        {
+          "variable": "x22",
+          "coefficient": 1
+        }
+      ],
+      "sense": "=",
+      "rhs": 30,
+      "unit": "吨"
+    },
+    {
+      "name": "S3恰好收到量",
+      "terms": [
+        {
+          "variable": "x13",
+          "coefficient": 1
+        },
+        {
+          "variable": "x23",
+          "coefficient": 1
+        }
+      ],
+      "sense": "=",
+      "rhs": 20,
+      "unit": "吨"
+    }
+  ]
+}

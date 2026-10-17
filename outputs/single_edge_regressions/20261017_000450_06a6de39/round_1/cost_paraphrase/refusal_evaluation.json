@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": {
+    "unsupported": true,
+    "no_model": true,
+    "nonblank_explanations": true,
+    "identifies_requested_scope": true,
+    "explains_limit": true,
+    "no_invented_contract_limit": true,
+    "no_silent_downgrade": true
+  },
+  "text": "原题同时要求最大流与最小运输成本（每升2元），属于最小费用流任务，超出本接口仅支持的最短路径和单商品最大流范围；已有支持边界不包含费用优化。若不考虑费用，仅按给定单商品最大流问题处理则属于支持范围，但当前原题要求未被支持。"
+}

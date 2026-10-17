@@ -1,0 +1,140 @@
+[
+  {
+    "id": "trailing_zero",
+    "family": "dynamics",
+    "problem": "examples/equivalent_boundaries/trailing_zero.txt",
+    "initial": 1.5,
+    "capacity": 0.5,
+    "expected_envelopes": [
+      "ready"
+    ],
+    "conflict_values": [],
+    "question_keywords": []
+  },
+  {
+    "id": "leading_dot",
+    "family": "dynamics",
+    "problem": "examples/equivalent_boundaries/leading_dot.txt",
+    "initial": 1.5,
+    "capacity": 0.5,
+    "expected_envelopes": [
+      "ready"
+    ],
+    "conflict_values": [],
+    "question_keywords": []
+  },
+  {
+    "id": "signed",
+    "family": "dynamics",
+    "problem": "examples/equivalent_boundaries/signed.txt",
+    "initial": 1.5,
+    "capacity": 0.5,
+    "expected_envelopes": [
+      "ready"
+    ],
+    "conflict_values": [],
+    "question_keywords": []
+  },
+  {
+    "id": "scientific",
+    "family": "dynamics",
+    "problem": "examples/equivalent_boundaries/scientific.txt",
+    "initial": 1.5,
+    "capacity": 0.5,
+    "expected_envelopes": [
+      "ready"
+    ],
+    "conflict_values": [],
+    "question_keywords": []
+  },
+  {
+    "id": "integer",
+    "family": "dynamics",
+    "problem": "examples/equivalent_boundaries/integer.txt",
+    "initial": 1.5,
+    "capacity": 1,
+    "expected_envelopes": [
+      "ready"
+    ],
+    "conflict_values": [],
+    "question_keywords": []
+  },
+  {
+    "id": "same_invalid",
+    "family": "dynamics",
+    "problem": "examples/equivalent_boundaries/same_invalid.txt",
+    "initial": 1.5,
+    "capacity": 0,
+    "expected_envelopes": [
+      "unsupported"
+    ],
+    "conflict_values": [],
+    "question_keywords": [
+      "容量",
+      "K"
+    ]
+  },
+  {
+    "id": "near_difference",
+    "family": "dynamics",
+    "problem": "examples/equivalent_boundaries/near_difference.txt",
+    "initial": 1.5,
+    "capacity": null,
+    "expected_envelopes": [
+      "needs_clarification"
+    ],
+    "conflict_values": [
+      0.5,
+      0.5001
+    ],
+    "question_keywords": [
+      "容量",
+      "K"
+    ]
+  },
+  {
+    "id": "exponent_difference",
+    "family": "dynamics",
+    "problem": "examples/equivalent_boundaries/exponent_difference.txt",
+    "initial": 1.5,
+    "capacity": null,
+    "expected_envelopes": [
+      "needs_clarification"
+    ],
+    "conflict_values": [
+      0.5,
+      0.6
+    ],
+    "question_keywords": [
+      "容量",
+      "K"
+    ]
+  },
+  {
+    "id": "missing_rate",
+    "family": "dynamics",
+    "problem": "examples/equivalent_boundaries/missing_rate.txt",
+    "initial": 1.5,
+    "capacity": null,
+    "expected_envelopes": [
+      "needs_clarification"
+    ],
+    "conflict_values": [],
+    "question_keywords": [
+      "增长率",
+      "r"
+    ]
+  },
+  {
+    "id": "corrected",
+    "family": "dynamics",
+    "problem": "examples/equivalent_boundaries/corrected.txt",
+    "initial": 1.5,
+    "capacity": 0.5,
+    "expected_envelopes": [
+      "ready"
+    ],
+    "conflict_values": [],
+    "question_keywords": []
+  }
+]

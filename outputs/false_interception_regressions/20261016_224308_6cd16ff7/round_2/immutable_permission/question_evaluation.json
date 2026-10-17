@@ -1,0 +1,19 @@
+{
+  "applied": true,
+  "passed": true,
+  "checks": {
+    "expected_status": true,
+    "nonempty_question": true,
+    "relevant_topic": true,
+    "clarification": true,
+    "capacity": true,
+    "positive_real": true,
+    "fraction_allowed": true,
+    "no_integer_requirement": true,
+    "requests_user_input": true,
+    "no_automatic_replacement": true,
+    "correct_dimensions": true
+  },
+  "text": "当前记录的环境容量为0个，对连续Logistic模型无效（会导致除零）。你已表示可以修改参数但需先询问：请确认并提供正实数环境容量K（可为小数）及其数量单位。",
+  "scope": "状态/主题初筛；显式禁止改值时检查修改建议，否则Logistic容量检查正实数限制。不是完整语义证明。"
+}

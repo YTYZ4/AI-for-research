@@ -1,0 +1,91 @@
+{
+  "name": "饲料混合最低成本配方",
+  "assumptions": [
+    "以1千克最终饲料为基准进行配方计算，目标为生产1千克饲料的最低成本",
+    "原料用量可连续变化，单位为千克",
+    "蛋白质含量和脂肪含量按质量百分比计算，约束基于1千克最终饲料",
+    "不考虑其他营养成分、加工损耗和库存限制"
+  ],
+  "variables": [
+    {
+      "name": "x1",
+      "description": "每千克最终饲料中原料1的用量",
+      "unit": "千克",
+      "kind": "continuous",
+      "lower": 0,
+      "upper": null
+    },
+    {
+      "name": "x2",
+      "description": "每千克最终饲料中原料2的用量",
+      "unit": "千克",
+      "kind": "continuous",
+      "lower": 0,
+      "upper": null
+    }
+  ],
+  "objective": {
+    "sense": "min",
+    "terms": [
+      {
+        "variable": "x1",
+        "coefficient": 2
+      },
+      {
+        "variable": "x2",
+        "coefficient": 3
+      }
+    ],
+    "unit": "元/千克最终饲料"
+  },
+  "constraints": [
+    {
+      "name": "质量平衡约束",
+      "terms": [
+        {
+          "variable": "x1",
+          "coefficient": 1
+        },
+        {
+          "variable": "x2",
+          "coefficient": 1
+        }
+      ],
+      "sense": "=",
+      "rhs": 1,
+      "unit": "千克"
+    },
+    {
+      "name": "蛋白质含量约束",
+      "terms": [
+        {
+          "variable": "x1",
+          "coefficient": 0.2
+        },
+        {
+          "variable": "x2",
+          "coefficient": 0.3
+        }
+      ],
+      "sense": ">=",
+      "rhs": 0.25,
+      "unit": "千克蛋白质/千克最终饲料"
+    },
+    {
+      "name": "脂肪含量约束",
+      "terms": [
+        {
+          "variable": "x1",
+          "coefficient": 0.1
+        },
+        {
+          "variable": "x2",
+          "coefficient": 0.05
+        }
+      ],
+      "sense": ">=",
+      "rhs": 0.08,
+      "unit": "千克脂肪/千克最终饲料"
+    }
+  ]
+}

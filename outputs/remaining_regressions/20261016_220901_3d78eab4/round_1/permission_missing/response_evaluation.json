@@ -1,0 +1,12 @@
+{
+  "passed": false,
+  "checks": {
+    "expected_status": true,
+    "clarification": true,
+    "capacity": true,
+    "positive_real": false,
+    "fraction_allowed": false,
+    "no_integer_requirement": true
+  },
+  "scope": "预先固定的部分语义检查，仍需定性复核"
+}

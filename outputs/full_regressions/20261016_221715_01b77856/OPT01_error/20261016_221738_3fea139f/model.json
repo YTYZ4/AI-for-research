@@ -1,0 +1,87 @@
+{
+  "name": "工厂生产计划",
+  "assumptions": [
+    "A、B两种产品产量均为非负整数件。",
+    "工时和原料消耗均按每件产品线性计算。",
+    "工时上限100小时、原料上限80千克均为硬性限制。",
+    "A至少生产60件为硬性约束，不允许放宽。"
+  ],
+  "variables": [
+    {
+      "name": "xA",
+      "description": "产品A的产量",
+      "unit": "件",
+      "kind": "integer",
+      "lower": 0,
+      "upper": null
+    },
+    {
+      "name": "xB",
+      "description": "产品B的产量",
+      "unit": "件",
+      "kind": "integer",
+      "lower": 0,
+      "upper": null
+    }
+  ],
+  "objective": {
+    "sense": "max",
+    "terms": [
+      {
+        "variable": "xA",
+        "coefficient": 40
+      },
+      {
+        "variable": "xB",
+        "coefficient": 30
+      }
+    ],
+    "unit": "元"
+  },
+  "constraints": [
+    {
+      "name": "总工时约束",
+      "terms": [
+        {
+          "variable": "xA",
+          "coefficient": 2
+        },
+        {
+          "variable": "xB",
+          "coefficient": 1
+        }
+      ],
+      "sense": "<=",
+      "rhs": 100,
+      "unit": "小时"
+    },
+    {
+      "name": "原料约束",
+      "terms": [
+        {
+          "variable": "xA",
+          "coefficient": 1
+        },
+        {
+          "variable": "xB",
+          "coefficient": 2
+        }
+      ],
+      "sense": "<=",
+      "rhs": 80,
+      "unit": "千克"
+    },
+    {
+      "name": "A产品最低产量约束",
+      "terms": [
+        {
+          "variable": "xA",
+          "coefficient": 1
+        }
+      ],
+      "sense": ">=",
+      "rhs": 60,
+      "unit": "件"
+    }
+  ]
+}

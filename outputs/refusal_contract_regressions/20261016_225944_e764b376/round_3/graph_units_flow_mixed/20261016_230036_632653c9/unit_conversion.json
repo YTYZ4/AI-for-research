@@ -1,0 +1,43 @@
+{
+  "method": "graph_edges_exact_fraction_v1",
+  "source_quotes_checked": true,
+  "target_unit": "立方米/小时",
+  "edges": [
+    {
+      "index": 0,
+      "source": "S",
+      "target": "A",
+      "original_weight": 10000,
+      "original_unit": "升/小时",
+      "factor": "1/1000",
+      "normalized_weight": 10,
+      "normalized_unit": "立方米/小时",
+      "source_quote": "S到A容量10000升/小时",
+      "unit_quote": "升/小时"
+    },
+    {
+      "index": 1,
+      "source": "A",
+      "target": "T",
+      "original_weight": 6,
+      "original_unit": "立方米/小时",
+      "factor": "1",
+      "normalized_weight": 6,
+      "normalized_unit": "立方米/小时",
+      "source_quote": "A到T容量6立方米/小时",
+      "unit_quote": "立方米/小时"
+    },
+    {
+      "index": 2,
+      "source": "S",
+      "target": "T",
+      "original_weight": 5000,
+      "original_unit": "升/小时",
+      "factor": "1/1000",
+      "normalized_weight": 5,
+      "normalized_unit": "立方米/小时",
+      "source_quote": "S到T容量5000升/小时",
+      "unit_quote": "升/小时"
+    }
+  ]
+}

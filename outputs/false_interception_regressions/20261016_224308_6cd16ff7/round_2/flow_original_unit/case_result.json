@@ -1,0 +1,12 @@
+{
+  "id": "flow_original_unit",
+  "family": "graph",
+  "outcome": "fail",
+  "failure_category": "needs_clarification",
+  "detail": "图边单位与原文引用不一致，请保留原题单位写法。",
+  "total_tokens": 4910,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "flow_original_unit/20261016_224426_8518515e",
+  "elapsed_seconds": 1.7218401670106687
+}

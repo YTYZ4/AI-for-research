@@ -1,0 +1,12 @@
+{
+  "id": "flow_missing_direction",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "边“S与T之间容量为1000升/小时”的方向未知；请明确该边是有向边（从 S 到 T 或从 T 到 S），还是双向边。",
+  "total_tokens": 1340,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "flow_missing_direction/20261016_230043_1654ecbe",
+  "elapsed_seconds": 1.2233748749713413
+}

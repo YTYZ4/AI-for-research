@@ -1,0 +1,12 @@
+{
+  "id": "multi_commodity",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "当前仅支持单商品最大流和最短路径问题，不支持多商品流；本题同时运输甲乙两种商品且共享边容量，属于多商品最大流，因此不在支持范围内。",
+  "total_tokens": 1327,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "multi_commodity/20261016_230003_2bc5c21a",
+  "elapsed_seconds": 1.5673430419992656
+}

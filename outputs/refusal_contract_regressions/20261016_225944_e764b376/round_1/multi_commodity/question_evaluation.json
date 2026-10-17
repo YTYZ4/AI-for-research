@@ -1,0 +1,11 @@
+{
+  "applied": true,
+  "passed": true,
+  "checks": {
+    "expected_status": true,
+    "nonempty_question": true,
+    "relevant_topic": true
+  },
+  "text": "当前仅支持单商品最大流和最短路径问题，不支持多商品流；本题同时运输甲乙两种商品且共享边容量，属于多商品最大流，因此不在支持范围内。",
+  "scope": "状态/主题初筛；显式禁止改值时检查修改建议，否则Logistic容量检查正实数限制。不是完整语义证明。"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NET02_error",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "最大流仅支持非负整数容量；边 S→A 的容量为 -3，属于非法负容量，不能修改为其他数值。",
+  "total_tokens": 3281,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "NET02_error/20261016_205059_54a85417",
+  "elapsed_seconds": 1.3949814589577727
+}

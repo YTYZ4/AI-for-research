@@ -1,0 +1,31 @@
+{
+  "id": "equivalent_integer",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "",
+  "total_tokens": 4974,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "equivalent_integer/20261016_221938_2341d219",
+  "elapsed_seconds": 1.9598373749759048,
+  "question_semantics_passed": null,
+  "kind": "equivalent",
+  "base_id": "DYN02",
+  "origins": [
+    {
+      "id": "equivalent_integer",
+      "problem": "examples/equivalent_boundaries/integer.txt",
+      "kind": "equivalent"
+    }
+  ],
+  "quote_audit_passed": null,
+  "raw_schema_valid": true,
+  "format_action": "not_needed",
+  "local_guard_used": false,
+  "source_quote_repaired": false,
+  "original_pass": true,
+  "after_format_pass": true,
+  "final_pass": true,
+  "pass_path": "native"
+}

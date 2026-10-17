@@ -1,0 +1,12 @@
+{
+  "id": "FIT01_error",
+  "family": "fitting",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "负阶数(-2)不属于支持的一元普通最小二乘多项式拟合范围；当前仅支持 1–5 阶普通多项式。请改为 1–5 阶指定阶数或自动选阶（degree=null）。",
+  "total_tokens": 3344,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "FIT01_error/20261016_205039_5aea1e8c",
+  "elapsed_seconds": 1.4145805830485187
+}

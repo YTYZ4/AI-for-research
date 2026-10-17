@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "checks": {
+    "clarification": true,
+    "no_model": true,
+    "nonblank": true,
+    "asks_direction": true,
+    "no_assumed_direction": true
+  },
+  "text": "边 S 与 T 之间的方向未知，需要明确是 S→T、T→S，还是双向。"
+}

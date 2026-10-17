@@ -1,0 +1,31 @@
+{
+  "id": "capacity_fraction",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "",
+  "total_tokens": 4537,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "capacity_fraction/20261016_215741_3a21420c",
+  "elapsed_seconds": 1.8058981249923818,
+  "question_semantics_passed": null,
+  "kind": "boundary",
+  "base_id": "DYN02",
+  "origins": [
+    {
+      "id": "capacity_fraction",
+      "problem": "examples/capacity_boundaries/fraction.txt",
+      "kind": "boundary"
+    }
+  ],
+  "quote_audit_passed": null,
+  "raw_schema_valid": true,
+  "format_action": "not_needed",
+  "local_guard_used": false,
+  "source_quote_repaired": false,
+  "original_pass": true,
+  "after_format_pass": true,
+  "final_pass": true,
+  "pass_path": "native"
+}

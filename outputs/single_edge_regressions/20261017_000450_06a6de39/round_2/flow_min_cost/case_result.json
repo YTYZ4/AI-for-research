@@ -1,0 +1,12 @@
+{
+  "id": "flow_min_cost",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "原题要求“最小费用最大流”，属于带费用的流问题；当前仅支持最短路径和单商品最大流，不支持最小费用流。现有支持边界是：最短路径可处理边权与单位，单商品最大流可处理容量与单位，但不处理费用最小化目标。",
+  "total_tokens": 1521,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "flow_min_cost/20261017_000521_62d31acb",
+  "elapsed_seconds": 1.4086554169771262
+}

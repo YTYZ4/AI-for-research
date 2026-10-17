@@ -1,0 +1,60 @@
+{
+  "name": "甲乙产品生产计划优化",
+  "assumptions": [
+    "甲乙产品为整件实物，产量必须为非负整数。",
+    "煤供应不限，因此模型中不添加煤资源约束。",
+    "电为有限资源，每日供电量上限为100度。",
+    "单位利润和单位消耗量均为常数，不随产量变化。",
+    "目标为最大化每日总利润。"
+  ],
+  "variables": [
+    {
+      "name": "x_jia",
+      "description": "每天生产甲产品的数量",
+      "unit": "件",
+      "kind": "integer",
+      "lower": 0,
+      "upper": null
+    },
+    {
+      "name": "x_yi",
+      "description": "每天生产乙产品的数量",
+      "unit": "件",
+      "kind": "integer",
+      "lower": 0,
+      "upper": null
+    }
+  ],
+  "objective": {
+    "sense": "max",
+    "terms": [
+      {
+        "variable": "x_jia",
+        "coefficient": 100
+      },
+      {
+        "variable": "x_yi",
+        "coefficient": 200
+      }
+    ],
+    "unit": "元"
+  },
+  "constraints": [
+    {
+      "name": "每日供电量限制",
+      "terms": [
+        {
+          "variable": "x_jia",
+          "coefficient": 3
+        },
+        {
+          "variable": "x_yi",
+          "coefficient": 5
+        }
+      ],
+      "sense": "<=",
+      "rhs": 100,
+      "unit": "度"
+    }
+  ]
+}

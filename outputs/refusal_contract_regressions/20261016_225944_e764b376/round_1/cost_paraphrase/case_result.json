@@ -1,0 +1,12 @@
+{
+  "id": "cost_paraphrase",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "该问题同时要求最大流与运输成本最小化，属于最小费用最大流，当前图网络任务仅支持最短路径或最大流，不支持最小费用流。",
+  "total_tokens": 4876,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "cost_paraphrase/20261016_230002_cdc44308",
+  "elapsed_seconds": 1.8065987500012852
+}

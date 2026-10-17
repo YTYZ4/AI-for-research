@@ -1,0 +1,7 @@
+{
+  "false_interception": false,
+  "passed": true,
+  "no_replacement_suggestion": true,
+  "text": "环境容量K必须为正实数；原题给定K=0，会使连续Logistic方程中的1-N/K项除零，当前模型无效。由于题目明确要求不得改动参数，无法在保持原值的前提下建立有效模型。",
+  "scope": "仅检查显式禁止改参数后的常见改值建议；不是完整语义证明"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "missing_capacity_reordered",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "请提供正实数环境容量K（可为小数）及其数量单位。",
+  "total_tokens": 4352,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "missing_capacity_reordered/20261016_222013_7ead59d5",
+  "elapsed_seconds": 1.0816352079855278
+}

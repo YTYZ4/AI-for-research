@@ -1,0 +1,35 @@
+{
+  "task_type": "graph",
+  "name": "S到T最短路",
+  "problem": "shortest_path",
+  "nodes": [
+    "S",
+    "A",
+    "T"
+  ],
+  "source": "S",
+  "target": "T",
+  "edges": [
+    {
+      "source": "S",
+      "target": "A",
+      "weight": 500
+    },
+    {
+      "source": "A",
+      "target": "T",
+      "weight": 250
+    },
+    {
+      "source": "S",
+      "target": "T",
+      "weight": 1000
+    }
+  ],
+  "unit": "米",
+  "assumptions": [
+    "有向道路，所有边方向为给定方向。",
+    "所有边权非负。",
+    "总长度按米输出，由求解器进行单位换算。"
+  ]
+}

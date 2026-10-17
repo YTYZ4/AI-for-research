@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "checks": {
+    "expected_status": true
+  },
+  "scope": "预先固定的部分语义检查，仍需定性复核"
+}

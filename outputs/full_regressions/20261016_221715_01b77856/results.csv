@@ -1,0 +1,102 @@
+﻿id,base_id,kind,question_semantics_passed,quote_audit_passed,raw_schema_valid,format_action,local_guard_used,source_quote_repaired,original_pass,after_format_pass,final_pass,pass_path,failure_category,detail,total_tokens,elapsed_seconds,run_path
+OPT01,OPT01,original,,,True,not_needed,False,False,True,True,True,native,,,4828,2.4415543749928474,OPT01/20261016_221717_b8052083
+OPT02,OPT02,original,,,True,not_needed,False,False,True,True,True,native,,,5072,3.16864083299879,OPT02/20261016_221720_9d52df63
+FIT01,FIT01,original,,,True,not_needed,False,False,True,True,True,native,,,4587,1.9974743330385536,FIT01/20261016_221722_2d71c8a0
+FIT02,FIT02,original,,,True,not_needed,False,False,True,True,True,native,,,4592,1.8119474580162205,FIT02/20261016_221724_b7a39d25
+DYN01,DYN01,original,,,True,not_needed,False,False,True,True,True,native,,,4455,1.4422897080075927,DYN01/20261016_221726_10f4ef1b
+DYN02,DYN02,original,,,True,not_needed,False,False,True,True,True,native,,,4478,1.4370572079787962,DYN02/20261016_221727_34e780d0
+NET01,NET01,original,,,True,not_needed,False,False,True,True,True,native,,,4702,1.9545443340321071,NET01/20261016_221729_323930a6
+NET02,NET02,original,,,True,not_needed,False,False,True,True,True,native,,,4841,2.6483237080392428,NET02/20261016_221732_eeeafbba
+OPT01_paraphrase,OPT01,paraphrase,,,True,not_needed,False,False,True,True,True,native,,,4819,3.0493103340268135,OPT01_paraphrase/20261016_221735_cb4492d1
+OPT01_missing,OPT01,missing,True,,True,not_needed,False,False,True,True,True,native,,原料是否有供应上限？如有请提供上限数值；如不限请说明，可按供应不限处理。,4380,1.1150675839744508,OPT01_missing/20261016_221736_238a95eb
+OPT01_error,OPT01,error,,,True,not_needed,False,False,True,True,True,native,,,4689,2.0657823749934323,OPT01_error/20261016_221738_3fea139f
+OPT02_paraphrase,OPT02,paraphrase,,,True,not_needed,False,False,True,True,True,native,,,5452,4.4877125000348315,OPT02_paraphrase/20261016_221742_f673ff6c
+OPT02_missing,OPT02,missing,True,,True,not_needed,False,False,True,True,True,native,,S3 的需求量是多少吨？,4392,1.1822270000120625,OPT02_missing/20261016_221743_b20a3250
+OPT02_error,OPT02,error,,,True,not_needed,False,False,True,True,True,native,,,5122,3.938171208021231,OPT02_error/20261016_221747_cd4b6723
+FIT01_paraphrase,FIT01,paraphrase,,,True,not_needed,False,False,True,True,True,native,,,4514,2.7640293749864213,FIT01_paraphrase/20261016_221750_4174749d
+FIT01_missing,FIT01,missing,True,,True,not_needed,False,False,True,True,True,native,,请提供用于线性最小二乘标定的数据 CSV 文件，需包含 x（传感器电压，伏）、y（温度，摄氏度）和 split（train/test）三列。,4386,2.338751917006448,FIT01_missing/20261016_221753_587189cd
+FIT01_error,FIT01,error,True,,True,not_needed,False,False,True,True,True,native,,当前仅支持 1–5 阶一元普通最小二乘多项式拟合，不支持负二阶（degree=-2）或包含 x 的负幂次的普通多项式标定。,4422,1.558872458001133,FIT01_error/20261016_221754_dfed77aa
+FIT02_paraphrase,FIT02,paraphrase,,,True,not_needed,False,False,True,True,True,native,,,4593,1.8341449159779586,FIT02_paraphrase/20261016_221756_66e5b712
+FIT02_missing,FIT02,missing,True,,True,not_needed,False,False,True,True,True,native,,"请提供包含 x,y,split 三列的 CSV 数据文件（split 取 train/test），以便进行训练集内五折选阶并计算留出集 RMSE 和 MAE。",4380,1.004593790974468,FIT02_missing/20261016_221757_dc4fe7c3
+FIT02_error,FIT02,error,True,,True,not_needed,False,False,True,True,True,native,,普通多项式拟合仅支持1–5阶的非负整数阶数，-2不是受支持的阶数；且不能替换为其他阶数。,4408,1.2251458750106394,FIT02_error/20261016_221758_50d2cdee
+DYN01_paraphrase,DYN01,paraphrase,,,True,not_needed,False,False,True,True,True,native,,,4541,1.5664276250172406,DYN01_paraphrase/20261016_221800_167d6645
+DYN01_missing,DYN01,missing,True,,True,not_needed,False,False,True,True,True,native,,请提供冷却系数k及其时间单位（例如 1/min、1/hour）。,4359,1.0709597920067608,DYN01_missing/20261016_221801_d23b8f2b
+DYN01_error,DYN01,error,True,,True,not_needed,False,False,True,True,True,native,,牛顿冷却模型要求冷却系数k为正数（dT/dt=-k(T-T_env)，k>0）；当前记录的k=-0.1每分钟为负数。根据“不得取绝对值或改动参数”的限制，原参数超出当前模型支持范围，无法按原值建立有效的牛顿冷却模型。,4408,1.4904654580168426,DYN01_error/20261016_221802_a9e61fc8
+DYN02_paraphrase,DYN02,paraphrase,,,True,not_needed,False,False,True,True,True,native,,,4791,1.6003444159869105,DYN02_paraphrase/20261016_221804_b406bf51
+DYN02_missing,DYN02,missing,True,,True,not_needed,False,False,True,True,True,native,,请提供正实数环境容量K（可为小数）及其数量单位。,4351,1.206418208021205,DYN02_missing/20261016_221805_2b5153b1
+DYN02_error,DYN02,error,True,,True,not_needed,True,False,False,False,True,local_guard,,环境容量K=0.0不满足K>0。原题明确禁止改动参数；保持原值时超出当前连续Logistic模型支持范围，停止求解。,4663,2.0181490839459,DYN02_error/20261016_221807_3a1bb84c
+NET01_paraphrase,NET01,paraphrase,,,True,not_needed,False,False,True,True,True,native,,,4705,2.2924044580431655,NET01_paraphrase/20261016_221809_87076b73
+NET01_missing,NET01,missing,True,,True,not_needed,False,False,True,True,True,native,,请提供边 A 到 T 的距离数值及其单位，例如“3千米”或“500米”。,4367,1.1560343750170432,NET01_missing/20261016_221811_54cea29b
+NET01_error,NET01,error,True,,True,not_needed,False,False,True,True,True,native,,最短路径仅支持非负权重；原题给定边 S→A 的权重为 -2 千米，不能修改，因此当前问题超出支持范围。,4369,1.2888371670269407,NET01_error/20261016_221812_2fb2eafc
+NET02_paraphrase,NET02,paraphrase,,,True,not_needed,False,False,True,True,True,native,,,4656,1.7531717079691589,NET02_paraphrase/20261016_221814_388f193b
+NET02_missing,NET02,missing,True,,True,not_needed,False,False,True,True,True,native,,请提供边 A 到 T 的容量及其单位（原文单位写法）。,4362,1.0355424999725074,NET02_missing/20261016_221815_c0fa8fcc
+NET02_error,NET02,error,True,,True,not_needed,False,False,True,True,True,native,,最大流问题不支持负容量：边 S→A 的容量为 -3，无法建立有效的最大流模型。,4366,1.2730143750086427,NET02_error/20261016_221816_bfdb48ca
+cooling_units,DYN01,units,,,True,not_needed,False,False,True,True,True,native,,,4462,1.4626490409718826,cooling_units/20261016_221817_820ca042
+logistic_units,DYN02,units,,,True,not_needed,False,False,True,True,True,native,,,4805,2.097987750021275,logistic_units/20261016_221820_aac34843
+path_units,NET01,units,,,True,not_needed,False,False,True,True,True,native,,,4950,3.2535740000312217,path_units/20261016_221823_51756a9c
+capacity_zero,DYN02,boundary,True,,True,not_needed,False,False,True,True,True,native,,当前环境容量 K 为 0，会使 Logistic 方程出现除零且模型无效。请提供正实数环境容量 K（可为小数）及其数量单位；如需保留原参数，请说明是否按原值处理。,4697,1.5183820420061238,capacity_zero/20261016_221824_b4fb56e4
+capacity_negative,DYN02,boundary,True,,True,not_needed,False,False,True,True,True,native,,当前环境容量K为-0.5个，在常参数连续Logistic模型中会使方程无效（K≤0）。请提供正实数环境容量K（可为小数）及其数量单位；如果您明确禁止修改该参数，请说明。,4715,1.6689769589575008,capacity_negative/20261016_221826_a2c4077e
+capacity_missing,DYN02,boundary,True,,True,not_needed,False,False,True,True,True,native,,请提供正实数环境容量K（可为小数）及其数量单位；原题未给出K，无法建立Logistic模型。,4378,1.4626569580286741,capacity_missing/20261016_221827_7d5cdfb1
+capacity_fraction,DYN02,boundary,,,True,not_needed,False,False,True,True,True,native,,,4914,2.3570800840388983,capacity_fraction/20261016_221830_fdc7fe9f
+capacity_small,DYN02,boundary,,,True,not_needed,False,False,True,True,True,native,,,4789,1.771390457986854,capacity_small/20261016_221832_dd4c4fcb
+capacity_zero_initial,DYN02,boundary,,,True,not_needed,False,False,True,True,True,native,,,4801,1.8047800000058487,capacity_zero_initial/20261016_221833_b48885ea
+capacity_above_capacity,DYN02,boundary,,,True,not_needed,False,False,True,True,True,native,,,4826,1.9830918340012431,capacity_above_capacity/20261016_221835_4d0b59d4
+capacity_above_paraphrase,DYN02,boundary,,,True,not_needed,False,False,True,True,True,native,,,4884,2.1407927500549704,capacity_above_paraphrase/20261016_221837_df126d3e
+capacity_above_symbols,DYN02,boundary,,,True,not_needed,False,False,True,True,True,native,,,4840,2.071369917015545,capacity_above_symbols/20261016_221840_4061cbc4
+capacity_above_reordered,DYN02,boundary,,,True,not_needed,False,False,True,True,True,native,,,4854,2.1683821250335313,capacity_above_reordered/20261016_221842_f5752caa
+capacity_equal_capacity,DYN02,boundary,,,True,not_needed,False,False,True,True,True,native,,,4809,2.497234499955084,capacity_equal_capacity/20261016_221844_1988e8d3
+capacity_near_above,DYN02,boundary,,,True,not_needed,False,False,True,True,True,native,,,4885,2.1896494169486687,capacity_near_above/20261016_221846_ab4a78ed
+immutable_lock_original,DYN02,immutable,True,,True,not_needed,True,False,False,False,True,local_guard,,环境容量K=0.0不满足K>0。原题明确禁止改动参数；保持原值时超出当前连续Logistic模型支持范围，停止求解。,4667,1.7960385420010425,immutable_lock_original/20261016_221848_1d62010b
+immutable_lock_dont,DYN02,immutable,True,,True,not_needed,True,False,False,False,True,local_guard,,环境容量K=0.0不满足K>0。原题明确禁止改动参数；保持原值时超出当前连续Logistic模型支持范围，停止求解。,4688,1.5424374169670045,immutable_lock_dont/20261016_221850_b5a5bb0b
+immutable_lock_keep,DYN02,immutable,True,,True,not_needed,True,False,False,False,True,local_guard,,环境容量K=0.0不满足K>0。原题明确禁止改动参数；保持原值时超出当前连续Logistic模型支持范围，停止求解。,4676,1.362203624972608,immutable_lock_keep/20261016_221851_4a405677
+immutable_lock_cannot,DYN02,immutable,True,,True,not_needed,True,False,False,False,True,local_guard,,环境容量K=0.0不满足K>0。原题明确禁止改动参数；保持原值时超出当前连续Logistic模型支持范围，停止求解。,4690,1.0124187910114415,immutable_lock_cannot/20261016_221852_746e6c60
+immutable_valid_above,DYN02,immutable,,,True,not_needed,False,False,True,True,True,native,,,4794,2.6395626249723136,immutable_valid_above/20261016_221855_ab15dc3a
+immutable_valid_equal,DYN02,immutable,,,True,not_needed,False,False,True,True,True,native,,,4789,1.868704125052318,immutable_valid_equal/20261016_221857_86884d15
+immutable_valid_zero,DYN02,immutable,,,True,not_needed,False,False,True,True,True,native,,,4778,1.9702719579800032,immutable_valid_zero/20261016_221859_7a3f0883
+immutable_missing_capacity,DYN02,immutable,True,,True,not_needed,False,False,True,True,True,native,,请提供正实数环境容量K（可为小数）及其数量单位。,4350,1.084601417009253,immutable_missing_capacity/20261016_221900_360dbb65
+immutable_missing_rate,DYN02,immutable,True,,True,not_needed,False,False,True,True,True,native,,请提供常参数连续 Logistic 模型的内禀增长率 r（正实数）及其单位（例如 1/day）。,4362,1.616560708032921,immutable_missing_rate/20261016_221901_c92baafc
+immutable_permission,DYN02,immutable,True,,True,not_needed,False,False,True,True,True,native,,当前记录的环境容量K为0，Logistic模型要求K为正实数（可为小数）。请确认并提供正实数环境容量K及其数量单位。,4689,1.2985920420032926,immutable_permission/20261016_221903_7d43e2cb
+immutable_conflicting_capacity,DYN02,immutable,True,,True,not_needed,False,False,True,True,True,native,,同一环境容量参数存在冲突记录：1）“环境容量恒定0个”；2）“环境容量为0.5个”。请核对哪条记录准确？确认后我将按准确记录建立连续Logistic模型。,4556,1.2017291250522248,immutable_conflicting_capacity/20261016_221904_97ab7c13
+immutable_intervention,DYN02,immutable,True,,True,not_needed,False,False,True,True,True,native,,当前仅支持常参数 Logistic 增长与牛顿冷却的轨迹和终值计算；带“每天捕捞0.01个”的干预项超出支持范围。,4380,1.1632412920007482,immutable_intervention/20261016_221905_9c316eed
+immutable_negated_permission_invalid,DYN02,immutable,True,,True,not_needed,True,False,False,False,True,local_guard,,环境容量K=0.0不满足K>0。原题明确禁止改动参数；保持原值时超出当前连续Logistic模型支持范围，停止求解。,4685,1.2326856669969857,immutable_negated_permission_invalid/20261016_221906_c64ea730
+immutable_negated_permission_valid,DYN02,immutable,,,True,not_needed,False,False,True,True,True,native,,,4818,2.089323375024833,immutable_negated_permission_valid/20261016_221908_42d77198
+conflict_zero_positive,DYN02,conflict,True,,True,not_needed,False,False,True,True,True,native,,检测到同一容量参数存在两条冲突记录：环境容量恒定0个、环境容量为0.5个。请核对哪条记录准确，并提供最终采用的环境容量K及其数量单位。,4560,1.561725875013508,conflict_zero_positive/20261016_221910_a020e2cf
+conflict_two_positive,DYN02,conflict,True,,True,not_needed,False,False,True,True,True,native,,题面中环境承载量K存在两条冲突记录：一条为“环境承载量固定0.5个”，另一条为“K=1个”。请核对哪一条数值准确？,4559,1.0474803750403225,conflict_two_positive/20261016_221911_8fc6f3be
+conflict_reverse,DYN02,conflict,True,,True,not_needed,False,False,True,True,True,native,,题面中同一环境容量K存在冲突记录：K=0.5个 与 环境容量为0个。请核对哪条记录准确？,4539,1.3114409169647843,conflict_reverse/20261016_221912_c29d3612
+conflict_three_values,DYN02,conflict,True,,True,not_needed,False,False,True,True,True,native,,同一常参数 Logistic 题面中环境容量 K 有冲突记录：容量恒定-1个、K=0个、环境容量为0.5个。请核对哪条准确。,4573,2.0308548329630867,conflict_three_values/20261016_221914_3a45139d
+conflict_same_positive,DYN02,conflict,,,True,not_needed,False,False,True,True,True,native,,,4955,1.885288292018231,conflict_same_positive/20261016_221916_d7c24fd3
+conflict_same_invalid,DYN02,conflict,True,,True,not_needed,False,False,True,True,True,native,,环境容量K=0会使连续Logistic模型退化为 dN/dt = rN(1 - N/0)，方程在当前模型下无效；原题又要求不得改动参数，因此无法按现有参数求解。若允许调整，需要提供正实数环境容量K（可为小数）及其数量单位。,4852,1.633361290965695,conflict_same_invalid/20261016_221918_5e510b84
+conflict_corrected,DYN02,conflict,,,True,not_needed,False,False,True,True,True,native,,,4881,2.041895833972376,conflict_corrected/20261016_221920_a4cc77d4
+conflict_missing,DYN02,conflict,True,,True,not_needed,False,False,True,True,True,native,,请提供正实数环境容量K（可为小数）及其数量单位。,4354,1.3406988750211895,conflict_missing/20261016_221921_704848c9
+conflict_valid_above,DYN02,conflict,,,True,not_needed,False,False,True,True,True,native,,,4816,2.075263749982696,conflict_valid_above/20261016_221923_58cebd9d
+conflict_all_negative,DYN02,conflict,True,,True,not_needed,True,False,False,False,True,local_guard,,环境容量K的原文记录相互冲突：“容量恒定-1个”；“K=-2个”。请核对并确认哪条记录准确，或补充记录分别适用的条件。系统未选择任何值，也未执行求解。,4560,1.8438270830083638,conflict_all_negative/20261016_221925_9a75d225
+conflict_missing_mixed,DYN02,conflict,True,,True,not_needed,False,False,True,True,True,native,,请提供正实数环境容量K（可为小数）及其数量单位。,4360,1.327927834005095,conflict_missing_mixed/20261016_221926_ce71c695
+conflict_missing_rate,DYN02,conflict,True,,True,not_needed,False,False,True,True,True,native,,请提供正实数内禀增长率 r（可为小数）及其时间单位（如 1/天）。,4356,2.472372166987043,conflict_missing_rate/20261016_221929_4eb7bd09
+equivalent_trailing_zero,DYN02,equivalent,,,True,not_needed,False,False,True,True,True,native,,,4958,2.1342672500177287,equivalent_trailing_zero/20261016_221931_81a6a8e9
+equivalent_leading_dot,DYN02,equivalent,,,True,not_needed,False,False,True,True,True,native,,,4952,1.533603582996875,equivalent_leading_dot/20261016_221933_37471efc
+equivalent_signed,DYN02,equivalent,,,True,not_needed,False,False,True,True,True,native,,,4957,1.680568250012584,equivalent_signed/20261016_221934_be16ed60
+equivalent_scientific,DYN02,equivalent,,,True,not_needed,False,False,True,True,True,native,,,4984,1.8425604999647476,equivalent_scientific/20261016_221936_bc3f7251
+equivalent_integer,DYN02,equivalent,,,True,not_needed,False,False,True,True,True,native,,,4974,1.9598373749759048,equivalent_integer/20261016_221938_2341d219
+equivalent_same_invalid,DYN02,equivalent,True,,True,not_needed,True,False,False,False,True,local_guard,,环境容量K=-0.0不满足K>0。原题明确禁止改动参数；保持原值时超出当前连续Logistic模型支持范围，停止求解。,4842,1.5384397089947015,equivalent_same_invalid/20261016_221940_b0dc076d
+equivalent_near_difference,DYN02,equivalent,True,,True,not_needed,False,False,True,True,True,native,,同一容量K存在两条冲突记录：环境容量恒定0.5个 与 K=0.5001个。请核对哪条准确？,4550,1.3731264169909991,equivalent_near_difference/20261016_221941_b5945fb6
+equivalent_exponent_difference,DYN02,equivalent,True,,True,not_needed,False,False,True,True,True,native,,题面中同一环境容量K存在冲突记录：环境容量恒定5e-1个（即0.5个）与K=6e-1个（即0.6个）。请核对哪条准确？,4567,1.41742620797595,equivalent_exponent_difference/20261016_221942_8e3c1108
+equivalent_missing_rate,DYN02,equivalent,True,,True,not_needed,False,False,True,True,True,native,,请提供增长率r的数值及其时间单位（例如每天、每小时等）。,4517,0.9835310410126112,equivalent_missing_rate/20261016_221943_e3fad21d
+graph_units_reverse_m,NET01,graph_units,,,True,not_needed,False,False,True,True,True,native,,,4538,1.7902414999553002,graph_units_reverse_m/20261016_221945_4381b72b
+graph_units_small_scientific,NET01,graph_units,,,True,not_needed,False,False,True,True,True,native,,,4664,2.302805665996857,graph_units_small_scientific/20261016_221948_1e71e67b
+graph_units_zero_weight,NET01,graph_units,,,True,not_needed,False,False,True,True,True,native,,,4518,1.6218383749946952,graph_units_zero_weight/20261016_221949_ac990fd7
+graph_units_flow_mixed,NET02,graph_units,,,True,not_needed,False,False,True,True,True,native,,,4586,2.0294436250114813,graph_units_flow_mixed/20261016_221951_b2c85fa7
+graph_units_unknown,NET01,graph_units,True,,True,not_needed,False,False,True,True,True,native,,S到A的2英里与A到T的1千米需要统一为千米，但原文未给出英里与千米的换算因子，且明确不允许自行假设换算因子。请提供英里到千米的换算关系或该边以千米为单位的数值。,4404,1.3679570410167798,graph_units_unknown/20261016_221953_a9a0a24a
+graph_units_dimension,NET01,graph_units,True,,True,not_needed,False,False,True,True,True,native,,边A到T的权重“3小时”是时间而非距离：请提供该边的距离（千米），或提供道路速度信息以便将时间转换为距离。,4377,1.515660083037801,graph_units_dimension/20261016_221954_0bb866f5
+graph_units_fractional_flow,NET02,graph_units,True,,True,not_needed,True,False,False,False,True,local_guard,,换算后容量不是整数，超出当前最大流求解器范围；保留原值，不截断或四舍五入。,4506,1.8674940000055358,graph_units_fractional_flow/20261016_221956_ec3f698b
+remaining_graph_global_before,NET02,remaining,,,True,not_needed,False,False,True,True,True,native,,,4815,2.412433042016346,remaining_graph_global_before/20261016_221958_660db82b
+remaining_graph_inline,NET02,remaining,,,True,not_needed,False,False,True,True,True,native,,,4830,2.662874792004004,remaining_graph_inline/20261016_222001_a9587f17
+remaining_permission_paraphrase,DYN02,remaining,True,,True,not_needed,False,False,True,True,True,native,,当前环境容量K=0，会使Logistic模型在K=0时除零，无法按现有参数建立有效模型。你已允许调整容量但要求先征求意见，请确认并提供正实数环境容量K（可为小数）及其数量单位。,4713,2.7316787500167266,remaining_permission_paraphrase/20261016_222004_39094158
+remaining_permission_valid,DYN02,remaining,,,True,not_needed,False,False,True,True,True,native,,,4813,2.0048866249853745,remaining_permission_valid/20261016_222006_02269ef7
+remaining_permission_forbidden,DYN02,remaining,True,,True,not_needed,True,False,False,False,True,local_guard,,环境容量K=0.0不满足K>0。原题明确禁止改动参数；保持原值时超出当前连续Logistic模型支持范围，停止求解。,4690,1.4746797499828972,remaining_permission_forbidden/20261016_222007_6c30c324
+remaining_permission_missing,DYN02,remaining,True,,True,not_needed,False,False,True,True,True,native,,请提供正实数环境容量K（可为小数）及其数量单位。,4375,1.2984877499984577,remaining_permission_missing/20261016_222009_e172b2f6
+remaining_permission_conflict,DYN02,remaining,True,,True,not_needed,True,False,False,False,True,local_guard,,环境容量K的原文记录相互冲突：“环境容量恒定0个”；“K=0.5个”。请核对并确认哪条记录准确，或补充记录分别适用的条件。系统未选择任何值，也未执行求解。,4587,1.4987665840308182,remaining_permission_conflict/20261016_222010_fb68edac
+remaining_permission_threshold,DYN02,remaining,True,,True,not_needed,False,False,True,True,True,native,,当前动态任务仅支持常参数轨迹与终值计算；到达指定阈值的阈值时间求解暂不支持。,4376,1.046735375013668,remaining_permission_threshold/20261016_222011_9d923499
+missing_capacity_symbol,DYN02,missing_capacity,True,,True,not_needed,False,False,True,True,True,native,,请提供正实数环境容量K（可为小数）及其数量单位。,4350,1.1636497089639306,missing_capacity_symbol/20261016_222012_1db57726
+missing_capacity_reordered,DYN02,missing_capacity,True,,True,not_needed,False,False,True,True,True,native,,请提供正实数环境容量K（可为小数）及其数量单位。,4352,1.0816352079855278,missing_capacity_reordered/20261016_222013_7ead59d5
+missing_capacity_multiple,DYN02,missing_capacity,True,,True,not_needed,False,False,True,True,True,native,,请提供初始数量N0及其数量单位。；请提供正实数环境容量K（可为小数）及其数量单位。,4358,1.4225935420254245,missing_capacity_multiple/20261016_222015_fed0d40f
+missing_capacity_locked,DYN02,missing_capacity,True,,True,not_needed,False,False,True,True,True,native,,请提供正实数环境容量K（可为小数）及其数量单位。,4360,0.8349311659694649,missing_capacity_locked/20261016_222016_6f0884f8

@@ -1,0 +1,31 @@
+{
+  "id": "capacity_negative",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "环境容量 K 为 -0.5 个，连续 Logistic 模型要求 K 必须为正实数；请提供正实数环境容量 K（可为小数），并注明数量单位。",
+  "total_tokens": 4014,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "capacity_negative/20261016_213932_28ba17f5",
+  "elapsed_seconds": 0.9163551249657758,
+  "question_semantics_passed": true,
+  "kind": "boundary",
+  "base_id": "DYN02",
+  "origins": [
+    {
+      "id": "capacity_negative",
+      "problem": "examples/capacity_boundaries/negative.txt",
+      "kind": "boundary"
+    }
+  ],
+  "quote_audit_passed": null,
+  "raw_schema_valid": true,
+  "format_action": "not_needed",
+  "local_guard_used": false,
+  "source_quote_repaired": false,
+  "original_pass": true,
+  "after_format_pass": true,
+  "final_pass": true,
+  "pass_path": "native"
+}

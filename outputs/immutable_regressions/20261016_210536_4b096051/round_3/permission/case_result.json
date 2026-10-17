@@ -1,0 +1,12 @@
+{
+  "id": "permission",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "环境容量K当前为0，会使连续Logistic模型出现除零无效；请提供正实数环境容量K（可为小数）。",
+  "total_tokens": 3714,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "permission/20261016_210642_3642ff81",
+  "elapsed_seconds": 1.3702385420328937
+}

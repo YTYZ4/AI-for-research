@@ -1,0 +1,12 @@
+{
+  "id": "equivalent_same_invalid",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "环境容量 K 的值为 -0（与 0.0 精确等价），Logistic 模型在 K<=0 时无效（K=0 会导致除以零）；由于用户明确要求不得改动参数，无法建立该模型。",
+  "total_tokens": 4154,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "equivalent_same_invalid/20261016_214043_af2108ea",
+  "elapsed_seconds": 3.8219923750148155
+}

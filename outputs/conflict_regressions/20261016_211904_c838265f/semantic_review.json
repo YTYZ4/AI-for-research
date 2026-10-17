@@ -1,0 +1,14 @@
+{
+  "version": "0.10.9",
+  "raw_pass": 37,
+  "after_format_pass": 37,
+  "final_pass": 38,
+  "calls": 39,
+  "neutral_conflicts": "18/18原始通过",
+  "dimension_questions": "9/9未观察到要求r与K单位一致",
+  "local_handling": "same_invalid第1次由既有禁止改值策略接管；新冲突中立化和量纲策略在线均0次接管。",
+  "false_conflict_guard": "0/21非冲突对照",
+  "model_false_conflict": "same_positive第3次把0.5与0.50误判冲突，未执行求解；原始和系统最终均失败。",
+  "historical_replay": "3份历史错误离线重放成功，API为0；不计在线通过。",
+  "limits": "限定词规则与单轮开发重复，不证明长期稳定；错误例未重试覆盖。"
+}

@@ -1,0 +1,19 @@
+{
+  "method": "graph_edges_exact_fraction_v1",
+  "source_quotes_checked": true,
+  "target_unit": "立方米/小时",
+  "edges": [
+    {
+      "index": 0,
+      "source": "S",
+      "target": "T",
+      "original_weight": 0,
+      "original_unit": "升/小时",
+      "factor": "1/1000",
+      "normalized_weight": 0,
+      "normalized_unit": "立方米/小时",
+      "source_quote": "只有S到T容量0升/小时",
+      "unit_quote": "升/小时"
+    }
+  ]
+}

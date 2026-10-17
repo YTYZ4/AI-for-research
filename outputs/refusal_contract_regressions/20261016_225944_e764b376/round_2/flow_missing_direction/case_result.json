@@ -1,0 +1,12 @@
+{
+  "id": "flow_missing_direction",
+  "family": "graph",
+  "outcome": "fail",
+  "failure_category": "unsupported",
+  "detail": "请求为S到T的最大流，但原文仅说明S与T之间有容量1000升/小时且‘方向未知’，未提供可确定的有向边或无向边双向展开信息，因此无法构建满足最大流方向要求的原始图。支持边界：最大流要求所有边方向明确，或明确说明为无向边并可展开为两条反向边；本请求方向未知，故不支持。",
+  "total_tokens": 1380,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "flow_missing_direction/20261016_230021_cab04790",
+  "elapsed_seconds": 2.130953124957159
+}

@@ -1,0 +1,12 @@
+{
+  "id": "immutable_lock_dont",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "环境容量 K=0 会使连续 Logistic 模型中的 N/K 出现除零，当前模型无效；且用户明确要求不要修改任何参数，因此无法在保持原参数的前提下建立有效模型。",
+  "total_tokens": 4399,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "immutable_lock_dont/20261016_215802_2cdbc8ef",
+  "elapsed_seconds": 2.5580294170067646
+}

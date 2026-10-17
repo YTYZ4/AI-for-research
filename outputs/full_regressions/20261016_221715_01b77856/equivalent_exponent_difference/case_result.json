@@ -1,0 +1,12 @@
+{
+  "id": "equivalent_exponent_difference",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "题面中同一环境容量K存在冲突记录：环境容量恒定5e-1个（即0.5个）与K=6e-1个（即0.6个）。请核对哪条准确？",
+  "total_tokens": 4567,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "equivalent_exponent_difference/20261016_221942_8e3c1108",
+  "elapsed_seconds": 1.41742620797595
+}

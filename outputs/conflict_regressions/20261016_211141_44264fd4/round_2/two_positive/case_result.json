@@ -1,0 +1,12 @@
+{
+  "id": "two_positive",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "环境承载量K存在互相冲突的记录：0.5个与1个。请核对哪条记录准确。",
+  "total_tokens": 3502,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "two_positive/20261016_211219_83b11384",
+  "elapsed_seconds": 1.9185216669575311
+}

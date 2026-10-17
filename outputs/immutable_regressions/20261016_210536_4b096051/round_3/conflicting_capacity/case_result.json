@@ -1,0 +1,12 @@
+{
+  "id": "conflicting_capacity",
+  "family": "dynamics",
+  "outcome": "fail",
+  "failure_category": "unsupported",
+  "detail": "原题环境容量存在冲突：一处为0个，另一处为0.5个；当前连续Logistic模型要求环境容量K为正实数，K=0会使方程除零而无效，且用户明确不得改动参数，因此无法按原参数建立有效模型。",
+  "total_tokens": 3448,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "conflicting_capacity/20261016_210643_5ba06fba",
+  "elapsed_seconds": 1.8861323749879375
+}

@@ -1,0 +1,12 @@
+{
+  "id": "mixed_fitting",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "当前请求同时包含最大流最小费用流（或最大流基础上的费用最优）与一元多项式拟合两个不同建模任务：前者需要图网络最大流并联合费用最低，但最小费用流不在支持范围内；后者需要二次曲线拟合。当前单模型协议无法表示联合任务，因此无法同时完成。",
+  "total_tokens": 4977,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "mixed_fitting/20261016_235902_3427b1a8",
+  "elapsed_seconds": 1.6673964579822496
+}

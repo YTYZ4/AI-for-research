@@ -1,0 +1,74 @@
+{
+  "name": "A_B_production_plan",
+  "assumptions": [
+    "产品A、B的生产数量按整件实物计，建模为非负整数变量。",
+    "工时和原料供应上限分别为100小时和80千克；题目声明没有其他约束。",
+    "利润、工时和原料消耗均为给定确定性参数。"
+  ],
+  "variables": [
+    {
+      "name": "x_A",
+      "description": "产品A的生产数量",
+      "unit": "件",
+      "kind": "integer",
+      "lower": 0,
+      "upper": null
+    },
+    {
+      "name": "x_B",
+      "description": "产品B的生产数量",
+      "unit": "件",
+      "kind": "integer",
+      "lower": 0,
+      "upper": null
+    }
+  ],
+  "objective": {
+    "sense": "max",
+    "terms": [
+      {
+        "variable": "x_A",
+        "coefficient": 40
+      },
+      {
+        "variable": "x_B",
+        "coefficient": 30
+      }
+    ],
+    "unit": "元"
+  },
+  "constraints": [
+    {
+      "name": "labor_hours_limit",
+      "terms": [
+        {
+          "variable": "x_A",
+          "coefficient": 2
+        },
+        {
+          "variable": "x_B",
+          "coefficient": 1
+        }
+      ],
+      "sense": "<=",
+      "rhs": 100,
+      "unit": "小时"
+    },
+    {
+      "name": "raw_material_limit",
+      "terms": [
+        {
+          "variable": "x_A",
+          "coefficient": 1
+        },
+        {
+          "variable": "x_B",
+          "coefficient": 2
+        }
+      ],
+      "sense": "<=",
+      "rhs": 80,
+      "unit": "千克"
+    }
+  ]
+}

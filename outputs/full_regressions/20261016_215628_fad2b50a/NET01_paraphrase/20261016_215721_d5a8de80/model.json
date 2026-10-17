@@ -1,0 +1,56 @@
+{
+  "task_type": "graph",
+  "name": "shortest_path_S_to_T",
+  "problem": "shortest_path",
+  "nodes": [
+    "S",
+    "A",
+    "B",
+    "C",
+    "T"
+  ],
+  "source": "S",
+  "target": "T",
+  "edges": [
+    {
+      "source": "A",
+      "target": "T",
+      "weight": 7
+    },
+    {
+      "source": "C",
+      "target": "T",
+      "weight": 3
+    },
+    {
+      "source": "B",
+      "target": "C",
+      "weight": 5
+    },
+    {
+      "source": "A",
+      "target": "C",
+      "weight": 2
+    },
+    {
+      "source": "B",
+      "target": "A",
+      "weight": 1
+    },
+    {
+      "source": "S",
+      "target": "B",
+      "weight": 2
+    },
+    {
+      "source": "S",
+      "target": "A",
+      "weight": 4
+    }
+  ],
+  "unit": "千米",
+  "assumptions": [
+    "所有路段均为单向，不能逆行，题目已声明没有其他边。",
+    "最短路径仅考虑非负权，所有给定权重均为非负。"
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "name": "甲乙产品日生产计划利润最大化",
+  "assumptions": [
+    "甲、乙为整件产品，生产数量必须为非负整数。",
+    "煤供应不限，因此煤消耗不形成约束，仅在假设中说明：每件甲消耗2吨煤，每件乙消耗1吨煤。",
+    "供电量每天不超过100度。",
+    "利润单位为元，目标为最大化每日总利润。"
+  ],
+  "variables": [
+    {
+      "name": "x_jia",
+      "description": "每天生产甲产品的件数",
+      "unit": "件",
+      "kind": "integer",
+      "lower": 0,
+      "upper": null
+    },
+    {
+      "name": "x_yi",
+      "description": "每天生产乙产品的件数",
+      "unit": "件",
+      "kind": "integer",
+      "lower": 0,
+      "upper": null
+    }
+  ],
+  "objective": {
+    "sense": "max",
+    "terms": [
+      {
+        "variable": "x_jia",
+        "coefficient": 100
+      },
+      {
+        "variable": "x_yi",
+        "coefficient": 200
+      }
+    ],
+    "unit": "元"
+  },
+  "constraints": [
+    {
+      "name": "每日供电量约束",
+      "terms": [
+        {
+          "variable": "x_jia",
+          "coefficient": 3
+        },
+        {
+          "variable": "x_yi",
+          "coefficient": 5
+        }
+      ],
+      "sense": "<=",
+      "rhs": 100,
+      "unit": "度"
+    }
+  ]
+}

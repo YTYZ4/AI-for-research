@@ -1,0 +1,10 @@
+{
+  "task_type": "polynomial_fit",
+  "name": "calibration",
+  "assumptions": [
+    "独立观测；普通最小二乘；既定划分"
+  ],
+  "degree": 1,
+  "x_unit": "伏",
+  "y_unit": "摄氏度"
+}

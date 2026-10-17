@@ -1,0 +1,22 @@
+{
+  "id": "DYN01_missing",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "请提供正的冷却系数k及其单位（例如 0.1 1/min）。",
+  "total_tokens": 3388,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "DYN01_missing/20261016_205619_e9c0132d",
+  "elapsed_seconds": 2.050221999990754,
+  "question_semantics_passed": true,
+  "kind": "missing",
+  "base_id": "DYN01",
+  "raw_schema_valid": true,
+  "format_action": "not_needed",
+  "local_guard_used": false,
+  "original_pass": true,
+  "after_format_pass": true,
+  "final_pass": true,
+  "pass_path": "native"
+}

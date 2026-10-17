@@ -1,0 +1,18 @@
+{
+  "task_type": "dynamics",
+  "name": "封闭种群连续Logistic模型",
+  "system": "logistic",
+  "initial": 1.5,
+  "rate": 0.2,
+  "equilibrium": 0.5,
+  "duration": 30.0,
+  "rate_unit": "1/day",
+  "state_unit": "个",
+  "assumptions": [
+    "假设种群数量为连续实数，允许小数个体。",
+    "环境容量K恒定。",
+    "增长率r为常参数。",
+    "初始种群数量可大于环境容量，轨迹将向环境容量下降。"
+  ],
+  "time_unit": "day"
+}

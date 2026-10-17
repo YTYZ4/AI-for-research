@@ -1,0 +1,12 @@
+{
+  "id": "FIT02_error",
+  "family": "fitting",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "普通最小二乘一元多项式拟合的阶数只支持 1–5 阶；题中指定阶数为 -2，属于不支持的负数阶数。",
+  "total_tokens": 3131,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "FIT02_error/20261016_203355_04638ea3",
+  "elapsed_seconds": 1.3221827499801293
+}

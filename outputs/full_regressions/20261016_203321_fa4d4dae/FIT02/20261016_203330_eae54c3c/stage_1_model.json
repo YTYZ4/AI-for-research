@@ -1,0 +1,13 @@
+{
+  "task_type": "polynomial_fit",
+  "name": "一元多项式自动选阶拟合",
+  "assumptions": [
+    "x 和 y 均无量纲。",
+    "split 列取值 train/test；仅用训练集五折交叉验证在1至5阶之间自动选阶。",
+    "使用一元普通最小二乘多项式拟合。",
+    "留出集仅用于最终报告 RMSE 和 MAE，不参与选阶。"
+  ],
+  "degree": null,
+  "x_unit": "无量纲",
+  "y_unit": "无量纲"
+}

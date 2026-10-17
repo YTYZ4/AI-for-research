@@ -1,0 +1,33 @@
+{
+  "reviewer": "assistant_read_only_review",
+  "independent_human_review": false,
+  "automatic_results_unchanged": true,
+  "graph_previous": {
+    "native_passes": 3,
+    "checks": "分别引用连续边片段和公共单位声明，独立最大流15及审计通过。"
+  },
+  "permission_previous": {
+    "native_passes": 3,
+    "checks": "三次均needs_clarification，请求用户确认或提供正实数容量，model=null，未自动替换或求解。"
+  },
+  "permission_paraphrase": {
+    "native_passes": 3,
+    "note": "第二次给出0.5、1.5作为正实数例子，同时明确请求确认；没有选择默认值或执行，不按自动改值计错。"
+  },
+  "permission_missing_round_1": {
+    "verdict": "failure_retained",
+    "response": "请提供环境容量K的值及单位（该参数当前缺失）。",
+    "reason": "询问对象和状态正确，但缺少预先固定要求的正实数/可为小数参数域说明；不等于数学求解错误。"
+  },
+  "offline_replay": {
+    "api_calls": 0,
+    "graph": "旧引用拼接响应经限定引用修复后最大流15，独立评分和引用审计通过，分类local_source_repair。",
+    "permission": "旧直接拒绝响应转为用户确认追问，分类local_guard。"
+  },
+  "limitations": [
+    "12个开发场景各3次，不代表独立题族或长期稳定率。",
+    "未执行新版完整89场景回归，不能将定向35/36替代完整回归统计。",
+    "图引用修复限定显式ASCII有向边及唯一全局单位，复杂范围、冲突、局部单位不做自动修复。",
+    "许可本地策略限定显式完整常参数Logistic、仅K非法且其余参数域有效；不是通用意图理解。"
+  ]
+}

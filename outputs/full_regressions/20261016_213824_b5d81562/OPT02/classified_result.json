@@ -1,0 +1,31 @@
+{
+  "id": "OPT02",
+  "family": "optimization",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "",
+  "total_tokens": 4469,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "OPT02/20261016_213829_8d649745",
+  "elapsed_seconds": 3.2044485000078566,
+  "question_semantics_passed": null,
+  "kind": "original",
+  "base_id": "OPT02",
+  "origins": [
+    {
+      "id": "OPT02",
+      "problem": "examples/transport/problem.txt",
+      "kind": "original"
+    }
+  ],
+  "quote_audit_passed": null,
+  "raw_schema_valid": true,
+  "format_action": "not_needed",
+  "local_guard_used": false,
+  "source_quote_repaired": false,
+  "original_pass": true,
+  "after_format_pass": true,
+  "final_pass": true,
+  "pass_path": "native"
+}

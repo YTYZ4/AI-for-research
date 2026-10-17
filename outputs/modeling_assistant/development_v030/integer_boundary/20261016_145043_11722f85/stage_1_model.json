@@ -1,0 +1,43 @@
+{
+  "name": "整件设备生产利润最大化",
+  "assumptions": [
+    "整件设备产量按实物整件计，因此决策变量取非负整数。",
+    "总工时上限为5小时，工时消耗按每件2小时计。",
+    "除工时外无其他资源限制，其他限制不纳入约束。",
+    "目标和约束使用同一工时与利润单位，利润单位为元，工时单位为小时。"
+  ],
+  "variables": [
+    {
+      "name": "x",
+      "description": "整件设备的生产数量",
+      "unit": "件",
+      "kind": "integer",
+      "lower": 0,
+      "upper": null
+    }
+  ],
+  "objective": {
+    "sense": "max",
+    "terms": [
+      {
+        "variable": "x",
+        "coefficient": 10
+      }
+    ],
+    "unit": "元"
+  },
+  "constraints": [
+    {
+      "name": "工时限制",
+      "terms": [
+        {
+          "variable": "x",
+          "coefficient": 2
+        }
+      ],
+      "sense": "<=",
+      "rhs": 5,
+      "unit": "小时"
+    }
+  ]
+}

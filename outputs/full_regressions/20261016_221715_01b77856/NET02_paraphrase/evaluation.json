@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "numeric": {
+    "passed": true,
+    "checks": {
+      "original_graph": true,
+      "original_capacities": true,
+      "conservation": true,
+      "optimal_value": true
+    },
+    "scope": "固定开发原题；独立枚举简单路径/所有源汇割，不用于其他图或成功率结论"
+  },
+  "provenance": {
+    "source_preserved": true,
+    "quotes_checked": true,
+    "edge_count": true,
+    "quotes_verbatim": true,
+    "audit_matches": true
+  }
+}

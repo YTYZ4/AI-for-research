@@ -1,0 +1,13 @@
+{
+  "false_interception": false,
+  "passed": true,
+  "checks": {
+    "clarification": true,
+    "all_original_values": true,
+    "conflict_explained": true,
+    "asks_resolution": true,
+    "no_preselected_value": true,
+    "no_execution": true
+  },
+  "text": "环境容量K存在多条互相冲突的记录：恒定-1个、另一记录K=0个、第三条环境容量为0.5个。请核对哪一条准确？"
+}

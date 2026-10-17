@@ -1,0 +1,12 @@
+{
+  "id": "immutable_lock_keep",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "环境容量K=0使当前常参数Logistic模型无效（方程中含1-N/K，K=0时出现除零）；由于题目要求全部参数保持原样，无法在保持原值的前提下求解。",
+  "total_tokens": 5461,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "immutable_lock_keep/20261016_224315_d5272ddb",
+  "elapsed_seconds": 2.475024499988649
+}

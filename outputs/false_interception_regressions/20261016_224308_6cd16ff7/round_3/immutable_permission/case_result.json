@@ -1,0 +1,12 @@
+{
+  "id": "immutable_permission",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "当前记录的环境容量为0个，Logistic模型要求环境容量K为正实数；你已表示可以修改参数但需先询问。请确认并提供正的实数环境容量K（可为小数）及其数量单位。",
+  "total_tokens": 5454,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "immutable_permission/20261016_224454_0e8a917c",
+  "elapsed_seconds": 1.782461584021803
+}

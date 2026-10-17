@@ -1,0 +1,17 @@
+{
+  "applied": true,
+  "passed": true,
+  "checks": {
+    "expected_status": true,
+    "nonempty_question": true,
+    "relevant_topic": true,
+    "all_conflict_values": true,
+    "neutral": true,
+    "states_conflict": true,
+    "requests_resolution": true,
+    "clarification": true,
+    "correct_dimensions": true
+  },
+  "text": "题面中同一环境承载量 K 存在两条相互冲突的原始记录：0.5个 与 1个。请核对哪条记录准确；请直接说明最终采用哪一个K值及单位。",
+  "scope": "状态/主题初筛；显式禁止改值时检查修改建议，否则Logistic容量检查正实数限制。不是完整语义证明。"
+}

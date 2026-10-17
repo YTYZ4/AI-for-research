@@ -1,0 +1,12 @@
+{
+  "id": "DYN02_error",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "环境容量K=0个会使连续Logistic模型中的增长率项包含除以K，当前模型无效；且题目要求不得替换容量数值。",
+  "total_tokens": 5293,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "DYN02_error/20261016_222913_7e2d1bd1",
+  "elapsed_seconds": 1.3092747090267949
+}

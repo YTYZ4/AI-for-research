@@ -1,0 +1,23 @@
+{
+  "task_type": "graph_input",
+  "name": "single_edge_max_flow",
+  "problem": "max_flow",
+  "nodes": [
+    "S",
+    "T"
+  ],
+  "source": "S",
+  "target": "T",
+  "edges": [
+    {
+      "source": "S",
+      "target": "T",
+      "weight": 0,
+      "unit": "升/小时",
+      "source_quote": "只有S到T容量0升/小时",
+      "unit_quote": "升/小时"
+    }
+  ],
+  "unit": "立方米/小时",
+  "assumptions": []
+}

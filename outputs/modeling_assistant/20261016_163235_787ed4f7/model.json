@@ -1,0 +1,48 @@
+{
+  "task_type": "graph",
+  "name": "S-A-B-T 有向输水网络最大流",
+  "problem": "max_flow",
+  "nodes": [
+    "S",
+    "A",
+    "B",
+    "T"
+  ],
+  "source": "S",
+  "target": "T",
+  "edges": [
+    {
+      "source": "S",
+      "target": "A",
+      "weight": 10
+    },
+    {
+      "source": "S",
+      "target": "B",
+      "weight": 5
+    },
+    {
+      "source": "A",
+      "target": "B",
+      "weight": 4
+    },
+    {
+      "source": "A",
+      "target": "T",
+      "weight": 6
+    },
+    {
+      "source": "B",
+      "target": "T",
+      "weight": 9
+    }
+  ],
+  "unit": "立方米/小时",
+  "assumptions": [
+    "所有管道容量均为非负整数，单位统一为立方米/小时。",
+    "管道为有向边，只能沿给定方向输水。",
+    "S为唯一源点，T为唯一汇点，中间节点满足流量守恒。",
+    "问题中已明确列出全部管道，没有其他边或孤立节点需要补充。",
+    "求解器应输出最大总流量、各管道流量以及最小割验证。"
+  ]
+}

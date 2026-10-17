@@ -1,0 +1,12 @@
+{
+  "id": "valid_logistic",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "",
+  "total_tokens": 2613,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "valid_logistic/20261016_200442_8fbb0d67",
+  "elapsed_seconds": 1.1579961660318077
+}

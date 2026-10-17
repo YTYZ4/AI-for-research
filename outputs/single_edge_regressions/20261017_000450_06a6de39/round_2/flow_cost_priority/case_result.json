@@ -1,0 +1,12 @@
+{
+  "id": "flow_cost_priority",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "原题要求的是最小费用最大流：先最大化通流量，再在最大流中最小化运输成本（每升2元）。当前仅支持最短路径和单商品最大流，无法处理带费用的优化任务。",
+  "total_tokens": 1517,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "flow_cost_priority/20261017_000526_18a6309a",
+  "elapsed_seconds": 1.5151751670055091
+}

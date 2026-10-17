@@ -1,0 +1,18 @@
+{
+  "task_type": "dynamics",
+  "name": "封闭种群连续Logistic数量变化",
+  "system": "logistic",
+  "initial": 1.5,
+  "rate": 0.2,
+  "equilibrium": 0.5,
+  "duration": 30.0,
+  "rate_unit": "1/day",
+  "state_unit": "个",
+  "assumptions": [
+    "封闭种群，无迁入迁出。",
+    "环境承载量K与内禀增长率r均为常参数。",
+    "Logistic按连续种群近似，数量可为小数。",
+    "初值大于环境承载量，轨迹由初值向K下降。"
+  ],
+  "time_unit": "day"
+}

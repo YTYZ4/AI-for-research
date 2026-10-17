@@ -1,0 +1,376 @@
+{
+  "created_at": "2026-10-16T14:32:35.060876+08:00",
+  "version": "0.1.0",
+  "python": "3.13.16",
+  "scipy": "1.18.1",
+  "backend": "model_file",
+  "input": "{\n  \"name\": \"生产计划优化\",\n  \"assumptions\": [\n    \"工时和原料消耗按每件产品线性计算\",\n    \"产量以件为单位，且为非负整数\",\n    \"利润以元为单位\",\n    \"本期工时上限为 100 小时，原料上限为 80 千克\"\n  ],\n  \"variables\": [\n    {\n      \"name\": \"x_A\",\n      \"description\": \"产品A的产量\",\n      \"unit\": \"件\",\n      \"kind\": \"integer\",\n      \"lower\": 0,\n      \"upper\": null\n    },\n    {\n      \"name\": \"x_B\",\n      \"description\": \"产品B的产量\",\n      \"unit\": \"件\",\n      \"kind\": \"integer\",\n      \"lower\": 0,\n      \"upper\": null\n    }\n  ],\n  \"objective\": {\n    \"sense\": \"max\",\n    \"terms\": [\n      {\n        \"variable\": \"x_A\",\n        \"coefficient\": 40\n      },\n      {\n        \"variable\": \"x_B\",\n        \"coefficient\": 30\n      }\n    ],\n    \"unit\": \"元\"\n  },\n  \"constraints\": [\n    {\n      \"name\": \"工时限制\",\n      \"terms\": [\n        {\n          \"variable\": \"x_A\",\n          \"coefficient\": 2\n        },\n        {\n          \"variable\": \"x_B\",\n          \"coefficient\": 1\n        }\n      ],\n      \"sense\": \"<=\",\n      \"rhs\": 100,\n      \"unit\": \"小时\"\n    },\n    {\n      \"name\": \"原料限制\",\n      \"terms\": [\n        {\n          \"variable\": \"x_A\",\n          \"coefficient\": 1\n        },\n        {\n          \"variable\": \"x_B\",\n          \"coefficient\": 2\n        }\n      ],\n      \"sense\": \"<=\",\n      \"rhs\": 80,\n      \"unit\": \"千克\"\n    }\n  ]\n}\n",
+  "generation": {
+    "backend": "model_file"
+  },
+  "envelope": {
+    "status": "ready",
+    "questions": [],
+    "model": {
+      "name": "生产计划优化",
+      "assumptions": [
+        "工时和原料消耗按每件产品线性计算",
+        "产量以件为单位，且为非负整数",
+        "利润以元为单位",
+        "本期工时上限为 100 小时，原料上限为 80 千克"
+      ],
+      "variables": [
+        {
+          "name": "x_A",
+          "description": "产品A的产量",
+          "unit": "件",
+          "kind": "integer",
+          "lower": 0,
+          "upper": null
+        },
+        {
+          "name": "x_B",
+          "description": "产品B的产量",
+          "unit": "件",
+          "kind": "integer",
+          "lower": 0,
+          "upper": null
+        }
+      ],
+      "objective": {
+        "sense": "max",
+        "terms": [
+          {
+            "variable": "x_A",
+            "coefficient": 40
+          },
+          {
+            "variable": "x_B",
+            "coefficient": 30
+          }
+        ],
+        "unit": "元"
+      },
+      "constraints": [
+        {
+          "name": "工时限制",
+          "terms": [
+            {
+              "variable": "x_A",
+              "coefficient": 2
+            },
+            {
+              "variable": "x_B",
+              "coefficient": 1
+            }
+          ],
+          "sense": "<=",
+          "rhs": 100,
+          "unit": "小时"
+        },
+        {
+          "name": "原料限制",
+          "terms": [
+            {
+              "variable": "x_A",
+              "coefficient": 1
+            },
+            {
+              "variable": "x_B",
+              "coefficient": 2
+            }
+          ],
+          "sense": "<=",
+          "rhs": 80,
+          "unit": "千克"
+        }
+      ]
+    }
+  },
+  "stages": [
+    {
+      "label": "初始模型",
+      "model": {
+        "name": "生产计划优化",
+        "assumptions": [
+          "工时和原料消耗按每件产品线性计算",
+          "产量以件为单位，且为非负整数",
+          "利润以元为单位",
+          "本期工时上限为 100 小时，原料上限为 80 千克"
+        ],
+        "variables": [
+          {
+            "name": "x_A",
+            "description": "产品A的产量",
+            "unit": "件",
+            "kind": "integer",
+            "lower": 0,
+            "upper": null
+          },
+          {
+            "name": "x_B",
+            "description": "产品B的产量",
+            "unit": "件",
+            "kind": "integer",
+            "lower": 0,
+            "upper": null
+          }
+        ],
+        "objective": {
+          "sense": "max",
+          "terms": [
+            {
+              "variable": "x_A",
+              "coefficient": 40
+            },
+            {
+              "variable": "x_B",
+              "coefficient": 30
+            }
+          ],
+          "unit": "元"
+        },
+        "constraints": [
+          {
+            "name": "工时限制",
+            "terms": [
+              {
+                "variable": "x_A",
+                "coefficient": 2
+              },
+              {
+                "variable": "x_B",
+                "coefficient": 1
+              }
+            ],
+            "sense": "<=",
+            "rhs": 100,
+            "unit": "小时"
+          },
+          {
+            "name": "原料限制",
+            "terms": [
+              {
+                "variable": "x_A",
+                "coefficient": 1
+              },
+              {
+                "variable": "x_B",
+                "coefficient": 2
+              }
+            ],
+            "sense": "<=",
+            "rhs": 80,
+            "unit": "千克"
+          }
+        ]
+      },
+      "result": {
+        "status": "optimal",
+        "solver": "scipy.optimize.milp/HiGHS",
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "elapsed_seconds": 0.005469000025186688,
+        "values": {
+          "x_A": 40.0,
+          "x_B": 20.0
+        },
+        "objective": 2200.0,
+        "verification": {
+          "passed": true,
+          "checks": [
+            {
+              "name": "x_A 下界",
+              "passed": true
+            },
+            {
+              "name": "x_A 整数性",
+              "passed": true
+            },
+            {
+              "name": "x_B 下界",
+              "passed": true
+            },
+            {
+              "name": "x_B 整数性",
+              "passed": true
+            },
+            {
+              "name": "工时限制",
+              "lhs": 100.0,
+              "sense": "<=",
+              "rhs": 100,
+              "violation": 0,
+              "passed": true
+            },
+            {
+              "name": "原料限制",
+              "lhs": 80.0,
+              "sense": "<=",
+              "rhs": 80,
+              "violation": 0,
+              "passed": true
+            },
+            {
+              "name": "目标值复算",
+              "passed": true
+            }
+          ],
+          "objective_recomputed": 2200.0,
+          "scope": "仅检查给定模型下的可行性及目标复算；不证明自然语言建模完整或解全局最优。"
+        }
+      }
+    },
+    {
+      "label": "新增 x_A <= 20",
+      "model": {
+        "name": "生产计划优化",
+        "assumptions": [
+          "工时和原料消耗按每件产品线性计算",
+          "产量以件为单位，且为非负整数",
+          "利润以元为单位",
+          "本期工时上限为 100 小时，原料上限为 80 千克"
+        ],
+        "variables": [
+          {
+            "name": "x_A",
+            "description": "产品A的产量",
+            "unit": "件",
+            "kind": "integer",
+            "lower": 0,
+            "upper": null
+          },
+          {
+            "name": "x_B",
+            "description": "产品B的产量",
+            "unit": "件",
+            "kind": "integer",
+            "lower": 0,
+            "upper": null
+          }
+        ],
+        "objective": {
+          "sense": "max",
+          "terms": [
+            {
+              "variable": "x_A",
+              "coefficient": 40
+            },
+            {
+              "variable": "x_B",
+              "coefficient": 30
+            }
+          ],
+          "unit": "元"
+        },
+        "constraints": [
+          {
+            "name": "工时限制",
+            "terms": [
+              {
+                "variable": "x_A",
+                "coefficient": 2
+              },
+              {
+                "variable": "x_B",
+                "coefficient": 1
+              }
+            ],
+            "sense": "<=",
+            "rhs": 100,
+            "unit": "小时"
+          },
+          {
+            "name": "原料限制",
+            "terms": [
+              {
+                "variable": "x_A",
+                "coefficient": 1
+              },
+              {
+                "variable": "x_B",
+                "coefficient": 2
+              }
+            ],
+            "sense": "<=",
+            "rhs": 80,
+            "unit": "千克"
+          },
+          {
+            "name": "追加约束_1",
+            "terms": [
+              {
+                "variable": "x_A",
+                "coefficient": 1.0
+              }
+            ],
+            "sense": "<=",
+            "rhs": 20.0,
+            "unit": "按原模型单位"
+          }
+        ]
+      },
+      "result": {
+        "status": "optimal",
+        "solver": "scipy.optimize.milp/HiGHS",
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "elapsed_seconds": 0.005252541974186897,
+        "values": {
+          "x_A": 20.0,
+          "x_B": 30.0
+        },
+        "objective": 1700.0,
+        "verification": {
+          "passed": true,
+          "checks": [
+            {
+              "name": "x_A 下界",
+              "passed": true
+            },
+            {
+              "name": "x_A 整数性",
+              "passed": true
+            },
+            {
+              "name": "x_B 下界",
+              "passed": true
+            },
+            {
+              "name": "x_B 整数性",
+              "passed": true
+            },
+            {
+              "name": "工时限制",
+              "lhs": 70.0,
+              "sense": "<=",
+              "rhs": 100,
+              "violation": 0,
+              "passed": true
+            },
+            {
+              "name": "原料限制",
+              "lhs": 80.0,
+              "sense": "<=",
+              "rhs": 80,
+              "violation": 0,
+              "passed": true
+            },
+            {
+              "name": "追加约束_1",
+              "lhs": 20.0,
+              "sense": "<=",
+              "rhs": 20.0,
+              "violation": 0,
+              "passed": true
+            },
+            {
+              "name": "目标值复算",
+              "passed": true
+            }
+          ],
+          "objective_recomputed": 1700.0,
+          "scope": "仅检查给定模型下的可行性及目标复算；不证明自然语言建模完整或解全局最优。"
+        }
+      }
+    }
+  ]
+}

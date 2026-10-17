@@ -1,0 +1,24 @@
+{
+  "task_type": "graph",
+  "name": "有向输水网络最大流",
+  "problem": "max_flow",
+  "nodes": [
+    "S",
+    "T"
+  ],
+  "source": "S",
+  "target": "T",
+  "edges": [
+    {
+      "source": "S",
+      "target": "T",
+      "weight": 1
+    }
+  ],
+  "unit": "升/小时",
+  "assumptions": [
+    "有向边S→T的容量为0.001立方米/小时。",
+    "网络仅包含节点S、T及边S→T，无其他边。",
+    "容量单位可从立方米/小时精确换算为升/小时，不取整。"
+  ]
+}

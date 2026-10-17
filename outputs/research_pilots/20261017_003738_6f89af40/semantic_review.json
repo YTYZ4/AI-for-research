@@ -1,0 +1,13 @@
+{
+  "reviewer": "开发助手，非独立人工评分",
+  "reviewed_outputs": 48,
+  "mathematical_models_match_problem": true,
+  "assumptions_unchanged": true,
+  "unit_label_variants": {
+    "工时/原料": 34,
+    "工时/千克": 14
+  },
+  "unit_review": "原题明确千克，14份标签具体化未改变数学数值；自动评分不完整检查单位标签",
+  "initial_V3": "连续域错误，数值偶合正确，维持失败评分",
+  "isolation": "检查器接口和依赖测试；非操作系统沙箱"
+}

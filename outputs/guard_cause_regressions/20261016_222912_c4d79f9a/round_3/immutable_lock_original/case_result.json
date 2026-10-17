@@ -1,0 +1,12 @@
+{
+  "id": "immutable_lock_original",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "环境容量K为0会使Logistic模型无效：方程含因子(1-N/K)，K=0时分母为零；原题明确不得改动参数，因此无法在当前参数下建立有效模型。",
+  "total_tokens": 5317,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "immutable_lock_original/20261016_223018_b923026d",
+  "elapsed_seconds": 3.120416874997318
+}

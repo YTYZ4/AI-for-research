@@ -1,0 +1,12 @@
+{
+  "id": "flow_reverse_conversion",
+  "family": "graph",
+  "outcome": "fail",
+  "failure_category": "unsupported",
+  "detail": "原边容量为0.001立方米/小时，要求统一输出为升/小时且不允许取整；该边换算后为1升/小时（整数），但按当前求解器校验规则，不能预先假定原值换算后一定满足整数容量要求。若程序校验发现换算后容量不是非负整数，则超出最大流仅支持非负整数容量的范围。",
+  "total_tokens": 4925,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "flow_reverse_conversion/20261016_224635_d0fb85f5",
+  "elapsed_seconds": 6.420677167014219
+}

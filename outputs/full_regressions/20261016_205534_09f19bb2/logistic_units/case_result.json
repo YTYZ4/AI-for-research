@@ -1,0 +1,12 @@
+{
+  "id": "logistic_units",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "",
+  "total_tokens": 3913,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "logistic_units/20261016_205645_370a05a7",
+  "elapsed_seconds": 2.6722252500476316
+}

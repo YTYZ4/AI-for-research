@@ -1,0 +1,2016 @@
+{
+  "protocol": "full_development_single_pass_v3",
+  "version": "0.10.11",
+  "cases": [
+    {
+      "id": "OPT01",
+      "family": "optimization",
+      "problem": "examples/production/problem_freeform.txt",
+      "reference": null,
+      "base_id": "OPT01",
+      "kind": "original",
+      "expected_envelopes": [
+        "ready"
+      ],
+      "expected_status": "normal",
+      "origins": [
+        {
+          "id": "OPT01",
+          "problem": "examples/production/problem_freeform.txt",
+          "kind": "original"
+        }
+      ]
+    },
+    {
+      "id": "OPT02",
+      "family": "optimization",
+      "problem": "examples/transport/problem.txt",
+      "reference": "examples/transport/reference_model.json",
+      "base_id": "OPT02",
+      "kind": "original",
+      "expected_envelopes": [
+        "ready"
+      ],
+      "expected_status": "normal",
+      "origins": [
+        {
+          "id": "OPT02",
+          "problem": "examples/transport/problem.txt",
+          "kind": "original"
+        }
+      ]
+    },
+    {
+      "id": "FIT01",
+      "family": "fitting",
+      "problem": "examples/fitting/calibration.txt",
+      "data": "examples/fitting/calibration.csv",
+      "reference": "examples/fitting/calibration_model.json",
+      "base_id": "FIT01",
+      "kind": "original",
+      "expected_envelopes": [
+        "ready"
+      ],
+      "expected_status": "normal",
+      "origins": [
+        {
+          "id": "FIT01",
+          "problem": "examples/fitting/calibration.txt",
+          "kind": "original"
+        }
+      ]
+    },
+    {
+      "id": "FIT02",
+      "family": "fitting",
+      "problem": "examples/fitting/curve.txt",
+      "data": "examples/fitting/curve.csv",
+      "reference": "examples/fitting/curve_model.json",
+      "base_id": "FIT02",
+      "kind": "original",
+      "expected_envelopes": [
+        "ready"
+      ],
+      "expected_status": "normal",
+      "origins": [
+        {
+          "id": "FIT02",
+          "problem": "examples/fitting/curve.txt",
+          "kind": "original"
+        }
+      ]
+    },
+    {
+      "id": "DYN01",
+      "family": "dynamics",
+      "problem": "examples/dynamics/cooling.txt",
+      "reference": "examples/dynamics/cooling_model.json",
+      "case": "cooling",
+      "base_id": "DYN01",
+      "kind": "original",
+      "expected_envelopes": [
+        "ready"
+      ],
+      "expected_status": "normal",
+      "origins": [
+        {
+          "id": "DYN01",
+          "problem": "examples/dynamics/cooling.txt",
+          "kind": "original"
+        }
+      ]
+    },
+    {
+      "id": "DYN02",
+      "family": "dynamics",
+      "problem": "examples/dynamics/logistic.txt",
+      "reference": "examples/dynamics/logistic_model.json",
+      "case": "logistic",
+      "base_id": "DYN02",
+      "kind": "original",
+      "expected_envelopes": [
+        "ready"
+      ],
+      "expected_status": "normal",
+      "origins": [
+        {
+          "id": "DYN02",
+          "problem": "examples/dynamics/logistic.txt",
+          "kind": "original"
+        }
+      ]
+    },
+    {
+      "id": "NET01",
+      "family": "graph",
+      "problem": "examples/graphs/shortest_path.txt",
+      "reference": "examples/graphs/shortest_path_model.json",
+      "case": "shortest_path",
+      "base_id": "NET01",
+      "kind": "original",
+      "expected_envelopes": [
+        "ready"
+      ],
+      "expected_status": "normal",
+      "origins": [
+        {
+          "id": "NET01",
+          "problem": "examples/graphs/shortest_path.txt",
+          "kind": "original"
+        }
+      ]
+    },
+    {
+      "id": "NET02",
+      "family": "graph",
+      "problem": "examples/graphs/max_flow.txt",
+      "reference": "examples/graphs/max_flow_model.json",
+      "case": "max_flow",
+      "base_id": "NET02",
+      "kind": "original",
+      "expected_envelopes": [
+        "ready"
+      ],
+      "expected_status": "normal",
+      "origins": [
+        {
+          "id": "NET02",
+          "problem": "examples/graphs/max_flow.txt",
+          "kind": "original"
+        }
+      ]
+    },
+    {
+      "id": "OPT01_paraphrase",
+      "family": "optimization",
+      "problem": "examples/development_variants/OPT01_paraphrase.txt",
+      "reference": null,
+      "base_id": "OPT01",
+      "kind": "paraphrase",
+      "expected_envelopes": [
+        "ready"
+      ],
+      "expected_status": "normal",
+      "origins": [
+        {
+          "id": "OPT01_paraphrase",
+          "problem": "examples/development_variants/OPT01_paraphrase.txt",
+          "kind": "paraphrase"
+        }
+      ]
+    },
+    {
+      "id": "OPT01_missing",
+      "family": "optimization",
+      "problem": "examples/development_variants/OPT01_missing.txt",
+      "reference": null,
+      "base_id": "OPT01",
+      "kind": "missing",
+      "expected_envelopes": [
+        "needs_clarification"
+      ],
+      "question_keywords": [
+        "原料",
+        "供应"
+      ],
+      "origins": [
+        {
+          "id": "OPT01_missing",
+          "problem": "examples/development_variants/OPT01_missing.txt",
+          "kind": "missing"
+        }
+      ]
+    },
+    {
+      "id": "OPT01_error",
+      "family": "optimization",
+      "problem": "examples/development_variants/OPT01_error.txt",
+      "reference": null,
+      "base_id": "OPT01",
+      "kind": "error",
+      "expected_envelopes": [
+        "ready"
+      ],
+      "expected_status": "infeasible",
+      "origins": [
+        {
+          "id": "OPT01_error",
+          "problem": "examples/development_variants/OPT01_error.txt",
+          "kind": "error"
+        }
+      ]
+    },
+    {
+      "id": "OPT02_paraphrase",
+      "family": "optimization",
+      "problem": "examples/development_variants/OPT02_paraphrase.txt",
+      "reference": "examples/transport/reference_model.json",
+      "base_id": "OPT02",
+      "kind": "paraphrase",
+      "expected_envelopes": [
+        "ready"
+      ],
+      "expected_status": "normal",
+      "origins": [
+        {
+          "id": "OPT02_paraphrase",
+          "problem": "examples/development_variants/OPT02_paraphrase.txt",
+          "kind": "paraphrase"
+        }
+      ]
+    },
+    {
+      "id": "OPT02_missing",
+      "family": "optimization",
+      "problem": "examples/development_variants/OPT02_missing.txt",
+      "reference": "examples/transport/reference_model.json",
+      "base_id": "OPT02",
+      "kind": "missing",
+      "expected_envelopes": [
+        "needs_clarification"
+      ],
+      "question_keywords": [
+        "S3",
+        "需求"
+      ],
+      "origins": [
+        {
+          "id": "OPT02_missing",
+          "problem": "examples/development_variants/OPT02_missing.txt",
+          "kind": "missing"
+        }
+      ]
+    },
+    {
+      "id": "OPT02_error",
+      "family": "optimization",
+      "problem": "examples/development_variants/OPT02_error.txt",
+      "reference": "examples/transport/reference_model.json",
+      "base_id": "OPT02",
+      "kind": "error",
+      "expected_envelopes": [
+        "ready"
+      ],
+      "expected_status": "infeasible",
+      "origins": [
+        {
+          "id": "OPT02_error",
+          "problem": "examples/development_variants/OPT02_error.txt",
+          "kind": "error"
+        }
+      ]
+    },
+    {
+      "id": "FIT01_paraphrase",
+      "family": "fitting",
+      "problem": "examples/development_variants/FIT01_paraphrase.txt",
+      "reference": "examples/fitting/calibration_model.json",
+      "base_id": "FIT01",
+      "kind": "paraphrase",
+      "expected_envelopes": [
+        "ready"
+      ],
+      "expected_status": "normal",
+      "data": "examples/fitting/calibration.csv",
+      "origins": [
+        {
+          "id": "FIT01_paraphrase",
+          "problem": "examples/development_variants/FIT01_paraphrase.txt",
+          "kind": "paraphrase"
+        }
+      ]
+    },
+    {
+      "id": "FIT01_missing",
+      "family": "fitting",
+      "problem": "examples/development_variants/FIT01_missing.txt",
+      "reference": "examples/fitting/calibration_model.json",
+      "base_id": "FIT01",
+      "kind": "missing",
+      "expected_envelopes": [
+        "needs_clarification"
+      ],
+      "question_keywords": [
+        "数据",
+        "CSV",
+        "csv"
+      ],
+      "origins": [
+        {
+          "id": "FIT01_missing",
+          "problem": "examples/development_variants/FIT01_missing.txt",
+          "kind": "missing"
+        }
+      ]
+    },
+    {
+      "id": "FIT01_error",
+      "family": "fitting",
+      "problem": "examples/development_variants/FIT01_error.txt",
+      "reference": "examples/fitting/calibration_model.json",
+      "base_id": "FIT01",
+      "kind": "error",
+      "expected_envelopes": [
+        "needs_clarification",
+        "unsupported"
+      ],
+      "question_keywords": [
+        "阶",
+        "负",
+        "支持"
+      ],
+      "data": "examples/fitting/calibration.csv",
+      "origins": [
+        {
+          "id": "FIT01_error",
+          "problem": "examples/development_variants/FIT01_error.txt",
+          "kind": "error"
+        }
+      ]
+    },
+    {
+      "id": "FIT02_paraphrase",
+      "family": "fitting",
+      "problem": "examples/development_variants/FIT02_paraphrase.txt",
+      "reference": "examples/fitting/curve_model.json",
+      "base_id": "FIT02",
+      "kind": "paraphrase",
+      "expected_envelopes": [
+        "ready"
+      ],
+      "expected_status": "normal",
+      "data": "examples/fitting/curve.csv",
+      "origins": [
+        {
+          "id": "FIT02_paraphrase",
+          "problem": "examples/development_variants/FIT02_paraphrase.txt",
+          "kind": "paraphrase"
+        }
+      ]
+    },
+    {
+      "id": "FIT02_missing",
+      "family": "fitting",
+      "problem": "examples/development_variants/FIT02_missing.txt",
+      "reference": "examples/fitting/curve_model.json",
+      "base_id": "FIT02",
+      "kind": "missing",
+      "expected_envelopes": [
+        "needs_clarification"
+      ],
+      "question_keywords": [
+        "数据",
+        "CSV",
+        "csv"
+      ],
+      "origins": [
+        {
+          "id": "FIT02_missing",
+          "problem": "examples/development_variants/FIT02_missing.txt",
+          "kind": "missing"
+        }
+      ]
+    },
+    {
+      "id": "FIT02_error",
+      "family": "fitting",
+      "problem": "examples/development_variants/FIT02_error.txt",
+      "reference": "examples/fitting/curve_model.json",
+      "base_id": "FIT02",
+      "kind": "error",
+      "expected_envelopes": [
+        "needs_clarification",
+        "unsupported"
+      ],
+      "question_keywords": [
+        "阶",
+        "负",
+        "支持"
+      ],
+      "data": "examples/fitting/curve.csv",
+      "origins": [
+        {
+          "id": "FIT02_error",
+          "problem": "examples/development_variants/FIT02_error.txt",
+          "kind": "error"
+        }
+      ]
+    },
+    {
+      "id": "DYN01_paraphrase",
+      "family": "dynamics",
+      "problem": "examples/development_variants/DYN01_paraphrase.txt",
+      "reference": "examples/dynamics/cooling_model.json",
+      "case": "cooling",
+      "base_id": "DYN01",
+      "kind": "paraphrase",
+      "expected_envelopes": [
+        "ready"
+      ],
+      "expected_status": "normal",
+      "origins": [
+        {
+          "id": "DYN01_paraphrase",
+          "problem": "examples/development_variants/DYN01_paraphrase.txt",
+          "kind": "paraphrase"
+        }
+      ]
+    },
+    {
+      "id": "DYN01_missing",
+      "family": "dynamics",
+      "problem": "examples/development_variants/DYN01_missing.txt",
+      "reference": "examples/dynamics/cooling_model.json",
+      "case": "cooling",
+      "base_id": "DYN01",
+      "kind": "missing",
+      "expected_envelopes": [
+        "needs_clarification"
+      ],
+      "question_keywords": [
+        "系数",
+        "速率",
+        "k"
+      ],
+      "origins": [
+        {
+          "id": "DYN01_missing",
+          "problem": "examples/development_variants/DYN01_missing.txt",
+          "kind": "missing"
+        }
+      ]
+    },
+    {
+      "id": "DYN01_error",
+      "family": "dynamics",
+      "problem": "examples/development_variants/DYN01_error.txt",
+      "reference": "examples/dynamics/cooling_model.json",
+      "case": "cooling",
+      "base_id": "DYN01",
+      "kind": "error",
+      "expected_envelopes": [
+        "needs_clarification",
+        "unsupported"
+      ],
+      "question_keywords": [
+        "负",
+        "正",
+        "系数",
+        "支持"
+      ],
+      "origins": [
+        {
+          "id": "DYN01_error",
+          "problem": "examples/development_variants/DYN01_error.txt",
+          "kind": "error"
+        }
+      ]
+    },
+    {
+      "id": "DYN02_paraphrase",
+      "family": "dynamics",
+      "problem": "examples/development_variants/DYN02_paraphrase.txt",
+      "reference": "examples/dynamics/logistic_model.json",
+      "case": "logistic",
+      "base_id": "DYN02",
+      "kind": "paraphrase",
+      "expected_envelopes": [
+        "ready"
+      ],
+      "expected_status": "normal",
+      "origins": [
+        {
+          "id": "DYN02_paraphrase",
+          "problem": "examples/development_variants/DYN02_paraphrase.txt",
+          "kind": "paraphrase"
+        }
+      ]
+    },
+    {
+      "id": "DYN02_missing",
+      "family": "dynamics",
+      "problem": "examples/development_variants/DYN02_missing.txt",
+      "reference": "examples/dynamics/logistic_model.json",
+      "case": "logistic",
+      "base_id": "DYN02",
+      "kind": "missing",
+      "expected_envelopes": [
+        "needs_clarification"
+      ],
+      "question_keywords": [
+        "容量",
+        "K"
+      ],
+      "origins": [
+        {
+          "id": "DYN02_missing",
+          "problem": "examples/development_variants/DYN02_missing.txt",
+          "kind": "missing"
+        }
+      ]
+    },
+    {
+      "id": "DYN02_error",
+      "family": "dynamics",
+      "problem": "examples/development_variants/DYN02_error.txt",
+      "reference": "examples/dynamics/logistic_model.json",
+      "case": "logistic",
+      "base_id": "DYN02",
+      "kind": "error",
+      "expected_envelopes": [
+        "needs_clarification",
+        "unsupported"
+      ],
+      "question_keywords": [
+        "容量",
+        "零",
+        "0",
+        "正"
+      ],
+      "origins": [
+        {
+          "id": "DYN02_error",
+          "problem": "examples/development_variants/DYN02_error.txt",
+          "kind": "error"
+        }
+      ]
+    },
+    {
+      "id": "NET01_paraphrase",
+      "family": "graph",
+      "problem": "examples/development_variants/NET01_paraphrase.txt",
+      "reference": "examples/graphs/shortest_path_model.json",
+      "case": "shortest_path",
+      "base_id": "NET01",
+      "kind": "paraphrase",
+      "expected_envelopes": [
+        "ready"
+      ],
+      "expected_status": "normal",
+      "origins": [
+        {
+          "id": "NET01_paraphrase",
+          "problem": "examples/development_variants/NET01_paraphrase.txt",
+          "kind": "paraphrase"
+        }
+      ]
+    },
+    {
+      "id": "NET01_missing",
+      "family": "graph",
+      "problem": "examples/development_variants/NET01_missing.txt",
+      "reference": "examples/graphs/shortest_path_model.json",
+      "case": "shortest_path",
+      "base_id": "NET01",
+      "kind": "missing",
+      "expected_envelopes": [
+        "needs_clarification"
+      ],
+      "question_keywords": [
+        "距离",
+        "权重",
+        "A"
+      ],
+      "origins": [
+        {
+          "id": "NET01_missing",
+          "problem": "examples/development_variants/NET01_missing.txt",
+          "kind": "missing"
+        }
+      ]
+    },
+    {
+      "id": "NET01_error",
+      "family": "graph",
+      "problem": "examples/development_variants/NET01_error.txt",
+      "reference": "examples/graphs/shortest_path_model.json",
+      "case": "shortest_path",
+      "base_id": "NET01",
+      "kind": "error",
+      "expected_envelopes": [
+        "needs_clarification",
+        "unsupported"
+      ],
+      "question_keywords": [
+        "负",
+        "支持"
+      ],
+      "origins": [
+        {
+          "id": "NET01_error",
+          "problem": "examples/development_variants/NET01_error.txt",
+          "kind": "error"
+        }
+      ]
+    },
+    {
+      "id": "NET02_paraphrase",
+      "family": "graph",
+      "problem": "examples/development_variants/NET02_paraphrase.txt",
+      "reference": "examples/graphs/max_flow_model.json",
+      "case": "max_flow",
+      "base_id": "NET02",
+      "kind": "paraphrase",
+      "expected_envelopes": [
+        "ready"
+      ],
+      "expected_status": "normal",
+      "origins": [
+        {
+          "id": "NET02_paraphrase",
+          "problem": "examples/development_variants/NET02_paraphrase.txt",
+          "kind": "paraphrase"
+        }
+      ]
+    },
+    {
+      "id": "NET02_missing",
+      "family": "graph",
+      "problem": "examples/development_variants/NET02_missing.txt",
+      "reference": "examples/graphs/max_flow_model.json",
+      "case": "max_flow",
+      "base_id": "NET02",
+      "kind": "missing",
+      "expected_envelopes": [
+        "needs_clarification"
+      ],
+      "question_keywords": [
+        "容量",
+        "A"
+      ],
+      "origins": [
+        {
+          "id": "NET02_missing",
+          "problem": "examples/development_variants/NET02_missing.txt",
+          "kind": "missing"
+        }
+      ]
+    },
+    {
+      "id": "NET02_error",
+      "family": "graph",
+      "problem": "examples/development_variants/NET02_error.txt",
+      "reference": "examples/graphs/max_flow_model.json",
+      "case": "max_flow",
+      "base_id": "NET02",
+      "kind": "error",
+      "expected_envelopes": [
+        "needs_clarification",
+        "unsupported"
+      ],
+      "question_keywords": [
+        "负",
+        "容量"
+      ],
+      "origins": [
+        {
+          "id": "NET02_error",
+          "problem": "examples/development_variants/NET02_error.txt",
+          "kind": "error"
+        }
+      ]
+    },
+    {
+      "id": "cooling_units",
+      "family": "dynamics",
+      "problem": "examples/robustness/cooling_units.txt",
+      "reference": "examples/dynamics/cooling_model.json",
+      "case": "cooling",
+      "kind": "units",
+      "base_id": "DYN01",
+      "origins": [
+        {
+          "id": "cooling_units",
+          "problem": "examples/robustness/cooling_units.txt",
+          "kind": "units"
+        }
+      ]
+    },
+    {
+      "id": "logistic_units",
+      "family": "dynamics",
+      "problem": "examples/robustness/logistic_units.txt",
+      "reference": "examples/dynamics/logistic_model.json",
+      "case": "logistic",
+      "kind": "units",
+      "base_id": "DYN02",
+      "origins": [
+        {
+          "id": "logistic_units",
+          "problem": "examples/robustness/logistic_units.txt",
+          "kind": "units"
+        }
+      ]
+    },
+    {
+      "id": "path_units",
+      "family": "graph",
+      "problem": "examples/robustness/path_units.txt",
+      "reference": "examples/graphs/shortest_path_model.json",
+      "case": "shortest_path",
+      "kind": "units",
+      "base_id": "NET01",
+      "origins": [
+        {
+          "id": "path_units",
+          "problem": "examples/robustness/path_units.txt",
+          "kind": "units"
+        }
+      ]
+    },
+    {
+      "id": "capacity_zero",
+      "base_id": "DYN02",
+      "kind": "boundary",
+      "family": "dynamics",
+      "problem": "examples/capacity_boundaries/zero.txt",
+      "initial": 100,
+      "capacity": 0,
+      "expected_envelopes": [
+        "needs_clarification"
+      ],
+      "question_keywords": [
+        "K",
+        "容量"
+      ],
+      "origins": [
+        {
+          "id": "capacity_zero",
+          "problem": "examples/capacity_boundaries/zero.txt",
+          "kind": "boundary"
+        }
+      ]
+    },
+    {
+      "id": "capacity_negative",
+      "base_id": "DYN02",
+      "kind": "boundary",
+      "family": "dynamics",
+      "problem": "examples/capacity_boundaries/negative.txt",
+      "initial": 100,
+      "capacity": -0.5,
+      "expected_envelopes": [
+        "needs_clarification"
+      ],
+      "question_keywords": [
+        "K",
+        "容量"
+      ],
+      "origins": [
+        {
+          "id": "capacity_negative",
+          "problem": "examples/capacity_boundaries/negative.txt",
+          "kind": "boundary"
+        }
+      ]
+    },
+    {
+      "id": "capacity_missing",
+      "base_id": "DYN02",
+      "kind": "boundary",
+      "family": "dynamics",
+      "problem": "examples/capacity_boundaries/missing.txt",
+      "initial": 100,
+      "capacity": null,
+      "expected_envelopes": [
+        "needs_clarification"
+      ],
+      "question_keywords": [
+        "K",
+        "容量"
+      ],
+      "origins": [
+        {
+          "id": "capacity_missing",
+          "problem": "examples/capacity_boundaries/missing.txt",
+          "kind": "boundary"
+        }
+      ]
+    },
+    {
+      "id": "capacity_fraction",
+      "base_id": "DYN02",
+      "kind": "boundary",
+      "family": "dynamics",
+      "problem": "examples/capacity_boundaries/fraction.txt",
+      "initial": 100,
+      "capacity": 1000.5,
+      "expected_envelopes": [
+        "ready"
+      ],
+      "question_keywords": [
+        "K",
+        "容量"
+      ],
+      "origins": [
+        {
+          "id": "capacity_fraction",
+          "problem": "examples/capacity_boundaries/fraction.txt",
+          "kind": "boundary"
+        }
+      ]
+    },
+    {
+      "id": "capacity_small",
+      "base_id": "DYN02",
+      "kind": "boundary",
+      "family": "dynamics",
+      "problem": "examples/capacity_boundaries/small.txt",
+      "initial": 0.1,
+      "capacity": 0.5,
+      "expected_envelopes": [
+        "ready"
+      ],
+      "question_keywords": [
+        "K",
+        "容量"
+      ],
+      "origins": [
+        {
+          "id": "capacity_small",
+          "problem": "examples/capacity_boundaries/small.txt",
+          "kind": "boundary"
+        }
+      ]
+    },
+    {
+      "id": "capacity_zero_initial",
+      "base_id": "DYN02",
+      "kind": "boundary",
+      "family": "dynamics",
+      "problem": "examples/capacity_boundaries/zero_initial.txt",
+      "initial": 0,
+      "capacity": 0.5,
+      "expected_envelopes": [
+        "ready"
+      ],
+      "question_keywords": [
+        "K",
+        "容量"
+      ],
+      "origins": [
+        {
+          "id": "capacity_zero_initial",
+          "problem": "examples/capacity_boundaries/zero_initial.txt",
+          "kind": "boundary"
+        }
+      ]
+    },
+    {
+      "id": "capacity_above_capacity",
+      "base_id": "DYN02",
+      "kind": "boundary",
+      "family": "dynamics",
+      "problem": "examples/capacity_boundaries/above_capacity.txt",
+      "initial": 1.5,
+      "capacity": 0.5,
+      "expected_envelopes": [
+        "ready"
+      ],
+      "question_keywords": [
+        "K",
+        "容量"
+      ],
+      "origins": [
+        {
+          "id": "capacity_above_capacity",
+          "problem": "examples/capacity_boundaries/above_capacity.txt",
+          "kind": "boundary"
+        }
+      ]
+    },
+    {
+      "id": "capacity_above_paraphrase",
+      "base_id": "DYN02",
+      "kind": "boundary",
+      "family": "dynamics",
+      "problem": "examples/capacity_boundaries/above_paraphrase.txt",
+      "initial": 1.5,
+      "capacity": 0.5,
+      "expected_envelopes": [
+        "ready"
+      ],
+      "question_keywords": [
+        "K",
+        "容量"
+      ],
+      "origins": [
+        {
+          "id": "capacity_above_paraphrase",
+          "problem": "examples/capacity_boundaries/above_paraphrase.txt",
+          "kind": "boundary"
+        }
+      ]
+    },
+    {
+      "id": "capacity_above_symbols",
+      "base_id": "DYN02",
+      "kind": "boundary",
+      "family": "dynamics",
+      "problem": "examples/capacity_boundaries/above_symbols.txt",
+      "initial": 1.5,
+      "capacity": 0.5,
+      "expected_envelopes": [
+        "ready"
+      ],
+      "question_keywords": [
+        "K",
+        "容量"
+      ],
+      "origins": [
+        {
+          "id": "capacity_above_symbols",
+          "problem": "examples/capacity_boundaries/above_symbols.txt",
+          "kind": "boundary"
+        }
+      ]
+    },
+    {
+      "id": "capacity_above_reordered",
+      "base_id": "DYN02",
+      "kind": "boundary",
+      "family": "dynamics",
+      "problem": "examples/capacity_boundaries/above_reordered.txt",
+      "initial": 1.5,
+      "capacity": 0.5,
+      "expected_envelopes": [
+        "ready"
+      ],
+      "question_keywords": [
+        "K",
+        "容量"
+      ],
+      "origins": [
+        {
+          "id": "capacity_above_reordered",
+          "problem": "examples/capacity_boundaries/above_reordered.txt",
+          "kind": "boundary"
+        }
+      ]
+    },
+    {
+      "id": "capacity_equal_capacity",
+      "base_id": "DYN02",
+      "kind": "boundary",
+      "family": "dynamics",
+      "problem": "examples/capacity_boundaries/equal_capacity.txt",
+      "initial": 0.5,
+      "capacity": 0.5,
+      "expected_envelopes": [
+        "ready"
+      ],
+      "question_keywords": [
+        "K",
+        "容量"
+      ],
+      "origins": [
+        {
+          "id": "capacity_equal_capacity",
+          "problem": "examples/capacity_boundaries/equal_capacity.txt",
+          "kind": "boundary"
+        }
+      ]
+    },
+    {
+      "id": "capacity_near_above",
+      "base_id": "DYN02",
+      "kind": "boundary",
+      "family": "dynamics",
+      "problem": "examples/capacity_boundaries/near_above.txt",
+      "initial": 0.5001,
+      "capacity": 0.5,
+      "expected_envelopes": [
+        "ready"
+      ],
+      "question_keywords": [
+        "K",
+        "容量"
+      ],
+      "origins": [
+        {
+          "id": "capacity_near_above",
+          "problem": "examples/capacity_boundaries/near_above.txt",
+          "kind": "boundary"
+        }
+      ]
+    },
+    {
+      "id": "immutable_lock_original",
+      "family": "dynamics",
+      "initial": 1.5,
+      "capacity": 0,
+      "problem": "examples/immutable_boundaries/lock_original.txt",
+      "expected_envelopes": [
+        "unsupported"
+      ],
+      "guard_allowed": true,
+      "question_keywords": [],
+      "base_id": "DYN02",
+      "kind": "immutable",
+      "origins": [
+        {
+          "id": "immutable_lock_original",
+          "problem": "examples/immutable_boundaries/lock_original.txt",
+          "kind": "immutable"
+        }
+      ]
+    },
+    {
+      "id": "immutable_lock_dont",
+      "family": "dynamics",
+      "initial": 1.5,
+      "capacity": 0,
+      "problem": "examples/immutable_boundaries/lock_dont.txt",
+      "expected_envelopes": [
+        "unsupported"
+      ],
+      "guard_allowed": true,
+      "question_keywords": [],
+      "base_id": "DYN02",
+      "kind": "immutable",
+      "origins": [
+        {
+          "id": "immutable_lock_dont",
+          "problem": "examples/immutable_boundaries/lock_dont.txt",
+          "kind": "immutable"
+        }
+      ]
+    },
+    {
+      "id": "immutable_lock_keep",
+      "family": "dynamics",
+      "initial": 1.5,
+      "capacity": 0,
+      "problem": "examples/immutable_boundaries/lock_keep.txt",
+      "expected_envelopes": [
+        "unsupported"
+      ],
+      "guard_allowed": true,
+      "question_keywords": [],
+      "base_id": "DYN02",
+      "kind": "immutable",
+      "origins": [
+        {
+          "id": "immutable_lock_keep",
+          "problem": "examples/immutable_boundaries/lock_keep.txt",
+          "kind": "immutable"
+        }
+      ]
+    },
+    {
+      "id": "immutable_lock_cannot",
+      "family": "dynamics",
+      "initial": 1.5,
+      "capacity": 0,
+      "problem": "examples/immutable_boundaries/lock_cannot.txt",
+      "expected_envelopes": [
+        "unsupported"
+      ],
+      "guard_allowed": true,
+      "question_keywords": [],
+      "base_id": "DYN02",
+      "kind": "immutable",
+      "origins": [
+        {
+          "id": "immutable_lock_cannot",
+          "problem": "examples/immutable_boundaries/lock_cannot.txt",
+          "kind": "immutable"
+        }
+      ]
+    },
+    {
+      "id": "immutable_valid_above",
+      "family": "dynamics",
+      "initial": 1.5,
+      "capacity": 0.5,
+      "problem": "examples/immutable_boundaries/valid_above.txt",
+      "expected_envelopes": [
+        "ready"
+      ],
+      "guard_allowed": false,
+      "question_keywords": [],
+      "base_id": "DYN02",
+      "kind": "immutable",
+      "origins": [
+        {
+          "id": "immutable_valid_above",
+          "problem": "examples/immutable_boundaries/valid_above.txt",
+          "kind": "immutable"
+        }
+      ]
+    },
+    {
+      "id": "immutable_valid_equal",
+      "family": "dynamics",
+      "initial": 0.5,
+      "capacity": 0.5,
+      "problem": "examples/immutable_boundaries/valid_equal.txt",
+      "expected_envelopes": [
+        "ready"
+      ],
+      "guard_allowed": false,
+      "question_keywords": [],
+      "base_id": "DYN02",
+      "kind": "immutable",
+      "origins": [
+        {
+          "id": "immutable_valid_equal",
+          "problem": "examples/immutable_boundaries/valid_equal.txt",
+          "kind": "immutable"
+        }
+      ]
+    },
+    {
+      "id": "immutable_valid_zero",
+      "family": "dynamics",
+      "initial": 0,
+      "capacity": 0.5,
+      "problem": "examples/immutable_boundaries/valid_zero.txt",
+      "expected_envelopes": [
+        "ready"
+      ],
+      "guard_allowed": false,
+      "question_keywords": [],
+      "base_id": "DYN02",
+      "kind": "immutable",
+      "origins": [
+        {
+          "id": "immutable_valid_zero",
+          "problem": "examples/immutable_boundaries/valid_zero.txt",
+          "kind": "immutable"
+        }
+      ]
+    },
+    {
+      "id": "immutable_missing_capacity",
+      "family": "dynamics",
+      "initial": 0.1,
+      "capacity": null,
+      "problem": "examples/immutable_boundaries/missing_capacity.txt",
+      "expected_envelopes": [
+        "needs_clarification"
+      ],
+      "guard_allowed": false,
+      "question_keywords": [
+        "容量",
+        "K"
+      ],
+      "base_id": "DYN02",
+      "kind": "immutable",
+      "origins": [
+        {
+          "id": "immutable_missing_capacity",
+          "problem": "examples/immutable_boundaries/missing_capacity.txt",
+          "kind": "immutable"
+        }
+      ]
+    },
+    {
+      "id": "immutable_missing_rate",
+      "family": "dynamics",
+      "initial": 0.1,
+      "capacity": 0.5,
+      "problem": "examples/immutable_boundaries/missing_rate.txt",
+      "expected_envelopes": [
+        "needs_clarification"
+      ],
+      "guard_allowed": false,
+      "question_keywords": [
+        "增长率",
+        "r"
+      ],
+      "base_id": "DYN02",
+      "kind": "immutable",
+      "origins": [
+        {
+          "id": "immutable_missing_rate",
+          "problem": "examples/immutable_boundaries/missing_rate.txt",
+          "kind": "immutable"
+        }
+      ]
+    },
+    {
+      "id": "immutable_permission",
+      "family": "dynamics",
+      "initial": 1.5,
+      "capacity": 0,
+      "problem": "examples/immutable_boundaries/permission.txt",
+      "expected_envelopes": [
+        "needs_clarification"
+      ],
+      "guard_allowed": false,
+      "question_keywords": [],
+      "base_id": "DYN02",
+      "kind": "immutable",
+      "origins": [
+        {
+          "id": "immutable_permission",
+          "problem": "examples/immutable_boundaries/permission.txt",
+          "kind": "immutable"
+        }
+      ]
+    },
+    {
+      "id": "immutable_conflicting_capacity",
+      "family": "dynamics",
+      "initial": 1.5,
+      "capacity": 0,
+      "problem": "examples/immutable_boundaries/conflicting_capacity.txt",
+      "expected_envelopes": [
+        "needs_clarification"
+      ],
+      "guard_allowed": false,
+      "question_keywords": [
+        "冲突",
+        "矛盾",
+        "两个",
+        "不一致"
+      ],
+      "base_id": "DYN02",
+      "kind": "immutable",
+      "origins": [
+        {
+          "id": "immutable_conflicting_capacity",
+          "problem": "examples/immutable_boundaries/conflicting_capacity.txt",
+          "kind": "immutable"
+        },
+        {
+          "id": "conflict_previous_failure",
+          "problem": "examples/conflict_boundaries/previous_failure.txt",
+          "kind": "conflict"
+        }
+      ],
+      "conflict_values": [
+        0,
+        0.5
+      ]
+    },
+    {
+      "id": "immutable_intervention",
+      "family": "dynamics",
+      "initial": 1.5,
+      "capacity": 0.5,
+      "problem": "examples/immutable_boundaries/intervention.txt",
+      "expected_envelopes": [
+        "unsupported"
+      ],
+      "guard_allowed": false,
+      "question_keywords": [],
+      "base_id": "DYN02",
+      "kind": "immutable",
+      "origins": [
+        {
+          "id": "immutable_intervention",
+          "problem": "examples/immutable_boundaries/intervention.txt",
+          "kind": "immutable"
+        }
+      ]
+    },
+    {
+      "id": "immutable_negated_permission_invalid",
+      "family": "dynamics",
+      "initial": 1.5,
+      "capacity": 0,
+      "problem": "examples/immutable_boundaries/negated_permission_invalid.txt",
+      "expected_envelopes": [
+        "unsupported"
+      ],
+      "guard_allowed": true,
+      "question_keywords": [],
+      "base_id": "DYN02",
+      "kind": "immutable",
+      "origins": [
+        {
+          "id": "immutable_negated_permission_invalid",
+          "problem": "examples/immutable_boundaries/negated_permission_invalid.txt",
+          "kind": "immutable"
+        }
+      ]
+    },
+    {
+      "id": "immutable_negated_permission_valid",
+      "family": "dynamics",
+      "initial": 1.5,
+      "capacity": 0.5,
+      "problem": "examples/immutable_boundaries/negated_permission_valid.txt",
+      "expected_envelopes": [
+        "ready"
+      ],
+      "guard_allowed": false,
+      "question_keywords": [],
+      "base_id": "DYN02",
+      "kind": "immutable",
+      "origins": [
+        {
+          "id": "immutable_negated_permission_valid",
+          "problem": "examples/immutable_boundaries/negated_permission_valid.txt",
+          "kind": "immutable"
+        }
+      ]
+    },
+    {
+      "id": "conflict_zero_positive",
+      "family": "dynamics",
+      "problem": "examples/conflict_boundaries/zero_positive.txt",
+      "initial": 1.5,
+      "capacity": 0.5,
+      "expected_envelopes": [
+        "needs_clarification"
+      ],
+      "conflict_values": [
+        0,
+        0.5
+      ],
+      "question_keywords": [
+        "容量",
+        "K"
+      ],
+      "base_id": "DYN02",
+      "kind": "conflict",
+      "origins": [
+        {
+          "id": "conflict_zero_positive",
+          "problem": "examples/conflict_boundaries/zero_positive.txt",
+          "kind": "conflict"
+        }
+      ]
+    },
+    {
+      "id": "conflict_two_positive",
+      "family": "dynamics",
+      "problem": "examples/conflict_boundaries/two_positive.txt",
+      "initial": 1.5,
+      "capacity": 0.5,
+      "expected_envelopes": [
+        "needs_clarification"
+      ],
+      "conflict_values": [
+        0.5,
+        1
+      ],
+      "question_keywords": [
+        "容量",
+        "K"
+      ],
+      "base_id": "DYN02",
+      "kind": "conflict",
+      "origins": [
+        {
+          "id": "conflict_two_positive",
+          "problem": "examples/conflict_boundaries/two_positive.txt",
+          "kind": "conflict"
+        }
+      ]
+    },
+    {
+      "id": "conflict_reverse",
+      "family": "dynamics",
+      "problem": "examples/conflict_boundaries/reverse.txt",
+      "initial": 1.5,
+      "capacity": 0.5,
+      "expected_envelopes": [
+        "needs_clarification"
+      ],
+      "conflict_values": [
+        0.5,
+        0
+      ],
+      "question_keywords": [
+        "容量",
+        "K"
+      ],
+      "base_id": "DYN02",
+      "kind": "conflict",
+      "origins": [
+        {
+          "id": "conflict_reverse",
+          "problem": "examples/conflict_boundaries/reverse.txt",
+          "kind": "conflict"
+        }
+      ]
+    },
+    {
+      "id": "conflict_three_values",
+      "family": "dynamics",
+      "problem": "examples/conflict_boundaries/three_values.txt",
+      "initial": 1.5,
+      "capacity": 0.5,
+      "expected_envelopes": [
+        "needs_clarification"
+      ],
+      "conflict_values": [
+        -1,
+        0,
+        0.5
+      ],
+      "question_keywords": [
+        "容量",
+        "K"
+      ],
+      "base_id": "DYN02",
+      "kind": "conflict",
+      "origins": [
+        {
+          "id": "conflict_three_values",
+          "problem": "examples/conflict_boundaries/three_values.txt",
+          "kind": "conflict"
+        }
+      ]
+    },
+    {
+      "id": "conflict_same_positive",
+      "family": "dynamics",
+      "problem": "examples/conflict_boundaries/same_positive.txt",
+      "initial": 1.5,
+      "capacity": 0.5,
+      "expected_envelopes": [
+        "ready"
+      ],
+      "conflict_values": [],
+      "question_keywords": [],
+      "base_id": "DYN02",
+      "kind": "conflict",
+      "origins": [
+        {
+          "id": "conflict_same_positive",
+          "problem": "examples/conflict_boundaries/same_positive.txt",
+          "kind": "conflict"
+        }
+      ]
+    },
+    {
+      "id": "conflict_same_invalid",
+      "family": "dynamics",
+      "problem": "examples/conflict_boundaries/same_invalid.txt",
+      "initial": 1.5,
+      "capacity": 0,
+      "expected_envelopes": [
+        "unsupported"
+      ],
+      "conflict_values": [],
+      "question_keywords": [
+        "容量",
+        "K"
+      ],
+      "base_id": "DYN02",
+      "kind": "conflict",
+      "origins": [
+        {
+          "id": "conflict_same_invalid",
+          "problem": "examples/conflict_boundaries/same_invalid.txt",
+          "kind": "conflict"
+        }
+      ]
+    },
+    {
+      "id": "conflict_corrected",
+      "family": "dynamics",
+      "problem": "examples/conflict_boundaries/corrected.txt",
+      "initial": 1.5,
+      "capacity": 0.5,
+      "expected_envelopes": [
+        "ready"
+      ],
+      "conflict_values": [],
+      "question_keywords": [],
+      "base_id": "DYN02",
+      "kind": "conflict",
+      "origins": [
+        {
+          "id": "conflict_corrected",
+          "problem": "examples/conflict_boundaries/corrected.txt",
+          "kind": "conflict"
+        },
+        {
+          "id": "equivalent_corrected",
+          "problem": "examples/equivalent_boundaries/corrected.txt",
+          "kind": "equivalent"
+        }
+      ]
+    },
+    {
+      "id": "conflict_missing",
+      "family": "dynamics",
+      "problem": "examples/conflict_boundaries/missing.txt",
+      "initial": 1.5,
+      "capacity": 0.5,
+      "expected_envelopes": [
+        "needs_clarification"
+      ],
+      "conflict_values": [],
+      "question_keywords": [
+        "容量",
+        "K"
+      ],
+      "base_id": "DYN02",
+      "kind": "conflict",
+      "origins": [
+        {
+          "id": "conflict_missing",
+          "problem": "examples/conflict_boundaries/missing.txt",
+          "kind": "conflict"
+        }
+      ]
+    },
+    {
+      "id": "conflict_valid_above",
+      "family": "dynamics",
+      "problem": "examples/conflict_boundaries/valid_above.txt",
+      "initial": 1.5,
+      "capacity": 0.5,
+      "expected_envelopes": [
+        "ready"
+      ],
+      "conflict_values": [],
+      "question_keywords": [],
+      "base_id": "DYN02",
+      "kind": "conflict",
+      "origins": [
+        {
+          "id": "conflict_valid_above",
+          "problem": "examples/conflict_boundaries/valid_above.txt",
+          "kind": "conflict"
+        }
+      ]
+    },
+    {
+      "id": "conflict_all_negative",
+      "family": "dynamics",
+      "problem": "examples/conflict_boundaries/all_negative.txt",
+      "initial": 1.5,
+      "capacity": null,
+      "expected_envelopes": [
+        "needs_clarification"
+      ],
+      "conflict_values": [
+        -1,
+        -2
+      ],
+      "question_keywords": [
+        "容量",
+        "K"
+      ],
+      "base_id": "DYN02",
+      "kind": "conflict",
+      "origins": [
+        {
+          "id": "conflict_all_negative",
+          "problem": "examples/conflict_boundaries/all_negative.txt",
+          "kind": "conflict"
+        }
+      ]
+    },
+    {
+      "id": "conflict_missing_mixed",
+      "family": "dynamics",
+      "problem": "examples/conflict_boundaries/missing_mixed.txt",
+      "initial": 1.5,
+      "capacity": null,
+      "expected_envelopes": [
+        "needs_clarification"
+      ],
+      "conflict_values": [],
+      "question_keywords": [
+        "容量",
+        "K"
+      ],
+      "base_id": "DYN02",
+      "kind": "conflict",
+      "origins": [
+        {
+          "id": "conflict_missing_mixed",
+          "problem": "examples/conflict_boundaries/missing_mixed.txt",
+          "kind": "conflict"
+        }
+      ]
+    },
+    {
+      "id": "conflict_missing_rate",
+      "family": "dynamics",
+      "problem": "examples/conflict_boundaries/missing_rate.txt",
+      "initial": 1.5,
+      "capacity": null,
+      "expected_envelopes": [
+        "needs_clarification"
+      ],
+      "conflict_values": [],
+      "question_keywords": [
+        "增长率",
+        "r"
+      ],
+      "base_id": "DYN02",
+      "kind": "conflict",
+      "origins": [
+        {
+          "id": "conflict_missing_rate",
+          "problem": "examples/conflict_boundaries/missing_rate.txt",
+          "kind": "conflict"
+        }
+      ]
+    },
+    {
+      "id": "equivalent_trailing_zero",
+      "family": "dynamics",
+      "problem": "examples/equivalent_boundaries/trailing_zero.txt",
+      "initial": 1.5,
+      "capacity": 0.5,
+      "expected_envelopes": [
+        "ready"
+      ],
+      "conflict_values": [],
+      "question_keywords": [],
+      "base_id": "DYN02",
+      "kind": "equivalent",
+      "origins": [
+        {
+          "id": "equivalent_trailing_zero",
+          "problem": "examples/equivalent_boundaries/trailing_zero.txt",
+          "kind": "equivalent"
+        }
+      ]
+    },
+    {
+      "id": "equivalent_leading_dot",
+      "family": "dynamics",
+      "problem": "examples/equivalent_boundaries/leading_dot.txt",
+      "initial": 1.5,
+      "capacity": 0.5,
+      "expected_envelopes": [
+        "ready"
+      ],
+      "conflict_values": [],
+      "question_keywords": [],
+      "base_id": "DYN02",
+      "kind": "equivalent",
+      "origins": [
+        {
+          "id": "equivalent_leading_dot",
+          "problem": "examples/equivalent_boundaries/leading_dot.txt",
+          "kind": "equivalent"
+        }
+      ]
+    },
+    {
+      "id": "equivalent_signed",
+      "family": "dynamics",
+      "problem": "examples/equivalent_boundaries/signed.txt",
+      "initial": 1.5,
+      "capacity": 0.5,
+      "expected_envelopes": [
+        "ready"
+      ],
+      "conflict_values": [],
+      "question_keywords": [],
+      "base_id": "DYN02",
+      "kind": "equivalent",
+      "origins": [
+        {
+          "id": "equivalent_signed",
+          "problem": "examples/equivalent_boundaries/signed.txt",
+          "kind": "equivalent"
+        }
+      ]
+    },
+    {
+      "id": "equivalent_scientific",
+      "family": "dynamics",
+      "problem": "examples/equivalent_boundaries/scientific.txt",
+      "initial": 1.5,
+      "capacity": 0.5,
+      "expected_envelopes": [
+        "ready"
+      ],
+      "conflict_values": [],
+      "question_keywords": [],
+      "base_id": "DYN02",
+      "kind": "equivalent",
+      "origins": [
+        {
+          "id": "equivalent_scientific",
+          "problem": "examples/equivalent_boundaries/scientific.txt",
+          "kind": "equivalent"
+        }
+      ]
+    },
+    {
+      "id": "equivalent_integer",
+      "family": "dynamics",
+      "problem": "examples/equivalent_boundaries/integer.txt",
+      "initial": 1.5,
+      "capacity": 1,
+      "expected_envelopes": [
+        "ready"
+      ],
+      "conflict_values": [],
+      "question_keywords": [],
+      "base_id": "DYN02",
+      "kind": "equivalent",
+      "origins": [
+        {
+          "id": "equivalent_integer",
+          "problem": "examples/equivalent_boundaries/integer.txt",
+          "kind": "equivalent"
+        }
+      ]
+    },
+    {
+      "id": "equivalent_same_invalid",
+      "family": "dynamics",
+      "problem": "examples/equivalent_boundaries/same_invalid.txt",
+      "initial": 1.5,
+      "capacity": 0,
+      "expected_envelopes": [
+        "unsupported"
+      ],
+      "conflict_values": [],
+      "question_keywords": [
+        "容量",
+        "K"
+      ],
+      "base_id": "DYN02",
+      "kind": "equivalent",
+      "origins": [
+        {
+          "id": "equivalent_same_invalid",
+          "problem": "examples/equivalent_boundaries/same_invalid.txt",
+          "kind": "equivalent"
+        }
+      ]
+    },
+    {
+      "id": "equivalent_near_difference",
+      "family": "dynamics",
+      "problem": "examples/equivalent_boundaries/near_difference.txt",
+      "initial": 1.5,
+      "capacity": null,
+      "expected_envelopes": [
+        "needs_clarification"
+      ],
+      "conflict_values": [
+        0.5,
+        0.5001
+      ],
+      "question_keywords": [
+        "容量",
+        "K"
+      ],
+      "base_id": "DYN02",
+      "kind": "equivalent",
+      "origins": [
+        {
+          "id": "equivalent_near_difference",
+          "problem": "examples/equivalent_boundaries/near_difference.txt",
+          "kind": "equivalent"
+        }
+      ]
+    },
+    {
+      "id": "equivalent_exponent_difference",
+      "family": "dynamics",
+      "problem": "examples/equivalent_boundaries/exponent_difference.txt",
+      "initial": 1.5,
+      "capacity": null,
+      "expected_envelopes": [
+        "needs_clarification"
+      ],
+      "conflict_values": [
+        0.5,
+        0.6
+      ],
+      "question_keywords": [
+        "容量",
+        "K"
+      ],
+      "base_id": "DYN02",
+      "kind": "equivalent",
+      "origins": [
+        {
+          "id": "equivalent_exponent_difference",
+          "problem": "examples/equivalent_boundaries/exponent_difference.txt",
+          "kind": "equivalent"
+        }
+      ]
+    },
+    {
+      "id": "equivalent_missing_rate",
+      "family": "dynamics",
+      "problem": "examples/equivalent_boundaries/missing_rate.txt",
+      "initial": 1.5,
+      "capacity": null,
+      "expected_envelopes": [
+        "needs_clarification"
+      ],
+      "conflict_values": [],
+      "question_keywords": [
+        "增长率",
+        "r"
+      ],
+      "base_id": "DYN02",
+      "kind": "equivalent",
+      "origins": [
+        {
+          "id": "equivalent_missing_rate",
+          "problem": "examples/equivalent_boundaries/missing_rate.txt",
+          "kind": "equivalent"
+        }
+      ]
+    }
+  ],
+  "max_calls": 82,
+  "repeats": 1,
+  "retries": 0,
+  "model": "deepseek-flash",
+  "hashes": {
+    "evaluation/__init__.py": "e341001f744cb6b55ac13abe7a9d38978cd3b1ef9c183f663f055edefa4f5ea2",
+    "evaluation/batch.py": "c7659a163d8a025515dc441592585397ef37e2a122e97f14cb17a2f5f7d81491",
+    "evaluation/capacity_regression.py": "dcb47e97e81f21cf02089bb8e9cf625427d21ad8e25cc223c4e1cdfa52640cb9",
+    "evaluation/clarification.py": "5fc4c75e0e3e9b37e6d0047288978f7cd4ed4e4e14dc845122e995ba418ac65e",
+    "evaluation/conflict_regression.py": "06d762e64655784aa687bf41eab7a849fecf87963f7d9b3928f3d26a95115414",
+    "evaluation/development.py": "89270a2258536a19513758437df5c60d7f58030faaa097d7e7ec56e2b611d85c",
+    "evaluation/dynamics.py": "d11fd630a1f2f19013e24ae79430613963ccb57bcce5919d03704a1b1635ead7",
+    "evaluation/equivalent_regression.py": "3209f91180920cefff0956e627afc1dd1fe0615cc09fb7c30f055135028f5511",
+    "evaluation/fitting.py": "d4262f4040c1cccf7d7028af272c64fd41e362877fea71ab96eb08744ddeb21d",
+    "evaluation/format_regression.py": "6a03b8388f7db607204351c9350ca8da59e72a122c236316c53412af83a4ecb3",
+    "evaluation/full_regression.py": "4ece9b60a13e1c39d77c09b312f3e8a5f129690821007eb85779dcdcf508a0a9",
+    "evaluation/graphs.py": "b68d4fd3088d8542dc9604a2b77ccb4901165f89eab9072949ce40592c4f7d79",
+    "evaluation/immutable_regression.py": "79d7ce4437419f096184c84616ad10c253768799f30ddb113f13c8d8bfea22d6",
+    "evaluation/review_variants.py": "b7001e90019a90aa15976ca91a2a2709e1de2f5a5fdc90ff1a5845ae361db1ec",
+    "evaluation/robustness.py": "cd5fd3a95455a464ec69b147d5f8cccf282a583813c21c995081c27048c51b8a",
+    "evaluation/transport.py": "b25a52d2837db07788ec883de5028a84ac98fc31ca8087a903bc4cd805e45f5b",
+    "evaluation/unit_regression.py": "5f2f7f2c064b40c9999274ee64e8f71773a8053b89fcfc4c0285b45729e91ac7",
+    "evaluation/variants.py": "30a6cc4a08751c821bbd511c117d8a8340a7fe174588fdaf982a8d7141237c9b",
+    "examples/capacity_boundaries/above_capacity.txt": "9e2197aec25acae58994229bc9ddeb34e9265812af3faaf740258eb21f111b0f",
+    "examples/capacity_boundaries/above_paraphrase.txt": "7cb6eabefeb56793519364c9a65f77c6eab93a6f79e342d516fef55276f74031",
+    "examples/capacity_boundaries/above_reordered.txt": "dc11389e24f26f2d453e857346051e56c687a0696b85d54b3329b33df89d2430",
+    "examples/capacity_boundaries/above_symbols.txt": "a1344f95d16e213399f74416db1556a23e3b7822e6f5c9e3c5f9038ab99d5ce5",
+    "examples/capacity_boundaries/equal_capacity.txt": "50c2aa154dcb53ce0e22ae3bf21348030e88d25cc805708a32129d54fb07c25b",
+    "examples/capacity_boundaries/fraction.txt": "4d261e337c1a2c55ed0ab25ff7138bbf5ace4f9f9fe196013d0cbc22482abd22",
+    "examples/capacity_boundaries/missing.txt": "d222aaa918d08086ef369918fd8bf60f3cc047edcc3569bc3ebfc382d4fa9c0d",
+    "examples/capacity_boundaries/near_above.txt": "a316516aa9b951f1b20c88e868d7664bb2b3cfff5e51dcad13b971f5e9d297af",
+    "examples/capacity_boundaries/negative.txt": "1320075f6f5358f2e04669b9c9939398d3700fc2eef76213e6034a39570c5a9d",
+    "examples/capacity_boundaries/small.txt": "fc77f79708fda5cf775987f8ba1bb791f178b20f2a539e8b466542c927d70da0",
+    "examples/capacity_boundaries/zero.txt": "8f7b60a1dd071e1580c3e3f02b99b63a681765d4f38acb64347e9066a900fba4",
+    "examples/capacity_boundaries/zero_initial.txt": "68f14a554f8bccef8421f6ac6ad9a9c161f5218a2116b5a9f2c28841cff59e60",
+    "examples/conflict_boundaries/all_negative.txt": "c18c0bfd5b5f252d620d646c4fb8789042089e711b8881c525c4edbcbe38e6d5",
+    "examples/conflict_boundaries/corrected.txt": "0c8f899ce398b87809508d25325e5c84790d083dbc03f56eb13d79c100cd61a4",
+    "examples/conflict_boundaries/manifest.json": "9ca5f570fa9b4cf2f8e3ef21c8cb89d617834e7e8e76d296b72eaee3718290d7",
+    "examples/conflict_boundaries/missing.txt": "4e0b3ea801183b59ddd0c5f6540fa3d82a8e05636d32faad5b0a4e0de5d70dd2",
+    "examples/conflict_boundaries/missing_mixed.txt": "dc84842a5cbaca80a7227255b9d99c90ca990aefc9bd2cb2e2a96c3cae0e8cf9",
+    "examples/conflict_boundaries/missing_rate.txt": "0f7a0731aab60a2780d2f5b5dd1fdddd70b376531b40eb1eafa03b963a7933d5",
+    "examples/conflict_boundaries/previous_failure.txt": "20a8185820972dd6706b8f786361a5c4b3bf055ac79c52471260ba21c69485b2",
+    "examples/conflict_boundaries/reverse.txt": "64cf8da0c792375073d6827f467893456e6e18c790c693c45f27af06bdef97ae",
+    "examples/conflict_boundaries/same_invalid.txt": "f00e12851cfe585e6e179c1700b4facd727744e4db845341f73fb7405a8bc5e6",
+    "examples/conflict_boundaries/same_positive.txt": "2931ef82cf893f3ca1aeff9b53e626756e7c758503cff24b9c89eee5ceb02a6c",
+    "examples/conflict_boundaries/three_values.txt": "d55e62cfab7dad33b5fb687ae22b39b485ad8aeefc5437614c92d924359375cb",
+    "examples/conflict_boundaries/two_positive.txt": "6c192bb710ca74d5e760bba6d3ab28a38408c3c69452c5b5442dc91e594be720",
+    "examples/conflict_boundaries/valid_above.txt": "5cb783e7de421cd6df43bc6e7a6e9b306aeca6988a4ada62bba14b1641dbf612",
+    "examples/conflict_boundaries/zero_positive.txt": "312453a75f76cc3444557fc862fa26ced8fe36ecc8a99a853d8acd1a9779201d",
+    "examples/development_variants/DYN01_error.txt": "e6403616bd1c76b5f1ea96b99f9da3cb74afc1b4e0966ddd018dbded0a4e836e",
+    "examples/development_variants/DYN01_missing.txt": "824dcb88f6fc5b223cd584d7c7ba588b6f843e583941a5a8183b815c837d8a4c",
+    "examples/development_variants/DYN01_paraphrase.txt": "1f0ebea21ade597b801f5ab28dbc73177972f7c155e4c1b3f3b4a4c440e0f42a",
+    "examples/development_variants/DYN02_error.txt": "970cb129e8c1d0b71452e4c260b45c8368ca918b8ccb03ba2ec96b13a2350b1f",
+    "examples/development_variants/DYN02_missing.txt": "fd31924c8d5edd628e117331617b41992757c3d3cea56eba3e3163ec9bf28ddd",
+    "examples/development_variants/DYN02_paraphrase.txt": "d2c586186fc46f9fca58a45b3138222ef535f69e2361beb45ac215eb766e943c",
+    "examples/development_variants/FIT01_error.txt": "e68f686b8fe0b4fbd44e47d27632a18f895144e0f73c7c97f7e102c362b20d14",
+    "examples/development_variants/FIT01_missing.txt": "84a58faa389e38093095ef15cddb334556d6612296df84c1f03d550997930093",
+    "examples/development_variants/FIT01_paraphrase.txt": "d0cc2f4102a2e73021c323aba7f3b8cb4fb02270657a9155171a8af1e7cee585",
+    "examples/development_variants/FIT02_error.txt": "376162509626165f1fdf1be94a5168d975b688564e7597735f32487fbb8f94c6",
+    "examples/development_variants/FIT02_missing.txt": "0ab9b39757a08e7f6902ac915fc6cf0004dd4a7b226818448fe9a7304b80aa77",
+    "examples/development_variants/FIT02_paraphrase.txt": "f2f9abb5862fd9106b874c0bee6a49a99ddd58dc84059c27c390f39ea4456dfb",
+    "examples/development_variants/NET01_error.txt": "66fe42a1d3aea760821151401da6b5859800b7c0d36bc0ccaeb4043881764fa4",
+    "examples/development_variants/NET01_missing.txt": "3214ed7a100e54bc5551bbde538855bb5206f84c92b3f223f4abb04981d9fd17",
+    "examples/development_variants/NET01_paraphrase.txt": "549c3f3b72e1349eb168433bda501ae90cba25afab3abdca906d5287a9ff2ac2",
+    "examples/development_variants/NET02_error.txt": "1c0b35fb35b5551ec2c4dbafc9b47583d8587a283d42f8a9f8a1ce382451c90a",
+    "examples/development_variants/NET02_missing.txt": "5791c3a3ed50fb9c003527f5f1169ea36b706e46b9567d3a6bd16bae52865ed3",
+    "examples/development_variants/NET02_paraphrase.txt": "c902ffdb42cbf3f283313c8a78cdf0480f1d5f96e13cd9160932e213bdce70b0",
+    "examples/development_variants/OPT01_error.txt": "fabb9172c07225a813da9c48846b86931db2e132044781fe07bd05309e6278b3",
+    "examples/development_variants/OPT01_missing.txt": "3f50b0ad203579c87d445b32b80207ab2c447822a4735e8e2d0b43bd1d7eafa2",
+    "examples/development_variants/OPT01_paraphrase.txt": "d212b474f80eb6c46a669cb8a528b92d3401dec46a0f2c834687539c9389d9f6",
+    "examples/development_variants/OPT02_error.txt": "bd3cc6eaccffa9896cfd189591f22fa6a6664dda59161b8092c26dfab6fd0d4f",
+    "examples/development_variants/OPT02_missing.txt": "ed79dc8823801f794147c0ae3b3c23dff925ee53ad7e734671e909f8fcbd73c2",
+    "examples/development_variants/OPT02_paraphrase.txt": "49ea2e7f7bbfafbfb49345f6e5209e8604b1e3e26b66b001291472f6198da96e",
+    "examples/development_variants/manifest.json": "d116d5c1ad5c032bedd36d7ec07e5514604233e5f785a757bf8754d09f6c7d17",
+    "examples/dynamics/cooling.txt": "89560b8c854a2b2cdbd1afea62f5c65dd7d928f20fe96f9eefa623f9bd24af17",
+    "examples/dynamics/cooling_model.json": "0e07c01005b3a0ca801ccb8d4a8b86f393b6ad842b716878f2063c1ac9a8e84f",
+    "examples/dynamics/logistic.txt": "36089bf1f839798c97ac76793bbdbacfa55fdd39ffde2c9e0364f606d5b901b6",
+    "examples/dynamics/logistic_model.json": "422d074402f17a98b27f57dacf73cfc79fff0a50e4561e1b120c21def9c3ea7e",
+    "examples/equivalent_boundaries/corrected.txt": "0c8f899ce398b87809508d25325e5c84790d083dbc03f56eb13d79c100cd61a4",
+    "examples/equivalent_boundaries/exponent_difference.txt": "c3fed5c44e0db09ced19e76562ebc41494d946b1b7e927b1aad6578648ec2bea",
+    "examples/equivalent_boundaries/integer.txt": "fa1ceff18222d085c6149ff1ac784e7c657652dafd18ca46c664d4f5f02238c6",
+    "examples/equivalent_boundaries/leading_dot.txt": "53e4b0dc0ae184848c5c094b85ccda39db0e44f518870597f0223ff06cebeab3",
+    "examples/equivalent_boundaries/manifest.json": "4d3b8fe3d7ff8a6d5f2a882bff0b2402b6c90f17cc09073b1af13fdfd5f3f45d",
+    "examples/equivalent_boundaries/missing_rate.txt": "563eba5e4459af4da83148952ce73f9308030b8dde92909ec9bd19a15ddc1a4b",
+    "examples/equivalent_boundaries/near_difference.txt": "135f95233cc5d0de4dc3d9901c76366aa28d5a4868f9be4bcc38419a5a5982d2",
+    "examples/equivalent_boundaries/same_invalid.txt": "0ba4ff20c94a7b5cadd82cd3bf69a8f1b4739d9e23c7d13050c3a4c3278ae9b9",
+    "examples/equivalent_boundaries/scientific.txt": "a05446c60618e23d31756d0d119fd019e4b83f48b8d40ecc97e0022405848a27",
+    "examples/equivalent_boundaries/signed.txt": "622c525ce7a791cb0d36bc3cefa4dafdbc7dd05d7c69c8d20f7ed20c5f82fa73",
+    "examples/equivalent_boundaries/trailing_zero.txt": "4fc83282a958bdc515c5d93d6dba80f61dad086df917078ff58b8e257a4212f3",
+    "examples/fitting/calibration.csv": "8f6b4d9e113bce8b837f550b879863cf5d9963f44b6687282f1b9156b52dcfa4",
+    "examples/fitting/calibration.txt": "d9bc65325bc608beae57f73b0172a02a595d5e329e9e2a4507f9845364402848",
+    "examples/fitting/calibration_model.json": "04dc52634cedb2cec951a5934e221e857a81c8186331f2b9a4267164823237bc",
+    "examples/fitting/curve.csv": "2d3965b9c3dc371a1c010cba2c51214baf7e295828b277e561969d3999325cbd",
+    "examples/fitting/curve.txt": "2222f6796561a9054c5f89b49beaa500b8bdfcdfa77fac2b495bdbba42675ba4",
+    "examples/fitting/curve_model.json": "258a69ca6113ef9810c094051683f31284893d4dc4c5b09566532ae4cbd02c11",
+    "examples/graphs/max_flow.txt": "9cf09b9e426ffd6d77de1ccba71a2d6bed882615902679314aa63165a89532e4",
+    "examples/graphs/max_flow_model.json": "5892060b24c071d8e3d52df6057a7a6bdd577a18151f64d52891dfeb7da7510e",
+    "examples/graphs/shortest_path.txt": "46c40a5ee65c9955cbf445e60278e4d158be2e26d4c02186ce174356346d073a",
+    "examples/graphs/shortest_path_model.json": "967e609ced6cda311d66c4dc95bdfefeac187b98e9dfeaf1e4a3e5cd9d9ba730",
+    "examples/immutable_boundaries/conflicting_capacity.txt": "20a8185820972dd6706b8f786361a5c4b3bf055ac79c52471260ba21c69485b2",
+    "examples/immutable_boundaries/intervention.txt": "754edb790b2ca14e3745ea30621f258902dfc4095fc28998a74f28b1e067cca0",
+    "examples/immutable_boundaries/lock_cannot.txt": "c0cd390a8d9813291d4221021bc702ae8053c6ba7311d5fadfa18ec88147c298",
+    "examples/immutable_boundaries/lock_dont.txt": "ba4a77b83f28571e04e1b76839c53ffd5314608b10e15dcb924ade11733a2b55",
+    "examples/immutable_boundaries/lock_keep.txt": "362527f3c2da0b0d7d43a4b37ad5b66982cc184a379766ed89c21c9339e114da",
+    "examples/immutable_boundaries/lock_original.txt": "586ea735fcf5cf7d7dcaa7fa5d86ec3de3871773f610925fbe9ecf7e1161534d",
+    "examples/immutable_boundaries/manifest.json": "66554cde859902e31ed74a3a9b987768be946300b12ad3053285482aaca7ab1c",
+    "examples/immutable_boundaries/missing_capacity.txt": "49968e54542dea67293ad1b963ec4975eb17dfc0594358003edebda770859c78",
+    "examples/immutable_boundaries/missing_rate.txt": "f81d74737bc01322d93eb231b83e562b6ecc253d2320f1d2a3b3a0dae9a6f251",
+    "examples/immutable_boundaries/negated_permission_invalid.txt": "b073dc2f31f4bd8b27f81b957df7b58a3ecbbfb5e4ab52f992909dbe209a3fba",
+    "examples/immutable_boundaries/negated_permission_valid.txt": "6a0472f26b8e9b37047d0f5178f25ab6d731d13382cc823cdcda19f985aa16c7",
+    "examples/immutable_boundaries/permission.txt": "c45d90df94725ed802b4589b8f13766bd7a25a8083fc3beb2cfdb98c86141cc5",
+    "examples/immutable_boundaries/valid_above.txt": "e4b9a73af40ec47896d43f052f601466e1c0df33d2b281eca1198f3f12f09b6f",
+    "examples/immutable_boundaries/valid_equal.txt": "0131f28d1bb676afc4ba6c36fc9f8051938421f4368726eda241550a9c598fc3",
+    "examples/immutable_boundaries/valid_zero.txt": "a6f1e200e70b549e44af319c480abff048d75913e0926ced43756efa47b15685",
+    "examples/production/problem.txt": "fb4fa6c9d6bbf445104d28c013d87059685e19ee3e522cbc1501d884e2e44638",
+    "examples/production/problem_freeform.txt": "a450a996e0da07b11eac1b917dc035439c110d407cc624b6dcc674ac82615427",
+    "examples/robustness/bad_split.csv": "b966e6fbedd2ca84cede2f4a9911c426bfe74c6ba9f830d81c690416a5e2cef4",
+    "examples/robustness/constant_x.csv": "6b3c5e3f0d5e722d1764c7cd4dd6eb0e311fe30129399018f2b2c40768a67caf",
+    "examples/robustness/cooling_units.txt": "482dc3b96d9191cde8833b7b1a3d86673124877f1647d3055e207b3a25c75635",
+    "examples/robustness/logistic_units.txt": "07dcff21fa43fbef2ce429ab476bf98805f87028c05a7ee9dc39312323c769e9",
+    "examples/robustness/missing_y.csv": "a19ad417fa80943c19adb50d3d0b443f392ce6897d52afbb83fbfc672afc7544",
+    "examples/robustness/nan.csv": "724ee4436336f1814012624f5ac1a725ec0d860dad3c174099fac3ccf5d188a5",
+    "examples/robustness/path_units.txt": "453e404040a5b625f0a4c8b8b08703bfaf80f5f9f0f30af4ea0fcf36ffd57c10",
+    "examples/robustness/train_only.csv": "cb5339fd5efbbca858edce4c607c9b1487e7119f721ba2ea18be92c1dcc9936c",
+    "examples/robustness/valid.csv": "5a55606d901cce6528589ed455b3e16f2fc825d6c8dcda5c16a3ce1366ef005e",
+    "examples/robustness/wrong_header.csv": "1e709f9256142c4385cea07ad523f4c618ce8cf766d6f9895527e186400be776",
+    "examples/transport/problem.txt": "e6db8ce3741f78ac9102db70b6e269b3f91ed6e5555cec0091169f1587448215",
+    "examples/transport/reference_model.json": "c2960fbb415389bf3c05566646d0d9b502675935ad174dcf26b65262fcc197fe",
+    "modeling_assistant/__init__.py": "8eb3eab5642a44c2491a5513b464105613402ffdd209213d01e94a582cfe68c9",
+    "modeling_assistant/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+    "modeling_assistant/capacity_conflict.py": "91dbd09f6c6e78ed8f4259be9361b88a71d255cf54320bc04ca2250c31e4a5b1",
+    "modeling_assistant/cli.py": "b928006349ef3cbf2eb0f82aaf82d5f1929079042cb5b40546a2d1ed7efc43a7",
+    "modeling_assistant/config.py": "3bde19f9ff792b8612f650dbbe59bda9cd6b0bdc09bb4aa83ae2f32c21fc2dab",
+    "modeling_assistant/configure.py": "181e16c35632d06bae844828dc84edd8fef62cbf42fefd6db4208f335c7880bc",
+    "modeling_assistant/dimension_policy.py": "0749f50cbec5d846ba8cf949299f8295ad9bf0cd931fa0ae8ac479476be40318",
+    "modeling_assistant/dynamics.py": "5f516b2ef84abfcd39e12ea96a01aa160ad8c54be51a6cab81f3b8f4e3f9dc57",
+    "modeling_assistant/extraction.py": "e6bad25e7b264bb4cef45f349b577b2fd4cd5514fda2704acc669ce990081aa0",
+    "modeling_assistant/fitting.py": "7577f4d107cab457821be089dbfeebc0ee0b0b05627f9f8b0e38565e24fd16fd",
+    "modeling_assistant/format_repair.py": "3f2ab8ea661eb1c5cfc302453c341f344f81923d4aa34b219458117b7259fe54",
+    "modeling_assistant/graphs.py": "cd1063f33e1a0e41fa26048bf7c06bf7ec766e097264eb2135975b1e1b264469",
+    "modeling_assistant/model.py": "ce4dfc989d8e684ece4cd272c18f683a6fb41181de43da7bb802a7274e4ff430",
+    "modeling_assistant/numeric_text.py": "7276f0179daba9629ad1f711672ae25d6323ce9c27fe64c2599eda8b6d0e58cf",
+    "modeling_assistant/parameter_policy.py": "dd204fabbff75040f26410cc7ac0540ae7c12f08997a21571932ad0022a420c6",
+    "modeling_assistant/parser.py": "e36f55ec7a73f34f106ba19c09b6a2e246a802c676c4d029c79d1cf1c2f46231",
+    "modeling_assistant/presentation.py": "ac9cddf299c9321945b6de655dfed30197477ff857c5ceaaf25c90b316227c3a",
+    "modeling_assistant/provider.py": "094cd7fdbdc9d9bb1bb0d439ad582b75d583a0cef59cfc30eaf54c33b5862771",
+    "modeling_assistant/solver.py": "aaa42a26a60dd8800632fea12a07422e5d8d777e7f9264535e9f9bff13b2f5b0",
+    "modeling_assistant/source_quotes.py": "f2fbc480d90298b287e1e25a43ca1b9e89437c694c04876b64ec265984e40d98",
+    "modeling_assistant/units.py": "99b712aa00b1357855ee11f93dc0431733c29bff51cffb62276316829bcf8b54",
+    "requirements-assistant-lock.txt": "d7888eaea32fe78f1268a6f72dabe82e1f38dd2da7fb2b0bedb0c286fc2f1ea0",
+    "task_cards/full_regression_protocol_v3.md": "0dc2aef7c8c918f029e92fca7ce9d9030049fe85f28d88c8d49db5f060df8eae",
+    "tests/test_api_configuration.py": "b3ba057230e25982f50de28578678c9e3c405e212a4b52f5670fb2a6d914c85a",
+    "tests/test_batch.py": "3441510fc449123ec7cb3d022d6b4c76aeef89a56fe1f3d44c849481a07b15c8",
+    "tests/test_capacity_boundaries.py": "bed83107219408f25b8835f95139de90e666ff3b214163c09caf4ad9327fcc5e",
+    "tests/test_capacity_conflict.py": "7a188525a050d4c2ee0ff51a8cdad702054d1bbe374a10adc2ffc0969978789a",
+    "tests/test_clarification.py": "ae24fc6cd986f42f20e09f7322ccf2760ae5c537d63808f80bcae07f210a46e5",
+    "tests/test_dynamics.py": "0bc68c55cc35d7fd25e2b23c760b2d1c6b0969f10accf19e7fdb3cf932034426",
+    "tests/test_equivalent_numbers.py": "25c9ca362e6f86c14a074226a9be2ee5b75d0b6229b8d346b50ac5f016a1af1d",
+    "tests/test_extraction_presentation.py": "98566213d1b1654fabefdad77f86e29e600e1d2ac51780f513e3cfa7f90c756a",
+    "tests/test_fitting.py": "bb2ea9fcc106ae4240569cb5e23766489e2c9a459606b5a3c5c052a3778e1bd0",
+    "tests/test_format_repair.py": "8001025309adb299a0cfa229c57bb52598ba979e9ba7ac754e89867a7e69b353",
+    "tests/test_full_regression.py": "6a562bf4681c391f4d162462f10b2b212f43fe64bc3a62d1171e4a98ae535401",
+    "tests/test_graphs.py": "d32d4d83f4ba0d1c4d927c0146e29bc12b49e221732cc8fa7fd1acef3479e0e3",
+    "tests/test_immutable_boundaries.py": "a5d5695350d12782bb145940b863186a9b6bf6c41a1c39b76664e311d744af21",
+    "tests/test_infeasibility.py": "635fdfbe7b97d5ab61f3f85772cb33b492c5772d6170a7450a2aeeb9848ba76e",
+    "tests/test_locked_and_presentation.py": "ce1de84524adad720f2ecaf7627ad1ab24593174982225de30d7bbfd8711bd96",
+    "tests/test_modeling_assistant.py": "b1bcfbb03e929b170e20f3870796b82506fbcc288f493d2c1c8a14cdf96a7995",
+    "tests/test_neutral_clarification.py": "5021d04148fb0a2c75e849a8c9fa88d28d29e03e2dfef375f3d4698ffaf590a3",
+    "tests/test_parameter_feedback.py": "d70ff40a911d31497bdb255c1668e5ff895155c62c2f617cb774b68d6bf498e9",
+    "tests/test_provenance_and_refusal.py": "446e9b13d2f870ad087eadfbbdaf0bf2e3581128b9ef5e92248ea846f99a0e89",
+    "tests/test_transport.py": "70e001ae2fdc87be163f6942d7222608af8db9b73d330a6c975a10b3dd002041",
+    "tests/test_unified_regression.py": "fa62c0a15706848a5f1dbe8cc0c467a796733666f820ce7200602096e21e0ed2",
+    "tests/test_units.py": "2ae74b20e85f08a69fdf32947c0a8f773ddd04cea02a57cb3d3c3d17b71d625b",
+    "tests/test_variants.py": "3a1216832bed6282efdea5cbda1a6364d96b86993334a39dcab2a5560dad504b"
+  },
+  "python": "3.13.16",
+  "scipy": "1.18.1"
+}

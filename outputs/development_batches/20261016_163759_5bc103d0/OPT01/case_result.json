@@ -1,0 +1,12 @@
+{
+  "id": "OPT01",
+  "family": "optimization",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "",
+  "total_tokens": 0,
+  "requested_model": null,
+  "response_model": null,
+  "run_path": "OPT01/20261016_163759_02158b86",
+  "elapsed_seconds": 0.011598791985306889
+}

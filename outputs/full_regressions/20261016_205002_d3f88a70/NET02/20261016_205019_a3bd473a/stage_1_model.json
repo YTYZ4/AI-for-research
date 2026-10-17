@@ -1,0 +1,47 @@
+{
+  "task_type": "graph",
+  "name": "有向输水网络最大流",
+  "problem": "max_flow",
+  "nodes": [
+    "S",
+    "A",
+    "B",
+    "T"
+  ],
+  "source": "S",
+  "target": "T",
+  "edges": [
+    {
+      "source": "S",
+      "target": "A",
+      "weight": 10
+    },
+    {
+      "source": "S",
+      "target": "B",
+      "weight": 5
+    },
+    {
+      "source": "A",
+      "target": "B",
+      "weight": 4
+    },
+    {
+      "source": "A",
+      "target": "T",
+      "weight": 6
+    },
+    {
+      "source": "B",
+      "target": "T",
+      "weight": 9
+    }
+  ],
+  "unit": "立方米/小时",
+  "assumptions": [
+    "所有管道容量均为非负整数，单位为立方米/小时。",
+    "管道只能沿给定方向输水，每条有向边不超过其容量。",
+    "中间节点A、B满足流量守恒，源点S和汇点T不强制守恒。",
+    "S为唯一源点，T为唯一汇点。"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "graph_units_fractional_flow",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "换算后容量不是整数，超出当前最大流求解器范围；保留原值，不截断或四舍五入。",
+  "total_tokens": 1055,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "graph_units_fractional_flow/20261016_225351_b7352dcd",
+  "elapsed_seconds": 2.0313869169913232
+}

@@ -1,0 +1,34 @@
+{
+  "task_type": "graph",
+  "name": "water_network_max_flow",
+  "problem": "max_flow",
+  "nodes": [
+    "S",
+    "A",
+    "T"
+  ],
+  "source": "S",
+  "target": "T",
+  "edges": [
+    {
+      "source": "S",
+      "target": "A",
+      "weight": 10
+    },
+    {
+      "source": "A",
+      "target": "T",
+      "weight": 6
+    },
+    {
+      "source": "S",
+      "target": "T",
+      "weight": 5
+    }
+  ],
+  "unit": "立方米/小时",
+  "assumptions": [
+    "有向边按原题方向建模",
+    "所有节点和边均已给出，无其他管道"
+  ]
+}

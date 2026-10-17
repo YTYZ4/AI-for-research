@@ -1,0 +1,31 @@
+{
+  "id": "conflict_valid_above",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "",
+  "total_tokens": 4816,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "conflict_valid_above/20261016_221923_58cebd9d",
+  "elapsed_seconds": 2.075263749982696,
+  "question_semantics_passed": null,
+  "kind": "conflict",
+  "base_id": "DYN02",
+  "origins": [
+    {
+      "id": "conflict_valid_above",
+      "problem": "examples/conflict_boundaries/valid_above.txt",
+      "kind": "conflict"
+    }
+  ],
+  "quote_audit_passed": null,
+  "raw_schema_valid": true,
+  "format_action": "not_needed",
+  "local_guard_used": false,
+  "source_quote_repaired": false,
+  "original_pass": true,
+  "after_format_pass": true,
+  "final_pass": true,
+  "pass_path": "native"
+}

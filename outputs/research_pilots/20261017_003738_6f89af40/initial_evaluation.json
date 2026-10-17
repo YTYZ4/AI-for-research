@@ -1,0 +1,58 @@
+{
+  "V3": {
+    "label": "continuous_instead_of_integer",
+    "score": {
+      "passed": false,
+      "executable": true,
+      "candidate_self_valid": true,
+      "model_matches_problem": false,
+      "answer_matches_problem": true,
+      "reference_optimum": 2200,
+      "review_required": true,
+      "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+    },
+    "detected": true
+  },
+  "V2": {
+    "label": "missing_material_constraint",
+    "score": {
+      "passed": false,
+      "executable": true,
+      "candidate_self_valid": true,
+      "model_matches_problem": false,
+      "answer_matches_problem": false,
+      "reference_optimum": 2200,
+      "review_required": false,
+      "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+    },
+    "detected": false
+  },
+  "V4": {
+    "label": "wrong_labor_coefficient",
+    "score": {
+      "passed": false,
+      "executable": true,
+      "candidate_self_valid": true,
+      "model_matches_problem": false,
+      "answer_matches_problem": false,
+      "reference_optimum": 2200,
+      "review_required": false,
+      "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+    },
+    "detected": false
+  },
+  "V1": {
+    "label": "correct_control",
+    "score": {
+      "passed": true,
+      "executable": true,
+      "candidate_self_valid": true,
+      "model_matches_problem": true,
+      "answer_matches_problem": true,
+      "reference_optimum": 2200,
+      "review_required": false,
+      "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+    },
+    "detected": false
+  }
+}

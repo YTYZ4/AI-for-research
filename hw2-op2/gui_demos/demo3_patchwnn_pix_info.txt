@@ -1,1 +1,0 @@
-lena|随机像素缺失(30%)|Patch-WNN|Patch-WNN|PSNR=23.60|SSIM=0.7678

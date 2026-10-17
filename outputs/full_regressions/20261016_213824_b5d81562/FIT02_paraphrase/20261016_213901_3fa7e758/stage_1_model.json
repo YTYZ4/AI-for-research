@@ -1,0 +1,15 @@
+{
+  "task_type": "polynomial_fit",
+  "name": "一元普通最小二乘多项式拟合（1–5阶，五折交叉验证选阶）",
+  "assumptions": [
+    "x与y均为无量纲量",
+    "观测相互独立",
+    "模型为一元普通最小二乘多项式",
+    "degree=null表示在train部分内进行五折交叉验证，从1至5阶中选择",
+    "test部分仅用于最终RMSE和MAE检验，不参与选阶",
+    "泛化误差差距可通过train与test的RMSE/MAE对比说明"
+  ],
+  "degree": null,
+  "x_unit": "无量纲",
+  "y_unit": "无量纲"
+}

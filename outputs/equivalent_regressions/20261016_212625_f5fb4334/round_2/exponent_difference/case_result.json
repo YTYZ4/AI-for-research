@@ -1,0 +1,12 @@
+{
+  "id": "exponent_difference",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "环境容量K存在两条冲突记录：5e-1个和6e-1个，请核对哪一条准确。",
+  "total_tokens": 3856,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "exponent_difference/20261016_212701_fae18a44",
+  "elapsed_seconds": 1.0749425419489853
+}

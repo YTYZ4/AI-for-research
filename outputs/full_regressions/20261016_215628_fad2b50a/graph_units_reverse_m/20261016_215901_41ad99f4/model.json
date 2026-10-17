@@ -1,0 +1,35 @@
+{
+  "task_type": "graph",
+  "name": "S到T最短路径",
+  "problem": "shortest_path",
+  "nodes": [
+    "S",
+    "A",
+    "T"
+  ],
+  "source": "S",
+  "target": "T",
+  "edges": [
+    {
+      "source": "S",
+      "target": "A",
+      "weight": 500
+    },
+    {
+      "source": "A",
+      "target": "T",
+      "weight": 250
+    },
+    {
+      "source": "S",
+      "target": "T",
+      "weight": 1000
+    }
+  ],
+  "unit": "米",
+  "assumptions": [
+    "所有给定边均为有向边，直接按其方向建模，不添加反向边。",
+    "节点和边集完整，不存在其他边。",
+    "边权为非负距离，按原单位记录，由程序统一换算为米后求解。"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "conflict_zero_positive",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "环境容量K的原文记录相互冲突：“环境容量恒定0个”；“环境容量为0.5个”。请核对并确认哪条记录准确，或补充记录分别适用的条件。系统未选择任何值，也未执行求解。",
+  "total_tokens": 3870,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "conflict_zero_positive/20261016_214012_a2c98a23",
+  "elapsed_seconds": 1.4127277920488268
+}

@@ -1,0 +1,12 @@
+{
+  "id": "single_missing_capacity",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "原题要求以升/小时进行最大流计算，但尚未提供边S→T的容量数值及其原始单位；请补充该容量的数值和单位。",
+  "total_tokens": 1498,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "single_missing_capacity/20261017_000538_7fcc035b",
+  "elapsed_seconds": 2.0123915419680998
+}

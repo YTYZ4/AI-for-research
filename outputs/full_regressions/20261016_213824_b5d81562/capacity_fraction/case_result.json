@@ -1,0 +1,12 @@
+{
+  "id": "capacity_fraction",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "",
+  "total_tokens": 4126,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "capacity_fraction/20261016_213936_0ac3e005",
+  "elapsed_seconds": 2.056083542003762
+}

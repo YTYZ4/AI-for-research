@@ -1,0 +1,18 @@
+{
+  "task_type": "dynamics",
+  "name": "封闭种群连续Logistic模型",
+  "system": "logistic",
+  "initial": 0.5001,
+  "rate": 0.2,
+  "equilibrium": 0.5,
+  "duration": 30.0,
+  "rate_unit": "1/day",
+  "state_unit": "个",
+  "assumptions": [
+    "种群连续变化，采用常参数Logistic方程 dN/dt = rN(1-N/K)。",
+    "初始状态为 t=0 时的种群数量。",
+    "环境容量K为恒定平衡值，初值可高于或低于该值。",
+    "模拟时长为30天，速率单位为每天，两者单位不同时由求解器统一时间尺度。"
+  ],
+  "time_unit": "day"
+}

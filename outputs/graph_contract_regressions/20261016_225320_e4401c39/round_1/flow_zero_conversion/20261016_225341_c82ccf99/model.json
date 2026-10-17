@@ -1,0 +1,20 @@
+{
+  "task_type": "graph",
+  "name": "S到T最大流",
+  "problem": "max_flow",
+  "nodes": [
+    "S",
+    "T"
+  ],
+  "source": "S",
+  "target": "T",
+  "edges": [
+    {
+      "source": "S",
+      "target": "T",
+      "weight": 0
+    }
+  ],
+  "unit": "立方米/小时",
+  "assumptions": []
+}

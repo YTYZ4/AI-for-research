@@ -1,0 +1,22 @@
+{
+  "id": "capacity_above_capacity",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "",
+  "total_tokens": 3727,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "capacity_above_capacity/20261016_205118_1e67a139",
+  "elapsed_seconds": 1.7779127500252798,
+  "question_semantics_passed": null,
+  "kind": "boundary",
+  "base_id": "DYN02",
+  "raw_schema_valid": true,
+  "format_action": "not_needed",
+  "local_guard_used": false,
+  "original_pass": true,
+  "after_format_pass": true,
+  "final_pass": true,
+  "pass_path": "native"
+}

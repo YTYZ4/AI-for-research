@@ -1,0 +1,12 @@
+{
+  "id": "pure_min_cost",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "原题要求求解最小费用流（含单位成本每升2元）并以立方米/小时表示；当前仅支持最短路径和单商品最大流，不支持最小费用流。支持的边界是：最短路径、单商品最大流；不支持最小费用流、多商品流、时变网络等任务。",
+  "total_tokens": 1492,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "pure_min_cost/20261016_235125_1c124aae",
+  "elapsed_seconds": 1.5439945409889333
+}

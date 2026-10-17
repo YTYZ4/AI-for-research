@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": {
+    "unsupported": true,
+    "no_model": true,
+    "nonblank_explanations": true,
+    "identifies_requested_scope": true,
+    "explains_limit": true,
+    "no_invented_contract_limit": true,
+    "no_silent_downgrade": true
+  },
+  "text": "当前单模型协议无法在同一问题中联合表示有向网络最大流/最小费用流与Logistic动态预测两类任务；请分别提交图网络求解任务和动态模型任务。"
+}

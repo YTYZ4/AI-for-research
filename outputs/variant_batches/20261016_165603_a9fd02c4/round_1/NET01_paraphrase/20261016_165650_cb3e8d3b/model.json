@@ -1,0 +1,56 @@
+{
+  "task_type": "graph",
+  "name": "最短路径_S_T",
+  "problem": "shortest_path",
+  "nodes": [
+    "S",
+    "A",
+    "B",
+    "C",
+    "T"
+  ],
+  "source": "S",
+  "target": "T",
+  "edges": [
+    {
+      "source": "A",
+      "target": "T",
+      "weight": 7
+    },
+    {
+      "source": "C",
+      "target": "T",
+      "weight": 3
+    },
+    {
+      "source": "B",
+      "target": "C",
+      "weight": 5
+    },
+    {
+      "source": "A",
+      "target": "C",
+      "weight": 2
+    },
+    {
+      "source": "B",
+      "target": "A",
+      "weight": 1
+    },
+    {
+      "source": "S",
+      "target": "B",
+      "weight": 2
+    },
+    {
+      "source": "S",
+      "target": "A",
+      "weight": 4
+    }
+  ],
+  "unit": "km",
+  "assumptions": [
+    "路线均为单向，不可逆行，按给定方向建模。",
+    "未提供其他路段，按无其他边处理。"
+  ]
+}

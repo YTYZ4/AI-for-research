@@ -1,0 +1,12 @@
+{
+  "id": "mixed_fitting",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "当前单模型协议无法同时表示联合任务：本题既要求在有向网络上求最大流和最小费用流，又要求联合拟合容量随温度的二次曲线。",
+  "total_tokens": 4990,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "mixed_fitting/20261017_000552_79753326",
+  "elapsed_seconds": 1.6749008749611676
+}

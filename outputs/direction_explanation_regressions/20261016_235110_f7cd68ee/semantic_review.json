@@ -1,0 +1,30 @@
+{
+  "reviewer": "development_assistant",
+  "independent_human_review": false,
+  "automatic_original_results_unchanged": true,
+  "scope": "检查全部18条目标范围响应与9条方向追问；数值结果按独立固定评分。",
+  "findings": [
+    {
+      "id": "flow_missing_direction",
+      "repeat": 1,
+      "classification": "scorer_false_negative",
+      "detail": "已明确的对象为源汇，并未选择边方向。原句带R源及S→T描述的措辞不够整洁，但实际询问了三个方向选项。"
+    },
+    {
+      "id": "cost_missing_direction",
+      "repeat": 2,
+      "classification": "scorer_false_negative",
+      "detail": "不处理最小费用流明确表示任务范围限制。"
+    },
+    {
+      "id": "cost_paraphrase",
+      "repeat": 1,
+      "classification": "remaining_response_failure",
+      "detail": "应unsupported，却needs_clarification并让用户改成其他任务；一般路径未使用图契约。"
+    },
+    {
+      "classification": "refusal_quality",
+      "detail": "其余17条目标范围响应没有复现旧的改题建议或虚构节点/容量缺失；检查不是完整语义证明。"
+    }
+  ]
+}

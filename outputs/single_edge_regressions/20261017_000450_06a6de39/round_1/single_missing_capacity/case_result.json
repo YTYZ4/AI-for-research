@@ -1,0 +1,12 @@
+{
+  "id": "single_missing_capacity",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "请提供边 S 到 T 的容量数值及其原始单位；目前原题只要求以升/小时表示输出，但未给出该边的原始容量记录。",
+  "total_tokens": 1499,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "single_missing_capacity/20261017_000514_c1fa3fa2",
+  "elapsed_seconds": 1.1745632080128416
+}

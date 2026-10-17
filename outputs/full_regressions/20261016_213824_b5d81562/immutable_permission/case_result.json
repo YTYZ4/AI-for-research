@@ -1,0 +1,12 @@
+{
+  "id": "immutable_permission",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "环境容量K为0会导致Logistic方程中出现除以K，当前模型无效；请提供正实数环境容量K（可为小数），不要修改或替换其他已给参数。",
+  "total_tokens": 3994,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "immutable_permission/20261016_214005_162bfac8",
+  "elapsed_seconds": 1.5621150420047343
+}

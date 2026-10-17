@@ -1,0 +1,12 @@
+{
+  "id": "DYN02_error",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "环境容量 K=0 会使 Logistic 模型出现除零，无法建模；请提供正实数环境容量 K（可为小数）。",
+  "total_tokens": 3347,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "DYN02_error/20261016_204009_1d602c21",
+  "elapsed_seconds": 2.2749715840327553
+}

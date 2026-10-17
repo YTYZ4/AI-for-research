@@ -1,0 +1,31 @@
+{
+  "id": "immutable_valid_zero",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "",
+  "total_tokens": 4123,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "immutable_valid_zero/20261016_214000_bf7b6d50",
+  "elapsed_seconds": 1.9087692499742843,
+  "question_semantics_passed": null,
+  "kind": "immutable",
+  "base_id": "DYN02",
+  "origins": [
+    {
+      "id": "immutable_valid_zero",
+      "problem": "examples/immutable_boundaries/valid_zero.txt",
+      "kind": "immutable"
+    }
+  ],
+  "quote_audit_passed": null,
+  "raw_schema_valid": true,
+  "format_action": "not_needed",
+  "local_guard_used": false,
+  "source_quote_repaired": false,
+  "original_pass": true,
+  "after_format_pass": true,
+  "final_pass": true,
+  "pass_path": "native"
+}

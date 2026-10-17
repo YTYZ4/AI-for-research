@@ -1,0 +1,74 @@
+{
+  "name": "产品生产计划",
+  "assumptions": [
+    "产量为非负整数件，符合整件产品建模假设。",
+    "工时与原料消耗按每件产品线性计算。",
+    "本期工时上限为100小时，原料上限为80千克，无其他约束。"
+  ],
+  "variables": [
+    {
+      "name": "x_A",
+      "description": "产品A产量",
+      "unit": "件",
+      "kind": "integer",
+      "lower": 0,
+      "upper": null
+    },
+    {
+      "name": "x_B",
+      "description": "产品B产量",
+      "unit": "件",
+      "kind": "integer",
+      "lower": 0,
+      "upper": null
+    }
+  ],
+  "objective": {
+    "sense": "max",
+    "terms": [
+      {
+        "variable": "x_A",
+        "coefficient": 40
+      },
+      {
+        "variable": "x_B",
+        "coefficient": 30
+      }
+    ],
+    "unit": "元"
+  },
+  "constraints": [
+    {
+      "name": "工时限制",
+      "terms": [
+        {
+          "variable": "x_A",
+          "coefficient": 2
+        },
+        {
+          "variable": "x_B",
+          "coefficient": 1
+        }
+      ],
+      "sense": "<=",
+      "rhs": 100,
+      "unit": "小时"
+    },
+    {
+      "name": "原料限制",
+      "terms": [
+        {
+          "variable": "x_A",
+          "coefficient": 1
+        },
+        {
+          "variable": "x_B",
+          "coefficient": 2
+        }
+      ],
+      "sense": "<=",
+      "rhs": 80,
+      "unit": "千克"
+    }
+  ]
+}

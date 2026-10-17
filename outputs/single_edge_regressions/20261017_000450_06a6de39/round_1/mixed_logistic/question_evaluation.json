@@ -1,0 +1,11 @@
+{
+  "applied": true,
+  "passed": true,
+  "checks": {
+    "expected_status": true,
+    "nonempty_question": true,
+    "relevant_topic": true
+  },
+  "text": "当前请求同时要求Logistic动态预测和网络最大流/成本联合优化两类建模任务；当前单模型协议每次只能表示一个任务，无法联合表示“先预测再联合计算最大流且成本最低”的组合要求，因此整体返回unsupported。",
+  "scope": "状态/主题初筛；显式禁止改值时检查修改建议，否则Logistic容量检查正实数限制。不是完整语义证明。"
+}

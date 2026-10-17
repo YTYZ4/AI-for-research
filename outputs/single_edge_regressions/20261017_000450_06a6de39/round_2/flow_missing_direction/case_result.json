@@ -1,0 +1,12 @@
+{
+  "id": "flow_missing_direction",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "缺少边 S—T 的方向：最大流需要每条边的方向。",
+  "total_tokens": 1492,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "flow_missing_direction/20261017_000520_5591eb3d",
+  "elapsed_seconds": 1.3734302920056507
+}

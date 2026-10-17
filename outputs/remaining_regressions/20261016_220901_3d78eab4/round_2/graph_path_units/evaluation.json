@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "numeric": {
+    "passed": true,
+    "checks": {
+      "original_edges": true,
+      "source_target": true,
+      "path": true,
+      "distance": true
+    }
+  },
+  "provenance": {
+    "source_preserved": true,
+    "quotes_checked": true,
+    "edge_count": true,
+    "quotes_verbatim": true,
+    "audit_matches": true,
+    "original_values_units": true
+  }
+}

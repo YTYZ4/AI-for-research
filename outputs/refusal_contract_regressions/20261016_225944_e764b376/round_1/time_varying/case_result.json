@@ -1,0 +1,12 @@
+{
+  "id": "time_varying",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "该请求要求求解时变网络（容量随时间变化）的最大流时间轨迹；本系统仅支持静态单商品最大流和最短路径，不支持时变网络、随时间变化的容量或多时段流量轨迹。请将问题改为静态最大流（所有边有固定容量）或静态最短路径。",
+  "total_tokens": 1357,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "time_varying/20261016_230005_615bed34",
+  "elapsed_seconds": 1.454189625044819
+}

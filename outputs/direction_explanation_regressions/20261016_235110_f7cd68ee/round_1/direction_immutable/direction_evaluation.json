@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "checks": {
+    "clarification": true,
+    "no_model": true,
+    "nonblank": true,
+    "asks_direction": true,
+    "no_assumed_direction": true
+  },
+  "text": "缺少管道方向：原题说明“方向尚未提供”，因此无法确定 S 到 T 普通最大流中各条边可用的方向。"
+}

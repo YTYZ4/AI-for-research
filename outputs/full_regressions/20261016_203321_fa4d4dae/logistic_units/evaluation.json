@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "source_values_match_original": true,
+  "numeric": {
+    "passed": true,
+    "checks": {
+      "parameters": true,
+      "rate": true,
+      "duration": true,
+      "rate_unit": true,
+      "state_unit": true,
+      "trajectory": true,
+      "endpoints": true
+    },
+    "max_error": 2.635420003116451e-06
+  },
+  "conversion": {
+    "method": "duration_to_original_rate_unit_v1",
+    "original_rate": 0.2,
+    "original_rate_unit": "1/day",
+    "original_duration": 720.0,
+    "original_duration_unit": "hour",
+    "factor": "0.04166666666666666666666666667",
+    "normalized_duration": 30.0,
+    "normalized_time_unit": "day",
+    "rate_unchanged": true,
+    "source_quotes_checked": true
+  }
+}

@@ -1,0 +1,4 @@
+source,target,weight
+S,A,500
+A,T,250
+S,T,1000

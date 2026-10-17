@@ -1,0 +1,13 @@
+{
+  "applied": true,
+  "passed": true,
+  "checks": {
+    "expected_status": true,
+    "nonempty_question": true,
+    "relevant_topic": true,
+    "no_replacement_suggestion": true,
+    "correct_dimensions": true
+  },
+  "text": "当前模型为 dN/dt = rN(1-N/K)，需要环境容量 K 为正实数；题面给出的环境容量为 0，会导致除零，当前常参数 Logistic 模型无效。由于你明确要求不要修改任何参数，无法在当前参数下建模或求解。",
+  "scope": "状态/主题初筛；显式禁止改值时检查修改建议，否则Logistic容量检查正实数限制。不是完整语义证明。"
+}

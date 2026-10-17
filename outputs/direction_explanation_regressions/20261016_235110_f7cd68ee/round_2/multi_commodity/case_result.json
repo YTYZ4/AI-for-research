@@ -1,0 +1,12 @@
+{
+  "id": "multi_commodity",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "原题要求同时运输甲乙两种商品并共享边容量，属于多商品流任务；当前仅支持最短路径和单商品最大流，无法处理多商品共享容量的最大流。",
+  "total_tokens": 1457,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "multi_commodity/20261016_235153_7fbd47da",
+  "elapsed_seconds": 1.2666812920360826
+}

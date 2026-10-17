@@ -1,0 +1,16 @@
+{
+  "task_type": "dynamics",
+  "name": "Logistic Growth 0-30 Days",
+  "system": "logistic",
+  "initial": 100,
+  "rate": 0.2,
+  "equilibrium": 1000,
+  "duration": 30,
+  "time_unit": "day",
+  "rate_unit": "1/day",
+  "state_unit": "个",
+  "assumptions": [
+    "种群数量使用连续近似",
+    "参数恒定，无迁入迁出"
+  ]
+}

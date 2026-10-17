@@ -1,0 +1,386 @@
+[
+  {
+    "id": "OPT01",
+    "classification": "both_pass",
+    "outcomes": [
+      "pass",
+      "pass"
+    ],
+    "failure_categories": [
+      "",
+      ""
+    ]
+  },
+  {
+    "id": "OPT02",
+    "classification": "both_pass",
+    "outcomes": [
+      "pass",
+      "pass"
+    ],
+    "failure_categories": [
+      "",
+      ""
+    ]
+  },
+  {
+    "id": "FIT01",
+    "classification": "both_pass",
+    "outcomes": [
+      "pass",
+      "pass"
+    ],
+    "failure_categories": [
+      "",
+      ""
+    ]
+  },
+  {
+    "id": "FIT02",
+    "classification": "both_pass",
+    "outcomes": [
+      "pass",
+      "pass"
+    ],
+    "failure_categories": [
+      "",
+      ""
+    ]
+  },
+  {
+    "id": "DYN01",
+    "classification": "both_pass",
+    "outcomes": [
+      "pass",
+      "pass"
+    ],
+    "failure_categories": [
+      "",
+      ""
+    ]
+  },
+  {
+    "id": "DYN02",
+    "classification": "both_pass",
+    "outcomes": [
+      "pass",
+      "pass"
+    ],
+    "failure_categories": [
+      "",
+      ""
+    ]
+  },
+  {
+    "id": "NET01",
+    "classification": "both_pass",
+    "outcomes": [
+      "pass",
+      "pass"
+    ],
+    "failure_categories": [
+      "",
+      ""
+    ]
+  },
+  {
+    "id": "NET02",
+    "classification": "both_pass",
+    "outcomes": [
+      "pass",
+      "pass"
+    ],
+    "failure_categories": [
+      "",
+      ""
+    ]
+  },
+  {
+    "id": "OPT01_paraphrase",
+    "classification": "both_pass",
+    "outcomes": [
+      "pass",
+      "pass"
+    ],
+    "failure_categories": [
+      "",
+      ""
+    ]
+  },
+  {
+    "id": "OPT01_missing",
+    "classification": "both_pass",
+    "outcomes": [
+      "pass",
+      "pass"
+    ],
+    "failure_categories": [
+      "",
+      ""
+    ]
+  },
+  {
+    "id": "OPT01_error",
+    "classification": "both_fail",
+    "outcomes": [
+      "fail",
+      "fail"
+    ],
+    "failure_categories": [
+      "solver_error",
+      "solver_error"
+    ]
+  },
+  {
+    "id": "OPT02_paraphrase",
+    "classification": "both_pass",
+    "outcomes": [
+      "pass",
+      "pass"
+    ],
+    "failure_categories": [
+      "",
+      ""
+    ]
+  },
+  {
+    "id": "OPT02_missing",
+    "classification": "both_pass",
+    "outcomes": [
+      "pass",
+      "pass"
+    ],
+    "failure_categories": [
+      "",
+      ""
+    ]
+  },
+  {
+    "id": "OPT02_error",
+    "classification": "both_fail",
+    "outcomes": [
+      "fail",
+      "fail"
+    ],
+    "failure_categories": [
+      "solver_error",
+      "solver_error"
+    ]
+  },
+  {
+    "id": "FIT01_paraphrase",
+    "classification": "both_pass",
+    "outcomes": [
+      "pass",
+      "pass"
+    ],
+    "failure_categories": [
+      "",
+      ""
+    ]
+  },
+  {
+    "id": "FIT01_missing",
+    "classification": "both_pass",
+    "outcomes": [
+      "pass",
+      "pass"
+    ],
+    "failure_categories": [
+      "",
+      ""
+    ]
+  },
+  {
+    "id": "FIT01_error",
+    "classification": "both_pass",
+    "outcomes": [
+      "pass",
+      "pass"
+    ],
+    "failure_categories": [
+      "",
+      ""
+    ]
+  },
+  {
+    "id": "FIT02_paraphrase",
+    "classification": "both_pass",
+    "outcomes": [
+      "pass",
+      "pass"
+    ],
+    "failure_categories": [
+      "",
+      ""
+    ]
+  },
+  {
+    "id": "FIT02_missing",
+    "classification": "both_pass",
+    "outcomes": [
+      "pass",
+      "pass"
+    ],
+    "failure_categories": [
+      "",
+      ""
+    ]
+  },
+  {
+    "id": "FIT02_error",
+    "classification": "both_pass",
+    "outcomes": [
+      "pass",
+      "pass"
+    ],
+    "failure_categories": [
+      "",
+      ""
+    ]
+  },
+  {
+    "id": "DYN01_paraphrase",
+    "classification": "both_pass",
+    "outcomes": [
+      "pass",
+      "pass"
+    ],
+    "failure_categories": [
+      "",
+      ""
+    ]
+  },
+  {
+    "id": "DYN01_missing",
+    "classification": "both_pass",
+    "outcomes": [
+      "pass",
+      "pass"
+    ],
+    "failure_categories": [
+      "",
+      ""
+    ]
+  },
+  {
+    "id": "DYN01_error",
+    "classification": "both_pass",
+    "outcomes": [
+      "pass",
+      "pass"
+    ],
+    "failure_categories": [
+      "",
+      ""
+    ]
+  },
+  {
+    "id": "DYN02_paraphrase",
+    "classification": "both_pass",
+    "outcomes": [
+      "pass",
+      "pass"
+    ],
+    "failure_categories": [
+      "",
+      ""
+    ]
+  },
+  {
+    "id": "DYN02_missing",
+    "classification": "both_pass",
+    "outcomes": [
+      "pass",
+      "pass"
+    ],
+    "failure_categories": [
+      "",
+      ""
+    ]
+  },
+  {
+    "id": "DYN02_error",
+    "classification": "both_fail",
+    "outcomes": [
+      "fail",
+      "fail"
+    ],
+    "failure_categories": [
+      "generation_error",
+      "generation_error"
+    ]
+  },
+  {
+    "id": "NET01_paraphrase",
+    "classification": "both_pass",
+    "outcomes": [
+      "pass",
+      "pass"
+    ],
+    "failure_categories": [
+      "",
+      ""
+    ]
+  },
+  {
+    "id": "NET01_missing",
+    "classification": "both_pass",
+    "outcomes": [
+      "pass",
+      "pass"
+    ],
+    "failure_categories": [
+      "",
+      ""
+    ]
+  },
+  {
+    "id": "NET01_error",
+    "classification": "both_pass",
+    "outcomes": [
+      "pass",
+      "pass"
+    ],
+    "failure_categories": [
+      "",
+      ""
+    ]
+  },
+  {
+    "id": "NET02_paraphrase",
+    "classification": "both_pass",
+    "outcomes": [
+      "pass",
+      "pass"
+    ],
+    "failure_categories": [
+      "",
+      ""
+    ]
+  },
+  {
+    "id": "NET02_missing",
+    "classification": "both_pass",
+    "outcomes": [
+      "pass",
+      "pass"
+    ],
+    "failure_categories": [
+      "",
+      ""
+    ]
+  },
+  {
+    "id": "NET02_error",
+    "classification": "both_pass",
+    "outcomes": [
+      "pass",
+      "pass"
+    ],
+    "failure_categories": [
+      "",
+      ""
+    ]
+  }
+]

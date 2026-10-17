@@ -1,0 +1,16 @@
+{
+  "task_type": "dynamics",
+  "name": "newton_cooling_liquid",
+  "system": "newton_cooling",
+  "initial": 90,
+  "rate": 0.1,
+  "equilibrium": 20,
+  "duration": 30.0,
+  "rate_unit": "1/min",
+  "state_unit": "celsius",
+  "assumptions": [
+    "液体温度均匀",
+    "环境温度与冷却系数恒定"
+  ],
+  "time_unit": "min"
+}

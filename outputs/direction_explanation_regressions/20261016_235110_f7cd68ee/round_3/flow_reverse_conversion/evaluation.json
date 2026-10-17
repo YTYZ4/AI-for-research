@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "checks": {
+    "source_preserved": true,
+    "quotes_checked": true,
+    "edge_count": true,
+    "quotes_verbatim": true,
+    "audit_matches": true,
+    "problem": true,
+    "nodes": true,
+    "source_target": true,
+    "unit": true,
+    "edges": true,
+    "original_edges": true,
+    "flow": true
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "task_type": "dynamics",
+  "name": "连续Logistic种群轨迹与末值",
+  "system": "logistic",
+  "initial": 1.5,
+  "rate": 0.2,
+  "equilibrium": 0.5,
+  "duration": 30.0,
+  "rate_unit": "1/day",
+  "state_unit": "个",
+  "assumptions": [
+    "采用连续Logistic模型 dN/dt = rN(1 - N/K)，假设种群连续变化并可用实数表示。",
+    "无迁入迁出，环境承载量与内禀增长率均为常数。",
+    "初始种群为1.5个，环境承载量K为0.5个，内禀增长率为0.2每天。",
+    "模拟时长为30天，速率单位与时长单位不同，由计算程序统一量纲。",
+    "初始种群高于环境承载量，轨迹按模型参数自然下降，不修改初值。"
+  ],
+  "time_unit": "day"
+}

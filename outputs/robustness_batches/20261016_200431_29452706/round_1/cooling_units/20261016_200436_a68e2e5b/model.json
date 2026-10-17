@@ -1,0 +1,17 @@
+{
+  "task_type": "dynamics",
+  "name": "牛顿冷却模型",
+  "system": "newton_cooling",
+  "initial": 90,
+  "rate": 0.1,
+  "equilibrium": 20,
+  "duration": 30,
+  "time_unit": "min",
+  "rate_unit": "1/min",
+  "state_unit": "°C",
+  "assumptions": [
+    "均匀温度，冷却系数恒定",
+    "原模拟时长为0.5小时，换算为30分钟",
+    "速率为0.1每分钟，无需换算；温度单位为摄氏度"
+  ]
+}

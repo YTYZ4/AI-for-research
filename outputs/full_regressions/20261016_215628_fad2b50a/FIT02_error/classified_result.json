@@ -1,0 +1,31 @@
+{
+  "id": "FIT02_error",
+  "family": "fitting",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "普通多项式拟合仅支持1–5阶；题面指定阶数为-2，超出支持范围，因此无法按该阶数建模。",
+  "total_tokens": 4129,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "FIT02_error/20261016_215711_cb66b04e",
+  "elapsed_seconds": 1.217333625012543,
+  "question_semantics_passed": true,
+  "kind": "error",
+  "base_id": "FIT02",
+  "origins": [
+    {
+      "id": "FIT02_error",
+      "problem": "examples/development_variants/FIT02_error.txt",
+      "kind": "error"
+    }
+  ],
+  "quote_audit_passed": null,
+  "raw_schema_valid": true,
+  "format_action": "not_needed",
+  "local_guard_used": false,
+  "source_quote_repaired": false,
+  "original_pass": true,
+  "after_format_pass": true,
+  "final_pass": true,
+  "pass_path": "native"
+}

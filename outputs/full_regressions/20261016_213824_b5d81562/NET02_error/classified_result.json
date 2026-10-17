@@ -1,0 +1,31 @@
+{
+  "id": "NET02_error",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "边 S→A 的容量为 -3 立方米/小时，负容量超出最大流模型支持范围（仅支持非负整数容量），且用户明确要求不得修改负容量，因此无法建立可求解的最大流模型。",
+  "total_tokens": 3701,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "NET02_error/20261016_213925_a3f9a1e7",
+  "elapsed_seconds": 2.0298126250272617,
+  "question_semantics_passed": true,
+  "kind": "error",
+  "base_id": "NET02",
+  "origins": [
+    {
+      "id": "NET02_error",
+      "problem": "examples/development_variants/NET02_error.txt",
+      "kind": "error"
+    }
+  ],
+  "quote_audit_passed": null,
+  "raw_schema_valid": true,
+  "format_action": "not_needed",
+  "local_guard_used": false,
+  "source_quote_repaired": false,
+  "original_pass": true,
+  "after_format_pass": true,
+  "final_pass": true,
+  "pass_path": "native"
+}

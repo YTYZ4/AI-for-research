@@ -1,0 +1,12 @@
+{
+  "id": "flow_reverse_conversion",
+  "family": "graph",
+  "outcome": "fail",
+  "failure_category": "unsupported",
+  "detail": "原边容量为0.001立方米/小时，统一输出单位升/小时后为1升/小时（整数），但当前求解器要求输出单位下的容量换算为整数；该题指定输出单位为升/小时且禁止取整。若仅按原单位求解，可支持；但明确要求按升/小时输出时超出当前求解器对统一输出单位下整数容量的限制。",
+  "total_tokens": 4928,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "flow_reverse_conversion/20261016_224704_460963a9",
+  "elapsed_seconds": 2.0384553750045598
+}

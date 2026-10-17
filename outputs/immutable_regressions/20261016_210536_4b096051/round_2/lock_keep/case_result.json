@@ -1,0 +1,12 @@
+{
+  "id": "lock_keep",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "环境容量K=0.0不满足K>0。原题明确禁止改动参数；保持原值时超出当前连续Logistic模型支持范围，停止求解。",
+  "total_tokens": 3729,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "lock_keep/20261016_210603_8d243183",
+  "elapsed_seconds": 2.247367749980185
+}

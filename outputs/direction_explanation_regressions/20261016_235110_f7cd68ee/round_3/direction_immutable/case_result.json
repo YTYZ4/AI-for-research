@@ -1,0 +1,12 @@
+{
+  "id": "direction_immutable",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "尚未提供管道中 S 与 T 之间的方向；请明确该边是 S→T、T→S，还是双向（若双向，将按两条反向边处理）。",
+  "total_tokens": 1488,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "direction_immutable/20261016_235220_5087f6b6",
+  "elapsed_seconds": 1.3572230839636177
+}

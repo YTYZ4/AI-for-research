@@ -1,0 +1,31 @@
+{
+  "id": "FIT02_paraphrase",
+  "family": "fitting",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "",
+  "total_tokens": 4296,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "FIT02_paraphrase/20261016_215707_ced88286",
+  "elapsed_seconds": 2.588184916996397,
+  "question_semantics_passed": null,
+  "kind": "paraphrase",
+  "base_id": "FIT02",
+  "origins": [
+    {
+      "id": "FIT02_paraphrase",
+      "problem": "examples/development_variants/FIT02_paraphrase.txt",
+      "kind": "paraphrase"
+    }
+  ],
+  "quote_audit_passed": null,
+  "raw_schema_valid": true,
+  "format_action": "not_needed",
+  "local_guard_used": false,
+  "source_quote_repaired": false,
+  "original_pass": true,
+  "after_format_pass": true,
+  "final_pass": true,
+  "pass_path": "native"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "mixed_fitting",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "当前任务同时要求求解最大流与最小费用的网络流问题，以及一元多项式拟合任务，属于联合建模需求；单一模型协议无法表示联合任务，无法同时完成这两项要求。",
+  "total_tokens": 4952,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "mixed_fitting/20261016_235839_aac266cc",
+  "elapsed_seconds": 1.1937455409788527
+}

@@ -1,0 +1,139 @@
+{
+  "source_batch": "outputs/full_regressions/20261016_221715_01b77856",
+  "groups": {
+    "immutable_value_treated_as_missing_or_changeable": 8,
+    "conflict_stage_mixed_with_domain": 2,
+    "post_conversion_integrality": 1
+  },
+  "prompt_conflicts": [
+    "旧extraction_context：参数无效仍应明确追问。",
+    "旧INSTRUCTIONS：K缺失或非正时，追问明确写请提供正实数环境容量K（可为小数）。"
+  ],
+  "interpretation": "这些绝对化指令与禁止改值及冲突优先规则矛盾，是优先修复的共因；没有通过消融试验证明各改动的独立因果贡献。",
+  "cases": [
+    {
+      "id": "DYN02_error",
+      "category": "immutable_value_treated_as_missing_or_changeable",
+      "input": "封闭种群连续Logistic模型，初始100个，增长率0.2每天，环境容量K=0个。求0到30天轨迹。不得替换容量数值。\n",
+      "original_status": "needs_clarification",
+      "original_questions": [
+        "当前记录的环境容量K=0，会使Logistic方程出现除零，无法建立有效模型；请提供正实数环境容量K（可为小数）及其数量单位。"
+      ],
+      "original_assumptions": null,
+      "guard_reason": "原文禁止改值且本地原参数域检查失败"
+    },
+    {
+      "id": "immutable_lock_original",
+      "category": "immutable_value_treated_as_missing_or_changeable",
+      "input": "封闭种群连续Logistic模型，初始1.5个，环境容量恒定0个，增长率0.2每天，模拟0到30天，求轨迹和最终数量。不得改动参数。\n",
+      "original_status": "needs_clarification",
+      "original_questions": [
+        "环境容量K=0会使Logistic方程出现除零并使模型无效，请提供正实数环境容量K（可为小数）及其数量单位。"
+      ],
+      "original_assumptions": null,
+      "guard_reason": "原文禁止改值且本地原参数域检查失败"
+    },
+    {
+      "id": "immutable_lock_dont",
+      "category": "immutable_value_treated_as_missing_or_changeable",
+      "input": "封闭种群连续Logistic模型，初始1.5个，环境容量恒定0个，增长率0.2每天，模拟0到30天，求轨迹和最终数量。不要修改任何参数。\n",
+      "original_status": "needs_clarification",
+      "original_questions": [
+        "当前记录环境容量K为0，但连续Logistic模型要求K为正实数（状态方程中N/K会除以零）。请确认并提供正实数环境容量K（可为小数）及其数量单位；原题已给的其他参数保持不变。"
+      ],
+      "original_assumptions": null,
+      "guard_reason": "原文禁止改值且本地原参数域检查失败"
+    },
+    {
+      "id": "immutable_lock_keep",
+      "category": "immutable_value_treated_as_missing_or_changeable",
+      "input": "封闭种群连续Logistic模型，初始1.5个，环境容量恒定0个，增长率0.2每天，模拟0到30天，求轨迹和最终数量。全部参数必须保持原样。\n",
+      "original_status": "needs_clarification",
+      "original_questions": [
+        "环境容量K=0会使Logistic模型出现除零并无效；请提供正实数环境容量K（可为小数）及其数量单位，或确认是否改用其他模型。"
+      ],
+      "original_assumptions": null,
+      "guard_reason": "原文禁止改值且本地原参数域检查失败"
+    },
+    {
+      "id": "immutable_lock_cannot",
+      "category": "immutable_value_treated_as_missing_or_changeable",
+      "input": "封闭种群连续Logistic模型，初始1.5个，环境容量恒定0个，增长率0.2每天，模拟0到30天，求轨迹和最终数量。保持原值不能调整。\n",
+      "original_status": "needs_clarification",
+      "original_questions": [
+        "当前环境容量 K 为 0，Logistic 方程 dN/dt = rN(1-N/K) 在 K=0 时出现除零而无效；请提供正实数环境容量 K（可为小数）及其数量单位。"
+      ],
+      "original_assumptions": null,
+      "guard_reason": "原文禁止改值且本地原参数域检查失败"
+    },
+    {
+      "id": "immutable_negated_permission_invalid",
+      "category": "immutable_value_treated_as_missing_or_changeable",
+      "input": "封闭种群连续Logistic模型，初始1.5个，环境容量恒定0个，增长率0.2每天，模拟0到30天，求轨迹和最终数量。不允许修改参数。\n",
+      "original_status": "needs_clarification",
+      "original_questions": [
+        "当前提取到环境容量K=0，但连续Logistic模型要求环境容量K为正实数；请确认并提供正实数环境容量K（可为小数）及其数量单位。"
+      ],
+      "original_assumptions": null,
+      "guard_reason": "原文禁止改值且本地原参数域检查失败"
+    },
+    {
+      "id": "conflict_all_negative",
+      "category": "conflict_stage_mixed_with_domain",
+      "input": "封闭种群连续Logistic模型，初始1.5个，容量恒定-1个，另一记录K=-2个，增长率0.2每天，模拟0到30天。不得改动参数。\n",
+      "original_status": "needs_clarification",
+      "original_questions": [
+        "当前环境容量K存在互相冲突的记录（容量恒定-1个、另一记录K=-2个），且均不在常参数连续Logistic模型的有效参数域内（要求K>0）。请先核对哪条原始记录准确；确认后请提供正实数环境容量K（可为小数）及其数量单位。"
+      ],
+      "original_assumptions": null,
+      "guard_reason": "容量原文记录冲突，先澄清再校验参数域"
+    },
+    {
+      "id": "equivalent_same_invalid",
+      "category": "immutable_value_treated_as_missing_or_changeable",
+      "input": "封闭种群连续Logistic模型，初始1.5个，环境容量恒定-0个，另一记录K=0.0个，增长率0.2每天，模拟0到30天，求轨迹及最终数量。不得改动参数。\n",
+      "original_status": "needs_clarification",
+      "original_questions": [
+        "当前记录的环境容量K为0个（另一记录K=0.0个，数值等价），会使Logistic方程出现除零，模型无效。请提供正实数环境容量K（可为小数）及其数量单位。"
+      ],
+      "original_assumptions": null,
+      "guard_reason": "原文禁止改值且本地原参数域检查失败"
+    },
+    {
+      "id": "graph_units_fractional_flow",
+      "category": "post_conversion_integrality",
+      "input": "有向输水网络只有S到T容量1升/小时，节点S、T，无其他边。要求所有容量和结果均以立方米/小时表示，不允许改变统一输出单位或取整。求最大流。\n",
+      "original_status": "ready",
+      "original_questions": [],
+      "original_assumptions": [
+        "有向边按原方向使用，不增加补边。",
+        "最大流容量为非负整数容量，原容量1升/小时为整数容量。",
+        "统一输出单位为立方米/小时，程序按单位换算后求解报告，不取整。",
+        "仅包含用户明确列出的全部边：S→T，无其他边。"
+      ],
+      "guard_reason": "换算后容量不是整数，超出当前最大流求解器范围；保留原值，不截断或四舍五入。"
+    },
+    {
+      "id": "remaining_permission_forbidden",
+      "category": "immutable_value_treated_as_missing_or_changeable",
+      "input": "封闭种群连续Logistic模型，初始1.5个，环境容量恒定0个，增长率0.2每天，模拟0到30天，求轨迹和最终数量。不允许修改参数，也不要索要替代值。\n",
+      "original_status": "needs_clarification",
+      "original_questions": [
+        "当前环境容量K=0，在连续Logistic模型中会导致分母为零，无法建立有效方程；请提供正实数环境容量K（可为小数）及其数量单位。"
+      ],
+      "original_assumptions": null,
+      "guard_reason": "原文禁止改值且本地原参数域检查失败"
+    },
+    {
+      "id": "remaining_permission_conflict",
+      "category": "conflict_stage_mixed_with_domain",
+      "input": "封闭种群连续Logistic模型，初始1.5个，环境容量恒定0个，增长率0.2每天，模拟0到30天，求轨迹和最终数量。另一记录K=0.5个。可以修改参数，但请先询问，不要自行替换数值。\n",
+      "original_status": "needs_clarification",
+      "original_questions": [
+        "同一常参数 Logistic 题面中容量 K 的记录存在冲突：原文分别有“环境容量恒定0个”和“K=0.5个”。请核对哪一条准确。若确认 K=0，请说明是否允许修改为正实数环境容量 K（可为小数）及其数量单位；若不修改，则当前模型无效。"
+      ],
+      "original_assumptions": null,
+      "guard_reason": "容量原文记录冲突，先澄清再校验参数域"
+    }
+  ]
+}

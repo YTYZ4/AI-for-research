@@ -1,0 +1,467 @@
+[
+  {
+    "case": "furniture",
+    "exit_code": 0,
+    "record": "outputs/modeling_assistant/development_regression_v020/furniture/20261016_144133_282e2699/run.json",
+    "envelope": "ready",
+    "questions": [],
+    "variables": [
+      {
+        "name": "x_table",
+        "description": "每周生产的桌子数量",
+        "unit": "张",
+        "kind": "integer",
+        "lower": 0,
+        "upper": null
+      },
+      {
+        "name": "x_chair",
+        "description": "每周生产的椅子数量",
+        "unit": "把",
+        "kind": "integer",
+        "lower": 0,
+        "upper": null
+      }
+    ],
+    "assumptions": [
+      "桌子、椅子为整件实物产品，生产数量取非负整数。",
+      "每周木工可用工时上限为120小时，油漆工可用工时上限为100小时。",
+      "利润单位为元，工时单位为小时。"
+    ],
+    "result": {
+      "status": "optimal",
+      "solver": "scipy.optimize.milp/HiGHS",
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "elapsed_seconds": 0.020802165963687003,
+      "values": {
+        "x_table": 20.0,
+        "x_chair": 20.0
+      },
+      "objective": 4000.0,
+      "verification": {
+        "passed": true,
+        "checks": [
+          {
+            "name": "x_table 下界",
+            "passed": true
+          },
+          {
+            "name": "x_table 整数性",
+            "passed": true
+          },
+          {
+            "name": "x_chair 下界",
+            "passed": true
+          },
+          {
+            "name": "x_chair 整数性",
+            "passed": true
+          },
+          {
+            "name": "carpentry_hours",
+            "lhs": 120.0,
+            "sense": "<=",
+            "rhs": 120,
+            "violation": 0,
+            "passed": true
+          },
+          {
+            "name": "painting_hours",
+            "lhs": 100.0,
+            "sense": "<=",
+            "rhs": 100,
+            "violation": 0,
+            "passed": true
+          },
+          {
+            "name": "目标值复算",
+            "passed": true
+          }
+        ],
+        "objective_recomputed": 4000.0,
+        "scope": "仅检查给定模型下的可行性及目标复算；不证明自然语言建模完整或解全局最优。"
+      }
+    },
+    "usage": {
+      "prompt_tokens": 1091,
+      "completion_tokens": 268,
+      "total_tokens": 1359,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 1091
+    }
+  },
+  {
+    "case": "electronics",
+    "exit_code": 0,
+    "record": "outputs/modeling_assistant/development_regression_v020/electronics/20261016_144135_4c30aa5e/run.json",
+    "envelope": "ready",
+    "questions": [],
+    "variables": [
+      {
+        "name": "x_phone",
+        "description": "每天生产的手机数量",
+        "unit": "部",
+        "kind": "integer",
+        "lower": 0,
+        "upper": null
+      },
+      {
+        "name": "x_computer",
+        "description": "每天生产的电脑数量",
+        "unit": "台",
+        "kind": "integer",
+        "lower": 0,
+        "upper": null
+      }
+    ],
+    "assumptions": [
+      "手机和电脑为整件实物产品，生产数量取非负整数。",
+      "芯片、屏幕和组装工时为每天可用资源上限。",
+      "利润为每单位产品的线性收益，未包含其他成本或约束。",
+      "市场策略约束解释为电脑产量不超过手机产量。"
+    ],
+    "result": {
+      "status": "optimal",
+      "solver": "scipy.optimize.milp/HiGHS",
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "elapsed_seconds": 0.0139387910021469,
+      "values": {
+        "x_phone": 40.0,
+        "x_computer": 20.0
+      },
+      "objective": 36000.0,
+      "verification": {
+        "passed": true,
+        "checks": [
+          {
+            "name": "x_phone 下界",
+            "passed": true
+          },
+          {
+            "name": "x_phone 整数性",
+            "passed": true
+          },
+          {
+            "name": "x_computer 下界",
+            "passed": true
+          },
+          {
+            "name": "x_computer 整数性",
+            "passed": true
+          },
+          {
+            "name": "芯片供应上限",
+            "lhs": 100.0,
+            "sense": "<=",
+            "rhs": 100,
+            "violation": 0,
+            "passed": true
+          },
+          {
+            "name": "屏幕供应上限",
+            "lhs": 80.0,
+            "sense": "<=",
+            "rhs": 80,
+            "violation": 0,
+            "passed": true
+          },
+          {
+            "name": "组装工时上限",
+            "lhs": 100.0,
+            "sense": "<=",
+            "rhs": 120,
+            "violation": 0,
+            "passed": true
+          },
+          {
+            "name": "电脑产量不超过手机产量",
+            "lhs": -20.0,
+            "sense": "<=",
+            "rhs": 0,
+            "violation": 0,
+            "passed": true
+          },
+          {
+            "name": "目标值复算",
+            "passed": true
+          }
+        ],
+        "objective_recomputed": 36000.0,
+        "scope": "仅检查给定模型下的可行性及目标复算；不证明自然语言建模完整或解全局最优。"
+      }
+    },
+    "usage": {
+      "prompt_tokens": 1118,
+      "completion_tokens": 379,
+      "total_tokens": 1497,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 350
+    }
+  },
+  {
+    "case": "coal_missing",
+    "exit_code": 3,
+    "record": "outputs/modeling_assistant/development_regression_v020/coal_missing/20261016_144136_eff7e712/run.json",
+    "envelope": "needs_clarification",
+    "questions": [
+      "煤的每天供应上限是多少？如果有上限请提供具体数值；如果煤供应不受限，请明确说明，我会按供应不限处理。"
+    ],
+    "variables": null,
+    "assumptions": null,
+    "result": null,
+    "usage": {
+      "prompt_tokens": 1085,
+      "completion_tokens": 47,
+      "total_tokens": 1132,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 317
+    }
+  },
+  {
+    "case": "feed_infeasible",
+    "exit_code": 0,
+    "record": "outputs/modeling_assistant/development_regression_v020/feed_infeasible/20261016_144139_dc52fe65/run.json",
+    "envelope": "ready",
+    "questions": [],
+    "variables": [
+      {
+        "name": "x1",
+        "description": "原料1在1千克最终饲料中的用量",
+        "unit": "千克",
+        "kind": "continuous",
+        "lower": 0,
+        "upper": null
+      },
+      {
+        "name": "x2",
+        "description": "原料2在1千克最终饲料中的用量",
+        "unit": "千克",
+        "kind": "continuous",
+        "lower": 0,
+        "upper": null
+      }
+    ],
+    "assumptions": [
+      "以生产1千克最终饲料为基准进行配方优化（归一化假设），因为目标是最低成本配方且未指定生产批量。",
+      "原料用量按连续质量（千克）建模，因为质量是可分割量，允许小数千克。",
+      "蛋白质含量和脂肪含量均按质量百分比理解，约束按最终饲料总质量1千克计算。",
+      "原料1和原料2的供应量没有限制。",
+      "未提及原料3或其他成分，因此只考虑两种原料。"
+    ],
+    "result": {
+      "status": "infeasible",
+      "solver": "scipy.optimize.milp/HiGHS",
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is Infeasible)",
+      "elapsed_seconds": 0.0013017909950576723,
+      "values": null,
+      "objective": null,
+      "verification": null,
+      "infeasibility_explanation": {
+        "method": "equality_elimination",
+        "summary": "结合“总质量归一化”，由“蛋白质含量要求”可得 x2 >= 0.5 千克；由“脂肪含量要求”可得 x2 <= 0.4 千克。上下界矛盾，无法同时满足。在总量为 1 的归一化模型中，即占比至少 50.0%，却又至多 40.0%。"
+      }
+    },
+    "usage": {
+      "prompt_tokens": 1082,
+      "completion_tokens": 377,
+      "total_tokens": 1459,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 314
+    }
+  },
+  {
+    "case": "coal_unlimited",
+    "exit_code": 0,
+    "record": "outputs/modeling_assistant/development_regression_v020/coal_unlimited/20261016_144142_4bf16693/run.json",
+    "envelope": "ready",
+    "questions": [],
+    "variables": [
+      {
+        "name": "x_jia",
+        "description": "产品甲的生产数量",
+        "unit": "件",
+        "kind": "integer",
+        "lower": 0,
+        "upper": null
+      },
+      {
+        "name": "x_yi",
+        "description": "产品乙的生产数量",
+        "unit": "件",
+        "kind": "integer",
+        "lower": 0,
+        "upper": null
+      }
+    ],
+    "assumptions": [
+      "甲、乙产品产量均为非负整数。",
+      "煤供应不限，因此不添加煤供应上限约束。",
+      "每天供电量上限为100度。",
+      "利润单位为元，煤消耗单位为吨，电消耗单位为度。"
+    ],
+    "result": {
+      "status": "optimal",
+      "solver": "scipy.optimize.milp/HiGHS",
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "elapsed_seconds": 0.01221687498036772,
+      "values": {
+        "x_jia": -0.0,
+        "x_yi": 20.0
+      },
+      "objective": 4000.0,
+      "verification": {
+        "passed": true,
+        "checks": [
+          {
+            "name": "x_jia 下界",
+            "passed": true
+          },
+          {
+            "name": "x_jia 整数性",
+            "passed": true
+          },
+          {
+            "name": "x_yi 下界",
+            "passed": true
+          },
+          {
+            "name": "x_yi 整数性",
+            "passed": true
+          },
+          {
+            "name": "电力消耗约束",
+            "lhs": 100.0,
+            "sense": "<=",
+            "rhs": 100,
+            "violation": 0,
+            "passed": true
+          },
+          {
+            "name": "煤消耗约束（供应不限，仅记录消耗）",
+            "lhs": 20.0,
+            "sense": "<=",
+            "rhs": 1e+18,
+            "violation": 0,
+            "passed": true
+          },
+          {
+            "name": "目标值复算",
+            "passed": true
+          }
+        ],
+        "objective_recomputed": 4000.0,
+        "scope": "仅检查给定模型下的可行性及目标复算；不证明自然语言建模完整或解全局最优。"
+      }
+    },
+    "usage": {
+      "prompt_tokens": 1098,
+      "completion_tokens": 461,
+      "total_tokens": 1559,
+      "prompt_tokens_details": {
+        "cached_tokens": 896
+      },
+      "prompt_cache_hit_tokens": 896,
+      "prompt_cache_miss_tokens": 202
+    }
+  },
+  {
+    "case": "explicit_continuous",
+    "exit_code": 0,
+    "record": "outputs/modeling_assistant/development_regression_v020/explicit_continuous/20261016_144145_feccb7e0/run.json",
+    "envelope": "ready",
+    "questions": [],
+    "variables": [
+      {
+        "name": "T",
+        "description": "每周生产的桌子数量",
+        "unit": "张",
+        "kind": "continuous",
+        "lower": 0,
+        "upper": null
+      },
+      {
+        "name": "C",
+        "description": "每周生产的椅子数量",
+        "unit": "把",
+        "kind": "continuous",
+        "lower": 0,
+        "upper": null
+      }
+    ],
+    "assumptions": [
+      "本题按连续近似处理，允许桌子 T 和椅子 C 为非整数产量。",
+      "同一周内生产的桌子和椅子数量可以按连续量近似，用于决策分析。",
+      "每张桌子和每把椅子消耗的木工、油漆工时固定，无额外损耗。",
+      "木工和油漆可用工时分别为每周 120 小时和 100 小时，未说明可加班或增加。",
+      "利润与产量成正比，不考虑固定成本、库存、需求上限等其他限制。"
+    ],
+    "result": {
+      "status": "optimal",
+      "solver": "scipy.optimize.milp/HiGHS",
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "elapsed_seconds": 0.001373959006741643,
+      "values": {
+        "T": 20.0,
+        "C": 20.0
+      },
+      "objective": 4000.0,
+      "verification": {
+        "passed": true,
+        "checks": [
+          {
+            "name": "T 下界",
+            "passed": true
+          },
+          {
+            "name": "C 下界",
+            "passed": true
+          },
+          {
+            "name": "木工可用工时限制",
+            "lhs": 120.0,
+            "sense": "<=",
+            "rhs": 120,
+            "violation": 0,
+            "passed": true
+          },
+          {
+            "name": "油漆工可用工时限制",
+            "lhs": 100.0,
+            "sense": "<=",
+            "rhs": 100,
+            "violation": 0,
+            "passed": true
+          },
+          {
+            "name": "目标值复算",
+            "passed": true
+          }
+        ],
+        "objective_recomputed": 4000.0,
+        "scope": "仅检查给定模型下的可行性及目标复算；不证明自然语言建模完整或解全局最优。"
+      }
+    },
+    "usage": {
+      "prompt_tokens": 1103,
+      "completion_tokens": 494,
+      "total_tokens": 1597,
+      "prompt_tokens_details": {
+        "cached_tokens": 896
+      },
+      "prompt_cache_hit_tokens": 896,
+      "prompt_cache_miss_tokens": 207
+    }
+  }
+]

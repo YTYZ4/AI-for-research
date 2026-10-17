@@ -1,0 +1,515 @@
+[
+  {
+    "id": "DYN02_error",
+    "family": "dynamics",
+    "problem": "examples/development_variants/DYN02_error.txt",
+    "reference": "examples/dynamics/logistic_model.json",
+    "case": "logistic",
+    "base_id": "DYN02",
+    "kind": "error",
+    "expected_envelopes": [
+      "needs_clarification",
+      "unsupported"
+    ],
+    "question_keywords": [
+      "容量",
+      "零",
+      "0",
+      "正"
+    ],
+    "origins": [
+      {
+        "id": "DYN02_error",
+        "problem": "examples/development_variants/DYN02_error.txt",
+        "kind": "error"
+      }
+    ],
+    "group": "historical_guard"
+  },
+  {
+    "id": "immutable_lock_original",
+    "family": "dynamics",
+    "initial": 1.5,
+    "capacity": 0,
+    "problem": "examples/immutable_boundaries/lock_original.txt",
+    "expected_envelopes": [
+      "unsupported"
+    ],
+    "guard_allowed": true,
+    "question_keywords": [],
+    "base_id": "DYN02",
+    "kind": "immutable",
+    "origins": [
+      {
+        "id": "immutable_lock_original",
+        "problem": "examples/immutable_boundaries/lock_original.txt",
+        "kind": "immutable"
+      }
+    ],
+    "group": "historical_guard"
+  },
+  {
+    "id": "immutable_lock_dont",
+    "family": "dynamics",
+    "initial": 1.5,
+    "capacity": 0,
+    "problem": "examples/immutable_boundaries/lock_dont.txt",
+    "expected_envelopes": [
+      "unsupported"
+    ],
+    "guard_allowed": true,
+    "question_keywords": [],
+    "base_id": "DYN02",
+    "kind": "immutable",
+    "origins": [
+      {
+        "id": "immutable_lock_dont",
+        "problem": "examples/immutable_boundaries/lock_dont.txt",
+        "kind": "immutable"
+      }
+    ],
+    "group": "historical_guard"
+  },
+  {
+    "id": "immutable_lock_keep",
+    "family": "dynamics",
+    "initial": 1.5,
+    "capacity": 0,
+    "problem": "examples/immutable_boundaries/lock_keep.txt",
+    "expected_envelopes": [
+      "unsupported"
+    ],
+    "guard_allowed": true,
+    "question_keywords": [],
+    "base_id": "DYN02",
+    "kind": "immutable",
+    "origins": [
+      {
+        "id": "immutable_lock_keep",
+        "problem": "examples/immutable_boundaries/lock_keep.txt",
+        "kind": "immutable"
+      }
+    ],
+    "group": "historical_guard"
+  },
+  {
+    "id": "immutable_lock_cannot",
+    "family": "dynamics",
+    "initial": 1.5,
+    "capacity": 0,
+    "problem": "examples/immutable_boundaries/lock_cannot.txt",
+    "expected_envelopes": [
+      "unsupported"
+    ],
+    "guard_allowed": true,
+    "question_keywords": [],
+    "base_id": "DYN02",
+    "kind": "immutable",
+    "origins": [
+      {
+        "id": "immutable_lock_cannot",
+        "problem": "examples/immutable_boundaries/lock_cannot.txt",
+        "kind": "immutable"
+      }
+    ],
+    "group": "historical_guard"
+  },
+  {
+    "id": "immutable_negated_permission_invalid",
+    "family": "dynamics",
+    "initial": 1.5,
+    "capacity": 0,
+    "problem": "examples/immutable_boundaries/negated_permission_invalid.txt",
+    "expected_envelopes": [
+      "unsupported"
+    ],
+    "guard_allowed": true,
+    "question_keywords": [],
+    "base_id": "DYN02",
+    "kind": "immutable",
+    "origins": [
+      {
+        "id": "immutable_negated_permission_invalid",
+        "problem": "examples/immutable_boundaries/negated_permission_invalid.txt",
+        "kind": "immutable"
+      }
+    ],
+    "group": "historical_guard"
+  },
+  {
+    "id": "conflict_all_negative",
+    "family": "dynamics",
+    "problem": "examples/conflict_boundaries/all_negative.txt",
+    "initial": 1.5,
+    "capacity": null,
+    "expected_envelopes": [
+      "needs_clarification"
+    ],
+    "conflict_values": [
+      -1,
+      -2
+    ],
+    "question_keywords": [
+      "容量",
+      "K"
+    ],
+    "base_id": "DYN02",
+    "kind": "conflict",
+    "origins": [
+      {
+        "id": "conflict_all_negative",
+        "problem": "examples/conflict_boundaries/all_negative.txt",
+        "kind": "conflict"
+      }
+    ],
+    "group": "historical_guard"
+  },
+  {
+    "id": "equivalent_same_invalid",
+    "family": "dynamics",
+    "problem": "examples/equivalent_boundaries/same_invalid.txt",
+    "initial": 1.5,
+    "capacity": 0,
+    "expected_envelopes": [
+      "unsupported"
+    ],
+    "conflict_values": [],
+    "question_keywords": [
+      "容量",
+      "K"
+    ],
+    "base_id": "DYN02",
+    "kind": "equivalent",
+    "origins": [
+      {
+        "id": "equivalent_same_invalid",
+        "problem": "examples/equivalent_boundaries/same_invalid.txt",
+        "kind": "equivalent"
+      }
+    ],
+    "group": "historical_guard"
+  },
+  {
+    "id": "graph_units_fractional_flow",
+    "base_id": "NET02",
+    "kind": "graph_units",
+    "family": "graph",
+    "problem": "examples/graph_unit_boundaries/fractional_flow.txt",
+    "expected_envelopes": [
+      "needs_clarification",
+      "unsupported"
+    ],
+    "question_keywords": [
+      "单位",
+      "换算",
+      "整数",
+      "容量",
+      "速度",
+      "英里",
+      "量纲"
+    ],
+    "origins": [
+      {
+        "id": "graph_units_fractional_flow",
+        "problem": "examples/graph_unit_boundaries/fractional_flow.txt",
+        "kind": "graph_units"
+      }
+    ],
+    "group": "historical_guard"
+  },
+  {
+    "id": "remaining_permission_forbidden",
+    "problem": "examples/remaining_failure_boundaries/permission_forbidden.txt",
+    "family": "dynamics",
+    "expected_envelopes": [
+      "unsupported"
+    ],
+    "check": "locked",
+    "kind": "remaining",
+    "base_id": "DYN02",
+    "origins": [
+      {
+        "id": "remaining_permission_forbidden",
+        "problem": "examples/remaining_failure_boundaries/permission_forbidden.txt",
+        "kind": "remaining"
+      }
+    ],
+    "group": "historical_guard"
+  },
+  {
+    "id": "remaining_permission_conflict",
+    "problem": "examples/remaining_failure_boundaries/permission_conflict.txt",
+    "family": "dynamics",
+    "expected_envelopes": [
+      "needs_clarification"
+    ],
+    "check": "conflict",
+    "conflict_values": [
+      0,
+      0.5
+    ],
+    "kind": "remaining",
+    "base_id": "DYN02",
+    "origins": [
+      {
+        "id": "remaining_permission_conflict",
+        "problem": "examples/remaining_failure_boundaries/permission_conflict.txt",
+        "kind": "remaining"
+      }
+    ],
+    "group": "historical_guard"
+  },
+  {
+    "id": "immutable_valid_above",
+    "family": "dynamics",
+    "initial": 1.5,
+    "capacity": 0.5,
+    "problem": "examples/immutable_boundaries/valid_above.txt",
+    "expected_envelopes": [
+      "ready"
+    ],
+    "guard_allowed": false,
+    "question_keywords": [],
+    "base_id": "DYN02",
+    "kind": "immutable",
+    "origins": [
+      {
+        "id": "immutable_valid_above",
+        "problem": "examples/immutable_boundaries/valid_above.txt",
+        "kind": "immutable"
+      }
+    ],
+    "group": "control"
+  },
+  {
+    "id": "immutable_missing_capacity",
+    "family": "dynamics",
+    "initial": 0.1,
+    "capacity": null,
+    "problem": "examples/immutable_boundaries/missing_capacity.txt",
+    "expected_envelopes": [
+      "needs_clarification"
+    ],
+    "guard_allowed": false,
+    "question_keywords": [
+      "容量",
+      "K"
+    ],
+    "base_id": "DYN02",
+    "kind": "immutable",
+    "origins": [
+      {
+        "id": "immutable_missing_capacity",
+        "problem": "examples/immutable_boundaries/missing_capacity.txt",
+        "kind": "immutable"
+      }
+    ],
+    "group": "control"
+  },
+  {
+    "id": "immutable_permission",
+    "family": "dynamics",
+    "initial": 1.5,
+    "capacity": 0,
+    "problem": "examples/immutable_boundaries/permission.txt",
+    "expected_envelopes": [
+      "needs_clarification"
+    ],
+    "guard_allowed": false,
+    "question_keywords": [],
+    "base_id": "DYN02",
+    "kind": "immutable",
+    "origins": [
+      {
+        "id": "immutable_permission",
+        "problem": "examples/immutable_boundaries/permission.txt",
+        "kind": "immutable"
+      },
+      {
+        "id": "remaining_permission_previous",
+        "problem": "examples/immutable_boundaries/permission.txt",
+        "kind": "remaining"
+      }
+    ],
+    "capacity_domain_required": true,
+    "check": "permission",
+    "group": "control"
+  },
+  {
+    "id": "conflict_two_positive",
+    "family": "dynamics",
+    "problem": "examples/conflict_boundaries/two_positive.txt",
+    "initial": 1.5,
+    "capacity": 0.5,
+    "expected_envelopes": [
+      "needs_clarification"
+    ],
+    "conflict_values": [
+      0.5,
+      1
+    ],
+    "question_keywords": [
+      "容量",
+      "K"
+    ],
+    "base_id": "DYN02",
+    "kind": "conflict",
+    "origins": [
+      {
+        "id": "conflict_two_positive",
+        "problem": "examples/conflict_boundaries/two_positive.txt",
+        "kind": "conflict"
+      }
+    ],
+    "group": "control"
+  },
+  {
+    "id": "equivalent_scientific",
+    "family": "dynamics",
+    "problem": "examples/equivalent_boundaries/scientific.txt",
+    "initial": 1.5,
+    "capacity": 0.5,
+    "expected_envelopes": [
+      "ready"
+    ],
+    "conflict_values": [],
+    "question_keywords": [],
+    "base_id": "DYN02",
+    "kind": "equivalent",
+    "origins": [
+      {
+        "id": "equivalent_scientific",
+        "problem": "examples/equivalent_boundaries/scientific.txt",
+        "kind": "equivalent"
+      }
+    ],
+    "group": "control"
+  },
+  {
+    "id": "graph_units_flow_mixed",
+    "base_id": "NET02",
+    "kind": "graph_units",
+    "family": "graph",
+    "problem": "examples/graph_unit_boundaries/flow_mixed.txt",
+    "expected_envelopes": [
+      "ready"
+    ],
+    "graph_problem": "max_flow",
+    "unit": "立方米/小时",
+    "source_edges": [
+      [
+        "S",
+        "A",
+        10000,
+        "升/小时"
+      ],
+      [
+        "A",
+        "T",
+        6,
+        "立方米/小时"
+      ],
+      [
+        "S",
+        "T",
+        5000,
+        "升/小时"
+      ]
+    ],
+    "weights": [
+      10,
+      6,
+      5
+    ],
+    "value": 11,
+    "origins": [
+      {
+        "id": "graph_units_flow_mixed",
+        "problem": "examples/graph_unit_boundaries/flow_mixed.txt",
+        "kind": "graph_units"
+      },
+      {
+        "id": "remaining_graph_mixed_flow",
+        "problem": "examples/graph_unit_boundaries/flow_mixed.txt",
+        "kind": "remaining"
+      }
+    ],
+    "check": "mixed_flow",
+    "group": "control"
+  },
+  {
+    "id": "flow_original_unit",
+    "base_id": "NET02",
+    "family": "graph",
+    "kind": "guard_control",
+    "problem": "examples/guard_cause_boundaries/flow_original_unit.txt",
+    "group": "control",
+    "expected_envelopes": [
+      "ready"
+    ],
+    "original_value": 1,
+    "unit": "升/小时",
+    "value": 1
+  },
+  {
+    "id": "flow_integer_conversion",
+    "base_id": "NET02",
+    "family": "graph",
+    "kind": "guard_control",
+    "problem": "examples/guard_cause_boundaries/flow_integer_conversion.txt",
+    "group": "control",
+    "expected_envelopes": [
+      "ready"
+    ],
+    "original_value": 1000,
+    "unit": "立方米/小时",
+    "value": 1
+  },
+  {
+    "id": "flow_reverse_conversion",
+    "base_id": "NET02",
+    "family": "graph",
+    "kind": "guard_control",
+    "problem": "examples/false_interception_boundaries/flow_reverse_conversion.txt",
+    "group": "new_boundary",
+    "expected_envelopes": [
+      "ready"
+    ],
+    "original_value": 0.001,
+    "original_unit": "立方米/小时",
+    "unit": "升/小时",
+    "value": 1
+  },
+  {
+    "id": "flow_same_fractional",
+    "base_id": "NET02",
+    "family": "graph",
+    "kind": "guard_control",
+    "problem": "examples/false_interception_boundaries/flow_same_fractional.txt",
+    "group": "new_boundary",
+    "expected_envelopes": [
+      "needs_clarification",
+      "unsupported"
+    ],
+    "original_value": 0.5,
+    "original_unit": "立方米/小时",
+    "unit": "立方米/小时",
+    "value": 1
+  },
+  {
+    "id": "flow_unknown_conversion",
+    "base_id": "NET02",
+    "family": "graph",
+    "kind": "guard_control",
+    "problem": "examples/false_interception_boundaries/flow_unknown_conversion.txt",
+    "group": "new_boundary",
+    "expected_envelopes": [
+      "needs_clarification",
+      "unsupported"
+    ],
+    "original_value": 1,
+    "original_unit": "桶/小时",
+    "unit": "立方米/小时",
+    "value": 1
+  }
+]

@@ -1,0 +1,122 @@
+{
+  "api_calls": 0,
+  "rows": [
+    {
+      "source": "outputs/conflict_regressions/20261016_211141_44264fd4/round_1/missing/generation_record.json",
+      "original": {
+        "status": "needs_clarification",
+        "questions": [
+          "请提供正实数环境容量K（可为小数）。",
+          "请确认Logistic模型的内禀增长率0.2每天与环境容量K的单位是否一致；如不一致请补充单位。"
+        ],
+        "model": null
+      },
+      "result": {
+        "status": "needs_clarification",
+        "questions": [
+          "请提供正实数环境容量K（可为小数）。",
+          "请提供环境容量K的原始记录及数量单位；增长率是反时间量，K是数量量，两者不要求单位一致。"
+        ],
+        "model": null
+      },
+      "audit": {
+        "action": "needs_clarification",
+        "reason": "已知增长率与缺失容量属于不同量纲，移除错误同单位要求",
+        "original_status": "needs_clarification",
+        "original_envelope": {
+          "status": "needs_clarification",
+          "questions": [
+            "请提供正实数环境容量K（可为小数）。",
+            "请确认Logistic模型的内禀增长率0.2每天与环境容量K的单位是否一致；如不一致请补充单位。"
+          ],
+          "model": null
+        },
+        "model_executed": false
+      }
+    },
+    {
+      "source": "outputs/conflict_regressions/20261016_211141_44264fd4/round_1/zero_positive/generation_record.json",
+      "original": {
+        "status": "needs_clarification",
+        "questions": [
+          "环境容量K存在冲突记录：一条为0个，另一条为0.5个。请核对哪条记录准确；若均不准确，请提供正实数环境容量K（可为小数）。"
+        ],
+        "model": null
+      },
+      "result": {
+        "status": "needs_clarification",
+        "questions": [
+          "环境容量K的原文记录相互冲突：“环境容量恒定0个”；“环境容量为0.5个”。请核对并确认哪条记录准确，或补充记录分别适用的条件。系统未选择任何值，也未执行求解。"
+        ],
+        "model": null
+      },
+      "audit": {
+        "action": "needs_clarification",
+        "reason": "容量原文记录冲突，先澄清再校验参数域",
+        "original_status": "needs_clarification",
+        "original_envelope": {
+          "status": "needs_clarification",
+          "questions": [
+            "环境容量K存在冲突记录：一条为0个，另一条为0.5个。请核对哪条记录准确；若均不准确，请提供正实数环境容量K（可为小数）。"
+          ],
+          "model": null
+        },
+        "model_executed": false,
+        "evidence": {
+          "values": [
+            0.0,
+            0.5
+          ],
+          "unit": "个",
+          "source_quotes": [
+            "环境容量恒定0个",
+            "环境容量为0.5个"
+          ],
+          "scope": "同一常参数Logistic题面中同单位容量记录；不选择真实值"
+        }
+      }
+    },
+    {
+      "source": "outputs/conflict_regressions/20261016_211141_44264fd4/round_1/reverse/generation_record.json",
+      "original": {
+        "status": "needs_clarification",
+        "questions": [
+          "环境容量K存在冲突记录：K=0.5个与K=0个。请核对哪一条准确，并提供最终采用的正实数K（可为小数）。"
+        ],
+        "model": null
+      },
+      "result": {
+        "status": "needs_clarification",
+        "questions": [
+          "环境容量K的原文记录相互冲突：“K=0.5个”；“环境容量为0个”。请核对并确认哪条记录准确，或补充记录分别适用的条件。系统未选择任何值，也未执行求解。"
+        ],
+        "model": null
+      },
+      "audit": {
+        "action": "needs_clarification",
+        "reason": "容量原文记录冲突，先澄清再校验参数域",
+        "original_status": "needs_clarification",
+        "original_envelope": {
+          "status": "needs_clarification",
+          "questions": [
+            "环境容量K存在冲突记录：K=0.5个与K=0个。请核对哪一条准确，并提供最终采用的正实数K（可为小数）。"
+          ],
+          "model": null
+        },
+        "model_executed": false,
+        "evidence": {
+          "values": [
+            0.5,
+            0.0
+          ],
+          "unit": "个",
+          "source_quotes": [
+            "K=0.5个",
+            "环境容量为0个"
+          ],
+          "scope": "同一常参数Logistic题面中同单位容量记录；不选择真实值"
+        }
+      }
+    }
+  ]
+}

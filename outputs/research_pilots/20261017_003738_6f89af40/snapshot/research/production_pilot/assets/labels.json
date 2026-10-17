@@ -1,0 +1,6 @@
+{
+  "V1": "correct_control",
+  "V2": "missing_material_constraint",
+  "V3": "continuous_instead_of_integer",
+  "V4": "wrong_labor_coefficient"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "FIT02_error",
+  "family": "fitting",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "多项式阶数必须是 1 到 5 之间的整数；指定的 -2 阶不属于支持范围，且用户明确禁止替换为其他阶数。",
+  "total_tokens": 3449,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "FIT02_error/20261016_205616_5e273041",
+  "elapsed_seconds": 1.4282951669883914
+}

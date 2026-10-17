@@ -1,0 +1,120 @@
+{
+  "reviewer": "development_assistant",
+  "independent_human_review": false,
+  "scope": "reviewed all nonnative raw responses; numerical passes rely on independent fixed-case scores",
+  "automatic_stats_unchanged": true,
+  "records": [
+    {
+      "repeat": 1,
+      "id": "immutable_lock_dont",
+      "category": "false_takeover_negation",
+      "automatic_pass_path": "local_guard",
+      "detail": "环境容量K=0使Logistic方程dN/dt=rN(1-N/K)出现除零，当前模型无效；原题条件保持不变，当前不执行求解，也不要求修改参数。"
+    },
+    {
+      "repeat": 1,
+      "id": "graph_units_fractional_flow",
+      "category": "necessary_numeric_guard",
+      "automatic_pass_path": "local_guard",
+      "detail": "换算后容量不是整数，超出当前最大流求解器范围；保留原值，不截断或四舍五入。"
+    },
+    {
+      "repeat": 1,
+      "id": "flow_reverse_conversion",
+      "category": "legal_conversion_refused",
+      "automatic_pass_path": "failed",
+      "detail": "原题容量为0.001立方米/小时；要求所有容量和结果以升/小时表示，统一单位换算：0.001立方米/小时 = 1升/小时。当前求解器要求最大流容量在统一输出单位下必须为整数升/小时，且明确不允许取整，因此该问题超出当前最大流求解器支持范围。"
+    },
+    {
+      "repeat": 1,
+      "id": "flow_same_fractional",
+      "category": "necessary_numeric_guard",
+      "automatic_pass_path": "local_guard",
+      "detail": "换算后容量不是整数，超出当前最大流求解器范围；保留原值，不截断或四舍五入。"
+    },
+    {
+      "repeat": 2,
+      "id": "immutable_lock_dont",
+      "category": "false_takeover_negation",
+      "automatic_pass_path": "local_guard",
+      "detail": "当前常参数 Logistic 模型要求环境容量 K 为正实数；原题给定 K=0（环境容量恒定0个），会使模型项 rN(1-N/K) 出现除零，模型无效；原题条件保持不变，当前不执行求解，也不要求修改参数。"
+    },
+    {
+      "repeat": 2,
+      "id": "immutable_lock_cannot",
+      "category": "empty_refusal_explanation",
+      "automatic_pass_path": "failed",
+      "detail": "ValueError: 未就绪响应必须不含模型，且说明待澄清或不支持的原因"
+    },
+    {
+      "repeat": 2,
+      "id": "conflict_all_negative",
+      "category": "false_takeover_implicit_conflict",
+      "automatic_pass_path": "local_guard",
+      "detail": "环境容量K的原文记录相互冲突：“容量恒定-1个”；“K=-2个”。请核对并确认哪条记录准确，或补充记录分别适用的条件。系统未选择任何值，也未执行求解。"
+    },
+    {
+      "repeat": 2,
+      "id": "graph_units_fractional_flow",
+      "category": "necessary_numeric_guard",
+      "automatic_pass_path": "local_guard",
+      "detail": "换算后容量不是整数，超出当前最大流求解器范围；保留原值，不截断或四舍五入。"
+    },
+    {
+      "repeat": 2,
+      "id": "remaining_permission_forbidden",
+      "category": "empty_refusal_explanation",
+      "automatic_pass_path": "failed",
+      "detail": "ValueError: 未就绪响应必须不含模型，且说明待澄清或不支持的原因"
+    },
+    {
+      "repeat": 2,
+      "id": "flow_original_unit",
+      "category": "unit_quote_boundary_rejected",
+      "automatic_pass_path": "failed",
+      "detail": "图边单位与原文引用不一致，请保留原题单位写法。"
+    },
+    {
+      "repeat": 2,
+      "id": "flow_integer_conversion",
+      "category": "legal_conversion_refused",
+      "automatic_pass_path": "failed",
+      "detail": "请确认：题目中同一条边的容量记录存在冲突还是仅有一条记录？目前仅见“S到T容量1000升/小时”，但要求统一输出立方米/小时。请确认是否允许按原题数值1000升/小时进行单位换算为1立方米/小时，还是需保留其他记录？"
+    },
+    {
+      "repeat": 2,
+      "id": "flow_same_fractional",
+      "category": "necessary_numeric_guard",
+      "automatic_pass_path": "local_guard",
+      "detail": "换算后容量不是整数，超出当前最大流求解器范围；保留原值，不截断或四舍五入。"
+    },
+    {
+      "repeat": 3,
+      "id": "immutable_lock_dont",
+      "category": "false_takeover_negation",
+      "automatic_pass_path": "local_guard",
+      "detail": "原题条件保持不变，当前不执行求解，也不要求修改参数。"
+    },
+    {
+      "repeat": 3,
+      "id": "graph_units_fractional_flow",
+      "category": "necessary_numeric_guard",
+      "automatic_pass_path": "local_guard",
+      "detail": "换算后容量不是整数，超出当前最大流求解器范围；保留原值，不截断或四舍五入。"
+    },
+    {
+      "repeat": 3,
+      "id": "flow_same_fractional",
+      "category": "necessary_numeric_guard",
+      "automatic_pass_path": "local_guard",
+      "detail": "换算后容量不是整数，超出当前最大流求解器范围；保留原值，不截断或四舍五入。"
+    },
+    {
+      "repeat": 3,
+      "id": "flow_unknown_conversion",
+      "category": "necessary_unknown_conversion_guard",
+      "automatic_pass_path": "local_guard",
+      "detail": "图边单位无法确定性换算或量纲不一致，请核对单位及必要的换算依据；不会猜测因子。"
+    }
+  ]
+}

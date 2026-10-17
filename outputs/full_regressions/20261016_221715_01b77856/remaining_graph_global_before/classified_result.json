@@ -1,0 +1,31 @@
+{
+  "id": "remaining_graph_global_before",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "",
+  "total_tokens": 4815,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "remaining_graph_global_before/20261016_221958_660db82b",
+  "elapsed_seconds": 2.412433042016346,
+  "question_semantics_passed": null,
+  "kind": "remaining",
+  "base_id": "NET02",
+  "origins": [
+    {
+      "id": "remaining_graph_global_before",
+      "problem": "examples/remaining_failure_boundaries/graph_global_before.txt",
+      "kind": "remaining"
+    }
+  ],
+  "quote_audit_passed": null,
+  "raw_schema_valid": true,
+  "format_action": "not_needed",
+  "local_guard_used": false,
+  "source_quote_repaired": false,
+  "original_pass": true,
+  "after_format_pass": true,
+  "final_pass": true,
+  "pass_path": "native"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "graph_units_fractional_flow",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "换算后容量不是整数，超出当前最大流求解器范围；保留原值，不截断或四舍五入。",
+  "total_tokens": 4506,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "graph_units_fractional_flow/20261016_221956_ec3f698b",
+  "elapsed_seconds": 1.8674940000055358,
+  "question_semantics_passed": true,
+  "kind": "graph_units",
+  "base_id": "NET02",
+  "origins": [
+    {
+      "id": "graph_units_fractional_flow",
+      "problem": "examples/graph_unit_boundaries/fractional_flow.txt",
+      "kind": "graph_units"
+    }
+  ],
+  "quote_audit_passed": null,
+  "raw_schema_valid": true,
+  "format_action": "not_needed",
+  "local_guard_used": true,
+  "source_quote_repaired": false,
+  "original_pass": false,
+  "after_format_pass": false,
+  "final_pass": true,
+  "pass_path": "local_guard"
+}

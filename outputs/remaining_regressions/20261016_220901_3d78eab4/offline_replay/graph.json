@@ -1,0 +1,133 @@
+{
+  "source": "outputs/full_regressions/20261016_215628_fad2b50a/NET02_paraphrase/api.json",
+  "api_calls": 0,
+  "numeric": {
+    "passed": true,
+    "checks": {
+      "original_graph": true,
+      "original_capacities": true,
+      "conservation": true,
+      "optimal_value": true
+    },
+    "scope": "固定开发原题；独立枚举简单路径/所有源汇割，不用于其他图或成功率结论"
+  },
+  "quote_audit": {
+    "applied": true,
+    "passed": true,
+    "checks": {
+      "raw_response_preserved": true,
+      "only_quotes_changed": true,
+      "all_quotes_verbatim": true,
+      "changes_match": true
+    }
+  },
+  "repair": {
+    "action": "replace_graph_quotes",
+    "scope": "global_directed_edges_v1",
+    "original_model": {
+      "task_type": "graph_input",
+      "name": "供水管网最大流",
+      "problem": "max_flow",
+      "nodes": [
+        "S",
+        "A",
+        "B",
+        "T"
+      ],
+      "source": "S",
+      "target": "T",
+      "edges": [
+        {
+          "source": "B",
+          "target": "T",
+          "weight": 9,
+          "unit": "立方米/小时",
+          "source_quote": "B→T上限9，单位均为立方米/小时",
+          "unit_quote": "单位均为立方米/小时"
+        },
+        {
+          "source": "A",
+          "target": "T",
+          "weight": 6,
+          "unit": "立方米/小时",
+          "source_quote": "A→T上限6，单位均为立方米/小时",
+          "unit_quote": "单位均为立方米/小时"
+        },
+        {
+          "source": "A",
+          "target": "B",
+          "weight": 4,
+          "unit": "立方米/小时",
+          "source_quote": "A→B上限4，单位均为立方米/小时",
+          "unit_quote": "单位均为立方米/小时"
+        },
+        {
+          "source": "S",
+          "target": "B",
+          "weight": 5,
+          "unit": "立方米/小时",
+          "source_quote": "S→B上限5，单位均为立方米/小时",
+          "unit_quote": "单位均为立方米/小时"
+        },
+        {
+          "source": "S",
+          "target": "A",
+          "weight": 10,
+          "unit": "立方米/小时",
+          "source_quote": "S→A上限10，单位均为立方米/小时",
+          "unit_quote": "单位均为立方米/小时"
+        }
+      ],
+      "unit": "立方米/小时",
+      "assumptions": [
+        "管道均为单向，方向按题目给出的有向边建模。",
+        "中间节点A、B不消耗也不积存水，满足流量守恒。",
+        "每条管道容量非负且为整数，单位统一为立方米/小时。",
+        "最大流求解时允许管道输水量为连续非负实数。"
+      ]
+    },
+    "changes": [
+      {
+        "path": "/edges/0/source_quote",
+        "original": "B→T上限9，单位均为立方米/小时",
+        "replacement": "B→T上限9"
+      },
+      {
+        "path": "/edges/1/source_quote",
+        "original": "A→T上限6，单位均为立方米/小时",
+        "replacement": "A→T上限6"
+      },
+      {
+        "path": "/edges/2/source_quote",
+        "original": "A→B上限4，单位均为立方米/小时",
+        "replacement": "A→B上限4"
+      },
+      {
+        "path": "/edges/3/source_quote",
+        "original": "S→B上限5，单位均为立方米/小时",
+        "replacement": "S→B上限5"
+      },
+      {
+        "path": "/edges/4/source_quote",
+        "original": "S→A上限10，单位均为立方米/小时",
+        "replacement": "S→A上限10"
+      }
+    ],
+    "values_and_units_unchanged": true,
+    "evidence": {
+      "global_unit": "立方米/小时",
+      "edge_count": 5
+    }
+  },
+  "value": 15,
+  "classification": {
+    "raw_schema_valid": true,
+    "format_action": "not_needed",
+    "local_guard_used": false,
+    "source_quote_repaired": true,
+    "original_pass": false,
+    "after_format_pass": false,
+    "final_pass": true,
+    "pass_path": "local_source_repair"
+  }
+}

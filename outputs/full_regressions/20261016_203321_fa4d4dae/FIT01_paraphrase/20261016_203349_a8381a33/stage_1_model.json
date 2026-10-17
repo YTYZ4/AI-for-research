@@ -1,0 +1,13 @@
+{
+  "task_type": "polynomial_fit",
+  "name": "sensor_voltage_temperature_linear_calibration",
+  "assumptions": [
+    "模型形式为带截距的一元一次多项式 y = a*x + b，按普通最小二乘拟合。",
+    "参数仅由 split=train 的记录估计，split=test 的记录仅用于计算 RMSE 和 MAE，不重新划分数据。",
+    "x 为传感器电压，假设测量误差相对可忽略；y 为参考温度，假设误差独立同分布且方差恒定。",
+    "data 由本地 CSV 提供，包含 x、y、split 三列，split 取值为 train/test。"
+  ],
+  "degree": 1,
+  "x_unit": "V",
+  "y_unit": "°C"
+}

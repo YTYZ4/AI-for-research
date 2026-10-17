@@ -1,0 +1,73 @@
+{
+  "name": "生产计划",
+  "assumptions": [
+    "单位利润和资源消耗固定，收益与产量线性相加。",
+    "仅考虑输入中列出的限制；现实条件完整性需用户确认。"
+  ],
+  "variables": [
+    {
+      "name": "A",
+      "description": "产品 A 产量",
+      "unit": "件",
+      "kind": "integer",
+      "lower": 0,
+      "upper": null
+    },
+    {
+      "name": "B",
+      "description": "产品 B 产量",
+      "unit": "件",
+      "kind": "integer",
+      "lower": 0,
+      "upper": null
+    }
+  ],
+  "objective": {
+    "sense": "max",
+    "terms": [
+      {
+        "variable": "A",
+        "coefficient": 40.0
+      },
+      {
+        "variable": "B",
+        "coefficient": 30.0
+      }
+    ],
+    "unit": "元"
+  },
+  "constraints": [
+    {
+      "name": "工时",
+      "terms": [
+        {
+          "variable": "A",
+          "coefficient": 2.0
+        },
+        {
+          "variable": "B",
+          "coefficient": 1.0
+        }
+      ],
+      "sense": "<=",
+      "rhs": 100.0,
+      "unit": "工时"
+    },
+    {
+      "name": "原料",
+      "terms": [
+        {
+          "variable": "A",
+          "coefficient": 1.0
+        },
+        {
+          "variable": "B",
+          "coefficient": 2.0
+        }
+      ],
+      "sense": "<=",
+      "rhs": 80.0,
+      "unit": "原料"
+    }
+  ]
+}

@@ -1,0 +1,294 @@
+[
+  {
+    "id": "graph_units_fractional_flow",
+    "base_id": "NET02",
+    "kind": "graph_units",
+    "family": "graph",
+    "problem": "examples/graph_unit_boundaries/fractional_flow.txt",
+    "expected_envelopes": [
+      "needs_clarification",
+      "unsupported"
+    ],
+    "question_keywords": [
+      "单位",
+      "换算",
+      "整数",
+      "容量",
+      "速度",
+      "英里",
+      "量纲"
+    ],
+    "origins": [
+      {
+        "id": "graph_units_fractional_flow",
+        "problem": "examples/graph_unit_boundaries/fractional_flow.txt",
+        "kind": "graph_units"
+      }
+    ],
+    "group": "historical_guard"
+  },
+  {
+    "id": "graph_units_flow_mixed",
+    "base_id": "NET02",
+    "kind": "graph_units",
+    "family": "graph",
+    "problem": "examples/graph_unit_boundaries/flow_mixed.txt",
+    "expected_envelopes": [
+      "ready"
+    ],
+    "graph_problem": "max_flow",
+    "unit": "立方米/小时",
+    "source_edges": [
+      [
+        "S",
+        "A",
+        10000,
+        "升/小时"
+      ],
+      [
+        "A",
+        "T",
+        6,
+        "立方米/小时"
+      ],
+      [
+        "S",
+        "T",
+        5000,
+        "升/小时"
+      ]
+    ],
+    "weights": [
+      10,
+      6,
+      5
+    ],
+    "value": 11,
+    "origins": [
+      {
+        "id": "graph_units_flow_mixed",
+        "problem": "examples/graph_unit_boundaries/flow_mixed.txt",
+        "kind": "graph_units"
+      },
+      {
+        "id": "remaining_graph_mixed_flow",
+        "problem": "examples/graph_unit_boundaries/flow_mixed.txt",
+        "kind": "remaining"
+      }
+    ],
+    "check": "mixed_flow",
+    "group": "control"
+  },
+  {
+    "id": "flow_integer_conversion",
+    "base_id": "NET02",
+    "family": "graph",
+    "kind": "guard_control",
+    "problem": "examples/guard_cause_boundaries/flow_integer_conversion.txt",
+    "group": "control",
+    "expected_envelopes": [
+      "ready"
+    ],
+    "original_value": 1000,
+    "unit": "立方米/小时",
+    "value": 1
+  },
+  {
+    "id": "flow_reverse_conversion",
+    "base_id": "NET02",
+    "family": "graph",
+    "kind": "guard_control",
+    "problem": "examples/false_interception_boundaries/flow_reverse_conversion.txt",
+    "group": "new_boundary",
+    "expected_envelopes": [
+      "ready"
+    ],
+    "original_value": 0.001,
+    "original_unit": "立方米/小时",
+    "unit": "升/小时",
+    "value": 1
+  },
+  {
+    "id": "flow_unknown_conversion",
+    "base_id": "NET02",
+    "family": "graph",
+    "kind": "guard_control",
+    "problem": "examples/false_interception_boundaries/flow_unknown_conversion.txt",
+    "group": "new_boundary",
+    "expected_envelopes": [
+      "needs_clarification",
+      "unsupported"
+    ],
+    "original_value": 1,
+    "original_unit": "桶/小时",
+    "unit": "立方米/小时",
+    "value": 1
+  },
+  {
+    "id": "flow_missing_direction",
+    "base_id": "NET02",
+    "family": "graph",
+    "kind": "guard_control",
+    "problem": "examples/graph_contract_boundaries/flow_missing_direction.txt",
+    "group": "new_boundary",
+    "expected_envelopes": [
+      "needs_clarification"
+    ],
+    "question_keywords": [],
+    "check_direction": true
+  },
+  {
+    "id": "flow_min_cost",
+    "base_id": "NET02",
+    "family": "graph",
+    "kind": "guard_control",
+    "problem": "examples/graph_contract_boundaries/flow_min_cost.txt",
+    "group": "new_boundary",
+    "expected_envelopes": [
+      "unsupported"
+    ],
+    "question_keywords": [
+      "费用",
+      "支持"
+    ],
+    "refusal_topic": "最小费用|费用最小|最小成本|成本最小",
+    "present_fields": [
+      "节点",
+      "容量"
+    ]
+  },
+  {
+    "id": "pure_min_cost",
+    "base_id": "NET02",
+    "family": "graph",
+    "kind": "guard_control",
+    "problem": "examples/refusal_boundaries/pure_min_cost.txt",
+    "group": "scope_boundary",
+    "expected_envelopes": [
+      "unsupported"
+    ],
+    "refusal_topic": "最小费用|费用最小",
+    "present_fields": [
+      "节点",
+      "容量"
+    ]
+  },
+  {
+    "id": "cost_paraphrase",
+    "base_id": "NET02",
+    "family": "graph",
+    "kind": "guard_control",
+    "problem": "examples/refusal_boundaries/cost_paraphrase.txt",
+    "group": "scope_boundary",
+    "expected_envelopes": [
+      "unsupported"
+    ],
+    "refusal_topic": "成本最小|费用最小|最小费用|最小成本",
+    "present_fields": [
+      "节点",
+      "容量"
+    ]
+  },
+  {
+    "id": "multi_commodity",
+    "base_id": "NET02",
+    "family": "graph",
+    "kind": "guard_control",
+    "problem": "examples/refusal_boundaries/multi_commodity.txt",
+    "group": "scope_boundary",
+    "expected_envelopes": [
+      "unsupported"
+    ],
+    "refusal_topic": "多商品|多种商品|两种商品",
+    "present_fields": [
+      "节点",
+      "容量"
+    ]
+  },
+  {
+    "id": "time_varying",
+    "base_id": "NET02",
+    "family": "graph",
+    "kind": "guard_control",
+    "problem": "examples/refusal_boundaries/time_varying.txt",
+    "group": "scope_boundary",
+    "expected_envelopes": [
+      "unsupported"
+    ],
+    "refusal_topic": "时变|随时间|动态|时间轨迹",
+    "present_fields": [
+      "节点",
+      "容量"
+    ]
+  },
+  {
+    "id": "cost_not_requested",
+    "base_id": "NET02",
+    "family": "graph",
+    "kind": "guard_control",
+    "problem": "examples/refusal_boundaries/cost_not_requested.txt",
+    "group": "negative_control",
+    "expected_envelopes": [
+      "ready"
+    ],
+    "original_value": 1000,
+    "original_unit": "升/小时",
+    "unit": "立方米/小时",
+    "value": 1
+  },
+  {
+    "id": "direction_unspecified",
+    "base_id": "NET02",
+    "family": "graph",
+    "kind": "guard_control",
+    "problem": "examples/direction_explanation_boundaries/direction_unspecified.txt",
+    "group": "direction_boundary",
+    "expected_envelopes": [
+      "needs_clarification"
+    ],
+    "check_direction": true
+  },
+  {
+    "id": "direction_immutable",
+    "base_id": "NET02",
+    "family": "graph",
+    "kind": "guard_control",
+    "problem": "examples/direction_explanation_boundaries/direction_immutable.txt",
+    "group": "direction_boundary",
+    "expected_envelopes": [
+      "needs_clarification"
+    ],
+    "check_direction": true
+  },
+  {
+    "id": "direction_known",
+    "base_id": "NET02",
+    "family": "graph",
+    "kind": "guard_control",
+    "problem": "examples/direction_explanation_boundaries/direction_known.txt",
+    "group": "valid_direction",
+    "expected_envelopes": [
+      "ready"
+    ],
+    "original_value": 1000,
+    "original_unit": "升/小时",
+    "unit": "立方米/小时",
+    "value": 1
+  },
+  {
+    "id": "cost_missing_direction",
+    "base_id": "NET02",
+    "family": "graph",
+    "kind": "guard_control",
+    "problem": "examples/direction_explanation_boundaries/cost_missing_direction.txt",
+    "group": "scope_priority",
+    "expected_envelopes": [
+      "unsupported"
+    ],
+    "refusal_topic": "最小费用|费用最小|最小成本",
+    "present_fields": [
+      "节点",
+      "容量"
+    ]
+  }
+]

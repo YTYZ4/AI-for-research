@@ -1,0 +1,23 @@
+{
+  "task_type": "dynamics_input",
+  "name": "封闭种群Logistic增长",
+  "system": "logistic",
+  "initial": 100,
+  "rate": 0.2,
+  "equilibrium": 1000,
+  "duration": 720,
+  "rate_unit": "1/day",
+  "state_unit": "个",
+  "duration_unit": "hour",
+  "assumptions": [
+    "封闭种群，无迁入迁出。",
+    "Logistic模型采用连续种群近似，并假定环境容量恒定。",
+    "模拟区间为 t=0 到 720 小时，保留原题时长单位，程序内部处理时间单位与速率单位的换算。"
+  ],
+  "source_quotes": {
+    "initial": "初始100个",
+    "equilibrium": "容量恒定1000个",
+    "rate": "增长率0.2每天",
+    "duration": "模拟0到720小时"
+  }
+}

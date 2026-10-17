@@ -1,0 +1,31 @@
+{
+  "id": "NET01_error",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "最短路径不支持负权重：题中 S 到 A 的边权为 -2 千米，属于负权边，当前模型无法处理。",
+  "total_tokens": 4089,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "NET01_error/20261016_215724_59dc9ea1",
+  "elapsed_seconds": 1.25908587500453,
+  "question_semantics_passed": true,
+  "kind": "error",
+  "base_id": "NET01",
+  "origins": [
+    {
+      "id": "NET01_error",
+      "problem": "examples/development_variants/NET01_error.txt",
+      "kind": "error"
+    }
+  ],
+  "quote_audit_passed": null,
+  "raw_schema_valid": true,
+  "format_action": "not_needed",
+  "local_guard_used": false,
+  "source_quote_repaired": false,
+  "original_pass": true,
+  "after_format_pass": true,
+  "final_pass": true,
+  "pass_path": "native"
+}

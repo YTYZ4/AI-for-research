@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "source_values_match_original": true,
+  "numeric": {
+    "passed": true,
+    "checks": {
+      "original_parameters": true,
+      "grid": true,
+      "original_problem_trajectory": true,
+      "final_consistency": true
+    },
+    "absolute_tolerance": 1e-05,
+    "max_error": 1.867674370714667e-08,
+    "scope": "原题固定参数和解析解独立复算；不评价其他动态问题或自然语言改写成功率"
+  },
+  "conversion": {
+    "method": "duration_to_original_rate_unit_v1",
+    "original_rate": 0.1,
+    "original_rate_unit": "1/min",
+    "original_duration": 30,
+    "original_duration_unit": "min",
+    "factor": "1",
+    "normalized_duration": 30.0,
+    "normalized_time_unit": "min",
+    "rate_unchanged": true,
+    "source_quotes_checked": true
+  }
+}

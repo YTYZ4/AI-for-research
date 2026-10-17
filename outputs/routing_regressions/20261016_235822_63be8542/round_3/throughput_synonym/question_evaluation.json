@@ -1,0 +1,11 @@
+{
+  "applied": true,
+  "passed": true,
+  "checks": {
+    "expected_status": true,
+    "nonempty_question": true,
+    "relevant_topic": true
+  },
+  "text": "原题在单商品最大流目标之外还要求最小化运输开销（每升2元的费用），属于未支持的最小费用流任务。当前仅支持最短路径和静态单商品最大流，无法处理费用最小化要求。",
+  "scope": "状态/主题初筛；显式禁止改值时检查修改建议，否则Logistic容量检查正实数限制。不是完整语义证明。"
+}

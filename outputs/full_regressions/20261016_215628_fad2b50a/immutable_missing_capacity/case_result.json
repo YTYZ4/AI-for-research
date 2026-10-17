@@ -1,0 +1,12 @@
+{
+  "id": "immutable_missing_capacity",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "请提供正实数环境容量K（可为小数），并说明其数量单位。",
+  "total_tokens": 4074,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "immutable_missing_capacity/20261016_215813_ac4fbafa",
+  "elapsed_seconds": 1.0420774170197546
+}

@@ -1,0 +1,21 @@
+{
+  "id": "DYN02_missing",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "环境容量 K 尚未提供，请给出正的环境容量数值及其单位（例如 1000 个）。",
+  "total_tokens": 2954,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "DYN02_missing/20261016_202503_f6f16351",
+  "elapsed_seconds": 1.2188854579580948,
+  "kind": "missing",
+  "base_id": "DYN02",
+  "raw_schema_valid": true,
+  "format_action": "not_needed",
+  "local_guard_used": false,
+  "original_pass": true,
+  "after_format_pass": true,
+  "final_pass": true,
+  "pass_path": "native"
+}

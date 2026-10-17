@@ -1,0 +1,57 @@
+{
+  "task_type": "graph",
+  "name": "最短路径S到T",
+  "problem": "shortest_path",
+  "nodes": [
+    "S",
+    "A",
+    "B",
+    "C",
+    "T"
+  ],
+  "source": "S",
+  "target": "T",
+  "edges": [
+    {
+      "source": "A",
+      "target": "T",
+      "weight": 7
+    },
+    {
+      "source": "C",
+      "target": "T",
+      "weight": 3
+    },
+    {
+      "source": "B",
+      "target": "C",
+      "weight": 5
+    },
+    {
+      "source": "A",
+      "target": "C",
+      "weight": 2
+    },
+    {
+      "source": "B",
+      "target": "A",
+      "weight": 1
+    },
+    {
+      "source": "S",
+      "target": "B",
+      "weight": 2
+    },
+    {
+      "source": "S",
+      "target": "A",
+      "weight": 4
+    }
+  ],
+  "unit": "km",
+  "assumptions": [
+    "所有边均为单向，且权重非负。",
+    "单位“千米”与顶层输出单位 km 数值一致，无需换算。",
+    "节点和边集已完整给出，无其他边。"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "method": "graph_edges_exact_fraction_v1",
+  "source_quotes_checked": true,
+  "target_unit": "升/秒",
+  "edges": [
+    {
+      "index": 0,
+      "source": "S",
+      "target": "T",
+      "original_weight": 60,
+      "original_unit": "升/分钟",
+      "factor": "1/60",
+      "normalized_weight": 1,
+      "normalized_unit": "升/秒",
+      "source_quote": "S到T容量60升/分钟",
+      "unit_quote": "升/分钟"
+    }
+  ]
+}

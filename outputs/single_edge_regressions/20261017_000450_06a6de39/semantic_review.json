@@ -1,0 +1,25 @@
+{
+  "reviewer": "development_assistant",
+  "independent_human_review": false,
+  "automatic_results_unchanged": true,
+  "records": [
+    {
+      "id": "flow_missing_direction",
+      "repeat": 2,
+      "assessment": "自动失败：说明缺少方向，但未明确提出确认/提供请求。语义上已告知缺项，是追问措辞的保守评分边界，未重评。"
+    },
+    {
+      "id": "flow_missing_direction",
+      "repeat": 3,
+      "assessment": "实际结构失败：响应缺少必填model:null，未执行；未以格式修复补字段。"
+    },
+    {
+      "id": "mixed_production",
+      "repeat": 2,
+      "assessment": "自动通过但人工式助手复核发现漏检：请将任务限定为其中一种仍是删目标建议。状态正确、未求解子任务，但说明要求未完全满足。"
+    },
+    {
+      "assessment": "完整单边正向/反向/零值9次均通过，无多余追问。其余8条混合响应未见拆分或要求删除目标建议；仅有限案例观察。"
+    }
+  ]
+}

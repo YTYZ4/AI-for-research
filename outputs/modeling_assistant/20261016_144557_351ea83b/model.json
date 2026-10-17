@@ -1,0 +1,91 @@
+{
+  "name": "饲料最低成本混合配方",
+  "assumptions": [
+    "原料可以按连续重量比例混合，因此使用连续变量表示每千克最终饲料中两种原料的用量。",
+    "最终饲料总量归一化为 1 千克，变量 x1 和 x2 的单位为千克/千克最终饲料。",
+    "百分比按质量分数处理，例如蛋白质 20% 表示每千克原料含 0.20 千克蛋白质。",
+    "未说明原料供应量限制，因此模型中不添加原料供应上限约束。"
+  ],
+  "variables": [
+    {
+      "name": "x1",
+      "description": "每千克最终饲料中原料 1 的用量",
+      "unit": "千克/千克最终饲料",
+      "kind": "continuous",
+      "lower": 0,
+      "upper": null
+    },
+    {
+      "name": "x2",
+      "description": "每千克最终饲料中原料 2 的用量",
+      "unit": "千克/千克最终饲料",
+      "kind": "continuous",
+      "lower": 0,
+      "upper": null
+    }
+  ],
+  "objective": {
+    "sense": "min",
+    "terms": [
+      {
+        "variable": "x1",
+        "coefficient": 2
+      },
+      {
+        "variable": "x2",
+        "coefficient": 3
+      }
+    ],
+    "unit": "元/千克最终饲料"
+  },
+  "constraints": [
+    {
+      "name": "最终饲料总量归一化",
+      "terms": [
+        {
+          "variable": "x1",
+          "coefficient": 1
+        },
+        {
+          "variable": "x2",
+          "coefficient": 1
+        }
+      ],
+      "sense": "=",
+      "rhs": 1,
+      "unit": "千克/千克最终饲料"
+    },
+    {
+      "name": "蛋白质含量至少25%",
+      "terms": [
+        {
+          "variable": "x1",
+          "coefficient": 0.2
+        },
+        {
+          "variable": "x2",
+          "coefficient": 0.3
+        }
+      ],
+      "sense": ">=",
+      "rhs": 0.25,
+      "unit": "千克蛋白质/千克最终饲料"
+    },
+    {
+      "name": "脂肪含量至少8%",
+      "terms": [
+        {
+          "variable": "x1",
+          "coefficient": 0.1
+        },
+        {
+          "variable": "x2",
+          "coefficient": 0.05
+        }
+      ],
+      "sense": ">=",
+      "rhs": 0.08,
+      "unit": "千克脂肪/千克最终饲料"
+    }
+  ]
+}

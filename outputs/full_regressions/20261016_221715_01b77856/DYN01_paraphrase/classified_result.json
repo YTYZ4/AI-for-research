@@ -1,0 +1,31 @@
+{
+  "id": "DYN01_paraphrase",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "",
+  "total_tokens": 4541,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "DYN01_paraphrase/20261016_221800_167d6645",
+  "elapsed_seconds": 1.5664276250172406,
+  "question_semantics_passed": null,
+  "kind": "paraphrase",
+  "base_id": "DYN01",
+  "origins": [
+    {
+      "id": "DYN01_paraphrase",
+      "problem": "examples/development_variants/DYN01_paraphrase.txt",
+      "kind": "paraphrase"
+    }
+  ],
+  "quote_audit_passed": null,
+  "raw_schema_valid": true,
+  "format_action": "not_needed",
+  "local_guard_used": false,
+  "source_quote_repaired": false,
+  "original_pass": true,
+  "after_format_pass": true,
+  "final_pass": true,
+  "pass_path": "native"
+}

@@ -1,0 +1,11 @@
+{
+  "applied": true,
+  "passed": true,
+  "checks": {
+    "expected_status": true,
+    "nonempty_question": true,
+    "relevant_topic": true
+  },
+  "text": "原料供应是否有上限？如有请提供数值；如不限请说明，可按供应不限处理。",
+  "scope": "状态/主题初筛；Logistic容量另查正实数及整数限制。其余题型不是完整语义证明。"
+}

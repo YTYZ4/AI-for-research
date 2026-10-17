@@ -1,0 +1,76 @@
+{
+  "name": "家具厂桌子和椅子生产计划",
+  "assumptions": [
+    "本题按连续近似处理，允许桌子 T 和椅子 C 为非整数产量。",
+    "同一周内生产的桌子和椅子数量可以按连续量近似，用于决策分析。",
+    "每张桌子和每把椅子消耗的木工、油漆工时固定，无额外损耗。",
+    "木工和油漆可用工时分别为每周 120 小时和 100 小时，未说明可加班或增加。",
+    "利润与产量成正比，不考虑固定成本、库存、需求上限等其他限制。"
+  ],
+  "variables": [
+    {
+      "name": "T",
+      "description": "每周生产的桌子数量",
+      "unit": "张",
+      "kind": "continuous",
+      "lower": 0,
+      "upper": null
+    },
+    {
+      "name": "C",
+      "description": "每周生产的椅子数量",
+      "unit": "把",
+      "kind": "continuous",
+      "lower": 0,
+      "upper": null
+    }
+  ],
+  "objective": {
+    "sense": "max",
+    "terms": [
+      {
+        "variable": "T",
+        "coefficient": 120
+      },
+      {
+        "variable": "C",
+        "coefficient": 80
+      }
+    ],
+    "unit": "元"
+  },
+  "constraints": [
+    {
+      "name": "木工可用工时限制",
+      "terms": [
+        {
+          "variable": "T",
+          "coefficient": 4
+        },
+        {
+          "variable": "C",
+          "coefficient": 2
+        }
+      ],
+      "sense": "<=",
+      "rhs": 120,
+      "unit": "小时"
+    },
+    {
+      "name": "油漆工可用工时限制",
+      "terms": [
+        {
+          "variable": "T",
+          "coefficient": 2
+        },
+        {
+          "variable": "C",
+          "coefficient": 3
+        }
+      ],
+      "sense": "<=",
+      "rhs": 100,
+      "unit": "小时"
+    }
+  ]
+}

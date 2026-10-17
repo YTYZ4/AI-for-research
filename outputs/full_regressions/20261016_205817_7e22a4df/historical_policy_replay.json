@@ -1,0 +1,60 @@
+{
+  "source": "outputs/full_regressions/20261016_205534_09f19bb2",
+  "api_calls": 0,
+  "original": {
+    "status": "needs_clarification",
+    "questions": [
+      "请提供正实数环境容量K（可为小数）。"
+    ],
+    "model": null
+  },
+  "result": {
+    "status": "unsupported",
+    "questions": [
+      "环境容量K=0.0不满足K>0。原题明确禁止改动参数；保持原值时超出当前连续Logistic模型支持范围，停止求解。"
+    ],
+    "model": null
+  },
+  "audit": {
+    "action": "unsupported",
+    "original_status": "needs_clarification",
+    "original_envelope": {
+      "status": "needs_clarification",
+      "questions": [
+        "请提供正实数环境容量K（可为小数）。"
+      ],
+      "model": null
+    },
+    "model_executed": false,
+    "reason": "原文禁止改值且本地原参数域检查失败",
+    "evidence": {
+      "values": {
+        "initial": 100.0,
+        "equilibrium": 0.0,
+        "rate": 0.2,
+        "duration": 30.0
+      },
+      "source_quotes": {
+        "initial": "初始100个",
+        "equilibrium": "K=0个",
+        "rate": "增长率0.2每天",
+        "duration": "0到30天"
+      },
+      "parameter_domain": {
+        "valid": false,
+        "initial_above_capacity": null,
+        "expected_trend": null,
+        "scope": "只验证提取到的常参数域，不证明全文条件完整或无冲突；K是平衡值，不是初值上限"
+      },
+      "rate_unit": "1/day",
+      "duration_unit": "day",
+      "scope": "明确数量和单位的常参数Logistic提取提示；不是可求解性证明"
+    }
+  },
+  "question_score": {
+    "passed": true,
+    "no_replacement_suggestion": true,
+    "text": "环境容量K=0.0不满足K>0。原题明确禁止改动参数；保持原值时超出当前连续Logistic模型支持范围，停止求解。",
+    "scope": "仅检查显式禁止改参数后的常见改值建议；不是完整语义证明"
+  }
+}

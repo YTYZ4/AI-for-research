@@ -1,0 +1,74 @@
+{
+  "name": "product_mix_A_B",
+  "assumptions": [
+    "产品A和B的产量均为整件实物，按非负整数变量建模。",
+    "工时和原料均为可分割量，约束为线性不等式。",
+    "两种产品的单位利润、单位资源消耗与资源上限均按原题固定，无其他限制。"
+  ],
+  "variables": [
+    {
+      "name": "A",
+      "description": "产品A的本期产量",
+      "unit": "件",
+      "kind": "integer",
+      "lower": 0,
+      "upper": null
+    },
+    {
+      "name": "B",
+      "description": "产品B的本期产量",
+      "unit": "件",
+      "kind": "integer",
+      "lower": 0,
+      "upper": null
+    }
+  ],
+  "objective": {
+    "sense": "max",
+    "terms": [
+      {
+        "variable": "A",
+        "coefficient": 40
+      },
+      {
+        "variable": "B",
+        "coefficient": 30
+      }
+    ],
+    "unit": "元"
+  },
+  "constraints": [
+    {
+      "name": "labor_hours",
+      "terms": [
+        {
+          "variable": "A",
+          "coefficient": 2
+        },
+        {
+          "variable": "B",
+          "coefficient": 1
+        }
+      ],
+      "sense": "<=",
+      "rhs": 100,
+      "unit": "小时"
+    },
+    {
+      "name": "raw_material",
+      "terms": [
+        {
+          "variable": "A",
+          "coefficient": 1
+        },
+        {
+          "variable": "B",
+          "coefficient": 2
+        }
+      ],
+      "sense": "<=",
+      "rhs": 80,
+      "unit": "千克"
+    }
+  ]
+}

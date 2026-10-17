@@ -1,0 +1,12 @@
+{
+  "id": "flow_original_unit",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "",
+  "total_tokens": 1398,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "flow_original_unit/20261016_230014_86b5dd0c",
+  "elapsed_seconds": 1.2867541249725036
+}

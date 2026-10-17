@@ -1,0 +1,12 @@
+{
+  "id": "immutable_lock_dont",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "当前常参数 Logistic 模型要求环境容量 K 为正实数；原题给定 K=0（环境容量恒定0个），会使模型项 rN(1-N/K) 出现除零，模型无效；原题条件保持不变，当前不执行求解，也不要求修改参数。",
+  "total_tokens": 5474,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "immutable_lock_dont/20261016_224355_2e814241",
+  "elapsed_seconds": 2.1097755410009995
+}

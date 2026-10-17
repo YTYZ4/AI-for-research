@@ -1,0 +1,24 @@
+{
+  "task_type": "dynamics_input",
+  "name": "封闭种群连续Logistic增长轨迹",
+  "system": "logistic",
+  "initial": 0.1,
+  "rate": 0.2,
+  "equilibrium": 0.5,
+  "duration": 30,
+  "rate_unit": "1/day",
+  "state_unit": "个",
+  "assumptions": [
+    "种群数量采用连续Logistic近似，允许非整数个体数。",
+    "环境容量K=0.5恒定，且K为连续Logistic模型的平衡值，不是初值上限。",
+    "无迁入、迁出，种群封闭。",
+    "只计算0到30天的轨迹与最终数量，不进行参数辨识或阈值到达时间求解。"
+  ],
+  "duration_unit": "day",
+  "source_quotes": {
+    "initial": "初始0.1个",
+    "equilibrium": "环境容量恒定0.5个",
+    "rate": "增长率0.2每天",
+    "duration": "模拟0到30天"
+  }
+}

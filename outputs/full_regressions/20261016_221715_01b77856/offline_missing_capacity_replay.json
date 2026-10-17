@@ -1,0 +1,62 @@
+{
+  "source": "outputs/remaining_regressions/20261016_220901_3d78eab4/round_1/permission_missing/generation_record.json",
+  "source_sha256": "cbddd523fa7160365713cbd8dd16ced14252ea722539fd652979dbeb36e36b8a",
+  "api_calls": 0,
+  "original_evaluation": {
+    "passed": false,
+    "checks": {
+      "clarification": true,
+      "capacity": true,
+      "positive_real": false,
+      "fraction_allowed": false,
+      "no_integer_requirement": true
+    },
+    "text": "请提供环境容量K的值及单位（该参数当前缺失）。"
+  },
+  "corrected_envelope": {
+    "status": "needs_clarification",
+    "questions": [
+      "请提供环境容量K的值及单位（该参数当前缺失）。",
+      "请补充环境容量K的原始记录及数量单位；当前连续Logistic模型要求K为正实数（可为小数），系统不会自行填入或替换数值。"
+    ],
+    "model": null
+  },
+  "audit": {
+    "action": "augment_missing_capacity_domain",
+    "reason": "显式缺容量追问漏写正实数及可为小数的参数域",
+    "original_status": "needs_clarification",
+    "original_envelope": {
+      "status": "needs_clarification",
+      "questions": [
+        "请提供环境容量K的值及单位（该参数当前缺失）。"
+      ],
+      "model": null
+    },
+    "model_executed": false,
+    "evidence": {
+      "source_quote": "环境容量未知",
+      "scope": "题面明确缺少常参数Logistic容量，且未发现已给数值/表达式；不是完整语义理解"
+    }
+  },
+  "evaluation": {
+    "passed": true,
+    "checks": {
+      "clarification": true,
+      "capacity": true,
+      "positive_real": true,
+      "fraction_allowed": true,
+      "no_integer_requirement": true
+    },
+    "text": "请提供环境容量K的值及单位（该参数当前缺失）。；请补充环境容量K的原始记录及数量单位；当前连续Logistic模型要求K为正实数（可为小数），系统不会自行填入或替换数值。"
+  },
+  "classification": {
+    "raw_schema_valid": true,
+    "format_action": "not_recorded",
+    "local_guard_used": true,
+    "source_quote_repaired": false,
+    "original_pass": false,
+    "after_format_pass": false,
+    "final_pass": true,
+    "pass_path": "local_guard"
+  }
+}

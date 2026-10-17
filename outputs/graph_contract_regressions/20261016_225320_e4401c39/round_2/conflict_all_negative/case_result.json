@@ -1,0 +1,12 @@
+{
+  "id": "conflict_all_negative",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "同一环境容量K存在两条互相冲突的记录：容量恒定-1个、K=-2个。请核对哪一条数值和单位是准确的。",
+  "total_tokens": 5236,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "conflict_all_negative/20261016_225349_68c5ba6f",
+  "elapsed_seconds": 3.1229369579814374
+}

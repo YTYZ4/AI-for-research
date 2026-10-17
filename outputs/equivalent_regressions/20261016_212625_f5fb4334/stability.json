@@ -1,0 +1,12 @@
+{
+  "trailing_zero": 3,
+  "leading_dot": 2,
+  "signed": 3,
+  "scientific": 3,
+  "integer": 3,
+  "same_invalid": 2,
+  "near_difference": 3,
+  "exponent_difference": 3,
+  "missing_rate": 3,
+  "corrected": 3
+}

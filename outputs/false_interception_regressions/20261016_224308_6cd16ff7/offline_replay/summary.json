@@ -1,0 +1,384 @@
+{
+  "api_calls": 0,
+  "passed": 16,
+  "count": 16,
+  "records": [
+    {
+      "id": "immutable_lock_cannot",
+      "kind": "false_takeover",
+      "passed": true,
+      "guard": false,
+      "source": "outputs/guard_cause_regressions/20261016_222912_c4d79f9a/round_1/immutable_lock_cannot",
+      "source_sha256": "2f347673d900c765a87ab703aaff1cdcfb722c3b78ac3a283c03cd4dc8380f1d",
+      "raw": {
+        "status": "unsupported",
+        "questions": [
+          "环境容量K=0会使Logistic方程中的N/K项无定义，当前常参数连续Logistic模型无效；且题目明确要求保持原值不能调整，因此无法按此原值求解，也不请求修改或替代数值。"
+        ],
+        "model": null
+      },
+      "result": {
+        "status": "unsupported",
+        "questions": [
+          "环境容量K=0会使Logistic方程中的N/K项无定义，当前常参数连续Logistic模型无效；且题目明确要求保持原值不能调整，因此无法按此原值求解，也不请求修改或替代数值。"
+        ],
+        "model": null
+      }
+    },
+    {
+      "id": "remaining_permission_conflict",
+      "kind": "false_takeover",
+      "passed": true,
+      "guard": false,
+      "source": "outputs/guard_cause_regressions/20261016_222912_c4d79f9a/round_1/remaining_permission_conflict",
+      "source_sha256": "6ed8008bb06b697608eae7d7b6e329155cbc183a963efe2f04877a05ada6b7e7",
+      "raw": {
+        "status": "needs_clarification",
+        "questions": [
+          "环境容量存在两条同单位记录：“环境容量恒定0个”与“K=0.5个”。请核对哪一条准确？"
+        ],
+        "model": null
+      },
+      "result": {
+        "status": "needs_clarification",
+        "questions": [
+          "环境容量存在两条同单位记录：“环境容量恒定0个”与“K=0.5个”。请核对哪一条准确？"
+        ],
+        "model": null
+      }
+    },
+    {
+      "id": "conflict_two_positive",
+      "kind": "false_takeover",
+      "passed": true,
+      "guard": false,
+      "source": "outputs/guard_cause_regressions/20261016_222912_c4d79f9a/round_1/conflict_two_positive",
+      "source_sha256": "f56fdc546bfcda92c88920a004922bb5ca16b36103444af54196f1efdc7f3d85",
+      "raw": {
+        "status": "needs_clarification",
+        "questions": [
+          "题面中环境承载量K存在两条记录：“环境承载量固定0.5个”和“K=1个”，请核对哪一条准确？"
+        ],
+        "model": null
+      },
+      "result": {
+        "status": "needs_clarification",
+        "questions": [
+          "题面中环境承载量K存在两条记录：“环境承载量固定0.5个”和“K=1个”，请核对哪一条准确？"
+        ],
+        "model": null
+      }
+    },
+    {
+      "id": "conflict_all_negative",
+      "kind": "false_takeover",
+      "passed": true,
+      "guard": false,
+      "source": "outputs/guard_cause_regressions/20261016_222912_c4d79f9a/round_3/conflict_all_negative",
+      "source_sha256": "6909951a9a257078cf1838657d3d7b06d7d221f45d310f4c24c2b22f8cf83ef1",
+      "raw": {
+        "status": "needs_clarification",
+        "questions": [
+          "题面中环境容量K有两条同单位但数值不同的记录：容量恒定-1个、K=-2个。请核对哪一条准确？"
+        ],
+        "model": null
+      },
+      "result": {
+        "status": "needs_clarification",
+        "questions": [
+          "题面中环境容量K有两条同单位但数值不同的记录：容量恒定-1个、K=-2个。请核对哪一条准确？"
+        ],
+        "model": null
+      }
+    },
+    {
+      "id": "DYN02_error",
+      "kind": "necessary_guard",
+      "passed": true,
+      "guard": true,
+      "source": "outputs/full_regressions/20261016_221715_01b77856/DYN02_error",
+      "source_sha256": "0e51ddb3233344e1835ce6e7816248372d6dde63c3521e3a91d9b4ee63dd4233",
+      "raw": {
+        "status": "needs_clarification",
+        "questions": [
+          "当前记录的环境容量K=0，会使Logistic方程出现除零，无法建立有效模型；请提供正实数环境容量K（可为小数）及其数量单位。"
+        ],
+        "model": null
+      },
+      "result": {
+        "status": "unsupported",
+        "questions": [
+          "环境容量K=0.0不满足K>0。原题明确禁止改动参数；保持原值时超出当前连续Logistic模型支持范围，停止求解。"
+        ],
+        "model": null
+      }
+    },
+    {
+      "id": "immutable_lock_original",
+      "kind": "necessary_guard",
+      "passed": true,
+      "guard": true,
+      "source": "outputs/full_regressions/20261016_221715_01b77856/immutable_lock_original",
+      "source_sha256": "79e1ab5b8359df2d55869750e00b3e8785d4dcc74bd721483a8f7393eba1b861",
+      "raw": {
+        "status": "needs_clarification",
+        "questions": [
+          "环境容量K=0会使Logistic方程出现除零并使模型无效，请提供正实数环境容量K（可为小数）及其数量单位。"
+        ],
+        "model": null
+      },
+      "result": {
+        "status": "unsupported",
+        "questions": [
+          "环境容量K=0.0不满足K>0。原题明确禁止改动参数；保持原值时超出当前连续Logistic模型支持范围，停止求解。"
+        ],
+        "model": null
+      }
+    },
+    {
+      "id": "immutable_lock_dont",
+      "kind": "necessary_guard",
+      "passed": true,
+      "guard": true,
+      "source": "outputs/full_regressions/20261016_221715_01b77856/immutable_lock_dont",
+      "source_sha256": "bf6207980bdfc1744c8f717caf0fcefecc5bbeee6322deff32b10644a8926573",
+      "raw": {
+        "status": "needs_clarification",
+        "questions": [
+          "当前记录环境容量K为0，但连续Logistic模型要求K为正实数（状态方程中N/K会除以零）。请确认并提供正实数环境容量K（可为小数）及其数量单位；原题已给的其他参数保持不变。"
+        ],
+        "model": null
+      },
+      "result": {
+        "status": "unsupported",
+        "questions": [
+          "环境容量K=0.0不满足K>0。原题明确禁止改动参数；保持原值时超出当前连续Logistic模型支持范围，停止求解。"
+        ],
+        "model": null
+      }
+    },
+    {
+      "id": "immutable_lock_keep",
+      "kind": "necessary_guard",
+      "passed": true,
+      "guard": true,
+      "source": "outputs/full_regressions/20261016_221715_01b77856/immutable_lock_keep",
+      "source_sha256": "d9e875335243d8f6c800cfaceb5d43930029d258b4d1a76dc270d853c21328a1",
+      "raw": {
+        "status": "needs_clarification",
+        "questions": [
+          "环境容量K=0会使Logistic模型出现除零并无效；请提供正实数环境容量K（可为小数）及其数量单位，或确认是否改用其他模型。"
+        ],
+        "model": null
+      },
+      "result": {
+        "status": "unsupported",
+        "questions": [
+          "环境容量K=0.0不满足K>0。原题明确禁止改动参数；保持原值时超出当前连续Logistic模型支持范围，停止求解。"
+        ],
+        "model": null
+      }
+    },
+    {
+      "id": "immutable_lock_cannot",
+      "kind": "necessary_guard",
+      "passed": true,
+      "guard": true,
+      "source": "outputs/full_regressions/20261016_221715_01b77856/immutable_lock_cannot",
+      "source_sha256": "a98cfe89c73c594b83e93261dfb8cc62966fd7fd0548221c47b90b3d0315f6fb",
+      "raw": {
+        "status": "needs_clarification",
+        "questions": [
+          "当前环境容量 K 为 0，Logistic 方程 dN/dt = rN(1-N/K) 在 K=0 时出现除零而无效；请提供正实数环境容量 K（可为小数）及其数量单位。"
+        ],
+        "model": null
+      },
+      "result": {
+        "status": "unsupported",
+        "questions": [
+          "环境容量K=0.0不满足K>0。原题明确禁止改动参数；保持原值时超出当前连续Logistic模型支持范围，停止求解。"
+        ],
+        "model": null
+      }
+    },
+    {
+      "id": "immutable_negated_permission_invalid",
+      "kind": "necessary_guard",
+      "passed": true,
+      "guard": true,
+      "source": "outputs/full_regressions/20261016_221715_01b77856/immutable_negated_permission_invalid",
+      "source_sha256": "45ab66b2ba896e9708572a07818d12a9323abf939b2e06e07b6aa5c610045c70",
+      "raw": {
+        "status": "needs_clarification",
+        "questions": [
+          "当前提取到环境容量K=0，但连续Logistic模型要求环境容量K为正实数；请确认并提供正实数环境容量K（可为小数）及其数量单位。"
+        ],
+        "model": null
+      },
+      "result": {
+        "status": "unsupported",
+        "questions": [
+          "环境容量K=0.0不满足K>0。原题明确禁止改动参数；保持原值时超出当前连续Logistic模型支持范围，停止求解。"
+        ],
+        "model": null
+      }
+    },
+    {
+      "id": "conflict_all_negative",
+      "kind": "necessary_guard",
+      "passed": true,
+      "guard": true,
+      "source": "outputs/full_regressions/20261016_221715_01b77856/conflict_all_negative",
+      "source_sha256": "bedee4eba95de6280da0f31ab3291e9239dccb8460653c76c020ee31d59bb94a",
+      "raw": {
+        "status": "needs_clarification",
+        "questions": [
+          "当前环境容量K存在互相冲突的记录（容量恒定-1个、另一记录K=-2个），且均不在常参数连续Logistic模型的有效参数域内（要求K>0）。请先核对哪条原始记录准确；确认后请提供正实数环境容量K（可为小数）及其数量单位。"
+        ],
+        "model": null
+      },
+      "result": {
+        "status": "needs_clarification",
+        "questions": [
+          "环境容量K的原文记录相互冲突：“容量恒定-1个”；“K=-2个”。请核对并确认哪条记录准确，或补充记录分别适用的条件。系统未选择任何值，也未执行求解。"
+        ],
+        "model": null
+      }
+    },
+    {
+      "id": "equivalent_same_invalid",
+      "kind": "necessary_guard",
+      "passed": true,
+      "guard": true,
+      "source": "outputs/full_regressions/20261016_221715_01b77856/equivalent_same_invalid",
+      "source_sha256": "ebc0e8ad0895e1c29e67fcfbf1caac18ab879a7e4bd32cbac426603bce205856",
+      "raw": {
+        "status": "needs_clarification",
+        "questions": [
+          "当前记录的环境容量K为0个（另一记录K=0.0个，数值等价），会使Logistic方程出现除零，模型无效。请提供正实数环境容量K（可为小数）及其数量单位。"
+        ],
+        "model": null
+      },
+      "result": {
+        "status": "unsupported",
+        "questions": [
+          "环境容量K=-0.0不满足K>0。原题明确禁止改动参数；保持原值时超出当前连续Logistic模型支持范围，停止求解。"
+        ],
+        "model": null
+      }
+    },
+    {
+      "id": "graph_units_fractional_flow",
+      "kind": "necessary_guard",
+      "passed": true,
+      "guard": true,
+      "source": "outputs/full_regressions/20261016_221715_01b77856/graph_units_fractional_flow",
+      "source_sha256": "df395d5b74f107c2103b25a980e406c0d55ccfa81bc8c269c73ef91f575769e1",
+      "raw": {
+        "status": "ready",
+        "questions": [],
+        "model": {
+          "task_type": "graph_input",
+          "name": "有向输水网络最大流",
+          "problem": "max_flow",
+          "nodes": [
+            "S",
+            "T"
+          ],
+          "source": "S",
+          "target": "T",
+          "edges": [
+            {
+              "source": "S",
+              "target": "T",
+              "weight": 1,
+              "unit": "升/小时",
+              "source_quote": "S到T容量1升/小时",
+              "unit_quote": "1升/小时"
+            }
+          ],
+          "unit": "立方米/小时",
+          "assumptions": [
+            "有向边按原方向使用，不增加补边。",
+            "最大流容量为非负整数容量，原容量1升/小时为整数容量。",
+            "统一输出单位为立方米/小时，程序按单位换算后求解报告，不取整。",
+            "仅包含用户明确列出的全部边：S→T，无其他边。"
+          ]
+        }
+      },
+      "result": {
+        "status": "needs_clarification",
+        "questions": [
+          "换算后容量不是整数，超出当前最大流求解器范围；保留原值，不截断或四舍五入。"
+        ],
+        "model": null
+      }
+    },
+    {
+      "id": "remaining_permission_forbidden",
+      "kind": "necessary_guard",
+      "passed": true,
+      "guard": true,
+      "source": "outputs/full_regressions/20261016_221715_01b77856/remaining_permission_forbidden",
+      "source_sha256": "011236e4f9d586312075f666fcee3dcee1a60859aa48ae17b09554e961d7b33b",
+      "raw": {
+        "status": "needs_clarification",
+        "questions": [
+          "当前环境容量K=0，在连续Logistic模型中会导致分母为零，无法建立有效方程；请提供正实数环境容量K（可为小数）及其数量单位。"
+        ],
+        "model": null
+      },
+      "result": {
+        "status": "unsupported",
+        "questions": [
+          "环境容量K=0.0不满足K>0。原题明确禁止改动参数；保持原值时超出当前连续Logistic模型支持范围，停止求解。"
+        ],
+        "model": null
+      }
+    },
+    {
+      "id": "remaining_permission_conflict",
+      "kind": "necessary_guard",
+      "passed": true,
+      "guard": true,
+      "source": "outputs/full_regressions/20261016_221715_01b77856/remaining_permission_conflict",
+      "source_sha256": "5a5b1a99bed801b98d6ebc07fb7aa63e0192e27f03e35c15ac5306b199a36e9f",
+      "raw": {
+        "status": "needs_clarification",
+        "questions": [
+          "同一常参数 Logistic 题面中容量 K 的记录存在冲突：原文分别有“环境容量恒定0个”和“K=0.5个”。请核对哪一条准确。若确认 K=0，请说明是否允许修改为正实数环境容量 K（可为小数）及其数量单位；若不修改，则当前模型无效。"
+        ],
+        "model": null
+      },
+      "result": {
+        "status": "needs_clarification",
+        "questions": [
+          "环境容量K的原文记录相互冲突：“环境容量恒定0个”；“K=0.5个”。请核对并确认哪条记录准确，或补充记录分别适用的条件。系统未选择任何值，也未执行求解。"
+        ],
+        "model": null
+      }
+    },
+    {
+      "id": "flow_integer_conversion",
+      "kind": "preserve_failure",
+      "passed": true,
+      "guard": false,
+      "source": "outputs/guard_cause_regressions/20261016_222912_c4d79f9a/round_3/flow_integer_conversion",
+      "source_sha256": "be7c08c31c5ff6c0b56c5d5f2e8a7941a2e3c776162cc778ff383c608a486319",
+      "raw": {
+        "status": "unsupported",
+        "questions": [
+          "原边容量为1000升/小时，换算为1立方米/小时是整数；但题目要求所有容量和结果均以立方米/小时表示，当前求解器最大流支持原题单位下的非负整数容量，无法强制统一输出单位并在该单位下完成整数校验与求解。"
+        ],
+        "model": null
+      },
+      "result": {
+        "status": "unsupported",
+        "questions": [
+          "原边容量为1000升/小时，换算为1立方米/小时是整数；但题目要求所有容量和结果均以立方米/小时表示，当前求解器最大流支持原题单位下的非负整数容量，无法强制统一输出单位并在该单位下完成整数校验与求解。"
+        ],
+        "model": null
+      }
+    }
+  ]
+}

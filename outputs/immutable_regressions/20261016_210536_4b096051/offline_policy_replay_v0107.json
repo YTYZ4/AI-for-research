@@ -1,0 +1,222 @@
+{
+  "version": "0.10.7",
+  "api_calls": 0,
+  "checks": [
+    {
+      "id": "lock_original",
+      "repeat": 1,
+      "takeover_after_fix": true,
+      "same_takeover_decision": true
+    },
+    {
+      "id": "lock_dont",
+      "repeat": 1,
+      "takeover_after_fix": true,
+      "same_takeover_decision": true
+    },
+    {
+      "id": "lock_keep",
+      "repeat": 1,
+      "takeover_after_fix": true,
+      "same_takeover_decision": true
+    },
+    {
+      "id": "lock_cannot",
+      "repeat": 1,
+      "takeover_after_fix": false,
+      "same_takeover_decision": true
+    },
+    {
+      "id": "valid_above",
+      "repeat": 1,
+      "takeover_after_fix": false,
+      "same_takeover_decision": true
+    },
+    {
+      "id": "valid_equal",
+      "repeat": 1,
+      "takeover_after_fix": false,
+      "same_takeover_decision": true
+    },
+    {
+      "id": "valid_zero",
+      "repeat": 1,
+      "takeover_after_fix": false,
+      "same_takeover_decision": true
+    },
+    {
+      "id": "missing_capacity",
+      "repeat": 1,
+      "takeover_after_fix": false,
+      "same_takeover_decision": true
+    },
+    {
+      "id": "missing_rate",
+      "repeat": 1,
+      "takeover_after_fix": false,
+      "same_takeover_decision": true
+    },
+    {
+      "id": "permission",
+      "repeat": 1,
+      "takeover_after_fix": false,
+      "same_takeover_decision": true
+    },
+    {
+      "id": "conflicting_capacity",
+      "repeat": 1,
+      "takeover_after_fix": false,
+      "same_takeover_decision": true
+    },
+    {
+      "id": "intervention",
+      "repeat": 1,
+      "takeover_after_fix": false,
+      "same_takeover_decision": true
+    },
+    {
+      "id": "lock_original",
+      "repeat": 2,
+      "takeover_after_fix": false,
+      "same_takeover_decision": true
+    },
+    {
+      "id": "lock_dont",
+      "repeat": 2,
+      "takeover_after_fix": true,
+      "same_takeover_decision": true
+    },
+    {
+      "id": "lock_keep",
+      "repeat": 2,
+      "takeover_after_fix": true,
+      "same_takeover_decision": true
+    },
+    {
+      "id": "lock_cannot",
+      "repeat": 2,
+      "takeover_after_fix": true,
+      "same_takeover_decision": true
+    },
+    {
+      "id": "valid_above",
+      "repeat": 2,
+      "takeover_after_fix": false,
+      "same_takeover_decision": true
+    },
+    {
+      "id": "valid_equal",
+      "repeat": 2,
+      "takeover_after_fix": false,
+      "same_takeover_decision": true
+    },
+    {
+      "id": "valid_zero",
+      "repeat": 2,
+      "takeover_after_fix": false,
+      "same_takeover_decision": true
+    },
+    {
+      "id": "missing_capacity",
+      "repeat": 2,
+      "takeover_after_fix": false,
+      "same_takeover_decision": true
+    },
+    {
+      "id": "missing_rate",
+      "repeat": 2,
+      "takeover_after_fix": false,
+      "same_takeover_decision": true
+    },
+    {
+      "id": "permission",
+      "repeat": 2,
+      "takeover_after_fix": false,
+      "same_takeover_decision": true
+    },
+    {
+      "id": "conflicting_capacity",
+      "repeat": 2,
+      "takeover_after_fix": false,
+      "same_takeover_decision": true
+    },
+    {
+      "id": "intervention",
+      "repeat": 2,
+      "takeover_after_fix": false,
+      "same_takeover_decision": true
+    },
+    {
+      "id": "lock_original",
+      "repeat": 3,
+      "takeover_after_fix": true,
+      "same_takeover_decision": true
+    },
+    {
+      "id": "lock_dont",
+      "repeat": 3,
+      "takeover_after_fix": true,
+      "same_takeover_decision": true
+    },
+    {
+      "id": "lock_keep",
+      "repeat": 3,
+      "takeover_after_fix": true,
+      "same_takeover_decision": true
+    },
+    {
+      "id": "lock_cannot",
+      "repeat": 3,
+      "takeover_after_fix": false,
+      "same_takeover_decision": true
+    },
+    {
+      "id": "valid_above",
+      "repeat": 3,
+      "takeover_after_fix": false,
+      "same_takeover_decision": true
+    },
+    {
+      "id": "valid_equal",
+      "repeat": 3,
+      "takeover_after_fix": false,
+      "same_takeover_decision": true
+    },
+    {
+      "id": "valid_zero",
+      "repeat": 3,
+      "takeover_after_fix": false,
+      "same_takeover_decision": true
+    },
+    {
+      "id": "missing_capacity",
+      "repeat": 3,
+      "takeover_after_fix": false,
+      "same_takeover_decision": true
+    },
+    {
+      "id": "missing_rate",
+      "repeat": 3,
+      "takeover_after_fix": false,
+      "same_takeover_decision": true
+    },
+    {
+      "id": "permission",
+      "repeat": 3,
+      "takeover_after_fix": false,
+      "same_takeover_decision": true
+    },
+    {
+      "id": "conflicting_capacity",
+      "repeat": 3,
+      "takeover_after_fix": false,
+      "same_takeover_decision": true
+    },
+    {
+      "id": "intervention",
+      "repeat": 3,
+      "takeover_after_fix": false,
+      "same_takeover_decision": true
+    }
+  ]
+}

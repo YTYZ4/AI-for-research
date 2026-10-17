@@ -1,0 +1,11 @@
+{
+  "applied": true,
+  "passed": true,
+  "checks": {
+    "expected_status": true,
+    "nonempty_question": true,
+    "relevant_topic": true
+  },
+  "text": "原题要求最小费用最大流，属于未支持的任务类型；当前仅支持最短路径和静态单商品最大流。已给出的有向边、S到T容量和费用信息无法在本契约下作为支持任务提交。",
+  "scope": "状态/主题初筛；显式禁止改值时检查修改建议，否则Logistic容量检查正实数限制。不是完整语义证明。"
+}

@@ -1,0 +1,24 @@
+{
+  "task_type": "dynamics_input",
+  "name": "封闭环境连续Logistic增长",
+  "system": "logistic",
+  "initial": 100,
+  "rate": 0.2,
+  "equilibrium": 1000,
+  "duration": 30,
+  "rate_unit": "1/day",
+  "state_unit": "个",
+  "assumptions": [
+    "种群遵循连续Logistic增长模型",
+    "参数恒定",
+    "无迁入迁出",
+    "数量使用连续近似"
+  ],
+  "duration_unit": "day",
+  "source_quotes": {
+    "initial": "100个",
+    "equilibrium": "1000个",
+    "rate": "每天0.2",
+    "duration": "30天"
+  }
+}

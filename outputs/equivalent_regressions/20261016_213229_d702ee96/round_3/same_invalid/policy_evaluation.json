@@ -1,0 +1,7 @@
+{
+  "false_interception": false,
+  "passed": true,
+  "no_replacement_suggestion": true,
+  "text": "环境容量 K 的记录为 -0 个（另一记录 K=0.0 个），数值上等价于 0。Logistic 模型要求正实数环境容量 K，K=0 会使模型除零或无效；当前仅支持常参数且 K>0 的连续 Logistic。不得改动参数，因此无法建立可求解模型。",
+  "scope": "仅检查显式禁止改参数后的常见改值建议；不是完整语义证明"
+}

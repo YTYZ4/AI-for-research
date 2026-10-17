@@ -1,0 +1,12 @@
+{
+  "id": "NET02_error",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "边 S→A 的容量为 -3，最大流仅支持非负整数容量，无法在保留原值的前提下建模。",
+  "total_tokens": 3408,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "NET02_error/20261016_205640_f3e3a93f",
+  "elapsed_seconds": 1.1218568329932168
+}

@@ -1,0 +1,12 @@
+{
+  "id": "missing",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "请提供正实数环境容量K（可为小数）。；请确认Logistic模型的内禀增长率0.2每天与环境容量K的单位是否一致；如不一致请补充单位。",
+  "total_tokens": 3506,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "missing/20261016_211208_ef33fa09",
+  "elapsed_seconds": 1.8830370000214316
+}

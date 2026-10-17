@@ -1,0 +1,116 @@
+[
+  {
+    "id": "graph_previous",
+    "problem": "examples/development_variants/NET02_paraphrase.txt",
+    "family": "graph",
+    "expected_envelopes": [
+      "ready"
+    ],
+    "check": "flow"
+  },
+  {
+    "id": "graph_global_before",
+    "problem": "examples/remaining_failure/graph_global_before.txt",
+    "family": "graph",
+    "expected_envelopes": [
+      "ready"
+    ],
+    "check": "flow"
+  },
+  {
+    "id": "graph_inline",
+    "problem": "examples/remaining_failure/graph_inline.txt",
+    "family": "graph",
+    "expected_envelopes": [
+      "ready"
+    ],
+    "check": "flow"
+  },
+  {
+    "id": "graph_path_units",
+    "problem": "examples/robustness/path_units.txt",
+    "family": "graph",
+    "expected_envelopes": [
+      "ready"
+    ],
+    "check": "path"
+  },
+  {
+    "id": "graph_mixed_flow",
+    "problem": "examples/graph_unit/flow_mixed.txt",
+    "family": "graph",
+    "expected_envelopes": [
+      "ready"
+    ],
+    "check": "mixed_flow"
+  },
+  {
+    "id": "permission_previous",
+    "problem": "examples/immutable/permission.txt",
+    "family": "dynamics",
+    "expected_envelopes": [
+      "needs_clarification"
+    ],
+    "check": "permission"
+  },
+  {
+    "id": "permission_paraphrase",
+    "problem": "examples/remaining_failure/permission_paraphrase.txt",
+    "family": "dynamics",
+    "expected_envelopes": [
+      "needs_clarification"
+    ],
+    "check": "permission"
+  },
+  {
+    "id": "permission_valid",
+    "problem": "examples/remaining_failure/permission_valid.txt",
+    "family": "dynamics",
+    "expected_envelopes": [
+      "ready"
+    ],
+    "check": "valid",
+    "initial": 1.5,
+    "capacity": 0.5
+  },
+  {
+    "id": "permission_forbidden",
+    "problem": "examples/remaining_failure/permission_forbidden.txt",
+    "family": "dynamics",
+    "expected_envelopes": [
+      "unsupported"
+    ],
+    "check": "locked"
+  },
+  {
+    "id": "permission_missing",
+    "problem": "examples/remaining_failure/permission_missing.txt",
+    "family": "dynamics",
+    "expected_envelopes": [
+      "needs_clarification"
+    ],
+    "check": "missing"
+  },
+  {
+    "id": "permission_conflict",
+    "problem": "examples/remaining_failure/permission_conflict.txt",
+    "family": "dynamics",
+    "expected_envelopes": [
+      "needs_clarification"
+    ],
+    "check": "conflict",
+    "conflict_values": [
+      0,
+      0.5
+    ]
+  },
+  {
+    "id": "permission_threshold",
+    "problem": "examples/remaining_failure/permission_threshold.txt",
+    "family": "dynamics",
+    "expected_envelopes": [
+      "unsupported"
+    ],
+    "check": "unsupported"
+  }
+]

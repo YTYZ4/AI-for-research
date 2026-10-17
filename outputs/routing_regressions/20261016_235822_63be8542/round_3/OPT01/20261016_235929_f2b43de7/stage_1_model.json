@@ -1,0 +1,74 @@
+{
+  "name": "生产计划优化",
+  "assumptions": [
+    "产量为整件产品，取非负整数。",
+    "工时与原料均为可分割量，按连续量计算消耗。",
+    "本期工时上限为100小时，原料上限为80千克。"
+  ],
+  "variables": [
+    {
+      "name": "A",
+      "description": "产品A的产量",
+      "unit": "件",
+      "kind": "integer",
+      "lower": 0,
+      "upper": null
+    },
+    {
+      "name": "B",
+      "description": "产品B的产量",
+      "unit": "件",
+      "kind": "integer",
+      "lower": 0,
+      "upper": null
+    }
+  ],
+  "objective": {
+    "sense": "max",
+    "terms": [
+      {
+        "variable": "A",
+        "coefficient": 40
+      },
+      {
+        "variable": "B",
+        "coefficient": 30
+      }
+    ],
+    "unit": "元"
+  },
+  "constraints": [
+    {
+      "name": "工时限制",
+      "terms": [
+        {
+          "variable": "A",
+          "coefficient": 2
+        },
+        {
+          "variable": "B",
+          "coefficient": 1
+        }
+      ],
+      "sense": "<=",
+      "rhs": 100,
+      "unit": "小时"
+    },
+    {
+      "name": "原料限制",
+      "terms": [
+        {
+          "variable": "A",
+          "coefficient": 1
+        },
+        {
+          "variable": "B",
+          "coefficient": 2
+        }
+      ],
+      "sense": "<=",
+      "rhs": 80,
+      "unit": "千克"
+    }
+  ]
+}

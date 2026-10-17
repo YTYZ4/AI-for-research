@@ -1,0 +1,9 @@
+{
+  "zero": 3,
+  "negative": 3,
+  "missing": 3,
+  "fraction": 3,
+  "small": 3,
+  "zero_initial": 3,
+  "above_capacity": 2
+}

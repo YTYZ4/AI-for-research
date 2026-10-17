@@ -1,0 +1,12 @@
+{
+  "id": "pure_min_cost",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "当前仅支持最短路径和单商品最大流两类任务，不支持最小费用流。题目要求“求最小费用流”，并给出单位成本“每升2元”，这属于最小费用流任务，因此无法处理。；若需要按受支持任务处理，可改为仅求单商品最大流或最短路径，并提供对应的边容量或边权信息；最小费用流中的成本参数不会被纳入求解。",
+  "total_tokens": 1399,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "pure_min_cost/20261016_230046_8afd046d",
+  "elapsed_seconds": 1.89552962500602
+}

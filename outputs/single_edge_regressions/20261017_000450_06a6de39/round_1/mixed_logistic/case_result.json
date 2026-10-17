@@ -1,0 +1,12 @@
+{
+  "id": "mixed_logistic",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "当前请求同时要求Logistic动态预测和网络最大流/成本联合优化两类建模任务；当前单模型协议每次只能表示一个任务，无法联合表示“先预测再联合计算最大流且成本最低”的组合要求，因此整体返回unsupported。",
+  "total_tokens": 5001,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "mixed_logistic/20261017_000508_9370ee71",
+  "elapsed_seconds": 1.7296383749926463
+}

@@ -1,0 +1,87 @@
+{
+  "name": "A、B产品生产计划",
+  "assumptions": [
+    "产量为非负整数件，不可分割",
+    "工时与原料的消耗系数为题目给定，保持不变",
+    "目标为最大化本期总利润，单位为元",
+    "所有限制均为硬性约束，不允许放宽"
+  ],
+  "variables": [
+    {
+      "name": "xA",
+      "description": "产品A的产量",
+      "unit": "件",
+      "kind": "integer",
+      "lower": 0,
+      "upper": null
+    },
+    {
+      "name": "xB",
+      "description": "产品B的产量",
+      "unit": "件",
+      "kind": "integer",
+      "lower": 0,
+      "upper": null
+    }
+  ],
+  "objective": {
+    "sense": "max",
+    "terms": [
+      {
+        "variable": "xA",
+        "coefficient": 40
+      },
+      {
+        "variable": "xB",
+        "coefficient": 30
+      }
+    ],
+    "unit": "元"
+  },
+  "constraints": [
+    {
+      "name": "工时上限",
+      "terms": [
+        {
+          "variable": "xA",
+          "coefficient": 2
+        },
+        {
+          "variable": "xB",
+          "coefficient": 1
+        }
+      ],
+      "sense": "<=",
+      "rhs": 100,
+      "unit": "小时"
+    },
+    {
+      "name": "原料上限",
+      "terms": [
+        {
+          "variable": "xA",
+          "coefficient": 1
+        },
+        {
+          "variable": "xB",
+          "coefficient": 2
+        }
+      ],
+      "sense": "<=",
+      "rhs": 80,
+      "unit": "千克"
+    },
+    {
+      "name": "A硬性订单",
+      "terms": [
+        {
+          "variable": "xA",
+          "coefficient": 1
+        }
+      ],
+      "sense": ">=",
+      "rhs": 60,
+      "unit": "件"
+    }
+  ]
+}

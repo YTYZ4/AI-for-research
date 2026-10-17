@@ -1,0 +1,162 @@
+{
+  "version": "0.10.1",
+  "model": "deepseek-flash",
+  "cases": [
+    {
+      "id": "zero",
+      "family": "dynamics",
+      "problem": "examples/capacity_boundaries/zero.txt",
+      "initial": 100,
+      "capacity": 0,
+      "expected_envelopes": [
+        "needs_clarification"
+      ],
+      "question_keywords": [
+        "K",
+        "容量"
+      ]
+    },
+    {
+      "id": "negative",
+      "family": "dynamics",
+      "problem": "examples/capacity_boundaries/negative.txt",
+      "initial": 100,
+      "capacity": -0.5,
+      "expected_envelopes": [
+        "needs_clarification"
+      ],
+      "question_keywords": [
+        "K",
+        "容量"
+      ]
+    },
+    {
+      "id": "missing",
+      "family": "dynamics",
+      "problem": "examples/capacity_boundaries/missing.txt",
+      "initial": 100,
+      "capacity": null,
+      "expected_envelopes": [
+        "needs_clarification"
+      ],
+      "question_keywords": [
+        "K",
+        "容量"
+      ]
+    },
+    {
+      "id": "fraction",
+      "family": "dynamics",
+      "problem": "examples/capacity_boundaries/fraction.txt",
+      "initial": 100,
+      "capacity": 1000.5,
+      "expected_envelopes": [
+        "ready"
+      ],
+      "question_keywords": [
+        "K",
+        "容量"
+      ]
+    },
+    {
+      "id": "small",
+      "family": "dynamics",
+      "problem": "examples/capacity_boundaries/small.txt",
+      "initial": 0.1,
+      "capacity": 0.5,
+      "expected_envelopes": [
+        "ready"
+      ],
+      "question_keywords": [
+        "K",
+        "容量"
+      ]
+    },
+    {
+      "id": "zero_initial",
+      "family": "dynamics",
+      "problem": "examples/capacity_boundaries/zero_initial.txt",
+      "initial": 0,
+      "capacity": 0.5,
+      "expected_envelopes": [
+        "ready"
+      ],
+      "question_keywords": [
+        "K",
+        "容量"
+      ]
+    },
+    {
+      "id": "above_capacity",
+      "family": "dynamics",
+      "problem": "examples/capacity_boundaries/above_capacity.txt",
+      "initial": 1.5,
+      "capacity": 0.5,
+      "expected_envelopes": [
+        "ready"
+      ],
+      "question_keywords": [
+        "K",
+        "容量"
+      ]
+    }
+  ],
+  "repeats": 3,
+  "max_calls": 21,
+  "retries": 0,
+  "hashes": {
+    "modeling_assistant/config.py": "3bde19f9ff792b8612f650dbbe59bda9cd6b0bdc09bb4aa83ae2f32c21fc2dab",
+    "modeling_assistant/units.py": "0918f5c8d4dae0ab934a19549644fe55076e19be410e6d7222d6f674fa84aa4c",
+    "modeling_assistant/configure.py": "181e16c35632d06bae844828dc84edd8fef62cbf42fefd6db4208f335c7880bc",
+    "modeling_assistant/solver.py": "aaa42a26a60dd8800632fea12a07422e5d8d777e7f9264535e9f9bff13b2f5b0",
+    "modeling_assistant/provider.py": "a7524d3babb85813ef813d7d15d5cbd3c8785723677cebb0fe731c0cf00d23fa",
+    "modeling_assistant/__init__.py": "2882b99457fbc4fc48e35c7c071e0ad75b6fa4af4c10d38d25af141e752821e9",
+    "modeling_assistant/model.py": "ce4dfc989d8e684ece4cd272c18f683a6fb41181de43da7bb802a7274e4ff430",
+    "modeling_assistant/parser.py": "e36f55ec7a73f34f106ba19c09b6a2e246a802c676c4d029c79d1cf1c2f46231",
+    "modeling_assistant/presentation.py": "8d6347d182ad3845aaa6654b9a56b0a48c50a01654c558f41c30d9e76eb9b6e8",
+    "modeling_assistant/cli.py": "1e62bef215784eca078bfbc16df30e924be2a96ddb8ac7645f1ae18675e03f9e",
+    "modeling_assistant/extraction.py": "345d520d251a348beac0651b68fad7aceb94b1ca81d424a9028fe63637e86540",
+    "modeling_assistant/fitting.py": "7577f4d107cab457821be089dbfeebc0ee0b0b05627f9f8b0e38565e24fd16fd",
+    "modeling_assistant/graphs.py": "cd1063f33e1a0e41fa26048bf7c06bf7ec766e097264eb2135975b1e1b264469",
+    "modeling_assistant/format_repair.py": "3f2ab8ea661eb1c5cfc302453c341f344f81923d4aa34b219458117b7259fe54",
+    "modeling_assistant/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+    "modeling_assistant/dynamics.py": "5f516b2ef84abfcd39e12ea96a01aa160ad8c54be51a6cab81f3b8f4e3f9dc57",
+    "evaluation/format_regression.py": "6a03b8388f7db607204351c9350ca8da59e72a122c236316c53412af83a4ecb3",
+    "evaluation/variants.py": "30a6cc4a08751c821bbd511c117d8a8340a7fe174588fdaf982a8d7141237c9b",
+    "evaluation/transport.py": "b25a52d2837db07788ec883de5028a84ac98fc31ca8087a903bc4cd805e45f5b",
+    "evaluation/full_regression.py": "492a0eb2bd4c4d692890c7f443a0243102f3befc82fdb9819916aab1f0879819",
+    "evaluation/capacity_regression.py": "22cc3bc7a975baa07bf2d8fd027b71dcec011e57d6de0b5c409f1588230353e4",
+    "evaluation/batch.py": "c7659a163d8a025515dc441592585397ef37e2a122e97f14cb17a2f5f7d81491",
+    "evaluation/__init__.py": "e341001f744cb6b55ac13abe7a9d38978cd3b1ef9c183f663f055edefa4f5ea2",
+    "evaluation/development.py": "89270a2258536a19513758437df5c60d7f58030faaa097d7e7ec56e2b611d85c",
+    "evaluation/robustness.py": "cd5fd3a95455a464ec69b147d5f8cccf282a583813c21c995081c27048c51b8a",
+    "evaluation/fitting.py": "d4262f4040c1cccf7d7028af272c64fd41e362877fea71ab96eb08744ddeb21d",
+    "evaluation/review_variants.py": "b7001e90019a90aa15976ca91a2a2709e1de2f5a5fdc90ff1a5845ae361db1ec",
+    "evaluation/graphs.py": "b68d4fd3088d8542dc9604a2b77ccb4901165f89eab9072949ce40592c4f7d79",
+    "evaluation/unit_regression.py": "5f2f7f2c064b40c9999274ee64e8f71773a8053b89fcfc4c0285b45729e91ac7",
+    "evaluation/dynamics.py": "d11fd630a1f2f19013e24ae79430613963ccb57bcce5919d03704a1b1635ead7",
+    "tests/test_parameter_feedback.py": "d70ff40a911d31497bdb255c1668e5ff895155c62c2f617cb774b68d6bf498e9",
+    "tests/test_capacity_boundaries.py": "ba790ae0e4a70f2aaaaa870e9d2a6aef5415846a323c978b632ed4b741f00395",
+    "tests/test_api_configuration.py": "b3ba057230e25982f50de28578678c9e3c405e212a4b52f5670fb2a6d914c85a",
+    "tests/test_clarification.py": "ae24fc6cd986f42f20e09f7322ccf2760ae5c537d63808f80bcae07f210a46e5",
+    "tests/test_graphs.py": "d32d4d83f4ba0d1c4d927c0146e29bc12b49e221732cc8fa7fd1acef3479e0e3",
+    "tests/test_variants.py": "3a1216832bed6282efdea5cbda1a6364d96b86993334a39dcab2a5560dad504b",
+    "tests/test_transport.py": "70e001ae2fdc87be163f6942d7222608af8db9b73d330a6c975a10b3dd002041",
+    "tests/test_fitting.py": "bb2ea9fcc106ae4240569cb5e23766489e2c9a459606b5a3c5c052a3778e1bd0",
+    "tests/test_units.py": "2ae74b20e85f08a69fdf32947c0a8f773ddd04cea02a57cb3d3c3d17b71d625b",
+    "tests/test_dynamics.py": "0bc68c55cc35d7fd25e2b23c760b2d1c6b0969f10accf19e7fdb3cf932034426",
+    "tests/test_extraction_presentation.py": "98566213d1b1654fabefdad77f86e29e600e1d2ac51780f513e3cfa7f90c756a",
+    "tests/test_batch.py": "3441510fc449123ec7cb3d022d6b4c76aeef89a56fe1f3d44c849481a07b15c8",
+    "tests/test_infeasibility.py": "635fdfbe7b97d5ab61f3f85772cb33b492c5772d6170a7450a2aeeb9848ba76e",
+    "tests/test_full_regression.py": "4a26b900e72146edc5a45ab99c955b6a590edfc1f461c669139a2328d646012e",
+    "tests/test_format_repair.py": "8001025309adb299a0cfa229c57bb52598ba979e9ba7ac754e89867a7e69b353",
+    "tests/test_modeling_assistant.py": "b1bcfbb03e929b170e20f3870796b82506fbcc288f493d2c1c8a14cdf96a7995",
+    "examples/capacity_boundaries/zero.txt": "8f7b60a1dd071e1580c3e3f02b99b63a681765d4f38acb64347e9066a900fba4",
+    "examples/capacity_boundaries/fraction.txt": "4d261e337c1a2c55ed0ab25ff7138bbf5ace4f9f9fe196013d0cbc22482abd22",
+    "examples/capacity_boundaries/missing.txt": "d222aaa918d08086ef369918fd8bf60f3cc047edcc3569bc3ebfc382d4fa9c0d",
+    "examples/capacity_boundaries/small.txt": "fc77f79708fda5cf775987f8ba1bb791f178b20f2a539e8b466542c927d70da0",
+    "examples/capacity_boundaries/above_capacity.txt": "9e2197aec25acae58994229bc9ddeb34e9265812af3faaf740258eb21f111b0f",
+    "examples/capacity_boundaries/negative.txt": "1320075f6f5358f2e04669b9c9939398d3700fc2eef76213e6034a39570c5a9d",
+    "examples/capacity_boundaries/zero_initial.txt": "68f14a554f8bccef8421f6ac6ad9a9c161f5218a2116b5a9f2c28841cff59e60"
+  }
+}

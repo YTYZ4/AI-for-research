@@ -1,0 +1,16 @@
+{
+  "task_type": "dynamics",
+  "name": "logistic",
+  "system": "logistic",
+  "initial": 100,
+  "rate": 0.2,
+  "equilibrium": 1000,
+  "duration": 30,
+  "time_unit": "day",
+  "rate_unit": "1/day",
+  "state_unit": "个",
+  "assumptions": [
+    "常参数初值问题",
+    "连续状态"
+  ]
+}

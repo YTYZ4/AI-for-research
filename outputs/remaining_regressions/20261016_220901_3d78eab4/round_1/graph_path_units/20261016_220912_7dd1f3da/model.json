@@ -1,0 +1,57 @@
+{
+  "task_type": "graph",
+  "name": "S到T最短路",
+  "problem": "shortest_path",
+  "nodes": [
+    "S",
+    "A",
+    "B",
+    "C",
+    "T"
+  ],
+  "source": "S",
+  "target": "T",
+  "edges": [
+    {
+      "source": "S",
+      "target": "A",
+      "weight": 4
+    },
+    {
+      "source": "S",
+      "target": "B",
+      "weight": 2
+    },
+    {
+      "source": "B",
+      "target": "A",
+      "weight": 1
+    },
+    {
+      "source": "A",
+      "target": "C",
+      "weight": 2
+    },
+    {
+      "source": "B",
+      "target": "C",
+      "weight": 5
+    },
+    {
+      "source": "C",
+      "target": "T",
+      "weight": 3
+    },
+    {
+      "source": "A",
+      "target": "T",
+      "weight": 7
+    }
+  ],
+  "unit": "km",
+  "assumptions": [
+    "所有道路均为有向边，只允许沿给定方向行驶。",
+    "各边权重为原题给出的距离数值，未在输入中做单位换算；求解器将按统一单位换算后计算最短路。",
+    "题目声明没有其他道路，因此节点、边集和方向已完整列出。"
+  ]
+}

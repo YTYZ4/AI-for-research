@@ -1,0 +1,12 @@
+{
+  "id": "direction_unspecified",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "题目未记录管道方向：边从 S 到 T，还是从 T 到 S？请明确方向，以便按有向网络处理最大流。",
+  "total_tokens": 1465,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "direction_unspecified/20261016_235157_3e53dde8",
+  "elapsed_seconds": 0.8247000420233235
+}

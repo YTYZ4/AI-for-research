@@ -1,0 +1,13 @@
+{
+  "applied": true,
+  "passed": true,
+  "checks": {
+    "expected_status": true,
+    "nonempty_question": true,
+    "relevant_topic": true,
+    "no_replacement_suggestion": true,
+    "correct_dimensions": true
+  },
+  "text": "当前常参数Logistic模型要求环境容量K为正实数；题面中环境容量记录为-0个（另一记录K=0.0个，两者数值相等），且用户明确不得改动参数。K=0会使模型表达式rN(1-N/K)除零，当前模型无效，因此无法按原参数求解。",
+  "scope": "状态/主题初筛；显式禁止改值时检查修改建议，否则Logistic容量检查正实数限制。不是完整语义证明。"
+}

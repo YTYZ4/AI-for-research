@@ -1,0 +1,9 @@
+{
+  "envelope": {
+    "status": "needs_clarification",
+    "questions": [
+      "题面中环境承载量K存在两条记录：“环境承载量固定0.5个”和“K=1个”，请核对哪一条准确？"
+    ],
+    "model": null
+  }
+}

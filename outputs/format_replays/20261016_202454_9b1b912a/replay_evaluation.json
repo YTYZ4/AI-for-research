@@ -1,0 +1,82 @@
+{
+  "original_path": "/Users/Yonten/Library/Mobile Documents/com~apple~CloudDocs/AIforResearch/outputs/unit_regressions/20261016_201428_3b74d7fb/round_3/cooling_units/api.json",
+  "original_sha256": "de4d9d1e17bd1ec7b2fd07ae67f870f8febc03f1a799c7e6d133166531550714",
+  "strict_parser_failed": true,
+  "format_repair": {
+    "policy": "redundant_top_level_model_type_v1",
+    "raw_schema_valid": false,
+    "action": "applied",
+    "changes": [
+      {
+        "operation": "remove",
+        "path": "/model_type",
+        "old_value": "dynamics_input"
+      }
+    ],
+    "original_sha256": "182ed41e97614a1f193d0ca2fbf27c643d3e1b698df349376a1365c827e2a3f7",
+    "reason": "顶层字段重复表达已存在的任务类型，删除不改变模型内容",
+    "repaired_sha256": "4d736abfdceb63090be8bfc8fe014c0445fc90f0443a4d402a23a988d1042b3d",
+    "repaired_envelope": {
+      "status": "ready",
+      "questions": [],
+      "model": {
+        "task_type": "dynamics_input",
+        "name": "牛顿冷却温度轨迹与终值",
+        "system": "newton_cooling",
+        "initial": 90,
+        "rate": 0.1,
+        "equilibrium": 20,
+        "duration": 0.5,
+        "rate_unit": "1/min",
+        "state_unit": "celsius",
+        "assumptions": [
+          "遵循牛顿冷却定律，物体内部温度均匀且冷却系数保持不变。",
+          "环境温度恒定为20摄氏度。",
+          "允许使用负摄氏温度参与模型计算。",
+          "速率单位与时长单位不同，求解时按原题给出的单位数值进行换算。",
+          "用户要求统一时间和速率单位后求解，但本输出仅提取原题数值，不进行单位换算。"
+        ],
+        "duration_unit": "hour",
+        "source_quotes": {
+          "initial": "90摄氏度",
+          "equilibrium": "20摄氏度",
+          "rate": "0.1每分钟",
+          "duration": "0.5小时"
+        }
+      }
+    },
+    "semantic_validation_passed": true
+  },
+  "evaluation": {
+    "passed": true,
+    "source_values_match_original": true,
+    "numeric": {
+      "passed": true,
+      "checks": {
+        "parameters": true,
+        "rate": true,
+        "duration": true,
+        "rate_unit": true,
+        "state_unit": true,
+        "trajectory": true,
+        "endpoints": true
+      },
+      "max_error": 1.867674370714667e-08
+    },
+    "conversion": {
+      "method": "duration_to_original_rate_unit_v1",
+      "original_rate": 0.1,
+      "original_rate_unit": "1/min",
+      "original_duration": 0.5,
+      "original_duration_unit": "hour",
+      "factor": "60",
+      "normalized_duration": 30.0,
+      "normalized_time_unit": "min",
+      "rate_unchanged": true,
+      "source_quotes_checked": true
+    }
+  },
+  "api_calls": 0,
+  "new_tokens": 0,
+  "run_path": "/Users/Yonten/Library/Mobile Documents/com~apple~CloudDocs/AIforResearch/outputs/format_replays/20261016_202454_9b1b912a/20261016_202454_3bdbe984"
+}

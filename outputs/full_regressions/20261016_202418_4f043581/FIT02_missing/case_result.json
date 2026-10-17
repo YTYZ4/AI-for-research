@@ -1,0 +1,12 @@
+{
+  "id": "FIT02_missing",
+  "family": "fitting",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "请提供包含 x,y,split 三列的一元观测数据 CSV 文件；split 取值为 train/test。",
+  "total_tokens": 2957,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "FIT02_missing/20261016_202455_8ffadd94",
+  "elapsed_seconds": 1.1218116249656305
+}

@@ -1,0 +1,7 @@
+{
+  "false_interception": false,
+  "passed": true,
+  "no_replacement_suggestion": true,
+  "text": "原题明确环境容量 K=-0个（另一记录 K=0.0个，两记录数值等价），均不满足连续 Logistic 模型要求 K>0；题目同时声明不得改动参数，因此无法在保留原参数的前提下建立有效模型。",
+  "scope": "仅检查显式禁止改参数后的常见改值建议；不是完整语义证明"
+}

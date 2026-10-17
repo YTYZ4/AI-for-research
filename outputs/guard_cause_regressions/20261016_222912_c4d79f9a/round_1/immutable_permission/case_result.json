@@ -1,0 +1,12 @@
+{
+  "id": "immutable_permission",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "当前记录的环境容量K＝0不是正实数，会使连续Logistic模型出现除零而无效；你允许修改参数但要求先询问，请确认并提供正实数的环境容量K（可为小数）及其数量单位。",
+  "total_tokens": 5322,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "immutable_permission/20261016_222931_40529433",
+  "elapsed_seconds": 1.0779631250188686
+}

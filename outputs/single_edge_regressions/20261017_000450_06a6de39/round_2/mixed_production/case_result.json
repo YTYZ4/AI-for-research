@@ -1,0 +1,12 @@
+{
+  "id": "mixed_production",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "当前仅支持单一建模任务，无法在同一模型中联合完成生产计划与图网络最大流任务；请将实际需要解决的任务限定为其中一种。",
+  "total_tokens": 4970,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "mixed_production/20261017_000529_cedef851",
+  "elapsed_seconds": 1.3717404999770224
+}

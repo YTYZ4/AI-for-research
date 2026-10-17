@@ -1,0 +1,36 @@
+{
+  "created_at": "2026-10-16T16:37:59.662382+08:00",
+  "version": "0.6.0",
+  "python": "3.13.16",
+  "scipy": "1.18.1",
+  "backend": "reference",
+  "input": "某封闭环境中的种群遵循连续 Logistic 增长模型，初始数量为100个，环境容量为1000个，内禀增长率为每天0.2。请计算从0到30天的数量变化轨迹和第30天的数量。假设参数恒定，无迁入迁出，数量使用连续近似。\n",
+  "original_input": "某封闭环境中的种群遵循连续 Logistic 增长模型，初始数量为100个，环境容量为1000个，内禀增长率为每天0.2。请计算从0到30天的数量变化轨迹和第30天的数量。假设参数恒定，无迁入迁出，数量使用连续近似。\n",
+  "generation": {
+    "backend": "reference",
+    "llm_used": false
+  },
+  "envelope": {
+    "status": "ready",
+    "questions": [],
+    "model": {
+      "task_type": "dynamics",
+      "name": "logistic",
+      "system": "logistic",
+      "initial": 100,
+      "rate": 0.2,
+      "equilibrium": 1000,
+      "duration": 30,
+      "time_unit": "day",
+      "rate_unit": "1/day",
+      "state_unit": "个",
+      "assumptions": [
+        "常参数初值问题",
+        "连续状态"
+      ]
+    }
+  },
+  "stages": [],
+  "clarification_history": [],
+  "dataset": null
+}

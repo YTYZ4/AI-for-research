@@ -1,0 +1,12 @@
+{
+  "id": "capacity_above_capacity",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "",
+  "total_tokens": 4127,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "capacity_above_capacity/20261016_213941_cca8103b",
+  "elapsed_seconds": 1.8205346660106443
+}

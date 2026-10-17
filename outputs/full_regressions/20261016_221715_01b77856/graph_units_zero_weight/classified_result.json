@@ -1,0 +1,31 @@
+{
+  "id": "graph_units_zero_weight",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "",
+  "total_tokens": 4518,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "graph_units_zero_weight/20261016_221949_ac990fd7",
+  "elapsed_seconds": 1.6218383749946952,
+  "question_semantics_passed": null,
+  "kind": "graph_units",
+  "base_id": "NET01",
+  "origins": [
+    {
+      "id": "graph_units_zero_weight",
+      "problem": "examples/graph_unit_boundaries/zero_weight.txt",
+      "kind": "graph_units"
+    }
+  ],
+  "quote_audit_passed": null,
+  "raw_schema_valid": true,
+  "format_action": "not_needed",
+  "local_guard_used": false,
+  "source_quote_repaired": false,
+  "original_pass": true,
+  "after_format_pass": true,
+  "final_pass": true,
+  "pass_path": "native"
+}

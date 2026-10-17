@@ -1,0 +1,12 @@
+{
+  "id": "cost_paraphrase",
+  "family": "graph",
+  "outcome": "fail",
+  "failure_category": "needs_clarification",
+  "detail": "该问题同时包含最大流和运输成本最小化（最小费用流），当前仅支持单一最大流或最短路径问题，不支持按“先最大流再最小费用”的多目标求解；请确认是要仅最大流，还是仅最短路径？",
+  "total_tokens": 4898,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "cost_paraphrase/20261016_235127_7440d7c6",
+  "elapsed_seconds": 2.413026791997254
+}

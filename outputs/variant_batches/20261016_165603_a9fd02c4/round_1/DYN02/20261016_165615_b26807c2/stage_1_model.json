@@ -1,0 +1,19 @@
+{
+  "task_type": "dynamics",
+  "name": "连续Logistic种群增长轨迹与终值",
+  "system": "logistic",
+  "initial": 100,
+  "rate": 0.2,
+  "equilibrium": 1000,
+  "duration": 30,
+  "time_unit": "day",
+  "rate_unit": "1/day",
+  "state_unit": "个",
+  "assumptions": [
+    "种群数量采用连续近似，允许非整数。",
+    "环境容量K=1000个恒定。",
+    "内禀增长率r=0.2每天恒定。",
+    "封闭环境，无迁入迁出。",
+    "初始时刻t=0的数量为100个。"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "graph_units": true,
+  "graph_quotes": true,
+  "model": true,
+  "capacity_conflict": true,
+  "parameter_policy": true,
+  "dimension_policy": true,
+  "missing_capacity": true,
+  "source_quotes": true,
+  "format_repair": true
+}

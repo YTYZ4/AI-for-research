@@ -1,0 +1,20 @@
+{
+  "task_type": "dynamics",
+  "name": "封闭种群连续Logistic增长",
+  "system": "logistic",
+  "initial": 100,
+  "rate": 0.2,
+  "equilibrium": 1000,
+  "duration": 30.0,
+  "rate_unit": "1/day",
+  "state_unit": "个",
+  "assumptions": [
+    "封闭种群，无迁入迁出",
+    "环境容量恒定",
+    "增长率与容量为常参数",
+    "连续Logistic种群近似，允许非整数个体数",
+    "初值、容量和速率取原题数值，不做单位换算以外的修改",
+    "时间单位按要求由小时转换后与速率单位统一"
+  ],
+  "time_unit": "day"
+}

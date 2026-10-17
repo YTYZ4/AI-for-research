@@ -1,0 +1,12 @@
+{
+  "id": "flow_zero_conversion",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "",
+  "total_tokens": 994,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "flow_zero_conversion/20261016_225426_cec7f8fc",
+  "elapsed_seconds": 1.2043249999987893
+}

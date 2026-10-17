@@ -1,0 +1,23 @@
+{
+  "task_type": "graph",
+  "name": "S-to-T max flow",
+  "problem": "max_flow",
+  "nodes": [
+    "S",
+    "T"
+  ],
+  "source": "S",
+  "target": "T",
+  "edges": [
+    {
+      "source": "S",
+      "target": "T",
+      "weight": 1
+    }
+  ],
+  "unit": "升/小时",
+  "assumptions": [
+    "有向边按原题方向保留。",
+    "顶层输出单位为升/小时；实际单位换算与容量整数校验由程序处理。"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "cost_paraphrase",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "该问题同时要求最大流和最小成本流；当前最大流模型不支持运输成本或最小费用流，因此无法按要求建模。",
+  "total_tokens": 4881,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "cost_paraphrase/20261016_235214_e333c13f",
+  "elapsed_seconds": 1.9893414999824017
+}

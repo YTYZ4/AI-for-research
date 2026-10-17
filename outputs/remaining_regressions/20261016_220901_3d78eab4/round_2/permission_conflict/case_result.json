@@ -1,0 +1,12 @@
+{
+  "id": "permission_conflict",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "关于环境容量K存在冲突记录：原文一处为“环境容量恒定0个”，另一处为“K=0.5个”。请核对哪条准确？不修改或替换数值，仅确认原始记录。",
+  "total_tokens": 4452,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "permission_conflict/20261016_220946_57e0927a",
+  "elapsed_seconds": 1.292951165989507
+}

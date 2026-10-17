@@ -1,0 +1,12 @@
+{
+  "method": "duration_to_original_rate_unit_v1",
+  "original_rate": 0.2,
+  "original_rate_unit": "1/day",
+  "original_duration": 30,
+  "original_duration_unit": "day",
+  "factor": "1",
+  "normalized_duration": 30.0,
+  "normalized_time_unit": "day",
+  "rate_unchanged": true,
+  "source_quotes_checked": true
+}

@@ -1,0 +1,17 @@
+{
+  "applied": true,
+  "passed": true,
+  "checks": {
+    "expected_status": true,
+    "nonempty_question": true,
+    "relevant_topic": true,
+    "clarification": true,
+    "capacity": true,
+    "positive_real": true,
+    "fraction_allowed": true,
+    "no_integer_requirement": true,
+    "correct_dimensions": true
+  },
+  "text": "环境容量 K 为 -0.5 个，连续 Logistic 模型要求 K 必须为正实数；请提供正实数环境容量 K（可为小数），并注明数量单位。",
+  "scope": "状态/主题初筛；显式禁止改值时检查修改建议，否则Logistic容量检查正实数限制。不是完整语义证明。"
+}

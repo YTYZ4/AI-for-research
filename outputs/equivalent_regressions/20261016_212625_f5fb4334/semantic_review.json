@@ -1,0 +1,25 @@
+{
+  "version": "0.10.10",
+  "raw_pass": 27,
+  "after_format_pass": 27,
+  "final_pass": 28,
+  "equivalent_valid_cases": "5种写法×3次；模型均给出ready，最终14/15通过，1次引用校验阻止执行",
+  "false_conflict_policy": "0/24非冲突对照",
+  "guard_added": "near_difference第2次原回答已列出两个值并请求核对，但没有冲突/矛盾/不一致字样，严格规则补成固定模板；这不是数学判断修复。",
+  "failures": [
+    {
+      "id": "round_1/leading_dot",
+      "reason": "模型source_quotes把原逗号拼成分号，非逐字引用；K提取0.5正确，未求解。"
+    },
+    {
+      "id": "round_3/same_invalid",
+      "reason": "正确unsupported后又要求正数K/允许调整，违反禁止改值；已有策略跳过unsupported，因此未接管。"
+    }
+  ],
+  "remaining_work": [
+    "真实引用提取与模型生成引用分离",
+    "unsupported响应仍须检查不当改值建议",
+    "区分明确语义与严格词面要求，避免把合理重述算作实质修复"
+  ],
+  "limits": "一次固定开发重复评测，不重试覆盖；未跑完整统一回归。"
+}

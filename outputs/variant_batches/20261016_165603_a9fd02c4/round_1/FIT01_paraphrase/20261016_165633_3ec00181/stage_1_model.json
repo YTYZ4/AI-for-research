@@ -1,0 +1,14 @@
+{
+  "task_type": "polynomial_fit",
+  "name": "传感器电压-参考温度线性标定",
+  "assumptions": [
+    "按题意使用有截距直线 y=a*x+b 进行普通最小二乘拟合",
+    "仅使用 split=train 的记录估计参数 a 和 b",
+    "使用 split=test 的记录单独计算 RMSE 和 MAE，不重新划分数据",
+    "x 为传感器电压，y 为参考温度，y 是响应变量，x 是自变量",
+    "没有附件数据内容，数据由本地 --data 提供；CSV 列已由本地校验为 x,y,split，训练 45 行、留出 15 行"
+  ],
+  "degree": 1,
+  "x_unit": "V",
+  "y_unit": "°C"
+}

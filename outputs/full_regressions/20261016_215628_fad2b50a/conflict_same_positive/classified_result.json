@@ -1,0 +1,31 @@
+{
+  "id": "conflict_same_positive",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "",
+  "total_tokens": 4738,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "conflict_same_positive/20261016_215832_3470ea6f",
+  "elapsed_seconds": 2.2577613340108655,
+  "question_semantics_passed": null,
+  "kind": "conflict",
+  "base_id": "DYN02",
+  "origins": [
+    {
+      "id": "conflict_same_positive",
+      "problem": "examples/conflict_boundaries/same_positive.txt",
+      "kind": "conflict"
+    }
+  ],
+  "quote_audit_passed": null,
+  "raw_schema_valid": true,
+  "format_action": "not_needed",
+  "local_guard_used": false,
+  "source_quote_repaired": false,
+  "original_pass": true,
+  "after_format_pass": true,
+  "final_pass": true,
+  "pass_path": "native"
+}

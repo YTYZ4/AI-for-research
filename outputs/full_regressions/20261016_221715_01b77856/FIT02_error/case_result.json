@@ -1,0 +1,12 @@
+{
+  "id": "FIT02_error",
+  "family": "fitting",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "普通多项式拟合仅支持1–5阶的非负整数阶数，-2不是受支持的阶数；且不能替换为其他阶数。",
+  "total_tokens": 4408,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "FIT02_error/20261016_221758_50d2cdee",
+  "elapsed_seconds": 1.2251458750106394
+}

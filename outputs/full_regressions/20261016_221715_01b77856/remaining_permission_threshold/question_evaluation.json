@@ -1,0 +1,13 @@
+{
+  "applied": true,
+  "passed": true,
+  "checks": {
+    "expected_status": true,
+    "nonempty_question": true,
+    "relevant_topic": true,
+    "explains_scope": true,
+    "correct_dimensions": true
+  },
+  "text": "当前动态任务仅支持常参数轨迹与终值计算；到达指定阈值的阈值时间求解暂不支持。",
+  "scope": "状态/主题初筛；显式禁止改值时检查修改建议，否则Logistic容量检查正实数限制。不是完整语义证明。"
+}

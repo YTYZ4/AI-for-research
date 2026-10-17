@@ -1,0 +1,35 @@
+{
+  "task_type": "graph",
+  "name": "有向输水网络最大流",
+  "problem": "max_flow",
+  "nodes": [
+    "S",
+    "A",
+    "T"
+  ],
+  "source": "S",
+  "target": "T",
+  "edges": [
+    {
+      "source": "S",
+      "target": "A",
+      "weight": 10
+    },
+    {
+      "source": "A",
+      "target": "T",
+      "weight": 6
+    },
+    {
+      "source": "S",
+      "target": "T",
+      "weight": 5
+    }
+  ],
+  "unit": "立方米/小时",
+  "assumptions": [
+    "有向边按题目给定方向建模；容量为每小时可通过的水量。",
+    "各边容量单位不同，统一输出单位为立方米/小时。",
+    "节点和边均按题面给定，无其他管道。"
+  ]
+}

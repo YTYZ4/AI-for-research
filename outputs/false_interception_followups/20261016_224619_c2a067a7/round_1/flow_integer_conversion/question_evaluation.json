@@ -1,0 +1,11 @@
+{
+  "applied": true,
+  "passed": false,
+  "checks": {
+    "expected_status": false,
+    "nonempty_question": true,
+    "relevant_topic": true
+  },
+  "text": "原题唯一容量为1000升/小时，要求所有容量和结果均以立方米/小时表示且不允许改变统一输出单位或取整；1000升/小时精确换算为1立方米/小时，属于整数容量，最大流问题本身在程序能力范围内，但当前 JSON Schema 的 graph_input 边字段不支持 source_quote/unit_quote 逐字引用，无法在不丢字段的情况下返回可校验的 ready 模型。",
+  "scope": "状态/主题初筛；显式禁止改值时检查修改建议，否则Logistic容量检查正实数限制。不是完整语义证明。"
+}

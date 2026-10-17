@@ -1,0 +1,69 @@
+{
+  "id": "conflict_all_negative",
+  "api_calls": 0,
+  "passed": true,
+  "source": "outputs/full_regressions/20261016_221715_01b77856/conflict_all_negative/api.json",
+  "source_sha256": "bedee4eba95de6280da0f31ab3291e9239dccb8460653c76c020ee31d59bb94a",
+  "question_audit": {
+    "applied": true,
+    "passed": true,
+    "checks": {
+      "expected_status": true,
+      "nonempty_question": true,
+      "relevant_topic": true,
+      "all_conflict_values": true,
+      "neutral": true,
+      "states_conflict": true,
+      "requests_resolution": true,
+      "clarification": true,
+      "correct_dimensions": true
+    },
+    "text": "环境容量K的原文记录相互冲突：“容量恒定-1个”；“K=-2个”。请核对并确认哪条记录准确，或补充记录分别适用的条件。系统未选择任何值，也未执行求解。",
+    "scope": "状态/主题初筛；显式禁止改值时检查修改建议，否则Logistic容量检查正实数限制。不是完整语义证明。"
+  },
+  "flow_audit": null,
+  "local_validation": {
+    "action": "needs_clarification",
+    "reason": "容量原文记录冲突，先澄清再校验参数域",
+    "original_status": "needs_clarification",
+    "original_envelope": {
+      "status": "needs_clarification",
+      "questions": [
+        "当前环境容量K存在互相冲突的记录（容量恒定-1个、另一记录K=-2个），且均不在常参数连续Logistic模型的有效参数域内（要求K>0）。请先核对哪条原始记录准确；确认后请提供正实数环境容量K（可为小数）及其数量单位。"
+      ],
+      "model": null
+    },
+    "model_executed": false,
+    "evidence": {
+      "relation": "conflicting",
+      "exact_values": [
+        "-1",
+        "-2"
+      ],
+      "raw_values": [
+        "-1",
+        "-2"
+      ],
+      "values": [
+        -1.0,
+        -2.0
+      ],
+      "unit": "个",
+      "source_quotes": [
+        "容量恒定-1个",
+        "K=-2个"
+      ],
+      "scope": "同一常参数Logistic题面中同单位容量记录；不选择真实值"
+    }
+  },
+  "classification": {
+    "raw_schema_valid": true,
+    "format_action": "not_needed",
+    "local_guard_used": true,
+    "source_quote_repaired": false,
+    "original_pass": false,
+    "after_format_pass": false,
+    "final_pass": true,
+    "pass_path": "local_guard"
+  }
+}

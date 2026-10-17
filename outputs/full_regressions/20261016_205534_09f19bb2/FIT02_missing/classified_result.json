@@ -1,0 +1,22 @@
+{
+  "id": "FIT02_missing",
+  "family": "fitting",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "请提供包含 x、y、split 三列的 CSV 数据集（split 为 train/test），用于训练、五折选阶并评估留出 RMSE 和 MAE。",
+  "total_tokens": 3416,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "FIT02_missing/20261016_205614_af870e3b",
+  "elapsed_seconds": 1.1359587499755435,
+  "question_semantics_passed": true,
+  "kind": "missing",
+  "base_id": "FIT02",
+  "raw_schema_valid": true,
+  "format_action": "not_needed",
+  "local_guard_used": false,
+  "original_pass": true,
+  "after_format_pass": true,
+  "final_pass": true,
+  "pass_path": "native"
+}

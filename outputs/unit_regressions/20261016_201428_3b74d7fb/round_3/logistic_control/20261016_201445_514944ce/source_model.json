@@ -1,0 +1,23 @@
+{
+  "task_type": "dynamics_input",
+  "name": "Logistic种群增长",
+  "system": "logistic",
+  "initial": 100,
+  "rate": 0.2,
+  "equilibrium": 1000,
+  "duration": 30,
+  "rate_unit": "1/day",
+  "state_unit": "个",
+  "assumptions": [
+    "参数恒定",
+    "无迁入迁出",
+    "种群数量采用连续近似"
+  ],
+  "duration_unit": "day",
+  "source_quotes": {
+    "initial": "100个",
+    "equilibrium": "1000个",
+    "rate": "每天0.2",
+    "duration": "0到30天"
+  }
+}

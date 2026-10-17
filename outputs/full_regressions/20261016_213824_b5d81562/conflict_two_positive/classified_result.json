@@ -1,0 +1,31 @@
+{
+  "id": "conflict_two_positive",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "同一容量参数存在冲突记录：环境承载量固定0.5个；K=1个。请核对哪条准确，并给出最终采用的环境容量K（单位：个）。",
+  "total_tokens": 3858,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "conflict_two_positive/20261016_214013_62502098",
+  "elapsed_seconds": 1.4318705830373801,
+  "question_semantics_passed": true,
+  "kind": "conflict",
+  "base_id": "DYN02",
+  "origins": [
+    {
+      "id": "conflict_two_positive",
+      "problem": "examples/conflict_boundaries/two_positive.txt",
+      "kind": "conflict"
+    }
+  ],
+  "quote_audit_passed": null,
+  "raw_schema_valid": true,
+  "format_action": "not_needed",
+  "local_guard_used": false,
+  "source_quote_repaired": false,
+  "original_pass": true,
+  "after_format_pass": true,
+  "final_pass": true,
+  "pass_path": "native"
+}

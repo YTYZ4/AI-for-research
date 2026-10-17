@@ -1,0 +1,11 @@
+{
+  "applied": true,
+  "passed": true,
+  "checks": {
+    "expected_status": true,
+    "nonempty_question": true,
+    "relevant_topic": true
+  },
+  "text": "已明确边 S→T 的容量为 1 升/小时，且要求统一输出单位为立方米/小时；请确认是否允许按精确单位换算处理（1 升/小时 = 0.001 立方米/小时，转换后容量为非负整数 0 立方米/小时），还是仍要求其他处理方式？",
+  "scope": "状态/主题初筛；显式禁止改值时检查修改建议，否则Logistic容量检查正实数限制。不是完整语义证明。"
+}

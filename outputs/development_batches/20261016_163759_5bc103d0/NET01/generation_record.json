@@ -1,0 +1,75 @@
+{
+  "created_at": "2026-10-16T16:37:59.665405+08:00",
+  "version": "0.6.0",
+  "python": "3.13.16",
+  "scipy": "1.18.1",
+  "backend": "reference",
+  "input": "有向道路网络的节点为S、A、B、C、T。只有以下道路：S到A为4千米，S到B为2千米，B到A为1千米，A到C为2千米，B到C为5千米，C到T为3千米，A到T为7千米。求从S到T的最短路线和总距离。每条道路只能沿给定方向行驶。\n",
+  "original_input": "有向道路网络的节点为S、A、B、C、T。只有以下道路：S到A为4千米，S到B为2千米，B到A为1千米，A到C为2千米，B到C为5千米，C到T为3千米，A到T为7千米。求从S到T的最短路线和总距离。每条道路只能沿给定方向行驶。\n",
+  "generation": {
+    "backend": "reference",
+    "llm_used": false
+  },
+  "envelope": {
+    "status": "ready",
+    "questions": [],
+    "model": {
+      "task_type": "graph",
+      "name": "shortest_path",
+      "problem": "shortest_path",
+      "nodes": [
+        "S",
+        "A",
+        "B",
+        "C",
+        "T"
+      ],
+      "source": "S",
+      "target": "T",
+      "edges": [
+        {
+          "source": "S",
+          "target": "A",
+          "weight": 4
+        },
+        {
+          "source": "S",
+          "target": "B",
+          "weight": 2
+        },
+        {
+          "source": "B",
+          "target": "A",
+          "weight": 1
+        },
+        {
+          "source": "A",
+          "target": "C",
+          "weight": 2
+        },
+        {
+          "source": "B",
+          "target": "C",
+          "weight": 5
+        },
+        {
+          "source": "C",
+          "target": "T",
+          "weight": 3
+        },
+        {
+          "source": "A",
+          "target": "T",
+          "weight": 7
+        }
+      ],
+      "unit": "千米",
+      "assumptions": [
+        "有向网络，仅含列出的边"
+      ]
+    }
+  },
+  "stages": [],
+  "clarification_history": [],
+  "dataset": null
+}

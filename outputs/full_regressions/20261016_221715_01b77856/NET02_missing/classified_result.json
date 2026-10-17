@@ -1,0 +1,31 @@
+{
+  "id": "NET02_missing",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "请提供边 A 到 T 的容量及其单位（原文单位写法）。",
+  "total_tokens": 4362,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "NET02_missing/20261016_221815_c0fa8fcc",
+  "elapsed_seconds": 1.0355424999725074,
+  "question_semantics_passed": true,
+  "kind": "missing",
+  "base_id": "NET02",
+  "origins": [
+    {
+      "id": "NET02_missing",
+      "problem": "examples/development_variants/NET02_missing.txt",
+      "kind": "missing"
+    }
+  ],
+  "quote_audit_passed": null,
+  "raw_schema_valid": true,
+  "format_action": "not_needed",
+  "local_guard_used": false,
+  "source_quote_repaired": false,
+  "original_pass": true,
+  "after_format_pass": true,
+  "final_pass": true,
+  "pass_path": "native"
+}

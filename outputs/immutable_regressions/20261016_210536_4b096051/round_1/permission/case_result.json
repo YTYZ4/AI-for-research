@@ -1,0 +1,12 @@
+{
+  "id": "permission",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "环境容量K必须为正实数，当前给出为0，会使Logistic方程出现除零并导致模型无效。请提供正实数环境容量K（可为小数）。",
+  "total_tokens": 3721,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "permission/20261016_210554_79663bb1",
+  "elapsed_seconds": 1.8825394160230644
+}

@@ -1,0 +1,12 @@
+{
+  "applied": true,
+  "passed": true,
+  "checks": {
+    "expected_status": true,
+    "nonempty_question": true,
+    "relevant_topic": true,
+    "no_replacement_suggestion": true
+  },
+  "text": "牛顿冷却模型 dT/dt=-k(T-T_env) 的冷却系数 k 必须为正；原题给定 k=-0.1 每分钟，负值超出当前常参数牛顿冷却模型支持范围（要求 rate > 0）。由于用户明确要求不得取绝对值或改动参数，无法建立有效模型。",
+  "scope": "状态/主题初筛；显式禁止改值时检查修改建议，否则Logistic容量检查正实数限制。不是完整语义证明。"
+}

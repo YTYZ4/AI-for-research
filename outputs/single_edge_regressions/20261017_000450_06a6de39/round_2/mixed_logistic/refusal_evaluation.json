@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": {
+    "unsupported": true,
+    "no_model": true,
+    "nonblank_explanations": true,
+    "identifies_requested_scope": true,
+    "explains_limit": true,
+    "no_invented_contract_limit": true,
+    "no_silent_downgrade": true
+  },
+  "text": "该请求同时要求联合完成图网络最大流/最小成本运输任务与Logistic动态需求预测任务；当前单模型协议无法表示这种联合建模，因此不能只返回其中一个任务或拆分处理。"
+}

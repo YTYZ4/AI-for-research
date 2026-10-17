@@ -1,0 +1,12 @@
+{
+  "id": "cost_synonym",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "原题要求同时满足最大输送量和最低总运输成本，这属于最小费用最大流任务；本输入仅支持最短路径和单商品最大流，不支持带费用优化的流问题，因此拒绝。",
+  "total_tokens": 1479,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "cost_synonym/20261016_235919_7d336b03",
+  "elapsed_seconds": 1.3043900420307182
+}

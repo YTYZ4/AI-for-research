@@ -1,0 +1,62 @@
+{
+  "task_type": "graph_input",
+  "name": "水管网最大流问题",
+  "problem": "max_flow",
+  "nodes": [
+    "S",
+    "A",
+    "B",
+    "T"
+  ],
+  "source": "S",
+  "target": "T",
+  "edges": [
+    {
+      "source": "S",
+      "target": "A",
+      "weight": 10,
+      "unit": "立方米/小时",
+      "source_quote": "S→A上限10",
+      "unit_quote": "单位均为立方米/小时"
+    },
+    {
+      "source": "A",
+      "target": "T",
+      "weight": 6,
+      "unit": "立方米/小时",
+      "source_quote": "A→T上限6",
+      "unit_quote": "单位均为立方米/小时"
+    },
+    {
+      "source": "A",
+      "target": "B",
+      "weight": 4,
+      "unit": "立方米/小时",
+      "source_quote": "A→B上限4",
+      "unit_quote": "单位均为立方米/小时"
+    },
+    {
+      "source": "S",
+      "target": "B",
+      "weight": 5,
+      "unit": "立方米/小时",
+      "source_quote": "S→B上限5",
+      "unit_quote": "单位均为立方米/小时"
+    },
+    {
+      "source": "B",
+      "target": "T",
+      "weight": 9,
+      "unit": "立方米/小时",
+      "source_quote": "B→T上限9",
+      "unit_quote": "单位均为立方米/小时"
+    }
+  ],
+  "unit": "立方米/小时",
+  "assumptions": [
+    "管道均为单向，方向如edge所列。",
+    "A、B为中间节点，不消耗也不积存水，满足流量守恒。",
+    "各边容量为原题未换算数值。",
+    "目标为求源汇间最大流及对应各边输水量。"
+  ]
+}

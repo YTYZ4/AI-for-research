@@ -1,0 +1,43 @@
+{
+  "task_type": "graph_input",
+  "name": "S到T最短路",
+  "problem": "shortest_path",
+  "nodes": [
+    "S",
+    "A",
+    "T"
+  ],
+  "source": "S",
+  "target": "T",
+  "edges": [
+    {
+      "source": "S",
+      "target": "A",
+      "weight": 0.5,
+      "unit": "米",
+      "source_quote": "S到A 5e-1米",
+      "unit_quote": "米"
+    },
+    {
+      "source": "A",
+      "target": "T",
+      "weight": 25,
+      "unit": "厘米",
+      "source_quote": "A到T 25厘米",
+      "unit_quote": "厘米"
+    },
+    {
+      "source": "S",
+      "target": "T",
+      "weight": 1000,
+      "unit": "毫米",
+      "source_quote": "S到T 1000毫米",
+      "unit_quote": "毫米"
+    }
+  ],
+  "unit": "米",
+  "assumptions": [
+    "有向图边方向严格按题面：S→A、A→T、S→T，未列出其他边。",
+    "求解器将各边权重按其原始单位换算为顶层单位米后计算最短路径。"
+  ]
+}

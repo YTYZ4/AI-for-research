@@ -1,0 +1,31 @@
+{
+  "id": "DYN01_missing",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "请提供冷却系数k及其时间单位（例如 1/min、1/hour）。",
+  "total_tokens": 4359,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "DYN01_missing/20261016_221801_d23b8f2b",
+  "elapsed_seconds": 1.0709597920067608,
+  "question_semantics_passed": true,
+  "kind": "missing",
+  "base_id": "DYN01",
+  "origins": [
+    {
+      "id": "DYN01_missing",
+      "problem": "examples/development_variants/DYN01_missing.txt",
+      "kind": "missing"
+    }
+  ],
+  "quote_audit_passed": null,
+  "raw_schema_valid": true,
+  "format_action": "not_needed",
+  "local_guard_used": false,
+  "source_quote_repaired": false,
+  "original_pass": true,
+  "after_format_pass": true,
+  "final_pass": true,
+  "pass_path": "native"
+}

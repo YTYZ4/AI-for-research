@@ -1,0 +1,60 @@
+{
+  "task_type": "graph_input",
+  "name": "供水管网最大流",
+  "problem": "max_flow",
+  "nodes": [
+    "S",
+    "A",
+    "B",
+    "T"
+  ],
+  "source": "S",
+  "target": "T",
+  "edges": [
+    {
+      "source": "B",
+      "target": "T",
+      "weight": 9,
+      "unit": "立方米/小时",
+      "source_quote": "B→T上限9",
+      "unit_quote": "单位均为立方米/小时"
+    },
+    {
+      "source": "A",
+      "target": "T",
+      "weight": 6,
+      "unit": "立方米/小时",
+      "source_quote": "A→T上限6",
+      "unit_quote": "单位均为立方米/小时"
+    },
+    {
+      "source": "A",
+      "target": "B",
+      "weight": 4,
+      "unit": "立方米/小时",
+      "source_quote": "A→B上限4",
+      "unit_quote": "单位均为立方米/小时"
+    },
+    {
+      "source": "S",
+      "target": "B",
+      "weight": 5,
+      "unit": "立方米/小时",
+      "source_quote": "S→B上限5",
+      "unit_quote": "单位均为立方米/小时"
+    },
+    {
+      "source": "S",
+      "target": "A",
+      "weight": 10,
+      "unit": "立方米/小时",
+      "source_quote": "S→A上限10",
+      "unit_quote": "单位均为立方米/小时"
+    }
+  ],
+  "unit": "立方米/小时",
+  "assumptions": [
+    "中间节点A、B不消耗也不积存水，满足流量守恒。",
+    "所有管道为单向管道，流量非负且不超过给定上限。"
+  ]
+}

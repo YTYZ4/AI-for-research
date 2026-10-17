@@ -1,0 +1,12 @@
+{
+  "id": "permission_threshold",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "当前动态任务仅支持常参数轨迹与终值计算，不支持求解到达阈值的时间。为避免自行替换你给出的参数（N0=1.5个、K=0.5个、r=0.2每天、时长30天），无法按当前支持范围建模。",
+  "total_tokens": 4303,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "permission_threshold/20261016_220947_668413d1",
+  "elapsed_seconds": 1.2061507079633884
+}

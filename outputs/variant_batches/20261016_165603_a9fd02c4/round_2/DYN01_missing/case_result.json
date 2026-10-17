@@ -1,0 +1,12 @@
+{
+  "id": "DYN01_missing",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "请提供牛顿冷却的冷却系数 k，并说明其单位（例如 1/min）。",
+  "total_tokens": 2429,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "DYN01_missing/20261016_165735_58c7c49c",
+  "elapsed_seconds": 0.9085796250146814
+}

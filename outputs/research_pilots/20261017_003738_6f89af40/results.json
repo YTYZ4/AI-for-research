@@ -1,0 +1,1082 @@
+[
+  {
+    "case": "V3",
+    "arm": "program_feedback",
+    "repeat": 1,
+    "label": "continuous_instead_of_integer",
+    "initial": {
+      "passed": false,
+      "executable": true,
+      "candidate_self_valid": true,
+      "model_matches_problem": false,
+      "answer_matches_problem": true,
+      "reference_optimum": 2200,
+      "review_required": true,
+      "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+    },
+    "round_scores": [
+      {
+        "passed": true,
+        "executable": true,
+        "candidate_self_valid": true,
+        "model_matches_problem": true,
+        "answer_matches_problem": true,
+        "reference_optimum": 2200,
+        "review_required": false,
+        "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+      },
+      {
+        "passed": true,
+        "executable": true,
+        "candidate_self_valid": true,
+        "model_matches_problem": true,
+        "answer_matches_problem": true,
+        "reference_optimum": 2200,
+        "review_required": false,
+        "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+      }
+    ],
+    "final_pass": true,
+    "initial_detected": true,
+    "direct_corrections": 0,
+    "calls": 2,
+    "tokens": 3023,
+    "usage_unknown": 0,
+    "elapsed_seconds": 3.882791084004566
+  },
+  {
+    "case": "V2",
+    "arm": "self_check",
+    "repeat": 1,
+    "label": "missing_material_constraint",
+    "initial": {
+      "passed": false,
+      "executable": true,
+      "candidate_self_valid": true,
+      "model_matches_problem": false,
+      "answer_matches_problem": false,
+      "reference_optimum": 2200,
+      "review_required": false,
+      "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+    },
+    "round_scores": [
+      {
+        "passed": true,
+        "executable": true,
+        "candidate_self_valid": true,
+        "model_matches_problem": true,
+        "answer_matches_problem": true,
+        "reference_optimum": 2200,
+        "review_required": false,
+        "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+      },
+      {
+        "passed": true,
+        "executable": true,
+        "candidate_self_valid": true,
+        "model_matches_problem": true,
+        "answer_matches_problem": true,
+        "reference_optimum": 2200,
+        "review_required": false,
+        "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+      }
+    ],
+    "final_pass": true,
+    "initial_detected": false,
+    "direct_corrections": 0,
+    "calls": 2,
+    "tokens": 2806,
+    "usage_unknown": 0,
+    "elapsed_seconds": 4.124213499948382
+  },
+  {
+    "case": "V3",
+    "arm": "program_feedback",
+    "repeat": 3,
+    "label": "continuous_instead_of_integer",
+    "initial": {
+      "passed": false,
+      "executable": true,
+      "candidate_self_valid": true,
+      "model_matches_problem": false,
+      "answer_matches_problem": true,
+      "reference_optimum": 2200,
+      "review_required": true,
+      "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+    },
+    "round_scores": [
+      {
+        "passed": true,
+        "executable": true,
+        "candidate_self_valid": true,
+        "model_matches_problem": true,
+        "answer_matches_problem": true,
+        "reference_optimum": 2200,
+        "review_required": false,
+        "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+      },
+      {
+        "passed": true,
+        "executable": true,
+        "candidate_self_valid": true,
+        "model_matches_problem": true,
+        "answer_matches_problem": true,
+        "reference_optimum": 2200,
+        "review_required": false,
+        "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+      }
+    ],
+    "final_pass": true,
+    "initial_detected": true,
+    "direct_corrections": 0,
+    "calls": 2,
+    "tokens": 3023,
+    "usage_unknown": 0,
+    "elapsed_seconds": 3.951859373948537
+  },
+  {
+    "case": "V4",
+    "arm": "program_feedback",
+    "repeat": 1,
+    "label": "wrong_labor_coefficient",
+    "initial": {
+      "passed": false,
+      "executable": true,
+      "candidate_self_valid": true,
+      "model_matches_problem": false,
+      "answer_matches_problem": false,
+      "reference_optimum": 2200,
+      "review_required": false,
+      "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+    },
+    "round_scores": [
+      {
+        "passed": true,
+        "executable": true,
+        "candidate_self_valid": true,
+        "model_matches_problem": true,
+        "answer_matches_problem": true,
+        "reference_optimum": 2200,
+        "review_required": false,
+        "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+      },
+      {
+        "passed": true,
+        "executable": true,
+        "candidate_self_valid": true,
+        "model_matches_problem": true,
+        "answer_matches_problem": true,
+        "reference_optimum": 2200,
+        "review_required": false,
+        "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+      }
+    ],
+    "final_pass": true,
+    "initial_detected": false,
+    "direct_corrections": 0,
+    "calls": 2,
+    "tokens": 2940,
+    "usage_unknown": 0,
+    "elapsed_seconds": 3.9188066660426557
+  },
+  {
+    "case": "V2",
+    "arm": "program_feedback",
+    "repeat": 2,
+    "label": "missing_material_constraint",
+    "initial": {
+      "passed": false,
+      "executable": true,
+      "candidate_self_valid": true,
+      "model_matches_problem": false,
+      "answer_matches_problem": false,
+      "reference_optimum": 2200,
+      "review_required": false,
+      "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+    },
+    "round_scores": [
+      {
+        "passed": true,
+        "executable": true,
+        "candidate_self_valid": true,
+        "model_matches_problem": true,
+        "answer_matches_problem": true,
+        "reference_optimum": 2200,
+        "review_required": false,
+        "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+      },
+      {
+        "passed": true,
+        "executable": true,
+        "candidate_self_valid": true,
+        "model_matches_problem": true,
+        "answer_matches_problem": true,
+        "reference_optimum": 2200,
+        "review_required": false,
+        "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+      }
+    ],
+    "final_pass": true,
+    "initial_detected": false,
+    "direct_corrections": 0,
+    "calls": 2,
+    "tokens": 2880,
+    "usage_unknown": 0,
+    "elapsed_seconds": 3.9535437079612166
+  },
+  {
+    "case": "V2",
+    "arm": "program_feedback",
+    "repeat": 3,
+    "label": "missing_material_constraint",
+    "initial": {
+      "passed": false,
+      "executable": true,
+      "candidate_self_valid": true,
+      "model_matches_problem": false,
+      "answer_matches_problem": false,
+      "reference_optimum": 2200,
+      "review_required": false,
+      "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+    },
+    "round_scores": [
+      {
+        "passed": true,
+        "executable": true,
+        "candidate_self_valid": true,
+        "model_matches_problem": true,
+        "answer_matches_problem": true,
+        "reference_optimum": 2200,
+        "review_required": false,
+        "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+      },
+      {
+        "passed": true,
+        "executable": true,
+        "candidate_self_valid": true,
+        "model_matches_problem": true,
+        "answer_matches_problem": true,
+        "reference_optimum": 2200,
+        "review_required": false,
+        "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+      }
+    ],
+    "final_pass": true,
+    "initial_detected": false,
+    "direct_corrections": 0,
+    "calls": 2,
+    "tokens": 2880,
+    "usage_unknown": 0,
+    "elapsed_seconds": 3.560371582978405
+  },
+  {
+    "case": "V3",
+    "arm": "self_check",
+    "repeat": 1,
+    "label": "continuous_instead_of_integer",
+    "initial": {
+      "passed": false,
+      "executable": true,
+      "candidate_self_valid": true,
+      "model_matches_problem": false,
+      "answer_matches_problem": true,
+      "reference_optimum": 2200,
+      "review_required": true,
+      "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+    },
+    "round_scores": [
+      {
+        "passed": true,
+        "executable": true,
+        "candidate_self_valid": true,
+        "model_matches_problem": true,
+        "answer_matches_problem": true,
+        "reference_optimum": 2200,
+        "review_required": false,
+        "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+      },
+      {
+        "passed": true,
+        "executable": true,
+        "candidate_self_valid": true,
+        "model_matches_problem": true,
+        "answer_matches_problem": true,
+        "reference_optimum": 2200,
+        "review_required": false,
+        "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+      }
+    ],
+    "final_pass": true,
+    "initial_detected": true,
+    "direct_corrections": 0,
+    "calls": 2,
+    "tokens": 2868,
+    "usage_unknown": 0,
+    "elapsed_seconds": 3.6722380830324255
+  },
+  {
+    "case": "V1",
+    "arm": "self_check",
+    "repeat": 1,
+    "label": "correct_control",
+    "initial": {
+      "passed": true,
+      "executable": true,
+      "candidate_self_valid": true,
+      "model_matches_problem": true,
+      "answer_matches_problem": true,
+      "reference_optimum": 2200,
+      "review_required": false,
+      "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+    },
+    "round_scores": [
+      {
+        "passed": true,
+        "executable": true,
+        "candidate_self_valid": true,
+        "model_matches_problem": true,
+        "answer_matches_problem": true,
+        "reference_optimum": 2200,
+        "review_required": false,
+        "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+      },
+      {
+        "passed": true,
+        "executable": true,
+        "candidate_self_valid": true,
+        "model_matches_problem": true,
+        "answer_matches_problem": true,
+        "reference_optimum": 2200,
+        "review_required": false,
+        "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+      }
+    ],
+    "final_pass": true,
+    "initial_detected": false,
+    "direct_corrections": 0,
+    "calls": 2,
+    "tokens": 2868,
+    "usage_unknown": 0,
+    "elapsed_seconds": 4.249133706907742
+  },
+  {
+    "case": "V2",
+    "arm": "self_check",
+    "repeat": 2,
+    "label": "missing_material_constraint",
+    "initial": {
+      "passed": false,
+      "executable": true,
+      "candidate_self_valid": true,
+      "model_matches_problem": false,
+      "answer_matches_problem": false,
+      "reference_optimum": 2200,
+      "review_required": false,
+      "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+    },
+    "round_scores": [
+      {
+        "passed": true,
+        "executable": true,
+        "candidate_self_valid": true,
+        "model_matches_problem": true,
+        "answer_matches_problem": true,
+        "reference_optimum": 2200,
+        "review_required": false,
+        "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+      },
+      {
+        "passed": true,
+        "executable": true,
+        "candidate_self_valid": true,
+        "model_matches_problem": true,
+        "answer_matches_problem": true,
+        "reference_optimum": 2200,
+        "review_required": false,
+        "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+      }
+    ],
+    "final_pass": true,
+    "initial_detected": false,
+    "direct_corrections": 0,
+    "calls": 2,
+    "tokens": 2806,
+    "usage_unknown": 0,
+    "elapsed_seconds": 4.128609417006373
+  },
+  {
+    "case": "V4",
+    "arm": "self_check",
+    "repeat": 2,
+    "label": "wrong_labor_coefficient",
+    "initial": {
+      "passed": false,
+      "executable": true,
+      "candidate_self_valid": true,
+      "model_matches_problem": false,
+      "answer_matches_problem": false,
+      "reference_optimum": 2200,
+      "review_required": false,
+      "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+    },
+    "round_scores": [
+      {
+        "passed": true,
+        "executable": true,
+        "candidate_self_valid": true,
+        "model_matches_problem": true,
+        "answer_matches_problem": true,
+        "reference_optimum": 2200,
+        "review_required": false,
+        "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+      },
+      {
+        "passed": true,
+        "executable": true,
+        "candidate_self_valid": true,
+        "model_matches_problem": true,
+        "answer_matches_problem": true,
+        "reference_optimum": 2200,
+        "review_required": false,
+        "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+      }
+    ],
+    "final_pass": true,
+    "initial_detected": false,
+    "direct_corrections": 0,
+    "calls": 2,
+    "tokens": 2866,
+    "usage_unknown": 0,
+    "elapsed_seconds": 3.57660308299819
+  },
+  {
+    "case": "V1",
+    "arm": "self_check",
+    "repeat": 3,
+    "label": "correct_control",
+    "initial": {
+      "passed": true,
+      "executable": true,
+      "candidate_self_valid": true,
+      "model_matches_problem": true,
+      "answer_matches_problem": true,
+      "reference_optimum": 2200,
+      "review_required": false,
+      "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+    },
+    "round_scores": [
+      {
+        "passed": true,
+        "executable": true,
+        "candidate_self_valid": true,
+        "model_matches_problem": true,
+        "answer_matches_problem": true,
+        "reference_optimum": 2200,
+        "review_required": false,
+        "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+      },
+      {
+        "passed": true,
+        "executable": true,
+        "candidate_self_valid": true,
+        "model_matches_problem": true,
+        "answer_matches_problem": true,
+        "reference_optimum": 2200,
+        "review_required": false,
+        "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+      }
+    ],
+    "final_pass": true,
+    "initial_detected": false,
+    "direct_corrections": 0,
+    "calls": 2,
+    "tokens": 2868,
+    "usage_unknown": 0,
+    "elapsed_seconds": 3.8296201670891605
+  },
+  {
+    "case": "V1",
+    "arm": "program_feedback",
+    "repeat": 1,
+    "label": "correct_control",
+    "initial": {
+      "passed": true,
+      "executable": true,
+      "candidate_self_valid": true,
+      "model_matches_problem": true,
+      "answer_matches_problem": true,
+      "reference_optimum": 2200,
+      "review_required": false,
+      "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+    },
+    "round_scores": [
+      {
+        "passed": true,
+        "executable": true,
+        "candidate_self_valid": true,
+        "model_matches_problem": true,
+        "answer_matches_problem": true,
+        "reference_optimum": 2200,
+        "review_required": false,
+        "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+      },
+      {
+        "passed": true,
+        "executable": true,
+        "candidate_self_valid": true,
+        "model_matches_problem": true,
+        "answer_matches_problem": true,
+        "reference_optimum": 2200,
+        "review_required": false,
+        "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+      }
+    ],
+    "final_pass": true,
+    "initial_detected": false,
+    "direct_corrections": 0,
+    "calls": 2,
+    "tokens": 2942,
+    "usage_unknown": 0,
+    "elapsed_seconds": 4.109789542038925
+  },
+  {
+    "case": "V1",
+    "arm": "program_feedback",
+    "repeat": 2,
+    "label": "correct_control",
+    "initial": {
+      "passed": true,
+      "executable": true,
+      "candidate_self_valid": true,
+      "model_matches_problem": true,
+      "answer_matches_problem": true,
+      "reference_optimum": 2200,
+      "review_required": false,
+      "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+    },
+    "round_scores": [
+      {
+        "passed": true,
+        "executable": true,
+        "candidate_self_valid": true,
+        "model_matches_problem": true,
+        "answer_matches_problem": true,
+        "reference_optimum": 2200,
+        "review_required": false,
+        "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+      },
+      {
+        "passed": true,
+        "executable": true,
+        "candidate_self_valid": true,
+        "model_matches_problem": true,
+        "answer_matches_problem": true,
+        "reference_optimum": 2200,
+        "review_required": false,
+        "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+      }
+    ],
+    "final_pass": true,
+    "initial_detected": false,
+    "direct_corrections": 0,
+    "calls": 2,
+    "tokens": 2942,
+    "usage_unknown": 0,
+    "elapsed_seconds": 3.8207455839728937
+  },
+  {
+    "case": "V4",
+    "arm": "program_feedback",
+    "repeat": 3,
+    "label": "wrong_labor_coefficient",
+    "initial": {
+      "passed": false,
+      "executable": true,
+      "candidate_self_valid": true,
+      "model_matches_problem": false,
+      "answer_matches_problem": false,
+      "reference_optimum": 2200,
+      "review_required": false,
+      "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+    },
+    "round_scores": [
+      {
+        "passed": true,
+        "executable": true,
+        "candidate_self_valid": true,
+        "model_matches_problem": true,
+        "answer_matches_problem": true,
+        "reference_optimum": 2200,
+        "review_required": false,
+        "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+      },
+      {
+        "passed": true,
+        "executable": true,
+        "candidate_self_valid": true,
+        "model_matches_problem": true,
+        "answer_matches_problem": true,
+        "reference_optimum": 2200,
+        "review_required": false,
+        "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+      }
+    ],
+    "final_pass": true,
+    "initial_detected": false,
+    "direct_corrections": 0,
+    "calls": 2,
+    "tokens": 2940,
+    "usage_unknown": 0,
+    "elapsed_seconds": 4.05150829203194
+  },
+  {
+    "case": "V2",
+    "arm": "self_check",
+    "repeat": 3,
+    "label": "missing_material_constraint",
+    "initial": {
+      "passed": false,
+      "executable": true,
+      "candidate_self_valid": true,
+      "model_matches_problem": false,
+      "answer_matches_problem": false,
+      "reference_optimum": 2200,
+      "review_required": false,
+      "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+    },
+    "round_scores": [
+      {
+        "passed": true,
+        "executable": true,
+        "candidate_self_valid": true,
+        "model_matches_problem": true,
+        "answer_matches_problem": true,
+        "reference_optimum": 2200,
+        "review_required": false,
+        "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+      },
+      {
+        "passed": true,
+        "executable": true,
+        "candidate_self_valid": true,
+        "model_matches_problem": true,
+        "answer_matches_problem": true,
+        "reference_optimum": 2200,
+        "review_required": false,
+        "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+      }
+    ],
+    "final_pass": true,
+    "initial_detected": false,
+    "direct_corrections": 0,
+    "calls": 2,
+    "tokens": 2806,
+    "usage_unknown": 0,
+    "elapsed_seconds": 3.1812199159758165
+  },
+  {
+    "case": "V2",
+    "arm": "program_feedback",
+    "repeat": 1,
+    "label": "missing_material_constraint",
+    "initial": {
+      "passed": false,
+      "executable": true,
+      "candidate_self_valid": true,
+      "model_matches_problem": false,
+      "answer_matches_problem": false,
+      "reference_optimum": 2200,
+      "review_required": false,
+      "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+    },
+    "round_scores": [
+      {
+        "passed": true,
+        "executable": true,
+        "candidate_self_valid": true,
+        "model_matches_problem": true,
+        "answer_matches_problem": true,
+        "reference_optimum": 2200,
+        "review_required": false,
+        "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+      },
+      {
+        "passed": true,
+        "executable": true,
+        "candidate_self_valid": true,
+        "model_matches_problem": true,
+        "answer_matches_problem": true,
+        "reference_optimum": 2200,
+        "review_required": false,
+        "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+      }
+    ],
+    "final_pass": true,
+    "initial_detected": false,
+    "direct_corrections": 0,
+    "calls": 2,
+    "tokens": 2880,
+    "usage_unknown": 0,
+    "elapsed_seconds": 3.8068745419732295
+  },
+  {
+    "case": "V4",
+    "arm": "self_check",
+    "repeat": 1,
+    "label": "wrong_labor_coefficient",
+    "initial": {
+      "passed": false,
+      "executable": true,
+      "candidate_self_valid": true,
+      "model_matches_problem": false,
+      "answer_matches_problem": false,
+      "reference_optimum": 2200,
+      "review_required": false,
+      "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+    },
+    "round_scores": [
+      {
+        "passed": true,
+        "executable": true,
+        "candidate_self_valid": true,
+        "model_matches_problem": true,
+        "answer_matches_problem": true,
+        "reference_optimum": 2200,
+        "review_required": false,
+        "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+      },
+      {
+        "passed": true,
+        "executable": true,
+        "candidate_self_valid": true,
+        "model_matches_problem": true,
+        "answer_matches_problem": true,
+        "reference_optimum": 2200,
+        "review_required": false,
+        "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+      }
+    ],
+    "final_pass": true,
+    "initial_detected": false,
+    "direct_corrections": 0,
+    "calls": 2,
+    "tokens": 2866,
+    "usage_unknown": 0,
+    "elapsed_seconds": 3.8143640420166776
+  },
+  {
+    "case": "V4",
+    "arm": "program_feedback",
+    "repeat": 2,
+    "label": "wrong_labor_coefficient",
+    "initial": {
+      "passed": false,
+      "executable": true,
+      "candidate_self_valid": true,
+      "model_matches_problem": false,
+      "answer_matches_problem": false,
+      "reference_optimum": 2200,
+      "review_required": false,
+      "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+    },
+    "round_scores": [
+      {
+        "passed": true,
+        "executable": true,
+        "candidate_self_valid": true,
+        "model_matches_problem": true,
+        "answer_matches_problem": true,
+        "reference_optimum": 2200,
+        "review_required": false,
+        "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+      },
+      {
+        "passed": true,
+        "executable": true,
+        "candidate_self_valid": true,
+        "model_matches_problem": true,
+        "answer_matches_problem": true,
+        "reference_optimum": 2200,
+        "review_required": false,
+        "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+      }
+    ],
+    "final_pass": true,
+    "initial_detected": false,
+    "direct_corrections": 0,
+    "calls": 2,
+    "tokens": 2940,
+    "usage_unknown": 0,
+    "elapsed_seconds": 3.8135600000387058
+  },
+  {
+    "case": "V1",
+    "arm": "program_feedback",
+    "repeat": 3,
+    "label": "correct_control",
+    "initial": {
+      "passed": true,
+      "executable": true,
+      "candidate_self_valid": true,
+      "model_matches_problem": true,
+      "answer_matches_problem": true,
+      "reference_optimum": 2200,
+      "review_required": false,
+      "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+    },
+    "round_scores": [
+      {
+        "passed": true,
+        "executable": true,
+        "candidate_self_valid": true,
+        "model_matches_problem": true,
+        "answer_matches_problem": true,
+        "reference_optimum": 2200,
+        "review_required": false,
+        "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+      },
+      {
+        "passed": true,
+        "executable": true,
+        "candidate_self_valid": true,
+        "model_matches_problem": true,
+        "answer_matches_problem": true,
+        "reference_optimum": 2200,
+        "review_required": false,
+        "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+      }
+    ],
+    "final_pass": true,
+    "initial_detected": false,
+    "direct_corrections": 0,
+    "calls": 2,
+    "tokens": 2942,
+    "usage_unknown": 0,
+    "elapsed_seconds": 3.6170533749391325
+  },
+  {
+    "case": "V3",
+    "arm": "self_check",
+    "repeat": 3,
+    "label": "continuous_instead_of_integer",
+    "initial": {
+      "passed": false,
+      "executable": true,
+      "candidate_self_valid": true,
+      "model_matches_problem": false,
+      "answer_matches_problem": true,
+      "reference_optimum": 2200,
+      "review_required": true,
+      "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+    },
+    "round_scores": [
+      {
+        "passed": true,
+        "executable": true,
+        "candidate_self_valid": true,
+        "model_matches_problem": true,
+        "answer_matches_problem": true,
+        "reference_optimum": 2200,
+        "review_required": false,
+        "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+      },
+      {
+        "passed": true,
+        "executable": true,
+        "candidate_self_valid": true,
+        "model_matches_problem": true,
+        "answer_matches_problem": true,
+        "reference_optimum": 2200,
+        "review_required": false,
+        "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+      }
+    ],
+    "final_pass": true,
+    "initial_detected": true,
+    "direct_corrections": 0,
+    "calls": 2,
+    "tokens": 2868,
+    "usage_unknown": 0,
+    "elapsed_seconds": 3.686978876008652
+  },
+  {
+    "case": "V3",
+    "arm": "program_feedback",
+    "repeat": 2,
+    "label": "continuous_instead_of_integer",
+    "initial": {
+      "passed": false,
+      "executable": true,
+      "candidate_self_valid": true,
+      "model_matches_problem": false,
+      "answer_matches_problem": true,
+      "reference_optimum": 2200,
+      "review_required": true,
+      "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+    },
+    "round_scores": [
+      {
+        "passed": true,
+        "executable": true,
+        "candidate_self_valid": true,
+        "model_matches_problem": true,
+        "answer_matches_problem": true,
+        "reference_optimum": 2200,
+        "review_required": false,
+        "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+      },
+      {
+        "passed": true,
+        "executable": true,
+        "candidate_self_valid": true,
+        "model_matches_problem": true,
+        "answer_matches_problem": true,
+        "reference_optimum": 2200,
+        "review_required": false,
+        "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+      }
+    ],
+    "final_pass": true,
+    "initial_detected": true,
+    "direct_corrections": 0,
+    "calls": 2,
+    "tokens": 3023,
+    "usage_unknown": 0,
+    "elapsed_seconds": 3.7503221659571864
+  },
+  {
+    "case": "V3",
+    "arm": "self_check",
+    "repeat": 2,
+    "label": "continuous_instead_of_integer",
+    "initial": {
+      "passed": false,
+      "executable": true,
+      "candidate_self_valid": true,
+      "model_matches_problem": false,
+      "answer_matches_problem": true,
+      "reference_optimum": 2200,
+      "review_required": true,
+      "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+    },
+    "round_scores": [
+      {
+        "passed": true,
+        "executable": true,
+        "candidate_self_valid": true,
+        "model_matches_problem": true,
+        "answer_matches_problem": true,
+        "reference_optimum": 2200,
+        "review_required": false,
+        "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+      },
+      {
+        "passed": true,
+        "executable": true,
+        "candidate_self_valid": true,
+        "model_matches_problem": true,
+        "answer_matches_problem": true,
+        "reference_optimum": 2200,
+        "review_required": false,
+        "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+      }
+    ],
+    "final_pass": true,
+    "initial_detected": true,
+    "direct_corrections": 0,
+    "calls": 2,
+    "tokens": 2868,
+    "usage_unknown": 0,
+    "elapsed_seconds": 3.764290791004896
+  },
+  {
+    "case": "V1",
+    "arm": "self_check",
+    "repeat": 2,
+    "label": "correct_control",
+    "initial": {
+      "passed": true,
+      "executable": true,
+      "candidate_self_valid": true,
+      "model_matches_problem": true,
+      "answer_matches_problem": true,
+      "reference_optimum": 2200,
+      "review_required": false,
+      "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+    },
+    "round_scores": [
+      {
+        "passed": true,
+        "executable": true,
+        "candidate_self_valid": true,
+        "model_matches_problem": true,
+        "answer_matches_problem": true,
+        "reference_optimum": 2200,
+        "review_required": false,
+        "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+      },
+      {
+        "passed": true,
+        "executable": true,
+        "candidate_self_valid": true,
+        "model_matches_problem": true,
+        "answer_matches_problem": true,
+        "reference_optimum": 2200,
+        "review_required": false,
+        "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+      }
+    ],
+    "final_pass": true,
+    "initial_detected": false,
+    "direct_corrections": 0,
+    "calls": 2,
+    "tokens": 2868,
+    "usage_unknown": 0,
+    "elapsed_seconds": 3.7790782909141853
+  },
+  {
+    "case": "V4",
+    "arm": "self_check",
+    "repeat": 3,
+    "label": "wrong_labor_coefficient",
+    "initial": {
+      "passed": false,
+      "executable": true,
+      "candidate_self_valid": true,
+      "model_matches_problem": false,
+      "answer_matches_problem": false,
+      "reference_optimum": 2200,
+      "review_required": false,
+      "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+    },
+    "round_scores": [
+      {
+        "passed": true,
+        "executable": true,
+        "candidate_self_valid": true,
+        "model_matches_problem": true,
+        "answer_matches_problem": true,
+        "reference_optimum": 2200,
+        "review_required": false,
+        "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+      },
+      {
+        "passed": true,
+        "executable": true,
+        "candidate_self_valid": true,
+        "model_matches_problem": true,
+        "answer_matches_problem": true,
+        "reference_optimum": 2200,
+        "review_required": false,
+        "review_note": "模型不匹配但数值正确，需核对是否为已知域错误或等价表达；自动结果不靠数值放行"
+      }
+    ],
+    "final_pass": true,
+    "initial_detected": false,
+    "direct_corrections": 0,
+    "calls": 2,
+    "tokens": 2866,
+    "usage_unknown": 0,
+    "elapsed_seconds": 3.5101288330042735
+  }
+]

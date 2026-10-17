@@ -1,0 +1,11 @@
+{
+  "applied": true,
+  "passed": true,
+  "checks": {
+    "expected_status": true,
+    "nonempty_question": true,
+    "relevant_topic": true
+  },
+  "text": "原题同时要求最大化吞吐量和最小化运输开销，这属于最小费用流/带费用最大流任务；当前仅支持最短路径和静态单商品最大流，不能处理边费用或费用与流量联合优化。已支持边界为：最短路径可处理边权，静态单商品最大流可处理容量，但不包含运输成本最小化。",
+  "scope": "状态/主题初筛；显式禁止改值时检查修改建议，否则Logistic容量检查正实数限制。不是完整语义证明。"
+}

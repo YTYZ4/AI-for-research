@@ -1,1 +1,0 @@
-peppers|划痕(8%)|RPCA|RPCA|PSNR=24.72|SSIM=0.8797

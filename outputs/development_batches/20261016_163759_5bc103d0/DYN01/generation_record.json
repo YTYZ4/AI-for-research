@@ -1,0 +1,36 @@
+{
+  "created_at": "2026-10-16T16:37:59.659250+08:00",
+  "version": "0.6.0",
+  "python": "3.13.16",
+  "scipy": "1.18.1",
+  "backend": "reference",
+  "input": "一杯液体初始温度为90摄氏度，放入恒定20摄氏度的室内。遵循牛顿冷却定律，冷却系数为每分钟0.1。请计算从0到30分钟的温度变化轨迹和第30分钟的温度。假设液体温度均匀，环境温度与冷却系数恒定。\n",
+  "original_input": "一杯液体初始温度为90摄氏度，放入恒定20摄氏度的室内。遵循牛顿冷却定律，冷却系数为每分钟0.1。请计算从0到30分钟的温度变化轨迹和第30分钟的温度。假设液体温度均匀，环境温度与冷却系数恒定。\n",
+  "generation": {
+    "backend": "reference",
+    "llm_used": false
+  },
+  "envelope": {
+    "status": "ready",
+    "questions": [],
+    "model": {
+      "task_type": "dynamics",
+      "name": "cooling",
+      "system": "newton_cooling",
+      "initial": 90,
+      "rate": 0.1,
+      "equilibrium": 20,
+      "duration": 30,
+      "time_unit": "min",
+      "rate_unit": "1/min",
+      "state_unit": "摄氏度",
+      "assumptions": [
+        "常参数初值问题",
+        "连续状态"
+      ]
+    }
+  },
+  "stages": [],
+  "clarification_history": [],
+  "dataset": null
+}

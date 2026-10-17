@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "checks": {
+    "clarification": true,
+    "no_model": true,
+    "nonblank": true,
+    "asks_direction": true,
+    "no_assumed_direction": true
+  },
+  "text": "原题仅说明S与T之间容量为1000升/小时，但未给出S到T的有向方向，无法确定最大流网络的边方向；请明确方向是从S到T、从T到S，还是双向边。"
+}

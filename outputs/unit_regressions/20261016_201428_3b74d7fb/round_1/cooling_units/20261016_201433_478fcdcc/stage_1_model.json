@@ -1,0 +1,17 @@
+{
+  "task_type": "dynamics",
+  "name": "牛顿冷却模拟",
+  "system": "newton_cooling",
+  "initial": 90.0,
+  "rate": 0.1,
+  "equilibrium": 20.0,
+  "duration": 30.0,
+  "rate_unit": "1/min",
+  "state_unit": "celsius",
+  "assumptions": [
+    "液体温度均匀，牛顿冷却定律适用",
+    "冷却系数k恒定，环境温度恒定为20摄氏度",
+    "模拟从t=0开始，持续0.5小时"
+  ],
+  "time_unit": "min"
+}

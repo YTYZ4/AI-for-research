@@ -1,0 +1,12 @@
+{
+  "id": "mixed_fitting",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "该请求同时要求最大流、最低费用流和二次曲线拟合三个任务，当前单模型协议无法表示这种联合建模请求。最大流求解本身也仅支持非负整数容量；若容量在当前求解单位下换算后非整数或超整数域，也会停止。请分开提交可支持的单一任务。",
+  "total_tokens": 4978,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "mixed_fitting/20261016_235923_a61e7913",
+  "elapsed_seconds": 1.3102812920114957
+}

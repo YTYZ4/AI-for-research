@@ -1,0 +1,12 @@
+{
+  "id": "DYN01_paraphrase",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "",
+  "total_tokens": 3767,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "DYN01_paraphrase/20261016_213906_55572ca5",
+  "elapsed_seconds": 1.616051624994725
+}

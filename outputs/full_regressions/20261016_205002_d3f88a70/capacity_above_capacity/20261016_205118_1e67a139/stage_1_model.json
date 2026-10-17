@@ -1,0 +1,18 @@
+{
+  "task_type": "dynamics",
+  "name": "连续Logistic封闭种群轨迹",
+  "system": "logistic",
+  "initial": 1.5,
+  "rate": 0.2,
+  "equilibrium": 0.5,
+  "duration": 30.0,
+  "rate_unit": "1/day",
+  "state_unit": "个",
+  "assumptions": [
+    "种群数量按连续量近似处理，允许小数。",
+    "环境容量在模拟期间恒定，为平衡值而非初值上限。",
+    "增长率为内禀增长率，单位为每天。",
+    "无迁入迁出，遵循常参数连续Logistic方程 dN/dt = rN(1-N/K)。"
+  ],
+  "time_unit": "day"
+}

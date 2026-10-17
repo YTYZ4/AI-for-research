@@ -1,0 +1,31 @@
+{
+  "id": "immutable_intervention",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "当前仅支持常参数 Logistic 增长与牛顿冷却的轨迹和终值计算；带“每天捕捞0.01个”的干预项超出支持范围。",
+  "total_tokens": 4380,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "immutable_intervention/20261016_221905_9c316eed",
+  "elapsed_seconds": 1.1632412920007482,
+  "question_semantics_passed": true,
+  "kind": "immutable",
+  "base_id": "DYN02",
+  "origins": [
+    {
+      "id": "immutable_intervention",
+      "problem": "examples/immutable_boundaries/intervention.txt",
+      "kind": "immutable"
+    }
+  ],
+  "quote_audit_passed": null,
+  "raw_schema_valid": true,
+  "format_action": "not_needed",
+  "local_guard_used": false,
+  "source_quote_repaired": false,
+  "original_pass": true,
+  "after_format_pass": true,
+  "final_pass": true,
+  "pass_path": "native"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "flow_min_cost",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "原题要求最小费用最大流；当前只支持最短路径和单商品最大流，不支持最小费用流，因此无法按原任务生成图输入。",
+  "total_tokens": 1454,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "flow_min_cost/20261016_235830_77bdf681",
+  "elapsed_seconds": 1.8163832499994896
+}

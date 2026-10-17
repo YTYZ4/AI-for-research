@@ -1,0 +1,17 @@
+{
+  "task_type": "dynamics",
+  "name": "Logistic种群增长轨迹与第30天数量",
+  "system": "logistic",
+  "initial": 100,
+  "rate": 0.2,
+  "equilibrium": 1000,
+  "duration": 30.0,
+  "rate_unit": "1/day",
+  "state_unit": "个",
+  "assumptions": [
+    "封闭种群，无迁入迁出。",
+    "采用连续Logistic方程近似，种群数量允许为连续实数。",
+    "内禀增长率与环境容量均为常数。"
+  ],
+  "time_unit": "day"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "same_invalid",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "环境容量 K 的记录为 -0 个（另一记录 K=0.0 个），数值上等价于 0。Logistic 模型要求正实数环境容量 K，K=0 会使模型除零或无效；当前仅支持常参数且 K>0 的连续 Logistic。不得改动参数，因此无法建立可求解模型。",
+  "total_tokens": 4190,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "same_invalid/20261016_213318_da615d2a",
+  "elapsed_seconds": 2.703796957968734
+}

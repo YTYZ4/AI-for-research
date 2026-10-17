@@ -1,0 +1,12 @@
+{
+  "observed": "三个原始响应完全一致：unsupported, questions=[], model=null。",
+  "request_contract_gap": "旧请求Schema三字段独立，未表达status与questions/model之间关系；不支持但无需追问时容易清空questions。",
+  "instruction_conflict": "图契约先称完整题ready，provider又在Schema后附加完整问题必须ready及无关资源追问示例。",
+  "changes": [
+    "DeepSeek图请求Schema加入互斥状态分支",
+    "支持范围优先于条件完整性；明确questions为兼容名称的说明列表",
+    "图路径不再附加通用ready后缀",
+    "本地非ready拒绝空白说明，不合成理由"
+  ],
+  "causal_limit": "设计缺口与历史响应有直接对应；未做消融，不宣称确定各项贡献。"
+}

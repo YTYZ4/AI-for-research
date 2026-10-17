@@ -1,0 +1,12 @@
+{
+  "id": "equivalent_missing_rate",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "请提供增长率r的数值及其时间单位（例如每天、每小时等）。",
+  "total_tokens": 4517,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "equivalent_missing_rate/20261016_221943_e3fad21d",
+  "elapsed_seconds": 0.9835310410126112
+}

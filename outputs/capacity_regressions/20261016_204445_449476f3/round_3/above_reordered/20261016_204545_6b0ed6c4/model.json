@@ -1,0 +1,18 @@
+{
+  "task_type": "dynamics",
+  "name": "连续Logistic种群轨迹与末值",
+  "system": "logistic",
+  "initial": 1.5,
+  "rate": 0.2,
+  "equilibrium": 0.5,
+  "duration": 30.0,
+  "rate_unit": "1/day",
+  "state_unit": "个",
+  "assumptions": [
+    "采用连续Logistic增长模型 dN/dt = rN(1 - N/K)。",
+    "环境容量K为平衡值，不是初值上限；初值大于K时种群自然下降。",
+    "无迁入迁出，参数恒定。",
+    "种群数量按连续量处理，允许非整数。"
+  ],
+  "time_unit": "day"
+}

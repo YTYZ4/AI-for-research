@@ -1,0 +1,75 @@
+{
+  "name": "产品生产计划",
+  "assumptions": [
+    "产量按整件计，变量为非负整数。",
+    "工时和原料消耗与产量成正比，为常数。",
+    "本期工时上限100小时、原料上限80千克为硬约束。",
+    "利润为每件利润乘以产量，总利润最大化为目标。"
+  ],
+  "variables": [
+    {
+      "name": "xA",
+      "description": "产品A的产量",
+      "unit": "件",
+      "kind": "integer",
+      "lower": 0,
+      "upper": null
+    },
+    {
+      "name": "xB",
+      "description": "产品B的产量",
+      "unit": "件",
+      "kind": "integer",
+      "lower": 0,
+      "upper": null
+    }
+  ],
+  "objective": {
+    "sense": "max",
+    "terms": [
+      {
+        "variable": "xA",
+        "coefficient": 40
+      },
+      {
+        "variable": "xB",
+        "coefficient": 30
+      }
+    ],
+    "unit": "元"
+  },
+  "constraints": [
+    {
+      "name": "工时限制",
+      "terms": [
+        {
+          "variable": "xA",
+          "coefficient": 2
+        },
+        {
+          "variable": "xB",
+          "coefficient": 1
+        }
+      ],
+      "sense": "<=",
+      "rhs": 100,
+      "unit": "小时"
+    },
+    {
+      "name": "原料限制",
+      "terms": [
+        {
+          "variable": "xA",
+          "coefficient": 1
+        },
+        {
+          "variable": "xB",
+          "coefficient": 2
+        }
+      ],
+      "sense": "<=",
+      "rhs": 80,
+      "unit": "千克"
+    }
+  ]
+}

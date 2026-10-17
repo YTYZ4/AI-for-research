@@ -1,0 +1,25 @@
+{
+  "task_type": "dynamics_input",
+  "name": "Logistic种群增长模型",
+  "system": "logistic",
+  "initial": 100.0,
+  "rate": 0.2,
+  "equilibrium": 1000.0,
+  "duration": 30.0,
+  "rate_unit": "1/day",
+  "state_unit": "个",
+  "assumptions": [
+    "采用连续Logistic种群增长模型，dN/dt=rN(1-N/K)。",
+    "封闭种群，无迁入迁出。",
+    "内禀增长率与环境容量在模拟期间保持恒定。",
+    "数量按连续实数近似处理，不要求整数个体。",
+    "初始时刻为第0天。"
+  ],
+  "duration_unit": "day",
+  "source_quotes": {
+    "initial": "种群有100个",
+    "equilibrium": "环境容量固定1000个",
+    "rate": "内禀增长率固定0.2每天",
+    "duration": "0至30天"
+  }
+}

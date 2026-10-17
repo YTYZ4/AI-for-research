@@ -1,0 +1,34 @@
+{
+  "snapshot_files": 169,
+  "snapshot_mismatches": [],
+  "offline_quote_audit": {
+    "source": "outputs/equivalent_regressions/20261016_213229_d702ee96/round_1/signed/api.json",
+    "result": {
+      "applied": true,
+      "passed": true,
+      "checks": {
+        "raw_response_preserved": true,
+        "only_quotes_changed": true,
+        "all_quotes_verbatim": true,
+        "changes_match": true
+      }
+    },
+    "api_calls": 0,
+    "included_in_82": false
+  },
+  "reviewed_failure": {
+    "id": "path_units",
+    "actual_distance_km": 1007,
+    "expected_distance_km": 8,
+    "cause": "米制原始边权未转换就统一标记km；文字假设声称已换算但实际模型未换算"
+  },
+  "local_handling_cases": [
+    "immutable_lock_original",
+    "immutable_lock_dont",
+    "immutable_lock_keep",
+    "conflict_zero_positive",
+    "conflict_all_negative"
+  ],
+  "online_quote_repairs": 0,
+  "limits": "单轮开发回归；不表示稳定率或保留题泛化，语义关键词评分不是完整自然语言验证。"
+}

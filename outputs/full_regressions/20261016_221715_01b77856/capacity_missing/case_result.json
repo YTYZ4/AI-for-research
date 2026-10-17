@@ -1,0 +1,12 @@
+{
+  "id": "capacity_missing",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "请提供正实数环境容量K（可为小数）及其数量单位；原题未给出K，无法建立Logistic模型。",
+  "total_tokens": 4378,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "capacity_missing/20261016_221827_7d5cdfb1",
+  "elapsed_seconds": 1.4626569580286741
+}

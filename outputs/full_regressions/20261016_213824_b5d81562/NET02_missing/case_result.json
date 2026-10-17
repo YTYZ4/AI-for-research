@@ -1,0 +1,12 @@
+{
+  "id": "NET02_missing",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "请提供管道 A 到 T 的容量（单位：立方米/小时）。",
+  "total_tokens": 3673,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "NET02_missing/20261016_213923_3d3c6016",
+  "elapsed_seconds": 0.956644750025589
+}

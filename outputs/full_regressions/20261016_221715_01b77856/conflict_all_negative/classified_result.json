@@ -1,0 +1,31 @@
+{
+  "id": "conflict_all_negative",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "环境容量K的原文记录相互冲突：“容量恒定-1个”；“K=-2个”。请核对并确认哪条记录准确，或补充记录分别适用的条件。系统未选择任何值，也未执行求解。",
+  "total_tokens": 4560,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "conflict_all_negative/20261016_221925_9a75d225",
+  "elapsed_seconds": 1.8438270830083638,
+  "question_semantics_passed": true,
+  "kind": "conflict",
+  "base_id": "DYN02",
+  "origins": [
+    {
+      "id": "conflict_all_negative",
+      "problem": "examples/conflict_boundaries/all_negative.txt",
+      "kind": "conflict"
+    }
+  ],
+  "quote_audit_passed": null,
+  "raw_schema_valid": true,
+  "format_action": "not_needed",
+  "local_guard_used": true,
+  "source_quote_repaired": false,
+  "original_pass": false,
+  "after_format_pass": false,
+  "final_pass": true,
+  "pass_path": "local_guard"
+}

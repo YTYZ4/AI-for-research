@@ -1,1 +1,0 @@
-lena|文字叠加(10%)|RPCA|RPCA|PSNR=24.40|SSIM=0.8737

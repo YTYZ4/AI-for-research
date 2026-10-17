@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": {
+    "unsupported": true,
+    "no_model": true,
+    "nonblank_explanations": true,
+    "identifies_requested_scope": true,
+    "explains_limit": true,
+    "no_invented_contract_limit": true,
+    "no_silent_downgrade": true
+  },
+  "text": "当前仅支持最短路径与单商品最大流，不支持多商品最大流；请求中要求同时运输甲乙两种商品并共享边容量，属于多商品流问题，因此无法处理。"
+}

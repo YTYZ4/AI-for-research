@@ -1,0 +1,43 @@
+{
+  "method": "graph_edges_exact_fraction_v1",
+  "source_quotes_checked": true,
+  "target_unit": "米",
+  "edges": [
+    {
+      "index": 0,
+      "source": "S",
+      "target": "A",
+      "original_weight": 0.5,
+      "original_unit": "米",
+      "factor": "1",
+      "normalized_weight": 0.5,
+      "normalized_unit": "米",
+      "source_quote": "S到A 5e-1米",
+      "unit_quote": "米"
+    },
+    {
+      "index": 1,
+      "source": "A",
+      "target": "T",
+      "original_weight": 25,
+      "original_unit": "厘米",
+      "factor": "1/100",
+      "normalized_weight": 0.25,
+      "normalized_unit": "米",
+      "source_quote": "A到T 25厘米",
+      "unit_quote": "厘米"
+    },
+    {
+      "index": 2,
+      "source": "S",
+      "target": "T",
+      "original_weight": 1000,
+      "original_unit": "毫米",
+      "factor": "1/1000",
+      "normalized_weight": 1,
+      "normalized_unit": "米",
+      "source_quote": "S到T 1000毫米",
+      "unit_quote": "毫米"
+    }
+  ]
+}

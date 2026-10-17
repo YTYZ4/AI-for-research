@@ -1,0 +1,76 @@
+{
+  "name": "产品A、B整数产量利润最大化",
+  "assumptions": [
+    "产品A和产品B的产量均为整件实物，取非负整数。",
+    "工时和原料均为可分割连续量，消耗系数按每件计算。",
+    "本期可用工时不超过100小时，原料不超过80千克。",
+    "无其他资源或市场限制。",
+    "目标为最大化总利润，单位按元计。"
+  ],
+  "variables": [
+    {
+      "name": "x_A",
+      "description": "产品A的整数产量",
+      "unit": "件",
+      "kind": "integer",
+      "lower": 0,
+      "upper": null
+    },
+    {
+      "name": "x_B",
+      "description": "产品B的整数产量",
+      "unit": "件",
+      "kind": "integer",
+      "lower": 0,
+      "upper": null
+    }
+  ],
+  "objective": {
+    "sense": "max",
+    "terms": [
+      {
+        "variable": "x_A",
+        "coefficient": 40
+      },
+      {
+        "variable": "x_B",
+        "coefficient": 30
+      }
+    ],
+    "unit": "元"
+  },
+  "constraints": [
+    {
+      "name": "工时限制",
+      "terms": [
+        {
+          "variable": "x_A",
+          "coefficient": 2
+        },
+        {
+          "variable": "x_B",
+          "coefficient": 1
+        }
+      ],
+      "sense": "<=",
+      "rhs": 100,
+      "unit": "小时"
+    },
+    {
+      "name": "原料限制",
+      "terms": [
+        {
+          "variable": "x_A",
+          "coefficient": 1
+        },
+        {
+          "variable": "x_B",
+          "coefficient": 2
+        }
+      ],
+      "sense": "<=",
+      "rhs": 80,
+      "unit": "千克"
+    }
+  ]
+}

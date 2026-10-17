@@ -1,0 +1,181 @@
+[
+  {
+    "id": "lock_original",
+    "family": "dynamics",
+    "initial": 1.5,
+    "capacity": 0,
+    "problem": "examples/immutable/lock_original.txt",
+    "expected_envelopes": [
+      "unsupported"
+    ],
+    "guard_allowed": true,
+    "question_keywords": []
+  },
+  {
+    "id": "lock_dont",
+    "family": "dynamics",
+    "initial": 1.5,
+    "capacity": 0,
+    "problem": "examples/immutable/lock_dont.txt",
+    "expected_envelopes": [
+      "unsupported"
+    ],
+    "guard_allowed": true,
+    "question_keywords": []
+  },
+  {
+    "id": "lock_keep",
+    "family": "dynamics",
+    "initial": 1.5,
+    "capacity": 0,
+    "problem": "examples/immutable/lock_keep.txt",
+    "expected_envelopes": [
+      "unsupported"
+    ],
+    "guard_allowed": true,
+    "question_keywords": []
+  },
+  {
+    "id": "lock_cannot",
+    "family": "dynamics",
+    "initial": 1.5,
+    "capacity": 0,
+    "problem": "examples/immutable/lock_cannot.txt",
+    "expected_envelopes": [
+      "unsupported"
+    ],
+    "guard_allowed": true,
+    "question_keywords": []
+  },
+  {
+    "id": "valid_above",
+    "family": "dynamics",
+    "initial": 1.5,
+    "capacity": 0.5,
+    "problem": "examples/immutable/valid_above.txt",
+    "expected_envelopes": [
+      "ready"
+    ],
+    "guard_allowed": false,
+    "question_keywords": []
+  },
+  {
+    "id": "valid_equal",
+    "family": "dynamics",
+    "initial": 0.5,
+    "capacity": 0.5,
+    "problem": "examples/immutable/valid_equal.txt",
+    "expected_envelopes": [
+      "ready"
+    ],
+    "guard_allowed": false,
+    "question_keywords": []
+  },
+  {
+    "id": "valid_zero",
+    "family": "dynamics",
+    "initial": 0,
+    "capacity": 0.5,
+    "problem": "examples/immutable/valid_zero.txt",
+    "expected_envelopes": [
+      "ready"
+    ],
+    "guard_allowed": false,
+    "question_keywords": []
+  },
+  {
+    "id": "missing_capacity",
+    "family": "dynamics",
+    "initial": 0.1,
+    "capacity": null,
+    "problem": "examples/immutable/missing_capacity.txt",
+    "expected_envelopes": [
+      "needs_clarification"
+    ],
+    "guard_allowed": false,
+    "question_keywords": [
+      "容量",
+      "K"
+    ]
+  },
+  {
+    "id": "missing_rate",
+    "family": "dynamics",
+    "initial": 0.1,
+    "capacity": 0.5,
+    "problem": "examples/immutable/missing_rate.txt",
+    "expected_envelopes": [
+      "needs_clarification"
+    ],
+    "guard_allowed": false,
+    "question_keywords": [
+      "增长率",
+      "r"
+    ]
+  },
+  {
+    "id": "permission",
+    "family": "dynamics",
+    "initial": 1.5,
+    "capacity": 0,
+    "problem": "examples/immutable/permission.txt",
+    "expected_envelopes": [
+      "needs_clarification"
+    ],
+    "guard_allowed": false,
+    "question_keywords": []
+  },
+  {
+    "id": "conflicting_capacity",
+    "family": "dynamics",
+    "initial": 1.5,
+    "capacity": 0,
+    "problem": "examples/immutable/conflicting_capacity.txt",
+    "expected_envelopes": [
+      "needs_clarification"
+    ],
+    "guard_allowed": false,
+    "question_keywords": [
+      "冲突",
+      "矛盾",
+      "两个",
+      "不一致"
+    ]
+  },
+  {
+    "id": "intervention",
+    "family": "dynamics",
+    "initial": 1.5,
+    "capacity": 0.5,
+    "problem": "examples/immutable/intervention.txt",
+    "expected_envelopes": [
+      "unsupported"
+    ],
+    "guard_allowed": false,
+    "question_keywords": []
+  },
+  {
+    "id": "negated_permission_invalid",
+    "family": "dynamics",
+    "initial": 1.5,
+    "capacity": 0,
+    "problem": "examples/immutable/negated_permission_invalid.txt",
+    "expected_envelopes": [
+      "unsupported"
+    ],
+    "guard_allowed": true,
+    "question_keywords": []
+  },
+  {
+    "id": "negated_permission_valid",
+    "family": "dynamics",
+    "initial": 1.5,
+    "capacity": 0.5,
+    "problem": "examples/immutable/negated_permission_valid.txt",
+    "expected_envelopes": [
+      "ready"
+    ],
+    "guard_allowed": false,
+    "question_keywords": []
+  }
+]

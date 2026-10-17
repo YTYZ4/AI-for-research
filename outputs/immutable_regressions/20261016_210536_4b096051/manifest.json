@@ -1,0 +1,231 @@
+{
+  "version": "0.10.6",
+  "model": "deepseek-flash",
+  "cases": [
+    {
+      "id": "lock_original",
+      "family": "dynamics",
+      "initial": 1.5,
+      "capacity": 0,
+      "problem": "examples/immutable_boundaries/lock_original.txt",
+      "expected_envelopes": [
+        "unsupported"
+      ],
+      "guard_allowed": true,
+      "question_keywords": []
+    },
+    {
+      "id": "lock_dont",
+      "family": "dynamics",
+      "initial": 1.5,
+      "capacity": 0,
+      "problem": "examples/immutable_boundaries/lock_dont.txt",
+      "expected_envelopes": [
+        "unsupported"
+      ],
+      "guard_allowed": true,
+      "question_keywords": []
+    },
+    {
+      "id": "lock_keep",
+      "family": "dynamics",
+      "initial": 1.5,
+      "capacity": 0,
+      "problem": "examples/immutable_boundaries/lock_keep.txt",
+      "expected_envelopes": [
+        "unsupported"
+      ],
+      "guard_allowed": true,
+      "question_keywords": []
+    },
+    {
+      "id": "lock_cannot",
+      "family": "dynamics",
+      "initial": 1.5,
+      "capacity": 0,
+      "problem": "examples/immutable_boundaries/lock_cannot.txt",
+      "expected_envelopes": [
+        "unsupported"
+      ],
+      "guard_allowed": true,
+      "question_keywords": []
+    },
+    {
+      "id": "valid_above",
+      "family": "dynamics",
+      "initial": 1.5,
+      "capacity": 0.5,
+      "problem": "examples/immutable_boundaries/valid_above.txt",
+      "expected_envelopes": [
+        "ready"
+      ],
+      "guard_allowed": false,
+      "question_keywords": []
+    },
+    {
+      "id": "valid_equal",
+      "family": "dynamics",
+      "initial": 0.5,
+      "capacity": 0.5,
+      "problem": "examples/immutable_boundaries/valid_equal.txt",
+      "expected_envelopes": [
+        "ready"
+      ],
+      "guard_allowed": false,
+      "question_keywords": []
+    },
+    {
+      "id": "valid_zero",
+      "family": "dynamics",
+      "initial": 0,
+      "capacity": 0.5,
+      "problem": "examples/immutable_boundaries/valid_zero.txt",
+      "expected_envelopes": [
+        "ready"
+      ],
+      "guard_allowed": false,
+      "question_keywords": []
+    },
+    {
+      "id": "missing_capacity",
+      "family": "dynamics",
+      "initial": 0.1,
+      "capacity": null,
+      "problem": "examples/immutable_boundaries/missing_capacity.txt",
+      "expected_envelopes": [
+        "needs_clarification"
+      ],
+      "guard_allowed": false,
+      "question_keywords": [
+        "容量",
+        "K"
+      ]
+    },
+    {
+      "id": "missing_rate",
+      "family": "dynamics",
+      "initial": 0.1,
+      "capacity": 0.5,
+      "problem": "examples/immutable_boundaries/missing_rate.txt",
+      "expected_envelopes": [
+        "needs_clarification"
+      ],
+      "guard_allowed": false,
+      "question_keywords": [
+        "增长率",
+        "r"
+      ]
+    },
+    {
+      "id": "permission",
+      "family": "dynamics",
+      "initial": 1.5,
+      "capacity": 0,
+      "problem": "examples/immutable_boundaries/permission.txt",
+      "expected_envelopes": [
+        "needs_clarification"
+      ],
+      "guard_allowed": false,
+      "question_keywords": []
+    },
+    {
+      "id": "conflicting_capacity",
+      "family": "dynamics",
+      "initial": 1.5,
+      "capacity": 0,
+      "problem": "examples/immutable_boundaries/conflicting_capacity.txt",
+      "expected_envelopes": [
+        "needs_clarification"
+      ],
+      "guard_allowed": false,
+      "question_keywords": [
+        "冲突",
+        "矛盾",
+        "两个",
+        "不一致"
+      ]
+    },
+    {
+      "id": "intervention",
+      "family": "dynamics",
+      "initial": 1.5,
+      "capacity": 0.5,
+      "problem": "examples/immutable_boundaries/intervention.txt",
+      "expected_envelopes": [
+        "unsupported"
+      ],
+      "guard_allowed": false,
+      "question_keywords": []
+    }
+  ],
+  "repeats": 3,
+  "max_calls": 36,
+  "retries": 0,
+  "hashes": {
+    "modeling_assistant/config.py": "3bde19f9ff792b8612f650dbbe59bda9cd6b0bdc09bb4aa83ae2f32c21fc2dab",
+    "modeling_assistant/units.py": "0918f5c8d4dae0ab934a19549644fe55076e19be410e6d7222d6f674fa84aa4c",
+    "modeling_assistant/configure.py": "181e16c35632d06bae844828dc84edd8fef62cbf42fefd6db4208f335c7880bc",
+    "modeling_assistant/solver.py": "aaa42a26a60dd8800632fea12a07422e5d8d777e7f9264535e9f9bff13b2f5b0",
+    "modeling_assistant/provider.py": "e9e522e308366b5ca1c4960803008978ee78bf4e92efad6d3fdedf048e85f65b",
+    "modeling_assistant/__init__.py": "0c688ad24857f18398f3ee72c162609a56672b30b784e0587710bdb71f1a1afe",
+    "modeling_assistant/model.py": "ce4dfc989d8e684ece4cd272c18f683a6fb41181de43da7bb802a7274e4ff430",
+    "modeling_assistant/parser.py": "e36f55ec7a73f34f106ba19c09b6a2e246a802c676c4d029c79d1cf1c2f46231",
+    "modeling_assistant/presentation.py": "ac9cddf299c9321945b6de655dfed30197477ff857c5ceaaf25c90b316227c3a",
+    "modeling_assistant/parameter_policy.py": "1974cb1c7fc731bb4481b88436ac75a8d8659f4a676498385bb4a230785fd8ec",
+    "modeling_assistant/cli.py": "1e62bef215784eca078bfbc16df30e924be2a96ddb8ac7645f1ae18675e03f9e",
+    "modeling_assistant/extraction.py": "56d3a10dade16280618d7ccfe2fc46255aa033780ff0408f7e83d97b6531aa92",
+    "modeling_assistant/fitting.py": "7577f4d107cab457821be089dbfeebc0ee0b0b05627f9f8b0e38565e24fd16fd",
+    "modeling_assistant/graphs.py": "cd1063f33e1a0e41fa26048bf7c06bf7ec766e097264eb2135975b1e1b264469",
+    "modeling_assistant/format_repair.py": "3f2ab8ea661eb1c5cfc302453c341f344f81923d4aa34b219458117b7259fe54",
+    "modeling_assistant/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+    "modeling_assistant/dynamics.py": "5f516b2ef84abfcd39e12ea96a01aa160ad8c54be51a6cab81f3b8f4e3f9dc57",
+    "evaluation/format_regression.py": "6a03b8388f7db607204351c9350ca8da59e72a122c236316c53412af83a4ecb3",
+    "evaluation/variants.py": "30a6cc4a08751c821bbd511c117d8a8340a7fe174588fdaf982a8d7141237c9b",
+    "evaluation/transport.py": "b25a52d2837db07788ec883de5028a84ac98fc31ca8087a903bc4cd805e45f5b",
+    "evaluation/full_regression.py": "d318bda1f37b8b1427a696f945828a087d19c574379e52e7910c0626680b7c64",
+    "evaluation/capacity_regression.py": "dcb47e97e81f21cf02089bb8e9cf625427d21ad8e25cc223c4e1cdfa52640cb9",
+    "evaluation/batch.py": "c7659a163d8a025515dc441592585397ef37e2a122e97f14cb17a2f5f7d81491",
+    "evaluation/__init__.py": "e341001f744cb6b55ac13abe7a9d38978cd3b1ef9c183f663f055edefa4f5ea2",
+    "evaluation/development.py": "89270a2258536a19513758437df5c60d7f58030faaa097d7e7ec56e2b611d85c",
+    "evaluation/clarification.py": "5fc4c75e0e3e9b37e6d0047288978f7cd4ed4e4e14dc845122e995ba418ac65e",
+    "evaluation/robustness.py": "cd5fd3a95455a464ec69b147d5f8cccf282a583813c21c995081c27048c51b8a",
+    "evaluation/immutable_regression.py": "d45114ec19cdf24d3cd6df90fd964158b9e1749ac69c33d86feb4f6145da4073",
+    "evaluation/fitting.py": "d4262f4040c1cccf7d7028af272c64fd41e362877fea71ab96eb08744ddeb21d",
+    "evaluation/review_variants.py": "b7001e90019a90aa15976ca91a2a2709e1de2f5a5fdc90ff1a5845ae361db1ec",
+    "evaluation/graphs.py": "b68d4fd3088d8542dc9604a2b77ccb4901165f89eab9072949ce40592c4f7d79",
+    "evaluation/unit_regression.py": "5f2f7f2c064b40c9999274ee64e8f71773a8053b89fcfc4c0285b45729e91ac7",
+    "evaluation/dynamics.py": "d11fd630a1f2f19013e24ae79430613963ccb57bcce5919d03704a1b1635ead7",
+    "tests/test_parameter_feedback.py": "d70ff40a911d31497bdb255c1668e5ff895155c62c2f617cb774b68d6bf498e9",
+    "tests/test_capacity_boundaries.py": "bed83107219408f25b8835f95139de90e666ff3b214163c09caf4ad9327fcc5e",
+    "tests/test_unified_regression.py": "e93933a96e4506b383c315c220319f67add312ff20ec69123423b0f9aa4902ad",
+    "tests/test_immutable_boundaries.py": "9f30df03b96dae4cc643e9525ac3693944ab46bbf8abaccc71c9bb3394bd096d",
+    "tests/test_api_configuration.py": "b3ba057230e25982f50de28578678c9e3c405e212a4b52f5670fb2a6d914c85a",
+    "tests/test_locked_and_presentation.py": "ce1de84524adad720f2ecaf7627ad1ab24593174982225de30d7bbfd8711bd96",
+    "tests/test_clarification.py": "ae24fc6cd986f42f20e09f7322ccf2760ae5c537d63808f80bcae07f210a46e5",
+    "tests/test_graphs.py": "d32d4d83f4ba0d1c4d927c0146e29bc12b49e221732cc8fa7fd1acef3479e0e3",
+    "tests/test_variants.py": "3a1216832bed6282efdea5cbda1a6364d96b86993334a39dcab2a5560dad504b",
+    "tests/test_transport.py": "70e001ae2fdc87be163f6942d7222608af8db9b73d330a6c975a10b3dd002041",
+    "tests/test_fitting.py": "bb2ea9fcc106ae4240569cb5e23766489e2c9a459606b5a3c5c052a3778e1bd0",
+    "tests/test_units.py": "2ae74b20e85f08a69fdf32947c0a8f773ddd04cea02a57cb3d3c3d17b71d625b",
+    "tests/test_dynamics.py": "0bc68c55cc35d7fd25e2b23c760b2d1c6b0969f10accf19e7fdb3cf932034426",
+    "tests/test_extraction_presentation.py": "98566213d1b1654fabefdad77f86e29e600e1d2ac51780f513e3cfa7f90c756a",
+    "tests/test_batch.py": "3441510fc449123ec7cb3d022d6b4c76aeef89a56fe1f3d44c849481a07b15c8",
+    "tests/test_infeasibility.py": "635fdfbe7b97d5ab61f3f85772cb33b492c5772d6170a7450a2aeeb9848ba76e",
+    "tests/test_full_regression.py": "c0d89354b135796a836611b622e1bac7027121b1e52e3d442a0f30da9bd5ac06",
+    "tests/test_format_repair.py": "8001025309adb299a0cfa229c57bb52598ba979e9ba7ac754e89867a7e69b353",
+    "tests/test_modeling_assistant.py": "b1bcfbb03e929b170e20f3870796b82506fbcc288f493d2c1c8a14cdf96a7995",
+    "examples/immutable_boundaries/lock_keep.txt": "362527f3c2da0b0d7d43a4b37ad5b66982cc184a379766ed89c21c9339e114da",
+    "examples/immutable_boundaries/lock_dont.txt": "ba4a77b83f28571e04e1b76839c53ffd5314608b10e15dcb924ade11733a2b55",
+    "examples/immutable_boundaries/valid_equal.txt": "0131f28d1bb676afc4ba6c36fc9f8051938421f4368726eda241550a9c598fc3",
+    "examples/immutable_boundaries/valid_zero.txt": "a6f1e200e70b549e44af319c480abff048d75913e0926ced43756efa47b15685",
+    "examples/immutable_boundaries/valid_above.txt": "e4b9a73af40ec47896d43f052f601466e1c0df33d2b281eca1198f3f12f09b6f",
+    "examples/immutable_boundaries/permission.txt": "c45d90df94725ed802b4589b8f13766bd7a25a8083fc3beb2cfdb98c86141cc5",
+    "examples/immutable_boundaries/manifest.json": "92b2480880ef707cb79b67d7dc4fff3482aa09d3030e2eea43e035464ccc77cf",
+    "examples/immutable_boundaries/intervention.txt": "754edb790b2ca14e3745ea30621f258902dfc4095fc28998a74f28b1e067cca0",
+    "examples/immutable_boundaries/conflicting_capacity.txt": "20a8185820972dd6706b8f786361a5c4b3bf055ac79c52471260ba21c69485b2",
+    "examples/immutable_boundaries/missing_capacity.txt": "49968e54542dea67293ad1b963ec4975eb17dfc0594358003edebda770859c78",
+    "examples/immutable_boundaries/lock_original.txt": "586ea735fcf5cf7d7dcaa7fa5d86ec3de3871773f610925fbe9ecf7e1161534d",
+    "examples/immutable_boundaries/lock_cannot.txt": "c0cd390a8d9813291d4221021bc702ae8053c6ba7311d5fadfa18ec88147c298",
+    "examples/immutable_boundaries/missing_rate.txt": "f81d74737bc01322d93eb231b83e562b6ecc253d2320f1d2a3b3a0dae9a6f251"
+  }
+}

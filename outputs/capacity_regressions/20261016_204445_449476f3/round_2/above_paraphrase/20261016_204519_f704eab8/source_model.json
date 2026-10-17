@@ -1,0 +1,24 @@
+{
+  "task_type": "dynamics_input",
+  "name": "封闭种群连续Logistic模型",
+  "system": "logistic",
+  "initial": 1.5,
+  "rate": 0.2,
+  "equilibrium": 0.5,
+  "duration": 30,
+  "rate_unit": "1/day",
+  "state_unit": "个",
+  "assumptions": [
+    "采用连续Logistic方程 dN/dt = r N (1 - N/K) 描述封闭种群数量变化",
+    "参数恒定，无迁入迁出",
+    "环境承载量K为平衡值，不是初值上限",
+    "初值N0大于K时，轨迹按连续Logistic方程向K下降"
+  ],
+  "duration_unit": "day",
+  "source_quotes": {
+    "initial": "起始数量为1.5个",
+    "equilibrium": "环境承载量固定为0.5个",
+    "rate": "内禀增长率为0.2每天",
+    "duration": "0至30天"
+  }
+}

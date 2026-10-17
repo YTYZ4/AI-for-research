@@ -1,0 +1,11 @@
+{
+  "policy": "fixed_system_descriptions_v1",
+  "suppressed_display_only": [
+    {
+      "location": "envelope",
+      "text": "time_unit 按分钟统一，程序将时长 0.5 小时转换为 30 分钟。",
+      "reason": "包含系统行为或实现描述，移到原始记录，不作为报告假设展示"
+    }
+  ],
+  "source_modified": false
+}

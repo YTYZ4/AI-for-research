@@ -1,0 +1,31 @@
+{
+  "id": "equivalent_trailing_zero",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "",
+  "total_tokens": 4275,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "equivalent_trailing_zero/20261016_214031_3ae7c2cf",
+  "elapsed_seconds": 1.9163227079552598,
+  "question_semantics_passed": null,
+  "kind": "equivalent",
+  "base_id": "DYN02",
+  "origins": [
+    {
+      "id": "equivalent_trailing_zero",
+      "problem": "examples/equivalent_boundaries/trailing_zero.txt",
+      "kind": "equivalent"
+    }
+  ],
+  "quote_audit_passed": null,
+  "raw_schema_valid": true,
+  "format_action": "not_needed",
+  "local_guard_used": false,
+  "source_quote_repaired": false,
+  "original_pass": true,
+  "after_format_pass": true,
+  "final_pass": true,
+  "pass_path": "native"
+}

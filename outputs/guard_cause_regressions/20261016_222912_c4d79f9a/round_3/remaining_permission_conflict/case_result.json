@@ -1,0 +1,12 @@
+{
+  "id": "remaining_permission_conflict",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "环境中记录到两个互相冲突的环境容量K：0个 与 0.5个，请核对哪一条准确？",
+  "total_tokens": 5067,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "remaining_permission_conflict/20261016_223032_cb368bf2",
+  "elapsed_seconds": 1.3776311670080759
+}

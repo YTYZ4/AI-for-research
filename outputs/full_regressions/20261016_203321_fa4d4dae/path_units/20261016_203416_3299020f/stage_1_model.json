@@ -1,0 +1,58 @@
+{
+  "task_type": "graph",
+  "name": "shortest_path_S_to_T",
+  "problem": "shortest_path",
+  "nodes": [
+    "S",
+    "A",
+    "B",
+    "C",
+    "T"
+  ],
+  "source": "S",
+  "target": "T",
+  "edges": [
+    {
+      "source": "S",
+      "target": "A",
+      "weight": 4000
+    },
+    {
+      "source": "S",
+      "target": "B",
+      "weight": 2000
+    },
+    {
+      "source": "B",
+      "target": "A",
+      "weight": 1000
+    },
+    {
+      "source": "A",
+      "target": "C",
+      "weight": 2000
+    },
+    {
+      "source": "B",
+      "target": "C",
+      "weight": 5000
+    },
+    {
+      "source": "C",
+      "target": "T",
+      "weight": 3000
+    },
+    {
+      "source": "A",
+      "target": "T",
+      "weight": 7000
+    }
+  ],
+  "unit": "m",
+  "assumptions": [
+    "所有道路均为有向边，只能沿给定方向行驶。",
+    "距离单位统一为米，1千米=1000米。",
+    "所有边权非负。",
+    "图中没有其他道路或节点。"
+  ]
+}

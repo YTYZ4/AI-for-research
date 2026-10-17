@@ -1,0 +1,12 @@
+{
+  "id": "conflict_all_negative",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "同一容量参数存在冲突记录：容量恒定-1个、K=-2个。请核对哪条准确？",
+  "total_tokens": 4240,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "conflict_all_negative/20261016_215842_342d5161",
+  "elapsed_seconds": 2.0864107909728773
+}

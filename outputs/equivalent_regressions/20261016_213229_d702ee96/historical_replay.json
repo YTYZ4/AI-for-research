@@ -1,0 +1,99 @@
+{
+  "api_calls": 0,
+  "source_batch": "outputs/equivalent_regressions/20261016_212625_f5fb4334",
+  "quote_repair": {
+    "action": "replace_source_quotes",
+    "original_model": {
+      "task_type": "dynamics_input",
+      "name": "封闭种群连续Logistic模型",
+      "system": "logistic",
+      "initial": 1.5,
+      "rate": 0.2,
+      "equilibrium": 0.5,
+      "duration": 30,
+      "rate_unit": "1/day",
+      "state_unit": "个",
+      "assumptions": [
+        "封闭种群，环境容量恒定",
+        "连续Logistic增长模型，常参数",
+        "初始数量可大于环境容量，轨迹向环境容量下降",
+        "时间单位为天，速率单位为每天"
+      ],
+      "duration_unit": "day",
+      "source_quotes": {
+        "initial": "初始1.5个",
+        "equilibrium": "环境容量恒定.5个；另一记录K=0.50个",
+        "rate": "增长率0.2每天",
+        "duration": "模拟0到30天"
+      }
+    },
+    "changes": [
+      {
+        "field": "equilibrium",
+        "original": "环境容量恒定.5个；另一记录K=0.50个",
+        "replacement": "环境容量恒定.5个"
+      }
+    ],
+    "values_and_units_unchanged": true,
+    "evidence": {
+      "values": {
+        "initial": 1.5,
+        "equilibrium": 0.5,
+        "rate": 0.2,
+        "duration": 30.0
+      },
+      "source_quotes": {
+        "initial": "初始1.5个",
+        "equilibrium": "环境容量恒定.5个",
+        "rate": "增长率0.2每天",
+        "duration": "模拟0到30天"
+      },
+      "parameter_domain": {
+        "valid": true,
+        "initial_above_capacity": true,
+        "expected_trend": "decreasing",
+        "scope": "只验证提取到的常参数域，不证明全文条件完整或无冲突；K是平衡值，不是初值上限"
+      },
+      "rate_unit": "1/day",
+      "duration_unit": "day",
+      "scope": "明确数量和单位的常参数Logistic提取提示；不是可求解性证明"
+    }
+  },
+  "numerical_score": {
+    "passed": true,
+    "checks": {
+      "original_parameters": true,
+      "trajectory": true
+    },
+    "max_error": 3.7922498474785016e-10
+  },
+  "refusal_original": {
+    "status": "unsupported",
+    "questions": [
+      "Logistic 模型要求环境容量 K 为正实数；题目给出的环境容量为 -0 个（另一记录 K=0.0 个，数值等价），K<=0 使方程 dN/dt=rN(1-N/K) 无效（K=0 时除零）。由于用户明确要求不得改动参数，无法按当前模型求解，请提供正数 K 或说明可调整该参数。"
+    ],
+    "model": null
+  },
+  "refusal_fixed": {
+    "status": "unsupported",
+    "questions": [
+      "Logistic 模型要求环境容量 K 为正实数",
+      "题目给出的环境容量为 -0 个（另一记录 K=0.0 个，数值等价），K<=0 使方程 dN/dt=rN(1-N/K) 无效（K=0 时除零）",
+      "原题条件保持不变，当前不执行求解，也不要求修改参数。"
+    ],
+    "model": null
+  },
+  "refusal_audit": {
+    "action": "sanitize_unsupported",
+    "reason": "拒绝求解后的改参数建议违反原题限制",
+    "original_status": "unsupported",
+    "original_envelope": {
+      "status": "unsupported",
+      "questions": [
+        "Logistic 模型要求环境容量 K 为正实数；题目给出的环境容量为 -0 个（另一记录 K=0.0 个，数值等价），K<=0 使方程 dN/dt=rN(1-N/K) 无效（K=0 时除零）。由于用户明确要求不得改动参数，无法按当前模型求解，请提供正数 K 或说明可调整该参数。"
+      ],
+      "model": null
+    },
+    "model_executed": false
+  }
+}

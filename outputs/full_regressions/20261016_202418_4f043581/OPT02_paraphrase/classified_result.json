@@ -1,0 +1,21 @@
+{
+  "id": "OPT02_paraphrase",
+  "family": "optimization",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "",
+  "total_tokens": 3656,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "OPT02_paraphrase/20261016_202442_073d7c8d",
+  "elapsed_seconds": 2.943272291973699,
+  "kind": "paraphrase",
+  "base_id": "OPT02",
+  "raw_schema_valid": true,
+  "format_action": "not_needed",
+  "local_guard_used": false,
+  "original_pass": true,
+  "after_format_pass": true,
+  "final_pass": true,
+  "pass_path": "native"
+}

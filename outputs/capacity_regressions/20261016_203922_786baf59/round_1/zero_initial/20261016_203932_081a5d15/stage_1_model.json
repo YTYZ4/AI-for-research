@@ -1,0 +1,18 @@
+{
+  "task_type": "dynamics",
+  "name": "连续Logistic种群增长",
+  "system": "logistic",
+  "initial": 0.0,
+  "rate": 0.2,
+  "equilibrium": 0.5,
+  "duration": 30.0,
+  "rate_unit": "1/day",
+  "state_unit": "个",
+  "assumptions": [
+    "种群规模按连续量处理，允许非整数种群数量。",
+    "环境容量恒定，无迁入迁出。",
+    "Logistic增长方程为 dN/dt = r N (1 - N/K)，其中 r=0.2，K=0.5。",
+    "初始种群为0，轨迹保持为0并最终数量为0。"
+  ],
+  "time_unit": "day"
+}

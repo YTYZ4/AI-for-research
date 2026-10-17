@@ -1,0 +1,12 @@
+{
+  "id": "intervention",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "原题包含每天捕捞0.01个的持续捕捞项，属于对Logistic模型的干预/收获；当前仅支持常参数无干预的Logistic增长模型，因此无法建模该问题。",
+  "total_tokens": 3427,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "intervention/20261016_210645_1798f1ac",
+  "elapsed_seconds": 1.811873790982645
+}

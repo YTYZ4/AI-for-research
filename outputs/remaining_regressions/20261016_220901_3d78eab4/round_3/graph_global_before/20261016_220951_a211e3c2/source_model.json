@@ -1,0 +1,61 @@
+{
+  "task_type": "graph_input",
+  "name": "单向输水管网最大流",
+  "problem": "max_flow",
+  "nodes": [
+    "S",
+    "A",
+    "B",
+    "T"
+  ],
+  "source": "S",
+  "target": "T",
+  "edges": [
+    {
+      "source": "S",
+      "target": "A",
+      "weight": 10,
+      "unit": "立方米/小时",
+      "source_quote": "S到A容量10",
+      "unit_quote": "所有容量单位均为立方米/小时"
+    },
+    {
+      "source": "S",
+      "target": "B",
+      "weight": 5,
+      "unit": "立方米/小时",
+      "source_quote": "S到B容量5",
+      "unit_quote": "所有容量单位均为立方米/小时"
+    },
+    {
+      "source": "A",
+      "target": "B",
+      "weight": 4,
+      "unit": "立方米/小时",
+      "source_quote": "A到B容量4",
+      "unit_quote": "所有容量单位均为立方米/小时"
+    },
+    {
+      "source": "A",
+      "target": "T",
+      "weight": 6,
+      "unit": "立方米/小时",
+      "source_quote": "A到T容量6",
+      "unit_quote": "所有容量单位均为立方米/小时"
+    },
+    {
+      "source": "B",
+      "target": "T",
+      "weight": 9,
+      "unit": "立方米/小时",
+      "source_quote": "B到T容量9",
+      "unit_quote": "所有容量单位均为立方米/小时"
+    }
+  ],
+  "unit": "立方米/小时",
+  "assumptions": [
+    "所有容量单位为立方米/小时。",
+    "中间节点A、B满足流量守恒。",
+    "求最大流和最小割；边容量均为非负整数。"
+  ]
+}

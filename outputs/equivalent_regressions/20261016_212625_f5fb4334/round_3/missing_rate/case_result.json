@@ -1,0 +1,12 @@
+{
+  "id": "missing_rate",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "请提供常参数Logistic的内禀增长率r及其单位（如1/day、1/hour等）。",
+  "total_tokens": 3833,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "missing_rate/20261016_212726_a29a0c4a",
+  "elapsed_seconds": 1.3474316670326516
+}

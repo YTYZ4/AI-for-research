@@ -1,0 +1,25 @@
+{
+  "task_type": "dynamics_input",
+  "name": "牛顿冷却温度轨迹模拟",
+  "system": "newton_cooling",
+  "initial": 90,
+  "rate": 0.1,
+  "equilibrium": 20,
+  "duration": 0.5,
+  "rate_unit": "1/min",
+  "state_unit": "摄氏度",
+  "assumptions": [
+    "液体温度均匀，物体内部无温度梯度",
+    "环境温度恒定为20摄氏度",
+    "冷却系数k恒为0.1每分钟，不随时间或温度变化",
+    "遵循牛顿冷却定律：dT/dt = -k(T - T_env)",
+    "允许使用负摄氏温度"
+  ],
+  "duration_unit": "hour",
+  "source_quotes": {
+    "initial": "初始90摄氏度",
+    "equilibrium": "恒温环境20摄氏度",
+    "rate": "冷却系数k=0.1每分钟",
+    "duration": "0到0.5小时"
+  }
+}

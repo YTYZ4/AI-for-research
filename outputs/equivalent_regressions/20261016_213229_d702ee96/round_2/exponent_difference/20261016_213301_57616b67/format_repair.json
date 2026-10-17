@@ -1,0 +1,7 @@
+{
+  "action": "not_needed",
+  "raw_schema_valid": true,
+  "changes": [],
+  "policy": "redundant_top_level_model_type_v1",
+  "original_sha256": "f0823d18556db32dd86fd21aa192eab127165ac3d00e5e2e39fb95bb5198b4f9"
+}

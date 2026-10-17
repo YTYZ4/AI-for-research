@@ -1,0 +1,12 @@
+{
+  "id": "conflict_zero_positive",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "关于环境容量K，题面中有两条互相冲突的原记录：“环境容量恒定0个”和“环境容量为0.5个”。请核对哪条记录准确？",
+  "total_tokens": 4267,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "conflict_zero_positive/20261016_215825_da39443f",
+  "elapsed_seconds": 1.2753455420024693
+}

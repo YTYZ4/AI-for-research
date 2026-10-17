@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": {
+    "unsupported": true,
+    "no_model": true,
+    "nonblank_explanations": true,
+    "identifies_requested_scope": true,
+    "explains_limit": true,
+    "no_invented_contract_limit": true,
+    "no_silent_downgrade": true
+  },
+  "text": "你的请求同时要求建立生产计划优化模型和网络最大流模型，属于不同建模任务的联合求解；当前单模型协议一次只能表示一种模型，无法在同一模型中同时处理这两类任务。"
+}

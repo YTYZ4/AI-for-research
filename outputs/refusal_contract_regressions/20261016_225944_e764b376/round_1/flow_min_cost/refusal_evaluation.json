@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": {
+    "unsupported": true,
+    "no_model": true,
+    "nonblank_explanations": true,
+    "identifies_requested_scope": true,
+    "explains_limit": true,
+    "no_invented_contract_limit": true,
+    "no_silent_downgrade": true
+  },
+  "text": "仅支持最短路径或单商品最大流；最小费用最大流（每升费用2元）不在支持范围内。若只要求最大流，请去掉费用要求；若只要求最短路径，请提供以距离/时间为权重的边。"
+}

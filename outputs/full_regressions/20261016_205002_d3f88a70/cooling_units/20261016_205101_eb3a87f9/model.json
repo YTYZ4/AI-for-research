@@ -1,0 +1,17 @@
+{
+  "task_type": "dynamics",
+  "name": "Newton cooling of liquid",
+  "system": "newton_cooling",
+  "initial": 90,
+  "rate": 0.1,
+  "equilibrium": 20,
+  "duration": 30.0,
+  "rate_unit": "1/min",
+  "state_unit": "°C",
+  "assumptions": [
+    "遵循牛顿冷却定律 dT/dt=-k(T-T_env)，温度均匀且冷却系数恒定。",
+    "time_unit 按分钟统一，程序将时长 0.5 小时转换为 30 分钟。",
+    "允许使用摄氏温度，环境温度恒为 20°C。"
+  ],
+  "time_unit": "min"
+}

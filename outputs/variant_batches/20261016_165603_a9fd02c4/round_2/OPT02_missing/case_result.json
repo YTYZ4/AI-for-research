@@ -1,0 +1,12 @@
+{
+  "id": "OPT02_missing",
+  "family": "optimization",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "S3 的需求量是多少吨？",
+  "total_tokens": 2471,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "OPT02_missing/20261016_165721_3dad3674",
+  "elapsed_seconds": 1.0805293750017881
+}

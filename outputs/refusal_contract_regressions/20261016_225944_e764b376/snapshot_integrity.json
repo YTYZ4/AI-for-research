@@ -1,0 +1,1306 @@
+{
+  "count": 260,
+  "passed": true,
+  "checks": [
+    {
+      "path": "evaluation/__init__.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "evaluation/batch.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "evaluation/capacity_regression.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "evaluation/clarification.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "evaluation/conflict_regression.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "evaluation/development.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "evaluation/dynamics.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "evaluation/equivalent_regression.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "evaluation/false_interception_followup.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "evaluation/false_interception_regression.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "evaluation/fitting.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "evaluation/format_regression.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "evaluation/full_regression.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "evaluation/graph_contract_regression.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "evaluation/graph_units.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "evaluation/graphs.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "evaluation/guard_cause_regression.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "evaluation/immutable_regression.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "evaluation/refusal_contract_regression.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "evaluation/refusal_semantics.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "evaluation/remaining_regression.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "evaluation/response_language.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "evaluation/review_variants.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "evaluation/robustness.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "evaluation/transport.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "evaluation/unit_regression.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "evaluation/variants.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/capacity_boundaries/above_capacity.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/capacity_boundaries/above_paraphrase.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/capacity_boundaries/above_reordered.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/capacity_boundaries/above_symbols.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/capacity_boundaries/equal_capacity.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/capacity_boundaries/fraction.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/capacity_boundaries/missing.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/capacity_boundaries/near_above.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/capacity_boundaries/negative.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/capacity_boundaries/small.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/capacity_boundaries/zero.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/capacity_boundaries/zero_initial.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/conflict_boundaries/all_negative.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/conflict_boundaries/corrected.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/conflict_boundaries/manifest.json",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/conflict_boundaries/missing.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/conflict_boundaries/missing_mixed.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/conflict_boundaries/missing_rate.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/conflict_boundaries/previous_failure.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/conflict_boundaries/reverse.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/conflict_boundaries/same_invalid.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/conflict_boundaries/same_positive.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/conflict_boundaries/three_values.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/conflict_boundaries/two_positive.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/conflict_boundaries/valid_above.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/conflict_boundaries/zero_positive.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/development_variants/DYN01_error.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/development_variants/DYN01_missing.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/development_variants/DYN01_paraphrase.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/development_variants/DYN02_error.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/development_variants/DYN02_missing.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/development_variants/DYN02_paraphrase.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/development_variants/FIT01_error.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/development_variants/FIT01_missing.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/development_variants/FIT01_paraphrase.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/development_variants/FIT02_error.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/development_variants/FIT02_missing.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/development_variants/FIT02_paraphrase.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/development_variants/NET01_error.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/development_variants/NET01_missing.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/development_variants/NET01_paraphrase.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/development_variants/NET02_error.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/development_variants/NET02_missing.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/development_variants/NET02_paraphrase.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/development_variants/OPT01_error.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/development_variants/OPT01_missing.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/development_variants/OPT01_paraphrase.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/development_variants/OPT02_error.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/development_variants/OPT02_missing.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/development_variants/OPT02_paraphrase.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/development_variants/manifest.json",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/dynamics/cooling.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/dynamics/cooling_model.json",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/dynamics/logistic.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/dynamics/logistic_model.json",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/equivalent_boundaries/corrected.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/equivalent_boundaries/exponent_difference.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/equivalent_boundaries/integer.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/equivalent_boundaries/leading_dot.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/equivalent_boundaries/manifest.json",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/equivalent_boundaries/missing_rate.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/equivalent_boundaries/near_difference.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/equivalent_boundaries/same_invalid.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/equivalent_boundaries/scientific.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/equivalent_boundaries/signed.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/equivalent_boundaries/trailing_zero.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/false_interception_boundaries/flow_reverse_conversion.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/false_interception_boundaries/flow_same_fractional.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/false_interception_boundaries/flow_unknown_conversion.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/false_interception_boundaries/followup_manifest.json",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/false_interception_boundaries/manifest.json",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/fitting/calibration.csv",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/fitting/calibration.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/fitting/calibration_model.json",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/fitting/curve.csv",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/fitting/curve.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/fitting/curve_model.json",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/graph_contract_boundaries/flow_min_cost.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/graph_contract_boundaries/flow_missing_direction.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/graph_contract_boundaries/flow_time_conversion.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/graph_contract_boundaries/flow_zero_conversion.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/graph_contract_boundaries/manifest.json",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/graph_unit_boundaries/dimension.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/graph_unit_boundaries/flow_mixed.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/graph_unit_boundaries/fractional_flow.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/graph_unit_boundaries/manifest.json",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/graph_unit_boundaries/reverse_m.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/graph_unit_boundaries/small_scientific.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/graph_unit_boundaries/unknown.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/graph_unit_boundaries/zero_weight.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/graphs/max_flow.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/graphs/max_flow_model.json",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/graphs/shortest_path.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/graphs/shortest_path_model.json",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/guard_cause_boundaries/flow_integer_conversion.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/guard_cause_boundaries/flow_original_unit.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/guard_cause_boundaries/manifest.json",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/immutable_boundaries/conflicting_capacity.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/immutable_boundaries/intervention.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/immutable_boundaries/lock_cannot.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/immutable_boundaries/lock_dont.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/immutable_boundaries/lock_keep.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/immutable_boundaries/lock_original.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/immutable_boundaries/manifest.json",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/immutable_boundaries/missing_capacity.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/immutable_boundaries/missing_rate.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/immutable_boundaries/negated_permission_invalid.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/immutable_boundaries/negated_permission_valid.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/immutable_boundaries/permission.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/immutable_boundaries/valid_above.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/immutable_boundaries/valid_equal.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/immutable_boundaries/valid_zero.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/missing_capacity_boundaries/locked.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/missing_capacity_boundaries/manifest.json",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/missing_capacity_boundaries/multiple.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/missing_capacity_boundaries/reordered.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/missing_capacity_boundaries/symbol.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/production/problem.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/production/problem_freeform.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/refusal_boundaries/cost_not_requested.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/refusal_boundaries/cost_paraphrase.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/refusal_boundaries/manifest.json",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/refusal_boundaries/multi_commodity.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/refusal_boundaries/pure_min_cost.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/refusal_boundaries/time_varying.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/remaining_failure_boundaries/graph_global_before.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/remaining_failure_boundaries/graph_inline.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/remaining_failure_boundaries/manifest.json",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/remaining_failure_boundaries/permission_conflict.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/remaining_failure_boundaries/permission_forbidden.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/remaining_failure_boundaries/permission_missing.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/remaining_failure_boundaries/permission_paraphrase.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/remaining_failure_boundaries/permission_threshold.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/remaining_failure_boundaries/permission_valid.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/robustness/bad_split.csv",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/robustness/constant_x.csv",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/robustness/cooling_units.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/robustness/logistic_units.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/robustness/missing_y.csv",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/robustness/nan.csv",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/robustness/path_units.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/robustness/train_only.csv",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/robustness/valid.csv",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/robustness/wrong_header.csv",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/transport/problem.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "examples/transport/reference_model.json",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "modeling_assistant/__init__.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "modeling_assistant/__main__.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "modeling_assistant/capacity_conflict.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "modeling_assistant/cli.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "modeling_assistant/config.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "modeling_assistant/configure.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "modeling_assistant/dimension_policy.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "modeling_assistant/dynamics.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "modeling_assistant/extraction.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "modeling_assistant/fitting.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "modeling_assistant/format_repair.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "modeling_assistant/generation_policy.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "modeling_assistant/graph_quotes.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "modeling_assistant/graph_units.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "modeling_assistant/graphs.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "modeling_assistant/missing_capacity.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "modeling_assistant/model.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "modeling_assistant/numeric_text.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "modeling_assistant/parameter_policy.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "modeling_assistant/parser.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "modeling_assistant/presentation.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "modeling_assistant/provider.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "modeling_assistant/request_contract.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "modeling_assistant/response_language.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "modeling_assistant/solver.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "modeling_assistant/source_quotes.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "modeling_assistant/units.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "outputs/false_interception_followups/20261016_224619_c2a067a7/round_1/flow_integer_conversion/api.json",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "outputs/false_interception_followups/20261016_224619_c2a067a7/round_1/flow_integer_conversion/generation_record.json",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "outputs/false_interception_followups/20261016_224619_c2a067a7/round_1/flow_reverse_conversion/api.json",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "outputs/false_interception_followups/20261016_224619_c2a067a7/round_1/flow_reverse_conversion/generation_record.json",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "outputs/false_interception_followups/20261016_224619_c2a067a7/round_2/flow_reverse_conversion/api.json",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "outputs/false_interception_followups/20261016_224619_c2a067a7/round_2/flow_reverse_conversion/generation_record.json",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "outputs/false_interception_followups/20261016_224619_c2a067a7/round_3/flow_reverse_conversion/api.json",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "outputs/false_interception_followups/20261016_224619_c2a067a7/round_3/flow_reverse_conversion/generation_record.json",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "outputs/full_regressions/20261016_215628_fad2b50a/NET02_paraphrase/api.json",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "outputs/full_regressions/20261016_215628_fad2b50a/immutable_permission/generation_record.json",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "outputs/full_regressions/20261016_221715_01b77856/graph_units_fractional_flow/api.json",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "outputs/full_regressions/20261016_221715_01b77856/graph_units_fractional_flow/generation_record.json",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "outputs/full_regressions/20261016_221715_01b77856/immutable_lock_dont/api.json",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "outputs/full_regressions/20261016_221715_01b77856/immutable_lock_dont/generation_record.json",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "outputs/graph_contract_regressions/20261016_225320_e4401c39/round_1/flow_min_cost/api.json",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "outputs/graph_contract_regressions/20261016_225320_e4401c39/round_2/flow_min_cost/api.json",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "outputs/graph_contract_regressions/20261016_225320_e4401c39/round_3/flow_min_cost/api.json",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "outputs/guard_cause_regressions/20261016_222912_c4d79f9a/round_1/conflict_two_positive/api.json",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "outputs/guard_cause_regressions/20261016_222912_c4d79f9a/round_1/conflict_two_positive/generation_record.json",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "outputs/guard_cause_regressions/20261016_222912_c4d79f9a/round_1/immutable_lock_cannot/api.json",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "outputs/guard_cause_regressions/20261016_222912_c4d79f9a/round_1/immutable_lock_cannot/generation_record.json",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "outputs/guard_cause_regressions/20261016_222912_c4d79f9a/round_1/remaining_permission_conflict/api.json",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "outputs/guard_cause_regressions/20261016_222912_c4d79f9a/round_1/remaining_permission_conflict/generation_record.json",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "outputs/guard_cause_regressions/20261016_222912_c4d79f9a/round_3/conflict_all_negative/api.json",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "outputs/guard_cause_regressions/20261016_222912_c4d79f9a/round_3/conflict_all_negative/generation_record.json",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "outputs/guard_cause_regressions/20261016_222912_c4d79f9a/round_3/flow_integer_conversion/api.json",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "outputs/guard_cause_regressions/20261016_222912_c4d79f9a/round_3/flow_integer_conversion/generation_record.json",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "outputs/remaining_regressions/20261016_220901_3d78eab4/round_1/permission_missing/generation_record.json",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "requirements-assistant-lock.txt",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "task_cards/refusal_contract_regression_protocol_v1.md",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "tests/test_api_configuration.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "tests/test_batch.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "tests/test_capacity_boundaries.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "tests/test_capacity_conflict.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "tests/test_clarification.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "tests/test_dynamics.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "tests/test_equivalent_numbers.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "tests/test_extraction_presentation.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "tests/test_false_interceptions.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "tests/test_fitting.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "tests/test_format_repair.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "tests/test_full_regression.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "tests/test_generation_policy.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "tests/test_graph_request_contract.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "tests/test_graph_units.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "tests/test_graphs.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "tests/test_immutable_boundaries.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "tests/test_infeasibility.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "tests/test_locked_and_presentation.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "tests/test_missing_capacity.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "tests/test_modeling_assistant.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "tests/test_neutral_clarification.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "tests/test_parameter_feedback.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "tests/test_provenance_and_refusal.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "tests/test_refusal_contract.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "tests/test_remaining_failures.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "tests/test_transport.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "tests/test_unified_regression.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "tests/test_units.py",
+      "snapshot": true,
+      "working": true
+    },
+    {
+      "path": "tests/test_variants.py",
+      "snapshot": true,
+      "working": true
+    }
+  ]
+}

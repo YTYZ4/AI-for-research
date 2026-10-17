@@ -1,0 +1,4 @@
+source,target,capacity,flow
+S,A,10,6
+A,T,6,6
+S,T,5,5

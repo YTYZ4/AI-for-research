@@ -1,0 +1,12 @@
+{
+  "id": "immutable_valid_above",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "",
+  "total_tokens": 5432,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "immutable_valid_above/20261016_222929_d6ba5549",
+  "elapsed_seconds": 1.7349085000460036
+}

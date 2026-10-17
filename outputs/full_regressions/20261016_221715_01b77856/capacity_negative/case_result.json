@@ -1,0 +1,12 @@
+{
+  "id": "capacity_negative",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "当前环境容量K为-0.5个，在常参数连续Logistic模型中会使方程无效（K≤0）。请提供正实数环境容量K（可为小数）及其数量单位；如果您明确禁止修改该参数，请说明。",
+  "total_tokens": 4715,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "capacity_negative/20261016_221826_a2c4077e",
+  "elapsed_seconds": 1.6689769589575008
+}

@@ -1,0 +1,12 @@
+{
+  "id": "mixed_production",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "当前单模型协议无法联合表示“生产计划优化”和“网络最大流”两个建模任务；请一次只提交其中一个任务。",
+  "total_tokens": 4935,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "mixed_production/20261016_235925_31242327",
+  "elapsed_seconds": 1.6491690420079976
+}

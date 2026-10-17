@@ -1,4 +1,0 @@
-run_id,mode,source_artifact_run_id,scope_id,image_count,case_count,artifact_complete,runnable,output_ok_count,notes
-2026-04-12_run_052,direct_answer,2026-04-12_run_030,a2_expanded_scope_v0,4,16,2,1,16,reused baseline artifact; expanded image/corruption cases completed
-2026-04-12_run_053,plain_guidance,2026-04-12_run_031,a2_expanded_scope_v0,4,16,2,1,16,reused baseline artifact; expanded image/corruption cases completed
-2026-04-12_run_054,coe_guided,2026-04-12_run_032,a2_expanded_scope_v0,4,16,2,1,16,reused baseline artifact; expanded image/corruption cases completed

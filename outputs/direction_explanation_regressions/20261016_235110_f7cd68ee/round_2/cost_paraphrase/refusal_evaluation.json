@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": {
+    "unsupported": true,
+    "no_model": true,
+    "nonblank_explanations": true,
+    "identifies_requested_scope": true,
+    "explains_limit": true,
+    "no_invented_contract_limit": true,
+    "no_silent_downgrade": true
+  },
+  "text": "当前图网络任务仅支持最短路径或最大流；该问题要求先最大流、再最小化运输总成本，属于最小费用流/多目标优化，不在支持范围内。"
+}

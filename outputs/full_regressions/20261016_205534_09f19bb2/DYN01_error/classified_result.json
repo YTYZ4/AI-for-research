@@ -1,0 +1,22 @@
+{
+  "id": "DYN01_error",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "原题给出的冷却系数 k 为 -0.1 1/min，是负数；牛顿冷却模型要求冷却系数 k 为正，且原题明确禁止取绝对值或改动参数，因此无法在保持原参数不变的前提下建模。",
+  "total_tokens": 3434,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "DYN01_error/20261016_205622_6ccbe515",
+  "elapsed_seconds": 2.66035495797405,
+  "question_semantics_passed": true,
+  "kind": "error",
+  "base_id": "DYN01",
+  "raw_schema_valid": true,
+  "format_action": "not_needed",
+  "local_guard_used": false,
+  "original_pass": true,
+  "after_format_pass": true,
+  "final_pass": true,
+  "pass_path": "native"
+}

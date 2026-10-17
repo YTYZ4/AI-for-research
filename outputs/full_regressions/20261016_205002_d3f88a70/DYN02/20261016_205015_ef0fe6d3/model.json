@@ -1,0 +1,17 @@
+{
+  "task_type": "dynamics",
+  "name": "连续Logistic增长模型",
+  "system": "logistic",
+  "initial": 100,
+  "rate": 0.2,
+  "equilibrium": 1000,
+  "duration": 30.0,
+  "rate_unit": "1/day",
+  "state_unit": "个",
+  "assumptions": [
+    "种群遵循连续Logistic增长模型 dN/dt = rN(1-N/K)，参数恒定，数量使用连续近似。",
+    "无迁入迁出。",
+    "时间单位与速率单位按原题保留：速率单位为 1/day，时长为 30 天。"
+  ],
+  "time_unit": "day"
+}

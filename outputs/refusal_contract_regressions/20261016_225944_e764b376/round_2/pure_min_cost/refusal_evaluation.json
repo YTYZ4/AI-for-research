@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": {
+    "unsupported": true,
+    "no_model": true,
+    "nonblank_explanations": true,
+    "identifies_requested_scope": true,
+    "explains_limit": true,
+    "no_invented_contract_limit": true,
+    "no_silent_downgrade": true
+  },
+  "text": "不支持最小费用流任务；仅支持最短路径和单商品最大流。本请求还包含以立方米/小时表示输出流量的单位转换要求，但任务类型本身已超出支持边界。"
+}

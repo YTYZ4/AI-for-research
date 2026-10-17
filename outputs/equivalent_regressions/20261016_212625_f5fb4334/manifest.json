@@ -1,0 +1,220 @@
+{
+  "version": "0.10.10",
+  "model": "deepseek-flash",
+  "cases": [
+    {
+      "id": "trailing_zero",
+      "family": "dynamics",
+      "problem": "examples/equivalent_boundaries/trailing_zero.txt",
+      "initial": 1.5,
+      "capacity": 0.5,
+      "expected_envelopes": [
+        "ready"
+      ],
+      "conflict_values": [],
+      "question_keywords": []
+    },
+    {
+      "id": "leading_dot",
+      "family": "dynamics",
+      "problem": "examples/equivalent_boundaries/leading_dot.txt",
+      "initial": 1.5,
+      "capacity": 0.5,
+      "expected_envelopes": [
+        "ready"
+      ],
+      "conflict_values": [],
+      "question_keywords": []
+    },
+    {
+      "id": "signed",
+      "family": "dynamics",
+      "problem": "examples/equivalent_boundaries/signed.txt",
+      "initial": 1.5,
+      "capacity": 0.5,
+      "expected_envelopes": [
+        "ready"
+      ],
+      "conflict_values": [],
+      "question_keywords": []
+    },
+    {
+      "id": "scientific",
+      "family": "dynamics",
+      "problem": "examples/equivalent_boundaries/scientific.txt",
+      "initial": 1.5,
+      "capacity": 0.5,
+      "expected_envelopes": [
+        "ready"
+      ],
+      "conflict_values": [],
+      "question_keywords": []
+    },
+    {
+      "id": "integer",
+      "family": "dynamics",
+      "problem": "examples/equivalent_boundaries/integer.txt",
+      "initial": 1.5,
+      "capacity": 1,
+      "expected_envelopes": [
+        "ready"
+      ],
+      "conflict_values": [],
+      "question_keywords": []
+    },
+    {
+      "id": "same_invalid",
+      "family": "dynamics",
+      "problem": "examples/equivalent_boundaries/same_invalid.txt",
+      "initial": 1.5,
+      "capacity": 0,
+      "expected_envelopes": [
+        "unsupported"
+      ],
+      "conflict_values": [],
+      "question_keywords": [
+        "容量",
+        "K"
+      ]
+    },
+    {
+      "id": "near_difference",
+      "family": "dynamics",
+      "problem": "examples/equivalent_boundaries/near_difference.txt",
+      "initial": 1.5,
+      "capacity": null,
+      "expected_envelopes": [
+        "needs_clarification"
+      ],
+      "conflict_values": [
+        0.5,
+        0.5001
+      ],
+      "question_keywords": [
+        "容量",
+        "K"
+      ]
+    },
+    {
+      "id": "exponent_difference",
+      "family": "dynamics",
+      "problem": "examples/equivalent_boundaries/exponent_difference.txt",
+      "initial": 1.5,
+      "capacity": null,
+      "expected_envelopes": [
+        "needs_clarification"
+      ],
+      "conflict_values": [
+        0.5,
+        0.6
+      ],
+      "question_keywords": [
+        "容量",
+        "K"
+      ]
+    },
+    {
+      "id": "missing_rate",
+      "family": "dynamics",
+      "problem": "examples/equivalent_boundaries/missing_rate.txt",
+      "initial": 1.5,
+      "capacity": null,
+      "expected_envelopes": [
+        "needs_clarification"
+      ],
+      "conflict_values": [],
+      "question_keywords": [
+        "增长率",
+        "r"
+      ]
+    },
+    {
+      "id": "corrected",
+      "family": "dynamics",
+      "problem": "examples/equivalent_boundaries/corrected.txt",
+      "initial": 1.5,
+      "capacity": 0.5,
+      "expected_envelopes": [
+        "ready"
+      ],
+      "conflict_values": [],
+      "question_keywords": []
+    }
+  ],
+  "repeats": 3,
+  "max_calls": 30,
+  "retries": 0,
+  "hashes": {
+    "modeling_assistant/config.py": "3bde19f9ff792b8612f650dbbe59bda9cd6b0bdc09bb4aa83ae2f32c21fc2dab",
+    "modeling_assistant/units.py": "99b712aa00b1357855ee11f93dc0431733c29bff51cffb62276316829bcf8b54",
+    "modeling_assistant/configure.py": "181e16c35632d06bae844828dc84edd8fef62cbf42fefd6db4208f335c7880bc",
+    "modeling_assistant/capacity_conflict.py": "91dbd09f6c6e78ed8f4259be9361b88a71d255cf54320bc04ca2250c31e4a5b1",
+    "modeling_assistant/solver.py": "aaa42a26a60dd8800632fea12a07422e5d8d777e7f9264535e9f9bff13b2f5b0",
+    "modeling_assistant/provider.py": "47edda2310734d3e83f738176c1884c68f0a85e795905cff54ec67a1f971cd3e",
+    "modeling_assistant/__init__.py": "bc750ff81c9734843fd541c1c22025859f9c2c95f841b541be54aec446823722",
+    "modeling_assistant/model.py": "ce4dfc989d8e684ece4cd272c18f683a6fb41181de43da7bb802a7274e4ff430",
+    "modeling_assistant/parser.py": "e36f55ec7a73f34f106ba19c09b6a2e246a802c676c4d029c79d1cf1c2f46231",
+    "modeling_assistant/presentation.py": "ac9cddf299c9321945b6de655dfed30197477ff857c5ceaaf25c90b316227c3a",
+    "modeling_assistant/parameter_policy.py": "0b01949c476ece1ba5d0147cc831110bf4b24f151e3661f1ba018028e4595725",
+    "modeling_assistant/cli.py": "1e62bef215784eca078bfbc16df30e924be2a96ddb8ac7645f1ae18675e03f9e",
+    "modeling_assistant/extraction.py": "e6bad25e7b264bb4cef45f349b577b2fd4cd5514fda2704acc669ce990081aa0",
+    "modeling_assistant/fitting.py": "7577f4d107cab457821be089dbfeebc0ee0b0b05627f9f8b0e38565e24fd16fd",
+    "modeling_assistant/graphs.py": "cd1063f33e1a0e41fa26048bf7c06bf7ec766e097264eb2135975b1e1b264469",
+    "modeling_assistant/format_repair.py": "3f2ab8ea661eb1c5cfc302453c341f344f81923d4aa34b219458117b7259fe54",
+    "modeling_assistant/numeric_text.py": "7276f0179daba9629ad1f711672ae25d6323ce9c27fe64c2599eda8b6d0e58cf",
+    "modeling_assistant/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+    "modeling_assistant/dynamics.py": "5f516b2ef84abfcd39e12ea96a01aa160ad8c54be51a6cab81f3b8f4e3f9dc57",
+    "modeling_assistant/dimension_policy.py": "0749f50cbec5d846ba8cf949299f8295ad9bf0cd931fa0ae8ac479476be40318",
+    "evaluation/conflict_regression.py": "06d762e64655784aa687bf41eab7a849fecf87963f7d9b3928f3d26a95115414",
+    "evaluation/format_regression.py": "6a03b8388f7db607204351c9350ca8da59e72a122c236316c53412af83a4ecb3",
+    "evaluation/variants.py": "30a6cc4a08751c821bbd511c117d8a8340a7fe174588fdaf982a8d7141237c9b",
+    "evaluation/transport.py": "b25a52d2837db07788ec883de5028a84ac98fc31ca8087a903bc4cd805e45f5b",
+    "evaluation/full_regression.py": "d318bda1f37b8b1427a696f945828a087d19c574379e52e7910c0626680b7c64",
+    "evaluation/capacity_regression.py": "dcb47e97e81f21cf02089bb8e9cf625427d21ad8e25cc223c4e1cdfa52640cb9",
+    "evaluation/batch.py": "c7659a163d8a025515dc441592585397ef37e2a122e97f14cb17a2f5f7d81491",
+    "evaluation/equivalent_regression.py": "54c1945f5c5f555bbab5c06724f4e4de06864a8bf64e52c4d3358fc48872f40b",
+    "evaluation/__init__.py": "e341001f744cb6b55ac13abe7a9d38978cd3b1ef9c183f663f055edefa4f5ea2",
+    "evaluation/development.py": "89270a2258536a19513758437df5c60d7f58030faaa097d7e7ec56e2b611d85c",
+    "evaluation/clarification.py": "5fc4c75e0e3e9b37e6d0047288978f7cd4ed4e4e14dc845122e995ba418ac65e",
+    "evaluation/robustness.py": "cd5fd3a95455a464ec69b147d5f8cccf282a583813c21c995081c27048c51b8a",
+    "evaluation/immutable_regression.py": "79d7ce4437419f096184c84616ad10c253768799f30ddb113f13c8d8bfea22d6",
+    "evaluation/fitting.py": "d4262f4040c1cccf7d7028af272c64fd41e362877fea71ab96eb08744ddeb21d",
+    "evaluation/review_variants.py": "b7001e90019a90aa15976ca91a2a2709e1de2f5a5fdc90ff1a5845ae361db1ec",
+    "evaluation/graphs.py": "b68d4fd3088d8542dc9604a2b77ccb4901165f89eab9072949ce40592c4f7d79",
+    "evaluation/unit_regression.py": "5f2f7f2c064b40c9999274ee64e8f71773a8053b89fcfc4c0285b45729e91ac7",
+    "evaluation/dynamics.py": "d11fd630a1f2f19013e24ae79430613963ccb57bcce5919d03704a1b1635ead7",
+    "tests/test_parameter_feedback.py": "d70ff40a911d31497bdb255c1668e5ff895155c62c2f617cb774b68d6bf498e9",
+    "tests/test_capacity_boundaries.py": "bed83107219408f25b8835f95139de90e666ff3b214163c09caf4ad9327fcc5e",
+    "tests/test_unified_regression.py": "e93933a96e4506b383c315c220319f67add312ff20ec69123423b0f9aa4902ad",
+    "tests/test_immutable_boundaries.py": "a5d5695350d12782bb145940b863186a9b6bf6c41a1c39b76664e311d744af21",
+    "tests/test_api_configuration.py": "b3ba057230e25982f50de28578678c9e3c405e212a4b52f5670fb2a6d914c85a",
+    "tests/test_locked_and_presentation.py": "ce1de84524adad720f2ecaf7627ad1ab24593174982225de30d7bbfd8711bd96",
+    "tests/test_clarification.py": "ae24fc6cd986f42f20e09f7322ccf2760ae5c537d63808f80bcae07f210a46e5",
+    "tests/test_graphs.py": "d32d4d83f4ba0d1c4d927c0146e29bc12b49e221732cc8fa7fd1acef3479e0e3",
+    "tests/test_variants.py": "3a1216832bed6282efdea5cbda1a6364d96b86993334a39dcab2a5560dad504b",
+    "tests/test_equivalent_numbers.py": "25c9ca362e6f86c14a074226a9be2ee5b75d0b6229b8d346b50ac5f016a1af1d",
+    "tests/test_transport.py": "70e001ae2fdc87be163f6942d7222608af8db9b73d330a6c975a10b3dd002041",
+    "tests/test_fitting.py": "bb2ea9fcc106ae4240569cb5e23766489e2c9a459606b5a3c5c052a3778e1bd0",
+    "tests/test_units.py": "2ae74b20e85f08a69fdf32947c0a8f773ddd04cea02a57cb3d3c3d17b71d625b",
+    "tests/test_capacity_conflict.py": "7a188525a050d4c2ee0ff51a8cdad702054d1bbe374a10adc2ffc0969978789a",
+    "tests/test_dynamics.py": "0bc68c55cc35d7fd25e2b23c760b2d1c6b0969f10accf19e7fdb3cf932034426",
+    "tests/test_neutral_clarification.py": "5021d04148fb0a2c75e849a8c9fa88d28d29e03e2dfef375f3d4698ffaf590a3",
+    "tests/test_extraction_presentation.py": "98566213d1b1654fabefdad77f86e29e600e1d2ac51780f513e3cfa7f90c756a",
+    "tests/test_batch.py": "3441510fc449123ec7cb3d022d6b4c76aeef89a56fe1f3d44c849481a07b15c8",
+    "tests/test_infeasibility.py": "635fdfbe7b97d5ab61f3f85772cb33b492c5772d6170a7450a2aeeb9848ba76e",
+    "tests/test_full_regression.py": "c0d89354b135796a836611b622e1bac7027121b1e52e3d442a0f30da9bd5ac06",
+    "tests/test_format_repair.py": "8001025309adb299a0cfa229c57bb52598ba979e9ba7ac754e89867a7e69b353",
+    "tests/test_modeling_assistant.py": "b1bcfbb03e929b170e20f3870796b82506fbcc288f493d2c1c8a14cdf96a7995",
+    "examples/equivalent_boundaries/scientific.txt": "a05446c60618e23d31756d0d119fd019e4b83f48b8d40ecc97e0022405848a27",
+    "examples/equivalent_boundaries/near_difference.txt": "135f95233cc5d0de4dc3d9901c76366aa28d5a4868f9be4bcc38419a5a5982d2",
+    "examples/equivalent_boundaries/same_invalid.txt": "0ba4ff20c94a7b5cadd82cd3bf69a8f1b4739d9e23c7d13050c3a4c3278ae9b9",
+    "examples/equivalent_boundaries/corrected.txt": "0c8f899ce398b87809508d25325e5c84790d083dbc03f56eb13d79c100cd61a4",
+    "examples/equivalent_boundaries/signed.txt": "622c525ce7a791cb0d36bc3cefa4dafdbc7dd05d7c69c8d20f7ed20c5f82fa73",
+    "examples/equivalent_boundaries/integer.txt": "fa1ceff18222d085c6149ff1ac784e7c657652dafd18ca46c664d4f5f02238c6",
+    "examples/equivalent_boundaries/exponent_difference.txt": "c3fed5c44e0db09ced19e76562ebc41494d946b1b7e927b1aad6578648ec2bea",
+    "examples/equivalent_boundaries/leading_dot.txt": "53e4b0dc0ae184848c5c094b85ccda39db0e44f518870597f0223ff06cebeab3",
+    "examples/equivalent_boundaries/manifest.json": "4d3b8fe3d7ff8a6d5f2a882bff0b2402b6c90f17cc09073b1af13fdfd5f3f45d",
+    "examples/equivalent_boundaries/trailing_zero.txt": "4fc83282a958bdc515c5d93d6dba80f61dad086df917078ff58b8e257a4212f3",
+    "examples/equivalent_boundaries/missing_rate.txt": "563eba5e4459af4da83148952ce73f9308030b8dde92909ec9bd19a15ddc1a4b"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "task_type": "dynamics",
+  "name": "连续Logistic增长轨迹与终值",
+  "system": "logistic",
+  "initial": 1.5,
+  "rate": 0.2,
+  "equilibrium": 0.5,
+  "duration": 30.0,
+  "rate_unit": "1/day",
+  "state_unit": "个",
+  "assumptions": [
+    "种群数量按连续实数处理，允许非整数值。",
+    "环境容量K为恒定平衡值，初始种群可以大于K。",
+    "增长率r和内禀增长率恒定。",
+    "系统无迁入迁出，符合封闭Logistic模型。"
+  ],
+  "time_unit": "day"
+}

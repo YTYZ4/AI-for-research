@@ -1,0 +1,12 @@
+{
+  "id": "flow_same_fractional",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "换算后容量不是整数，超出当前最大流求解器范围；保留原值，不截断或四舍五入。",
+  "total_tokens": 4951,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "flow_same_fractional/20261016_224348_4c5dd926",
+  "elapsed_seconds": 1.941233707999345
+}

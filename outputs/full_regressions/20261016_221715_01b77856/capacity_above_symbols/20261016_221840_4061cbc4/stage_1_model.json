@@ -1,0 +1,18 @@
+{
+  "task_type": "dynamics",
+  "name": "连续Logistic增长初值问题",
+  "system": "logistic",
+  "initial": 1.5,
+  "rate": 0.2,
+  "equilibrium": 0.5,
+  "duration": 30.0,
+  "rate_unit": "1/day",
+  "state_unit": "个",
+  "assumptions": [
+    "采用常参数连续Logistic模型 dN/dt = rN(1-N/K)。",
+    "N 与 K 以“个”为数量单位；r 为每天的内禀增长率。",
+    "初始数量 N(0)=1.5 大于环境容量 K=0.5，轨迹按原参数自然下降，不调整初值或容量。",
+    "仅求常参数轨迹及最终数量，不涉及阈值时间或参数辨识。"
+  ],
+  "time_unit": "day"
+}

@@ -1,0 +1,19 @@
+{
+  "task_type": "dynamics",
+  "name": "牛顿冷却：90摄氏度液体在20摄氏度室内冷却",
+  "system": "newton_cooling",
+  "initial": 90,
+  "rate": 0.1,
+  "equilibrium": 20,
+  "duration": 30,
+  "time_unit": "min",
+  "rate_unit": "1/min",
+  "state_unit": "摄氏度",
+  "assumptions": [
+    "液体温度均匀，可用单一温度变量描述。",
+    "环境温度恒定在20摄氏度。",
+    "冷却系数恒定，为每分钟0.1。",
+    "遵循牛顿冷却定律 dT/dt=-k(T-T_env)。",
+    "允许温度取负摄氏值。"
+  ]
+}

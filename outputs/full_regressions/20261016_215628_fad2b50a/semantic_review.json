@@ -1,0 +1,36 @@
+{
+  "reviewer": "assistant_read_only_review",
+  "independent_human_review": false,
+  "automatic_results_unchanged": true,
+  "path_units": {
+    "value": 8,
+    "unit": "千米",
+    "original_values_units_and_conversion_audit_passed": true
+  },
+  "NET02_paraphrase": {
+    "verdict": "failure_retained",
+    "reason": "模型将多条边片段与末尾全局单位声明拼接，source_quote不再是逐字连续原文；程序拦截，未执行。"
+  },
+  "immutable_permission": {
+    "verdict": "failure_retained",
+    "reason": "原题允许修改但要求先询问；模型直接unsupported，未进行所需追问。"
+  },
+  "graph_units_unknown": {
+    "verdict": "local_guard_pass",
+    "reason": "模型尝试ready，程序拒绝未知英里换算，不猜测因子。"
+  },
+  "graph_units_dimension": {
+    "verdict": "native_pass",
+    "reason": "原响应识别距离/时间量纲差异，询问缺失距离或速度。"
+  },
+  "graph_units_fractional_flow": {
+    "verdict": "local_guard_pass",
+    "reason": "原响应尝试ready，换算后非整数容量由程序停止，不取整也不修改原值。"
+  },
+  "limitations": [
+    "单轮开发变体，不证明保留新题泛化或稳定性。",
+    "引用只做有限词法核对，不能保证缺边、方向和单位归属完整正确。",
+    "公共单位声明的引用形式仍较严格，复杂表述可能被拒绝；图引用不自动修复。",
+    "未开展独立人工语义评分。"
+  ]
+}

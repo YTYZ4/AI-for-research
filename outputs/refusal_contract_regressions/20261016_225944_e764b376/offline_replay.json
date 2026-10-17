@@ -1,0 +1,38 @@
+{
+  "api_calls": 0,
+  "records": [
+    {
+      "source": "outputs/graph_contract_regressions/20261016_225320_e4401c39/round_1/flow_min_cost/api.json",
+      "sha256": "7035243c5191f3e8b9525b31a2dc08aac9d89d7fff545a237e8bb9c6f0bf73c5",
+      "raw": {
+        "status": "unsupported",
+        "questions": [],
+        "model": null
+      },
+      "local_rejected": true,
+      "new_request_schema_rejected": true
+    },
+    {
+      "source": "outputs/graph_contract_regressions/20261016_225320_e4401c39/round_2/flow_min_cost/api.json",
+      "sha256": "d7d9420d0f669099fc1e3e372d4daed780ded4a93cb3b8c432f37fdde8798070",
+      "raw": {
+        "status": "unsupported",
+        "questions": [],
+        "model": null
+      },
+      "local_rejected": true,
+      "new_request_schema_rejected": true
+    },
+    {
+      "source": "outputs/graph_contract_regressions/20261016_225320_e4401c39/round_3/flow_min_cost/api.json",
+      "sha256": "7e679c110d60a6a2b300873f28783f6dd9bfb0e9d95c7ea2054c1b93840836d3",
+      "raw": {
+        "status": "unsupported",
+        "questions": [],
+        "model": null
+      },
+      "local_rejected": true,
+      "new_request_schema_rejected": true
+    }
+  ]
+}

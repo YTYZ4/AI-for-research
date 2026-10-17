@@ -1,0 +1,77 @@
+{
+  "task_type": "graph_input",
+  "name": "最短路线问题",
+  "problem": "shortest_path",
+  "nodes": [
+    "S",
+    "A",
+    "B",
+    "C",
+    "T"
+  ],
+  "source": "S",
+  "target": "T",
+  "edges": [
+    {
+      "source": "S",
+      "target": "A",
+      "weight": 4,
+      "unit": "千米",
+      "source_quote": "S到A为4千米",
+      "unit_quote": "千米"
+    },
+    {
+      "source": "S",
+      "target": "B",
+      "weight": 2,
+      "unit": "千米",
+      "source_quote": "S到B为2千米",
+      "unit_quote": "千米"
+    },
+    {
+      "source": "B",
+      "target": "A",
+      "weight": 1,
+      "unit": "千米",
+      "source_quote": "B到A为1千米",
+      "unit_quote": "千米"
+    },
+    {
+      "source": "A",
+      "target": "C",
+      "weight": 2,
+      "unit": "千米",
+      "source_quote": "A到C为2千米",
+      "unit_quote": "千米"
+    },
+    {
+      "source": "B",
+      "target": "C",
+      "weight": 5,
+      "unit": "千米",
+      "source_quote": "B到C为5千米",
+      "unit_quote": "千米"
+    },
+    {
+      "source": "C",
+      "target": "T",
+      "weight": 3,
+      "unit": "千米",
+      "source_quote": "C到T为3千米",
+      "unit_quote": "千米"
+    },
+    {
+      "source": "A",
+      "target": "T",
+      "weight": 7,
+      "unit": "千米",
+      "source_quote": "A到T为7千米",
+      "unit_quote": "千米"
+    }
+  ],
+  "unit": "千米",
+  "assumptions": [
+    "每条道路只能沿给定方向行驶。",
+    "边权为非负距离。"
+  ]
+}

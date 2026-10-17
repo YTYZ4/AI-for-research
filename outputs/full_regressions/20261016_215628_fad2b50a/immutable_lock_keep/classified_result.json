@@ -1,0 +1,31 @@
+{
+  "id": "immutable_lock_keep",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "环境容量K=0.0不满足K>0。原题明确禁止改动参数；保持原值时超出当前连续Logistic模型支持范围，停止求解。",
+  "total_tokens": 4373,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "immutable_lock_keep/20261016_215803_0767f14e",
+  "elapsed_seconds": 1.1664154159952886,
+  "question_semantics_passed": true,
+  "kind": "immutable",
+  "base_id": "DYN02",
+  "origins": [
+    {
+      "id": "immutable_lock_keep",
+      "problem": "examples/immutable_boundaries/lock_keep.txt",
+      "kind": "immutable"
+    }
+  ],
+  "quote_audit_passed": null,
+  "raw_schema_valid": true,
+  "format_action": "not_needed",
+  "local_guard_used": true,
+  "source_quote_repaired": false,
+  "original_pass": false,
+  "after_format_pass": false,
+  "final_pass": true,
+  "pass_path": "local_guard"
+}

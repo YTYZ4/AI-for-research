@@ -1,0 +1,23 @@
+{
+  "task_type": "graph",
+  "name": "S到T单边最大流",
+  "problem": "max_flow",
+  "nodes": [
+    "S",
+    "T"
+  ],
+  "source": "S",
+  "target": "T",
+  "edges": [
+    {
+      "source": "S",
+      "target": "T",
+      "weight": 1
+    }
+  ],
+  "unit": "升/小时",
+  "assumptions": [
+    "保留原题有向边方向与容量数值，不新增或删除边。",
+    "最大流问题允许源点无入边、汇点无出边。"
+  ]
+}

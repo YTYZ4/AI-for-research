@@ -1,0 +1,31 @@
+{
+  "id": "FIT02_missing",
+  "family": "fitting",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "请提供一元拟合数据 CSV 文件，包含 x,y,split 三列，其中 split 为 train/test；x 和 y 的单位是什么（若均无量纲请说明）？",
+  "total_tokens": 4102,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "FIT02_missing/20261016_215709_67b50e2f",
+  "elapsed_seconds": 2.1866280420217663,
+  "question_semantics_passed": true,
+  "kind": "missing",
+  "base_id": "FIT02",
+  "origins": [
+    {
+      "id": "FIT02_missing",
+      "problem": "examples/development_variants/FIT02_missing.txt",
+      "kind": "missing"
+    }
+  ],
+  "quote_audit_passed": null,
+  "raw_schema_valid": true,
+  "format_action": "not_needed",
+  "local_guard_used": false,
+  "source_quote_repaired": false,
+  "original_pass": true,
+  "after_format_pass": true,
+  "final_pass": true,
+  "pass_path": "native"
+}

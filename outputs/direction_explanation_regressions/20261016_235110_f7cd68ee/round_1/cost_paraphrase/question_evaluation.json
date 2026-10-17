@@ -1,0 +1,11 @@
+{
+  "applied": true,
+  "passed": false,
+  "checks": {
+    "expected_status": false,
+    "nonempty_question": true,
+    "relevant_topic": true
+  },
+  "text": "该问题同时包含最大流和运输成本最小化（最小费用流），当前仅支持单一最大流或最短路径问题，不支持按“先最大流再最小费用”的多目标求解；请确认是要仅最大流，还是仅最短路径？",
+  "scope": "状态/主题初筛；显式禁止改值时检查修改建议，否则Logistic容量检查正实数限制。不是完整语义证明。"
+}

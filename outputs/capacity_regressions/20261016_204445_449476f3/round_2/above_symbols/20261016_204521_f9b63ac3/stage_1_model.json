@@ -1,0 +1,18 @@
+{
+  "task_type": "dynamics",
+  "name": "连续Logistic初值问题",
+  "system": "logistic",
+  "initial": 1.5,
+  "rate": 0.2,
+  "equilibrium": 0.5,
+  "duration": 30.0,
+  "rate_unit": "1/day",
+  "state_unit": "个",
+  "assumptions": [
+    "采用常参数连续Logistic增长模型：dN/dt=rN(1-N/K)。",
+    "初值N(0)=1.5个大于环境容量K=0.5个，轨迹将向K自然下降，这不属于参数错误。",
+    "种群数量按连续变量处理，允许非整数，不进行取整。",
+    "增长率与模拟时长的单位不同，模型保留原速率单位并由求解器转换时间单位。"
+  ],
+  "time_unit": "day"
+}

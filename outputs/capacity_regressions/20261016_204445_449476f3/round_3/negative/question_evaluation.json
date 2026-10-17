@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "checks": {
+    "clarification": true,
+    "capacity": true,
+    "positive_real": true,
+    "fraction_allowed": true,
+    "no_integer_requirement": true
+  },
+  "text": "环境容量K=-0.5个无效，请提供正实数环境容量K（可为小数）。"
+}

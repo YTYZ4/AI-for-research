@@ -1,0 +1,12 @@
+{
+  "id": "three_values",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "环境容量K存在多条互相冲突的记录：恒定-1个、另一记录K=0个、第三条环境容量为0.5个。请核对哪一条准确？",
+  "total_tokens": 3520,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "three_values/20261016_211157_7e0194aa",
+  "elapsed_seconds": 3.6320612499839626
+}

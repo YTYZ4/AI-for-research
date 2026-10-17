@@ -1,0 +1,12 @@
+{
+  "id": "immutable_lock_keep",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "环境容量恒定为0个，使连续Logistic模型中的因子(1-N/K)出现除零，当前模型无效；由于要求全部参数必须保持原样，无法在保留该参数的情况下建立可求解模型。",
+  "total_tokens": 5328,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "immutable_lock_keep/20261016_222947_4bab9ab8",
+  "elapsed_seconds": 2.3968081250204705
+}

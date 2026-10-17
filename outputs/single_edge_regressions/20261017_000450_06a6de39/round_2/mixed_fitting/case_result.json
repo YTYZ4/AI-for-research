@@ -1,0 +1,12 @@
+{
+  "id": "mixed_fitting",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "原题同时要求两类不同建模任务：一是有向网络最大流与最低费用运输（最小费用流），二是容量随温度的二次多项式拟合。当前单模型协议无法表示这种联合任务，因此不能只返回其中一项或拆分处理。",
+  "total_tokens": 4996,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "mixed_fitting/20261017_000527_9cb349f8",
+  "elapsed_seconds": 1.8086374999838881
+}

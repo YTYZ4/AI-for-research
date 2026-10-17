@@ -1,0 +1,19 @@
+{
+  "task_type": "dynamics",
+  "name": "封闭种群连续Logistic模型",
+  "system": "logistic",
+  "initial": 0.5001,
+  "rate": 0.2,
+  "equilibrium": 0.5,
+  "duration": 30.0,
+  "rate_unit": "1/day",
+  "state_unit": "个",
+  "assumptions": [
+    "封闭种群，无迁入迁出。",
+    "环境容量恒定，K=0.5个。",
+    "内禀增长率恒定，r=0.2每天。",
+    "种群数量按连续量近似建模。",
+    "初值大于环境容量，轨迹将向环境容量下降。"
+  ],
+  "time_unit": "day"
+}

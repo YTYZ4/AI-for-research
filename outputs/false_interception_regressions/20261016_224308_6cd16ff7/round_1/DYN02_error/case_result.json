@@ -1,0 +1,12 @@
+{
+  "id": "DYN02_error",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "环境容量K=0使Logistic方程中的1-N/K项出现除零，当前常参数Logistic连续模型不支持该参数值；且题目要求不得替换容量数值，因此无法建立有效模型。",
+  "total_tokens": 5442,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "DYN02_error/20261016_224309_bffc521b",
+  "elapsed_seconds": 1.5350120419752784
+}

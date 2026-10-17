@@ -1,0 +1,9 @@
+{
+  "envelope": {
+    "status": "needs_clarification",
+    "questions": [
+      "环境容量K的原文记录相互冲突：“容量恒定-1个”；“K=-2个”。请核对并确认哪条记录准确，或补充记录分别适用的条件。系统未选择任何值，也未执行求解。"
+    ],
+    "model": null
+  }
+}

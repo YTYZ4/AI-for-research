@@ -1,0 +1,12 @@
+{
+  "id": "immutable_negated_permission_invalid",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "原题给定环境容量 K=0，使 Logistic 模型中出现 N/K 除零并无效；且题目明确不允许修改参数，因此无法建立当前常参数连续 Logistic 模型。",
+  "total_tokens": 5327,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "immutable_negated_permission_invalid/20261016_223024_9ab2522b",
+  "elapsed_seconds": 1.274024999991525
+}

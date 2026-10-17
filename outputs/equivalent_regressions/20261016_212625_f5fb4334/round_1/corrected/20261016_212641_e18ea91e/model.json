@@ -1,0 +1,19 @@
+{
+  "task_type": "dynamics",
+  "name": "封闭种群连续Logistic模型轨迹与终值",
+  "system": "logistic",
+  "initial": 1.5,
+  "rate": 0.2,
+  "equilibrium": 0.5,
+  "duration": 30.0,
+  "rate_unit": "1/day",
+  "state_unit": "个",
+  "assumptions": [
+    "种群数量采用连续Logistic近似，允许非整数个体数。",
+    "环境容量K=0.5个为恒定平衡值，不受种群数量影响。",
+    "增长率r=0.2/天为常数。",
+    "初始数量N0=1.5个大于环境容量K=0.5个，按原值建模，轨迹向K递减；这不是参数错误。",
+    "模拟时长为30天，以天为时间单位。"
+  ],
+  "time_unit": "day"
+}

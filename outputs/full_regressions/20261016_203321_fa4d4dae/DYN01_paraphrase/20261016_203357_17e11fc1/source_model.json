@@ -1,0 +1,22 @@
+{
+  "task_type": "dynamics_input",
+  "name": "Newton cooling liquid temperature trajectory",
+  "system": "newton_cooling",
+  "initial": 90,
+  "rate": 0.1,
+  "equilibrium": 20,
+  "duration": 30,
+  "rate_unit": "1/min",
+  "state_unit": "°C",
+  "assumptions": [
+    "液体温度均匀，牛顿冷却定律适用，环境温度恒为20°C，冷却系数k恒为0.1/min。",
+    "初始时刻t=0时液体温度为90°C。"
+  ],
+  "duration_unit": "min",
+  "source_quotes": {
+    "initial": "90摄氏度",
+    "equilibrium": "20摄氏度",
+    "rate": "0.1每分钟",
+    "duration": "30分钟"
+  }
+}

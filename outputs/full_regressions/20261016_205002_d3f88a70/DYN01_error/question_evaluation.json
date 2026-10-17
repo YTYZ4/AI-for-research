@@ -1,0 +1,11 @@
+{
+  "applied": true,
+  "passed": true,
+  "checks": {
+    "expected_status": true,
+    "nonempty_question": true,
+    "relevant_topic": true
+  },
+  "text": "牛顿冷却模型的冷却系数 k 必须为正数，但题目给出 -0.1 每分钟（负数）。请提供正的冷却系数数值，或说明是否应将符号视为笔误并修正为 0.1 每分钟？",
+  "scope": "状态/主题初筛；Logistic容量另查正实数及整数限制。其余题型不是完整语义证明。"
+}

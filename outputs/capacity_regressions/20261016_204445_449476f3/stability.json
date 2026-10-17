@@ -1,0 +1,14 @@
+{
+  "zero": 3,
+  "negative": 3,
+  "missing": 3,
+  "fraction": 3,
+  "small": 3,
+  "zero_initial": 3,
+  "above_capacity": 3,
+  "above_paraphrase": 3,
+  "above_symbols": 3,
+  "above_reordered": 3,
+  "equal_capacity": 3,
+  "near_above": 3
+}

@@ -1,0 +1,27 @@
+{
+  "task_type": "graph_input",
+  "name": "S到T输水网络最大流",
+  "problem": "max_flow",
+  "nodes": [
+    "S",
+    "T"
+  ],
+  "source": "S",
+  "target": "T",
+  "edges": [
+    {
+      "source": "S",
+      "target": "T",
+      "weight": 1000,
+      "unit": "升/小时",
+      "source_quote": "S到T容量1000升/小时",
+      "unit_quote": "升/小时"
+    }
+  ],
+  "unit": "立方米/小时",
+  "assumptions": [
+    "有向边方向为原题给出的S到T。",
+    "所有容量和结果统一以立方米/小时表示。",
+    "单位换算为精确换算，不取整；若换算后容量不是非负整数则报告不可求解。"
+  ]
+}

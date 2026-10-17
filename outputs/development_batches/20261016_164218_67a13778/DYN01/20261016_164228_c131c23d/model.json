@@ -1,0 +1,18 @@
+{
+  "task_type": "dynamics",
+  "name": "牛顿冷却轨迹与终值",
+  "system": "newton_cooling",
+  "initial": 90,
+  "rate": 0.1,
+  "equilibrium": 20,
+  "duration": 30,
+  "time_unit": "min",
+  "rate_unit": "1/min",
+  "state_unit": "摄氏度",
+  "assumptions": [
+    "液体温度均匀，可用单一温度状态表示。",
+    "环境温度恒定，且冷却系数恒定。",
+    "牛顿冷却方程采用 dT/dt = -k(T - T_env)。",
+    "温度为摄氏度，允许低于0°C时仍按模型外推。"
+  ]
+}

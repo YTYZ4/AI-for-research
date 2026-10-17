@@ -1,0 +1,87 @@
+{
+  "name": "工厂生产计划优化",
+  "assumptions": [
+    "A、B 两种产品的产量均为整件实物，因此建模为非负整数变量。",
+    "工时和原料为本期可用的有限资源，总消耗不得超过给定上限。",
+    "利润与产量成线性关系，不考虑固定成本或规模经济。",
+    "订单要求 A 至少生产 60 件，属于硬性约束。"
+  ],
+  "variables": [
+    {
+      "name": "xA",
+      "description": "产品 A 的产量",
+      "unit": "件",
+      "kind": "integer",
+      "lower": 60,
+      "upper": null
+    },
+    {
+      "name": "xB",
+      "description": "产品 B 的产量",
+      "unit": "件",
+      "kind": "integer",
+      "lower": 0,
+      "upper": null
+    }
+  ],
+  "objective": {
+    "sense": "max",
+    "terms": [
+      {
+        "variable": "xA",
+        "coefficient": 40
+      },
+      {
+        "variable": "xB",
+        "coefficient": 30
+      }
+    ],
+    "unit": "元"
+  },
+  "constraints": [
+    {
+      "name": "工时约束",
+      "terms": [
+        {
+          "variable": "xA",
+          "coefficient": 2
+        },
+        {
+          "variable": "xB",
+          "coefficient": 1
+        }
+      ],
+      "sense": "<=",
+      "rhs": 100,
+      "unit": "小时"
+    },
+    {
+      "name": "原料约束",
+      "terms": [
+        {
+          "variable": "xA",
+          "coefficient": 1
+        },
+        {
+          "variable": "xB",
+          "coefficient": 2
+        }
+      ],
+      "sense": "<=",
+      "rhs": 80,
+      "unit": "千克"
+    },
+    {
+      "name": "订单约束",
+      "terms": [
+        {
+          "variable": "xA",
+          "coefficient": 1
+        }
+      ],
+      "sense": ">=",
+      "rhs": 60,
+      "unit": "件"
+    }
+  ]
+}

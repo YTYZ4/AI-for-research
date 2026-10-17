@@ -1,0 +1,12 @@
+{
+  "id": "immutable_lock_dont",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "环境容量 K=0 会使 Logistic 方程 rN(1-N/K) 出现除零，当前模型无效；且用户明确要求不要修改任何参数，因此无法在保留原值的情况下求解。",
+  "total_tokens": 5321,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "immutable_lock_dont/20261016_223020_77f605df",
+  "elapsed_seconds": 1.7730243330006488
+}

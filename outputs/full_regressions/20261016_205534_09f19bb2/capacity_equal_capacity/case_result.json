@@ -1,0 +1,12 @@
+{
+  "id": "capacity_equal_capacity",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "",
+  "total_tokens": 3924,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "capacity_equal_capacity/20261016_205708_2e47d13e",
+  "elapsed_seconds": 2.061369917006232
+}

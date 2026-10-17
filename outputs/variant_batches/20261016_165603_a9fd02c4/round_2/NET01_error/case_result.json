@@ -1,0 +1,12 @@
+{
+  "id": "NET01_error",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "最短路径仅支持非负权重；输入中包含负权边 S→A 权重 -2 千米，负权不可修改，因此无法按当前最短路径模型处理。",
+  "total_tokens": 2440,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "NET01_error/20261016_165743_deda99bb",
+  "elapsed_seconds": 1.09691683400888
+}

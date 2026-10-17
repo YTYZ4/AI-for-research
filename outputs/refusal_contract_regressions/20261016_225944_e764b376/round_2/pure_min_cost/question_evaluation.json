@@ -1,0 +1,11 @@
+{
+  "applied": true,
+  "passed": true,
+  "checks": {
+    "expected_status": true,
+    "nonempty_question": true,
+    "relevant_topic": true
+  },
+  "text": "不支持最小费用流任务；仅支持最短路径和单商品最大流。本请求还包含以立方米/小时表示输出流量的单位转换要求，但任务类型本身已超出支持边界。",
+  "scope": "状态/主题初筛；显式禁止改值时检查修改建议，否则Logistic容量检查正实数限制。不是完整语义证明。"
+}

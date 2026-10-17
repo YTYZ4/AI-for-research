@@ -1,0 +1,24 @@
+{
+  "task_type": "graph",
+  "name": "S到T输水网络最大流",
+  "problem": "max_flow",
+  "nodes": [
+    "S",
+    "T"
+  ],
+  "source": "S",
+  "target": "T",
+  "edges": [
+    {
+      "source": "S",
+      "target": "T",
+      "weight": 1
+    }
+  ],
+  "unit": "立方米/小时",
+  "assumptions": [
+    "原题仅给出有向边S→T，无其他边，保留该完整网络结构。",
+    "边权保留原题数值和单位，统一输出单位由程序处理。",
+    "最大流问题按有向边容量非负整数校验并求解。"
+  ]
+}

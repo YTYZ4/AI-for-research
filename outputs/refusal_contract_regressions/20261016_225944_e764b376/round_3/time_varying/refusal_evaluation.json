@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": {
+    "unsupported": true,
+    "no_model": true,
+    "nonblank_explanations": true,
+    "identifies_requested_scope": true,
+    "explains_limit": true,
+    "no_invented_contract_limit": true,
+    "no_silent_downgrade": true
+  },
+  "text": "不支持时变网络最大流；仅支持最短路径或单商品最大流。本请求要求容量随时间变化并输出时间轨迹，属于未支持的时变网络任务。"
+}

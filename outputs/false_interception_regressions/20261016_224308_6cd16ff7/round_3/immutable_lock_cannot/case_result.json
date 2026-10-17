@@ -1,0 +1,12 @@
+{
+  "id": "immutable_lock_cannot",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "环境容量K=0会使当前连续Logistic模型出现除零，且用户明确要求保持原值不能调整；该参数在现模型支持下无效。",
+  "total_tokens": 5447,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "immutable_lock_cannot/20261016_224440_e3c9b9db",
+  "elapsed_seconds": 2.0655249590054154
+}

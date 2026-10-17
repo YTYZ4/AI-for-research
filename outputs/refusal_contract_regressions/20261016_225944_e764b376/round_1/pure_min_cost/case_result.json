@@ -1,0 +1,12 @@
+{
+  "id": "pure_min_cost",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "当前仅支持最短路径与单商品最大流；最小费用流未在支持范围内，因此不能按最小费用流求解或转换输出。",
+  "total_tokens": 1328,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "pure_min_cost/20261016_230000_cc95fc50",
+  "elapsed_seconds": 1.0667465410078876
+}

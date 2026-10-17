@@ -1,0 +1,12 @@
+{
+  "id": "permission_threshold",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "当前仅支持常参数 Logistic 轨迹与终值计算，不支持求解到达指定阈值的时间；请改为仅要求模拟轨迹或终值，或改用其他支持的任务类型。",
+  "total_tokens": 4281,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "permission_threshold/20261016_221011_2e5dfb53",
+  "elapsed_seconds": 1.2966407079948112
+}

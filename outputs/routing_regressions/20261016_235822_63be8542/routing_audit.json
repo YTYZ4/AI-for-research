@@ -1,0 +1,296 @@
+[
+  {
+    "id": "graph_units_fractional_flow",
+    "repeat": 1,
+    "route": "graph_source_only",
+    "reason": "named_graph_task",
+    "all_quotes_match": true
+  },
+  {
+    "id": "flow_reverse_conversion",
+    "repeat": 1,
+    "route": "graph_source_only",
+    "reason": "named_graph_task",
+    "all_quotes_match": true
+  },
+  {
+    "id": "flow_unknown_conversion",
+    "repeat": 1,
+    "route": "graph_source_only",
+    "reason": "named_graph_task",
+    "all_quotes_match": true
+  },
+  {
+    "id": "flow_missing_direction",
+    "repeat": 1,
+    "route": "graph_source_only",
+    "reason": "named_graph_task",
+    "all_quotes_match": true
+  },
+  {
+    "id": "flow_min_cost",
+    "repeat": 1,
+    "route": "graph_source_only",
+    "reason": "named_graph_task",
+    "all_quotes_match": true
+  },
+  {
+    "id": "cost_paraphrase",
+    "repeat": 1,
+    "route": "graph_source_only",
+    "reason": "graph_structure_and_goal",
+    "all_quotes_match": true
+  },
+  {
+    "id": "cost_not_requested",
+    "repeat": 1,
+    "route": "graph_source_only",
+    "reason": "named_graph_task",
+    "all_quotes_match": true
+  },
+  {
+    "id": "cost_synonym",
+    "repeat": 1,
+    "route": "graph_source_only",
+    "reason": "graph_structure_and_goal",
+    "all_quotes_match": true
+  },
+  {
+    "id": "throughput_synonym",
+    "repeat": 1,
+    "route": "graph_source_only",
+    "reason": "graph_structure_and_goal",
+    "all_quotes_match": true
+  },
+  {
+    "id": "flow_cost_priority",
+    "repeat": 1,
+    "route": "graph_source_only",
+    "reason": "graph_structure_and_goal",
+    "all_quotes_match": true
+  },
+  {
+    "id": "mixed_fitting",
+    "repeat": 1,
+    "route": "general",
+    "reason": "other_family_present",
+    "all_quotes_match": true
+  },
+  {
+    "id": "mixed_production",
+    "repeat": 1,
+    "route": "general",
+    "reason": "other_family_present",
+    "all_quotes_match": true
+  },
+  {
+    "id": "mixed_logistic",
+    "repeat": 1,
+    "route": "general",
+    "reason": "other_family_present",
+    "all_quotes_match": true
+  },
+  {
+    "id": "OPT01",
+    "repeat": 1,
+    "route": "general",
+    "reason": "insufficient_graph_evidence",
+    "all_quotes_match": true
+  },
+  {
+    "id": "graph_units_fractional_flow",
+    "repeat": 2,
+    "route": "graph_source_only",
+    "reason": "named_graph_task",
+    "all_quotes_match": true
+  },
+  {
+    "id": "flow_reverse_conversion",
+    "repeat": 2,
+    "route": "graph_source_only",
+    "reason": "named_graph_task",
+    "all_quotes_match": true
+  },
+  {
+    "id": "flow_unknown_conversion",
+    "repeat": 2,
+    "route": "graph_source_only",
+    "reason": "named_graph_task",
+    "all_quotes_match": true
+  },
+  {
+    "id": "flow_missing_direction",
+    "repeat": 2,
+    "route": "graph_source_only",
+    "reason": "named_graph_task",
+    "all_quotes_match": true
+  },
+  {
+    "id": "flow_min_cost",
+    "repeat": 2,
+    "route": "graph_source_only",
+    "reason": "named_graph_task",
+    "all_quotes_match": true
+  },
+  {
+    "id": "cost_paraphrase",
+    "repeat": 2,
+    "route": "graph_source_only",
+    "reason": "graph_structure_and_goal",
+    "all_quotes_match": true
+  },
+  {
+    "id": "cost_not_requested",
+    "repeat": 2,
+    "route": "graph_source_only",
+    "reason": "named_graph_task",
+    "all_quotes_match": true
+  },
+  {
+    "id": "cost_synonym",
+    "repeat": 2,
+    "route": "graph_source_only",
+    "reason": "graph_structure_and_goal",
+    "all_quotes_match": true
+  },
+  {
+    "id": "throughput_synonym",
+    "repeat": 2,
+    "route": "graph_source_only",
+    "reason": "graph_structure_and_goal",
+    "all_quotes_match": true
+  },
+  {
+    "id": "flow_cost_priority",
+    "repeat": 2,
+    "route": "graph_source_only",
+    "reason": "graph_structure_and_goal",
+    "all_quotes_match": true
+  },
+  {
+    "id": "mixed_fitting",
+    "repeat": 2,
+    "route": "general",
+    "reason": "other_family_present",
+    "all_quotes_match": true
+  },
+  {
+    "id": "mixed_production",
+    "repeat": 2,
+    "route": "general",
+    "reason": "other_family_present",
+    "all_quotes_match": true
+  },
+  {
+    "id": "mixed_logistic",
+    "repeat": 2,
+    "route": "general",
+    "reason": "other_family_present",
+    "all_quotes_match": true
+  },
+  {
+    "id": "OPT01",
+    "repeat": 2,
+    "route": "general",
+    "reason": "insufficient_graph_evidence",
+    "all_quotes_match": true
+  },
+  {
+    "id": "graph_units_fractional_flow",
+    "repeat": 3,
+    "route": "graph_source_only",
+    "reason": "named_graph_task",
+    "all_quotes_match": true
+  },
+  {
+    "id": "flow_reverse_conversion",
+    "repeat": 3,
+    "route": "graph_source_only",
+    "reason": "named_graph_task",
+    "all_quotes_match": true
+  },
+  {
+    "id": "flow_unknown_conversion",
+    "repeat": 3,
+    "route": "graph_source_only",
+    "reason": "named_graph_task",
+    "all_quotes_match": true
+  },
+  {
+    "id": "flow_missing_direction",
+    "repeat": 3,
+    "route": "graph_source_only",
+    "reason": "named_graph_task",
+    "all_quotes_match": true
+  },
+  {
+    "id": "flow_min_cost",
+    "repeat": 3,
+    "route": "graph_source_only",
+    "reason": "named_graph_task",
+    "all_quotes_match": true
+  },
+  {
+    "id": "cost_paraphrase",
+    "repeat": 3,
+    "route": "graph_source_only",
+    "reason": "graph_structure_and_goal",
+    "all_quotes_match": true
+  },
+  {
+    "id": "cost_not_requested",
+    "repeat": 3,
+    "route": "graph_source_only",
+    "reason": "named_graph_task",
+    "all_quotes_match": true
+  },
+  {
+    "id": "cost_synonym",
+    "repeat": 3,
+    "route": "graph_source_only",
+    "reason": "graph_structure_and_goal",
+    "all_quotes_match": true
+  },
+  {
+    "id": "throughput_synonym",
+    "repeat": 3,
+    "route": "graph_source_only",
+    "reason": "graph_structure_and_goal",
+    "all_quotes_match": true
+  },
+  {
+    "id": "flow_cost_priority",
+    "repeat": 3,
+    "route": "graph_source_only",
+    "reason": "graph_structure_and_goal",
+    "all_quotes_match": true
+  },
+  {
+    "id": "mixed_fitting",
+    "repeat": 3,
+    "route": "general",
+    "reason": "other_family_present",
+    "all_quotes_match": true
+  },
+  {
+    "id": "mixed_production",
+    "repeat": 3,
+    "route": "general",
+    "reason": "other_family_present",
+    "all_quotes_match": true
+  },
+  {
+    "id": "mixed_logistic",
+    "repeat": 3,
+    "route": "general",
+    "reason": "other_family_present",
+    "all_quotes_match": true
+  },
+  {
+    "id": "OPT01",
+    "repeat": 3,
+    "route": "general",
+    "reason": "insufficient_graph_evidence",
+    "all_quotes_match": true
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "applied": true,
+  "passed": false,
+  "checks": {
+    "expected_status": false,
+    "nonempty_question": true,
+    "relevant_topic": true
+  },
+  "text": "原题容量为0.001立方米/小时；要求所有容量和结果以升/小时表示，统一单位换算：0.001立方米/小时 = 1升/小时。当前求解器要求最大流容量在统一输出单位下必须为整数升/小时，且明确不允许取整，因此该问题超出当前最大流求解器支持范围。",
+  "scope": "状态/主题初筛；显式禁止改值时检查修改建议，否则Logistic容量检查正实数限制。不是完整语义证明。"
+}

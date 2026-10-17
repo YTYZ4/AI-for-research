@@ -1,0 +1,542 @@
+{
+  "version": "0.10.5",
+  "online_generation_version": "0.10.4",
+  "api_calls": 0,
+  "source_batch": "outputs/full_regressions/20261016_205817_7e22a4df",
+  "changes": "仅报告unsupported固定模板分支，未修改模型或数值",
+  "rows": [
+    {
+      "id": "OPT01",
+      "report": "outputs/full_regressions/20261016_205817_7e22a4df/offline_presentation_v0105/OPT01/20261016_210048_43892af6/report.md",
+      "status": "ready",
+      "audit": {
+        "policy": "fixed_system_descriptions_v2",
+        "suppressed_display_only": [],
+        "source_modified": false
+      },
+      "template_check": true
+    },
+    {
+      "id": "OPT02",
+      "report": "outputs/full_regressions/20261016_205817_7e22a4df/offline_presentation_v0105/OPT02/20261016_210048_8a235329/report.md",
+      "status": "ready",
+      "audit": {
+        "policy": "fixed_system_descriptions_v2",
+        "suppressed_display_only": [],
+        "source_modified": false
+      },
+      "template_check": true
+    },
+    {
+      "id": "FIT01",
+      "report": "outputs/full_regressions/20261016_205817_7e22a4df/offline_presentation_v0105/FIT01/20261016_210048_b98198da/report.md",
+      "status": "ready",
+      "audit": {
+        "policy": "fixed_system_descriptions_v2",
+        "suppressed_display_only": [],
+        "source_modified": false
+      },
+      "template_check": true
+    },
+    {
+      "id": "FIT02",
+      "report": "outputs/full_regressions/20261016_205817_7e22a4df/offline_presentation_v0105/FIT02/20261016_210048_ad02f71b/report.md",
+      "status": "ready",
+      "audit": {
+        "policy": "fixed_system_descriptions_v2",
+        "suppressed_display_only": [],
+        "source_modified": false
+      },
+      "template_check": true
+    },
+    {
+      "id": "DYN01",
+      "report": "outputs/full_regressions/20261016_205817_7e22a4df/offline_presentation_v0105/DYN01/20261016_210048_7ca4d63b/report.md",
+      "status": "ready",
+      "audit": {
+        "policy": "fixed_system_descriptions_v2",
+        "suppressed_display_only": [],
+        "source_modified": false
+      },
+      "template_check": true
+    },
+    {
+      "id": "DYN02",
+      "report": "outputs/full_regressions/20261016_205817_7e22a4df/offline_presentation_v0105/DYN02/20261016_210048_c09408d0/report.md",
+      "status": "ready",
+      "audit": {
+        "policy": "fixed_system_descriptions_v2",
+        "suppressed_display_only": [],
+        "source_modified": false
+      },
+      "template_check": true
+    },
+    {
+      "id": "NET01",
+      "report": "outputs/full_regressions/20261016_205817_7e22a4df/offline_presentation_v0105/NET01/20261016_210048_ad668d06/report.md",
+      "status": "ready",
+      "audit": {
+        "policy": "fixed_system_descriptions_v2",
+        "suppressed_display_only": [],
+        "source_modified": false
+      },
+      "template_check": true
+    },
+    {
+      "id": "NET02",
+      "report": "outputs/full_regressions/20261016_205817_7e22a4df/offline_presentation_v0105/NET02/20261016_210048_63012132/report.md",
+      "status": "ready",
+      "audit": {
+        "policy": "fixed_system_descriptions_v2",
+        "suppressed_display_only": [],
+        "source_modified": false
+      },
+      "template_check": true
+    },
+    {
+      "id": "OPT01_paraphrase",
+      "report": "outputs/full_regressions/20261016_205817_7e22a4df/offline_presentation_v0105/OPT01_paraphrase/20261016_210048_ad4f7cd1/report.md",
+      "status": "ready",
+      "audit": {
+        "policy": "fixed_system_descriptions_v2",
+        "suppressed_display_only": [],
+        "source_modified": false
+      },
+      "template_check": true
+    },
+    {
+      "id": "OPT01_missing",
+      "report": "outputs/full_regressions/20261016_205817_7e22a4df/offline_presentation_v0105/OPT01_missing/20261016_210048_23ff2adb/report.md",
+      "status": "needs_clarification",
+      "audit": {
+        "policy": "fixed_system_descriptions_v2",
+        "suppressed_display_only": [],
+        "source_modified": false
+      },
+      "template_check": true
+    },
+    {
+      "id": "OPT01_error",
+      "report": "outputs/full_regressions/20261016_205817_7e22a4df/offline_presentation_v0105/OPT01_error/20261016_210048_3c79bbf0/report.md",
+      "status": "ready",
+      "audit": {
+        "policy": "fixed_system_descriptions_v2",
+        "suppressed_display_only": [],
+        "source_modified": false
+      },
+      "template_check": true
+    },
+    {
+      "id": "OPT02_paraphrase",
+      "report": "outputs/full_regressions/20261016_205817_7e22a4df/offline_presentation_v0105/OPT02_paraphrase/20261016_210048_28a726ff/report.md",
+      "status": "ready",
+      "audit": {
+        "policy": "fixed_system_descriptions_v2",
+        "suppressed_display_only": [],
+        "source_modified": false
+      },
+      "template_check": true
+    },
+    {
+      "id": "OPT02_missing",
+      "report": "outputs/full_regressions/20261016_205817_7e22a4df/offline_presentation_v0105/OPT02_missing/20261016_210048_ec0f6f90/report.md",
+      "status": "needs_clarification",
+      "audit": {
+        "policy": "fixed_system_descriptions_v2",
+        "suppressed_display_only": [],
+        "source_modified": false
+      },
+      "template_check": true
+    },
+    {
+      "id": "OPT02_error",
+      "report": "outputs/full_regressions/20261016_205817_7e22a4df/offline_presentation_v0105/OPT02_error/20261016_210048_e53ebb0f/report.md",
+      "status": "ready",
+      "audit": {
+        "policy": "fixed_system_descriptions_v2",
+        "suppressed_display_only": [],
+        "source_modified": false
+      },
+      "template_check": true
+    },
+    {
+      "id": "FIT01_paraphrase",
+      "report": "outputs/full_regressions/20261016_205817_7e22a4df/offline_presentation_v0105/FIT01_paraphrase/20261016_210048_d2213abd/report.md",
+      "status": "ready",
+      "audit": {
+        "policy": "fixed_system_descriptions_v2",
+        "suppressed_display_only": [],
+        "source_modified": false
+      },
+      "template_check": true
+    },
+    {
+      "id": "FIT01_missing",
+      "report": "outputs/full_regressions/20261016_205817_7e22a4df/offline_presentation_v0105/FIT01_missing/20261016_210048_2f6755e0/report.md",
+      "status": "needs_clarification",
+      "audit": {
+        "policy": "fixed_system_descriptions_v2",
+        "suppressed_display_only": [],
+        "source_modified": false
+      },
+      "template_check": true
+    },
+    {
+      "id": "FIT01_error",
+      "report": "outputs/full_regressions/20261016_205817_7e22a4df/offline_presentation_v0105/FIT01_error/20261016_210048_098b811e/report.md",
+      "status": "unsupported",
+      "audit": {
+        "policy": "fixed_system_descriptions_v2",
+        "suppressed_display_only": [],
+        "source_modified": false
+      },
+      "template_check": true
+    },
+    {
+      "id": "FIT02_paraphrase",
+      "report": "outputs/full_regressions/20261016_205817_7e22a4df/offline_presentation_v0105/FIT02_paraphrase/20261016_210048_27deafb6/report.md",
+      "status": "ready",
+      "audit": {
+        "policy": "fixed_system_descriptions_v2",
+        "suppressed_display_only": [],
+        "source_modified": false
+      },
+      "template_check": true
+    },
+    {
+      "id": "FIT02_missing",
+      "report": "outputs/full_regressions/20261016_205817_7e22a4df/offline_presentation_v0105/FIT02_missing/20261016_210048_c10a283b/report.md",
+      "status": "needs_clarification",
+      "audit": {
+        "policy": "fixed_system_descriptions_v2",
+        "suppressed_display_only": [],
+        "source_modified": false
+      },
+      "template_check": true
+    },
+    {
+      "id": "FIT02_error",
+      "report": "outputs/full_regressions/20261016_205817_7e22a4df/offline_presentation_v0105/FIT02_error/20261016_210048_6deb1977/report.md",
+      "status": "unsupported",
+      "audit": {
+        "policy": "fixed_system_descriptions_v2",
+        "suppressed_display_only": [],
+        "source_modified": false
+      },
+      "template_check": true
+    },
+    {
+      "id": "DYN01_paraphrase",
+      "report": "outputs/full_regressions/20261016_205817_7e22a4df/offline_presentation_v0105/DYN01_paraphrase/20261016_210048_c8d0d8b7/report.md",
+      "status": "ready",
+      "audit": {
+        "policy": "fixed_system_descriptions_v2",
+        "suppressed_display_only": [],
+        "source_modified": false
+      },
+      "template_check": true
+    },
+    {
+      "id": "DYN01_missing",
+      "report": "outputs/full_regressions/20261016_205817_7e22a4df/offline_presentation_v0105/DYN01_missing/20261016_210048_43de02d4/report.md",
+      "status": "needs_clarification",
+      "audit": {
+        "policy": "fixed_system_descriptions_v2",
+        "suppressed_display_only": [],
+        "source_modified": false
+      },
+      "template_check": true
+    },
+    {
+      "id": "DYN01_error",
+      "report": "outputs/full_regressions/20261016_205817_7e22a4df/offline_presentation_v0105/DYN01_error/20261016_210048_9e06699d/report.md",
+      "status": "unsupported",
+      "audit": {
+        "policy": "fixed_system_descriptions_v2",
+        "suppressed_display_only": [],
+        "source_modified": false
+      },
+      "template_check": true
+    },
+    {
+      "id": "DYN02_paraphrase",
+      "report": "outputs/full_regressions/20261016_205817_7e22a4df/offline_presentation_v0105/DYN02_paraphrase/20261016_210048_03190830/report.md",
+      "status": "ready",
+      "audit": {
+        "policy": "fixed_system_descriptions_v2",
+        "suppressed_display_only": [],
+        "source_modified": false
+      },
+      "template_check": true
+    },
+    {
+      "id": "DYN02_missing",
+      "report": "outputs/full_regressions/20261016_205817_7e22a4df/offline_presentation_v0105/DYN02_missing/20261016_210048_e92ca4da/report.md",
+      "status": "needs_clarification",
+      "audit": {
+        "policy": "fixed_system_descriptions_v2",
+        "suppressed_display_only": [],
+        "source_modified": false
+      },
+      "template_check": true
+    },
+    {
+      "id": "DYN02_error",
+      "report": "outputs/full_regressions/20261016_205817_7e22a4df/offline_presentation_v0105/DYN02_error/20261016_210048_8fa2f75b/report.md",
+      "status": "unsupported",
+      "audit": {
+        "policy": "fixed_system_descriptions_v2",
+        "suppressed_display_only": [],
+        "source_modified": false
+      },
+      "template_check": true
+    },
+    {
+      "id": "NET01_paraphrase",
+      "report": "outputs/full_regressions/20261016_205817_7e22a4df/offline_presentation_v0105/NET01_paraphrase/20261016_210048_fda6fe82/report.md",
+      "status": "ready",
+      "audit": {
+        "policy": "fixed_system_descriptions_v2",
+        "suppressed_display_only": [],
+        "source_modified": false
+      },
+      "template_check": true
+    },
+    {
+      "id": "NET01_missing",
+      "report": "outputs/full_regressions/20261016_205817_7e22a4df/offline_presentation_v0105/NET01_missing/20261016_210048_df1cd00a/report.md",
+      "status": "needs_clarification",
+      "audit": {
+        "policy": "fixed_system_descriptions_v2",
+        "suppressed_display_only": [],
+        "source_modified": false
+      },
+      "template_check": true
+    },
+    {
+      "id": "NET01_error",
+      "report": "outputs/full_regressions/20261016_205817_7e22a4df/offline_presentation_v0105/NET01_error/20261016_210048_8345b743/report.md",
+      "status": "unsupported",
+      "audit": {
+        "policy": "fixed_system_descriptions_v2",
+        "suppressed_display_only": [],
+        "source_modified": false
+      },
+      "template_check": true
+    },
+    {
+      "id": "NET02_paraphrase",
+      "report": "outputs/full_regressions/20261016_205817_7e22a4df/offline_presentation_v0105/NET02_paraphrase/20261016_210048_3313b9a6/report.md",
+      "status": "ready",
+      "audit": {
+        "policy": "fixed_system_descriptions_v2",
+        "suppressed_display_only": [
+          {
+            "location": "envelope",
+            "text": "求最大流同时给出各管道输水量，并可通过求解器最小割结果形成最小割证据。",
+            "reason": "包含系统行为或实现描述，移到原始记录，不作为报告假设展示"
+          },
+          {
+            "location": "stage_1",
+            "text": "求最大流同时给出各管道输水量，并可通过求解器最小割结果形成最小割证据。",
+            "reason": "包含系统行为或实现描述，移到原始记录，不作为报告假设展示"
+          }
+        ],
+        "source_modified": false
+      },
+      "template_check": true
+    },
+    {
+      "id": "NET02_missing",
+      "report": "outputs/full_regressions/20261016_205817_7e22a4df/offline_presentation_v0105/NET02_missing/20261016_210048_eb8ebfed/report.md",
+      "status": "needs_clarification",
+      "audit": {
+        "policy": "fixed_system_descriptions_v2",
+        "suppressed_display_only": [],
+        "source_modified": false
+      },
+      "template_check": true
+    },
+    {
+      "id": "NET02_error",
+      "report": "outputs/full_regressions/20261016_205817_7e22a4df/offline_presentation_v0105/NET02_error/20261016_210048_93b899af/report.md",
+      "status": "unsupported",
+      "audit": {
+        "policy": "fixed_system_descriptions_v2",
+        "suppressed_display_only": [],
+        "source_modified": false
+      },
+      "template_check": true
+    },
+    {
+      "id": "cooling_units",
+      "report": "outputs/full_regressions/20261016_205817_7e22a4df/offline_presentation_v0105/cooling_units/20261016_210048_4bd01e96/report.md",
+      "status": "ready",
+      "audit": {
+        "policy": "fixed_system_descriptions_v2",
+        "suppressed_display_only": [],
+        "source_modified": false
+      },
+      "template_check": true
+    },
+    {
+      "id": "logistic_units",
+      "report": "outputs/full_regressions/20261016_205817_7e22a4df/offline_presentation_v0105/logistic_units/20261016_210048_33a015af/report.md",
+      "status": "ready",
+      "audit": {
+        "policy": "fixed_system_descriptions_v2",
+        "suppressed_display_only": [],
+        "source_modified": false
+      },
+      "template_check": true
+    },
+    {
+      "id": "path_units",
+      "report": "outputs/full_regressions/20261016_205817_7e22a4df/offline_presentation_v0105/path_units/20261016_210048_4f37e2fb/report.md",
+      "status": "ready",
+      "audit": {
+        "policy": "fixed_system_descriptions_v2",
+        "suppressed_display_only": [],
+        "source_modified": false
+      },
+      "template_check": true
+    },
+    {
+      "id": "capacity_zero",
+      "report": "outputs/full_regressions/20261016_205817_7e22a4df/offline_presentation_v0105/capacity_zero/20261016_210048_0e9702f0/report.md",
+      "status": "needs_clarification",
+      "audit": {
+        "policy": "fixed_system_descriptions_v2",
+        "suppressed_display_only": [],
+        "source_modified": false
+      },
+      "template_check": true
+    },
+    {
+      "id": "capacity_negative",
+      "report": "outputs/full_regressions/20261016_205817_7e22a4df/offline_presentation_v0105/capacity_negative/20261016_210048_8d7e9453/report.md",
+      "status": "needs_clarification",
+      "audit": {
+        "policy": "fixed_system_descriptions_v2",
+        "suppressed_display_only": [],
+        "source_modified": false
+      },
+      "template_check": true
+    },
+    {
+      "id": "capacity_missing",
+      "report": "outputs/full_regressions/20261016_205817_7e22a4df/offline_presentation_v0105/capacity_missing/20261016_210048_2b107c2c/report.md",
+      "status": "needs_clarification",
+      "audit": {
+        "policy": "fixed_system_descriptions_v2",
+        "suppressed_display_only": [],
+        "source_modified": false
+      },
+      "template_check": true
+    },
+    {
+      "id": "capacity_fraction",
+      "report": "outputs/full_regressions/20261016_205817_7e22a4df/offline_presentation_v0105/capacity_fraction/20261016_210048_ab82a9b6/report.md",
+      "status": "ready",
+      "audit": {
+        "policy": "fixed_system_descriptions_v2",
+        "suppressed_display_only": [],
+        "source_modified": false
+      },
+      "template_check": true
+    },
+    {
+      "id": "capacity_small",
+      "report": "outputs/full_regressions/20261016_205817_7e22a4df/offline_presentation_v0105/capacity_small/20261016_210048_7e61e066/report.md",
+      "status": "ready",
+      "audit": {
+        "policy": "fixed_system_descriptions_v2",
+        "suppressed_display_only": [],
+        "source_modified": false
+      },
+      "template_check": true
+    },
+    {
+      "id": "capacity_zero_initial",
+      "report": "outputs/full_regressions/20261016_205817_7e22a4df/offline_presentation_v0105/capacity_zero_initial/20261016_210048_79c56efe/report.md",
+      "status": "ready",
+      "audit": {
+        "policy": "fixed_system_descriptions_v2",
+        "suppressed_display_only": [],
+        "source_modified": false
+      },
+      "template_check": true
+    },
+    {
+      "id": "capacity_above_capacity",
+      "report": "outputs/full_regressions/20261016_205817_7e22a4df/offline_presentation_v0105/capacity_above_capacity/20261016_210048_01f80da8/report.md",
+      "status": "ready",
+      "audit": {
+        "policy": "fixed_system_descriptions_v2",
+        "suppressed_display_only": [],
+        "source_modified": false
+      },
+      "template_check": true
+    },
+    {
+      "id": "capacity_above_paraphrase",
+      "report": "outputs/full_regressions/20261016_205817_7e22a4df/offline_presentation_v0105/capacity_above_paraphrase/20261016_210048_27e43169/report.md",
+      "status": "ready",
+      "audit": {
+        "policy": "fixed_system_descriptions_v2",
+        "suppressed_display_only": [],
+        "source_modified": false
+      },
+      "template_check": true
+    },
+    {
+      "id": "capacity_above_symbols",
+      "report": "outputs/full_regressions/20261016_205817_7e22a4df/offline_presentation_v0105/capacity_above_symbols/20261016_210048_b0804d70/report.md",
+      "status": "ready",
+      "audit": {
+        "policy": "fixed_system_descriptions_v2",
+        "suppressed_display_only": [],
+        "source_modified": false
+      },
+      "template_check": true
+    },
+    {
+      "id": "capacity_above_reordered",
+      "report": "outputs/full_regressions/20261016_205817_7e22a4df/offline_presentation_v0105/capacity_above_reordered/20261016_210048_02c8fdf3/report.md",
+      "status": "ready",
+      "audit": {
+        "policy": "fixed_system_descriptions_v2",
+        "suppressed_display_only": [],
+        "source_modified": false
+      },
+      "template_check": true
+    },
+    {
+      "id": "capacity_equal_capacity",
+      "report": "outputs/full_regressions/20261016_205817_7e22a4df/offline_presentation_v0105/capacity_equal_capacity/20261016_210048_21625925/report.md",
+      "status": "ready",
+      "audit": {
+        "policy": "fixed_system_descriptions_v2",
+        "suppressed_display_only": [],
+        "source_modified": false
+      },
+      "template_check": true
+    },
+    {
+      "id": "capacity_near_above",
+      "report": "outputs/full_regressions/20261016_205817_7e22a4df/offline_presentation_v0105/capacity_near_above/20261016_210048_f89dde78/report.md",
+      "status": "ready",
+      "audit": {
+        "policy": "fixed_system_descriptions_v2",
+        "suppressed_display_only": [],
+        "source_modified": false
+      },
+      "template_check": true
+    }
+  ],
+  "hashes": {
+    "modeling_assistant/presentation.py": "ac9cddf299c9321945b6de655dfed30197477ff857c5ceaaf25c90b316227c3a",
+    "modeling_assistant/__init__.py": "503eeda8b6e7001efdd1db5660b116587f6d3d171aa0aae481f7ae8c6003dd2b",
+    "tests/test_locked_and_presentation.py": "ce1de84524adad720f2ecaf7627ad1ab24593174982225de30d7bbfd8711bd96"
+  }
+}

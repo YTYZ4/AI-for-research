@@ -1,0 +1,11 @@
+{
+  "applied": true,
+  "passed": false,
+  "checks": {
+    "expected_status": false,
+    "nonempty_question": true,
+    "relevant_topic": true
+  },
+  "text": "原边容量为0.001立方米/小时，要求统一输出为升/小时且不允许取整；该边换算后为1升/小时（整数），但按当前求解器校验规则，不能预先假定原值换算后一定满足整数容量要求。若程序校验发现换算后容量不是非负整数，则超出最大流仅支持非负整数容量的范围。",
+  "scope": "状态/主题初筛；显式禁止改值时检查修改建议，否则Logistic容量检查正实数限制。不是完整语义证明。"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "immutable_lock_original",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "环境容量K=0使Logistic方程dN/dt=rN(1-N/K)出现除以零，当前模型无效；且原题明确要求不得改动参数，因此无法按常参数Logistic有效求解。",
+  "total_tokens": 5456,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "immutable_lock_original/20261016_224435_b51b666e",
+  "elapsed_seconds": 1.5523092090152204
+}

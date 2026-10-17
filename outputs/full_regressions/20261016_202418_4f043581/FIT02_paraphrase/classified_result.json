@@ -1,0 +1,21 @@
+{
+  "id": "FIT02_paraphrase",
+  "family": "fitting",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "",
+  "total_tokens": 3224,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "FIT02_paraphrase/20261016_202453_29249c9d",
+  "elapsed_seconds": 2.661641624988988,
+  "kind": "paraphrase",
+  "base_id": "FIT02",
+  "raw_schema_valid": true,
+  "format_action": "not_needed",
+  "local_guard_used": false,
+  "original_pass": true,
+  "after_format_pass": true,
+  "final_pass": true,
+  "pass_path": "native"
+}

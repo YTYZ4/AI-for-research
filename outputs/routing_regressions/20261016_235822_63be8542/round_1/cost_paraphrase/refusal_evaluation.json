@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": {
+    "unsupported": true,
+    "no_model": true,
+    "nonblank_explanations": true,
+    "identifies_requested_scope": true,
+    "explains_limit": true,
+    "no_invented_contract_limit": true,
+    "no_silent_downgrade": true
+  },
+  "text": "原题要求的是带每升运输成本2元、以总成本最小为次级目标的单商品流，这属于最小费用流/费用最优最大流，不在支持范围内；当前仅支持最短路径与静态单商品最大流，且不会静默忽略费用或成本优化要求。"
+}

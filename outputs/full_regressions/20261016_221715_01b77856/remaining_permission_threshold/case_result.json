@@ -1,0 +1,12 @@
+{
+  "id": "remaining_permission_threshold",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "当前动态任务仅支持常参数轨迹与终值计算；到达指定阈值的阈值时间求解暂不支持。",
+  "total_tokens": 4376,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "remaining_permission_threshold/20261016_222011_9d923499",
+  "elapsed_seconds": 1.046735375013668
+}

@@ -1,0 +1,12 @@
+{
+  "id": "DYN01_error",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "牛顿冷却模型 dT/dt=-k(T-T_env) 的冷却系数 k 必须为正；原题给定 k=-0.1 每分钟，负值超出当前常参数牛顿冷却模型支持范围（要求 rate > 0）。由于用户明确要求不得取绝对值或改动参数，无法建立有效模型。",
+  "total_tokens": 3462,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "DYN01_error/20261016_205908_6b5c1899",
+  "elapsed_seconds": 2.554855292022694
+}

@@ -1,0 +1,18 @@
+{
+  "task_type": "dynamics",
+  "name": "封闭种群连续Logistic轨迹",
+  "system": "logistic",
+  "initial": 1.5,
+  "rate": 0.2,
+  "equilibrium": 0.5,
+  "duration": 30.0,
+  "rate_unit": "1/day",
+  "state_unit": "个",
+  "assumptions": [
+    "封闭种群，无迁入迁出和外部干预。",
+    "连续Logistic增长模型，参数恒定。",
+    "环境容量K为平衡值，不是初值上限；初值大于K时按原参数生成下降轨迹。",
+    "重复记录K=0.5个与K=0.50个数值一致，合并为0.5个。"
+  ],
+  "time_unit": "day"
+}

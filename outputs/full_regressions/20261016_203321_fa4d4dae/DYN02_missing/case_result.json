@@ -1,0 +1,12 @@
+{
+  "id": "DYN02_missing",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "请提供环境容量 K（单位与初始种群相同的个数，且必须为正数）。",
+  "total_tokens": 3075,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "DYN02_missing/20261016_203402_03eb58fe",
+  "elapsed_seconds": 0.8274988749762997
+}

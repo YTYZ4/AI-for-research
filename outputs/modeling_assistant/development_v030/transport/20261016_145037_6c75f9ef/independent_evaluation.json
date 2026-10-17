@@ -1,0 +1,27 @@
+{
+  "mapping": {
+    "W1_S1": "x11",
+    "W1_S2": "x12",
+    "W1_S3": "x13",
+    "W2_S1": "x21",
+    "W2_S2": "x22",
+    "W2_S3": "x23"
+  },
+  "mapping_review": "变量description逐条对应W1/W2到S1/S2/S3，已按原题人工核对",
+  "evaluation": {
+    "passed": true,
+    "checks": {
+      "nonnegative": true,
+      "W1": true,
+      "W2": true,
+      "S1": true,
+      "S2": true,
+      "S3": true,
+      "optimal_cost": true,
+      "claimed_cost": true
+    },
+    "cost": 170.0,
+    "proven_lower_bound": 170,
+    "scope": "仅适用于 OPT02 原始开发数据；不评价自然语言建模完整性。"
+  }
+}

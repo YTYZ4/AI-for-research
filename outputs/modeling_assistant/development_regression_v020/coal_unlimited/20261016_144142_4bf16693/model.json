@@ -1,0 +1,75 @@
+{
+  "name": "甲乙产品生产计划线性整数规划",
+  "assumptions": [
+    "甲、乙产品产量均为非负整数。",
+    "煤供应不限，因此不添加煤供应上限约束。",
+    "每天供电量上限为100度。",
+    "利润单位为元，煤消耗单位为吨，电消耗单位为度。"
+  ],
+  "variables": [
+    {
+      "name": "x_jia",
+      "description": "产品甲的生产数量",
+      "unit": "件",
+      "kind": "integer",
+      "lower": 0,
+      "upper": null
+    },
+    {
+      "name": "x_yi",
+      "description": "产品乙的生产数量",
+      "unit": "件",
+      "kind": "integer",
+      "lower": 0,
+      "upper": null
+    }
+  ],
+  "objective": {
+    "sense": "max",
+    "terms": [
+      {
+        "variable": "x_jia",
+        "coefficient": 100
+      },
+      {
+        "variable": "x_yi",
+        "coefficient": 200
+      }
+    ],
+    "unit": "元"
+  },
+  "constraints": [
+    {
+      "name": "电力消耗约束",
+      "terms": [
+        {
+          "variable": "x_jia",
+          "coefficient": 3
+        },
+        {
+          "variable": "x_yi",
+          "coefficient": 5
+        }
+      ],
+      "sense": "<=",
+      "rhs": 100,
+      "unit": "度"
+    },
+    {
+      "name": "煤消耗约束（供应不限，仅记录消耗）",
+      "terms": [
+        {
+          "variable": "x_jia",
+          "coefficient": 2
+        },
+        {
+          "variable": "x_yi",
+          "coefficient": 1
+        }
+      ],
+      "sense": "<=",
+      "rhs": 1e+18,
+      "unit": "吨"
+    }
+  ]
+}

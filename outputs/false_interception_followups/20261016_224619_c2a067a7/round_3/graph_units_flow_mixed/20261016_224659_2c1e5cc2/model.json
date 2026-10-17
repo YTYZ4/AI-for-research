@@ -1,0 +1,36 @@
+{
+  "task_type": "graph",
+  "name": "输水网络最大流",
+  "problem": "max_flow",
+  "nodes": [
+    "S",
+    "A",
+    "T"
+  ],
+  "source": "S",
+  "target": "T",
+  "edges": [
+    {
+      "source": "S",
+      "target": "A",
+      "weight": 10
+    },
+    {
+      "source": "A",
+      "target": "T",
+      "weight": 6
+    },
+    {
+      "source": "S",
+      "target": "T",
+      "weight": 5
+    }
+  ],
+  "unit": "立方米/小时",
+  "assumptions": [
+    "网络为有向图，边方向与管道输水方向一致",
+    "所有容量均为非负整数容量",
+    "各边容量保留原题数值和单位，由程序统一换算到立方米/小时并校验整数性",
+    "节点 S 为源点，节点 T 为汇点"
+  ]
+}

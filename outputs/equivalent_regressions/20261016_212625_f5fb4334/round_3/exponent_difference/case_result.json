@@ -1,0 +1,12 @@
+{
+  "id": "exponent_difference",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "题面中同一环境容量K有两个互相冲突的记录：环境容量恒定5e-1个；K=6e-1个。请核对哪条准确？",
+  "total_tokens": 3866,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "exponent_difference/20261016_212725_dc99bf1c",
+  "elapsed_seconds": 1.7275677500292659
+}

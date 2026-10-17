@@ -1,0 +1,12 @@
+{
+  "id": "near_difference",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "环境容量K存在两条相互冲突的原始记录：‘环境容量恒定0.5个’和‘K=0.5001个’。请核对哪一条准确？",
+  "total_tokens": 3865,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "near_difference/20261016_213319_68765a35",
+  "elapsed_seconds": 1.6451054170029238
+}

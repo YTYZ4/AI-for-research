@@ -1,0 +1,13 @@
+{
+  "applied": true,
+  "passed": true,
+  "checks": {
+    "expected_status": true,
+    "nonempty_question": true,
+    "relevant_topic": true,
+    "no_replacement_suggestion": true,
+    "correct_dimensions": true
+  },
+  "text": "环境容量K为0会使Logistic模型无效：微分方程 dN/dt = rN(1-N/K) 在 K=0 时出现除零，且0不是可用的正实数环境容量。由于题目明确不允许修改参数，无法在保留原参数的前提下建立可求解模型。",
+  "scope": "状态/主题初筛；显式禁止改值时检查修改建议，否则Logistic容量检查正实数限制。不是完整语义证明。"
+}

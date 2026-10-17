@@ -1,0 +1,8 @@
+source,target,weight
+S,A,4000
+S,B,2000
+B,A,1000
+A,C,2000
+B,C,5000
+C,T,3000
+A,T,7000

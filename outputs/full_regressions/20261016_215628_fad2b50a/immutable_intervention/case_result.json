@@ -1,0 +1,12 @@
+{
+  "id": "immutable_intervention",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "当前仅支持常参数Logistic初值问题（无捕捞等额外干预）；题中包含每天捕捞0.01个的干预项，超出支持范围。",
+  "total_tokens": 4101,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "immutable_intervention/20261016_215820_1208af36",
+  "elapsed_seconds": 1.2522298750118352
+}

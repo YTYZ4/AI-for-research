@@ -1,0 +1,10 @@
+{
+  "task_type": "polynomial_fit",
+  "name": "curve",
+  "assumptions": [
+    "独立观测；普通最小二乘；既定划分"
+  ],
+  "degree": null,
+  "x_unit": "无量纲",
+  "y_unit": "无量纲"
+}

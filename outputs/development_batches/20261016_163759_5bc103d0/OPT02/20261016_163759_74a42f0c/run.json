@@ -1,0 +1,466 @@
+{
+  "created_at": "2026-10-16T16:37:59.650409+08:00",
+  "version": "0.6.0",
+  "python": "3.13.16",
+  "scipy": "1.18.1",
+  "backend": "reference",
+  "input": "两座仓库向三家门店运输货物，运输量以吨计，可以是小数。\n仓库 W1 最多供应 40 吨，仓库 W2 最多供应 30 吨。\n门店 S1、S2、S3 分别需要恰好 20、30、20 吨；所有需求必须满足，不能缺货。\n每吨运费如下，六条路线均允许：\nW1 到 S1 为 2 元，W1 到 S2 为 4 元，W1 到 S3 为 5 元；\nW2 到 S1 为 3 元，W2 到 S2 为 1 元，W2 到 S3 为 7 元。\n允许仓库有剩余库存，无其他约束。求总运输成本最低的分配方案。\n",
+  "original_input": "两座仓库向三家门店运输货物，运输量以吨计，可以是小数。\n仓库 W1 最多供应 40 吨，仓库 W2 最多供应 30 吨。\n门店 S1、S2、S3 分别需要恰好 20、30、20 吨；所有需求必须满足，不能缺货。\n每吨运费如下，六条路线均允许：\nW1 到 S1 为 2 元，W1 到 S2 为 4 元，W1 到 S3 为 5 元；\nW2 到 S1 为 3 元，W2 到 S2 为 1 元，W2 到 S3 为 7 元。\n允许仓库有剩余库存，无其他约束。求总运输成本最低的分配方案。\n",
+  "generation": {
+    "backend": "reference",
+    "llm_used": false
+  },
+  "envelope": {
+    "status": "ready",
+    "questions": [],
+    "model": {
+      "name": "OPT02 运输分配参考模型",
+      "assumptions": [
+        "运输量按连续吨数计；需求恰好满足；六条路线均可用。"
+      ],
+      "variables": [
+        {
+          "name": "W1_S1",
+          "description": "W1_S1运输量",
+          "unit": "吨",
+          "kind": "continuous",
+          "lower": 0,
+          "upper": null
+        },
+        {
+          "name": "W1_S2",
+          "description": "W1_S2运输量",
+          "unit": "吨",
+          "kind": "continuous",
+          "lower": 0,
+          "upper": null
+        },
+        {
+          "name": "W1_S3",
+          "description": "W1_S3运输量",
+          "unit": "吨",
+          "kind": "continuous",
+          "lower": 0,
+          "upper": null
+        },
+        {
+          "name": "W2_S1",
+          "description": "W2_S1运输量",
+          "unit": "吨",
+          "kind": "continuous",
+          "lower": 0,
+          "upper": null
+        },
+        {
+          "name": "W2_S2",
+          "description": "W2_S2运输量",
+          "unit": "吨",
+          "kind": "continuous",
+          "lower": 0,
+          "upper": null
+        },
+        {
+          "name": "W2_S3",
+          "description": "W2_S3运输量",
+          "unit": "吨",
+          "kind": "continuous",
+          "lower": 0,
+          "upper": null
+        }
+      ],
+      "objective": {
+        "sense": "min",
+        "terms": [
+          {
+            "variable": "W1_S1",
+            "coefficient": 2
+          },
+          {
+            "variable": "W1_S2",
+            "coefficient": 4
+          },
+          {
+            "variable": "W1_S3",
+            "coefficient": 5
+          },
+          {
+            "variable": "W2_S1",
+            "coefficient": 3
+          },
+          {
+            "variable": "W2_S2",
+            "coefficient": 1
+          },
+          {
+            "variable": "W2_S3",
+            "coefficient": 7
+          }
+        ],
+        "unit": "元"
+      },
+      "constraints": [
+        {
+          "name": "W1供给",
+          "terms": [
+            {
+              "variable": "W1_S1",
+              "coefficient": 1
+            },
+            {
+              "variable": "W1_S2",
+              "coefficient": 1
+            },
+            {
+              "variable": "W1_S3",
+              "coefficient": 1
+            }
+          ],
+          "sense": "<=",
+          "rhs": 40,
+          "unit": "吨"
+        },
+        {
+          "name": "W2供给",
+          "terms": [
+            {
+              "variable": "W2_S1",
+              "coefficient": 1
+            },
+            {
+              "variable": "W2_S2",
+              "coefficient": 1
+            },
+            {
+              "variable": "W2_S3",
+              "coefficient": 1
+            }
+          ],
+          "sense": "<=",
+          "rhs": 30,
+          "unit": "吨"
+        },
+        {
+          "name": "S1需求",
+          "terms": [
+            {
+              "variable": "W1_S1",
+              "coefficient": 1
+            },
+            {
+              "variable": "W2_S1",
+              "coefficient": 1
+            }
+          ],
+          "sense": "=",
+          "rhs": 20,
+          "unit": "吨"
+        },
+        {
+          "name": "S2需求",
+          "terms": [
+            {
+              "variable": "W1_S2",
+              "coefficient": 1
+            },
+            {
+              "variable": "W2_S2",
+              "coefficient": 1
+            }
+          ],
+          "sense": "=",
+          "rhs": 30,
+          "unit": "吨"
+        },
+        {
+          "name": "S3需求",
+          "terms": [
+            {
+              "variable": "W1_S3",
+              "coefficient": 1
+            },
+            {
+              "variable": "W2_S3",
+              "coefficient": 1
+            }
+          ],
+          "sense": "=",
+          "rhs": 20,
+          "unit": "吨"
+        }
+      ]
+    }
+  },
+  "stages": [
+    {
+      "label": "批量基线",
+      "model": {
+        "name": "OPT02 运输分配参考模型",
+        "assumptions": [
+          "运输量按连续吨数计；需求恰好满足；六条路线均可用。"
+        ],
+        "variables": [
+          {
+            "name": "W1_S1",
+            "description": "W1_S1运输量",
+            "unit": "吨",
+            "kind": "continuous",
+            "lower": 0,
+            "upper": null
+          },
+          {
+            "name": "W1_S2",
+            "description": "W1_S2运输量",
+            "unit": "吨",
+            "kind": "continuous",
+            "lower": 0,
+            "upper": null
+          },
+          {
+            "name": "W1_S3",
+            "description": "W1_S3运输量",
+            "unit": "吨",
+            "kind": "continuous",
+            "lower": 0,
+            "upper": null
+          },
+          {
+            "name": "W2_S1",
+            "description": "W2_S1运输量",
+            "unit": "吨",
+            "kind": "continuous",
+            "lower": 0,
+            "upper": null
+          },
+          {
+            "name": "W2_S2",
+            "description": "W2_S2运输量",
+            "unit": "吨",
+            "kind": "continuous",
+            "lower": 0,
+            "upper": null
+          },
+          {
+            "name": "W2_S3",
+            "description": "W2_S3运输量",
+            "unit": "吨",
+            "kind": "continuous",
+            "lower": 0,
+            "upper": null
+          }
+        ],
+        "objective": {
+          "sense": "min",
+          "terms": [
+            {
+              "variable": "W1_S1",
+              "coefficient": 2
+            },
+            {
+              "variable": "W1_S2",
+              "coefficient": 4
+            },
+            {
+              "variable": "W1_S3",
+              "coefficient": 5
+            },
+            {
+              "variable": "W2_S1",
+              "coefficient": 3
+            },
+            {
+              "variable": "W2_S2",
+              "coefficient": 1
+            },
+            {
+              "variable": "W2_S3",
+              "coefficient": 7
+            }
+          ],
+          "unit": "元"
+        },
+        "constraints": [
+          {
+            "name": "W1供给",
+            "terms": [
+              {
+                "variable": "W1_S1",
+                "coefficient": 1
+              },
+              {
+                "variable": "W1_S2",
+                "coefficient": 1
+              },
+              {
+                "variable": "W1_S3",
+                "coefficient": 1
+              }
+            ],
+            "sense": "<=",
+            "rhs": 40,
+            "unit": "吨"
+          },
+          {
+            "name": "W2供给",
+            "terms": [
+              {
+                "variable": "W2_S1",
+                "coefficient": 1
+              },
+              {
+                "variable": "W2_S2",
+                "coefficient": 1
+              },
+              {
+                "variable": "W2_S3",
+                "coefficient": 1
+              }
+            ],
+            "sense": "<=",
+            "rhs": 30,
+            "unit": "吨"
+          },
+          {
+            "name": "S1需求",
+            "terms": [
+              {
+                "variable": "W1_S1",
+                "coefficient": 1
+              },
+              {
+                "variable": "W2_S1",
+                "coefficient": 1
+              }
+            ],
+            "sense": "=",
+            "rhs": 20,
+            "unit": "吨"
+          },
+          {
+            "name": "S2需求",
+            "terms": [
+              {
+                "variable": "W1_S2",
+                "coefficient": 1
+              },
+              {
+                "variable": "W2_S2",
+                "coefficient": 1
+              }
+            ],
+            "sense": "=",
+            "rhs": 30,
+            "unit": "吨"
+          },
+          {
+            "name": "S3需求",
+            "terms": [
+              {
+                "variable": "W1_S3",
+                "coefficient": 1
+              },
+              {
+                "variable": "W2_S3",
+                "coefficient": 1
+              }
+            ],
+            "sense": "=",
+            "rhs": 20,
+            "unit": "吨"
+          }
+        ]
+      },
+      "result": {
+        "status": "optimal",
+        "solver": "scipy.optimize.milp/HiGHS",
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "elapsed_seconds": 0.0004949159920215607,
+        "values": {
+          "W1_S1": 20.0,
+          "W1_S2": 0.0,
+          "W1_S3": 20.0,
+          "W2_S1": 0.0,
+          "W2_S2": 30.0,
+          "W2_S3": 0.0
+        },
+        "objective": 170.0,
+        "verification": {
+          "passed": true,
+          "checks": [
+            {
+              "name": "W1_S1 下界",
+              "passed": true
+            },
+            {
+              "name": "W1_S2 下界",
+              "passed": true
+            },
+            {
+              "name": "W1_S3 下界",
+              "passed": true
+            },
+            {
+              "name": "W2_S1 下界",
+              "passed": true
+            },
+            {
+              "name": "W2_S2 下界",
+              "passed": true
+            },
+            {
+              "name": "W2_S3 下界",
+              "passed": true
+            },
+            {
+              "name": "W1供给",
+              "lhs": 40.0,
+              "sense": "<=",
+              "rhs": 40,
+              "violation": 0,
+              "passed": true
+            },
+            {
+              "name": "W2供给",
+              "lhs": 30.0,
+              "sense": "<=",
+              "rhs": 30,
+              "violation": 0,
+              "passed": true
+            },
+            {
+              "name": "S1需求",
+              "lhs": 20.0,
+              "sense": "=",
+              "rhs": 20,
+              "violation": 0.0,
+              "passed": true
+            },
+            {
+              "name": "S2需求",
+              "lhs": 30.0,
+              "sense": "=",
+              "rhs": 30,
+              "violation": 0.0,
+              "passed": true
+            },
+            {
+              "name": "S3需求",
+              "lhs": 20.0,
+              "sense": "=",
+              "rhs": 20,
+              "violation": 0.0,
+              "passed": true
+            },
+            {
+              "name": "目标值复算",
+              "passed": true
+            }
+          ],
+          "objective_recomputed": 170.0,
+          "scope": "仅检查给定模型下的可行性及目标复算；不证明自然语言建模完整或解全局最优。"
+        }
+      }
+    }
+  ],
+  "clarification_history": [],
+  "dataset": null
+}

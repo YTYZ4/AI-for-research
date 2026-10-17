@@ -1,0 +1,47 @@
+{
+  "task_type": "graph",
+  "name": "单向输水管网最大流",
+  "problem": "max_flow",
+  "nodes": [
+    "S",
+    "A",
+    "B",
+    "T"
+  ],
+  "source": "S",
+  "target": "T",
+  "edges": [
+    {
+      "source": "S",
+      "target": "A",
+      "weight": 10
+    },
+    {
+      "source": "S",
+      "target": "B",
+      "weight": 5
+    },
+    {
+      "source": "A",
+      "target": "B",
+      "weight": 4
+    },
+    {
+      "source": "A",
+      "target": "T",
+      "weight": 6
+    },
+    {
+      "source": "B",
+      "target": "T",
+      "weight": 9
+    }
+  ],
+  "unit": "立方米/小时",
+  "assumptions": [
+    "所有边均为有向边，方向按原题给出的起止点理解。",
+    "最大流问题使用非负整数容量，容量单位统一为立方米/小时。",
+    "中间节点A、B流量守恒，源点S仅发出流量，汇点T仅接收流量。",
+    "模型中保留原题给出的全部边及整数容量，不额外补边。"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "task_type": "graph",
+  "name": "S到T输水最大流",
+  "problem": "max_flow",
+  "nodes": [
+    "S",
+    "T"
+  ],
+  "source": "S",
+  "target": "T",
+  "edges": [
+    {
+      "source": "S",
+      "target": "T",
+      "weight": 1
+    }
+  ],
+  "unit": "立方米/小时",
+  "assumptions": [
+    "有向边按给定方向建模，未提供反向边。",
+    "最大流问题中容量为非负整数；统一输出单位为立方米/小时，不改变原题边权。",
+    "每条边权重为原题给出的容量值，边单位按原题保留。"
+  ]
+}

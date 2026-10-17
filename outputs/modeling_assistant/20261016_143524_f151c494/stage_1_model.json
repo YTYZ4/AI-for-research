@@ -1,0 +1,75 @@
+{
+  "name": "家具厂生产计划",
+  "assumptions": [
+    "以每周为计划周期。",
+    "木工和油漆工时按整周可用总量计算，未使用工时不能结转到下周。",
+    "桌子和椅子的产量可以取非负连续值，即允许生产分数个产品。",
+    "利润和工时系数均为固定常数，不随产量变化。"
+  ],
+  "variables": [
+    {
+      "name": "x",
+      "description": "每周生产的桌子数量",
+      "unit": "张",
+      "kind": "continuous",
+      "lower": 0,
+      "upper": null
+    },
+    {
+      "name": "y",
+      "description": "每周生产的椅子数量",
+      "unit": "把",
+      "kind": "continuous",
+      "lower": 0,
+      "upper": null
+    }
+  ],
+  "objective": {
+    "sense": "max",
+    "terms": [
+      {
+        "variable": "x",
+        "coefficient": 120
+      },
+      {
+        "variable": "y",
+        "coefficient": 80
+      }
+    ],
+    "unit": "元"
+  },
+  "constraints": [
+    {
+      "name": "木工工时限制",
+      "terms": [
+        {
+          "variable": "x",
+          "coefficient": 4
+        },
+        {
+          "variable": "y",
+          "coefficient": 2
+        }
+      ],
+      "sense": "<=",
+      "rhs": 120,
+      "unit": "小时"
+    },
+    {
+      "name": "油漆工时限制",
+      "terms": [
+        {
+          "variable": "x",
+          "coefficient": 2
+        },
+        {
+          "variable": "y",
+          "coefficient": 3
+        }
+      ],
+      "sense": "<=",
+      "rhs": 100,
+      "unit": "小时"
+    }
+  ]
+}

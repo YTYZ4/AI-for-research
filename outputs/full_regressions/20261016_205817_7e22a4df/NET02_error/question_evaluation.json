@@ -1,0 +1,12 @@
+{
+  "applied": true,
+  "passed": true,
+  "checks": {
+    "expected_status": true,
+    "nonempty_question": true,
+    "relevant_topic": true,
+    "no_replacement_suggestion": true
+  },
+  "text": "有向边 S→A 的容量为 -3 立方米/小时，违反最大流模型对非负整数容量的要求；在保留原值、不修改负容量的前提下，该问题超出当前支持范围。",
+  "scope": "状态/主题初筛；显式禁止改值时检查修改建议，否则Logistic容量检查正实数限制。不是完整语义证明。"
+}

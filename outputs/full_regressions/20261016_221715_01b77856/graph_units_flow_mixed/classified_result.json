@@ -1,0 +1,36 @@
+{
+  "id": "graph_units_flow_mixed",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "",
+  "total_tokens": 4586,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "graph_units_flow_mixed/20261016_221951_b2c85fa7",
+  "elapsed_seconds": 2.0294436250114813,
+  "question_semantics_passed": null,
+  "kind": "graph_units",
+  "base_id": "NET02",
+  "origins": [
+    {
+      "id": "graph_units_flow_mixed",
+      "problem": "examples/graph_unit_boundaries/flow_mixed.txt",
+      "kind": "graph_units"
+    },
+    {
+      "id": "remaining_graph_mixed_flow",
+      "problem": "examples/graph_unit_boundaries/flow_mixed.txt",
+      "kind": "remaining"
+    }
+  ],
+  "quote_audit_passed": null,
+  "raw_schema_valid": true,
+  "format_action": "not_needed",
+  "local_guard_used": false,
+  "source_quote_repaired": false,
+  "original_pass": true,
+  "after_format_pass": true,
+  "final_pass": true,
+  "pass_path": "native"
+}

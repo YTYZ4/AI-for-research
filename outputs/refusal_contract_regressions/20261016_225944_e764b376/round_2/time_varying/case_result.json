@@ -1,0 +1,12 @@
+{
+  "id": "time_varying",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "不支持时变网络最大流问题；仅支持最短路径或单商品最大流（静态容量）。该请求要求容量随时间变化并输出时间轨迹，属于未支持的任务范围。",
+  "total_tokens": 1343,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "time_varying/20261016_230029_036a2585",
+  "elapsed_seconds": 1.4795662499964237
+}

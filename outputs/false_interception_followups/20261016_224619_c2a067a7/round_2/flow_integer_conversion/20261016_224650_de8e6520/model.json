@@ -1,0 +1,24 @@
+{
+  "task_type": "graph",
+  "name": "S到T最大流",
+  "problem": "max_flow",
+  "nodes": [
+    "S",
+    "T"
+  ],
+  "source": "S",
+  "target": "T",
+  "edges": [
+    {
+      "source": "S",
+      "target": "T",
+      "weight": 1
+    }
+  ],
+  "unit": "立方米/小时",
+  "assumptions": [
+    "要求所有容量和结果均以立方米/小时表示，不允许改变统一输出单位或取整。",
+    "用户已明确列出全部边且声明无其他边，网络边集完整。",
+    "实际原值、单位转换及整数校验由程序处理。"
+  ]
+}

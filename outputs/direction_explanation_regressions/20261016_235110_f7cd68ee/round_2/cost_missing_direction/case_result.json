@@ -1,0 +1,12 @@
+{
+  "id": "cost_missing_direction",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "原题要求最小费用最大流，并涉及每升费用2元；当前支持的任务类型仅为最短路径和单商品最大流，不处理费用或最小费用最大流。",
+  "total_tokens": 1476,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "cost_missing_direction/20261016_235200_e22f102b",
+  "elapsed_seconds": 1.1892259580199607
+}

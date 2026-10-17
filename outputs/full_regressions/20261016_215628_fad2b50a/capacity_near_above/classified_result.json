@@ -1,0 +1,31 @@
+{
+  "id": "capacity_near_above",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "",
+  "total_tokens": 4518,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "capacity_near_above/20261016_215758_16e73885",
+  "elapsed_seconds": 1.7133309999480844,
+  "question_semantics_passed": null,
+  "kind": "boundary",
+  "base_id": "DYN02",
+  "origins": [
+    {
+      "id": "capacity_near_above",
+      "problem": "examples/capacity_boundaries/near_above.txt",
+      "kind": "boundary"
+    }
+  ],
+  "quote_audit_passed": null,
+  "raw_schema_valid": true,
+  "format_action": "not_needed",
+  "local_guard_used": false,
+  "source_quote_repaired": false,
+  "original_pass": true,
+  "after_format_pass": true,
+  "final_pass": true,
+  "pass_path": "native"
+}

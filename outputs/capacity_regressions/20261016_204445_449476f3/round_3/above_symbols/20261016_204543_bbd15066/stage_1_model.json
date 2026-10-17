@@ -1,0 +1,18 @@
+{
+  "task_type": "dynamics",
+  "name": "Logistic增长初值问题",
+  "system": "logistic",
+  "initial": 1.5,
+  "rate": 0.2,
+  "equilibrium": 0.5,
+  "duration": 30.0,
+  "rate_unit": "1/day",
+  "state_unit": "个",
+  "assumptions": [
+    "常参数连续Logistic种群近似模型",
+    "N(0)=1.5大于环境容量K=0.5，轨迹将从初值向K下降",
+    "增长率r=0.2为正，K=0.5为正实数",
+    "天与每天按day和1/day处理"
+  ],
+  "time_unit": "day"
+}

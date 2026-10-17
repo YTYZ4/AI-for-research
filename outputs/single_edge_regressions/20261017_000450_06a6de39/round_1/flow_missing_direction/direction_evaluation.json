@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "checks": {
+    "clarification": true,
+    "no_model": true,
+    "nonblank": true,
+    "asks_direction": true,
+    "no_assumed_direction": true
+  },
+  "text": "原题未明确 S 与 T 之间边的方向，请补充该边的方向（S→T 还是 T→S）。"
+}

@@ -1,0 +1,19 @@
+{
+  "task_type": "dynamics",
+  "name": "牛顿冷却液体温度轨迹",
+  "system": "newton_cooling",
+  "initial": 90,
+  "rate": 0.1,
+  "equilibrium": 20,
+  "duration": 30,
+  "time_unit": "min",
+  "rate_unit": "1/min",
+  "state_unit": "°C",
+  "assumptions": [
+    "液体温度均匀，可用单一温度状态描述。",
+    "环境温度恒定为20°C。",
+    "冷却系数恒定为每分钟0.1。",
+    "遵循牛顿冷却定律 dT/dt = -k(T - T_env)。",
+    "允许温度取摄氏温标下的负值。"
+  ]
+}

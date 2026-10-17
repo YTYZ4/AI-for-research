@@ -1,0 +1,16 @@
+{
+  "primary_version": "0.10.6",
+  "final_version": "0.10.7",
+  "primary_raw_pass": 25,
+  "primary_final_pass": 34,
+  "primary_calls": 36,
+  "primary_takeovers": 9,
+  "supplement_raw_pass": 4,
+  "supplement_final_pass": 6,
+  "supplement_calls": 6,
+  "supplement_takeovers": 2,
+  "control_false_interceptions": "0/24主批次对照；0/3补充有效对照",
+  "valid_problem_passes": "9/9主批次；3/3补充批次",
+  "failure_review": "容量冲突题2次直接unsupported，1次needs_clarification；直接停止未擅改参数且避免无效计算，但与预设先澄清期望不符。不是本地误拦截，原计数不更改。",
+  "limits": "两批版本不同，分别汇报；36份旧响应离线接管判断一致不等于重新在线评测。"
+}

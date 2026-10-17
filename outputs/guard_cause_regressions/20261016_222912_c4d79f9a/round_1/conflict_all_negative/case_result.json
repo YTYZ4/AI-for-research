@@ -1,0 +1,12 @@
+{
+  "id": "conflict_all_negative",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "题面中容量 K 有两条冲突记录：“容量恒定-1个”和“K=-2个”。请核对哪一条准确？",
+  "total_tokens": 5045,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "conflict_all_negative/20261016_222921_25854f76",
+  "elapsed_seconds": 1.1942795420181938
+}

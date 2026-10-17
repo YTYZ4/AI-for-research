@@ -1,0 +1,19 @@
+{
+  "task_type": "dynamics",
+  "name": "封闭种群Logistic增长",
+  "system": "logistic",
+  "initial": 100,
+  "rate": 0.2,
+  "equilibrium": 1000,
+  "duration": 30.0,
+  "rate_unit": "1/day",
+  "state_unit": "个",
+  "assumptions": [
+    "封闭种群，无迁入迁出。",
+    "Logistic连续种群近似。",
+    "初始时刻t=0种群数量为100个。",
+    "环境容量恒定为1000个。",
+    "模拟时长按720小时处理，速率保持为每天0.2，由程序统一时间单位。"
+  ],
+  "time_unit": "day"
+}

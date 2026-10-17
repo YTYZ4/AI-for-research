@@ -1,0 +1,12 @@
+{
+  "id": "lock_cannot",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "环境容量 K = 0 会使 Logistic 方程 dN/dt = rN(1-N/K) 出现除以零，当前模型无法按原值建立；由于用户明确要求保持原值不能调整，本题返回 unsupported。",
+  "total_tokens": 3724,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "lock_cannot/20261016_210631_1a351e50",
+  "elapsed_seconds": 1.7200265420251526
+}

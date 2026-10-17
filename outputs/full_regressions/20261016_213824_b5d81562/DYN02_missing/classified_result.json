@@ -1,0 +1,31 @@
+{
+  "id": "DYN02_missing",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "请提供正实数环境容量K（可为小数），并说明其数量单位；当前未提供环境容量。",
+  "total_tokens": 3670,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "DYN02_missing/20261016_213913_00596961",
+  "elapsed_seconds": 2.755081541952677,
+  "question_semantics_passed": true,
+  "kind": "missing",
+  "base_id": "DYN02",
+  "origins": [
+    {
+      "id": "DYN02_missing",
+      "problem": "examples/development_variants/DYN02_missing.txt",
+      "kind": "missing"
+    }
+  ],
+  "quote_audit_passed": null,
+  "raw_schema_valid": true,
+  "format_action": "not_needed",
+  "local_guard_used": false,
+  "source_quote_repaired": false,
+  "original_pass": true,
+  "after_format_pass": true,
+  "final_pass": true,
+  "pass_path": "native"
+}

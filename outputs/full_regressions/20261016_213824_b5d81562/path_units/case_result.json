@@ -1,0 +1,12 @@
+{
+  "id": "path_units",
+  "family": "graph",
+  "outcome": "fail",
+  "failure_category": "evaluation_failed",
+  "detail": "{\"passed\": false, \"checks\": {\"original_edges\": false, \"source_target\": true, \"path\": true, \"distance\": false}}",
+  "total_tokens": 3919,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "path_units/20261016_213930_aeb711d6",
+  "elapsed_seconds": 1.588338042027317
+}

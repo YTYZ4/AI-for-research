@@ -1,0 +1,21 @@
+{
+  "version": "0.10.8",
+  "raw_pass": 27,
+  "after_format_pass": 27,
+  "final_pass": 30,
+  "conflict_native_pass": "15/15",
+  "previous_failure": "3/3",
+  "conflict_false_interceptions": "0/15 controls",
+  "local_handling": "3次same_invalid为已有禁止改值策略停止；冲突策略在线接管0，历史2次失败离线重放转为澄清。",
+  "warnings": [
+    {
+      "case": "round_1/missing",
+      "detail": "要求增长率与容量单位一致不合理，两者分别为反时间与数量；应只询问容量及其数量单位。自动状态/关键词评分未捕获。"
+    },
+    {
+      "case": "若干冲突题",
+      "detail": "虽先列出全部值并核对，但追加“提供正实数K”的措辞可能引导用户选有效值；应优先核实原记录再校验。没有实际选择值或执行。"
+    }
+  ],
+  "limits": "自动30/30不代表追问措辞完全正确；3次重复只限开发题。"
+}

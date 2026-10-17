@@ -1,0 +1,27 @@
+{
+  "task_type": "graph_input",
+  "name": "有向网络最大流",
+  "problem": "max_flow",
+  "nodes": [
+    "S",
+    "T"
+  ],
+  "source": "S",
+  "target": "T",
+  "edges": [
+    {
+      "source": "S",
+      "target": "T",
+      "weight": 1000,
+      "unit": "升/小时",
+      "source_quote": "只有S到T容量1000升/小时",
+      "unit_quote": "升/小时"
+    }
+  ],
+  "unit": "立方米/小时",
+  "assumptions": [
+    "节点S、T，无其他节点。",
+    "只有一条从S到T的有向边，无其他边。",
+    "费用数据与最大流问题无关，不参与建模。"
+  ]
+}

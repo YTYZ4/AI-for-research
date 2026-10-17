@@ -1,0 +1,14 @@
+{
+  "lock_original": 3,
+  "lock_dont": 3,
+  "lock_keep": 3,
+  "lock_cannot": 3,
+  "valid_above": 3,
+  "valid_equal": 3,
+  "valid_zero": 3,
+  "missing_capacity": 3,
+  "missing_rate": 3,
+  "permission": 3,
+  "conflicting_capacity": 1,
+  "intervention": 3
+}

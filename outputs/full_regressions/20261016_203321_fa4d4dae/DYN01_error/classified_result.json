@@ -1,0 +1,21 @@
+{
+  "id": "DYN01_error",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "牛顿冷却模型的冷却系数 k 必须为正数，但题目给出 k=-0.1 每分钟。请提供正的冷却系数（例如 0.1 每分钟）；或者确认该问题不受支持。",
+  "total_tokens": 3111,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "DYN01_error/20261016_203400_1a1f9a90",
+  "elapsed_seconds": 1.1548998749931343,
+  "kind": "error",
+  "base_id": "DYN01",
+  "raw_schema_valid": true,
+  "format_action": "not_needed",
+  "local_guard_used": false,
+  "original_pass": true,
+  "after_format_pass": true,
+  "final_pass": true,
+  "pass_path": "native"
+}

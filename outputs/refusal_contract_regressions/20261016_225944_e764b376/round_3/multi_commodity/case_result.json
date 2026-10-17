@@ -1,0 +1,12 @@
+{
+  "id": "multi_commodity",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "该请求要求多商品最大流（甲、乙两种商品同时运输并共享边容量），未提供具体的节点、边、容量和商品需求等图数据，且多商品流超出当前支持边界；当前仅支持最短路径和单商品最大流。",
+  "total_tokens": 1343,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "multi_commodity/20261016_230050_d31c47f9",
+  "elapsed_seconds": 1.4516524159698747
+}

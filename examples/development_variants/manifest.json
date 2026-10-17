@@ -1,0 +1,304 @@
+[
+  {
+    "base_id": "OPT01",
+    "id": "OPT01_paraphrase",
+    "kind": "paraphrase",
+    "expected_envelopes": [
+      "ready"
+    ],
+    "expected_status": "normal",
+    "problem": "examples/development_variants/OPT01_paraphrase.txt"
+  },
+  {
+    "base_id": "OPT01",
+    "id": "OPT01_missing",
+    "kind": "missing",
+    "expected_envelopes": [
+      "needs_clarification"
+    ],
+    "question_keywords": [
+      "原料",
+      "供应"
+    ],
+    "problem": "examples/development_variants/OPT01_missing.txt"
+  },
+  {
+    "base_id": "OPT01",
+    "id": "OPT01_error",
+    "kind": "error",
+    "expected_envelopes": [
+      "ready"
+    ],
+    "expected_status": "infeasible",
+    "problem": "examples/development_variants/OPT01_error.txt"
+  },
+  {
+    "base_id": "OPT02",
+    "id": "OPT02_paraphrase",
+    "kind": "paraphrase",
+    "expected_envelopes": [
+      "ready"
+    ],
+    "expected_status": "normal",
+    "problem": "examples/development_variants/OPT02_paraphrase.txt"
+  },
+  {
+    "base_id": "OPT02",
+    "id": "OPT02_missing",
+    "kind": "missing",
+    "expected_envelopes": [
+      "needs_clarification"
+    ],
+    "question_keywords": [
+      "S3",
+      "需求"
+    ],
+    "problem": "examples/development_variants/OPT02_missing.txt"
+  },
+  {
+    "base_id": "OPT02",
+    "id": "OPT02_error",
+    "kind": "error",
+    "expected_envelopes": [
+      "ready"
+    ],
+    "expected_status": "infeasible",
+    "problem": "examples/development_variants/OPT02_error.txt"
+  },
+  {
+    "base_id": "FIT01",
+    "id": "FIT01_paraphrase",
+    "kind": "paraphrase",
+    "expected_envelopes": [
+      "ready"
+    ],
+    "expected_status": "normal",
+    "problem": "examples/development_variants/FIT01_paraphrase.txt",
+    "data": "examples/fitting/calibration.csv"
+  },
+  {
+    "base_id": "FIT01",
+    "id": "FIT01_missing",
+    "kind": "missing",
+    "expected_envelopes": [
+      "needs_clarification"
+    ],
+    "question_keywords": [
+      "数据",
+      "CSV",
+      "csv"
+    ],
+    "problem": "examples/development_variants/FIT01_missing.txt"
+  },
+  {
+    "base_id": "FIT01",
+    "id": "FIT01_error",
+    "kind": "error",
+    "expected_envelopes": [
+      "needs_clarification",
+      "unsupported"
+    ],
+    "question_keywords": [
+      "阶",
+      "负",
+      "支持"
+    ],
+    "problem": "examples/development_variants/FIT01_error.txt",
+    "data": "examples/fitting/calibration.csv"
+  },
+  {
+    "base_id": "FIT02",
+    "id": "FIT02_paraphrase",
+    "kind": "paraphrase",
+    "expected_envelopes": [
+      "ready"
+    ],
+    "expected_status": "normal",
+    "problem": "examples/development_variants/FIT02_paraphrase.txt",
+    "data": "examples/fitting/curve.csv"
+  },
+  {
+    "base_id": "FIT02",
+    "id": "FIT02_missing",
+    "kind": "missing",
+    "expected_envelopes": [
+      "needs_clarification"
+    ],
+    "question_keywords": [
+      "数据",
+      "CSV",
+      "csv"
+    ],
+    "problem": "examples/development_variants/FIT02_missing.txt"
+  },
+  {
+    "base_id": "FIT02",
+    "id": "FIT02_error",
+    "kind": "error",
+    "expected_envelopes": [
+      "needs_clarification",
+      "unsupported"
+    ],
+    "question_keywords": [
+      "阶",
+      "负",
+      "支持"
+    ],
+    "problem": "examples/development_variants/FIT02_error.txt",
+    "data": "examples/fitting/curve.csv"
+  },
+  {
+    "base_id": "DYN01",
+    "id": "DYN01_paraphrase",
+    "kind": "paraphrase",
+    "expected_envelopes": [
+      "ready"
+    ],
+    "expected_status": "normal",
+    "problem": "examples/development_variants/DYN01_paraphrase.txt"
+  },
+  {
+    "base_id": "DYN01",
+    "id": "DYN01_missing",
+    "kind": "missing",
+    "expected_envelopes": [
+      "needs_clarification"
+    ],
+    "question_keywords": [
+      "系数",
+      "速率",
+      "k"
+    ],
+    "problem": "examples/development_variants/DYN01_missing.txt"
+  },
+  {
+    "base_id": "DYN01",
+    "id": "DYN01_error",
+    "kind": "error",
+    "expected_envelopes": [
+      "needs_clarification",
+      "unsupported"
+    ],
+    "question_keywords": [
+      "负",
+      "正",
+      "系数",
+      "支持"
+    ],
+    "problem": "examples/development_variants/DYN01_error.txt"
+  },
+  {
+    "base_id": "DYN02",
+    "id": "DYN02_paraphrase",
+    "kind": "paraphrase",
+    "expected_envelopes": [
+      "ready"
+    ],
+    "expected_status": "normal",
+    "problem": "examples/development_variants/DYN02_paraphrase.txt"
+  },
+  {
+    "base_id": "DYN02",
+    "id": "DYN02_missing",
+    "kind": "missing",
+    "expected_envelopes": [
+      "needs_clarification"
+    ],
+    "question_keywords": [
+      "容量",
+      "K"
+    ],
+    "problem": "examples/development_variants/DYN02_missing.txt"
+  },
+  {
+    "base_id": "DYN02",
+    "id": "DYN02_error",
+    "kind": "error",
+    "expected_envelopes": [
+      "needs_clarification",
+      "unsupported"
+    ],
+    "question_keywords": [
+      "容量",
+      "零",
+      "0",
+      "正"
+    ],
+    "problem": "examples/development_variants/DYN02_error.txt"
+  },
+  {
+    "base_id": "NET01",
+    "id": "NET01_paraphrase",
+    "kind": "paraphrase",
+    "expected_envelopes": [
+      "ready"
+    ],
+    "expected_status": "normal",
+    "problem": "examples/development_variants/NET01_paraphrase.txt"
+  },
+  {
+    "base_id": "NET01",
+    "id": "NET01_missing",
+    "kind": "missing",
+    "expected_envelopes": [
+      "needs_clarification"
+    ],
+    "question_keywords": [
+      "距离",
+      "权重",
+      "A"
+    ],
+    "problem": "examples/development_variants/NET01_missing.txt"
+  },
+  {
+    "base_id": "NET01",
+    "id": "NET01_error",
+    "kind": "error",
+    "expected_envelopes": [
+      "needs_clarification",
+      "unsupported"
+    ],
+    "question_keywords": [
+      "负",
+      "支持"
+    ],
+    "problem": "examples/development_variants/NET01_error.txt"
+  },
+  {
+    "base_id": "NET02",
+    "id": "NET02_paraphrase",
+    "kind": "paraphrase",
+    "expected_envelopes": [
+      "ready"
+    ],
+    "expected_status": "normal",
+    "problem": "examples/development_variants/NET02_paraphrase.txt"
+  },
+  {
+    "base_id": "NET02",
+    "id": "NET02_missing",
+    "kind": "missing",
+    "expected_envelopes": [
+      "needs_clarification"
+    ],
+    "question_keywords": [
+      "容量",
+      "A"
+    ],
+    "problem": "examples/development_variants/NET02_missing.txt"
+  },
+  {
+    "base_id": "NET02",
+    "id": "NET02_error",
+    "kind": "error",
+    "expected_envelopes": [
+      "needs_clarification",
+      "unsupported"
+    ],
+    "question_keywords": [
+      "负",
+      "容量"
+    ],
+    "problem": "examples/development_variants/NET02_error.txt"
+  }
+]

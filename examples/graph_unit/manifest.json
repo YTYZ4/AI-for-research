@@ -1,0 +1,214 @@
+[
+  {
+    "id": "graph_units_reverse_m",
+    "base_id": "NET01",
+    "kind": "graph_units",
+    "family": "graph",
+    "problem": "examples/graph_unit/reverse_m.txt",
+    "expected_envelopes": [
+      "ready"
+    ],
+    "graph_problem": "shortest_path",
+    "unit": "m",
+    "source_edges": [
+      [
+        "S",
+        "A",
+        0.5,
+        "千米"
+      ],
+      [
+        "A",
+        "T",
+        250,
+        "米"
+      ],
+      [
+        "S",
+        "T",
+        1,
+        "千米"
+      ]
+    ],
+    "weights": [
+      500,
+      250,
+      1000
+    ],
+    "value": 750
+  },
+  {
+    "id": "graph_units_small_scientific",
+    "base_id": "NET01",
+    "kind": "graph_units",
+    "family": "graph",
+    "problem": "examples/graph_unit/small_scientific.txt",
+    "expected_envelopes": [
+      "ready"
+    ],
+    "graph_problem": "shortest_path",
+    "unit": "m",
+    "source_edges": [
+      [
+        "S",
+        "A",
+        0.5,
+        "米"
+      ],
+      [
+        "A",
+        "T",
+        25,
+        "厘米"
+      ],
+      [
+        "S",
+        "T",
+        1000,
+        "毫米"
+      ]
+    ],
+    "weights": [
+      0.5,
+      0.25,
+      1
+    ],
+    "value": 0.75
+  },
+  {
+    "id": "graph_units_zero_weight",
+    "base_id": "NET01",
+    "kind": "graph_units",
+    "family": "graph",
+    "problem": "examples/graph_unit/zero_weight.txt",
+    "expected_envelopes": [
+      "ready"
+    ],
+    "graph_problem": "shortest_path",
+    "unit": "km",
+    "source_edges": [
+      [
+        "S",
+        "A",
+        0,
+        "米"
+      ],
+      [
+        "A",
+        "T",
+        1,
+        "千米"
+      ],
+      [
+        "S",
+        "T",
+        2000,
+        "米"
+      ]
+    ],
+    "weights": [
+      0,
+      1,
+      2
+    ],
+    "value": 1
+  },
+  {
+    "id": "graph_units_flow_mixed",
+    "base_id": "NET02",
+    "kind": "graph_units",
+    "family": "graph",
+    "problem": "examples/graph_unit/flow_mixed.txt",
+    "expected_envelopes": [
+      "ready"
+    ],
+    "graph_problem": "max_flow",
+    "unit": "立方米/小时",
+    "source_edges": [
+      [
+        "S",
+        "A",
+        10000,
+        "升/小时"
+      ],
+      [
+        "A",
+        "T",
+        6,
+        "立方米/小时"
+      ],
+      [
+        "S",
+        "T",
+        5000,
+        "升/小时"
+      ]
+    ],
+    "weights": [
+      10,
+      6,
+      5
+    ],
+    "value": 11
+  },
+  {
+    "id": "graph_units_unknown",
+    "base_id": "NET01",
+    "kind": "graph_units",
+    "family": "graph",
+    "problem": "examples/graph_unit/unknown.txt",
+    "expected_envelopes": [
+      "needs_clarification",
+      "unsupported"
+    ],
+    "question_keywords": [
+      "单位",
+      "换算",
+      "整数",
+      "容量",
+      "速度",
+      "英里",
+      "量纲"
+    ]
+  },
+  {
+    "id": "graph_units_dimension",
+    "base_id": "NET01",
+    "kind": "graph_units",
+    "family": "graph",
+    "problem": "examples/graph_unit/dimension.txt",
+    "expected_envelopes": [
+      "needs_clarification",
+      "unsupported"
+    ],
+    "question_keywords": [
+      "单位",
+      "换算",
+      "整数",
+      "容量",
+      "速度",
+      "英里",
+      "量纲"
+    ]
+  },
+  {
+    "id": "graph_units_fractional_flow",
+    "base_id": "NET02",
+    "kind": "graph_units",
+    "family": "graph",
+    "problem": "examples/graph_unit/fractional_flow.txt",
+    "expected_envelopes": [
+      "needs_clarification",
+      "unsupported"
+    ],
+    "question_keywords": [
+      "单位",
+      "换算",
+      "整数",
+      "容量",
+      "速度",
+      "英里",
+      "量纲"
+    ]
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "id": "graph_units_unknown",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "图边单位无法确定性换算或量纲不一致，请核对单位及必要的换算依据；不会猜测因子。",
+  "total_tokens": 4234,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "graph_units_unknown/20261016_215910_582417cf",
+  "elapsed_seconds": 2.0908530830056407
+}

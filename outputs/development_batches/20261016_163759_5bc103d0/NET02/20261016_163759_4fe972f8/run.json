@@ -1,0 +1,183 @@
+{
+  "created_at": "2026-10-16T16:37:59.666460+08:00",
+  "version": "0.6.0",
+  "python": "3.13.16",
+  "scipy": "1.18.1",
+  "backend": "reference",
+  "input": "有向输水网络节点为S、A、B、T，S为唯一源点，T为唯一汇点。只有以下管道，容量单位统一为立方米/小时：S到A容量10，S到B容量5，A到B容量4，A到T容量6，B到T容量9。管道只能沿给定方向输水，中间节点满足流量守恒。求最大总流量和各管道流量，并给出最小割验证。\n",
+  "original_input": "有向输水网络节点为S、A、B、T，S为唯一源点，T为唯一汇点。只有以下管道，容量单位统一为立方米/小时：S到A容量10，S到B容量5，A到B容量4，A到T容量6，B到T容量9。管道只能沿给定方向输水，中间节点满足流量守恒。求最大总流量和各管道流量，并给出最小割验证。\n",
+  "generation": {
+    "backend": "reference",
+    "llm_used": false
+  },
+  "envelope": {
+    "status": "ready",
+    "questions": [],
+    "model": {
+      "task_type": "graph",
+      "name": "max_flow",
+      "problem": "max_flow",
+      "nodes": [
+        "S",
+        "A",
+        "B",
+        "T"
+      ],
+      "source": "S",
+      "target": "T",
+      "edges": [
+        {
+          "source": "S",
+          "target": "A",
+          "weight": 10
+        },
+        {
+          "source": "S",
+          "target": "B",
+          "weight": 5
+        },
+        {
+          "source": "A",
+          "target": "B",
+          "weight": 4
+        },
+        {
+          "source": "A",
+          "target": "T",
+          "weight": 6
+        },
+        {
+          "source": "B",
+          "target": "T",
+          "weight": 9
+        }
+      ],
+      "unit": "立方米/小时",
+      "assumptions": [
+        "有向网络，仅含列出的边"
+      ]
+    }
+  },
+  "stages": [
+    {
+      "label": "批量基线",
+      "model": {
+        "task_type": "graph",
+        "name": "max_flow",
+        "problem": "max_flow",
+        "nodes": [
+          "S",
+          "A",
+          "B",
+          "T"
+        ],
+        "source": "S",
+        "target": "T",
+        "edges": [
+          {
+            "source": "S",
+            "target": "A",
+            "weight": 10
+          },
+          {
+            "source": "S",
+            "target": "B",
+            "weight": 5
+          },
+          {
+            "source": "A",
+            "target": "B",
+            "weight": 4
+          },
+          {
+            "source": "A",
+            "target": "T",
+            "weight": 6
+          },
+          {
+            "source": "B",
+            "target": "T",
+            "weight": 9
+          }
+        ],
+        "unit": "立方米/小时",
+        "assumptions": [
+          "有向网络，仅含列出的边"
+        ]
+      },
+      "result": {
+        "status": "optimal",
+        "value": 15,
+        "flows": [
+          {
+            "source": "S",
+            "target": "A",
+            "capacity": 10,
+            "flow": 10
+          },
+          {
+            "source": "S",
+            "target": "B",
+            "capacity": 5,
+            "flow": 5
+          },
+          {
+            "source": "A",
+            "target": "B",
+            "capacity": 4,
+            "flow": 4
+          },
+          {
+            "source": "A",
+            "target": "T",
+            "capacity": 6,
+            "flow": 6
+          },
+          {
+            "source": "B",
+            "target": "T",
+            "capacity": 9,
+            "flow": 9
+          }
+        ],
+        "cut": {
+          "source_side": [
+            "S"
+          ],
+          "target_side": [
+            "A",
+            "B",
+            "T"
+          ],
+          "edges": [
+            {
+              "source": "S",
+              "target": "A",
+              "capacity": 10,
+              "flow": 10
+            },
+            {
+              "source": "S",
+              "target": "B",
+              "capacity": 5,
+              "flow": 5
+            }
+          ],
+          "capacity": 15
+        },
+        "verification": {
+          "passed": true,
+          "checks": {
+            "capacity_bounds": true,
+            "conservation": true,
+            "source_target_balance": true,
+            "flow_equals_cut": true,
+            "cut_separates": true
+          }
+        }
+      }
+    }
+  ],
+  "clarification_history": [],
+  "dataset": null
+}

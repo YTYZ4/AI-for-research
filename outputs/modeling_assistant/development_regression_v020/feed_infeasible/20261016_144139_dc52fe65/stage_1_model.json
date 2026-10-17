@@ -1,0 +1,92 @@
+{
+  "name": "饲料混合最低成本配方",
+  "assumptions": [
+    "以生产1千克最终饲料为基准进行配方优化（归一化假设），因为目标是最低成本配方且未指定生产批量。",
+    "原料用量按连续质量（千克）建模，因为质量是可分割量，允许小数千克。",
+    "蛋白质含量和脂肪含量均按质量百分比理解，约束按最终饲料总质量1千克计算。",
+    "原料1和原料2的供应量没有限制。",
+    "未提及原料3或其他成分，因此只考虑两种原料。"
+  ],
+  "variables": [
+    {
+      "name": "x1",
+      "description": "原料1在1千克最终饲料中的用量",
+      "unit": "千克",
+      "kind": "continuous",
+      "lower": 0,
+      "upper": null
+    },
+    {
+      "name": "x2",
+      "description": "原料2在1千克最终饲料中的用量",
+      "unit": "千克",
+      "kind": "continuous",
+      "lower": 0,
+      "upper": null
+    }
+  ],
+  "objective": {
+    "sense": "min",
+    "terms": [
+      {
+        "variable": "x1",
+        "coefficient": 2
+      },
+      {
+        "variable": "x2",
+        "coefficient": 3
+      }
+    ],
+    "unit": "元"
+  },
+  "constraints": [
+    {
+      "name": "总质量归一化",
+      "terms": [
+        {
+          "variable": "x1",
+          "coefficient": 1
+        },
+        {
+          "variable": "x2",
+          "coefficient": 1
+        }
+      ],
+      "sense": "=",
+      "rhs": 1,
+      "unit": "千克"
+    },
+    {
+      "name": "蛋白质含量要求",
+      "terms": [
+        {
+          "variable": "x1",
+          "coefficient": 0.2
+        },
+        {
+          "variable": "x2",
+          "coefficient": 0.3
+        }
+      ],
+      "sense": ">=",
+      "rhs": 0.25,
+      "unit": "千克"
+    },
+    {
+      "name": "脂肪含量要求",
+      "terms": [
+        {
+          "variable": "x1",
+          "coefficient": 0.1
+        },
+        {
+          "variable": "x2",
+          "coefficient": 0.05
+        }
+      ],
+      "sense": ">=",
+      "rhs": 0.08,
+      "unit": "千克"
+    }
+  ]
+}

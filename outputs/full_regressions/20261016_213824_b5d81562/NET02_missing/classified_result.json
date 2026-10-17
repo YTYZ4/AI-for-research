@@ -1,0 +1,31 @@
+{
+  "id": "NET02_missing",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "请提供管道 A 到 T 的容量（单位：立方米/小时）。",
+  "total_tokens": 3673,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "NET02_missing/20261016_213923_3d3c6016",
+  "elapsed_seconds": 0.956644750025589,
+  "question_semantics_passed": true,
+  "kind": "missing",
+  "base_id": "NET02",
+  "origins": [
+    {
+      "id": "NET02_missing",
+      "problem": "examples/development_variants/NET02_missing.txt",
+      "kind": "missing"
+    }
+  ],
+  "quote_audit_passed": null,
+  "raw_schema_valid": true,
+  "format_action": "not_needed",
+  "local_guard_used": false,
+  "source_quote_repaired": false,
+  "original_pass": true,
+  "after_format_pass": true,
+  "final_pass": true,
+  "pass_path": "native"
+}

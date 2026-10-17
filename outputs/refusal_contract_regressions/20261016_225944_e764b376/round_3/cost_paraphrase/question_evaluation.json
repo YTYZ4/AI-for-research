@@ -1,0 +1,11 @@
+{
+  "applied": true,
+  "passed": true,
+  "checks": {
+    "expected_status": true,
+    "nonempty_question": true,
+    "relevant_topic": true
+  },
+  "text": "当前图网络求解器仅支持 shortest_path 或 max_flow。本题同时要求先最大流再最小运输成本，属于最小费用最大流，不在支持范围内；请改为单一的最短路径或最大流问题。",
+  "scope": "状态/主题初筛；显式禁止改值时检查修改建议，否则Logistic容量检查正实数限制。不是完整语义证明。"
+}

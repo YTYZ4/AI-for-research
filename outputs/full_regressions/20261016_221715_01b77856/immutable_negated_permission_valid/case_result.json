@@ -1,0 +1,12 @@
+{
+  "id": "immutable_negated_permission_valid",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "",
+  "total_tokens": 4818,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "immutable_negated_permission_valid/20261016_221908_42d77198",
+  "elapsed_seconds": 2.089323375024833
+}

@@ -1,0 +1,17 @@
+{
+  "task_type": "dynamics",
+  "name": "Logistic增长初值问题",
+  "system": "logistic",
+  "initial": 1.5,
+  "rate": 0.2,
+  "equilibrium": 0.5,
+  "duration": 30.0,
+  "rate_unit": "1/day",
+  "state_unit": "个",
+  "assumptions": [
+    "常参数连续Logistic种群近似：dN/dt=rN(1-N/K)。",
+    "N与K均为数量，统一以“个”计；r为每天的内禀增长率；模拟时长为天。",
+    "初值N(0)=1.5个高于环境容量K=0.5个，轨迹按原参数自然下降趋向K，不修改初值与容量。"
+  ],
+  "time_unit": "day"
+}

@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": {
+    "unsupported": true,
+    "no_model": true,
+    "nonblank_explanations": true,
+    "identifies_requested_scope": true,
+    "explains_limit": true,
+    "no_invented_contract_limit": true,
+    "no_silent_downgrade": true
+  },
+  "text": "原题目标是输送量最大且总运费最低的最小费用最大流问题，属于未支持的额外任务要求；当前仅支持最短路径和单商品最大流，无法静默忽略每升运输成本2元的最小费用要求。"
+}

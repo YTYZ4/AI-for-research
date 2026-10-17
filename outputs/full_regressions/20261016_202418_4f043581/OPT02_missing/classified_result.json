@@ -1,0 +1,21 @@
+{
+  "id": "OPT02_missing",
+  "family": "optimization",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "S3的精确需求量是多少？",
+  "total_tokens": 2996,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "OPT02_missing/20261016_202443_05c42917",
+  "elapsed_seconds": 0.797550291987136,
+  "kind": "missing",
+  "base_id": "OPT02",
+  "raw_schema_valid": true,
+  "format_action": "not_needed",
+  "local_guard_used": false,
+  "original_pass": true,
+  "after_format_pass": true,
+  "final_pass": true,
+  "pass_path": "native"
+}

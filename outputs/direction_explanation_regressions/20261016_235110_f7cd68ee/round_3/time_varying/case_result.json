@@ -1,0 +1,12 @@
+{
+  "id": "time_varying",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "原题要求时变网络最大流的时间轨迹；当前仅支持静态单商品最大流，时变网络等未支持任务不在支持范围内，因此无法提交图输入。支持边界为：最短路径和静态单商品最大流。",
+  "total_tokens": 1475,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "time_varying/20261016_235216_b084bb4d",
+  "elapsed_seconds": 1.4262034590356052
+}

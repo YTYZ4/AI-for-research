@@ -1,0 +1,107 @@
+{
+  "protocol": "development_single_attempt_v1",
+  "backend": "reference",
+  "requested_model": null,
+  "cases": [
+    {
+      "id": "OPT01",
+      "family": "optimization",
+      "problem": "examples/production/problem_freeform.txt",
+      "reference": null
+    },
+    {
+      "id": "OPT02",
+      "family": "optimization",
+      "problem": "examples/transport/problem.txt",
+      "reference": "examples/transport/reference_model.json"
+    },
+    {
+      "id": "FIT01",
+      "family": "fitting",
+      "problem": "examples/fitting/calibration.txt",
+      "data": "examples/fitting/calibration.csv",
+      "reference": "examples/fitting/calibration_model.json"
+    },
+    {
+      "id": "FIT02",
+      "family": "fitting",
+      "problem": "examples/fitting/curve.txt",
+      "data": "examples/fitting/curve.csv",
+      "reference": "examples/fitting/curve_model.json"
+    },
+    {
+      "id": "DYN01",
+      "family": "dynamics",
+      "problem": "examples/dynamics/cooling.txt",
+      "reference": "examples/dynamics/cooling_model.json",
+      "case": "cooling"
+    },
+    {
+      "id": "DYN02",
+      "family": "dynamics",
+      "problem": "examples/dynamics/logistic.txt",
+      "reference": "examples/dynamics/logistic_model.json",
+      "case": "logistic"
+    },
+    {
+      "id": "NET01",
+      "family": "graph",
+      "problem": "examples/graphs/shortest_path.txt",
+      "reference": "examples/graphs/shortest_path_model.json",
+      "case": "shortest_path"
+    },
+    {
+      "id": "NET02",
+      "family": "graph",
+      "problem": "examples/graphs/max_flow.txt",
+      "reference": "examples/graphs/max_flow_model.json",
+      "case": "max_flow"
+    }
+  ],
+  "max_calls": 0,
+  "retries": 0,
+  "repair_rounds": 0,
+  "max_output_tokens_per_call": 6000,
+  "hashes": {
+    "evaluation/__init__.py": "e341001f744cb6b55ac13abe7a9d38978cd3b1ef9c183f663f055edefa4f5ea2",
+    "evaluation/batch.py": "449c0d957920bca54e10a413b2a028fa4bfc87b207401e84651b32ec7a7ba2e2",
+    "evaluation/development.py": "89270a2258536a19513758437df5c60d7f58030faaa097d7e7ec56e2b611d85c",
+    "evaluation/dynamics.py": "d11fd630a1f2f19013e24ae79430613963ccb57bcce5919d03704a1b1635ead7",
+    "evaluation/fitting.py": "d4262f4040c1cccf7d7028af272c64fd41e362877fea71ab96eb08744ddeb21d",
+    "evaluation/graphs.py": "b68d4fd3088d8542dc9604a2b77ccb4901165f89eab9072949ce40592c4f7d79",
+    "evaluation/transport.py": "b25a52d2837db07788ec883de5028a84ac98fc31ca8087a903bc4cd805e45f5b",
+    "examples/dynamics/cooling.txt": "89560b8c854a2b2cdbd1afea62f5c65dd7d928f20fe96f9eefa623f9bd24af17",
+    "examples/dynamics/cooling_model.json": "0e07c01005b3a0ca801ccb8d4a8b86f393b6ad842b716878f2063c1ac9a8e84f",
+    "examples/dynamics/logistic.txt": "36089bf1f839798c97ac76793bbdbacfa55fdd39ffde2c9e0364f606d5b901b6",
+    "examples/dynamics/logistic_model.json": "422d074402f17a98b27f57dacf73cfc79fff0a50e4561e1b120c21def9c3ea7e",
+    "examples/fitting/calibration.csv": "8f6b4d9e113bce8b837f550b879863cf5d9963f44b6687282f1b9156b52dcfa4",
+    "examples/fitting/calibration.txt": "d9bc65325bc608beae57f73b0172a02a595d5e329e9e2a4507f9845364402848",
+    "examples/fitting/calibration_model.json": "04dc52634cedb2cec951a5934e221e857a81c8186331f2b9a4267164823237bc",
+    "examples/fitting/curve.csv": "2d3965b9c3dc371a1c010cba2c51214baf7e295828b277e561969d3999325cbd",
+    "examples/fitting/curve.txt": "2222f6796561a9054c5f89b49beaa500b8bdfcdfa77fac2b495bdbba42675ba4",
+    "examples/fitting/curve_model.json": "258a69ca6113ef9810c094051683f31284893d4dc4c5b09566532ae4cbd02c11",
+    "examples/graphs/max_flow.txt": "9cf09b9e426ffd6d77de1ccba71a2d6bed882615902679314aa63165a89532e4",
+    "examples/graphs/max_flow_model.json": "5892060b24c071d8e3d52df6057a7a6bdd577a18151f64d52891dfeb7da7510e",
+    "examples/graphs/shortest_path.txt": "46c40a5ee65c9955cbf445e60278e4d158be2e26d4c02186ce174356346d073a",
+    "examples/graphs/shortest_path_model.json": "967e609ced6cda311d66c4dc95bdfefeac187b98e9dfeaf1e4a3e5cd9d9ba730",
+    "examples/production/problem.txt": "fb4fa6c9d6bbf445104d28c013d87059685e19ee3e522cbc1501d884e2e44638",
+    "examples/production/problem_freeform.txt": "a450a996e0da07b11eac1b917dc035439c110d407cc624b6dcc674ac82615427",
+    "examples/transport/problem.txt": "e6db8ce3741f78ac9102db70b6e269b3f91ed6e5555cec0091169f1587448215",
+    "examples/transport/reference_model.json": "c2960fbb415389bf3c05566646d0d9b502675935ad174dcf26b65262fcc197fe",
+    "modeling_assistant/__init__.py": "f75077a532de20c13b9d9216147fe2f850b32f8d2825a88de1c7a0590457fe9f",
+    "modeling_assistant/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+    "modeling_assistant/cli.py": "d1500bdfa79f4908cdc508c01ab1ec45d5e2580cd2aff556e6dc22f1e4879172",
+    "modeling_assistant/config.py": "3bde19f9ff792b8612f650dbbe59bda9cd6b0bdc09bb4aa83ae2f32c21fc2dab",
+    "modeling_assistant/configure.py": "181e16c35632d06bae844828dc84edd8fef62cbf42fefd6db4208f335c7880bc",
+    "modeling_assistant/dynamics.py": "cfda965c4e94701c8c4ffced326cfdc302c121603f759404c3a059e5cc1b0df4",
+    "modeling_assistant/fitting.py": "2e7bdcbdfca254508b6ec05d4603e3381c9ca57d4da7ac46134d39e72e7c52fc",
+    "modeling_assistant/graphs.py": "cd1063f33e1a0e41fa26048bf7c06bf7ec766e097264eb2135975b1e1b264469",
+    "modeling_assistant/model.py": "adc5ccb7c869294a85476a4ab4710f1450e62df854fb379f4b895b2beec28226",
+    "modeling_assistant/parser.py": "e36f55ec7a73f34f106ba19c09b6a2e246a802c676c4d029c79d1cf1c2f46231",
+    "modeling_assistant/provider.py": "ea3aca693161e580d1376fa5091e999db16d2fce54f19a9c55a3315dc68a089d",
+    "modeling_assistant/solver.py": "aaa42a26a60dd8800632fea12a07422e5d8d777e7f9264535e9f9bff13b2f5b0"
+  },
+  "version": "0.6.0",
+  "python": "3.13.16",
+  "scipy": "1.18.1"
+}

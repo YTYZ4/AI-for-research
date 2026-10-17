@@ -1,0 +1,12 @@
+{
+  "id": "pure_min_cost",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "不支持最小费用流任务；仅支持最短路径和单商品最大流。本请求还包含以立方米/小时表示输出流量的单位转换要求，但任务类型本身已超出支持边界。",
+  "total_tokens": 1339,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "pure_min_cost/20261016_230025_c2c943d5",
+  "elapsed_seconds": 1.6738047920516692
+}

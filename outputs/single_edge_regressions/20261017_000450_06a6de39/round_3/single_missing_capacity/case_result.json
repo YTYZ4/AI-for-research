@@ -1,0 +1,12 @@
+{
+  "id": "single_missing_capacity",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "请提供边 S 到 T 的容量原始数值及原始单位（例如升/小时），以便按升/小时输出最大流。",
+  "total_tokens": 1505,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "single_missing_capacity/20261017_000603_52f34a9c",
+  "elapsed_seconds": 1.5818357089883648
+}

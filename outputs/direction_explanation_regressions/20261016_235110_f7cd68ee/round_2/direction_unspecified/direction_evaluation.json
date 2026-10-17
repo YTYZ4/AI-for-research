@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "checks": {
+    "clarification": true,
+    "no_model": true,
+    "nonblank": true,
+    "asks_direction": true,
+    "no_assumed_direction": true
+  },
+  "text": "题目未记录管道方向：边从 S 到 T，还是从 T 到 S？请明确方向，以便按有向网络处理最大流。"
+}

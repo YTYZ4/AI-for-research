@@ -1,0 +1,31 @@
+{
+  "id": "equivalent_exponent_difference",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "环境容量存在两条互相冲突的记录：5e-1个 与 6e-1个。请核对哪条准确？",
+  "total_tokens": 3859,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "equivalent_exponent_difference/20261016_214046_656e9520",
+  "elapsed_seconds": 1.4950877910014242,
+  "question_semantics_passed": true,
+  "kind": "equivalent",
+  "base_id": "DYN02",
+  "origins": [
+    {
+      "id": "equivalent_exponent_difference",
+      "problem": "examples/equivalent_boundaries/exponent_difference.txt",
+      "kind": "equivalent"
+    }
+  ],
+  "quote_audit_passed": null,
+  "raw_schema_valid": true,
+  "format_action": "not_needed",
+  "local_guard_used": false,
+  "source_quote_repaired": false,
+  "original_pass": true,
+  "after_format_pass": true,
+  "final_pass": true,
+  "pass_path": "native"
+}

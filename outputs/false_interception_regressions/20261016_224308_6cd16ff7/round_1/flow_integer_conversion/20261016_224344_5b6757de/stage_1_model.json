@@ -1,0 +1,24 @@
+{
+  "task_type": "graph",
+  "name": "有向输水网络最大流",
+  "problem": "max_flow",
+  "nodes": [
+    "S",
+    "T"
+  ],
+  "source": "S",
+  "target": "T",
+  "edges": [
+    {
+      "source": "S",
+      "target": "T",
+      "weight": 1
+    }
+  ],
+  "unit": "立方米/小时",
+  "assumptions": [
+    "所有边权重均为非负整数容量",
+    "统一输出单位为立方米/小时",
+    "不改变统一输出单位，不取整"
+  ]
+}

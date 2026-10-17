@@ -1,0 +1,12 @@
+{
+  "id": "NET01_missing",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "请提供边 A→T 的距离数值及其单位（例如：3千米）。若 A→T 不存在，请说明没有该边。",
+  "total_tokens": 4095,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "NET01_missing/20261016_215723_65edfafe",
+  "elapsed_seconds": 1.0954049169667996
+}

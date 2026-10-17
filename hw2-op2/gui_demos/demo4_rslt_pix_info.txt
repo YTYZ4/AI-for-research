@@ -1,1 +1,0 @@
-barbara|随机像素缺失(20%)|RSLT|RSLT|PSNR=31.44|SSIM=0.9345

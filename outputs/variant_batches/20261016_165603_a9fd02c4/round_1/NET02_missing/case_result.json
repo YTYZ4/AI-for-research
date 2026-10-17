@@ -1,0 +1,12 @@
+{
+  "id": "NET02_missing",
+  "family": "graph",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "管道 A 到 T 的容量未提供，请输入该有向管道的容量（单位：立方米/小时）。",
+  "total_tokens": 2438,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "NET02_missing/20261016_165655_0cff8a71",
+  "elapsed_seconds": 0.9095951250055805
+}

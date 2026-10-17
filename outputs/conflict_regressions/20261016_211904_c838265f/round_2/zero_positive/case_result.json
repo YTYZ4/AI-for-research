@@ -1,0 +1,12 @@
+{
+  "id": "zero_positive",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "环境容量存在两条冲突记录：0个 与 0.5个。请核对哪一条准确？",
+  "total_tokens": 3611,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "zero_positive/20261016_211930_3da73ab6",
+  "elapsed_seconds": 3.9287927920231596
+}

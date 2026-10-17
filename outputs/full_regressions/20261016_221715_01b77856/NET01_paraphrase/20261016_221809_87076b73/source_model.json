@@ -1,0 +1,78 @@
+{
+  "task_type": "graph_input",
+  "name": "最短路径S到T",
+  "problem": "shortest_path",
+  "nodes": [
+    "S",
+    "A",
+    "B",
+    "C",
+    "T"
+  ],
+  "source": "S",
+  "target": "T",
+  "edges": [
+    {
+      "source": "A",
+      "target": "T",
+      "weight": 7,
+      "unit": "千米",
+      "source_quote": "A到T为7",
+      "unit_quote": "千米"
+    },
+    {
+      "source": "C",
+      "target": "T",
+      "weight": 3,
+      "unit": "千米",
+      "source_quote": "C到T为3",
+      "unit_quote": "千米"
+    },
+    {
+      "source": "B",
+      "target": "C",
+      "weight": 5,
+      "unit": "千米",
+      "source_quote": "B到C为5",
+      "unit_quote": "千米"
+    },
+    {
+      "source": "A",
+      "target": "C",
+      "weight": 2,
+      "unit": "千米",
+      "source_quote": "A到C为2",
+      "unit_quote": "千米"
+    },
+    {
+      "source": "B",
+      "target": "A",
+      "weight": 1,
+      "unit": "千米",
+      "source_quote": "B到A为1",
+      "unit_quote": "千米"
+    },
+    {
+      "source": "S",
+      "target": "B",
+      "weight": 2,
+      "unit": "千米",
+      "source_quote": "S到B为2",
+      "unit_quote": "千米"
+    },
+    {
+      "source": "S",
+      "target": "A",
+      "weight": 4,
+      "unit": "千米",
+      "source_quote": "S到A为4",
+      "unit_quote": "千米"
+    }
+  ],
+  "unit": "km",
+  "assumptions": [
+    "所有边均为单向，且权重非负。",
+    "单位“千米”与顶层输出单位 km 数值一致，无需换算。",
+    "节点和边集已完整给出，无其他边。"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "FIT02",
+  "family": "fitting",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "",
+  "total_tokens": 0,
+  "requested_model": null,
+  "response_model": null,
+  "run_path": "FIT02/20261016_163759_d03f6c24",
+  "elapsed_seconds": 0.0032005829853005707
+}

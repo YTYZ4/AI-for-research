@@ -1,0 +1,31 @@
+{
+  "id": "FIT01_missing",
+  "family": "fitting",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "请提供用于线性最小二乘标定的数据 CSV 文件，需包含 x（传感器电压，伏）、y（温度，摄氏度）和 split（train/test）三列。",
+  "total_tokens": 4386,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "FIT01_missing/20261016_221753_587189cd",
+  "elapsed_seconds": 2.338751917006448,
+  "question_semantics_passed": true,
+  "kind": "missing",
+  "base_id": "FIT01",
+  "origins": [
+    {
+      "id": "FIT01_missing",
+      "problem": "examples/development_variants/FIT01_missing.txt",
+      "kind": "missing"
+    }
+  ],
+  "quote_audit_passed": null,
+  "raw_schema_valid": true,
+  "format_action": "not_needed",
+  "local_guard_used": false,
+  "source_quote_repaired": false,
+  "original_pass": true,
+  "after_format_pass": true,
+  "final_pass": true,
+  "pass_path": "native"
+}

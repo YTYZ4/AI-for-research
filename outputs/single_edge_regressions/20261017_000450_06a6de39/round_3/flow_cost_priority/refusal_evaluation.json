@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": {
+    "unsupported": true,
+    "no_model": true,
+    "nonblank_explanations": true,
+    "identifies_requested_scope": true,
+    "explains_limit": true,
+    "no_invented_contract_limit": true,
+    "no_silent_downgrade": true
+  },
+  "text": "原题要求在最大化流量的同时最小化运输成本，这属于最小费用最大流任务；当前仅支持最短路径和单商品最大流，不支持带费用优化的流问题。"
+}

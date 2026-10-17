@@ -1,0 +1,58 @@
+[
+  {
+    "id": "OPT01",
+    "reviewer": "Codex assistant",
+    "scope": "原题与生成模型的单位、描述和假设定性复核；不是独立人工双评或14分量表评分",
+    "status": "no_material_issue_found",
+    "note": "本次未发现与原题不符的实质性方向、单位或假设变化。"
+  },
+  {
+    "id": "OPT02",
+    "reviewer": "Codex assistant",
+    "scope": "原题与生成模型的单位、描述和假设定性复核；不是独立人工双评或14分量表评分",
+    "status": "no_material_issue_found",
+    "note": "本次未发现与原题不符的实质性方向、单位或假设变化。"
+  },
+  {
+    "id": "FIT01",
+    "reviewer": "Codex assistant",
+    "scope": "原题与生成模型的单位、描述和假设定性复核；不是独立人工双评或14分量表评分",
+    "status": "warning",
+    "note": "模型assumptions声称不会输出拟合系数，与本地报告实际包含系数不一致；数值与选阶协议正确，保留原响应。"
+  },
+  {
+    "id": "FIT02",
+    "reviewer": "Codex assistant",
+    "scope": "原题与生成模型的单位、描述和假设定性复核；不是独立人工双评或14分量表评分",
+    "status": "no_material_issue_found",
+    "note": "本次未发现与原题不符的实质性方向、单位或假设变化。"
+  },
+  {
+    "id": "DYN01",
+    "reviewer": "Codex assistant",
+    "scope": "原题与生成模型的单位、描述和假设定性复核；不是独立人工双评或14分量表评分",
+    "status": "no_material_issue_found",
+    "note": "本次未发现与原题不符的实质性方向、单位或假设变化。"
+  },
+  {
+    "id": "DYN02",
+    "reviewer": "Codex assistant",
+    "scope": "原题与生成模型的单位、描述和假设定性复核；不是独立人工双评或14分量表评分",
+    "status": "no_material_issue_found",
+    "note": "本次未发现与原题不符的实质性方向、单位或假设变化。"
+  },
+  {
+    "id": "NET01",
+    "reviewer": "Codex assistant",
+    "scope": "原题与生成模型的单位、描述和假设定性复核；不是独立人工双评或14分量表评分",
+    "status": "no_material_issue_found",
+    "note": "本次未发现与原题不符的实质性方向、单位或假设变化。"
+  },
+  {
+    "id": "NET02",
+    "reviewer": "Codex assistant",
+    "scope": "原题与生成模型的单位、描述和假设定性复核；不是独立人工双评或14分量表评分",
+    "status": "no_material_issue_found",
+    "note": "本次未发现与原题不符的实质性方向、单位或假设变化。"
+  }
+]

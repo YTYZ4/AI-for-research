@@ -1,0 +1,19 @@
+{
+  "task_type": "dynamics",
+  "name": "牛顿冷却30分钟温度轨迹",
+  "system": "newton_cooling",
+  "initial": 90,
+  "rate": 0.1,
+  "equilibrium": 20,
+  "duration": 30,
+  "time_unit": "min",
+  "rate_unit": "1/min",
+  "state_unit": "°C",
+  "assumptions": [
+    "液体温度均匀，用单一温度状态描述。",
+    "冷却系数 k=0.1 1/min 为常数。",
+    "环境温度恒为 20 °C。",
+    "t=0 为液体刚放入房间的时刻。",
+    "牛顿冷却方程为 dT/dt = -k(T - T_env)，允许摄氏温度取负值。"
+  ]
+}

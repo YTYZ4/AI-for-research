@@ -1,0 +1,13 @@
+{
+  "review": "逐项阅读12份容量追问与1份失败原始响应；未改自动计数",
+  "integer_restriction_observed": 0,
+  "clarification_checks": 12,
+  "previous_failure_passes": 3,
+  "boundary_passes": 20,
+  "boundary_calls": 21,
+  "failure": "above_capacity第3次：模型承认K=0.5且初值1.5有效，仍要求用户确认；未发生格式修复或本地护栏拦截。",
+  "tokens_boundary": 71707,
+  "tokens_previous_failure": 10040,
+  "api_calls": 24,
+  "code_matches_snapshot": true
+}

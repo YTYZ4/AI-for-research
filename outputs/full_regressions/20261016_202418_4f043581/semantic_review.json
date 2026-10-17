@@ -1,0 +1,30 @@
+{
+  "reviewer": "Codex assistant",
+  "scope": "复核全部缺信息/错误条件回复、原题与改写模型的变量描述/单位/假设，以及所有自动失败；非独立人工双评或完整14分量表",
+  "findings": [
+    {
+      "id": "logistic_units",
+      "severity": "failure",
+      "category": "unnecessary_clarification",
+      "expected": "ready",
+      "observed": "needs_clarification",
+      "local_guard_used": false,
+      "raw_schema_valid": true,
+      "input": "封闭种群连续Logistic增长，初始100个，容量恒定1000个，无迁入迁出。增长率0.2每天，模拟0到720小时的轨迹与最终数量。请统一时间和速率单位后求解。\n",
+      "detail": "原题已有初值100、容量1000、增长率0.2每天、时长720小时；模型要求用户提供1/day写法及原文片段，把内部字段提取责任转给用户。并非格式失败，也未进入本地换算或求解。",
+      "evidence": "logistic_units/api.json"
+    },
+    {
+      "id": "FIT02",
+      "severity": "wording_warning",
+      "category": "incorrect_system_description",
+      "detail": "assumptions称“拟合由本地程序完成并生成报告，系统输出不包含拟合系数”，而程序报告实际包含系数；与早期开发基线的说明警告同类。本次数值及选阶协议通过，不覆盖原自动分数。",
+      "evidence": "FIT02/generation_record.json"
+    }
+  ],
+  "remaining_limits": [
+    "自动追问评分使用关键词，仍可能放过冗余或不准确措辞。",
+    "单次完整回归不代表长期稳定或保留题泛化。",
+    "程序单位换算只接管动态时间，图路径单位仍由模型统一后独立核对。"
+  ]
+}

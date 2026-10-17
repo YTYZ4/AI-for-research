@@ -1,0 +1,46 @@
+{
+  "task_type": "graph",
+  "name": "输水网络最大流与最小割",
+  "problem": "max_flow",
+  "nodes": [
+    "S",
+    "A",
+    "B",
+    "T"
+  ],
+  "source": "S",
+  "target": "T",
+  "edges": [
+    {
+      "source": "S",
+      "target": "A",
+      "weight": 10
+    },
+    {
+      "source": "S",
+      "target": "B",
+      "weight": 5
+    },
+    {
+      "source": "A",
+      "target": "B",
+      "weight": 4
+    },
+    {
+      "source": "A",
+      "target": "T",
+      "weight": 6
+    },
+    {
+      "source": "B",
+      "target": "T",
+      "weight": 9
+    }
+  ],
+  "unit": "立方米/小时",
+  "assumptions": [
+    "有向网络，边的容量为每小时最大输水量。",
+    "S为唯一源点，T为唯一汇点，中间节点A、B满足流量守恒。",
+    "允许网络中任意边存在零流量或未使用；求解器将同时报告最大流值和最小割容量。"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "same_invalid",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "连续Logistic模型要求环境容量K为正实数；原题记录的环境容量为0（以及K=0.0），会使方程中出现1/K除零项，当前模型无法执行，且用户明确不得改动参数，因此无法建立有效模型。",
+  "total_tokens": 3944,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "same_invalid/20261016_211955_03355029",
+  "elapsed_seconds": 1.760126500041224
+}

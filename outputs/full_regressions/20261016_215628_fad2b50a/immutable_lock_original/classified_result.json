@@ -1,0 +1,31 @@
+{
+  "id": "immutable_lock_original",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "题目给出环境容量 K=0，连续 Logistic 方程在 K=0 时出现除以零，模型无效；且该参数超出当前模型支持范围（要求 K>0）。按“不得改动参数”的约束，无法建立有效方程。",
+  "total_tokens": 4408,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "immutable_lock_original/20261016_215800_58059e3e",
+  "elapsed_seconds": 1.6542474160087295,
+  "question_semantics_passed": true,
+  "kind": "immutable",
+  "base_id": "DYN02",
+  "origins": [
+    {
+      "id": "immutable_lock_original",
+      "problem": "examples/immutable_boundaries/lock_original.txt",
+      "kind": "immutable"
+    }
+  ],
+  "quote_audit_passed": null,
+  "raw_schema_valid": true,
+  "format_action": "not_needed",
+  "local_guard_used": false,
+  "source_quote_repaired": false,
+  "original_pass": true,
+  "after_format_pass": true,
+  "final_pass": true,
+  "pass_path": "native"
+}

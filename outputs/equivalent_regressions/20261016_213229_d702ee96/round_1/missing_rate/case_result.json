@@ -1,0 +1,12 @@
+{
+  "id": "missing_rate",
+  "family": "dynamics",
+  "outcome": "pass",
+  "failure_category": "",
+  "detail": "请提供Logistic种群的增长率r的数值及时间单位（例如每天0.2，请写作0.2、1/day）。",
+  "total_tokens": 3841,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "run_path": "missing_rate/20261016_213245_65782df0",
+  "elapsed_seconds": 2.1234629999962635
+}
